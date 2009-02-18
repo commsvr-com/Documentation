@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="4ff5fa83-9b3b-4c4f-8160-f5261ba30633" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      This topic defines a graphical notation for <token>OPCUA</token><token>AS</token> data. This notation is used in other topics to expose examples of <token>AS</token> data. However, it is not required to use this notation to expose <token>AS</token> data.
+    </para>
+      <para>
+      The graphical notation is able to expose all structural data, their attributes including their current value and references between the nodes including the reference type can be exposed. The graphical notation provides no mechanism to expose events or historical data.
+    </para>
+      <para>
+      The notation is divided into two parts. The simple notation only provides a simplified view on the data hiding some details like attributes. The extended notation allows exposing all structure information of <token>AS</token>, including attribute values. The simple and the extended notation can be combined to expose the data in one figure. The following subsections describe the simple and the complex notation.
+    </para>
+      <para>
+      Common to both notations is that neither any color nor the thickness or stile of lines is relevant for the notation. Those effects can be used to highlight certain aspects of a figure.
+    </para>
+    </introduction>
+    <section>
+      <title>Simple Notation</title>
+      <content>
+        <para>
+        Depending on their class nodes are represented by different graphical forms as defined in table.
+      </para>
+        <table>
+          <title>
+          Notation of nodes depending on the node class.
+        </title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>
+                Node Class
+              </para>
+              </entry>
+              <entry>
+                <para>
+                Graphical Representation
+              </para>
+              </entry>
+              <entry>
+                <para>
+                Comment
+              </para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="7d318d9a-7e61-408a-826c-d7326a9a6ba6" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Rectangle including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the node. The font shall not be set to italic.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="0e54931d-4ebe-4eca-b5a4-cf99c60b93e5" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Shadowed rectangle including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />. The font shall be set to italic.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="a6bc227f-c5d2-46f1-a110-148ff63ea9f0" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Rectangle with rounded corners including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. The font shall not be set to italic.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="8a781806-7663-4a2b-a221-a1c71f34ea95" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Shadowed rectangle with rounded corners including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />. The font shall be set to italic.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="8e42e24e-65d4-4211-b756-71dbfdc40ee9" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Shadowed hexagon including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="c03082c7-452a-4ea4-95e2-e53553977398" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Shadowed six-sided polygon including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="234e50c5-4838-458e-b735-90e709d3b7e6" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Oval including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" />
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="f9340057-1f38-4dc0-ba3c-8f9c6ebd2a7d" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Trapezium including text representing the string-part of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of the <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" />.
+            </para>
+            </entry>
+          </row>
+        </table>
+        <para>
+        References are represented as lines between nodes as exemplified in Figure 1. Those lines can vary in their form. They do not have to connect the nodes with a straight line; they can have angles, arches, etc.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Example of a reference connecting two nodes</caption>
+          <image placement="center" xlink:href="81478554-936f-48ab-ab57-f2059af1430e" />
+        </mediaLink>
+        <para>
+        Table 2 defines how symmetric and asymmetric references are represented in general, and also defines shortcuts for some types represented by the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes. Although it is recommended to use those shortcuts, it is not required. Thus, instead of using the shortcut also the generic solution can be used.
+      </para>
+        <table>
+          <title>
+          Table 2. Simple notation of the ReferenceType nodes depending on represented type.
+        </title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>
+                Type
+              </para>
+              </entry>
+              <entry>
+                <para>
+                Graphical Representation
+              </para>
+              </entry>
+              <entry>
+                <para>
+                Comment
+              </para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>
+              Any symmetric <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /></para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="988321ae-03a5-4326-9a19-8c2561151835" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Symmetric <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes are represented as lines between nodes with closed and filled arrows on both sides pointing to the connected nodes. Near to the line has to be a text containing the string-part (name fild of the QualifiedName) of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> of the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+              Any asymmetric <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /></para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="11166436-529f-44fc-9565-7bd9f9263b13" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Asymmetric <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes are represented as lines between nodes with a closed and filled arrow on the side pointing to the targe node. Near to the line has to be a text containing the string-part ( name ) of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> of the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+              Any hierarchical <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /></para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="9426fe93-2279-4851-bbb9-9616188563a9" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              Asymmetric <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes that are subtypes of <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HierarchicalReferences">HierarchicalReferences</link> should be exposed the same way as asymmetric <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes except that an open arrow is used.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="35f29cd6-8f73-4e2b-a9c4-399d8c1d6a40" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              The notation provides a shortcut for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> references shown on the left. The single hashed line has to be near the targe node.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link>
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="b5414164-c50e-4397-bd98-1b47cf930a5c" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              The notation provides a shortcut for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> references shown on the left. The double hashed lines have to be near the target node.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link>
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="0c8038ef-a0c0-4e37-9b2e-290dddd50b96" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              The notation provides a shortcut for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> references shown on the left. The double closed and filled arrows have to point to the target node.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link>
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="2af32850-67ec-4245-af82-433646ebda11" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              The notation provides a shortcut for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> references shown on the left. The double closed arrows have to point to the source node.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEventSource">HasEventSource</link>
+              </para>
+            </entry>
+            <entry>
+              <mediaLink>
+                <image placement="center" xlink:href="f096d99f-3705-49e7-82c7-3420627e0aef" />
+              </mediaLink>
+            </entry>
+            <entry>
+              <para>
+              The notation provides a shortcut for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEventSource">HasEventSource</link> references shown on the left. The closed arrow has to point to the target node.
+            </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section>
+      <title>
+     Extended Notation
+    </title>
+      <content>
+        <para>
+        In the extended notation some additional concepts are introduced. It is allowed only using some of those concepts on elements of a figure.
+      </para>
+        <para>
+        The following rules define some special handling of structures.
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+            In general, values of all <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23">data types</link> should be represented by an appropriate string representation. Whenever a  <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">namespace index</link> or <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId">LocaleId</link> is used in those structures they can be omitted.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            The <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> contains the <phrase>locale</phrase> (<link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId">LocaleId</link>) and the <phrase>text</phrase> (<link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#String">String</link>) fields. Such a structure can be exposed as <codeInline><![CDATA[[<locale>:]<text>;]]></codeInline> where the <phrase>locale</phrase> is optional. For example, a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> can be “en:MyName”. Instead of that, also “MyName” can be used. This rule applies whenever a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> is shown, including the text used in the graphical representation of a node.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            The <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> contains the <phrase>namespaceIndex</phrase> (UInt16) and the <phrase>name</phrase> (<link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#String">String</link>) fields. Such a structure can be exposed as <codeInline><![CDATA[[<namespaceIndex>:]<name>;]]></codeInline> where the <phrase>namespaceIndex</phrase> is optional. For example, a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> can be “1:MyName”. Instead of that, also “MyName” can be used. This rule applies whenever a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> is shown, including the text used in the graphical representation of a node.
+          </para>
+          </listItem>
+        </list>
+        <para>
+        Instead of using the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference to point from an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> to its <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> the name of the target node of the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference can be added to the text used in the node. It has to be prefixed with “::”. Figure 2 gives an example, where “Node1” uses a reference and “Node2” the shortcut. A figure can contain <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> references for some nodes and the shortcut for other once. It is not allowed that a node uses the shortcut and additionally is the source node of a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link>.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Example of using a TypeDefinition inside a Node</caption>
+          <image placement="center" xlink:href="1d5fd45f-a7ae-4eee-bf58-8fccffaeccd9" />
+        </mediaLink>
+        <para>
+        To display attributes of a node additional text can be put inside the form representing the node under the text representing the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link>. The <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> and the text describing the attributes have to be separated using a horizontal line. Each attribute has to be set into a new text line. Each text line shall contain the attribute name followed by an “=” and the value of the attribute. On top of the first text line containing an attribute shall be a text line containing the underlined text “Attribute”. It is not required to expose all attributes of a node. It is allowed only showing a subset of attributes. If an optional attribute is not provided, the attribute can be marked in a line by strike through it, like “Description”. Examples of exposing attributes are shown in Figure 3.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Example of using a TypeDefinition inside a Node</caption>
+          <image placement="center" xlink:href="967f4424-e33c-4fa8-8e66-494294803c8d" />
+        </mediaLink>
+        <para>
+        To avoid too many nodes in a figure it is allowed to expose <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">properties</link> inside a node, similar to attributes. Therefore, the text field used for exposing attributes is extended. Under the last text line containing an attribute a new text line containing the underlined text “Property” has to be added. If no attribute is provided, the text has to start with this text line. After this text line, each new text line shall contain a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link>, starting with the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link> followed by “=” and the value of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Value attribute</link> of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link>. Figure 4 shows some examples exposing <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">properties</link> inline. It is allowed to expose some <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">properties</link> of a node inline, and other <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">properties</link> as nodes. It is not allowed to show a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link> inline and as well as an additional node.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Example of exposing Properties inline</caption>
+          <image placement="center" xlink:href="6713e451-2012-4f24-9c57-f0aca4de4da9" />
+        </mediaLink>
+        <para>
+        It is allowed to add additional information to a figure using the graphical representation, for example callouts.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link>
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+      <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />
+      <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />
+      <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />
+      <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName attribute</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HierarchicalReferences">HierarchicalReferences</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEventSource">HasEventSource</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link>
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId">LocaleId</link>
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#String">String</link>
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

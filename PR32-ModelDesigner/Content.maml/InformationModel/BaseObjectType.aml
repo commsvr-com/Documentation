@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="08ebbdef-796a-42f6-a849-0b9017547c77" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />-->
+    <summary>
+      <para>
+      This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is the base type and all other object types shall either directly or indirectly inherit from it.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The BaseObjectType is used as type definition whenever there is an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> having no more concrete type definition available. Servers should avoid using this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> and use a more specific type, if possible. This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is the base <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> and all other object types shall either directly or indirectly inherit from it. However, it might not be possible for servers to provide all <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> references from this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> to its subtypes, and therefore it is not required to provide this information.
+    </para>
+      <alert>
+        <para>
+        To see detailed definition use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" /> application and expand the BaseObjectType <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link></para>
+      </alert>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link>
+      <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" />
+      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="3f999f23-4ad7-46a4-80dd-ab33729d5f49" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      The Information Model describes standardised nodes of a server’s <token>AS</token>. These nodes are standardised types as well as standardised instances used for diagnostics or as entry points to server specific nodes. Thus, the Information Model defines the <token>AS</token> of an empty <token>OPCUA</token> server. However, it is not expected that all servers will provide all of these nodes.
+    </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+        This topic contains the following sections:
+      </para>
+        <para>
+          <link xlink:href="c7bb7b37-624e-4a57-a5f3-d7e5994b1fae" />
+        </para>
+        <para>This section explains values scope and meaning of the <computerOutputInline>NodeId and BrowseName attributes</computerOutputInline> used to identify objects exposed by the server in the <token>AS</token>. It also describes type and usage of selected other attributes.
+      </para>
+        <para>
+          <link xlink:href="0d741b40-7d47-4aa1-852b-fe9007394b7f" />
+        </para>
+        <para>It defines standard object types used to provide basic information about the server and allows to subscribe to events.</para>
+        <para>
+          <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36" />
+        </para>
+        <para>It provides definition of the standard variable types.</para>
+        <para>
+          <link xlink:href="792493fe-9605-478d-b93a-10844c737983" />
+        </para>
+        <para>It provides definition of the standard objects and their variables used to organize the address space structure. The <link xlink:href="2c5b2d66-8e34-490c-9ab3-4d852a892a30#Server">Server</link> object and its containing objects additionally provide diagnostic information.</para>
+        <para>
+          <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" />
+        </para>
+        <para>This section introduces additional standard types to represent process data provided by the server itself and underlying system. </para>
+        <para>
+          <link xlink:href="9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9" />
+        </para>
+        <para>
+        This section describes the design decisions of modelling the information provided by each <token>OPCUA</token> server, exposing its capabilities, diagnostic information, and other data needed to work with the server.
+      </para>
+        <para>
+          <link xlink:href="022e0eb8-59d2-4c81-a7d7-3646494f55a2" />
+        </para>
+        <para>
+        This section describes the basic infrastructure to model state machines. It defines dedicated types represented by the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />, <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> and <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes and explains how they should be used.
+      </para>
+      </content>
+    </inThisSection>
+    <relatedSections>
+      <content>
+        <para>
+        </para>
+      </content>
+    </relatedSections>
+    <relatedTopics>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

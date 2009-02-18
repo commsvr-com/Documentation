@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="07e07cd6-0589-48e7-89c3-e99176e1cb23" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />-->
+    <introduction>
+      <para>
+      </para>
+    </introduction>
+    <section>
+      <title>Model</title>
+      <content>
+        <para>
+        The data type model is used to define simple and complex data types. Types are used to describe the structure of the <computerOutputInline>Value</computerOutputInline> attribute of variables and their types. Therefore each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> and <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> node is pointing with its <computerOutputInline>DataType</computerOutputInline> attribute to a node of the DataType node class as shown Figure 1.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Variables, Variable Types and their Data Types</caption>
+          <image placement="center" NS2:href="ea5224a9-7ffa-4a4a-9298-333324526ac0" xmlns:NS2="http://www.w3.org/1999/xlink">
+          </image>
+        </mediaLink>
+        <alert>
+          <para>The data type term has the following meanings:</para>
+          <list class="bullet">
+            <listItem>
+              <para>
+              A node class kind representing design time information about the type of underlying system information in the <token>OPCUA</token><token>AS</token> according to the <link xlink:href="44be48a5-7e42-42a2-906b-86b569ed9d93" /> – an element of the <link xlink:href="44be48a5-7e42-42a2-906b-86b569ed9d93" /> vocabulary (written as: “DataType”);
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              An object, i.e. an instance of the DataType node class exposed as an element of the <token>OPCUA</token><token>AS</token> by the server at runtime according to the <link xlink:href="1254395d-618d-46dc-ad33-39e2becadee8" />; it is also accessible to clients using <link xlink:href="14e03e6a-2c19-4124-8c10-aecd07121492" />; (written as: “DataType object”);
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              A DataType attribute of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> and <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> node classes (written as: “DataType attribute”);
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              One of the predefined types (see <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc" />) of underlying system information, i.e. a precisely defined set of information and their binary representation on the wire (written as: “DataType &lt;type identifier&gt;");
+              </para>
+            </listItem>
+            <listItem>
+              <para>A general term to refer to the information type provided by the underlaying system (written as: “data type”)</para>
+            </listItem>
+          </list>
+        </alert>
+        <para>
+        In many cases, predefined values of the DataType <computerOutputInline>NodeId</computerOutputInline> attribute (of the type <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId" xmlns:NS2="http://www.w3.org/1999/xlink">NodeId</link>) will be well-known to clients and servers. <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc" xmlns:NS2="http://www.w3.org/1999/xlink"></link> defines data types and section <link NS2:href="90c70f9d-c1df-479e-8273-071b5960a5a4" xmlns:NS2="http://www.w3.org/1999/xlink"></link> describes coupled values of the <computerOutputInline>NodeId</computerOutputInline> attribute. In addition, other organizations may define data types that are well-known in the industry. Well-known values of the <computerOutputInline>NodeId</computerOutputInline> attribute provide for commonality across <token>OPCUA</token> servers and allow clients to interpret values without having to read the type description from the server. Therefore, servers may use well-known values of the <computerOutputInline>NodeId</computerOutputInline> attribute without instantiating the corresponding DataType nodes in their <token>AS</token>.
+      </para>
+        <para>In other cases, data types and their corresponding identifiers may be vendor-defined. Servers should attempt to expose the DataType nodes and the information about the structure of those types represented by the DataType nodes for clients to read, although this information might not always be available to the server.</para>
+        <alert>
+          <para>
+            <computerOutputInline>NodeId</computerOutputInline> attribute play a role of the type identifier, and therefore well-known types must have globally unique <computerOutputInline>NodeId</computerOutputInline> values.
+        </para>
+        </alert>
+        <para>
+        Figure 2 illustrates the nodes used in the <token>AS</token> to describe the structure of a data type represented by the DataType node. The DataType points to an object of type <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeEncodingType</link>. Each DataType can have several data type encoding, for example <computerOutputInline>Default</computerOutputInline>, <computerOutputInline>UA Binary</computerOutputInline> and <computerOutputInline>XML</computerOutputInline> encoding. Services described in the section <link NS2:href="ef0092b5-9f31-4e8d-9901-270be06e6577" xmlns:NS2="http://www.w3.org/1999/xlink"></link> allow clients to request an encoding or choosing the <computerOutputInline>Default</computerOutputInline>.
+      </para>
+        <alert>
+          <para>
+          Each data type encoding is used by exactly one DataType node, that is, it is not permitted for two DataType nodes to point to the same node representing <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeEncodingType</link>. The node of <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeEncodingType</link> points to exactly one <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDescriptionType</link>. The <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> node representing <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDescriptionType</link> belongs to a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDictionaryType</link>.
+        </para>
+        </alert>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Data Type Model</caption>
+          <image placement="center" NS2:href="0d626623-5377-4e04-a1b2-dff033261f68" xmlns:NS2="http://www.w3.org/1999/xlink">
+          </image>
+        </mediaLink>
+        <para>
+        Since the identifiers of the data type encoding will be used in some mappings to identify the DataType and its encoding as described in section <link NS2:href="90c70f9d-c1df-479e-8273-071b5960a5a4" xmlns:NS2="http://www.w3.org/1999/xlink"></link>, those values may also be well-known for well-known values of DataType <computerOutputInline>NodeId</computerOutputInline> attribute.
+      </para>
+        <para>
+        The data type dictionary describes a set of data types in sufficient detail to allow clients to parse/interpret variable values that they receive and to construct values that they send. The data type dictionary is represented as a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of type <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDictionaryType</link> in the <token>AS</token>, the description about the data types is contained in its <computerOutputInline>Value</computerOutputInline> attribute. All containing data types exposed in the <token>AS</token> are represented as <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> nodes of type <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDescriptionType</link> The <computerOutputInline>Value</computerOutputInline> of one of these variables identifies the description of a DataType in the <computerOutputInline>Value</computerOutputInline> attribute of the data type dictionary.
+      </para>
+        <para>
+        The data type of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDictionaryType</link> is always a <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link>. The format and conventions for defining data types in this <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link> are defined by data type systems. Data type systems are identified by the value of the <computerOutputInline>NodeId</computerOutputInline> attribute. They are represented in the <token>AS</token> as <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> node class representing the <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeSystemType</link> type. Each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing a data type dictionary references a data type system object to identify their data type system.
+      </para>
+        <para>
+        A client must recognize the data type system to parse any of the type description information. <token>OPCUA</token> clients that do not recognize a data type system will not be able to interpret its type descriptions, and consequently, the values described by them. In these cases, clients interpret these values as opaque <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link>.
+      </para>
+        <para>OPC Binary and W3C XML Schema are examples of data type systems. OPC Binary uses XML to describe binary data values. W3C XML Schema is specified in XML Schema Part 1 and XML Schema Part 2.</para>
+      </content>
+    </section>
+    <section>
+      <title>Encoding Rules</title>
+      <content>
+        <para>
+        DataType nodes are distinguished between depending on the represented type and are handled differently regarding their encoding and whether this encoding is represented in the <token>AS</token>.
+      </para>
+        <para>
+        Built-in data types is a fixed set (see section <link NS2:href="90c70f9d-c1df-479e-8273-071b5960a5a4" xmlns:NS2="http://www.w3.org/1999/xlink"></link> for a complete list of Built-in DataTypes). They have no encodings visible in the <token>AS</token> since the encoding should be known to all <token>OPCUA</token> products. Examples of Built-in data types are <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Int32" xmlns:NS2="http://www.w3.org/1999/xlink">Int32</link> and <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Double" xmlns:NS2="http://www.w3.org/1999/xlink">Double</link>.
+      </para>
+        <para>
+        Simple data types are subtypes of the built-in data types. They are handled on the wire like the built-in data type, i.e. they cannot be distinguished on the wire from their built-in supertypes. Since they are handled like built-in data types regarding the encoding they cannot have encodings defined in the <token>AS</token>. Clients can read the DataType attribute of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> node to identify the simple data type of the <computerOutputInline>Value</computerOutputInline> attribute. An example of a simple data type is Duration. It is handled on the wire as a Double but the client can read the DataType attribute and thus interpret the value as defined by <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Duration" xmlns:NS2="http://www.w3.org/1999/xlink">Duration</link> type.
+      </para>
+        <para>
+        Structured data types are data types that represent structured data and are not defined as built-in data types. Structured data types inherit directly or indirectly from the <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Structure" xmlns:NS2="http://www.w3.org/1999/xlink">Structure</link> data type. Structured data types may have several encodings and the encodings are exposed in the <token>AS</token>. How the encoding of structured data types is handled on the wire is described in section <link NS2:href="90c70f9d-c1df-479e-8273-071b5960a5a4" xmlns:NS2="http://www.w3.org/1999/xlink"></link>. The encoding of the structured data type is transmitted with each value, thus clients are aware of the data type without reading the <computerOutputInline>DataType</computerOutputInline> attribute. The encoding has to be transmitted so the client is able to interpret the data. An example of a structured data type is <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Argument" xmlns:NS2="http://www.w3.org/1999/xlink">Argument</link>.
+      </para>
+        <para>
+          <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Enumeration" xmlns:NS2="http://www.w3.org/1999/xlink">Enumeration</link> data type represents discrete sets of named values. Enumerations are always encoded as <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Int32" xmlns:NS2="http://www.w3.org/1999/xlink">Int32</link> on the wire as described in section <link NS2:href="90c70f9d-c1df-479e-8273-071b5960a5a4" xmlns:NS2="http://www.w3.org/1999/xlink"></link>. <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Enumeration" xmlns:NS2="http://www.w3.org/1999/xlink">New enumeration</link> data types inherit directly or indirectly from the <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Enumeration" xmlns:NS2="http://www.w3.org/1999/xlink">Enumeration</link>. Enumerations have no encodings exposed in the <token>AS</token>. To expose the human-readable representation of an enumerated value the DataType node may have a property <phrase>EnumStrings</phrase> containing an array of <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocalizedText" xmlns:NS2="http://www.w3.org/1999/xlink">LocalizedText</link>. The rnteger representation of the enumeration value points to a position of that array. An example of an enumeration data type is <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeClass" xmlns:NS2="http://www.w3.org/1999/xlink">NodeClass</link>.
+      </para>
+        <para>
+        In addition to the data types described above, abstract data types are also supported, which do not have any encodings and cannot be exchanged on the wire. Variables and variable types use abstract data types to indicate that their Value may be any one of the subtypes of the abstract data type. An example of an abstract DataType is <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Integer" xmlns:NS2="http://www.w3.org/1999/xlink">Integer</link>.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>DataType Node Class</title>
+      <content>
+        <para>
+        The DataType node class describes the syntax of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /><computerOutputInline>Value</computerOutputInline> attribute. The data types may be simple or complex, depending on the data type system. Data types are defined using the DataType node class.
+      </para>
+        <para>
+        The DataType node class inherits the base attributes from the <link NS2:href="467e8ac2-46d8-4758-8965-a891200787ee" xmlns:NS2="http://www.w3.org/1999/xlink"></link><token>NodeClass</token>. The <computerOutputInline>IsAbstract</computerOutputInline> attribute specifies if the data type is abstract or not. Abstract data types can be used in the <token>AS</token>, i.e. variables and variable types can point with their <computerOutputInline>DataType</computerOutputInline> attribute to node representing an abstract type. However, concrete values can never be of an abstract type and shall always be of a concrete subtype of the abstract type.
+      </para>
+        <para>
+          <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty" xmlns:NS2="http://www.w3.org/1999/xlink">HasProperty</link> references are used to identify the properties of a DataType node. The property <phrase>NodeVersion</phrase> is used to indicate the version of the DataType. This version is not affected by the <phrase>DataTypeVersion</phrase> property of data type dictionaries and data type descriptions. The property <phrase>EnumStrings</phrase> contains human-readable representations of enumeration values and is only applied to <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Enumeration" xmlns:NS2="http://www.w3.org/1999/xlink">Enumeration</link> data types.
+      </para>
+        <para>
+          <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype" xmlns:NS2="http://www.w3.org/1999/xlink">HasSubtype</link> references may be used to expose a data type hierarchy in the <token>AS</token>. This hierarchy shall reflect the hierarchy specified in the data type dictionary. The semantic of subtyping depends on the data type system. Servers need not provide <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype" xmlns:NS2="http://www.w3.org/1999/xlink">HasSubtype</link> references, even if their data types span a type hierarchy. Clients should not make any assumptions about any other semantic with that information than provided by the data type dictionary. For example, it might not be possible to cast a value of one data type to its base data type.
+      </para>
+        <para>
+          <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEncoding" xmlns:NS2="http://www.w3.org/1999/xlink">HasEncoding</link> references point from the DataType to its data type encodings. Following such a reference, the client can browse to the data type dictionary describing the structure of the data type for the used encoding. Each concrete structured DataType can point to many data type encodings, but each data type encoding shall belong to one DataType node that is, it is not permitted for two DataType nodes to point to the same <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeEncodingType</link> object using <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEncoding" xmlns:NS2="http://www.w3.org/1999/xlink">HasEncoding</link> references.
+      </para>
+        <para>
+        An abstract DataType is not the source node of a <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEncoding" xmlns:NS2="http://www.w3.org/1999/xlink">HasEncoding</link> reference. The data type encoding of an abstract DataType is provided by its concrete subtypes.
+      </para>
+        <para>DataType nodes shall not be the source node of other types of references. However, they may be the target node of other references.</para>
+      </content>
+    </section>
+    <section>
+      <title>Dictionary, Description, Encoding and System</title>
+      <content>
+        <para>
+        A data type dictionary is an entity that contains a set of type descriptions, such as an XML schema. Thae dictionaries are represented as <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> nodes of the <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDictionaryType</link>.
+      </para>
+        <para>
+        A data type system specifies the format and conventions for defining data types in data type dictionaries. Data type systems are defined as <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> node class representing the <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeSystemType</link>.
+      </para>
+        <para>
+        The reference type used to relate of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> node representing the <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeSystemType</link> type to the <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> node representing the <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDictionaryType</link> is the <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent" xmlns:NS2="http://www.w3.org/1999/xlink">HasComponent</link> reference type. Thus, the variable is always the target node of a <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent" xmlns:NS2="http://www.w3.org/1999/xlink">HasComponent</link> reference – a requirement for variables. However, for data type dictionaries the server shall always provide the inverse reference, since it is necessary to know the data type system when processing the data type dictionary.
+      </para>
+        <para>
+        An example of a data type dictionary is an XML document containing an XML schema. In this case, the data type system is the W3C XML Schema and the top level element declarations in the schema document are the data type descriptions. Each of these descriptions is defined in different versions of an XML schema using the same XML target namespace. This target namespace is used as the namespace component of the type identifier in the server’s <token>AS</token>. Since the same target namespace can be used in other XML schemas, clients shall be aware that two type identifiers with the same namespace are not necessarily defined in the same data type dictionary.
+      </para>
+        <para>
+        Changes may be a result of a change to a type description, but it is more likely that dictionary changes are a result of the addition or deletion of type descriptions. This includes changes made while the server is offline so that the new version is available when the server restarts. Clients may subscribe to the <phrase>DataTypeVersion</phrase> property to determine if the data type dictionary has changed since it was last read.
+      </para>
+        <para>
+        The server may – but is not required to – make the data type dictionary contents available to clients through the <computerOutputInline>Value</computerOutputInline> attribute. Clients should assume that data type dictionary contents are relatively large and that they will encounter performance problems if they automatically read the data type dictionary contents each time they encounter an instance of a specific data type. The client should use the <phrase>DataTypeVersion</phrase> property to determine whether the locally cached copy is still valid. If the client detects a change to the <phrase>DataTypeVersion</phrase>, then it shall re-read the data type dictionary. This implies that the <phrase>DataTypeVersion</phrase> shall be updated by a server even after restart since clients may persistently store the locally cached copy.
+      </para>
+        <para>
+        The <computerOutputInline>Value</computerOutputInline> attribute of the data type dictionary containing the type descriptions is a <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link> whose formatting is defined by the data type system. For the “XML Schema” data type system, the <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link> contains a valid XML schema document. For the “OPC Binary” data type system, the <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link> contains a string that is a valid XML document. The server shall ensure that any change to the contents of the <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link> is matched with a corresponding change to the <phrase>DataTypeVersion</phrase> property. In other words, the client may safely use a cached copy of the data type dictionary, as long as the <phrase>DataTypeVersion</phrase> remains the same.
+      </para>
+        <para>
+        Data type dictionaries are complex variables which expose their data type descriptions as <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> nodes using <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent" xmlns:NS2="http://www.w3.org/1999/xlink">HasComponent</link> references. A data type description provides the information necessary to find the formal description of a DataType within the data type dictionary. The <computerOutputInline>Value</computerOutputInline> of a data type description depends on the data type system of the data type dictionary. When using “OPC Binary” dictionaries the <computerOutputInline>Value</computerOutputInline> attribute shall be the name of the type description. When using “XML Schema” dictionaries the <computerOutputInline>Value</computerOutputInline> shall be an Xpath expression XPATH which points to an XML element in the schema document.
+      </para>
+        <para>
+        Like data type dictionaries each data type description provides the property <phrase>DataTypeVersion</phrase> indicating whether the type description of the DataType has changed. Changes to the <phrase>DataTypeVersion</phrase> may impact the operation of subscriptions. If the <phrase>DataTypeVersion</phrase> changes for a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> that is being monitored for a subscription and that uses this data type description, then the next data change notification sent for the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> will contain a status that indicates the change in the data type description.
+      </para>
+        <para>
+        Data type encoding objects reference their data type descriptions of the data type dictionaries using <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasDescription" xmlns:NS2="http://www.w3.org/1999/xlink">HasDescription</link> references. However, servers are not required to provide the inverse references that relate the data type descriptions back to the data type encoding objects. If a DataType node is exposed in the <token>AS</token>, it shall provide its data type encodings and if a data type dictionary is exposed, it should expose all its data type descriptions. Both of these references shall be bi-directional.
+      </para>
+        <para>
+        Figure 3 gives an example how data types are modeled in the <token>AS</token>.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Example of DataType modeling</caption>
+          <image placement="center" NS2:href="ce9d9418-21ae-4429-9d37-62cff05bdd95" xmlns:NS2="http://www.w3.org/1999/xlink">
+          </image>
+        </mediaLink>
+        <para>
+        In some scenarios an <token>OPCUA</token> server may have resource limitations which make it impractical to expose large data type dictionaries. In these scenarios the server may be able to provide access to descriptions for individual data types even if the entire dictionary cannot be read. For this reason, the <token>OPCUA</token> specification defines a property for the data type description called <phrase>DictionaryFragment</phrase> (see <link NS2:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" xmlns:NS2="http://www.w3.org/1999/xlink"></link>). This property is a <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link> that contains a subset of the data type dictionary which describes the format of the DataType associated with the data type description. Thus the server splits the large data type dictionary into several small parts clients can access without affecting the overall system performance.
+      </para>
+        <para>However, servers should provide the whole data type dictionary at once and if this is possible. Clients can typically act more effective reading the whole data type dictionary at once instead of reading several parts and building their own data type dictionary over a period of time.</para>
+      </content>
+    </section>
+    <relatedTopics>
+      <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc" xmlns:NS2="http://www.w3.org/1999/xlink">
+      </link>
+      <link NS2:href="90c70f9d-c1df-479e-8273-071b5960a5a4" xmlns:NS2="http://www.w3.org/1999/xlink">
+      </link>
+      <link NS2:href="ef0092b5-9f31-4e8d-9901-270be06e6577" xmlns:NS2="http://www.w3.org/1999/xlink">
+      </link>
+      <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDescriptionType</link>
+      <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeEncodingType</link>
+      <link NS2:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeDictionaryType</link>
+      <link NS2:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType" xmlns:NS2="http://www.w3.org/1999/xlink">DataTypeSystemType</link>
+      <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#ByteString" xmlns:NS2="http://www.w3.org/1999/xlink">ByteString</link>
+      <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Structure" xmlns:NS2="http://www.w3.org/1999/xlink">Structure</link>
+      <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeClass" xmlns:NS2="http://www.w3.org/1999/xlink">NodeClass</link>
+      <link NS2:href="546f49d5-8153-434c-9e74-d7835d7862bc#Enumeration" xmlns:NS2="http://www.w3.org/1999/xlink">Enumeration</link>
+      <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty" xmlns:NS2="http://www.w3.org/1999/xlink">HasProperty</link>
+      <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype" xmlns:NS2="http://www.w3.org/1999/xlink">HasSubtype</link>
+      <link NS2:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEncoding" xmlns:NS2="http://www.w3.org/1999/xlink">HasEncoding</link>
+      <link NS2:href="467e8ac2-46d8-4758-8965-a891200787ee" xmlns:NS2="http://www.w3.org/1999/xlink">
+      </link>
+      <link NS2:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" xmlns:NS2="http://www.w3.org/1999/xlink">
+      </link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

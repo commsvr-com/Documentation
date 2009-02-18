@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ed06838a-603f-4c9e-92e1-bf215ecf46e6" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      A Guid is a 16-byte globally unique identifier with the layout shown in Table 2
+    </para>
+      <table>
+        <title>
+        Table 2 – Guid Structure
+      </title>
+        <tableHeader>
+          <row>
+            <entry>
+              <para>
+              Component
+            </para>
+            </entry>
+            <entry>
+              <para>
+              Data Type
+            </para>
+            </entry>
+          </row>
+        </tableHeader>
+        <row>
+          <entry>
+            <para>
+            Data1
+          </para>
+          </entry>
+          <entry>
+            <para>
+            UInt32
+          </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+            Data2
+          </para>
+          </entry>
+          <entry>
+            <para>
+            UInt16
+          </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+            Data3
+          </para>
+          </entry>
+          <entry>
+            <para>
+            UInt16
+          </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+            Data4
+          </para>
+          </entry>
+          <entry>
+            <para>
+            Byte[8]
+          </para>
+          </entry>
+        </row>
+      </table>
+      <para>
+      Guid values may be represented as a string in this form:
+    </para>
+      <code language="scr"><![CDATA[<Data1>-<Data2>-<Data3>-<Data4[0:1]>-<Data4[2:7]>]]></code>
+      <para>
+      Where Data1 is 8 characters wide, Data2 and Data3 are 4 characters wide and each Byte in Data4 is 2 characters wide. Each value is formatted as a hexadecimal number padded zeros. A typical Guid value would look like this when formatted as a string:
+    </para>
+      <code language="scr"><![CDATA[C496578A-0DFE-4b8f-870A-745238C6AEAE ]]></code>
+    </introduction>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

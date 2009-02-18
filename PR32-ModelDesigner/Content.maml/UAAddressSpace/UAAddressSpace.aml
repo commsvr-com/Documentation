@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />-->
+    <summary>
+      <para>
+      The set of objects that the <token>OPCUA</token> server makes available to clients is referred to as its <token>AS</token>. The following subclasses define the <token>AS</token>, which allows representing both real process environment and real-time process behavior in a unique means, mutually understandable by diverse systems.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The <token>OPCUA</token> is a set of specifications applicable to software manufacturing in application areas such as
+      Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems. These systems are
+      intended to exchange information, monitor and control the industrial processes. The <token>OPCUA</token> defines
+      a common infrastructure model to facilitate this information exchange in a standard way and without programming. This
+      topic summarizes information about the <token>AS</token> concept.
+    </para>
+      <para>
+      The following subclasses define the concept of the <token>AS</token>, which allows representing real process environment and real-time process behavior in a unique means, mutually understandable by diverse systems. To meet the above requirement, this representation must be also transferable between remote systems by a wire.
+    </para>
+      <para>
+      There is no doubt that information technology and process control engineering have to be integrated to benefit from macro optimization and synergy effect. To integrate them we must make systems interoperable, but it means the necessity of information exchange. Because information is an abstract notion, it cannot be processed by physical machines. Therefore it has to be represented as computer centric data. Information exchange requires also data transportation over a wire.
+    </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link xlink:href="ad8b0a3f-9293-4a1e-8f03-3e463a8d5f04" />
+        </para>
+        <para>
+          <link xlink:href="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67" />
+        </para>
+        <para>
+          <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />
+        </para>
+        <para>
+          <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc" />
+        </para>
+        <para>
+          <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098" />
+        </para>
+        <para>
+          <link xlink:href="ad0fdaba-ab78-477a-ac9d-13e06cc51939" />
+        </para>
+        <para>
+          <link xlink:href="7cd6ebfb-3582-4ae7-8b1c-89e038d9bb66" />
+        </para>
+      </content>
+    </inThisSection>
+    <relatedSections>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 3: OPC UA Specification</linkText>
+            <linkAlternateText>Part 3 – Address Space Model, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part3/</linkUri>
+          </externalLink> - Address Space Model: describes the OPC UA address space and its objects.
+      </para>
+      </content>
+    </relatedSections>
+  </developerOrientationDocument>
+</topic>

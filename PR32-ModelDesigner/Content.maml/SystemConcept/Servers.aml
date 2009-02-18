@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b33c670d-5124-4207-8a5b-89eec97c23b5" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>The <token>OPCUA</token> server architecture models the server endpoint of client/server interactions. Figure 1 illustrates the major elements of the <token>OPCUA</token> server and how they relate to each other.</para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">OPC UA Server Architecture</caption>
+        <image placement="center" xlink:href="6590809f-6e2f-4334-bdc1-b7f200adf679" />
+      </mediaLink>
+      <para>The <token>OPCUA</token> server application - a software package - is the code that implements the function of the server. It uses the <token>OPCUA</token> server API to send and receive <token>OPCUA</token> messages from <token>OPCUA</token> clients. Note that the “OPC UA Server API” is an internal interface that isolates the server application code from an <token>OPCUA</token> communication stack.</para>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="467e8ac2-46d8-4758-8965-a891200787ee" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      The <token>OPCUA</token><token>AS</token> model defines a Base node class from which all other node classes are derived. The derived node classes represent the various components of the <token>OPCUA</token> Object Model. There are no references specified for the Base node class.
+    </para>
+    </introduction>
+    <section>
+      <title>Attributes</title>
+      <content>
+      </content>
+      <sections>
+        <section address="NodeId">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#NodeId" >NodeId</link>-->
+          <title>NodeId</title>
+          <content>
+            <para>
+            Nodes are unambiguously identified using a constructed identifier called the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link>. Some servers may accept alternative node identifiers in addition to the canonical <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> represented in this attribute.
+          </para>
+          </content>
+        </section>
+        <section address="NodeClass">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#NodeClass" >NodeClass</link>-->
+          <title>NodeClass</title>
+          <content>
+            <para>
+            The NodeClass attribute identifies the node class of a node.
+          </para>
+          </content>
+        </section>
+        <section address="BrowseName">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName" >BrowseName</link>-->
+          <title>BrowseName</title>
+          <content>
+            <para>
+            Nodes have a BrowseName attribute that is used as a non-localised human-readable name when browsing the <token>AS</token> to create paths out of browse names. The TranslateBrowsePathsToNodeIds service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> can be used to follow a path constructed of BrowseName values.
+          </para>
+            <alert>
+              <para>
+              A BrowseName should never be used to display the name of a node. The <link xlink:href="#DisplayName">DisplayName attribute</link> should be used instead for this purpose.
+            </para>
+            </alert>
+            <para>
+            Unlike NodeIds, the BrowseName cannot be used to unambiguously identify a node. Different nodes may have the same value of the BrowseName attribute.
+          </para>
+            <para>
+            Section <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc" /> describes the structure of the BrowseName. It contains a namespace and a string. The namespace is provided to make the BrowseName unique in some cases in the context of a node (e.g. properties of a node) although not unique in the context of the server. If different organizations define browse names for properties, the namespace of the BrowseName attribute provided by the organization makes the BrowseName value unique, although different organizations may use the same string having a slightly different meaning.
+          </para>
+            <para>
+            Servers may often choose to use the same namespace for the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> and the BrowseName. However, if they want to provide a standard property, its BrowseName shall have the namespace of the standards body although the namespace of the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> reflects something else, for example the local server.
+          </para>
+            <alert>
+              <para>
+              It is recommended that standard bodies defining standard type definitions use their namespace for the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the type definition node as well as for the BrowseName of the type definition node.
+            </para>
+            </alert>
+          </content>
+        </section>
+        <section address="DisplayName">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName" >DisplayName</link>-->
+          <title>DisplayName</title>
+          <content>
+            <para>
+            The DisplayName attribute contains the localised name of the node. Clients should use this attribute if they want to display the name of the node to the user. They should not use the BrowseName attribute for this purpose. The server may maintain one or more localised representations for each DisplayName. Clients negotiate the locale to be returned when they open a session with the server. Refer to section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> for a description of session establishment and locales.
+          </para>
+            <alert>
+              <para>
+              The string part of the DisplayName is restricted to 512 characters.
+            </para>
+            </alert>
+          </content>
+        </section>
+        <section address="Description">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#Description" >Description</link>-->
+          <title>Description</title>
+          <content>
+            <para>
+            The optional Description attribute shall explain the meaning of the node in a localised text using the same mechanisms for localisation as described for the DisplayName
+          </para>
+          </content>
+        </section>
+        <section address="WriteMask">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#WriteMask" >WriteMask</link>-->
+          <title>WriteMask</title>
+          <content>
+            <para>
+            The optional WriteMask attribute exposes the possibilities of a client to write the attributes of the node. The WriteMask attribute does not take any user access rights into account, i.e. although an attribute is writeable this may be restricted to a certain user / user group.
+          </para>
+            <para>
+            If the <token>OPCUA</token> server does not have the ability to get the WriteMask information for a specific attribute from the underlying system, it should state that it is writable. If a write operation is called on the attribute, the server should transfer this request and return the corresponding StatusCode if such a request is rejected. StatusCodes are described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+          </para>
+            <para>
+            The WriteMask attribute is a 32-bit unsigned integer. If the bit is set to 0, it means the attribute is not writeable, if it is set to 1 it means it is writable. If a node does not support a specific attribute, the corresponding bit has to be set to 0.
+          </para>
+            <para>
+            The value attribute is not provided in the bit mask since this is handled in the AccessLevel and UserAccessLevel attributes.
+          </para>
+          </content>
+        </section>
+        <section address="UserWriteMask">
+          <!--<link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#UserWriteMask" >UserWriteMask</link>-->
+          <title>UserWriteMask</title>
+          <content>
+            <para>
+            The optional UserWriteMask attribute exposes the possibilities of a client to write the attributes of the node taking user access rights into account. It uses the same bit mask as used in the WriteMask attribute.
+          </para>
+            <para>
+            The UserWriteMask attribute can only further restrict the WriteMask attribute, when it is set to not writeable in the general case that applies for every user.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="e6dbd978-9b2f-475e-bcb3-304975700033" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      All OPC UA DataEncodings are based on rules that are defined for a standard set of built-in types. These built-in types are then used to construct structures, arrays and messages. The built-in types are described in Table 1.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Table 1">Built-in Data Types</caption>
+        <image placement="center" xlink:href="643a54e6-c563-4289-918d-5f3a9225fab5" />
+      </mediaLink>
+      <para>
+      Most of these data types are the same as the abstract types defined in Part 3 and Part 4, however, the  ExtensionObject and Variant types are defined in this document. In addition, this document defines a representation for the Guid type defined in Part 3.
+    </para>
+    </introduction>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

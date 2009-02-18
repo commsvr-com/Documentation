@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a53158d1-fa3a-4757-a0c5-d04306548411" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>References are used to relate Nodes to each other. They can be accessed using the browsing and querying Services.</para>
+      <para>Like Attributes, they are defined as fundamental components of Nodes. Unlike Attributes, References are defined as instances of <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> Nodes. <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> Nodes are visible in the <token>AS</token> and are defined using the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /><token>NodeClass</token>.</para>
+      <para>The Node that contains the Reference is referred to as the source node and the Node that is referenced is referred to as the TargetNode. The combination of the source node, the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> and the target node are used in <token>OPCUA</token> Services to uniquely identify References. Thus, each node can reference another node with the same <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> only once. Any subtypes of concrete ReferenceTypes are considered to be equal to the base concrete ReferenceTypes when identifying References (see <link xlink:href="2eddb75a-7f03-48bf-9ac9-3505f26e178c">ReferenceTypes</link>). </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Avaliable properties</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+      <autoOutline /> -->
+        <para>
+          <codeEntityReference>Properties.T:CAS.UA.Model.Designer.Nodes.Reference</codeEntityReference>
+        </para>
+      </content>
+      <!-- If a section contains a sections element, its content creates
+         sub-sections.  These are not collapsible.
+    <sections>
+        <section address="SubSection1">
+            <title>Sub-section 1</title>
+            <content>
+                <para>Sub-section content.</para>
+            </content>
+        </section>
+        <section address="SubSection2">
+            <title>Sub-section 2</title>
+            <content>
+                <para>Sub-section content.</para>
+            </content>
+        </section>
+    </sections> -->
+    </section>
+    <relatedTopics>
+      <link xlink:href="5d8e3b3c-cfeb-4007-a54f-64838ce85ce1">References folder</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

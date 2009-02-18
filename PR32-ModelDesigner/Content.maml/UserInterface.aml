@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" revisionNumber="1">
+  <developerUIReferenceDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+      An Overview of the <token>ASMD</token> GUI
+    </para>
+    </summary>
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      When the help file builder is ran, the following window appears.
+    </para>
+      <para>
+      The toolbar contains most of the common functions. A <legacyBold>Save Project As option</legacyBold>,
+      a <legacyBold>New Project</legacyBold> option, and a list of the most recently opened projects is also
+      available on the Project menu.
+      A <legacyBold>User Preferences</legacyBold> option is also available that allows you to set some common
+      non-project application settings. The help builder will automatically load the
+      last used project when opened.
+    </para>
+    </introduction>
+    <taskList>
+      <content>
+        <para>Task list content</para>
+      </content>
+    </taskList>
+    <!-- Zero or more sections
+  <section address="Section1">
+    <title>Section title</title>
+    <content>
+      < ! - - Uncomment this to create a sub-section outline
+      <autoOutline /> - - >
+      <para>Section content</para>
+    </content>
+  </section>
+  -->
+    <uiElementList>
+      <content>
+        <para>UI element list content</para>
+      </content>
+    </uiElementList>
+    <relatedTopics>
+    </relatedTopics>
+  </developerUIReferenceDocument>
+</topic>

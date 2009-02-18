@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  
+  <introduction>
+    <para>
+      The following resources related to Sandcastle and XML documentation comments are available:
+    </para>
+  </introduction>-->
+    <reference>
+      <content>
+        <para>
+        You can find the latest information on <token>ASMD</token> at the Commserver website
+      </para>
+        <para>
+          <externalLink>
+            <linkText>www.commsvr.com</linkText>
+            <linkAlternateText>OPC UA Address Space Model Designer – powerful toolkit for Address Space in OPC Unified Architecture</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Products/UAModelDesigner.aspx</linkUri>
+          </externalLink>
+        </para>
+        <para>More about CAS you can find at:</para>
+        <para>
+          <externalLink>
+            <linkText>CAS website</linkText>
+            <linkAlternateText>CAS website</linkAlternateText>
+            <linkUri>http://www.cas.eu</linkUri>
+          </externalLink>
+        </para>
+        <para>You can also email us at the:</para>
+        <para>
+          <externalLink>
+            <linkText>Feedback module:</linkText>
+            <linkAlternateText>Click to sen email</linkAlternateText>
+            <linkUri>http://www.commsvr.com/tabid/85/language/en-US/Default.aspx</linkUri>
+          </externalLink>
+        </para>
+      </content>
+    </reference>
+    <relatedTopics>
+      <externalLink>
+        <linkText>
+        OPC Foundation
+      </linkText>
+        <linkAlternateText>The OPC Foundation - Dedicated to Interoperability in Automation</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

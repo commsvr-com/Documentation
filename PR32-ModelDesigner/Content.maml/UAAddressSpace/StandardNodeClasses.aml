@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67" revisionNumber="1">
+  <developerSDKTechnologyOverviewOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+      This section defines the node classes used to define nodes in the <token>OPCUA</token><token>AS</token>. All node classes are derived from a common, <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /> node class.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The node classes defined to represent objects fall into three categories:
+    </para>
+      <list class="ordered">
+        <listItem>
+          <para>Used to define instances</para>
+        </listItem>
+        <listItem>
+          <para>Used to define types for those instances</para>
+        </listItem>
+        <listItem>
+          <para>Used to define data types</para>
+        </listItem>
+      </list>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+        This section defines the node classes used to define nodes in the <token>OPCUA</token><token>AS</token>.
+      </para>
+      </content>
+    </inThisSection>
+    <relatedSections>
+      <content>
+        <para>
+          <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />
+        </para>
+        <para>
+          <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" />
+        </para>
+        <para>
+          <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+        </para>
+        <para>
+          <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+        </para>
+        <para>
+          <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />
+        </para>
+        <para>
+          <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+        </para>
+        <para>
+          <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />
+        </para>
+        <para>
+          <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />
+        </para>
+        <para>
+          <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+        </para>
+        <para>
+          <link xlink:href="1f82af61-a0d9-4730-8cf1-d93ab765f2d2" />
+        </para>
+      </content>
+    </relatedSections>
+  </developerSDKTechnologyOverviewOrientationDocument>
+</topic>

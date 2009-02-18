@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ac026ef7-e1c1-4bd1-aeab-fa8e59156b02" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      Encodings folder this node is a folder that contains encodings
+      that are used for the parent node.
+    </para>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="71e57e6f-fbfb-4bd3-ab5a-7c0047c3d97c">Encoding - what is it?</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="90c70f9d-c1df-479e-8273-071b5960a5a4" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This section contains information about the <token>OPCUA</token> mapping between the security model described in section <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" />, the abstract service definitions described section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> and the data structures defined in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> and the physical network protocols that can be used to implement the <token>OPCUA</token> specification.
+    </para>
+      <para>
+      The other parts of the OPC UA specification are written to be independent of the technology used for implementation. This approach means OPC UA is a flexible specification that will continue to be applicable as technology evolves. On the other hand, this approach means that it is not possible to build an OPC UA application with the information contained in Parts 1 through 5 because important implementation details have been left out.
+    </para>
+      <para>
+      This document defines Mappings between the abstract specifications and technologies that can be used to implement them. The Mappings are organized into three groups: DataEncodings, SecurityProtocols and TransportProtocols. Different Mappings are combined together to create StackProfiles. All OPC UA applications shall implement at least one StackProfile and can only communicate with other OPC UA applications that implement the same StackProfile.
+    </para>
+      <para>
+      This document defines the DataEncodings in Clause 5, the SecurityProtocols in Clause 6 and the TransportProtocols in Clause 6.4.6. The StackProfiles are defined in Part 7.
+    </para>
+      <para>
+      All communication between OPC UA applications is based on the exchange of Messages. The parameters contained in the Messages are defined in Part 4, however, their format is specified by the DataEncoding and TransportProtocol. For this reason, each Message defined in Part 4 shall have a normative description which specifies exactly what shall be put on the wire. The normative descriptions are defined in the appendices.
+    </para>
+      <para>
+      A Stack is collection of software libraries that implement one or more StackProfiles. The interface between an OPC UA application and the Stack is a non-normative API which hides the details of the Stack implementation.  An API depends on a specific DevelopmentPlatform.
+    </para>
+      <para>
+      Figure 1 illustrates the relationships between the different concepts defined in this document.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">The OPC UA Stack Overview</caption>
+        <image placement="center" xlink:href="637a31ca-6faa-4b88-a011-50688cc32b13" />
+      </mediaLink>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 6: OPC UA Specification</linkText>
+            <linkAlternateText>Part 6 – Mappings, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part6/</linkUri>
+          </externalLink> - Mappings: specifies the transport mappings and data encodings supported by <token>OPCUA</token>.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

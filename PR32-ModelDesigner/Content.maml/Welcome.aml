@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="e34055b2-23e0-4f1a-9e00-52d75becaeec" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+      Welcome to <token>ASMD</token> - a key to open the <token>OPCUA</token><token>AS</token> world.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      There is no doubt that information technology and process control engineering have to be integrated to benefit from macro
+      optimization and synergy effect. The only question is how to do this. A new emerging standard from OPC Foundation is a proposal
+      to address this challenge. The OPC Unified Architecture is a set of specifications applicable to manufacturing software in
+      application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems.
+      These systems are intended to exchange information and to use command and control for industrial processes.
+      The <token>OPCUA</token> defines a common infrastructure model to facilitate this information exchange.
+    </para>
+      <para>
+      Industrial process management requires information of two types: process data and metadata. Metadata is a favorite keyword of
+      the IT community because it sounds more seriously than "data describing data". The same way as process data represents the process
+      physical state, metadata describes the process itself and in the <token>OPCUA</token> it is represented as <token>AS</token>.
+    </para>
+      <para>
+      The <token>AS</token> is intended to support integration by building common discipline, i.e. semantics (knowledge base) and
+      vocabulary - finally a language good enough to convey information up and down between levels of competence. If the parties want
+      to speak only, they do not need to know languages they use. It makes difference if we are going to talk to each other and we
+      can say that we are making the communicating parties interoperable. In other words, it is not enough to hear(transfer data),
+      we have to understand (how to interpret it). Without mutual understanding the voice is only an unpleasant noise. Unfortunately,
+      talking about the same we can use two different languages: colloquial and formal ones. An expert will say that the colloquial
+      language is ambiguous and cannot be used to convey more important information, and therefore should be avoided – I agree.
+      Beginners probably will complain that a very precise and knowledgeable incomprehensible sentence is only bullshit – I agree too.
+    </para>
+      <para>
+      The <token>AS</token> is a language, because it provides alphabet, syntax and semantic. The language is specific, because it is to
+      be used to describe a real-time process. It is also computer centric, because it allows exchanging information between systems used
+      to control industrial processes. Unfortunately, building completely unmanned systems is still science-fiction today. In spite
+      of effort spent on teaching machines our native language, we are unable yet to have a chat with them. Therefore learning the
+      <token>AS</token> now seems to be an inevitable process. It is inevitable, but a question arises for whom. Because it is to
+      be used for systems integration, the process involves plant people working at one level (responsible for process control)
+      and corporate people working at another level (responsible for process management). Additionally, both communities are waiting
+      for software tools developed by IT vendors that expand the population speaking the Address Space native language. The good news is
+      that it is not a spoken language, only writing ability is expected.
+    </para>
+      <para>
+      The last but not least question we have to address is if we really need a new dedicated language to read for example a drum
+      temperature – it is just a simple number. Of course the answer is no. But if at the same time we need to know that the
+      process consists of two drums connected by a pipe and the temperature of the first one is closely coupled with the temperature of
+      the other one, the answer becomes not so obvious. Recognizing also the fact that we have to deal with two kinds of information:
+    </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+          Static, e.g. nominal temperature and permanent connection
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+          Dynamic, e.g. current temperature and configuration of a valves, drums
+        </para>
+        </listItem>
+      </list>
+      <para>
+      it becomes clear that the Address Space concept has no competitors now and, therefore, we have no options in this respect and
+      the only subject for further discussion is how to learn it. The bad news is that using <token>AS</token> terminology the same
+      information can be expressed by an almost unlimited number of means. Additionally, as usual when learning languages including
+      the native one, the process is continuous and we can only talk about improving the language knowledge, because designing
+      a model for the real-time process we must apply the best practice in addition to syntax and semantic. In other words, to be
+      able to write not only a simple email but also a popular novel we have to couple the learning with training processes.
+    </para>
+      <para>
+      The main aim of the project <token>ASMD</token> is to bring together: learning, training and designing. To meet our objectives, we have just released:
+    </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+          Documentation as a help collection containing linked topics recommended as a starting point to understand, design, develop and implement the Unified Architecture Address Space
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+            <token>ASMD</token> that is a user-friendly tool supporting all aspects of
+          the <token>APCUA</token><token>AS</token> model designing process
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+          Documentation containing information about the Address Space Model Designer tool
+        </para>
+        </listItem>
+      </list>
+      <para>
+      To make this tool as useful as possible, the definition of the created <token>AS</token> can be saved to the XML file
+      compatible with the schema used by the <token>SDK</token> released by the <token>OPCF</token>.
+    </para>
+      <para>
+      Using the proposed approach you can learn how to develop, design a model, save it as XML and explore the created Address Space in the Unified Architecture environment in a couple of hours.
+    </para>
+      <alert>
+        <para>
+        The tool and documentation are for free now. Enjoy the trip to the Unified Architecture Address Space.
+      </para>
+      </alert>
+      <para>
+      You can find more about terms of use at <externalLink><linkText>CommServer vortal</linkText><linkAlternateText>CommServer terms of use.</linkAlternateText><linkUri>http://www.commsvr.com</linkUri></externalLink>. We will keep free access to the documentation and the tool as long as long as official release of the specifications have been published. We will try to make free access forever but now we cannot guarantee.
+    </para>
+      <para>
+      The content of the book is available online so it can be continuously improved to follow the specification development progress. The user's application takes the advantage of automatic self-update functionality to follow the software development progress. This application can be installed and run with minimal user interaction. Both those features guarantee that your development environment is always up to date.
+    </para>
+    </introduction>
+    <relatedSections>
+      <content>
+        <para>
+        Introduction to the <token>OPCUA</token></para>
+        <para>
+          <link xlink:href="c55db7e8-3f15-4556-b8db-12251d39ad0a" />
+        </para>
+        <para>
+        Introduction to the <token>OPCUA</token><token>AS</token></para>
+        <para>
+          <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />
+        </para>
+        <para>
+        Introduction to the <token>OPCUA</token><token>IM</token></para>
+        <para>
+          <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+        </para>
+        <para>
+          <token>ASMD</token> that is a user-friendly tool supporting all aspects of the <token>OPCUA</token><token>AS</token> model designing process.
+      </para>
+        <para>
+          <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" />
+        </para>
+      </content>
+    </relatedSections>
+    <relatedTopics>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

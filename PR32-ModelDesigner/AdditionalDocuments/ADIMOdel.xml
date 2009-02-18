@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetNamespace="http://opcfoundation.org/ADI/" TargetXmlNamespace="http://opcfoundation.org/ADI/" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="OPCADI" Prefix="ADI">http://opcfoundation.org/ADI/</Namespace>
+    <Namespace Name="OPCADI" Prefix="DI">http://opcfoundation.org/DI/</Namespace>
+    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</Namespace>
+  </Namespaces>
+  <ObjectType xmlns:q1="http://opcfoundation.org/DI/" SymbolicName="q1:TopologyElementType" xmlns:q2="http://opcfoundation.org/UA/" BaseType="q2:BaseObjectType">
+    <Children>
+      <Object SymbolicName="ParameterSet" TypeDefinition="q2:BaseObjectType" />
+      <Object SymbolicName="q2:MethodSet" TypeDefinition="q2:BaseObjectType" ModellingRule="Optional" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q3="http://opcfoundation.org/DI/" SymbolicName="q3:DeviceType" BaseType="q3:TopologyElementType" />
+  <DataType xmlns:q4="http://opcfoundation.org/DI/" SymbolicName="q4:AxisInformation" xmlns:q5="http://opcfoundation.org/UA/" BaseType="q5:BaseDataType" />
+  <ObjectType xmlns:q6="http://opcfoundation.org/DI/" SymbolicName="q6:FunctionalGroupType" xmlns:q7="http://opcfoundation.org/UA/" BaseType="q7:FolderType" />
+  <StateMachineType xmlns:q8="http://opcfoundation.org/ADI/" SymbolicName="q8:AnalyserDevice_OperatingModeStateMachineType" xmlns:q9="http://opcfoundation.org/UA/" BaseType="q9:FiniteStateMachineType" />
+  <StateMachineType xmlns:q10="http://opcfoundation.org/ADI/" SymbolicName="q10:AnalyserDevice_LocalModeStateMachineType" xmlns:q11="http://opcfoundation.org/UA/" BaseType="q11:FiniteStateMachineType" />
+  <StateMachineType xmlns:q12="http://opcfoundation.org/ADI/" SymbolicName="q12:AnalyserDevice_MaintenanceModeStateMachineType" xmlns:q13="http://opcfoundation.org/UA/" BaseType="q13:FiniteStateMachineType" />
+  <StateMachineType xmlns:q14="http://opcfoundation.org/ADI/" SymbolicName="q14:AnalyserChannelOperatingModeStateMachineType" xmlns:q15="http://opcfoundation.org/UA/" BaseType="q15:FiniteStateMachineType" />
+  <StateMachineType xmlns:q16="http://opcfoundation.org/ADI/" SymbolicName="q16:AnalyserChannelLocalModeStateMachineType" xmlns:q17="http://opcfoundation.org/UA/" BaseType="q17:FiniteStateMachineType" />
+  <StateMachineType xmlns:q18="http://opcfoundation.org/ADI/" SymbolicName="q18:AnalyserChannelMaintenanceModeStateMachineType" xmlns:q19="http://opcfoundation.org/UA/" BaseType="q19:FiniteStateMachineType" />
+  <StateMachineType xmlns:q20="http://opcfoundation.org/ADI/" SymbolicName="q20:AnalyserDeviceStateMachineType" xmlns:q21="http://opcfoundation.org/UA/" BaseType="q21:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="q20:Powerup" TypeDefinition="q21:InitialStateType" />
+      <Object SymbolicName="q20:Operating" TypeDefinition="q21:StateType" />
+      <Object SymbolicName="q20:Local" TypeDefinition="q21:StateType" />
+      <Object SymbolicName="q20:Maintenance" TypeDefinition="q21:StateType" />
+      <Object SymbolicName="q20:Shutdown" TypeDefinition="q21:StateType" />
+      <Object SymbolicName="q20:OperatingSubStateMachine" TypeDefinition="q20:AnalyserDevice_OperatingModeStateMachineType" />
+      <Object SymbolicName="q20:LocalSubStateMachine" TypeDefinition="q20:AnalyserDevice_LocalModeStateMachineType" />
+      <Object SymbolicName="q20:MaintenanceSubStateMachine" TypeDefinition="q20:AnalyserDevice_MaintenanceModeStateMachineType" />
+      <Object SymbolicName="q20:PowerupToOperatingTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:OperatingToLocalTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:OperatingToMaintenanceTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:LocalToOperatingTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:LocalToMaintenanceTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:MaintenanceToOperatingTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:MaintenanceToLocalTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:OperatingToShutdownTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:LocalToShutdownTransition" TypeDefinition="q21:TransitionType" />
+      <Object SymbolicName="q20:MaintenanceToShutdownTransition" TypeDefinition="q21:TransitionType" />
+      <Method SymbolicName="q20:Operate" />
+      <Method SymbolicName="q20:MaintenanceMethod" />
+    </Children>
+  </StateMachineType>
+  <StateMachineType xmlns:q22="http://opcfoundation.org/ADI/" SymbolicName="q22:AnalyserChannelStateMachineType" xmlns:q23="http://opcfoundation.org/UA/" BaseType="q23:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="q22:Powerup" TypeDefinition="q23:InitialStateType" />
+      <Object SymbolicName="q22:Operating" TypeDefinition="q23:StateType" />
+      <Object SymbolicName="q22:Local" TypeDefinition="q23:StateType" />
+      <Object SymbolicName="q22:Maintenance" TypeDefinition="q23:StateType" />
+      <Object SymbolicName="q22:Shutdown" TypeDefinition="q23:StateType" />
+      <Object SymbolicName="q22:OperatingSubStateMachine" TypeDefinition="q22:AnalyserChannelOperatingModeStateMachineType" />
+      <Object SymbolicName="q22:LocalSubStateMachine" TypeDefinition="q22:AnalyserChannelLocalModeStateMachineType" />
+      <Object SymbolicName="q22:MaintenanceSubStateMachine" TypeDefinition="q22:AnalyserChannelMaintenanceModeStateMachineType" />
+      <Object SymbolicName="q22:PowerupToOperatingTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:OperatingToLocalTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:OperatingToMaintenanceTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:LocalToOperatingTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:LocalToMaintenanceTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:MaintenanceToOperatingTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:MaintenanceToLocalTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:OperatingToShutdownTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:LocalToShutdownTransition" TypeDefinition="q23:TransitionType" />
+      <Object SymbolicName="q22:MaintenanceToShutdownTransition" TypeDefinition="q23:TransitionType" />
+      <Method SymbolicName="q22:Operate" />
+      <Method SymbolicName="q22:MaintenanceMethod" />
+    </Children>
+  </StateMachineType>
+  <StateMachineType xmlns:q24="http://opcfoundation.org/ADI/" SymbolicName="q24:AccessorySlotStateMachineType" xmlns:q25="http://opcfoundation.org/UA/" BaseType="q25:FiniteStateMachineType">
+    <Children>
+      <Object SymbolicName="q24:Powerup" TypeDefinition="q25:InitialStateType" />
+      <Object SymbolicName="q24:Empty" TypeDefinition="q25:StateType" />
+      <Object SymbolicName="q24:Inserting" TypeDefinition="q25:StateType" />
+      <Object SymbolicName="q24:Installed" TypeDefinition="q25:StateType" />
+      <Object SymbolicName="q24:Removing" TypeDefinition="q25:StateType" />
+      <Object SymbolicName="q24:Shutdown" TypeDefinition="q25:StateType" />
+      <Object SymbolicName="q24:PowerupToEmptyTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:EmptyToInsertingTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:InsertingToInstalledTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:InsertingTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:InsttalledToRemovingTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:InsertingToRemovingTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:RemovingToEmptyTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:RemovingTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:EmptyToShutdownTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:InsertingToShutdownTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:InstalledToShutdownTransition" TypeDefinition="q25:TransitionType" />
+      <Object SymbolicName="q24:RemovingToShutdownTransition" TypeDefinition="q25:TransitionType" />
+    </Children>
+  </StateMachineType>
+  <ObjectType xmlns:q26="http://opcfoundation.org/ADI/" SymbolicName="q26:AnalyserDeviceType" xmlns:q27="http://opcfoundation.org/DI/" BaseType="q27:DeviceType">
+    <Children>
+      <Object SymbolicName="q26:Configuration" TypeDefinition="q27:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Object SymbolicName="q26:Status" TypeDefinition="q27:FunctionalGroupType" MinCardinality="1" MaxCardinality="1">
+        <Children>
+          <Variable SymbolicName="q26:DiagnosticStatus" xmlns:q28="http://opcfoundation.org/UA/" DataType="q28:String" />
+          <Variable SymbolicName="q26:OutOfSpecification" xmlns:q29="http://opcfoundation.org/UA/" DataType="q29:Boolean" />
+          <Variable SymbolicName="q26:FunctionCheck" xmlns:q30="http://opcfoundation.org/UA/" DataType="q30:Boolean" />
+        </Children>
+      </Object>
+      <Object SymbolicName="q26:FactorySettings" TypeDefinition="q27:FunctionalGroupType">
+        <Children>
+          <Variable SymbolicName="q26:SerialNumber" xmlns:q31="http://opcfoundation.org/UA/" DataType="q31:String" />
+          <Variable SymbolicName="q26:RevisionCounter" xmlns:q32="http://opcfoundation.org/UA/" TypeDefinition="q32:AnalogItemType" DataType="q32:UInt32" />
+          <Variable SymbolicName="q26:Manufacturer" xmlns:q33="http://opcfoundation.org/UA/" DataType="q33:LocalizedText" />
+          <Variable SymbolicName="q26:Model" xmlns:q34="http://opcfoundation.org/UA/" DataType="q34:LocalizedText" />
+          <Variable SymbolicName="q26:DeviceRevision" xmlns:q35="http://opcfoundation.org/UA/" DataType="q35:String" />
+          <Variable SymbolicName="q26:SoftwareRevision" xmlns:q36="http://opcfoundation.org/UA/" DataType="q36:String" />
+          <Variable SymbolicName="q26:HardwareRevision" xmlns:q37="http://opcfoundation.org/UA/" DataType="q37:String" />
+          <Variable SymbolicName="q26:MACAddress" xmlns:q38="http://opcfoundation.org/UA/" DataType="q38:String" />
+        </Children>
+      </Object>
+      <Object SymbolicName="q26:AnalyserStateMachine" TypeDefinition="q26:AnalyserDeviceStateMachineType" MinCardinality="1" MaxCardinality="1" />
+      <Method SymbolicName="q26:GetConfiguration">
+        <OutputArguments>
+          <Argument Name="ConfigData" xmlns:q39="http://opcfoundation.org/UA/" DataType="q39:ByteString" />
+        </OutputArguments>
+      </Method>
+      <Method SymbolicName="q26:SetConfiguration">
+        <InputArguments>
+          <Argument Name="ConfigData" xmlns:q40="http://opcfoundation.org/UA/" DataType="q40:ByteString" />
+        </InputArguments>
+        <OutputArguments>
+          <Argument Name="ConfigDataDigest" xmlns:q41="http://opcfoundation.org/UA/" DataType="q41:String" />
+        </OutputArguments>
+      </Method>
+      <Method SymbolicName="q26:GetConfigDataDigest">
+        <OutputArguments>
+          <Argument Name="ConfigDataDigest" xmlns:q42="http://opcfoundation.org/UA/" DataType="q42:String" />
+        </OutputArguments>
+      </Method>
+      <Method SymbolicName="q26:Reset" />
+      <Method SymbolicName="q26:Start" />
+      <Method SymbolicName="q26:Stop" />
+      <Method SymbolicName="q26:Abort" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType xmlns:q43="http://opcfoundation.org/UA/">q43:HasOrderedComponent</ReferenceType>
+        <TargetId>q26:ChannelIdentifier1</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+  <ObjectType xmlns:q44="http://opcfoundation.org/ADI/" SymbolicName="q44:AnalyserChannelType" xmlns:q45="http://opcfoundation.org/UA/" BaseType="q45:BaseObjectType">
+    <Children>
+      <Object SymbolicName="q44:ParameterSet" TypeDefinition="q45:BaseObjectType" />
+      <Object SymbolicName="q44:AcquisitionStatus" xmlns:q46="http://opcfoundation.org/DI/" TypeDefinition="q46:FunctionalGroupType" MinCardinality="1" MaxCardinality="1">
+        <Children>
+          <Variable SymbolicName="q44:AcquisitionCycle" />
+        </Children>
+      </Object>
+      <Object SymbolicName="q44:AcquisitionSettings" xmlns:q47="http://opcfoundation.org/DI/" TypeDefinition="q47:FunctionalGroupType" MinCardinality="1" MaxCardinality="1">
+        <Children>
+          <Variable SymbolicName="q44:TimeBetweenSamples" TypeDefinition="q45:AnalogItemType" DataType="q45:Int32" />
+        </Children>
+      </Object>
+      <Object SymbolicName="q44:Configuration" xmlns:q48="http://opcfoundation.org/DI/" TypeDefinition="q48:FunctionalGroupType" MinCardinality="1" MaxCardinality="1">
+        <Children>
+          <Variable SymbolicName="q44:ChannelId" TypeDefinition="q45:DataItemType" DataType="q45:String" />
+        </Children>
+      </Object>
+      <Object SymbolicName="q44:Status" xmlns:q49="http://opcfoundation.org/DI/" TypeDefinition="q49:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Object SymbolicName="q44:AcquisitionData" xmlns:q50="http://opcfoundation.org/DI/" TypeDefinition="q50:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Object SymbolicName="q44:ChemometricModelSettings" xmlns:q51="http://opcfoundation.org/DI/" TypeDefinition="q51:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Object SymbolicName="q44:Context" xmlns:q52="http://opcfoundation.org/DI/" TypeDefinition="q52:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Object SymbolicName="q44:ChannelStateMachine" TypeDefinition="q44:AnalyserDeviceStateMachineType" MinCardinality="1" MaxCardinality="1" />
+      <Method SymbolicName="q44:StartSingleAcquisition" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q53="http://opcfoundation.org/ADI/" SymbolicName="q53:AccessorySlotType" xmlns:q54="http://opcfoundation.org/UA/" BaseType="q54:FolderType">
+    <Children>
+      <Property SymbolicName="q53:IsEnabled" DataType="q54:Boolean" />
+      <Property SymbolicName="q53:IsHotSwappable" DataType="q54:Boolean" />
+      <Object SymbolicName="q53:AccessorySlotStateMachine" TypeDefinition="q53:AnalyserDeviceStateMachineType" MinCardinality="1" MaxCardinality="1" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q55="http://opcfoundation.org/ADI/" SymbolicName="q55:AccessoryType" xmlns:q56="http://opcfoundation.org/UA/" BaseType="q56:BaseObjectType">
+    <Children>
+      <Object SymbolicName="q55:ParameterSet" TypeDefinition="q56:BaseObjectType" />
+      <Object SymbolicName="q55:Status" xmlns:q57="http://opcfoundation.org/DI/" TypeDefinition="q57:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Object SymbolicName="q55:Configuration" xmlns:q58="http://opcfoundation.org/DI/" TypeDefinition="q58:FunctionalGroupType" MinCardinality="1" MaxCardinality="1" />
+      <Property SymbolicName="q55:IsHotSwappable" DataType="q56:Boolean" />
+      <Property SymbolicName="q55:IsReady" DataType="q56:Boolean" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q59="http://opcfoundation.org/ADI/" SymbolicName="q59:SpectrometerDeviceType" BaseType="q59:AnalyserDeviceType" />
+  <ObjectType xmlns:q60="http://opcfoundation.org/ADI/" SymbolicName="q60:MassSpectrometerDeviceType" BaseType="q60:AnalyserDeviceType" />
+  <ObjectType xmlns:q61="http://opcfoundation.org/ADI/" SymbolicName="q61:ParticleSizeMonitorDeviceType" BaseType="q61:AnalyserDeviceType" />
+  <ObjectType xmlns:q62="http://opcfoundation.org/ADI/" SymbolicName="q62:AcousticSpectrometerDeviceType" BaseType="q62:AnalyserDeviceType" />
+  <ObjectType xmlns:q63="http://opcfoundation.org/ADI/" SymbolicName="q63:ChromatographDeviceTypee" BaseType="q63:AnalyserDeviceType" />
+  <ObjectType xmlns:q64="http://opcfoundation.org/ADI/" SymbolicName="q64:NMRDeviceType" BaseType="q64:AnalyserDeviceType" />
+  <VariableType xmlns:q65="http://opcfoundation.org/ADI/" SymbolicName="q65:YArrayItemType" xmlns:q66="http://opcfoundation.org/UA/" BaseType="q66:DataItemType">
+    <Children>
+      <Property SymbolicName="q65:InstrumentRange" ModellingRule="Optional" DataType="q66:Range" />
+      <Property SymbolicName="q65:EURange" DataType="q66:Range" />
+      <Property SymbolicName="q65:EngineeringUnits" DataType="q66:EUInformation" />
+      <Property SymbolicName="q65:xAxisDefinition" xmlns:q67="http://opcfoundation.org/DI/" DataType="q67:AxisInformation" />
+      <Property SymbolicName="q65:Offset" DataType="q66:Int64" />
+    </Children>
+  </VariableType>
+  <VariableType xmlns:q68="http://opcfoundation.org/ADI/" SymbolicName="q68:XYArrayItemType" xmlns:q69="http://opcfoundation.org/UA/" BaseType="q69:DataItemType">
+    <Children>
+      <Property SymbolicName="q68:InstrumentRange" ModellingRule="Optional" DataType="q69:Range" />
+      <Property SymbolicName="q68:EURange" DataType="q69:Range" />
+      <Property SymbolicName="q68:EngineeringUnits" DataType="q69:EUInformation" />
+      <Property SymbolicName="q68:xAxisDefinition" xmlns:q70="http://opcfoundation.org/DI/" DataType="q70:AxisInformation" />
+      <Property SymbolicName="q68:Offset" DataType="q69:Int64" />
+    </Children>
+  </VariableType>
+  <VariableType xmlns:q71="http://opcfoundation.org/ADI/" SymbolicName="q71:ImageItemType" xmlns:q72="http://opcfoundation.org/UA/" BaseType="q72:DataItemType">
+    <Children>
+      <Property SymbolicName="q71:InstrumentRange" ModellingRule="Optional" DataType="q72:Range" />
+      <Property SymbolicName="q71:EURange" DataType="q72:Range" />
+      <Property SymbolicName="q71:EngineeringUnits" DataType="q72:EUInformation" />
+      <Property SymbolicName="q71:xAxisDefinition" xmlns:q73="http://opcfoundation.org/DI/" DataType="q73:AxisInformation" />
+      <Property SymbolicName="q71:yAxisDefinition" xmlns:q74="http://opcfoundation.org/DI/" DataType="q74:AxisInformation" />
+      <Property SymbolicName="q71:Offset" DataType="q72:Int64" />
+    </Children>
+  </VariableType>
+  <VariableType xmlns:q75="http://opcfoundation.org/ADI/" SymbolicName="q75:CubeItemType" xmlns:q76="http://opcfoundation.org/UA/" BaseType="q76:DataItemType">
+    <Children>
+      <Property SymbolicName="q75:InstrumentRange" ModellingRule="Optional" DataType="q76:Range" />
+      <Property SymbolicName="q75:EURange" DataType="q76:Range" />
+      <Property SymbolicName="q75:EngineeringUnits" DataType="q76:EUInformation" />
+      <Property SymbolicName="q75:xAxisDefinition" xmlns:q77="http://opcfoundation.org/DI/" DataType="q77:AxisInformation" />
+      <Property SymbolicName="q75:yAxisDefinition" xmlns:q78="http://opcfoundation.org/DI/" DataType="q78:AxisInformation" />
+      <Property SymbolicName="q75:zAxisDefinition" xmlns:q79="http://opcfoundation.org/DI/" DataType="q79:AxisInformation" />
+      <Property SymbolicName="q75:Offset" DataType="q76:Int64" />
+    </Children>
+  </VariableType>
+  <VariableType xmlns:q80="http://opcfoundation.org/ADI/" SymbolicName="q80:NDimensionArrayItemType" xmlns:q81="http://opcfoundation.org/UA/" BaseType="q81:DataItemType">
+    <Children>
+      <Property SymbolicName="q80:InstrumentRange" TypeDefinition="q81:PropertyType" ModellingRule="Optional" DataType="q81:Range" />
+      <Property SymbolicName="q80:EURange" TypeDefinition="q81:PropertyType" DataType="q81:Range" />
+      <Property SymbolicName="q80:EngineeringUnits" TypeDefinition="q81:PropertyType" DataType="q81:EUInformation" />
+      <Property SymbolicName="q80:axisDefinition" TypeDefinition="q81:PropertyType" xmlns:q82="http://opcfoundation.org/DI/" DataType="q82:AxisInformation" ValueRank="Array" />
+      <Property SymbolicName="q80:Offset" TypeDefinition="q81:PropertyType" DataType="q81:Int64" />
+    </Children>
+  </VariableType>
+  <VariableType xmlns:q83="http://opcfoundation.org/ADI/" SymbolicName="q83:ChemometricModelType" xmlns:q84="http://opcfoundation.org/UA/" BaseType="q84:BaseDataVariableType">
+    <Children>
+      <Property SymbolicName="q83:Name" TypeDefinition="q84:PropertyType" DataType="q84:LocalizedText" />
+      <Property SymbolicName="q83:CreationDate" TypeDefinition="q84:PropertyType" DataType="q84:DateTime" />
+      <Property SymbolicName="q83:Description" TypeDefinition="q84:PropertyType" DataType="q84:LocalizedText" />
+    </Children>
+  </VariableType>
+  <VariableType xmlns:q85="http://opcfoundation.org/ADI/" SymbolicName="q85:ProcessVariableType" xmlns:q86="http://opcfoundation.org/UA/" BaseType="q86:BaseDataVariableType" />
+  <DataType xmlns:q87="http://opcfoundation.org/ADI/" SymbolicName="q87:AcquisitionCycleEnumeration" xmlns:q88="http://opcfoundation.org/UA/" BaseType="q88:Enumeration">
+    <Fields>
+      <Field Name="UNDEFINED_0" Identifier="0">
+        <Description>Not used</Description>
+      </Field>
+      <Field Name="CLEANING_1" Identifier="1">
+        <Description>Cleaning cycles</Description>
+      </Field>
+    </Fields>
+  </DataType>
+  <Object xmlns:q89="http://opcfoundation.org/ADI/" SymbolicName="q89:ChannelIdentifier1" TypeDefinition="q89:AnalyserChannelType" />
+</ModelDesign>

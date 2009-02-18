@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7cd6ebfb-3582-4ae7-8b1c-89e038d9bb66" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      The <token>OPCUA</token> meta model is represented by UML classes and UML objects marked with the stereotype <codeInline><![CDATA[<<TypeExtension>>]]></codeInline>. Those stereotyped UML objects represent <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data types</link> or <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134">reference types</link>. The domain model can contain user-defined reference types and data types, also marked as <codeInline><![CDATA[<<TypeExtension>>]]></codeInline>. In addition, the domain model contains  <link xlink:href="0d741b40-7d47-4aa1-852b-fe9007394b7f">object types</link>, <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36">variable types</link> etc. represented as UML objects (see Figure 1).
+    </para>
+      <para>
+      The <token>OPCF</token> specifies not only the <token>OPCUA</token> meta model, but also defines some nodes to organise the <token>AS</token> and to provide information about the server as described in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Background of OPC UA Meta Model </caption>
+        <image placement="center" xlink:href="081c57f9-eb46-4180-87fc-25c578041ec0" />
+      </mediaLink>
+    </introduction>
+    <section>
+      <title>Notation</title>
+      <content>
+        <para>
+        An example of a UML class representing the <token>OPCUA</token> concept <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /> node class is given in the UML class diagram in Figure 2. OPC attributes inherit from the abstract class Attribute and have a value identifying their data type. They are composed to a node either optional (0..1) or required (1), like <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> to BaseNode in Figure 2.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Notation (I)</caption>
+          <image placement="center" xlink:href="9424aa6e-9ed4-48fa-adaa-0fd5047992a4" />
+        </mediaLink>
+        <para>
+        UML object diagrams are used to display <codeInline><![CDATA[<<TypeExtension>>]]></codeInline> objects (e.g. <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> in Figure 3). In object diagrams, OPC Attributes are represented as UML attributes without data types and marked with the stereotype <codeInline><![CDATA[<<Attribute>>]]></codeInline>, like <computerOutputInline>InverseName</computerOutputInline> in the UML object <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>. They have values, like <computerOutputInline>InverseName = ComponentOf</computerOutputInline> for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>. To keep the object diagrams simple, not all Attributes are shown (e.g. the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>).
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Notation (II)</caption>
+          <image placement="center" xlink:href="7003a658-884e-4557-a81b-1696a9de528c" />
+        </mediaLink>
+        <para>
+        OPC references are represented as UML associations marked with the stereotype <codeInline><![CDATA[<<Reference>>]]></codeInline>. If a particular <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134">reference type</link> is used, its name is used as role name; identifying the direction of the reference (e.g. <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#Aggregates">Aggregates</link> has the subtype <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>). For simplicity, the inverse role name is not shown (in the example SubclassOf). When no role name is provided, it means that any <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> can be used (only valid for class diagrams).
+      </para>
+        <para>
+        There are some special attributes in <token>OPCUA</token> containing a <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> as data type and thereby referencing another node. Those attributes are represented as associations marked with the stereotype <codeInline><![CDATA[<<Attribute>>]]></codeInline>. The name of the attribute is displayed as role name of the target node.
+      </para>
+        <para>
+        The value of the OPC attribute <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> is represented by the UML object name, e.g. the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> of the UML object <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> in Figure 3 is “HasComponent”.
+      </para>
+        <para>
+        To highlight the classes explained in a class diagram, they are marked grey (e.g. BaseNode in Figure 2). Only those classes have all their relationships to other classes and attributes shown in the diagram. For the other classes, we provide only those attributes and relationships needed to understand the main classes of the diagram.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Meta Model</title>
+      <content>
+        <alert>
+          <para>
+          The <token>OPCUA</token> meta model can be extended by adding attributes and defining new reference types.
+        </para>
+        </alert>
+      </content>
+      <sections>
+        <section>
+          <title>BaseNode</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 4">BaseNode</caption>
+              <image placement="center" xlink:href="dec12486-c803-4bd3-86ae-c7dda6018cf8" />
+            </mediaLink>
+          </content>
+        </section>
+        <section>
+          <title>ReferenceType</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 5">Reference and ReferenceType</caption>
+              <image placement="center" xlink:href="d476d68d-8fc9-45a5-a8b6-ccdbafc516f9" />
+            </mediaLink>
+            <para>
+            If <computerOutputInline>Symmetric</computerOutputInline> is “false” and <computerOutputInline>IsAbstract</computerOutputInline> is “false” an <computerOutputInline>InverseName</computerOutputInline> shall be provided.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Predefined ReferenceTypes</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 6">Predefined Reference Types</caption>
+              <image placement="center" xlink:href="eaeee5db-a983-4790-9f69-3821a1f5c37f" />
+            </mediaLink>
+          </content>
+        </section>
+        <section>
+          <title>Attributes</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 7">Attributes</caption>
+              <image placement="center" xlink:href="02c4cc6a-dca8-4452-ac33-636f6be55614" />
+            </mediaLink>
+            <para>
+            There may be more attributes defined.
+          </para>
+            <para>
+            Attributes used for references, which have a <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> as DataType, are not shown in this diagram but as stereotyped associations in the other diagrams.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Object and ObjectType</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 8">Object and ObjectType</caption>
+              <image placement="center" xlink:href="5c6b2b1d-bf1b-4ca1-99dc-b760b1c541c5" />
+            </mediaLink>
+          </content>
+        </section>
+        <section>
+          <title>EventNotifier</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 9">EventNotifier</caption>
+              <image placement="center" xlink:href="f88c5f55-7f2c-4359-8eb7-daf9b7944a5d" />
+            </mediaLink>
+          </content>
+        </section>
+        <section>
+          <title>Variable and VariableType</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 10">Variable and VariableType</caption>
+              <image placement="center" xlink:href="97e5ec9a-65c8-4fb2-a41e-5d88afe245a6" />
+            </mediaLink>
+            <para>
+            The data type (referred with DataType attribute) of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> shall be the same or a subtype of the data type of its <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> (referred with <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link>).
+          </para>
+            <para>
+            If a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> points to a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> from a BaseNode "A" the following constraints apply:
+          </para>
+            <para>
+            The <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> shall not be the source node of a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> or any other <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d#HierarchicalReferences">HierarchicalReferences</link>.
+          </para>
+            <para>
+            All variables having "A" as the source node of a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> reference shall have a unique <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> in the context of "A".
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Method</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 11">Method</caption>
+              <image placement="center" xlink:href="34127b20-71f0-4c02-963a-e195eaf3f80d" />
+            </mediaLink>
+          </content>
+        </section>
+        <section>
+          <title>DataType</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 12">DataType</caption>
+              <image placement="center" xlink:href="fd8616ea-7911-42fe-a98c-925b7e21ba4b" />
+            </mediaLink>
+          </content>
+        </section>
+        <section>
+          <title>View</title>
+          <content>
+            <mediaLink>
+              <caption placement="after" lead="Figure 13">View</caption>
+              <image placement="center" xlink:href="42110791-e191-4af6-9336-355266b0c72c" />
+            </mediaLink>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

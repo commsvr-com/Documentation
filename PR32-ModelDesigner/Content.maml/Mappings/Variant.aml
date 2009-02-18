@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="3984a505-13d7-4153-991e-47f8f3556f78" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      A Variant is a union of all built-in data types including an ExtensionObject. Variants can also contain arrays of any of these built-in types. Variants are used to store any value or parameter with  a data type of BaseDataType or one of its subtypes.
+    </para>
+      <para>
+      Variants can be empty. An empty Variant is described as having a Null value and should be treated like a NULL column in a SQL database. A Null value in a Variant may not be the same as a Null value for data types that support Nulls such as Strings. For this reason, all DataEncodings shall preserve this distinction when encoding Variants.
+    </para>
+      <para>
+      Variants can contain arrays of Variants but they cannot directly contain another Variant.
+    </para>
+      <para>
+      Variants cannot contain arrays of Bytes. Parameters that are defined as arrays of Bytes are stored as ByteStrings in a Variant.
+    </para>
+      <para>
+      DiagnosticInfo type only has meaning when returned in a response message with an associated StatusCode. As a result, Variants cannot contain instances of DiagnosticInfo.
+    </para>
+      <para>
+      Variables with a DataType of BaseDataType are mapped to a Variant, however, the ValueRank   and ArrayDimensions Attributes place restrictions on what is allowed in the Variant. For example, if the ValueRank is Scalar then the Variant may only contain scalar values.
+    </para>
+    </introduction>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

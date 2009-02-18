@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="92f04f9b-1fd7-4668-8deb-626991b93201" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />-->
+    <summary>
+      <para> Methods are lightweight functions, whose scope is bounded by an owning object, similar to the methods of a class in object-oriented programming or an owning object type, similar to static methods of a class.</para>
+    </summary>
+    <introduction>
+      <para>
+      Methods define callable functions. Methods are invoked using the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">Call service</link>. Method invocations are not represented in the <token>AS</token>. Method invocations always run to completion and always return responses when complete. Methods are defined using the Method node class.
+    </para>
+      <para>
+      The Method node class inherits the base attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /> node class. The following subsections describe main attributes, references and properties for the Method node class. Methods may use additional references to define relationships to other nodes. No restrictions are placed on the types of references used or on the node classes of the nodes that may be referenced. However, restrictions may be defined by the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> excluding its use for methods. Standard reference types are described in the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" /> section.
+    </para>
+      <para>
+      A Method shall always be the target node of at least one <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> reference. The source node of these <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> references shall be an Object or an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />. If a Method is called, the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of one of those nodes shall be put into the Call service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> as parameter to detect the context of the Method operation.
+    </para>
+      <para>
+      If the Method is used as <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18">instance declaration</link> all nodes referenced with hierarchical references in forward direction shall have unique <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> values in the context of this Method.
+    </para>
+    </introduction>
+    <section>
+      <title>Attributes</title>
+      <content>
+      </content>
+      <sections>
+        <section>
+          <title>Executable</title>
+          <content>
+            <para>
+            The Executable attribute indicates whether the Method is executable, not taking user access rights into account. If the <token>OPCUA</token> server cannot get the Executable information from the underlying system, it should state that it is executable. If a Method is called, the server should transfer this request and return the corresponding StatusCode if such a request is rejected. StatusCodes are described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>UserExecutable</title>
+          <content>
+            <para>
+            The UserExecutable attribute indicates whether the Method is executable, taking user access rights into account. If the <token>OPCUA</token> server cannot get any user rights related information from the underlying system, it should use the same value as used in the Executable attribute. The UserExecutable attribute can be set to <computerOutputInline>False</computerOutputInline>, even if the Executable attribute is set to <computerOutputInline>True</computerOutputInline>, but it shall be set to <computerOutputInline>False</computerOutputInline> if the Executable attribute is set to <computerOutputInline>False</computerOutputInline>.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section>
+      <title>References</title>
+      <content>
+      </content>
+      <sections>
+        <section>
+          <title>HasProperty</title>
+          <content>
+            <para>
+            Properties may be defined for methods using <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> reference. The properties InputArguments and OutputArguments specify the input arguments and output arguments of the Method. Both contain an array of the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Argument">Argument</link> data type. An empty array a Property that is not provided indicates that there are no input arguments or output arguments for the Method. The Property NodeVersion indicates the version of the Method. There are no additional Properties defined for Methods in this document.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>HasModellingRule</title>
+          <content>
+            <para>
+            To specify its modelling rule, a Method can use at most one <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModellingRule">HasModellingRule</link> reference pointing to a modelling rule object.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>HasModelParent</title>
+          <content>
+            <para>
+            A Method shall use at most one <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModelParent">HasModelParent</link> reference to specify its <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModelParent">model parent</link>.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>GeneratesEvent</title>
+          <content>
+            <para>
+              <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> references identify that methods will generate an event of the specified <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098">event type</link> or one of its subtypes for every call of the Method object. A server shall always generate one event for each referenced <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098">event type</link> when a Method is successfully called.
+          </para>
+            <para>
+            Servers should make <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> references bidirectional references. However, it is allowed to be unidirectional when the server is not able to expose the inverse direction pointing from the event type to each Method generating the event type.
+          </para>
+            <para>
+              <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> references are optional, i.e. the call of a Method may produce events of an event type that is not referenced with a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> reference by the Method.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />
+      <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />
+      <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent standard reference type</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModellingRule">HasModellingRule standard reference type</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModelParent">HasModelParent standard reference type</link>
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Argument">Argument standard data type</link>
+      <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

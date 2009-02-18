@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetNamespace="http://opcfoundation.org/UA/Sample/" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="Sample" Prefix="Opc.Ua.Sample">http://opcfoundation.org/UA/Sample/</Namespace>
+  </Namespaces>
+  <ReferenceType xmlns:q1="http://opcfoundation.org/UA/Sample/" SymbolicName="q1:FlowTo" xmlns:q2="http://opcfoundation.org/UA/" BaseType="q2:NonHierarchicalReferences">
+    <Description>A reference that indicates a flow between two objects.</Description>
+    <InverseName>FlowFrom</InverseName>
+  </ReferenceType>
+  <ReferenceType xmlns:q3="http://opcfoundation.org/UA/Sample/" SymbolicName="q3:HotFlowTo" BaseType="q3:FlowTo">
+    <Description>A reference that indicates a high temperature flow between two objects.</Description>
+    <InverseName>HotFlowFrom</InverseName>
+  </ReferenceType>
+  <ReferenceType xmlns:q4="http://opcfoundation.org/UA/Sample/" SymbolicName="q4:SignalTo" xmlns:q5="http://opcfoundation.org/UA/" BaseType="q5:NonHierarchicalReferences">
+    <Description>A reference that indicates an electrical signal between two variables.</Description>
+    <InverseName>SignalFrom</InverseName>
+  </ReferenceType>
+  <ObjectType xmlns:q6="http://opcfoundation.org/UA/Sample/" SymbolicName="q6:GenericControllerType" xmlns:q7="http://opcfoundation.org/UA/" BaseType="q7:BaseObjectType">
+    <Description>A generic PID controller</Description>
+    <Children>
+      <Property SymbolicName="q6:Measurement" DataType="q7:Double" />
+      <Property SymbolicName="q6:SetPoint" DataType="q7:Double" AccessLevel="ReadWrite" />
+      <Property SymbolicName="q6:ControlOut" DataType="q7:Double" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q8="http://opcfoundation.org/UA/Sample/" SymbolicName="q8:GenericSensorType" xmlns:q9="http://opcfoundation.org/UA/" BaseType="q9:BaseObjectType">
+    <Description>A generic sensor that read a process value.</Description>
+    <Children>
+      <Variable SymbolicName="q8:Output" TypeDefinition="q9:AnalogItemType" DataType="q9:Double" />
+      <Object SymbolicName="q8:DeviceFailure" TypeDefinition="q9:ConditionType" ModellingRule="Optional" />
+      <Object SymbolicName="q8:RecalibrateDialog" TypeDefinition="q9:OkCancelDialogConditionType" ModellingRule="Optional" />
+      <Object SymbolicName="q8:RecalibrateCompleteDialog" TypeDefinition="q9:OkDialogConditionType" ModellingRule="Optional" />
+      <Object SymbolicName="q8:RecalibrateOptionsDialog" TypeDefinition="q9:YesNoCancelDialogConditionType" ModellingRule="Optional" />
+      <Object SymbolicName="q8:PhaseInverted" TypeDefinition="q9:AcknowledgeableConditionType" ModellingRule="Optional" />
+      <Object SymbolicName="q8:LevelAlarm" TypeDefinition="q9:MultiLevelAlarmType" ModellingRule="Optional" />
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q9:HasEventSource</ReferenceType>
+        <TargetId>q8:GenericSensorType_DeviceFailure</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q9:HasEventSource</ReferenceType>
+        <TargetId>q8:GenericSensorType_RecalibrateDialog</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q9:HasEventSource</ReferenceType>
+        <TargetId>q8:GenericSensorType_RecalibrateCompleteDialog</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q9:HasEventSource</ReferenceType>
+        <TargetId>q8:GenericSensorType_RecalibrateOptionsDialog</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q9:HasEventSource</ReferenceType>
+        <TargetId>q8:GenericSensorType_LevelAlarm</TargetId>
+      </Reference>
+      <Reference IsOneWay="true">
+        <ReferenceType>q9:GeneratesEvent</ReferenceType>
+        <TargetId>q9:ConditionType</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+  <ObjectType xmlns:q10="http://opcfoundation.org/UA/Sample/" SymbolicName="q10:GenericActuatorType" xmlns:q11="http://opcfoundation.org/UA/" BaseType="q11:BaseObjectType">
+    <Description>Represents a piece of equipment that causes some action to occur.</Description>
+    <Children>
+      <Variable SymbolicName="q10:Input" TypeDefinition="q11:AnalogItemType" DataType="q11:Double" AccessLevel="Write" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q12="http://opcfoundation.org/UA/Sample/" SymbolicName="q12:CustomControllerType" xmlns:q13="http://opcfoundation.org/UA/" BaseType="q13:BaseObjectType">
+    <Description>A custom PID controller with 3 inputs</Description>
+    <Children>
+      <Property SymbolicName="q12:Input1" DataType="q13:Double" AccessLevel="Write" />
+      <Property SymbolicName="q12:Input2" DataType="q13:Double" AccessLevel="Write" />
+      <Property SymbolicName="q12:Input3" DataType="q13:Double" AccessLevel="Write" />
+      <Property SymbolicName="q12:ControlOut" DataType="q13:Double" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q14="http://opcfoundation.org/UA/Sample/" SymbolicName="q14:ValveType" BaseType="q14:GenericActuatorType">
+    <Description>An actuator that controls the flow through a pipe.</Description>
+  </ObjectType>
+  <ObjectType xmlns:q15="http://opcfoundation.org/UA/Sample/" SymbolicName="q15:LevelControllerType" BaseType="q15:GenericControllerType">
+    <Description>A controller for the level of a fluid in a drum.</Description>
+  </ObjectType>
+  <ObjectType xmlns:q16="http://opcfoundation.org/UA/Sample/" SymbolicName="q16:FlowControllerType" BaseType="q16:GenericControllerType">
+    <Description>A controller for the flow of a fluid through a pipe.</Description>
+  </ObjectType>
+  <ObjectType xmlns:q17="http://opcfoundation.org/UA/Sample/" SymbolicName="q17:LevelIndicatorType" BaseType="q17:GenericSensorType">
+    <Description>A sensor that reports the level of a liquid in a tank.</Description>
+  </ObjectType>
+  <ObjectType xmlns:q18="http://opcfoundation.org/UA/Sample/" SymbolicName="q18:FlowTransmitterType" BaseType="q18:GenericSensorType">
+    <Description>A sensor that reports the flow of a liquid through a pipe.</Description>
+  </ObjectType>
+  <Method xmlns:q19="http://opcfoundation.org/UA/Sample/" SymbolicName="q19:CreateInstance">
+    <Description>Creates an instance of an object or variable.</Description>
+    <InputArguments>
+      <Argument Name="ParentId" xmlns:q20="http://opcfoundation.org/UA/" DataType="q20:NodeId">
+        <Description>The parent of the new instance.</Description>
+      </Argument>
+      <Argument Name="ReferenceTypeId" xmlns:q21="http://opcfoundation.org/UA/" DataType="q21:NodeId">
+        <Description>The reference from the parent to the new instance.</Description>
+      </Argument>
+      <Argument Name="BrowseName" xmlns:q22="http://opcfoundation.org/UA/" DataType="q22:QualifiedName">
+        <Description>The browse name for the new instance.</Description>
+      </Argument>
+    </InputArguments>
+    <OutputArguments>
+      <Argument Name="InstanceId" xmlns:q23="http://opcfoundation.org/UA/" DataType="q23:NodeId">
+        <Description>The identifier assigned to the new instance.</Description>
+      </Argument>
+    </OutputArguments>
+  </Method>
+  <ObjectType xmlns:q24="http://opcfoundation.org/UA/Sample/" SymbolicName="q24:BoilerInputPipeType" xmlns:q25="http://opcfoundation.org/UA/" BaseType="q25:FolderType">
+    <Children>
+      <Object SymbolicName="q24:FlowTransmitter1" TypeDefinition="q24:FlowTransmitterType" SupportsEvents="true">
+        <BrowseName>FTX001</BrowseName>
+      </Object>
+      <Object SymbolicName="q24:Valve" TypeDefinition="q24:ValveType" SupportsEvents="true">
+        <BrowseName>ValveX001</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q25:HasNotifier</ReferenceType>
+        <TargetId>q24:BoilerInputPipeType_FlowTransmitter1</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+  <ObjectType xmlns:q26="http://opcfoundation.org/UA/Sample/" SymbolicName="q26:BoilerDrumType" xmlns:q27="http://opcfoundation.org/UA/" BaseType="q27:FolderType">
+    <Children>
+      <Object SymbolicName="q26:LevelIndicator" TypeDefinition="q26:LevelIndicatorType" SupportsEvents="true">
+        <BrowseName>LIX001</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q27:HasNotifier</ReferenceType>
+        <TargetId>q26:BoilerDrumType_LevelIndicator</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+  <ObjectType xmlns:q28="http://opcfoundation.org/UA/Sample/" SymbolicName="q28:BoilerOutputPipeType" xmlns:q29="http://opcfoundation.org/UA/" BaseType="q29:FolderType">
+    <Children>
+      <Object SymbolicName="q28:FlowTransmitter2" TypeDefinition="q28:FlowTransmitterType" SupportsEvents="true">
+        <BrowseName>FTX002</BrowseName>
+      </Object>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q29:HasNotifier</ReferenceType>
+        <TargetId>q28:BoilerOutputPipeType_FlowTransmitter2</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+  <ObjectType xmlns:q30="http://opcfoundation.org/UA/Sample/" SymbolicName="q30:BoilerType" xmlns:q31="http://opcfoundation.org/UA/" BaseType="q31:BaseObjectType">
+    <Description>A boiler used to produce stream.</Description>
+    <Children>
+      <Object SymbolicName="q30:InputPipe" TypeDefinition="q30:BoilerInputPipeType" SupportsEvents="true">
+        <BrowseName>PipeX001</BrowseName>
+        <Children>
+          <Object SymbolicName="q30:FlowTransmitter1">
+            <BrowseName>FTX001</BrowseName>
+            <Children>
+              <Variable SymbolicName="q30:Output" />
+            </Children>
+          </Object>
+          <Object SymbolicName="q30:Valve">
+            <BrowseName>ValveX001</BrowseName>
+            <Children>
+              <Variable SymbolicName="q30:Input" />
+            </Children>
+          </Object>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>q30:FlowTo</ReferenceType>
+            <TargetId>q30:BoilerType_Drum</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:Drum" TypeDefinition="q30:BoilerDrumType" SupportsEvents="true">
+        <BrowseName>DrumX001</BrowseName>
+        <Children>
+          <Object SymbolicName="q30:LevelIndicator">
+            <BrowseName>LIX001</BrowseName>
+            <Children>
+              <Variable Declaration="q30:GenericSensorType_Output" />
+            </Children>
+          </Object>
+        </Children>
+        <References>
+          <Reference>
+            <ReferenceType>q30:HotFlowTo</ReferenceType>
+            <TargetId>q30:BoilerType_OutputPipe</TargetId>
+          </Reference>
+        </References>
+      </Object>
+      <Object SymbolicName="q30:OutputPipe" TypeDefinition="q30:BoilerOutputPipeType" SupportsEvents="true">
+        <BrowseName>PipeX002</BrowseName>
+        <Children>
+          <Object SymbolicName="q30:FlowTransmitter2">
+            <BrowseName>FTX002</BrowseName>
+            <Children>
+              <Variable SymbolicName="q30:Output" />
+            </Children>
+          </Object>
+        </Children>
+      </Object>
+      <Object SymbolicName="q30:FlowController" TypeDefinition="q30:FlowControllerType">
+        <BrowseName>FCX001</BrowseName>
+        <Children>
+          <Property SymbolicName="q30:Measurement">
+            <References>
+              <Reference IsInverse="true">
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_InputPipe_FlowTransmitter1_Output</TargetId>
+              </Reference>
+            </References>
+          </Property>
+          <Property SymbolicName="q30:SetPoint" />
+          <Property SymbolicName="q30:ControlOut">
+            <References>
+              <Reference>
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_InputPipe_Valve_Input</TargetId>
+              </Reference>
+            </References>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q30:LevelController" TypeDefinition="q30:LevelControllerType">
+        <BrowseName>LCX001</BrowseName>
+        <Children>
+          <Property SymbolicName="q30:Measurement">
+            <References>
+              <Reference IsInverse="true">
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_Drum_LevelIndicator_Output</TargetId>
+              </Reference>
+            </References>
+          </Property>
+          <Property SymbolicName="q30:SetPoint" />
+          <Property SymbolicName="q30:ControlOut">
+            <References>
+              <Reference>
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_CustomController_Input1</TargetId>
+              </Reference>
+            </References>
+          </Property>
+        </Children>
+      </Object>
+      <Object SymbolicName="q30:CustomController" TypeDefinition="q30:CustomControllerType">
+        <BrowseName>CCX001</BrowseName>
+        <Children>
+          <Property SymbolicName="q30:Input1" />
+          <Property SymbolicName="q30:Input2">
+            <References>
+              <Reference IsInverse="true">
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_InputPipe_FlowTransmitter1_Output</TargetId>
+              </Reference>
+            </References>
+          </Property>
+          <Property SymbolicName="q30:Input3">
+            <References>
+              <Reference IsInverse="true">
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_OutputPipe_FlowTransmitter2_Output</TargetId>
+              </Reference>
+            </References>
+          </Property>
+          <Property SymbolicName="q30:ControlOut">
+            <References>
+              <Reference>
+                <ReferenceType>q30:SignalTo</ReferenceType>
+                <TargetId>q30:BoilerType_FlowController_SetPoint</TargetId>
+              </Reference>
+            </References>
+          </Property>
+        </Children>
+      </Object>
+      <Method SymbolicName="q30:CreateBoiler" TypeDefinition="q30:CreateInstance" ModellingRule="None">
+        <BrowseName>CreateBoiler</BrowseName>
+      </Method>
+    </Children>
+    <References>
+      <Reference>
+        <ReferenceType>q31:HasNotifier</ReferenceType>
+        <TargetId>q30:BoilerType_InputPipe</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q31:HasNotifier</ReferenceType>
+        <TargetId>q30:BoilerType_Drum</TargetId>
+      </Reference>
+      <Reference>
+        <ReferenceType>q31:HasNotifier</ReferenceType>
+        <TargetId>q30:BoilerType_OutputPipe</TargetId>
+      </Reference>
+    </References>
+  </ObjectType>
+  <Object xmlns:q32="http://opcfoundation.org/UA/Sample/" SymbolicName="q32:Boiler1" TypeDefinition="q32:BoilerType" SupportsEvents="true">
+    <Description>A standard boiler</Description>
+    <Children>
+      <Object SymbolicName="q32:InputPipe">
+        <BrowseName>PipeX001</BrowseName>
+        <Children>
+          <Object SymbolicName="q32:FlowTransmitter1">
+            <BrowseName>FTX001</BrowseName>
+          </Object>
+        </Children>
+      </Object>
+    </Children>
+    <References>
+      <Reference IsInverse="true">
+        <ReferenceType xmlns:q33="http://opcfoundation.org/UA/">q33:Organizes</ReferenceType>
+        <TargetId xmlns:q34="http://opcfoundation.org/UA/">q34:ObjectsFolder</TargetId>
+      </Reference>
+    </References>
+  </Object>
+</ModelDesign>

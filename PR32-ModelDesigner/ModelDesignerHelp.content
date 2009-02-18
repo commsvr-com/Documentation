@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics defaultTopic="e34055b2-23e0-4f1a-9e00-52d75becaeec">
+  <Topic id="e34055b2-23e0-4f1a-9e00-52d75becaeec" title="Welcome to the OPC Unified Architecture Address Space world" tocTitle="Welcome to the UA Address Space" visible="True">
+    <Topic id="c55db7e8-3f15-4556-b8db-12251d39ad0a" title="OPC Unified Architecture" tocTitle="OPC Unified Architecture" visible="True">
+      <Topic id="3774554f-8d12-4d9a-8532-85d704388d9d" title="Concept" tocTitle="Concept" visible="True">
+        <Topic id="d458d900-f4e3-472f-b729-7c759f1c8aa4" title="Unified Architecture Overview" tocTitle="Unified Architecture Overview" visible="True" />
+        <Topic id="0fdc84ce-5ad9-45ce-a040-95478279f604" title="Systems Integration" tocTitle="Systems Integration" visible="True">
+          <Topic id="8601d2fa-1770-4934-a73e-929d4ab7a4e4" title="At-hock linking" tocTitle="At-hock linking" visible="True" />
+          <Topic id="20a0bcad-fc1d-4b10-9beb-1a910b3c37ec" title="Totalitarian approach" tocTitle="Totalitarian approach" visible="True" />
+          <Topic id="0a157891-6492-4b05-a5d9-65c3084ec7f0" title="Process Observer" tocTitle="Process Observer" visible="True" />
+        </Topic>
+        <Topic id="6c7e7e44-c957-4d09-b722-33c34539e875" title="UA Systems Concepts " tocTitle="UA Systems Concepts" visible="True">
+          <Topic id="b8135029-bd1b-412a-a9fb-610b3c31ac09" title="OPC UA Clients" tocTitle="Clients" visible="True" />
+          <Topic id="b33c670d-5124-4207-8a5b-89eec97c23b5" title="OPC UA Servers" tocTitle="Servers" visible="True" />
+        </Topic>
+        <Topic id="14e03e6a-2c19-4124-8c10-aecd07121492" title="Service Sets " tocTitle="Service Sets " linkText="Service Sets " visible="True">
+          <Topic id="41ef495e-5447-4a9e-b46f-d1f9003f4368" title="Discovery Service Set" tocTitle="Discovery" visible="True" />
+          <Topic id="79df831d-e896-4b88-abad-88319f42a626" title="SecureChannel Service Set" tocTitle="SecureChannel" visible="True" />
+          <Topic id="0e0c01d9-9a33-4efd-8223-c8d4c7b2b0d0" title="Session Service Set" tocTitle="Session" visible="True" />
+          <Topic id="defef2ce-1182-4332-a62e-773a9821a417" title="NodeManagement Service Set" tocTitle="NodeManagement" visible="True" />
+          <Topic id="47230bdf-474d-409e-8912-3468cc98d385" title="View Service Set" tocTitle="View" visible="True" />
+          <Topic id="742e60d9-c5d8-45a3-8193-0ebc14633e07" title="Query Service Set" tocTitle="Query" visible="True" />
+          <Topic id="8944d7a9-baff-4e2e-893e-c66396f6fef0" title="Method Service Set" tocTitle="Method" visible="True" />
+          <Topic id="e0bdb98b-ab27-4798-8072-c23d26c08f06" title="MonitoredItem Service Set" tocTitle="MonitoredItem" visible="True" />
+          <Topic id="267df39c-3334-4e5a-baa7-c900feedd905" title="Subscription Service Set" tocTitle="Subscription" visible="True" />
+        </Topic>
+      </Topic>
+      <Topic id="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" title="Address Space" tocTitle="Address Space" visible="True">
+        <Topic id="ad8b0a3f-9293-4a1e-8f03-3e463a8d5f04" title="Address Space Concepts" tocTitle="Concepts" visible="True">
+          <Topic id="1254395d-618d-46dc-ad33-39e2becadee8" title="Object Model" tocTitle="Object Model" visible="True" />
+          <Topic id="44be48a5-7e42-42a2-906b-86b569ed9d93" title="Node Model" tocTitle="Node Model" visible="True">
+            <Topic id="57948ea6-b48e-43c9-addc-d24694886784" title="Variable" tocTitle="Variable" visible="True" />
+            <Topic id="69856d11-e274-48c1-87d7-bbc7ec5e6e18" title="Type Definition" tocTitle="Type Definition" visible="True" />
+            <Topic id="61bf86cb-8e76-408c-952f-ab6960eb96b8" title="Event" tocTitle="Event" visible="True" />
+            <Topic id="c9cd61c1-3e7c-4fef-a834-472417145053" title="Method" tocTitle="Method" visible="True" />
+          </Topic>
+        </Topic>
+        <Topic id="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67" title="Standard Node Classes" tocTitle="Standard Node Classes" visible="True">
+          <Topic id="467e8ac2-46d8-4758-8965-a891200787ee" title="Base Node Class" tocTitle="Base" visible="True" />
+          <Topic id="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" title="View  Node Class" tocTitle="View" visible="True" />
+          <Topic id="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" title="Object Node Class" tocTitle="Object" visible="True" />
+          <Topic id="5ed97e29-a505-4050-af5d-8b2c8d80a045" title="Variable Node Class" tocTitle="Variable" visible="True" />
+          <Topic id="92f04f9b-1fd7-4668-8deb-626991b93201" title="Method Node Class" tocTitle="Method" visible="True" />
+          <Topic id="9d541e15-812b-4dce-9b4c-7b0d66e74daf" title="ObjectType Node Class" tocTitle="ObjectType" visible="True" />
+          <Topic id="07e07cd6-0589-48e7-89c3-e99176e1cb23" title="DataType Node Class" tocTitle="DataType" visible="True" />
+          <Topic id="4044403d-3a21-40cc-a508-b2d17a10b62d" title="ReferenceType  Node Class" tocTitle="ReferenceType" visible="True" />
+          <Topic id="1bc63c28-33da-4c76-b8f6-8df43f0a776f" title="VariableType Node Class" tocTitle="VariableType" visible="True" />
+          <Topic id="1f82af61-a0d9-4730-8cf1-d93ab765f2d2" title="Summary of Attributes of the Node Classes" tocTitle="Summary of Attributes" visible="True" />
+        </Topic>
+        <Topic id="dba17623-98d7-4a47-9e57-f352a2c3e2fe" title="Type Model for ObjectTypes and VariableTypes" tocTitle="Type Model for ObjectTypes and VariableTypes" linkText="Type Model for ObjectTypes and VariableTypes" visible="True">
+          <Topic id="d50337d9-0aab-4665-ab7f-be4eb7bc9559" title="Definitions" tocTitle="Definitions" linkText="Definitions" visible="True" />
+        </Topic>
+        <Topic id="57be83ea-0aac-4456-b29a-0b18a8467134" title="Standard Reference Types" tocTitle="Standard Reference Types" visible="True" />
+        <Topic id="546f49d5-8153-434c-9e74-d7835d7862bc" title="Standard Data Types" tocTitle="Standard Data Types" visible="True" />
+        <Topic id="2191d1e7-9793-4eee-a180-a59b249f1098" title="Standard Event Types" tocTitle="Standard Event Types" visible="True" />
+        <Topic id="ad0fdaba-ab78-477a-ac9d-13e06cc51939" title="How to Use the Address Space Model" tocTitle="How to Use the Address Space Model" visible="True" />
+        <Topic id="7cd6ebfb-3582-4ae7-8b1c-89e038d9bb66" title="OPC UA Meta Model in UML" tocTitle="OPC UA Meta Model in UML" visible="True" />
+        <Topic id="4ff5fa83-9b3b-4c4f-8160-f5261ba30633" title="Graphical Notation" tocTitle="Graphical Notation" linkText="Graphical Notation" visible="True" />
+      </Topic>
+      <Topic id="3f999f23-4ad7-46a4-80dd-ab33729d5f49" title="Information Model" tocTitle="Information Model" visible="True">
+        <Topic id="c7bb7b37-624e-4a57-a5f3-d7e5994b1fae" title="Introduction" tocTitle="Introduction" visible="True" />
+        <Topic id="0d741b40-7d47-4aa1-852b-fe9007394b7f" title="Standard Object Types" tocTitle="Standard Object Types" linkText="Standard Object Types" visible="True">
+          <Topic id="08ebbdef-796a-42f6-a849-0b9017547c77" title="BaseObjectType" tocTitle="BaseObjectType" linkText="BaseObjectType" visible="True" />
+          <Topic id="b6fbace7-8f12-4c47-8dd2-d9223336254b" title="Address Space Management" tocTitle="Address Space Management" linkText="Address Space Management" visible="True" />
+          <Topic id="6f98c5eb-4449-4a75-aa31-39296b4c5d97" title="Server Management" tocTitle="Server Management" linkText="Server Management" visible="True" />
+          <Topic id="f430b65b-e139-41d1-a250-269480d3e36c" title="Events Management" tocTitle="Events Management" linkText="Events Management" visible="True" />
+        </Topic>
+        <Topic id="d43f206c-8b58-4ded-b9c8-74eaac63cb36" title="Standard Variable Types" tocTitle="Standard Variable Types" linkText="Standard Variable Types" visible="True" />
+        <Topic id="792493fe-9605-478d-b93a-10844c737983" title="Standard Objects and their Variables" tocTitle="Standard Objects and their Variables" linkText="Standard Objects and their Variables" visible="True">
+          <Topic id="7a382ec0-73ac-49d8-8200-49e95a474ab0" title="Objects used to organise the AddressSpace structure" tocTitle="Objects used to organise the AddressSpace structure" linkText="Objects used to organise the AddressSpace structure" visible="True" />
+          <Topic id="2c5b2d66-8e34-490c-9ab3-4d852a892a30" title="Server Object and its containing Objects" tocTitle="Server Object and its containing Objects" linkText="Server Object and its containing Objects" visible="True" />
+        </Topic>
+        <Topic id="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" title="Standard Data Types" tocTitle="Standard Data Types" linkText="Standard Data Types" visible="True" />
+        <Topic id="9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9" title="Design decisions when modelling the server information" tocTitle="Design decisions when modelling the server information" linkText="Design decisions when modelling the server information" visible="True" />
+        <Topic id="022e0eb8-59d2-4c81-a7d7-3646494f55a2" title="StateMachines" tocTitle="StateMachines" visible="True" />
+      </Topic>
+      <Topic id="bf124b83-10b9-4995-af26-178e5fc9a6e7" title="Security Model" tocTitle="Security Model" visible="True" />
+      <Topic id="ef0092b5-9f31-4e8d-9901-270be06e6577" title="Services" tocTitle="Services" visible="True" />
+      <Topic id="90c70f9d-c1df-479e-8273-071b5960a5a4" title="Mappings" tocTitle="Mappings" visible="True">
+        <Topic id="abcfe76a-a551-4fa3-be28-0af2cb04f3ba" title="Data Encoding" tocTitle="Data Encoding" linkText="Data Encoding" visible="False">
+          <Topic id="2d1f7bc3-3cda-452f-9f24-ee9da2c9be94" title="Overview" tocTitle="Overview" linkText="Overview" visible="True">
+            <Topic id="e6dbd978-9b2f-475e-bcb3-304975700033" title="Built-in Types" tocTitle="Built-in Types" linkText="Built-in Types" visible="True" />
+            <Topic id="ed06838a-603f-4c9e-92e1-bf215ecf46e6" title="Guid" tocTitle="Guid" linkText="Guid" visible="True" />
+            <Topic id="00831164-2b4c-46dd-902e-d79c13f1d21c" title="ExtensionObject" tocTitle="ExtensionObject" linkText="ExtensionObject" visible="True" />
+            <Topic id="3984a505-13d7-4153-991e-47f8f3556f78" title="Variant" tocTitle="Variant" linkText="Variant" visible="True" />
+          </Topic>
+          <Topic id="54d77249-bb3b-4e7b-b3ef-aa5f17826bd1" title="OPC UA Binary" tocTitle="OPC UA Binary" linkText="OPC UA Binary" visible="True">
+            <Topic id="7f816c6d-3aa2-4f38-9992-16d892e6fe4a" title="Built-in Types" tocTitle="Built-in Types" linkText="Built-in Types" visible="True" />
+            <Topic id="49ef478a-e512-4c04-9de3-f131be78dc67" title="Enumerations" tocTitle="Enumerations" linkText="Enumerations" visible="True" />
+            <Topic id="efb24dab-cd14-4f59-a392-cd2b44e22f15" title="Arrays" tocTitle="Arrays" linkText="Arrays" visible="True" />
+            <Topic id="2b0f3a41-e464-40af-9820-a440f2c501aa" title="Structures" tocTitle="Structures" linkText="Structures" visible="True" />
+            <Topic id="7c47e7df-e164-4aef-9420-6b53de0b54c5" title="Messages" tocTitle="Messages" linkText="Messages" visible="True" />
+          </Topic>
+          <Topic id="00084482-6519-4d24-a8ff-d731d6cfc35c" title="XML" tocTitle="XML" linkText="XML" visible="True">
+            <Topic id="b683099d-5c89-4c46-a277-d368f9c98a7a" title="Built-in Types" tocTitle="Built-in Types" linkText="Built-in Types" visible="True" />
+            <Topic id="60a27dd4-fb8a-4dfb-a559-a7eb6f96ee7a" title="Enumerations" tocTitle="Enumerations" linkText="Enumerations" visible="True" />
+            <Topic id="ee8d55b4-1974-4bce-916b-3b8e1364c1bc" title="Arrays" tocTitle="Arrays" linkText="Arrays" visible="True" />
+            <Topic id="09fd76f5-78cc-48ab-9815-d4f414dd24e8" title="Structures" tocTitle="Structures" linkText="Structures" visible="True" />
+            <Topic id="b929152d-8496-4aa2-a72f-d3e853fd9798" title="Messages" tocTitle="Messages" linkText="Messages" visible="True" />
+          </Topic>
+        </Topic>
+      </Topic>
+      <Topic id="69c22282-3ad0-4937-8982-4d5c5ac95b7f" title="Profiles" tocTitle="Profiles" visible="True" />
+      <Topic id="f268d513-5215-4ded-bd94-ddaadf24d789" title="Data Access" tocTitle="Data Access" visible="True" />
+      <Topic id="2ba1f4ae-e619-4821-87ae-8b1073901d99" title="Alarms and Conditions" tocTitle="Alarms and Conditions" visible="True" />
+      <Topic id="96ffa07e-22ab-4d77-a1ae-e476e54a5b63" title="Programs" tocTitle="Programs" visible="True" />
+      <Topic id="48e0fc4c-b072-4e4e-b4e9-b917fab44762" title="Historical Access" tocTitle="Historical Access" visible="True" />
+      <Topic id="6331c6ab-b475-491a-8738-43edae0ed6bc" title="Discovery" tocTitle="Discovery" visible="True" />
+      <Topic id="26dc2eeb-89bf-42ce-817d-e82319ac04b7" title="References" tocTitle="General References" visible="True" />
+    </Topic>
+    <Topic id="f3357669-a041-405d-884b-19f5eafcabed" title="Address Space Model Designer Tool" tocTitle="Address Space Model Designer" visible="True">
+      <Topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" title="Overview" tocTitle="Overview" visible="True" />
+      <Topic id="a2d66e41-32df-404d-99bb-f4e495891493" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started" visible="True" />
+      <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" title="User Interface" tocTitle="User Interface" visible="False">
+        <Topic id="e7e440ad-68fb-4c4b-bc09-26765163b898" title="Menus" tocTitle="Menus" visible="False" />
+      </Topic>
+      <Topic id="8880dab5-b615-4716-aadd-f6adc3ba74d3" noFile="True" title="Nodes classes" tocTitle="Nodes classes" visible="True">
+        <Topic id="fb00ec85-b875-4b4c-a457-45691d367490" title="Model (Domain)" tocTitle="Model (Domain)" visible="True" />
+        <Topic id="b35e8d52-ef43-41a3-bead-dee070980880" title="Children" tocTitle="Children" visible="True" />
+        <Topic id="825c51fd-1649-4681-95c9-19ceb9a4f718" title="Namespace" tocTitle="Namespace" visible="True" />
+        <Topic id="f1cff0ba-a492-4eea-ad99-c4acbcb60808" title="Namespaces Folder" tocTitle="Namespaces Folder" visible="True" />
+        <Topic id="f8823e82-3f6b-4f3d-b244-772820b3a9b2" noFile="True" title="Types" tocTitle="Types" visible="True">
+          <Topic id="401602f6-68cf-4f77-81f6-3c6b6a088c6e" title="Type" tocTitle="Type" visible="True" />
+          <Topic id="83ddb144-04c8-45b5-8067-a44757422ff0" title="VariableType" tocTitle="VariableType" visible="True" />
+          <Topic id="66e5ee05-9fa5-41f7-a735-2abcee7880db" title="DataType" tocTitle="DataType" visible="True" />
+          <Topic id="22203f7a-b6ed-458f-ab86-5174ba4757f3" title="EventType" tocTitle="EventType" visible="True" />
+          <Topic id="a5703461-ab5e-4a2f-9307-8403e0d8a74e" title="StateMachineType" tocTitle="StateMachineType" visible="True" />
+          <Topic id="74b62f4b-91af-4faf-b453-26ae2a212069" title="ObjectType" tocTitle="ObjectType" visible="True" />
+          <Topic id="2eddb75a-7f03-48bf-9ac9-3505f26e178c" title="ReferenceType" tocTitle="ReferenceType" visible="True" />
+        </Topic>
+        <Topic id="35593b68-434e-4481-b356-6be27895a5ec" noFile="True" title="Objects" tocTitle="Objects" visible="True">
+          <Topic id="3326223f-4b54-48f6-add4-e8dbf92b4b8a" title="Object" tocTitle="Object" visible="True" />
+          <Topic id="e07d2ea9-9fbf-4090-9f51-c13bcfd376d3" title="Node" tocTitle="Node" visible="True" />
+          <Topic id="a53158d1-fa3a-4757-a0c5-d04306548411" title="Reference" tocTitle="Reference" visible="True" />
+          <Topic id="5d8e3b3c-cfeb-4007-a54f-64838ce85ce1" title="ReferencesFolder" tocTitle="ReferencesFolder" visible="True" />
+          <Topic id="35491dad-5010-4746-8a35-04631122f7a2" title="Property" tocTitle="Property" visible="True" />
+          <Topic id="05d23c43-3193-4f79-a14f-7e072490c209" title="Instance" tocTitle="Instance" visible="True" />
+          <Topic id="bdcb7390-4a61-4980-b9c4-b7512b8599ad" title="Variable" tocTitle="Variable" visible="True" />
+          <Topic id="54653630-5450-4075-a05b-74a77892722c" title="View" tocTitle="View" visible="True" />
+          <Topic id="71e57e6f-fbfb-4bd3-ab5a-7c0047c3d97c" title="Encoding" tocTitle="Encoding" visible="True" />
+          <Topic id="ac026ef7-e1c1-4bd1-aeab-fa8e59156b02" title="EncodingsFolder" tocTitle="EncodingsFolder" visible="True" />
+          <Topic id="d9a18287-f02e-48f0-b223-6336e45c52b6" title="Parameter" tocTitle="Parameter" visible="True" />
+          <Topic id="6f47d37f-5bd0-48f9-9436-3cc2ce332f10" title="ParametersFolder" tocTitle="ParametersFolder" visible="True" />
+          <Topic id="3999d25b-08cf-44ae-ab93-3a7c1b948f2b" title="Dictionary" tocTitle="Dictionary" visible="True" />
+          <Topic id="811f5b81-0070-4870-8a98-4277c3ea877d" title="Method" tocTitle="Method" visible="True" />
+        </Topic>
+      </Topic>
+    </Topic>
+    <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" title="Contacts" tocTitle="Contacts" visible="True" />
+    <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" />
+    <Topic id="51ab4127-b8e8-4042-9959-39fe8491fa32" title="License and disclaimer " tocTitle="License and disclaimer " visible="True" />
+  </Topic>
+</Topics>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1bc63c28-33da-4c76-b8f6-8df43f0a776f" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      VariableType nodes are used to provide type definitions for variables. <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> types are defined using the VariableType node class.
+    </para>
+      <para>
+      The VariableType node class inherits the base attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /> node class. The VariableType <token>NodeClass</token> also defines a set of attributes that describe the default or initial value of its instance variables. The <computerOutputInline>Value</computerOutputInline> attribute represents the default value. The <computerOutputInline>DataType</computerOutputInline>, <computerOutputInline>ValueRank</computerOutputInline> and <computerOutputInline>ArrayDimensions</computerOutputInline> attributes provide the capability to describe simple and complex values. The <computerOutputInline>IsAbstract</computerOutputInline> attribute defines if the type can be directly instantiated.
+    </para>
+      <para>
+      The VariableType <token>NodeClass</token> uses <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> references to define the properties and <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> references to define data variables. Whether they are instantiated depends on the modelling rules.
+    </para>
+      <para>
+      The property NodeVersion indicates the version of the VariableType. Section <link xlink:href="f268d513-5215-4ded-bd94-ddaadf24d789" /> describes a set of properties that can be used for the VariableType.
+    </para>
+      <para>
+        <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> references are used to subtype variable types. VariableType subtypes inherit the general semantics from the parent type. It is not required to provide the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> reference for the supertype, but it is required that the subtype provides the inverse reference to its supertype.
+    </para>
+      <para>
+        <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> references identify that variables of the VariableType may be the source of an <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8" /> of the specified <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link> or one of its subtypes. Servers should make <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> references bidirectional references. However, it is allowed to be unidirectional when the server is not able to expose the inverse direction pointing from the <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link> to each VariableType supporting the <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link>.
+    </para>
+      <para>
+        <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> references are optional, i.e. variables may generate events of an <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link> that is not exposed by its VariableType.
+    </para>
+      <para>
+        <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> types may use any additional references to define relationships to other nodes. No restrictions are placed on the types of references used or on the node classes of the nodes that may be referenced. However, restrictions may be defined by the ReferenceType excluding its use for variable types. Standard reference types are described in <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />.
+    </para>
+      <alert>
+        <para>
+        All nodes referenced with hierarchical references shall have unique browse names in the context of the VariableType (see <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />).
+      </para>
+      </alert>
+    </introduction>
+    <section>
+      <title>Client-side creation of Variables</title>
+      <content>
+        <para>
+        Variables are always based on a VariableType, i.e. they have a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference pointing to its VariableType.
+      </para>
+        <para>
+        Clients can create variables using the AddNodes service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. The service requires specifying the type definition node of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. A variable created by the AddNodes service contains all components defined by its VariableType dependent on the modelling rules specified for the components. However, the server may add additional components and references to the variable node and its components that are not defined by the VariableType. This behaviour is server dependent. The VariableType only specifies the minimum set of components that shall exist for each variable of a VariableType.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />
+      <link xlink:href="f268d513-5215-4ded-bd94-ddaadf24d789" />
+      <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8" />
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />
+      <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

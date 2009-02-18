@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b35e8d52-ef43-41a3-bead-dee070980880" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>Children Node – This node is a folder that contains nodes organized by the parent of this children node.</para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <!-- <section address="Section1">
+    <title>Section title</title>
+    <content>
+      <para>Add one or more sections with content</para>
+    </content>-->
+    <!-- If a section contains a sections element, its content creates
+         sub-sections.  These are not collapsible.
+    <sections>
+        <section address="SubSection1">
+            <title>Sub-section 1</title>
+            <content>
+                <para>Sub-section content.</para>
+            </content>
+        </section>
+        <section address="SubSection2">
+            <title>Sub-section 2</title>
+            <content>
+                <para>Sub-section content.</para>
+            </content>
+        </section>
+    </sections> -->
+    <!-- </section> -->
+    <relatedTopics>
+      <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />
+      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="2d1f7bc3-3cda-452f-9f24-ee9da2c9be94" revisionNumber="1">
+  <developerSDKTechnologyOverviewOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      This specification defines two data encodings: OPC UA Binary and OPC UA XML. It describes how to construct messages using each of these encodings.
+    </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+        "In This Section" info:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="e6dbd978-9b2f-475e-bcb3-304975700033">Built-in Types</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="ed06838a-603f-4c9e-92e1-bf215ecf46e6">Guid</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="00831164-2b4c-46dd-902e-d79c13f1d21c">ExtensionObject</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="3984a505-13d7-4153-991e-47f8f3556f78">Variant</link>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </inThisSection>
+    <!-- <reference>Optional reference info</reference> -->
+    <!-- <relatedSections>Optional related sections info</relatedSections> -->
+    <!-- <externalResources>Optional external resources info</externalResources> -->
+  </developerSDKTechnologyOverviewOrientationDocument>
+</topic>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c9cd61c1-3e7c-4fef-a834-472417145053" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para> Methods are lightweight functions, whose scope is bounded by an owning object, similar to the methods of a class in object-oriented programming or an owning object type, similar to static methods of a class.</para>
+    </summary>
+    <introduction>
+      <para>
+      Methods are invoked by a client, proceed to completion on the server and return the result to the client. The lifetime of the method’s invocation instance begins when the client calls the method and ends when the result is returned.
+    </para>
+      <para>
+      While methods may affect the state of the owning object, they have no explicit state of their own. In this sense, they are stateless. Methods can have a varying number of input arguments and return resultant arguments. Each method is described by a node of the <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" /> node class. This node contains the metadata that identifies the method’s arguments and describes its behaviour.
+    </para>
+      <para>
+      Methods are invoked by using the Call service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. Each method is invoked within the context of an existing session. If the session is terminated during method execution, the results of the method’s execution cannot be returned to the client and are discarded. In that case, the method execution is undefined, that is, the method may be executed until it is finished or it may be aborted.
+    </para>
+      <para>
+      Clients discover the Method nodes supported by a server by browsing for the owning objects references that identify their supported methods.
+    </para>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

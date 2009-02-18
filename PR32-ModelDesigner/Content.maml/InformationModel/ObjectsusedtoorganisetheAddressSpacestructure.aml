@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7a382ec0-73ac-49d8-8200-49e95a474ab0" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      To promote interoperability of clients and servers, the <token>OPCUA</token><token>AS</token> is structured as a hierarchy, with the top levels standardised for all servers. Figure 1 illustrates the structure of the <token>AS</token>. All Objects in this figure are organised using Organizes References and have the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /><link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link> as type definition.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Standard Address Space Structure </caption>
+        <image placement="center" xlink:href="c24d9eb2-d190-4e74-9513-5659e02eae25" />
+      </mediaLink>
+      <para>
+      The remainder of this provides descriptions of these standard Nodes and the organization of Nodes beneath them. Servers typically implement a subset of these standard Nodes, depending on their capabilities.
+    </para>
+    </introduction>
+    <section>
+      <title>Root</title>
+      <content>
+        <para>
+        This standard Object is the browse entry point for the <token>AS</token>. It contains a set of Organizes References that point to the other standard Objects. The “Root” Object shall not reference any other NodeClasses.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Views</title>
+      <content>
+        <para>
+        This standard Object is the browse entry point for Views. Only Organizes References are used to relate View Nodes to the “Views” standard Object. All View Nodes in the <token>AS</token> shall be referenced by this Node, either directly or indirectly. I.e. the “Views” Object may reference other Objects using Organizes References. Those Objects may reference additional Views. Figure 2 illustrates this. The “Views” standard Object directly references the Views “View1” and “View2” and indirectly “View3” by referencing another Object called “Engineering”.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Views Organization</caption>
+          <image placement="center" xlink:href="eb066c85-6b0d-42ce-8e5e-43431b16a64f" />
+        </mediaLink>
+        <para>
+        The “Views” Object shall not reference any other NodeClasses.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Objects</title>
+      <content>
+        <para>
+        This standard Object is the browse entry point for Object Nodes. Figure 3 illustrates the structure beneath this Node. Only Organizes References are used to relate Objects to the “Objects” standard Object. A View Node can be used as entry point into a subset of the <token>AS</token> containing Objects and Variables and thus the “Objects“ Object can also reference View Nodes using Organizes References. The intent of the “Objects” Object is that all Objects and Variables that are not used for type definitions or other organizational purposes (e.g. organizing the Views) are accessible through hierarchical References starting from this Node. However, this is not a requirement, because not all servers may be able to support this.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Objects Organization </caption>
+          <image placement="center" xlink:href="8f836695-fd10-4a8f-8abb-4b9e39dde0da" />
+        </mediaLink>
+        <para>
+        The “Objects” Object shall not reference any other NodeClasses.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Types</title>
+      <content>
+        <para>
+        This standard Object Node is the browse entry point for type Nodes. Figure 1 illustrates the structure beneath this Node. Only Organizes References are used to relate Objects to the “Types” standard Object. The “Types” Object shall not reference any other NodeClasses.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Object Types</title>
+      <content>
+        <para>
+        This standard Object Node is the browse entry point for <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> Nodes. Figure 4 illustrates the structure beneath this Node showing some of the standard ObjectTypes. Only Organizes References are used to relate Objects and ObjectTypes to the “ObjectTypes” standard Object. The “ObjectTypes” Object shall not reference any other NodeClasses.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">ObjectTypes Organization </caption>
+          <image placement="center" xlink:href="df566260-58e0-49c6-834e-13dd89025647" />
+        </mediaLink>
+        <para>
+        The intention of the “ObjectTypes” Object is that all ObjectTypes of the server are either directly or indirectly accessible browsing <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HierarchicalReferences">HierarchicalReferences</link> starting from this Node. However, this is not required and servers might not provide some of their ObjectTypes because they may be well-known in the industry, such as the Server Type.
+      </para>
+        <para>
+        This Object also indirectly references the BaseEventType, which is the base type of all EventTypes. Thereby it is the entry point for all EventTypes provided by the server. It is required that the server expose all its EventTypes, so a client can usefully subscribe to Events.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Variable Types</title>
+      <content>
+        <para>
+        This standard Object is the browse entry point for <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> Nodes. Figure 5 illustrates the structure beneath this Node. Only Organizes References are used to relate Objects and VariableTypes to the “VariableTypes” standard Object. The “VariableTypes” Object shall not reference any other NodeClasses.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 5">VariableTypes Organization </caption>
+          <image placement="center" xlink:href="91c4690f-a45d-4409-b776-5858b75714f9" />
+        </mediaLink>
+        <para>
+        The intent of the “VariableTypes” Object is that all VariableTypes of the server are either directly or indirectly accessible browsing <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HierarchicalReferences">HierarchicalReferences</link> starting from this Node. However, this is not required and servers might not provide some of their VariableTypes, because they may be well-known in the industry, such as the “BaseVariableType”.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Reference Types</title>
+      <content>
+        <para>
+        This standard Object is the browse entry point for <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> Nodes. Figure 6 illustrates the organization of ReferenceTypes. Organizes References are used to define ReferenceTypes and Objects referenced by the “ReferenceTypes” Object. The “ReferenceTypes” Object shall not reference any other NodeClasses. See Błąd! Nie można odnaleźć źródła odsyłacza. for a discussion of the standard ReferenceTypes that appear beneath the “ReferenceTypes” Object.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 6">ReferenceType Definitions</caption>
+          <image placement="center" xlink:href="f1959f07-5635-44c0-bca0-56b226bb0c89" />
+        </mediaLink>
+        <para>
+        Since ReferenceTypes will be used as filters in the browse Service and in queries, the server shall provide all its ReferenceTypes, directly or indirectly following hierarchical References starting from the “ReferenceTypes” Object. This means that, whenever the client follows a Reference, the server shall expose the type of this Reference in the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> hierarchy. It shall provide all ReferenceTypes so that the client would be able, following the inverse subtype of References, to come to the base References <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />. It does not mean that the server shall expose the ReferenceTypes that the client has not used any Reference of.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Data Types</title>
+      <content>
+        <para>
+        This standard Object is the browse entry point for DataTypes that the server wishes to expose in the <token>AS</token>. The standard Object uses Organizes References to reference Objects of the <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType">DataTypeSystemType</link> representing DataTypeSystems. Referenced by those Objects are data type dictionaries that refer to their <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type descriptions</link>. However, it is not required to provide the DataTypeSystem objects, and the data type dictionary need not to be provided.
+      </para>
+        <para>
+        Because data types are not related to <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type descriptions</link> using hierarchical references, <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> Nodes should be made available using Organizes References pointing either directly from the “DataTypes” Object to the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> Nodes or using additional Folder Objects for grouping purposes. The intent is that all DataTypes of the server exposed in the <token>AS</token> are accessible following hierarchical References starting from the “DataTypes” Object. However, this is not required.
+      </para>
+        <para>
+        Figure 7 illustrates this hierarchy using the “OPC Binary” and “XML Schema” standard DataTypeSystems as examples. Other DataTypeSystems may be defined under this Object.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 7">ReferenceType Definitions</caption>
+          <image placement="center" xlink:href="6d7e1708-e55f-48b0-8027-f3a146f51c17" />
+        </mediaLink>
+        <para>
+        Each DataTypeSystem Object is related to its data type dictionary Nodes using <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> References. Each data type dictionary Node is related to its <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type description</link> nodes using <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> references. These references indicate that the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type descriptions</link> are defined in the dictionary.
+      </para>
+        <para>
+        In the example, the “DataTypes” Object references the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> “Int32” using an Organizes Reference. The <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> uses the non-hierarchical <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEncoding">HasEncoding</link> Reference to point to its default encoding, which references a <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type description</link> using the non-hierarchical <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasDescription">HasDescription</link> Reference.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>OPC Binary</title>
+      <content>
+        <para>
+        OPC Binary is a standard DataTypeSystem defined by OPC. It is represented in the <token>AS</token> by an Object Node. OPC Binary uses XML to describe complex binary data values.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>XML Schema</title>
+      <content>
+        <para>
+        XML Schema is a standard DataTypeSystem defined by the W3C. It is represented in the <token>AS</token> by an Object Node. XML Schema documents are XML documents whose xmlns attribute in the first line is:
+      </para>
+        <list class="nobullet">
+          <listItem>
+            <para>
+            schema xmlns =  <externalLink><linkText>http://www.w3.org/1999/XMLSchema</linkText><linkAlternateText>http://www.w3.org/1999/XMLSchema</linkAlternateText><linkUri>http://www.w3.org/1999/XMLSchema</linkUri></externalLink></para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

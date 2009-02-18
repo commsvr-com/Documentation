@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This section describes the design decisions of modelling the information provided by each <token>OPCUA</token> server, exposing its capabilities, diagnostic information, and other data needed to work with the server, such as the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link>.
+    </para>
+      <para>
+      This section gives an example of what should be considered when modelling data using the Address Space Model. General considerations for using the Address Space Model can be found in  section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />.
+    </para>
+      <para>
+      This section is informative, that is each server vendor can model its data in the appropriate way that fits its needs.
+    </para>
+      <para>
+      The following subclauses describe the design decisions made while modelling the Server Object. General DataTypes, VariableTypes and ObjectTypes such as the EventTypes described in this Part are not taken into account.
+    </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>ServerType and Server Object</title>
+      <content>
+        <para>
+        The first decision is to decide at what level types are needed. Typically, each server will provide one Server Object with a well known <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link>. The NodeIds of the containing Nodes are also well-known because their symbolic name is specified in this part and the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> is based on the symbolic name in section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />. Nevertheless, aggregating servers may want to expose the Server Objects of the <token>OPCUA</token> servers they are aggregating in their <token>AS</token>. Therefore, it is very helpful to have a type definition for the Server Object. The Server Object is an Object, because it groups a set of Variables and Objects containing information about the server. The <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType">ServerType</link> is a complex <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />, because the basic structure of the Server Object should be well-defined. However, the Server Object can be extended by adding Variables and Objects in an appropriate structure of the Server Object or its containing Objects.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Typed complex Objects beneath the Server Object</title>
+      <content>
+        <para>
+        Objects beneath the Server Object used to group information, such as server capabilities or diagnostics, are also typed because an aggregating server may want to provide only part of the server information, such as diagnostics information, in its <token>AS</token>. Clients are able to program against these structures if they are typed, because they have its type definition.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Properties vs. Data Variables</title>
+      <content>
+        <para>
+        Since the general description in section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" /> about the semantic difference between Properties and <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> are not applicable for the information provided about the server the rules described in section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" /> are used.
+      </para>
+        <para>
+        If simple data structures should be provided, Properties are used. Examples of Properties are the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link> of the Server Object and the MinSupportedSampleRate of the ServerCapabilities Object.
+      </para>
+        <para>
+        If complex data structures are used, <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> are used. Examples of <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> are the ServerStatus of the Server Object and the ServerDiagnosticsSummary of the ServerDiagnostics Object.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Complex Variables using complex DataTypes</title>
+      <content>
+        <para>
+          <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> providing complex data structures expose their information as complex DataTypes, as well as components in the <token>AS</token>. This allows access to simple values as well as access to the whole information at once in a transactional context.
+      </para>
+        <para>
+        For example, the ServerStatus <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the Server Object is modelled as a complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> having the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#ServerStatusDataType">ServerStatusDataType</link> providing all information about the server status. But it also exposes the CurrentTime as a simple <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>, because a client may want to read only the current time of the server, and is not interested in the build information, etc.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Complex Variables having an array</title>
+      <content>
+        <para>
+        A special case of providing complex data structures is an array of complex data structures. The <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SubscriptionDiagnosticsArrayType">SubscriptionDiagnosticsArrayType</link> is an example of how this is modelled. It is an array of a complex data structure, providing information of a subscription. Because a server typically has several subscriptions, it is an array. Some clients may want to read the diagnostic information about all subscriptions at once; therefore it is modelled as an array in a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. On the other hand, a client may be interested in only a single entry of the complex structure, such as the PublishRequestCount. Therefore, each entry of the array is also exposed individually as a complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>, having each entry exposed as simple data.
+      </para>
+        <alert>
+          <para>
+          Note that it is never necessary to expose the individual entries of an array to access them separately. The Services already allow accessing individual entries of an array of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. However, if the entries should also be used for other purposes in the <token>AS</token> – such as having References or additional Properties or exposing their complex structure using <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> – it is useful to expose them individually.
+        </para>
+        </alert>
+      </content>
+    </section>
+    <section>
+      <title>Redundant information</title>
+      <content>
+        <para>
+        Providing redundant information should generally be avoided. But to fulfil the needs of different clients, it may be helpful.
+      </para>
+        <para>
+        Using complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> automatically leads to providing redundant information, because the information is directly provided in the complex DataType of the Value Attribute of the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, and also exposed individually in the components of the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />.
+      </para>
+        <para>
+        The diagnostics information about subscriptions is provided in two different locations. One location is the SubscriptionDiagnosticsArray of the ServerDiagnostics Object, providing the information for all subscriptions of the server. The second location is the SubscriptionDiagnosticsArray of each individual SessionDiagnosticsObject Object, providing only the subscriptions of the session. This is useful because some clients may be interested in only the subscriptions grouped by sessions, whereas other clients may want to access the diagnostics information of all sessions at once.
+      </para>
+        <para>
+        The SessionDiagnosticsArray and the SessionSecurityDiagnosticsArray of the SessionsDiagnosticsSummary Object do not expose their individual entries, although they represent an array of complex data structures. But the information of the entries can also be accessed individually as components of the SessionDiagnostics Objects provided for each session by the SessionsDiagnosticsSummary Object. A client can either access the arrays (or parts of the arrays) directly or browse to the SessionDiagnostics Objects to get the information of the individual entries. Thus, the information provided is redundant, but the Variables containing the arrays do not expose their individual entries.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Usage of the BaseDataVariableType</title>
+      <content>
+        <para>
+        All <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> used to expose complex data structures of complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> have the BaseDataVariableType as type definition if they are not complex by themselves. The reason for this approach is that the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> already define the semantic of the containing <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> and this semantic is not used in another context. It is not expected that they are subtyped, because they should reflect the data structure of the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> of the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Subtyping</title>
+      <content>
+        <para>
+        Subtyping is used for modelling information about the redundancy support of the server. Because the provided information shall differ depending on the supported redundancy of the server, subtypes of the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerRedundancyType">ServerRedundancyType</link> will be used for this purpose.
+      </para>
+        <para>
+        Subtyping is also used as an extensibility mechanism (see next Clause).
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Extensibility mechanism</title>
+      <content>
+        <!--<para>
+        The information of the server will be extended by other parts of this multi-part specification, by companion specifications or by server vendors. There are preferred ways to provide the additional information.
+      </para>-->
+        <para>
+        Do not subtype DataTypes to provide additional information about the server. Clients might not be able to read those new defined DataTypes and are not able to get the information – including the basic information. If information is added by several sources, the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> hierarchy may be difficult to maintain. Note that this rule applies to the information about the server; in other scenarios this may be a useful way to add information.
+      </para>
+        <para>
+        Add Objects containing Variables or add Variables to the Objects defined in this part. If, for example, additional diagnostic information per subscription is needed, add a new <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> containing in array with an entry per subscription in the same places that the SubscriptionDiagnosticsArray is used.
+      </para>
+        <para>
+        Use subtypes of the ServerVendorCapabilityType to add information about the server-specific capabilities on the ServerCapabilities Objects. Because this extensibility point is already defined in this part, clients will look there for additional information.
+      </para>
+        <para>
+        Use a subtype of the VendorServerInfoType to add server-specific information. Because an Object of this type is already defined in this part, clients will look there for server-specific information.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

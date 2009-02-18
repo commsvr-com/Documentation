@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="6f98c5eb-4449-4a75-aa31-39296b4c5d97" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97" />-->
+    <summary>
+      <para>
+      This topic describes types represented by the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> node used to create objects exposed by the server <token>AS</token> providing runtime diagnostic and capabilities information. The title of each section describing a type in this topic is its <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      Subsections describe main components of the complex types.
+    </para>
+      <alert>
+        <para>
+        Because the types description does not provide complete definition, to see details of the definitions use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" /> application and expand appropriate <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link>.
+      </para>
+      </alert>
+    </introduction>
+    <section address="ServerType">
+      <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType" >ServerType</link>-->
+      <title>ServerType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the capabilities supported by the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section address="ServerArray">
+          <title>ServerArray</title>
+          <content>
+            <para>
+            The ServerArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> defines an array of server URIs. This <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is also referred to as the server table. Each URI in this array represents a globally-unique logical name for a server within the scope of the network in which it is installed. Each <token>OPCUA</token> server instance has a single URI that is used in the server table of other <token>OPCUA</token> servers.
+          </para>
+            <alert>
+              <para>Index 0 is reserved for the URI of the local server. The URI of the ServerArray with Index 0 must be identical to the URI of the NamespaceArray with Index 1, since both represent the local server.</para>
+            </alert>
+            <para>
+            Values above 0 are used to identify remote servers and are specific to a server. Topic <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> describes discovery mechanism that can be used to resolve URIs into URLs.
+          </para>
+            <para>
+            The indexes into this table are referred to as server indexes or server names. They are used in <token>OPCUA</token> services to identify target nodes of references that reside in remote servers. Clients may read the entire table or they may read individual entries in the table.
+          </para>
+            <alert>
+              <para>The server must not modify or delete entries of this table while any client has an open session to the server, because clients may cache this table. A server may add entries to the table even if clients are connected to the server.</para>
+            </alert>
+          </content>
+        </section>
+        <section address="NamespaceArray">
+          <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray" >NamespaceArray</link>-->
+          <title>NamespaceArray</title>
+          <content>
+            <para>
+            The NamespaceArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> defines an array of namespace URIs. This <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is also referred as namespace table. The indexes into this table are referred to as namespace indexes. Namespace indexes are used in <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> values provided as <token>OPCUA</token><link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">services</link> parameters, rather than the longer namespace URI. Index 0 is reserved for the <token>OPCUA</token> namespace, and index 1 is reserved for the local server. Clients may read the entire table or they may read individual entries in the table.
+          </para>
+            <alert>
+              <para>The server must not modify or delete entries of this table while any client has an open session to the server, because clients may cache this table.</para>
+            </alert>
+            <para>
+            A server may add entries to the table even if clients are connected to the server. It is recommended that servers not change the indexes of this table but only add entries, because the client may cache <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> values using the indexes. Nevertheless, it might not always be possible for servers to avoid changing indexes in this table. Clients that cache namespace indexes of <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> values should always check when starting a session to verify that the cached values have not been changed.
+          </para>
+          </content>
+        </section>
+        <section address="ServerStatus">
+          <title>ServerStatus</title>
+          <content>
+            <para>
+            The ServerStatus <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#ServerStatusType">ServerStatusType</link>  contains elements that describe the status of the server of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#ServerStatusDataType">ServerStatusDataType</link>.
+          </para>
+          </content>
+        </section>
+        <section address="ServiceLevel">
+          <title>ServiceLevel</title>
+          <content>
+            <para>
+            The ServiceLevel <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> describes the ability of the server to provide its data to the client. The value range is from 0 to 255, where 0 indicates the worst and 255 indicates the best. The concrete values are vendor-specific. The intent is to provide the clients an indication of availability among redundant servers.
+          </para>
+          </content>
+        </section>
+        <section address="Auditing">
+          <title>Auditing</title>
+          <content>
+            <para>
+            The Auditing <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is a <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Boolean">Boolean</link> specifying if the server is currently generating audit events. It is set to TRUE if the server generates audit events, otherwise to false. The <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" /> specify what kind of audit events are generated by the server.
+          </para>
+          </content>
+        </section>
+        <section address="ServerCapabilities">
+          <title>ServerCapabilities</title>
+          <content>
+            <para>
+            The ServerCapabilities <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> defines the capabilities supported by the <token>OPCUA</token> server.
+          </para>
+          </content>
+        </section>
+        <section address="ServerDiagnostics">
+          <title>ServerDiagnostics</title>
+          <content>
+            <para>
+            The ServerDiagnostics <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> defines diagnostic information about the <token>OPCUA&gt;</token> server.
+          </para>
+          </content>
+        </section>
+        <section address="VendorServerInfo">
+          <title>VendorServerInfo</title>
+          <content>
+            <para>
+            The VendorServerInfo <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> represents the browse entry point for vendor-defined server information. This <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> is required to be present even if there are no vendor-defined <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> nodes beneath it.
+          </para>
+          </content>
+        </section>
+        <section address="ServerRedundancy">
+          <title>ServerRedundancy</title>
+          <content>
+            <para>
+            The ServerRedundancy <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> describes the redundancy capabilities provided by the server. This <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> is required even if the server does not provide any redundancy support. If the server supports redundancy, then a subtype of <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> is used to describe its capabilities. Otherwise, it provides an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> of type <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> with an empty array of RedundancySupportArray.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="ServerCapabilitiesType">
+      <title>ServerCapabilitiesType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the capabilities supported by the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>ServerProfileArray</title>
+          <content>
+            <para>
+            ServerProfileArray defines the conformance profile of the server.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>LocaleIdArray</title>
+          <content>
+            <para>
+            LocaleIdArray is an array of <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId">LocaleId</link> values that are known to be supported by the server. The server might not be aware of all <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId">LocaleId</link> values that it supports because it may provide access to underlying servers, systems or devices that do not report the values that they support.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>MinSupportedSampleRate</title>
+          <content>
+            <para>
+            MinSupportedSampleRate defines the minimum supported sample rate, including 0, which is supported by the server.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>MaxBrowseContinuationPoints</title>
+          <content>
+            <para>
+            MaxBrowseContinuationPoints is an integer specifying the maximum number of parallel continuation points of the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">Browse</link> service that the server can support per session. The value specifies the maximum the server can support under normal circumstances, so there is no guarantee the server can always support the maximum. The client should not open more <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">Browse</link> calls with open continuation points than exposed in this <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. The value 0 indicates that the server does not restrict the number of parallel continuation points the client should use.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>MaxQueryContinuationPoints</title>
+          <content>
+            <para>
+            MaxQueryContinuationPoints is an integer specifying the maximum number of parallel continuation points of the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">QueryFirst</link> services that the server can support per session. The value specifies the maximum the server can support under normal circumstances, so there is no guarantee the server can always support the maximum. The client should not open more <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">QueryFirst</link> calls with open continuation points than exposed in this <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. The value 0 indicates that the server does not restrict the number of parallel continuation points the client should use.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>MaxHistoryContinuationPoints</title>
+          <content>
+            <para>
+            MaxHistoryContinuationPoints is an integer specifying the maximum number of parallel continuation points of the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">ReadHistory</link> services that the server can support per session. The value specifies the maximum the server can support under normal circumstances, so there is no guarantee the server can always support the maximum. The client should not open more <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">ReadHistory</link> calls with open continuation points than exposed in this <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. The value 0 indicates that the server does not restrict the number of parallel continuation points the client should use.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SupportsAuditing</title>
+          <content>
+            <para>
+            SupportsAuditing is a <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Boolean">Boolean</link> specifying if the server is capable of generating audit events. It is set to TRUE if the server can generate audit events, otherwise it is set to FALSE. It does not specify if the server is currently generating audit events. This information is captured in the Auditing <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the Server <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />.
+          </para>
+          </content>
+        </section>
+        <section address="ModellingRules">
+          <title>ModellingRules</title>
+          <content>
+            <para>
+            ModellingRules <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> of the <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link> is an entry point to browse to all modelling rules supported by the server. All modelling rules supported by the server should be able to be browsed starting from this <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="ServerDiagnosticsType">
+      <title>ServerDiagnosticsType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>ServerDiagnosticsSummary</title>
+          <content>
+            <para>
+            This ServerDiagnosticsSummary <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#ServerDiagnosticsSummaryType">ServerDiagnosticsSummaryType</link>  contains diagnostic summary information of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#ServerDiagnosticsSummaryDataType">ServerDiagnosticsSummaryDataType</link> for the server.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SamplingRateDiagnosticsArray</title>
+          <content>
+            <para>
+            The SamplingRateDiagnosticsArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is an array of diagnostic information per sampling rate. There is one entry for each sampling rate currently used by the server. Its type definition node is the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SamplingRateDiagnosticsArrayType">SamplingRateDiagnosticsArrayType</link>, providing a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SamplingRateDiagnosticsDataType">SamplingRateDiagnosticsDataType</link> for each entry in the array.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SubscriptionDiagnosticsArray</title>
+          <content>
+            <para>
+            The SubscriptionDiagnosticsArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is an array of subscription diagnostic information per subscription. There is one entry for each notification channel actually established in the server. Its type definition node is the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SubscriptionDiagnosticsArrayType">SubscriptionDiagnosticsArrayType</link>, providing a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SubscriptionDiagnosticsDataType">SubscriptionDiagnosticsDataType</link> for each entry in the array. Those Variables are also used as Variables referenced by other Variables.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SessionsDiagnosticsSummary</title>
+          <content>
+            <para>
+            SessionsDiagnosticsSummary of the <link xlink:href="#SessionsDiagnosticsSummaryType">SessionsDiagnosticsSummaryType</link> contains diagnostic information per session.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>EnabledFlag</title>
+          <content>
+            <para>
+            EnabledFlag identifies whether or not diagnostic information is collected by the server. It can also be used by a client to enable or disable the collection of diagnostic information of the server. The following settings of the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Boolean">Boolean</link> value apply:
+          </para>
+            <list class="nobullet">
+              <listItem>
+                <para>TRUE indicates that the server collects diagnostic information, and setting the value to TRUE leads to resetting and enabling the collection. </para>
+              </listItem>
+              <listItem>
+                <para>FALSE indicates that no statistic information is collected, FALSE disables the collection without resetting the statistic values.</para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="SessionsDiagnosticsSummaryType">
+      <title>SessionsDiagnosticsSummaryType</title>
+      <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#SessionsDiagnosticsSummaryType" >SessionsDiagnosticsSummaryType</link>-->
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about the sessions of the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
+      </para>
+        <alert>
+          <para>
+          For each session of the server, a node of this type also provides an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> representing the session. It has the ClientName of the session as <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> and is of the <link xlink:href="#SessionDiagnosticsObjectType">SessionDiagnosticsObjectType</link>.
+        </para>
+        </alert>
+      </content>
+      <sections>
+        <section>
+          <title>SessionDiagnosticsArray</title>
+          <content>
+            <para>
+            SessionDiagnosticsArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionDiagnosticsArrayType">SessionDiagnosticsArrayType</link> provides an array of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionDiagnosticsDataType">SessionDiagnosticsDataType</link> with an entry for each session in the server having general diagnostic information about a session.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SessionSecurityDiagnosticsArray</title>
+          <content>
+            <para>
+            SessionSecurityDiagnosticsArray of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionSecurityDiagnosticsArrayType">SessionSecurityDiagnosticsArrayType</link> provides an array of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionSecurityDiagnosticsDataType">SessionSecurityDiagnosticsDataType</link> with an entry for each active session in the server having security-related diagnostic information about a session. Since this information is security-related, it should not be made accessible to all users, but only to authorised users.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="SessionDiagnosticsObjectType">
+      <title>SessionDiagnosticsObjectType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about a session of the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>SessionDiagnostics</title>
+          <content>
+            <para>
+            This SessionDiagnostics <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionDiagnosticsVariableType">SessionDiagnosticsVariableType</link> contains general diagnostic information of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionDiagnosticsDataType">SessionDiagnosticsDataType</link> about the session.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SessionSecurityDiagnostics</title>
+          <content>
+            <para>
+            This SessionSecurityDiagnostics <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionSecurityDiagnosticsArrayType">SessionSecurityDiagnosticsArrayType</link> provides the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionSecurityDiagnosticsDataType">SessionSecurityDiagnosticsDataType</link> that contains security-related diagnostic information about client sessions. Since this information is security-related, it should not be made accessible to all users, but only to authorised users.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>SubscriptionDiagnosticsArray</title>
+          <content>
+            <para>
+            This SubscriptionDiagnosticsArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is an array of subscription diagnostic information per opened subscription. Its type definition node is the <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /><link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SubscriptionDiagnosticsArrayType">SubscriptionDiagnosticsArrayType</link> providing a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SubscriptionDiagnosticsDataType">SubscriptionDiagnosticsDataType</link> for each entry in the array.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="VendorServerInfoType">
+      <title>VendorServerInfoType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines a placeholder <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> for vendor-specific information about the <token>OPCUA</token> server. This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines an empty <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> that has no components. It shall be subtyped by vendors to define their vendor-specific information.
+      </para>
+      </content>
+    </section>
+    <section address="ServerRedundancyType">
+      <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerRedundancyType" >ServerRedundancyType</link>-->
+      <title>ServerRedundancyType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the redundancy capabilities supported by the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>RedundancySupport</title>
+          <content>
+            <para>
+            This RedundancySupport component of the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#PropertyType">PropertyType</link> indicates what redundancy is supported by the server (value of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#RedundancySupport">RedundancySupport</link>).
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="TransparentRedundancyType">
+      <title>TransparentRedundancyType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is a subtype of <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> and is used to identify the capabilities of the <token>OPCUA</token> server for server-controlled redundancy with a transparent switchover for the client. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>RedundancySupport</title>
+          <content>
+            <para>
+            RedundancySupport <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is inherited from the <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link>.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>CurrentServerId</title>
+          <content>
+            <para>
+            Although, in a transparent switchover scenario, all redundant servers serve under the same URI to the client, it may be required to track the exact data source on the client. Therefore, CurrentServerId contains an identifier of the currently-used server in the redundant set. This server is valid only inside a session; if a client opens several sessions, different servers of the redundant set of servers may serve it in different sessions. The value of the CurrentServerId may change due to failover or load balancing, so a client that needs to track its data source shall subscribe to this <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>RedundantServerArray</title>
+          <content>
+            <para>
+            As diagnostic information, the RedundantServerArray of the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#RedundantServerDataType">RedundantServerDataType</link> contains an array of available servers in the redundant set; including their service levels. This array may change during a session.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="NonTransparentRedundancyType">
+      <title>NonTransparentRedundancyType</title>
+      <content>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is a subtype of <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> and is used to identify the capabilities of the <token>OPCUA</token> server for non-transparent redundancy. It is complex type and has components described in the following sections.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>ServerUriArray</title>
+          <content>
+            <para>
+            ServerUriArray is an array with the URI of all redundant servers of the <token>OPCUA</token> server. See <link xlink:href="3774554f-8d12-4d9a-8532-85d704388d9d" /> for the definition of the redundancy concept. Since, in a non-transparent redundancy environment, the client is responsible to subscribe to the redundant servers, it might or might not open a session to one or more redundant servers of this array.
+          </para>
+            <para>
+            The redundancy support provided by the server is defined in the <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#RedundancySupport">RedundancySupport</link> component of the the <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> supertype. The client is allowed to access the redundant sever only as described there, however, ”hot” switchover implies the support of “warm” switchover and “warm” switchover implies the support of “cold” switchover.
+          </para>
+            <alert>
+              <para>
+              If the server supports only a “cold” switchover, the <link xlink:href="#ServiceLevel ">ServiceLevel</link><link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the server object should be considered to identify the primary server. In this scenario, only the primary server may be able to access the underlying system, because the underlying system may support access only from a single server. In this case, all other servers will be identified with a ServiceLevel of zero.
+            </para>
+            </alert>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+      <link xlink:href="3774554f-8d12-4d9a-8532-85d704388d9d" />
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link>
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Boolean">Boolean</link>
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId">LocaleId</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#ServerStatusType">ServerStatusType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SubscriptionDiagnosticsArrayType">SubscriptionDiagnosticsArrayType</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">Modelling rules</link>
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#ServerStatusDataType">ServerStatusDataType</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SubscriptionDiagnosticsDataType">SubscriptionDiagnosticsDataType</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionDiagnosticsDataType">SessionDiagnosticsDataType</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#RedundantServerDataType">RedundantServerDataType</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#RedundancySupport">RedundancySupport</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#ServerDiagnosticsSummaryDataType">ServerDiagnosticsSummaryDataType</link>
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SamplingRateDiagnosticsDataType">SamplingRateDiagnosticsDataType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionSecurityDiagnosticsArrayType">SessionSecurityDiagnosticsArrayType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SubscriptionDiagnosticsArrayType">SubscriptionDiagnosticsArrayType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionDiagnosticsArrayType">SessionDiagnosticsArrayType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionDiagnosticsVariableType">SessionDiagnosticsVariableType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#ServerDiagnosticsSummaryType">ServerDiagnosticsSummaryType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SamplingRateDiagnosticsArrayType">SamplingRateDiagnosticsArrayType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#PropertyType">PropertyType</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

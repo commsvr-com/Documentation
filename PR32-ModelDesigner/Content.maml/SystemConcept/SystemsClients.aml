@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b8135029-bd1b-412a-a9fb-610b3c31ac09" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      The <token>OPCUA</token> client architecture models the Client endpoint of client/server interactions. Figure 1 illustrates the major elements of a typical <token>OPCUA</token> client and how they relate to each other.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">OPC UA Client Architecture</caption>
+        <image placement="center" xlink:href="3bb4041e-f01c-406e-9099-8083985587ab" />
+      </mediaLink>
+      <para>
+      The client application - a software package -  is the code that implements the client functionality. It uses the <token>OPCUA</token> client API to send and receive <token>OPCUA</token> service requests and responses to the <token>OPCUA</token> server.
+    </para>
+      <para>
+      Note that the “OPC UA Client API” is an internal interface that isolates the client application code from an <token>OPCUA</token> communication stack. The <token>OPCUA</token> communication stack converts <token>OPCUA</token> client API calls into messages and sends them through the underlying communications entity to the server at the request of the client application. The <token>OPCUA</token> communication stack also receives response and notification messages from the underlying communications entity and delivers them to the client application through the <token>OPCUA</token> client API.
+    </para>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

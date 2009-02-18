@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="b6fbace7-8f12-4c47-8dd2-d9223336254b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b" />-->
+    <summary>
+      <para>
+      This topic describes types supporting management of the <token>AS</token> and providing general information about organization, modelling and coding.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The group of types  supporting management of the <token>AS</token> aand providing general information about organization, modelling and coding includes the following types derived from the <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />:
+    </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">ModellingRuleType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as the type for the modelling rules.
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link>: Instances of this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> are used to organise the <token>AS</token> into a hierarchy of nodes.
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as type for the data type encodings.
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType">DataTypeSystemType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as type for the data type systems.
+        </para>
+        </listItem>
+      </list>
+      <alert>
+        <para>
+        Because the types description does not provide complete definition, to see details of the definitions use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" /> application and expand appropriate <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link>.
+      </para>
+      </alert>
+    </introduction>
+    <section address="ModellingRuleType">
+      <!--<link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType" >ModellingRuleType</link>-->
+      <title>
+      ModellingRuleType
+    </title>
+      <content>
+        <para>
+        Modelling rules are defined in the topic <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as the type for the modelling rules.
+      </para>
+        <para>
+        It is complex type and has property NamingRule that identifies the naming rule of a modelling rule as defined in the topic <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />.
+      </para>
+      </content>
+    </section>
+    <section address="FolderType">
+      <!--<link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType" >FolderType</link>-->
+      <title>FolderType</title>
+      <content>
+        <para>
+        Instances of this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> are used to organise the <token>AS</token> into a hierarchy of nodes. They represent the root node of a subtree, and have no other semantics associated with them. However, the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link> of an instance of the FolderType, such as <phrase>ObjectTypes</phrase>, should imply the semantics associated with the use of it. There are no references specified for this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
+      </para>
+      </content>
+    </section>
+    <section address="DataTypeEncodingType">
+      <!--<link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType" >DataTypeEncodingType</link>-->
+      <title>DataTypeEncodingType</title>
+      <content>
+        <para>
+        Data type encodings are defined in the topic <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as type for the data type encodings. There are no references specified for this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
+      </para>
+      </content>
+    </section>
+    <section address="DataTypeSystemType">
+      <!--<link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType" >DataTypeSystemType</link>-->
+      <title>DataTypeSystemType</title>
+      <content>
+        <para>
+        Data type systems are defined in the topic <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as type for the data type systems. There are no references specified for this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" />
+      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
+      <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

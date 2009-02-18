@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="69856d11-e274-48c1-87d7-bbc7ec5e6e18" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+        <token>OPCUA</token> servers shall provide type definitions for <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> and <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> nodes. The <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference shall be used to link an instance with its type definition represented by a type definition node. Type definitions are required, however, section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> describes a <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36">, a PropertyType and a BaseDataVariableType</link> so a server can use such a base type if no more specialised type information is available. Objects and variables nodes inherit the attributes specified by their type definition node.
+    </para>
+      <para>
+      In some cases, the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> used by the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference will be well-known to clients and servers. Organizations may define type definition nodes that are well-known in the industry. Well-known <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> values of type definition nodes provide for commonality across <token>OPCUA</token> servers and allow clients to interpret the type definition node without having to read it from the server. Therefore, servers may use well-known values of the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> attribute without representing the corresponding type definition nodes in their <token>AS</token>. However, the type definition nodes shall be provided for generic clients. These type definition nodes may exist in another server.
+    </para>
+      <para>
+      The following example, illustrated in Figure 1, describes the use of the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference. In this example, a setpoint parameter <computerOutputInline>SP</computerOutputInline> is represented as a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> in the <token>AS</token>. This <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> is part of an object not shown in the figure.
+    </para>
+      <para>
+      To provide for a common setpoint definition that can be used by other objects, a specialised <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used. Each setpoint <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> that uses this common definition will have a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference that identifies the common <computerOutputInline>SetPoint</computerOutputInline> variable type.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Example of a variable defined by a VariableType</caption>
+        <image placement="center" xlink:href="4306e3f9-71cc-402c-ad2a-f483164d2f34" />
+      </mediaLink>
+    </introduction>
+    <section>
+      <title>Complex Type Definition Nodes and their Instance Declarations</title>
+      <content>
+        <para>
+        Type definition nodes can be complex. A complex type definition node also defines references to other nodes as part of the type definition. The modelling rules specify how those nodes are handled when creating an instance of the type definition.
+      </para>
+        <para>
+        A type definition node references instances instead of other type definition nodes to allow unique names for several instances of the same type, to define default values and to add references for those instances that are specific to this complex type definition node and not to the type definition node of the instance. For example, in Figure 2 the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> node <computerOutputInline>AI_BLK_TYPE</computerOutputInline>, representing a function block, has a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> reference to a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /><computerOutputInline>SP</computerOutputInline> of the <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /><computerOutputInline>SetPoint</computerOutputInline>. <computerOutputInline>AI_BLK_TYPE</computerOutputInline> could have an additional setpoint <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the same type using a different name. It could add a Property to the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> that was not defined by its type definition node <computerOutputInline>SetPoint</computerOutputInline>. And it could define a default value for <computerOutputInline>SP</computerOutputInline>, that is, each instance of <computerOutputInline>AI_BLK_TYPE</computerOutputInline> would have a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /><computerOutputInline>SP</computerOutputInline> initially set to this value.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Example of a Complex TypeDefinition</caption>
+          <image placement="center" xlink:href="0e5ba657-5b43-4cea-a0ac-3561c6c3cbb3" />
+        </mediaLink>
+        <para>
+        This approach is commonly used in object-oriented programming languages in which the variables of a class are defined as instances of other classes. When the class is instantiated, each variable is also instantiated, but with the default values (constructor values) defined for the containing class. That is, typically, the constructor for the component class runs first, followed by the constructor for the containing class. The constructor for the containing class may override component values set by the component class.
+      </para>
+        <para>
+        To distinguish instances used for the type definitions from instances that represent real data, those instances are called instance declarations. However, this term is used to simplify this specification, if an instance is an instance declaration or not is only visible in the <token>AS</token> by following its references. Some instances may be shared and therefore referenced by type definition nodes, instance declarations and instances. This is similar to class variables in object-oriented programming languages.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Subtyping</title>
+      <content>
+        <para>
+        This specification allows subtyping of type definitions. Subtyping of <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf">object types</link> and <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f"> variable types</link> allows:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+            clients that only know the supertype are able to handle an instance of the subtype as if it is an instance of the supertype;
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            instances of the supertype can be replaced by instances of the subtype;
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            specialised types that inherit common characteristics of the base type.
+          </para>
+          </listItem>
+        </list>
+        <para>
+        In other words, subtypes reflect the structure defined by their supertype but may add additional characteristics. For example, a vendor may wish to extend a general <computerOutputInline>TemperatureSensor</computerOutputInline><link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> by adding a property providing the next maintenance interval. The vendor would do this by creating a new <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> which is a target node for a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> reference from the original <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> and adding the new property to it.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Instantiation of Complex Type Definition Nodes</title>
+      <content>
+        <para>
+        The instantiation of complex type definition nodes depends on the modelling rules. However, the intention is that instances of a type definition will reflect the structure defined by the type definition node. Figure 3 shows an instance of the type definition node <computerOutputInline>AI_BLK_TYPE</computerOutputInline>, where the modelling rule Mandatory was applied for its containing <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. Thus, an instance of <computerOutputInline>AI_BLK_TYPE</computerOutputInline>, called <computerOutputInline>AI_BLK_1</computerOutputInline>, has a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference to <computerOutputInline>AI_BLK_TYPE</computerOutputInline>. It also contains a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /><computerOutputInline>SP</computerOutputInline> having the same valu of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> as the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /><computerOutputInline>SP</computerOutputInline> used by the type definition node and thereby reflects the structure defined by the type definition node.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Object and its Components defined by an ObjectType</caption>
+          <image placement="center" xlink:href="6b798f25-4c4a-4d9f-a0f0-214278eefe8d" />
+        </mediaLink>
+        <para>
+        A client knowing the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /><computerOutputInline>AI_BLK_TYPE</computerOutputInline> can use this knowledge to directly browse to the containing nodes for each instance of this type. This allows programming against the type definition node. For example, a graphical element may be programmed in the client that handles all instances of <computerOutputInline>AI_BLK_TYPE</computerOutputInline> in the same way by showing the value of <computerOutputInline>SP</computerOutputInline>.
+      </para>
+        <para>
+        To allow this simple addressing, a type definition node or an instance declaration shall never reference two nodes having the same <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> using hierarchical references in forward direction. Instances based on instance declarations shall always keep the same <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> as the instance declaration they are derived from. A special service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> called TranslateBrowsePathsToNodeIds may be used to identify the instances based on the instance declarations. Using the simple Browse service might not be sufficient since the uniqueness of the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> is only required for type definition nodes and instance declarations, not for other instances. Thus, <computerOutputInline>AI_BLK_1</computerOutputInline> may have another <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> with the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link><computerOutputInline>SP</computerOutputInline>, although this one would not be derived from an instance declaration of the type definition node.
+      </para>
+        <alert>
+          <para>
+          Instances derived from an instance declaration shall be of the same type definition node or a subtype of this type definition node
+        </para>
+        </alert>
+        <para>
+        A type definition node and its InstanceDeclarations shall always reside in the same server. However, instances may point with their <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> Reference to a type definition node in a different server.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36" />
+      <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

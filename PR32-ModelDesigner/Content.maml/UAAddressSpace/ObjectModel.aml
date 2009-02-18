@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1254395d-618d-46dc-ad33-39e2becadee8" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>To integrate diverse systems we must make them interoperable, but it means necessity of information exchange.</para>
+    </summary>
+    <introduction>
+      <para>
+      This section describes the concept of Object Model that allows representing the underlying real-time process in a unique and platform-independent means.
+    </para>
+    </introduction>
+    <section>
+      <title>Object</title>
+      <content>
+        <para>
+        The primary objective of the <token>OPCUA</token> is to provide a standard that allows servers to represent real-time process state and its environment to clients, in a unique and platform-independent way. The <token>OPCUA</token> Object Model has been designed to meet this objective.
+      </para>
+        <para>
+        According to the concept, <token>UA</token> servers expose current process information to all clients as a collection of objects. The main role of the objects is to expose a selected, well-defined part of information of the underlying process. Represented information could be complex. Representation of the process in terms of values is not enough to control the behavior of the process. Therefore the server has to provide clients the possibility to perform operations on the objects (see fig. 1 bellow).
+      </para>
+        <alert>
+          <para>Objects are a collection of:</para>
+          <list class="bullet">
+            <listItem>
+              <para>Variables – representing current state</para>
+            </listItem>
+            <listItem>
+              <para>Methods – offering a functionality of the object</para>
+            </listItem>
+          </list>
+        </alert>
+      </content>
+    </section>
+    <section>
+      <title>Variables and Methods</title>
+      <content>
+        <para>The Object Model defines objects in terms of variables and methods. It also allows us to express the relationships to other objects as references. In other words, the object is a placeholder collecting variables, methods and references. Using it, clients get access to the selected part of the underlying process. Therefore, the objects must have established a connection to the physical plant floor devices. On the client side, objects should provide functionality of transferring current values and operating on the object.</para>
+        <alert>
+          <para>
+          The object connection (interface) to real-time process is plant floor devices vendor specific. The object management functionality is standardized by the <token>OPCUA</token> Service Model.
+        </para>
+        </alert>
+        <para>
+        Access to the values representing the current process state is provided by the Read/Write functions. Client can be also informed about the process state changes using the "data change" notifications provided by the <token>OPCUA</token> Service Model. Invoke and event notification functionality allows clients to use the methods coupled with the object (see fig. 1 bellow).
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Process Data and Metadata</title>
+      <content>
+        <para>Industrial process management requires information of two types: process data and metadata. From the previous discussion we know that the same way as process data represents the process physical state, metadata describes the process itself and in the <token>OPCUA</token> it is exposed simultaneously the as object relationships (see fig. 1 bellow).</para>
+      </content>
+    </section>
+    <section>
+      <title>BrowseName</title>
+      <content>
+        <para>
+        Because each object is a placeholder of the methods and process data, clients need a handler to call appropriate procedures provided by the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. Therefore each object has been assigned a unique identifier. This indentifier can by unique globally or locally. Globally unique identifiers make the object randomly accessible to the clients. Locally unique identifiers mean that clients are required to access objects indirectly using defined relationships. In any case, we cannot assume that all addresses are well-known, therefore, in order to find required node, functionality provided by the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> allows browsing the objects collection exposed by the server. As a result of this functionality, we call the object identifier browse name. <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> is the first required attribute of each object that can be the subject of server-provided <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+        <para>
+        One of the requirements is the necessity of randomly accessing and getting process data by the client in a standard way without any programming. To meet this requirement, any client is supposed to have an anchor with a well-known address as a browse starting point. <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> provides definition of all of the objects that can be found in the collection exposed by servers.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Objects Lifecycle</title>
+      <content>
+        <para>
+        It is obvious that the process state and infrastructure is changing, so the process representation must follow those changes. <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> notion provides values representing the process state, but cannot reflect changes in the structure of the underlying process. This kind of information requires object relationship modification including creation of new objects and disposing of the existing ones. Disposing of the existing objects and managing objects references is easy to be accomplished having appropriate functionality (<link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />) and objects unique identification. But, the above is insufficient to create a new object, because the object kind has to be selected. The object behavior could be process-dependent, therefore cannot be subject of standardization. Creation of objects from a generic description is very difficult or impossible without any programming and, what is more, it is very error prone.
+      </para>
+        <para>To resolve this issue, a concept of type is used. This concept uses the mechanism of replication of precisely defined templates, known for ages. The process type has similar role to DNA (Deoxyribonucleic acid) in the construction of cell components. The type contains the genetic instructions used in the development of the objects collections exposed by the server. The main role of the type is a long-term storage of information. It is often compared to a set of blueprints or a recipe, or a code, since it contains instructions needed to construct objects and relationship of the objects. Because the type is also a kind of information, and because information is an abstract concept, it cannot be subject to processing performed by a physical device. Therefore, to be exposed, it has to be represented also as an object in the collection maintained by the server.</para>
+        <para>As a result of introducing the type concept, servers could expose two object kids:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Instance</para>
+          </listItem>
+          <listItem>
+            <para>Type</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section>
+      <title>Complex Types</title>
+      <content>
+        <para>
+        According to this concept, an object represents a piece of underlying real process. But as it is only a piece, often it cannot exist alone, i.e. it requires an existence of other objects coupled together. Creation of the whole set on the step by step basis is error prone, as we have to address the issue what to do if the creation process has not been accomplished.
+      </para>
+        <para>
+        Let me give an example. Each boiler has input and output pipes, each car has four wheels. Creating objects that represent a boiler without all required pipes and a car with an incomplete number of wheels makes those objects defective and useless.
+      </para>
+        <para>The concept of a complex type provides a solution. The complex type allows defining all objects – the whole set - that has to be created as a one step process. As a result, it is impossible to create the set of objects partially. Objects tightly coupled by the type as its parts are called instance declarations. A very powerful feature of the instance declaration is that children can also be complex, see <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">OPC UA Object Model</caption>
+          <image placement="center" xlink:href="bb392375-2eac-4efd-8e9c-d9222f84dba0">
+          </image>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="44be48a5-7e42-42a2-906b-86b569ed9d93" />
+      <link xlink:href="57948ea6-b48e-43c9-addc-d24694886784" />
+      <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />
+      <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8" />
+      <link xlink:href="c9cd61c1-3e7c-4fef-a834-472417145053" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

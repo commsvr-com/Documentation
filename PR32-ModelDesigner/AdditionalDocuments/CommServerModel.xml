@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TargetNamespace="http://cas.eu/UA/CommServer/" TargetXmlNamespace="" xmlns="http://opcfoundation.org/UA/ModelDesign.xsd">
+  <Namespaces>
+    <Namespace Name="OpcUa" Prefix="Opc.Ua" InternalPrefix="Opc.Ua.Server" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</Namespace>
+    <Namespace Name="CommServer" Prefix="CAS.UA.CommServer" InternalPrefix="CAS.UA.CommServer.Internal" XmlNamespace="">http://cas.eu/UA/CommServer/</Namespace>
+  </Namespaces>
+  <ObjectType xmlns:q1="http://cas.eu/UA/CommServer/" SymbolicName="q1:FolderWithIdType" xmlns:q2="http://opcfoundation.org/UA/" BaseType="q2:FolderType">
+    <Children>
+      <Property SymbolicName="q1:Identifier" DataType="q2:Int64" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q3="http://cas.eu/UA/CommServer/" SymbolicName="q3:PortType" BaseType="q3:FolderWithIdType">
+    <Children>
+      <Property SymbolicName="q3:State" xmlns:q4="http://opcfoundation.org/UA/" DataType="q4:String" />
+      <Object SymbolicName="q3:Timers" TypeDefinition="q3:PortTimersType" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q5="http://cas.eu/UA/CommServer/" SymbolicName="q5:PortTimersType" xmlns:q6="http://opcfoundation.org/UA/" BaseType="q6:FolderType">
+    <Children>
+      <Variable SymbolicName="q5:Active" DataType="q6:UInt64" />
+      <Variable SymbolicName="q5:Fail" DataType="q6:UInt64" />
+      <Variable SymbolicName="q5:Standby" DataType="q6:UInt64" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q7="http://cas.eu/UA/CommServer/" SymbolicName="q7:MinAvgMaxType" xmlns:q8="http://opcfoundation.org/UA/" BaseType="q8:FolderType">
+    <Children>
+      <Property SymbolicName="q7:Min" DataType="q8:Int64">
+        <Description>Minimum</Description>
+      </Property>
+      <Property SymbolicName="q7:Avg" DataType="q8:Int64">
+        <Description>Average</Description>
+      </Property>
+      <Property SymbolicName="q7:Max" DataType="q8:Int64">
+        <Description>Maximum</Description>
+      </Property>
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q9="http://cas.eu/UA/CommServer/" SymbolicName="q9:SegmentTimersType" BaseType="q9:FolderWithIdType">
+    <Children>
+      <Property SymbolicName="q9:WriteDelay" xmlns:q10="http://opcfoundation.org/UA/" DataType="q10:String" />
+      <Property SymbolicName="q9:ReadDelay" xmlns:q11="http://opcfoundation.org/UA/" DataType="q11:String" />
+      <Object SymbolicName="q9:OvertimeCf" TypeDefinition="q9:MinAvgMaxType" />
+      <Property SymbolicName="q9:TotalConnectionTime" xmlns:q12="http://opcfoundation.org/UA/" DataType="q12:UInt64" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q13="http://cas.eu/UA/CommServer/" SymbolicName="q13:SegmentCountersType" BaseType="q13:FolderWithIdType">
+    <Children>
+      <Property SymbolicName="q13:ConnectionFail" xmlns:q14="http://opcfoundation.org/UA/" DataType="q14:UInt32" />
+      <Property SymbolicName="q13:ConnectionMade" xmlns:q15="http://opcfoundation.org/UA/" DataType="q15:UInt32" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q16="http://cas.eu/UA/CommServer/" SymbolicName="q16:SegmentStatusType" BaseType="q16:FolderWithIdType">
+    <Children>
+      <Property SymbolicName="q16:State" xmlns:q17="http://opcfoundation.org/UA/" DataType="q17:String" />
+      <Object SymbolicName="q16:Timers" TypeDefinition="q16:SegmentTimersType" />
+      <Object SymbolicName="q16:Counters" TypeDefinition="q16:SegmentCountersType">
+        <Description>Counters in segment</Description>
+      </Object>
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q18="http://cas.eu/UA/CommServer/" SymbolicName="q18:SegmentType" xmlns:q19="http://opcfoundation.org/UA/" BaseType="q19:FolderType">
+    <Children>
+      <Object SymbolicName="q18:SegmentStatus" TypeDefinition="q18:SegmentStatusType" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q20="http://cas.eu/UA/CommServer/" SymbolicName="q20:RxTxCoupleType" xmlns:q21="http://opcfoundation.org/UA/" BaseType="q21:FolderType">
+    <Children>
+      <Property SymbolicName="q20:Rx" DataType="q21:UInt64" />
+      <Property SymbolicName="q20:Tx" DataType="q21:UInt64" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q22="http://cas.eu/UA/CommServer/" SymbolicName="q22:ProtocolCountersType" xmlns:q23="http://opcfoundation.org/UA/" BaseType="q23:FolderType">
+    <Children>
+      <Object SymbolicName="q22:Frames" TypeDefinition="q22:RxTxCoupleType" />
+      <Property SymbolicName="q22:CRCErrors" DataType="q23:Int64" />
+      <Property SymbolicName="q22:FragmentedFrames" DataType="q23:Int64" />
+      <Property SymbolicName="q22:NoResponses" DataType="q23:Int64" />
+      <Property SymbolicName="q22:InvalidFrames" DataType="q23:Int64" />
+      <Property SymbolicName="q22:SyncronizationErrors" DataType="q23:Int64" />
+      <Property SymbolicName="q22:NAKs" DataType="q23:Int64" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q24="http://cas.eu/UA/CommServer/" SymbolicName="q24:ProtocolTimersType" xmlns:q25="http://opcfoundation.org/UA/" BaseType="q25:FolderType">
+    <Children>
+      <Property SymbolicName="q24:MaxResponseDelay" DataType="q25:String" />
+      <Property SymbolicName="q24:CharacterGap" DataType="q25:String" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q26="http://cas.eu/UA/CommServer/" SymbolicName="q26:ProtocolStatusType" BaseType="q26:FolderWithIdType">
+    <Children>
+      <Object SymbolicName="q26:Good" TypeDefinition="q26:RxTxCoupleType" />
+      <Object SymbolicName="q26:Bad" TypeDefinition="q26:RxTxCoupleType" />
+      <Object SymbolicName="q26:BytesTransferred" TypeDefinition="q26:RxTxCoupleType" />
+      <Object SymbolicName="q26:Counters" TypeDefinition="q26:ProtocolCountersType" />
+      <Object SymbolicName="q26:Timers" TypeDefinition="q26:ProtocolTimersType" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q27="http://cas.eu/UA/CommServer/" SymbolicName="q27:ProtocolType" xmlns:q28="http://opcfoundation.org/UA/" BaseType="q28:FolderType">
+    <Children>
+      <Object SymbolicName="q27:ProtocolStatus" TypeDefinition="q27:ProtocolStatusType" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q29="http://cas.eu/UA/CommServer/" SymbolicName="q29:ChannelType" xmlns:q30="http://opcfoundation.org/UA/" BaseType="q30:FolderType" />
+  <ObjectType xmlns:q31="http://cas.eu/UA/CommServer/" SymbolicName="q31:InternalFolderType" xmlns:q32="http://opcfoundation.org/UA/" BaseType="q32:FolderType" />
+  <ObjectType xmlns:q33="http://cas.eu/UA/CommServer/" SymbolicName="q33:StationType" BaseType="q33:FolderWithIdType">
+    <Children>
+      <Property SymbolicName="q33:State" xmlns:q34="http://opcfoundation.org/UA/" DataType="q34:String" />
+    </Children>
+  </ObjectType>
+  <ObjectType xmlns:q35="http://cas.eu/UA/CommServer/" SymbolicName="q35:CommServerFolderType" xmlns:q36="http://opcfoundation.org/UA/" BaseType="q36:FolderType" />
+</ModelDesign>

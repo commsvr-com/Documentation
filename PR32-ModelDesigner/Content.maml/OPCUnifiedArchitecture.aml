@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c55db7e8-3f15-4556-b8db-12251d39ad0a" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+      The existing OPC COM based specifications - called OPC Classic - have served the OPC Community well over the past 10 years, but as technology moves on so must the interoperability standards. Feedback from thousands of applications worldwide has provided a lot of experience that now can be used as a foundation for a new approach to systems interoperability.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The main factors that influenced the <token>OPCF</token> decision to propose a new architecture are summarized below:
+    </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+          Microsoft has deemphasized COM in favor of cross-platform capable Web Services and SOA (Service Oriented Architecture)
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+          OPC Vendors want a single set of services to expose the OPC data models (DA, <token>AE</token>, HDA ...)
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+          OPC Vendors want to implement OPC on non-Microsoft operating systems, including embedded devices
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+          Other collaborating organizations need a reliable, efficient way to move higher level structured data
+        </para>
+        </listItem>
+      </list>
+      <para>
+        <token>OPCUA</token> is a set of specifications applicable to manufacturing software in application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems. These systems are intended to exchange information and to use command and control for industrial processes. <token>OPCUA</token> defines a common infrastructure model to facilitate this information exchange.
+    </para>
+      <para>
+      In January’<date>2004</date> the OPC Foundation tasked a working group to create a new architecture that would take OPC to the forefront of technology and provide an interoperability framework that would be viable for the next 10 years and beyond. The first parts of this new "Unified Architecture" were released in June’2006.
+    </para>
+    </introduction>
+    <section>
+      <title>Structure of the specifications collection</title>
+      <content>
+        <para>
+        The <token>OPCUA</token> (OPC-UA) is described in a layered set of specifications broken into Parts. It is purposely described in abstract terms and in later parts married to existing technology on which software can be built. This layering is on purpose and helps isolate changes in <token>OPCUA</token> from changes in the technology used to implement it. The structure and depth of material to absorb in learning is harder than the OPC COM Specifications. It is best to read the introductory articles and in-depth presentations before tackling the <token>OPCUA</token> Specifications. 
+      </para>
+        <para>
+        The <token>OPCUA</token> specification is organized as a multi-part document combined in the following sets:
+      </para>
+        <list class="nobullet">
+          <listItem>
+            <para>
+            Core Specification Parts
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            Access Type Specification Parts
+          </para>
+          </listItem>
+        </list>
+        <para>
+        The first seven parts specify the core capabilities of the <token>OPCUA</token>. These core capabilities define the structure
+        of the <token>AS</token> and the services that operate on it. Parts 8 through 11 apply these core capabilities to specific
+        models of data access previously addressed by separate OPC COM specifications, such as Data Access (DA), Alarms and Events
+        (<token>AE</token>) and Historical Data Access (HDA). Part 12 describes Discovery mechanisms for the <token>OPCUA</token>. Readers
+        are encouraged to read Parts 1 through 5 of the core specifications before reading Parts 8 through 12. For example, a reader
+        interested in <token>UADA</token> should read Parts 1 through 5 and 8. References in Part 8 may direct the reader to other
+        parts of the specifications.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title address="CoreSpecificationParts">Core Specification Parts</title>
+          <content>
+            <para>
+            This set contains the following specifications:
+          </para>
+            <list class="nobullet">
+              <listItem>
+                <para>
+                Part 1 – Overview and Concepts: presents the concepts and overview of <token>OPCUA</token>.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 2 – Security Model: describes the model for securing interactions between <token>OPCUA</token> Clients and Servers.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 3 – Address Space Model: describes the contents and structure of the Server <token>AS</token>.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 4 – Services: specifies the Services provided by <token>OPCUA</token> Servers.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 5 – Information Model: specifies the types and their relationships defined for <token>OPCUA</token> Servers.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 6 – Mappings: specifies the transport mappings and data encodings supported by <token>OPCUA</token>.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 7 – Profiles: specifies the Profiles that are available for OPC Clients and Servers. These Profiles provide
+                groups of Services or functionality that can be used for conformance level certification.
+                Servers and Clients will be tested against the Profiles.
+              </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section>
+          <title address="AccessTypeSpecificationParts">Access Type Specification Parts</title>
+          <content>
+            <para>
+            This set contains the following specifications:
+          </para>
+            <list class="nobullet">
+              <listItem>
+                <para>
+                Part 8 – Data Access: specifies the use of <token>OPCUA</token> for data access.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 9 – Alarms and Conditions: specifies the use of <token>OPCUA</token> support for access to Alarms and Conditions. The base system includes support for simple Events; this specification extends that support to include support for Alarms and Conditions.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 10 – Programs: specifies <token>OPCUA</token> support for access to Programs.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 11 – Historical Access: specifies the use of <token>OPCUA</token> for historical access. This access includes both historical data and historical Events.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Part 12 – Discovery: specifies how Discovery Servers operate in different scenarios and describes how UA Clients and Servers should interact with them. It also defines how UA - related information should be accessed using common directory service protocols such as UDDI and LDAP.
+              </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <!--The <token>OPCUA</token> Specification is organized as a multi-part document. While describing the concepts, this part will refer 
+    to these parts of the specification:
+    -->
+      <externalLink>
+        <linkText>Part 1: OPC UA Specification</linkText>
+        <linkAlternateText>Part 1 – Concepts</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part1/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 2: OPC UA Specification</linkText>
+        <linkAlternateText>Part 2 – Security Model, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part2/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Part 3: OPC UA Specification
+      </linkText>
+        <linkAlternateText>
+        Part 3 – Address Space Model, Version 1.0 or later
+      </linkAlternateText>
+        <linkUri>
+        http://www.opcfoundation.org/UA/Part3/
+      </linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Part 4: OPC UA Specification
+      </linkText>
+        <linkAlternateText>
+        Part 4 – Services, Version 1.0 or later
+      </linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part4/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 5: OPC UA Specification</linkText>
+        <linkAlternateText>Part 5 – Information Model, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part5/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 6: OPC UA Specification</linkText>
+        <linkAlternateText>Part 6 – Mappings, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part6/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 7: OPC UA Specification</linkText>
+        <linkAlternateText>Part 7 – Profiles, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part7/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 8: OPC UA Specification</linkText>
+        <linkAlternateText>Part 8 – Data Access, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part8/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 9: OPC UA Specification</linkText>
+        <linkAlternateText>Part 9 – Alarms and Conditions, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part9/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 10: OPC UA Specification</linkText>
+        <linkAlternateText>Part 10 – Programs, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part10/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 11: OPC UA Specification</linkText>
+        <linkAlternateText>Part 11 – Historical Access, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part11/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Part 12: OPC UA Specification</linkText>
+        <linkAlternateText>Part 12 – Discovery, Version 1.0 or later</linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/Part12/</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="0d741b40-7d47-4aa1-852b-fe9007394b7f" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="0d741b40-7d47-4aa1-852b-fe9007394b7f" />-->
+    <summary>
+      <para>
+      The <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" /> is the base type and all other object types shall either directly or indirectly inherit from it.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      Typically, the components of an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> are fixed and can be extended by subtyping. However, since each <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> of an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> can be extended with additional components, the <token>OPCUA</token> specification allows extending the standard object types with additional components. Thereby, it is possible to express the additional information in the type definition that would already be contained in each <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />. Some object types already provide entry points for server specific extensions. However, it is not allowed to restrict the components of the standard object types defined in the specyfication. An example of extending the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is putting the standard property NodeVersion defined in section <link xlink:href="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67" /> into the <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />, stating that each <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> of the server will provide a NodeVersion.
+    </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+        There are defined tree groups of types derived from the <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />. They are dedicated to support management and information organisation of the:
+      </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b">Address Space</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97">Server</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c">Events</link>
+            </para>
+          </listItem>
+        </list>
+        <para>
+        Types supporting management of the <token>AS</token> - providing general information about organization, modelling and coding - are described in the topic <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b" />. This group includes the following types derived from the <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">ModellingRuleType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as the type for the modelling rules.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link>: Instances of this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> are used to organise the <token>AS</token> into a hierarchy of nodes.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as type for the data type encodings.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType">DataTypeSystemType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is used as type for the data type systems.
+          </para>
+          </listItem>
+        </list>
+        <para>
+        Objects of types supporting management and organisation of the server related information provide runtime diagnostic and capabilities information are described in the topic <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97" />. This group includes the following types derived from the <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType">ServerType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the capabilities, diagnostic and redundancy supported by the OPC Unified Architecture server.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerCapabilitiesType">ServerCapabilitiesType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the capabilities supported by the OPC Unified Architecture server.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerDiagnosticsType">ServerDiagnosticsType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about the OPC Unified Architecture server.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#SessionsDiagnosticsSummaryType">SessionsDiagnosticsSummaryType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about the sessions of the OPC Unified Architecture server.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#SessionDiagnosticsObjectType">SessionDiagnosticsObjectType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about a session of the OPC Unified Architecture server.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#VendorServerInfoType">VendorServerInfoType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines a placeholder <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> for vendor-specific information about the OPC Unified Architecture server.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerRedundancyType">ServerRedundancyType</link>: This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the redundancy capabilities supported by the OPC Unified Architecture server.
+          </para>
+          </listItem>
+        </list>
+        <para>
+        All types supporting management of events are derived from <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link> - this is base event type. These types are described in the topic: <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c" />.
+      </para>
+      </content>
+    </inThisSection>
+    <relatedSections>
+      <content>
+        <para>
+          <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />
+        </para>
+        <para>
+        This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is the base type and all other object types shall either directly or indirectly inherit from it.
+      </para>
+        <para>
+          <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b" />
+        </para>
+        <para>
+        This topic describes types supporting management of the <token>AS</token> and providing general information about organization, modelling and coding.
+      </para>
+        <para>
+          <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97" />
+        </para>
+        <para>
+        This topic describes types represented by the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> node used to create objects exposed by the server <token>AS</token> providing runtime diagnostic and capabilities information.
+      </para>
+        <para>
+          <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c" />
+        </para>
+        <para>
+        This section defines standard event types, i.e. types of the nodes providing events. They are represented in the <token>AS</token> as <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> nodes.
+      </para>
+      </content>
+    </relatedSections>
+    <relatedTopics>
+      <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+      <link xlink:href="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67" />
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b" />
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97" />
+      <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c" />
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">ModellingRuleType</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeSystemType">DataTypeSystemType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType">ServerType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerCapabilitiesType">ServerCapabilitiesType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerDiagnosticsType">ServerDiagnosticsType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#SessionsDiagnosticsSummaryType">SessionsDiagnosticsSummaryType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#SessionDiagnosticsObjectType">SessionDiagnosticsObjectType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#VendorServerInfoType">VendorServerInfoType</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerRedundancyType">ServerRedundancyType</link>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>
