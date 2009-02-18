@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8601d2fa-1770-4934-a73e-929d4ab7a4e4" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      </para>
+    </introduction>
+    <section>
+      <title>How is chaos created?</title>
+      <content>
+        <para>Common integration practice is to achieve short-term ad-hoc objectives by creating dedicated point-to-point links between the subsystems everywhere it is necessary. Most of the links are established between components of the process and control layer, where supervisory control systems receive data from plant-floor devices and subsystems.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Chaos</caption>
+          <image placement="center" xlink:href="acf12462-7c94-4624-966b-c89015c46d6d" />
+        </mediaLink>
+        <para>If component A needs data from component B, a dedicated link is created. This link provides data from B to A using a proprietary solution acceptable to the component A.</para>
+        <para>At the next stage of system maturity, new links are created between systems on the business management and control layers. Future enterprise expansion will force to build next direct cross links between business management and production. Additionally, redundant communication links are required to meet an appropriate level of reliability. Finally, we have to deal with communication chaos, which is difficult to be controlled. These chaotic point-to-point links make common resources impossible to be used by many potential client systems.</para>
+      </content>
+    </section>
+    <section>
+      <title>6 sins of chaos</title>
+      <content>
+        <para>After years of establishing ad hoc links, the interconnection network becomes very complicated and chaotic causing that we have to deal with the following problems:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Difficult modification and maintenance – each new system will require new links making the structure more and more complex and deepening chaos of communication.</para>
+          </listItem>
+          <listItem>
+            <para>Inefficiency – a lot of the associations are based on a common communication medium, sometimes of a low quality, e.g. enterprise field controller network – the complex structure will necessitate transferring the same data over the network many times and, finally, cause a waste of the bandwidth.</para>
+          </listItem>
+          <listItem>
+            <para>Costs – if communication is based on the third-party toll infrastructure, the fee for the data transfer may be significant. Additionally, a strong dependence on the independent operator increases.</para>
+          </listItem>
+          <listItem>
+            <para>Partial interoperability –the data presentation and description at the link sink is precisely suited to the systems it services and, therefore, data cannot be accessed directly by other systems.</para>
+          </listItem>
+          <listItem>
+            <para>Mess – in a real world enterprise there can be tens, hundreds or even thousands of subsystems in every layer (in the figure above there are only a few components). Maintenance and documentation of such a complex architecture is a real challenge for administrators.</para>
+          </listItem>
+          <listItem>
+            <para>Anarchy – if subsystems have different methods of authorization, authentication and user rights management, it is almost impossible to keep an appropriate level of security. As a consequence, some data can be lost because the rules are too weak or communication cannot be established because the rules are too strong.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section>
+      <title>
+      </title>
+      <content>
+        <alert>
+          <para>
+          The problems presented above grow with the increase of data transfer traffic in an enterprise. On the other hand, production costs optimization demands new subsystems and, as a consequence, their integration with the others. It seems that this contradiction cannot be solved at all without a new systematic design approach methodology and architecture modification. In other words, in any system there is a point (level of complexity) that, having been reached, will even make it impossible to keep the system running.
+        </para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+      <externalLink>
+        <linkText>New idea of integration.</linkText>
+        <linkAlternateText>Introduction to complex system architecture and data flow requirements in enterprises.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Architecture/Integration.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Chaos – issues of data exchange structure.
+      </linkText>
+        <linkAlternateText>Main problems of data flow management in an enterprise.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Architecture/Integration/Centralization.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Process and business layers robust integration - Publication [R080101]
+      </linkText>
+        <linkAlternateText>The article addresses system integration methodologies and a new Process Observer concept, which is like a bridge connection between the plant-floor, process and business management levels. It discusses at length the main features of robust data exchange in an enterprise, i.e. three-level redundancy, multi-communication capabilities and optimization methods.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Publications/RobustIntegration.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Real-Time Communication for Large Scale Distributed Control Systems - Publications [KN20070502]
+      </linkText>
+        <linkAlternateText>An article and presentation on Real-Time Communication for Large Scale Distributed Control Systems presenting novel architecture and a case study proving that it could be a collaboration platform for several power plants.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Publications/KN20070502MPostolManuscript.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServer</linkText>
+        <linkAlternateText>CommServer homepage - industrial software for communication server</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/CommServer.aspx</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

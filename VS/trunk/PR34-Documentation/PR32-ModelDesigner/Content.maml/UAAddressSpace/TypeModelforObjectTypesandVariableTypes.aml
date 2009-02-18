@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="dba17623-98d7-4a47-9e57-f352a2c3e2fe" revisionNumber="1">
+  <developerSDKTechnologyOverviewOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      In the following clauses the type model of ObjectTypes and VariableTypes is defined regarding subtyping and instantiation.
+    </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link xlink:href="d50337d9-0aab-4665-ab7f-be4eb7bc9559">Definitions</link>
+        </para>
+      </content>
+    </inThisSection>
+    <!-- <reference>Optional reference info</reference> -->
+    <!-- <relatedSections>Optional related sections info</relatedSections> -->
+    <!-- <externalResources>Optional external resources info</externalResources> -->
+  </developerSDKTechnologyOverviewOrientationDocument>
+</topic>

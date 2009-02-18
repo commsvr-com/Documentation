@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" revisionNumber="1">
+  <developerGlossaryDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <glossary>
+      <title>For the purposes of this documentation, the following terms, definitions and abbreviations.</title>
+      <glossaryDiv address="Definitions">
+        <title>Definitions.</title>
+        <glossaryEntry>
+          <terms>
+            <term termClass="AddressSpace">AddressSpace</term>
+          </terms>
+          <definition>
+            <para>
+            The collection of information that an<token>OPCUA</token>Server makes visible to its Clients. See section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" /> for a description of the contents and structure of the server <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Alarm">Alarm</term>
+          </terms>
+          <definition>
+            <para>
+            A type of Event associated with a state condition that typically requires acknowledgement. See section <link NS2:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" xmlns:NS2="http://www.w3.org/1999/xlink"></link> for a description of Alarms.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Attribute">Attribute</term>
+          </terms>
+          <definition>
+            <para>
+            A primitive characteristic of a Node. All Attributes are defined by <token>OPCUA</token>, and may not be defined by Clients or Servers. Attributes are the only elements in the<token>AS</token>permitted to have data values.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Certificate">Certificate</term>
+          </terms>
+          <definition>
+            <para>A digitally signed data structure that describes capabilities of a Client or Server.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Client">Client</term>
+          </terms>
+          <definition>
+            <para>
+            A software application that sends Messages to <token>OPCUA</token> Servers conforming to the Services specified in this set of specifications.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Condition">Condition</term>
+          </terms>
+          <definition>
+            <para>A generic term that is an extension to an Event. A Condition represents the conditions of a system or one of its components and always exists in some state.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="CommunicationStack">CommunicationStack</term>
+          </terms>
+          <definition>
+            <para>A layered set of software modules between the application and the hardware that provides various functions to encode, encrypt and format a Message for sending, and to decode, decrypt and unpack a Message that was received.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="ComplexData">ComplexData</term>
+          </terms>
+          <definition>
+            <para>Data that is composed of elements or more than one primitive data type, such as a structure.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="DataTypeDictionary">Data Type Dictionary</term>
+          </terms>
+          <definition>
+            <para>
+            The data type dictionary is represented as a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of type <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType">DataTypeDictionaryType</link> in the Address Space, the description about the data types is contained in its Value attribute.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Discovery">Discovery</term>
+          </terms>
+          <definition>
+            <para>
+            The process by which <token>OPCUA</token> Client obtain information about<token>OPCUA</token>Servers, including endpoint and security information.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Event">Event</term>
+          </terms>
+          <definition>
+            <para>A generic term used to describe an occurrence of some significance within a system or system component.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="EventNotifier">EventNotifier</term>
+          </terms>
+          <definition>
+            <para>A special Attribute of a Node that signifies that a Client may subscribe to that particular Node to receive Notifications of Event occurrences.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="EventType">Event type</term>
+          </terms>
+          <definition>
+            <para>
+            A type defined in or derived from a type defined in section <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098" />.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Generic client">Generic client</term>
+          </terms>
+          <definition>
+            <para>Client without any initial knowledge about available nodes class.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="InformationModel">Information Model</term>
+          </terms>
+          <definition>
+            <para>
+            An organizational framework that defines, characterizes and relates information resources of a given system or set of systems. The core address space model supports the representation of Information Models in the<token>AS</token>. For more information see &lt;link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /&gt;.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Message">Message</term>
+          </terms>
+          <definition>
+            <para>The data unit conveyed between Client and Server that represents a specific Service request or response.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Method">Method</term>
+          </terms>
+          <definition>
+            <para>A callable software function.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="MonitoredItem">MonitoredItem</term>
+          </terms>
+          <definition>
+            <para>A Client-defined entity in the Server used to monitor Attributes or EventNotifiers for new values or Event occurrences and generate Notifications for them.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="NamespaceIndexes">Namespace indexes</term>
+          </terms>
+          <definition>
+            <para>
+            The indexes into the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link> table.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Node">Node</term>
+          </terms>
+          <definition>
+            <para>
+            The fundamental component of an <token>AS</token>.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="NodeClass">NodeClass</term>
+          </terms>
+          <definition>
+            <para>
+            The class of a Node in an <token>AS</token>. NodeClasses define the metadata for the components of the<token>OPCUA</token>Object Model. They also define constructs, such as Views, that are used to organize the<token>AS</token>.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Notification">Notification</term>
+          </terms>
+          <definition>
+            <para>The generic term for data that announces the detection of an Event or of a changed Attribute value. Notifications are sent in NotificationMessages.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="NotificationMessage">NotificationMessage</term>
+          </terms>
+          <definition>
+            <para>A Message published from a Subscription that contains one or more Notifications.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Object">Object</term>
+          </terms>
+          <definition>
+            <para>
+            A Node that represents a physical or abstract element of a system. Objects are modelled using the <token>OPCUA</token> Object Model. Systems, subsystems and devices are examples of Objects. An Object may be defined as an instance of an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="ObjectInstance">Object Instance</term>
+          </terms>
+          <definition>
+            <para>A synonym for Object. Not all Objects are defined by ObjectTypes.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="ObjectType">ObjectType</term>
+          </terms>
+          <definition>
+            <para>A Node that represents the type definition for an Object.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Profile">Profile</term>
+          </terms>
+          <definition>
+            <para>
+            A specific set of capabilities, described in section <link NS2:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" xmlns:NS2="http://www.w3.org/1999/xlink"></link>, to which a Server may claim conformance. Each Server may claim conformance to more than one Profile.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Program">Program</term>
+          </terms>
+          <definition>
+            <para>An executable Object that, when invoked, immediately returns a response to indicate that execution has started, and then returns intermediate and final results through Subscriptions identified by the Client during invocation.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Reference">Reference</term>
+          </terms>
+          <definition>
+            <para>An explicit relationship (a named pointer) from one Node to another. The Node that contains the Reference is the source Node, and the referenced Node is the target Node. All References are defined by ReferenceTypes.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="ReferenceType">ReferenceType</term>
+          </terms>
+          <definition>
+            <para>A Node that represents the type definition of a Reference. The <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> specifies the semantics of a Reference. The name of a <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> identifies how source Nodes are related to target Nodes and generally reflects an operation between the two, such as “A Contains B”.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="RootNode">RootNode</term>
+          </terms>
+          <definition>
+            <para>
+            The beginning or top Node of a hierarchy. The RootNode of the <token>OPCUA</token><token>AS</token> is defined in Part 5:.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Server">Server</term>
+          </terms>
+          <definition>
+            <para>A software application that implements and exposes the Services specified in this set of specifications.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Service">Service</term>
+          </terms>
+          <definition>
+            <para>
+            A Client-callable operation in an <token>OPCUA</token> Server. Services are described in section <link NS2:href="ef0092b5-9f31-4e8d-9901-270be06e6577" xmlns:NS2="http://www.w3.org/1999/xlink"></link>:. A Service is similar to a method call in a programming language or an operation in a Web services WSDL contract.
+          </para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="ServiceSet">ServService Set</term>
+          </terms>
+          <definition>
+            <para>A group of related Services.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Session">Session</term>
+          </terms>
+          <definition>
+            <para>A logical long-running connection between a Client and a Server. A Session maintains state information between Service calls from the Client to the Server.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Subscription">Subscription</term>
+          </terms>
+          <definition>
+            <para>A Client-defined endpoint in the Server, used to return Notifications to the Client. Generic term that describes a set of Nodes selected by the Client (1) that the Server periodically monitors for the existence of some condition, and (2) for which the Server sends Notifications to the Client when the condition is detected.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="Variable">Variable</term>
+          </terms>
+          <definition>
+            <para>A <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is a Node that contains a value.</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="View">View</term>
+          </terms>
+          <definition>
+            <para>
+            A specific subset of the <token>AS</token> that is of interest to the Client.
+          </para>
+          </definition>
+        </glossaryEntry>
+      </glossaryDiv>
+      <glossaryDiv address="Abbreviations">
+        <title>Abbreviations and symbols.</title>
+        <glossaryEntry>
+          <terms>
+            <term termClass="AE">AE</term>
+          </terms>
+          <definition>
+            <para>Alarms and Events</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="API">API</term>
+          </terms>
+          <definition>
+            <para>Application Programming Interface</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="COM">COM</term>
+          </terms>
+          <definition>
+            <para>Component Object Model</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="DA">DA</term>
+          </terms>
+          <definition>
+            <para>Data Access</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="DCS">DCS</term>
+          </terms>
+          <definition>
+            <para>Distributed Control System</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="DX">DX</term>
+          </terms>
+          <definition>
+            <para>Data Exchange</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="HDA">HDA</term>
+          </terms>
+          <definition>
+            <para>Historical Data Access</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="HMI">HMI</term>
+          </terms>
+          <definition>
+            <para>Human-Machine Interface</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="LDAP">LDAP</term>
+          </terms>
+          <definition>
+            <para>Lightweight Directory Access Protocol</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="MES">MES</term>
+          </terms>
+          <definition>
+            <para>Manufacturing Execution System</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="OPC">OPC</term>
+          </terms>
+          <definition>
+            <para>OPC Foundation (a non-profit industry association)</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="PLC">PLC</term>
+          </terms>
+          <definition>
+            <para>Programmable Logic Controller</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="SCADA">SCADA</term>
+          </terms>
+          <definition>
+            <para>Supervisory Control And Data Acquisition</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="SOAP">SOAP</term>
+          </terms>
+          <definition>
+            <para>Simple Object Access Protocol</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="UA">UA</term>
+          </terms>
+          <definition>
+            <para>Unified Architecture</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="UDDI">UDDI</term>
+          </terms>
+          <definition>
+            <para>Universal <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#Description">Description</link>, Discovery and Integration</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="UML">UML</term>
+          </terms>
+          <definition>
+            <para>Unified Modelling Language</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="WSDL">WSDL</term>
+          </terms>
+          <definition>
+            <para>Web Services Definition Language</para>
+          </definition>
+        </glossaryEntry>
+        <glossaryEntry>
+          <terms>
+            <term termClass="XML">XML</term>
+          </terms>
+          <definition>
+            <para>Extensible Mark-up Language</para>
+          </definition>
+        </glossaryEntry>
+      </glossaryDiv>
+    </glossary>
+  </developerGlossaryDocument>
+</topic>

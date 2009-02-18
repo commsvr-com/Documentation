@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />-->
+    <summary>
+      <para>
+      Objects are used to represent systems, system components, real-world objects and software objects. Objects are defined using the Object node class.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The Object node class inherits the base attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /> node class.
+    </para>
+      <para>
+      Main attributes and references defined for Object node class are described in the subsections bellow. Objects may use any additional references to define relationships to other nodes. No restrictions are placed on the types of references used or on the node classes of the nodes that may be referenced. However, restrictions may be defined by the reference type excluding its use for objects. Standard reference types are described in <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />.
+    </para>
+      <para>
+      If the Object is used as instance declaration (see <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />) all nodes referenced with hierarchical references in forward direction shall have unique <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> values in the context of this Object.
+    </para>
+      <para>
+      If the Object is created based on an instance declaration, it shall have the same <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> as its instance declaration.
+    </para>
+    </introduction>
+    <section>
+      <title>Attributes</title>
+      <content>
+      </content>
+      <sections>
+        <section>
+          <title>EventNotifier Attribute</title>
+          <content>
+            <para>
+            The mandatory EventNotifier attribute identifies whether the Object can be used to subscribe to events or to read and write the history of the events.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section>
+      <title>References</title>
+      <content>
+      </content>
+      <sections>
+        <section>
+          <title>HasComponent Reference</title>
+          <content>
+            <para>
+            The Object node class uses the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> reference to define the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>, Object and Method nodes as components of an Object.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>HasProperty Reference</title>
+          <content>
+            <para>
+            It uses the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> reference to define the properties of an Object. The property NodeVersion is used to indicate the version of the Object. The property Icon provides an icon of the Object. The property NamingRule defines the NamingRule of a ModellingRule and shall only be applied to objects of type ModellingRuleType. There are no additional properties defined as standard, but additional properties may be defined.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>HasModellingRule Reference </title>
+          <content>
+            <para>
+            To specify its modelling rule, an Object can use at most one HasModellingRule reference pointing to a ModellingRule node.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>HasModelParent Reference</title>
+          <content>
+            <para>
+            An Object shall use at most one <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModelParent">HasModelParent</link> reference to specify its <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModelParent">model parent</link>.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>HasNotifier and HasEventSource references</title>
+          <content>
+            <para>
+            HasNotifier and <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEventSource">HasEventSource</link> references are used to provide information about eventing and can only be applied to objects used as event notifiers. Details are defined in <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" /></para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />
+      <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

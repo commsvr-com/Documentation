@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="51ab4127-b8e8-4042-9959-39fe8491fa32" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>Copyright © 2008 CAS.</para>
+    </summary>
+    <introduction>
+      <para>
+      This computer program and its documentation are protected by copyright law and international treaties. Unauthorized reproduction, use or distribution of this program and the documentation, or any portion thereof, will result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
+    </para>
+      <alert>
+        <para>
+          <token>ASMD</token> is free. You don't have to pay to use it, and you can use it for any non-commercial and commercial purposes.
+      </para>
+      </alert>
+      <para>
+      CAS is an OPC Foundation corporate member and uses deliverables provided by this organization.
+      <externalLink><linkText>
+          Visit OPC Foundation Website to find more information.
+        </linkText><linkAlternateText>
+          OPC Foundation Website at: http://www.opcfoundation.org
+        </linkAlternateText><linkUri>http://www.opcfoundation.org</linkUri></externalLink>.
+    </para>
+      <para>
+      Parts of the documentation are inspired by <token>OPCUA</token> specifications. The intention of the author and the publisher is to make <token>OPCUA</token> more understandable. This documentation is not the specification and it is not meant to be any replacement for the specification.
+    </para>
+      <para>
+      The author has made every effort to include up-to-date and true information about <token>OPCUA</token>, but does not give any warranty. In case of any doubt and for more details please search the official <token>OPCUA</token> specifications available at
+      <externalLink><linkText>
+          OPC Foundation UA Website
+        </linkText><linkAlternateText>
+          OPC Foundation UA Website at: http://www.opcfoundation.org/UA/
+        </linkAlternateText><linkUri>http://www.opcfoundation.org/UA/</linkUri></externalLink>.
+    </para>
+    </introduction>
+    <relatedTopics>
+      <externalLink>
+        <linkText>
+        Visit http://www.opcfoundation.org to find more information.
+      </linkText>
+        <linkAlternateText>
+        OPC Foundation Website
+      </linkAlternateText>
+        <linkUri>http://www.opcfoundation.org</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Visit http://www.opcfoundation.org/UA/ to download specifications.
+      </linkText>
+        <linkAlternateText>
+        OPC Foundation UA Website
+      </linkAlternateText>
+        <linkUri>http://www.opcfoundation.org/UA/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Home page of the Address Space Model Designer. OPC UA Address Space Model Designer – powerful toolkit for Address Space in OPC Unified Architecture</linkText>
+        <linkAlternateText>Open home page of the Address Space Model Designer.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/UAModelDesigner.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CAS Support: 	http://www.commsvr.com/Contact.aspx</linkText>
+        <linkAlternateText>
+        </linkAlternateText>
+        <linkUri>http://www.commsvr.com/Contact.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CAS RSS feed: http://www.commsvr.com/rss/commservernews_en.rss</linkText>
+        <linkAlternateText>
+        To subscribe RSS channel, copy the link to your reader or click onto the link, if you have configured your reader so that it takes subscription automatically.
+      </linkAlternateText>
+        <linkUri>http://www.commsvr.com/rss/commservernews_en.rss</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Download page of the Address Space Model Designer
+      </linkText>
+        <linkAlternateText>Address Space Model Designer is a user-friendly tool supporting all aspects of the OPC Unified Architecture Address Space model designing process.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/OPCUAModelDesigner.aspx</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

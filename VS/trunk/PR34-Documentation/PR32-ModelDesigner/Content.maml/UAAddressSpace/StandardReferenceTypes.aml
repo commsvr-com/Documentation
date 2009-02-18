@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="57be83ea-0aac-4456-b29a-0b18a8467134" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />-->
+    <summary>
+      <para>
+      A reference type is a subtype of this base reference types – either direct or indirect. Reference types are represented by the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> node class in the <token>OPCUA</token><token>AS</token>.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      This section defines reference types as an inherent part of the <token>OPCUA</token><token>AS</token> model. Figure 1 informally describes the hierarchy of these reference types. Additional reference types may be specified. Section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> describes their representation in the <token>AS</token>.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Standard ReferenceType Hierarchy</caption>
+        <image placement="center" xlink:href="e2b9736e-a222-43e9-8c6a-6a4f67217c07" />
+      </mediaLink>
+    </introduction>
+    <section address="References">
+      <title>References</title>
+      <content>
+        <para>
+        The References is an abstract reference type; only subtypes of it can be used.
+      </para>
+        <para>
+        There is no semantic associated with this type. This is the base type of all reference types. All reference types shall be a subtype of this base type – either direct or indirect. The main purpose of this type is allowing simple filter and queries in the corresponding <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+        <para>
+        There are no constraints defined for this abstract type.
+      </para>
+      </content>
+    </section>
+    <section address="HierarchicalReferences">
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HierarchicalReferences" >HierarchicalReferences</link>-->
+      <title>HierarchicalReferences</title>
+      <content>
+        <para>
+        The HierarchicalReferences is an abstract reference type; only subtypes of it can be used.
+      </para>
+        <para>
+        The semantic of HierarchicalReferences is to denote that references of hierarchical references span a hierarchy. It means that it may be useful to present nodes related with references of this type in a hierarchy-like way. Hierarchical references does not forbid loops. For example, starting from Node "A" and following hierarchical references may lead to browse to node "A", again.
+      </para>
+        <alert>
+          <para>
+          It is not permitted to have a property as source node of a reference of any subtype of this type.
+        </para>
+        </alert>
+        <alert>
+          <para>
+          It is not allowed that the source node and the target node of a reference of the HierarchicalReferences are the same, i.e. it is not allowed to have self references using HierarchicalReferences.
+        </para>
+        </alert>
+      </content>
+    </section>
+    <section address="NonHierarchicalReferences">
+      <title>NonHierarchicalReferences</title>
+      <content>
+        <para>
+        The NonHierarchicalReferences is an abstract reference type; only subtypes of it can be used.
+      </para>
+        <para>
+        The semantic of NonHierarchicalReferences is to denote that its subtypes do not span a hierarchy and should not be followed when trying to present a hierarchy.
+      </para>
+        <alert>
+          <para>
+          To distinguish hierarchical and non-hierarchical references, all concrete reference types shall inherit from either hierarchical references or non-hierarchical references, either direct or indirect.
+        </para>
+        </alert>
+        <para>
+        There are no constraints defined for this abstract type.
+      </para>
+      </content>
+    </section>
+    <section address="HasChild">
+      <title>HasChild</title>
+      <content>
+        <para>
+        The HasChild is an abstract reference type; only subtypes of it can be used. It is a subtype of HierarchicalReferences.
+      </para>
+        <para>
+        The semantic is to indicate that references of this type span a non-looping hierarchy.
+      </para>
+        <para>
+        Starting from node "A" and only following references of the subtypes of the HasChild type shall never be able to return to "A". But it is allowed that following the references there may be more than one path leading to another node “B”.
+      </para>
+      </content>
+    </section>
+    <section address="Aggregates">
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#Aggregates" >Aggregates</link>-->
+      <title>Aggregates</title>
+      <content>
+        <para>
+        The Aggregates is an abstract reference type; only subtypes of it can be used. It is a subtype of HasChild.
+      </para>
+        <para>
+        The semantic is to indicate a part (the target node) belongs to the source node. It does not specify the ownership of the target node.
+      </para>
+        <para>
+        There are no constraints defined for this type.
+      </para>
+      </content>
+    </section>
+    <section address="HasComponent">
+      <title>
+      HasComponent
+    </title>
+      <content>
+        <para>
+        The HasComponent is a concrete reference type that can be used directly. It is a subtype of the <link xlink:href="#Aggregates">Aggregates</link> reference type.
+      </para>
+        <para>
+        The semantic is a part-of relationship. The target node of the HasComponent reference type is a part of the source node. This type is used to relate <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> nodes with their containing <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>, and <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" /> nodes as well as complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> nodes with their <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link>.
+      </para>
+        <para>
+        Like all other reference types, this type does not specify anything about the ownership of the parts, although it represents a part-of relationship semantic. That is, it is not specified if the target node of a reference of the HasComponent is deleted when the source node is deleted.
+      </para>
+        <para>
+        The target node of this type shall be a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or a <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />.
+      </para>
+        <alert>
+          <para>
+          If the target node is a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, the source node shall be:
+        </para>
+          <list class="bullet">
+            <listItem>
+              <para>
+              an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />,
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />,
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> or
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+            </para>
+            </listItem>
+          </list>
+        </alert>
+        <para>
+        By using the HasComponent, the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is defined as <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>.
+      </para>
+        <alert>
+          <para>
+          If the target node is an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or a <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />, the source node shall be:
+        </para>
+          <list class="bullet">
+            <listItem>
+              <para>
+              an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
+            </para>
+            </listItem>
+          </list>
+        </alert>
+      </content>
+    </section>
+    <section address="HasProperty">
+      <title>HasProperty</title>
+      <content>
+        <para>
+        The HasProperty is a concrete reference type that can be used directly. It is a subtype of the <link xlink:href="#Aggregates">Aggregates</link> type.
+      </para>
+        <para>
+        The semantic is to identify the properties of a node. Properties are described in <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /></para>
+        <para>
+        The source node of this type can be of any <token>NodeClass</token>.
+      </para>
+        <alert>
+          <para>
+          The target node shall be a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />.
+        </para>
+        </alert>
+        <para>
+        By using the HasProperty, the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is defined as <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link> Since <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link> nodes shall not have properties, a property shall never be the source node of a HasProperty reference.
+      </para>
+      </content>
+    </section>
+    <section address="HasOrderedComponent">
+      <title>HasOrderedComponent</title>
+      <content>
+        <para>
+        The HasOrderedComponent is a concrete reference type that can be used directly. It is a subtype of the HasComponent type.
+      </para>
+        <para>
+        The semantic of the HasOrderedComponent type – besides the semantic of the HasComponent reference type – is that when browsing from a node and following references of this type or its subtype all references are returned in the Browse service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> in a well-defined order. The order is server-specific, but the client can assume that the server always returns them in the same order.
+      </para>
+        <para>
+        There are no additional constraints defined for this abstract type.
+      </para>
+      </content>
+    </section>
+    <section address="HasSubtype">
+      <title>HasSubtype</title>
+      <content>
+        <para>
+        The HasSubtype is a concrete reference type that can be used directly. It is a subtype of the HasChild type.
+      </para>
+        <para>
+        The semantic of this type is to express a subtype relationship of types. It is used to span the reference type hierarchy, which semantic is specified in <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> ; a <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> hierarchy as specified in <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />.
+      </para>
+        <alert>
+          <para>
+          The source node of references of this type shall be:
+        </para>
+          <list class="bullet">
+            <listItem>
+              <para>
+              an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />,
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />,
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              a <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> or
+            </para>
+            </listItem>
+            <listItem>
+              <para>
+              a <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /></para>
+            </listItem>
+          </list>
+          <para>
+          and the target node shall be of the same <token>NodeClass</token> as the source node.
+        </para>
+        </alert>
+        <para>Each reference type shall be the target node of at most one reference of type HasSubtype.</para>
+      </content>
+    </section>
+    <section address="Organizes">
+      <title>Organizes</title>
+      <content>
+        <para>
+        The Organizes is a concrete reference type and can be used directly. It is a subtype of HierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to organize nodes in the <token>OPCUA</token><token>AS</token>. It can be used to span multiple hierarchies independent of any hierarchy created with the non-looping <link xlink:href="#Aggregates">Aggregates</link> references.
+      </para>
+        <alert>
+          <para>
+          The source node of this type shall be an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or a <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" /> nodes. If it is an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> it should be an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> of <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link> type or one of its subtypes.
+        </para>
+        </alert>
+        <para>
+        The target node of this type can be of any <token>NodeClass</token>.
+      </para>
+      </content>
+    </section>
+    <section address="HasModellingRule">
+      <title>HasModellingRule</title>
+      <content>
+        <para>
+        The HasModellingRule is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to bind the ModellingRule to an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />.
+      </para>
+        <alert>
+          <para>
+          The source node of this type shall be an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />. The target node shall be of the <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">ModellingRuleType</link> or one of its subtypes.
+        </para>
+        </alert>
+        <para>
+        Each node shall be the source node of at most one <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">modelling rule</link> reference.
+      </para>
+      </content>
+    </section>
+    <section address="HasModelParent">
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasModelParent" >HasModelParent</link>-->
+      <title>HasModelParent</title>
+      <content>
+        <para>
+        The HasModelParent is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to expose the model parent of in <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />.
+      </para>
+        <para>
+        The source node of this type shall be an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />.
+      </para>
+        <alert>
+          <para>
+          Each node shall be the source node of at most one HasModelParent reference.
+        </para>
+        </alert>
+      </content>
+    </section>
+    <section address="HasTypeDefinition">
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition" >HasTypeDefinition</link>-->
+      <title>HasTypeDefinition</title>
+      <content>
+        <para>
+        The HasTypeDefinition is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to bind an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> to its <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />, respectively. The relationships between types and instances are described in <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" /></para>
+        <para>
+        The source node of this type shall be an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. If the source node is an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, the target node shall be an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />; if the source node is a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, the target node shall be a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+      </para>
+        <para>
+        Each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> and each <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> shall be the source node of exactly one HasTypeDefinition reference.
+      </para>
+      </content>
+    </section>
+    <section address="HasEncoding">
+      <title>HasEncoding</title>
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEncoding" >HasEncoding</link>-->
+      <content>
+        <para>
+        The HasEncoding is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to reference <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">data type encoding</link> of a <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />.
+      </para>
+        <para>
+        The source node of references of this type shall be a <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />.
+      </para>
+        <para>
+        The target node of this type shall be the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> representing the <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link> or one of its subtypes (see <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />).
+      </para>
+      </content>
+    </section>
+    <section address="HasDescription">
+      <title>HasDescription</title>
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasDescription" >HasDescription</link>-->
+      <content>
+        <para>
+        The HasDescription is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to reference the data type description of a <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">data type encoding</link>.
+      </para>
+        <para>
+        The source node of references of this type shall be a <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link> or one of its subtypes.
+      </para>
+        <para>
+        The target node of this type shall be the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">DataTypeDescriptionType</link> or one of its subtypes (see <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />).
+      </para>
+      </content>
+    </section>
+    <section address="GeneratesEvent">
+      <title>GeneratesEvent</title>
+      <content>
+        <para>
+        The GeneratesEvent is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to identify the types of events instances of <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> nodes that may generate and <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" /> nodes have to generate on each method call.
+      </para>
+        <para>
+        The source node of references of this type shall be an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />, a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> or a <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />.
+      </para>
+        <para>
+        The target node of this type shall be an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> representing event types, i.e. the <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link> or one of its subtypes.
+      </para>
+      </content>
+    </section>
+    <section address="HasEventSource">
+      <!--<link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasEventSource" >HasEventSource</link>-->
+      <title>HasEventSource</title>
+      <content>
+        <para>
+        The HasEventSource is a concrete reference type and can be used directly. It is a subtype of HierarchicalReferences.
+      </para>
+        <para>
+        The semantic of this type is to relate event sources in a hierarchical, non-looping organization. This type and any subtypes are intended to be used for discovery of event generation in a server. They are not required to be present for a server to generate event from its source to its notifying nodes. In particular, the root notifier of a server – the <link xlink:href="2c5b2d66-8e34-490c-9ab3-4d852a892a30#Server">Server</link> node – is always capable of supplying all events from a server and as such has implied HasEventSource references to every event source in a server.
+      </para>
+        <para>
+        The source node of this reference type shall be an object that is a source of event subscriptions. A source of event subscriptions is an object that has its “SubscribeToEvents” bit set within the <computerOutputInline>EventNotifier</computerOutputInline> attribute.
+      </para>
+        <para>
+        The target node of this type can be a node of any <token>NodeClass</token> that can generate event notifications via a subscription to the reference source.
+      </para>
+        <para>
+        Starting from node "A" and only following references of the HasEventSource type or its subtypes shall never be able to return to "A". But it is permitted that, following the references, there may be more than one path leading to another Node “B”.
+      </para>
+      </content>
+    </section>
+    <section address="HasNotifier">
+      <title>HasNotifier</title>
+      <content>
+        <para>
+        The HasNotifier is a concrete reference type and can be used directly. It is a subtype of HasEventSource.
+      </para>
+        <para>
+        The semantic of this type is to relate <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> nodes that are notifiers with other notifier <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> nodes. This type is used to establish a hierarchical organization of event notifying <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> nodes. It is a subtype of the HasEventSource type.
+      </para>
+        <alert>
+          <para>
+          The source node of this type shall be <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> or <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" /> nodes that are a source of event subscriptions.
+        </para>
+        </alert>
+        <alert>
+          <para>
+          The target node of this type shall be <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> nodes that are a source of event subscriptions. A source of event subscriptions is an <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> that has its “SubscribeToEvents” bit set within the <computerOutputInline>EventNotifier</computerOutputInline> attribute.
+        </para>
+        </alert>
+        <para>
+        If the target node of a reference of this type generates an event, this event shall also be provided in the source node of the reference.
+      </para>
+        <para>
+        An example of a possible organization of event references is represented in Figure 2. In this example an unfiltered event subscription directed to the “Level Sensor” object will provide the event sources “Low Level” and “High Level” to the subscriber. An unfiltered event subscription directed to the “Area 1” object will provide event sources from “Machine B”, “Tank A” and all notifier sources below “Tank A”.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Event Reference Example</caption>
+          <image placement="center" xlink:href="7785ca16-b1f0-4fa4-ab11-f34537637870" />
+        </mediaLink>
+        <para>
+        A second example of a more complex organization of event references is represented in Figure 3. In this example, explicit references are included from the server’s <link xlink:href="2c5b2d66-8e34-490c-9ab3-4d852a892a30" /> object, which is a source of all server events. A second event organization has been introduced to collect the events related to “Tank Farm 1”. An unfiltered event subscription directed to the “Tank Farm 1” object will provide event sources from “Tank B”, “Tank A” and all notifier sources below “Tank B” and “Tank A”.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Complex Event Reference Example</caption>
+          <image placement="center" xlink:href="5a95990c-6bd1-4deb-bf37-748dffdb89d5" />
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" />
+      <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link>
+      <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+      <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />
+      <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" />
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">modelling rule</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">DataTypeDescriptionType</link>
+      <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>
+      <link xlink:href="2c5b2d66-8e34-490c-9ab3-4d852a892a30#Server">Server</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="69c22282-3ad0-4937-8982-4d5c5ac95b7f" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />
+  -->
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>This section describes the OPC Unified Architecture profiles. These Profiles provide groups of Services or functionality that can be used for conformance level certification. Servers and Clients will be tested against the Profiles.</para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 7: OPC UA Specification</linkText>
+            <linkAlternateText>Part 7 – Profiles, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part7/</linkUri>
+          </externalLink> - Profiles: specifies the Profiles that are available for OPC Clients and Servers. These Profiles provide groups of Services or functionality that can be used for conformance level certification. Servers and Clients will be tested against the Profiles.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

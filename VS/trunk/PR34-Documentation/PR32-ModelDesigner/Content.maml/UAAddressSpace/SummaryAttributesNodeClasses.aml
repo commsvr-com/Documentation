@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1f82af61-a0d9-4730-8cf1-d93ab765f2d2" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="1f82af61-a0d9-4730-8cf1-d93ab765f2d2" />-->
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      Image 1 summarises all attributes defined and points out which node classes use them either optional (O) or mandatory (M).
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Overview about attributes</caption>
+        <image placement="center" xlink:href="4980d642-59f4-43e8-8a00-b71ee3eb2e52" />
+      </mediaLink>
+    </introduction>
+    <section>
+      <title>
+      Bit mask for WriteMask and UserWriteMask
+    </title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Bit mask for WriteMask and UserWriteMask</caption>
+          <image placement="center" xlink:href="8f34de79-7f01-4610-85ca-fc7ee5e57481" />
+        </mediaLink>
+      </content>
+    </section>
+    <section>
+      <title>
+      EventNotifier
+    </title>
+      <content>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Field</para>
+              </entry>
+              <entry>
+                <para>Bit</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>SubscribeTo Events</para>
+            </entry>
+            <entry>
+              <para>0</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if it can be used to subscribe to Events (0 means cannot be used to subscribe to Events, 1 means can be used to subscribe to Events).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Reserved</para>
+            </entry>
+            <entry>
+              <para>1</para>
+            </entry>
+            <entry>
+              <para>
+              Reserved for future use. Shall always be zero.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>HistoryRead</para>
+            </entry>
+            <entry>
+              <para>2</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the Events is readable (0 means not readable, 1 means readable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>HistoryWrite</para>
+            </entry>
+            <entry>
+              <para>3</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the Events is writable (0 means not writable, 1 means writable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Reserved</para>
+            </entry>
+            <entry>
+              <para>4:7</para>
+            </entry>
+            <entry>
+              <para>
+              Reserved for future use. Shall always be zero.
+            </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section>
+      <title>
+      AccessLevel
+    </title>
+      <content>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Field</para>
+              </entry>
+              <entry>
+                <para>Bit</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>CurrentRead</para>
+            </entry>
+            <entry>
+              <para>0</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the current value is readable (0 means not readable, 1 means readable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>CurrentWrite</para>
+            </entry>
+            <entry>
+              <para>1</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the current value is writable (0 means not writable, 1 means writable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>HistoryRead</para>
+            </entry>
+            <entry>
+              <para>2</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the value is readable (0 means not readable, 1 means readable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>HistoryWrite</para>
+            </entry>
+            <entry>
+              <para>3</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the value is writable (0 means not writable, 1 means writable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>SemanticChange</para>
+            </entry>
+            <entry>
+              <para>4</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the value is writable (0 means not writable, 1 means writable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Reserved</para>
+            </entry>
+            <entry>
+              <para>5:7</para>
+            </entry>
+            <entry>
+              <para>
+              Reserved for future use. Shall always be zero.
+            </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section>
+      <title>
+      UserAccessLevel
+    </title>
+      <content>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Field</para>
+              </entry>
+              <entry>
+                <para>Bit</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>CurrentRead</para>
+            </entry>
+            <entry>
+              <para>0</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the current value is readable (0 means not readable, 1 means readable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>CurrentWrite</para>
+            </entry>
+            <entry>
+              <para>1</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the current value is writable (0 means not writable, 1 means writable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>HistoryRead</para>
+            </entry>
+            <entry>
+              <para>2</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the value is readable (0 means not readable, 1 means readable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>HistoryWrite</para>
+            </entry>
+            <entry>
+              <para>3</para>
+            </entry>
+            <entry>
+              <para>
+              Indicates if the history of the value is writable (0 means not writable, 1 means writable).
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Reserved</para>
+            </entry>
+            <entry>
+              <para>4:7</para>
+            </entry>
+            <entry>
+              <para>
+              Reserved for future use. Shall always be zero.
+            </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

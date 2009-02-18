@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="e0bdb98b-ab27-4798-8072-c23d26c08f06" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>The MonitoredItem Service Set is used by the Client to create and maintain MonitoredItems. MonitoredItems monitor Variables, Attributes and EventNotifiers. They generate Notifications when they detect certain conditions. They monitor Variables for a change in value or status; Attributes for a change in value; and EventNotifiers for newly generated Alarm and Event reports. </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>MonitoredItem Service Set</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+      <autoOutline /> -->
+        <para>
+        Each MonitoredItem identifies the item to monitor and the Subscription to use to periodically publish Notifications to the Client. Each MonitoredItem also specifies the rate at which the item is to be monitored (sampled) and, for Variables and EventNotifiers, the filter criteria used to determine when a Notification is to be generated. Filter criteria for Attributes are specified by their Attribute definitions in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <content>
+            <para>The sample rate defined for a MonitoredItem may be faster than the publishing rate of the Subscription. For this reason, the MonitoredItem may be configured to either queue all Notifications or to queue only the latest Notification for transfer by the Subscription. In this latter case, the queue size is one. </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>MonitoredItem Services also define a monitoring mode. The monitoring mode is configured to disable sampling and reporting, to enable sampling only, or to enable both sampling and reporting. When sampling is enabled, the Server samples the item. In addition, each sample is evaluated to determine if a Notification should be generated. If so, the Notification is queued. If reporting is enabled, the queue is made available to the Subscription for transfer. </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>Finally, MonitoredItems can be configured to trigger the reporting of other MonitoredItems. In this case, the monitoring mode of the items to report is typically set to sampling only, and when the triggering item generates a Notification, any queued Notifications of the items to report are made available to the Subscription for transfer. </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="41ef495e-5447-4a9e-b46f-d1f9003f4368">Discovery Service Set</link>
+      <link xlink:href="79df831d-e896-4b88-abad-88319f42a626">SecureChannel Service Set</link>
+      <link xlink:href="0e0c01d9-9a33-4efd-8223-c8d4c7b2b0d0">Session Service Set</link>
+      <link xlink:href="defef2ce-1182-4332-a62e-773a9821a417">NodeManagement Service Set</link>
+      <link xlink:href="47230bdf-474d-409e-8912-3468cc98d385">View Service Set</link>
+      <link xlink:href="742e60d9-c5d8-45a3-8193-0ebc14633e07">Query Service Set</link>
+      <link xlink:href="8944d7a9-baff-4e2e-893e-c66396f6fef0">Method Service Set</link>
+      <link xlink:href="267df39c-3334-4e5a-baa7-c900feedd905">Subscription Service Set</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="267df39c-3334-4e5a-baa7-c900feedd905" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>The Subscription Service Set is used by the Client to create and maintain Subscriptions. Subscriptions are entities that periodically publish NotificationMessages for the MonitoredItem assigned to them. The NotificationMessage contains a common header followed by a series of Notifications. The format of Notifications is specific to the type of item being monitored (i.e. Variables, Attributes, and EventNotifiers). </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>Subscription Service Set</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+      <autoOutline /> -->
+        <para>Once created, the existence of a Subscription is independent of the Client’s Session with the Server. This allows one Client to create a Subscription, and a second, possibly a redundant Client, to receive NotificationMessages from it. </para>
+      </content>
+      <sections>
+        <section>
+          <content>
+            <para>To protect against non-use by Clients, Subscriptions have a configured lifetime that Clients periodically renew. If any Client fails to renew the lifetime, the lifetime expires and the Subscription is closed by the Server. When a Subscription is closed, all MonitoredItems assigned to the Subscription are deleted. </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>Subscriptions include features that support detection and recovery of lost Messages. Each NotificationMessage contains a sequence number that allows Clients to detect missed Messages. When there are no Notifications to send within the keep-alive time interval, the Server sends a keep-alive Message that contains the sequence number of the next NotificationMessage sent. If a Client fails to receive a Message after the keep-alive interval has expired, or if it determines that it has missed a Message, it can request the Server to resend one or more Messages. </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="41ef495e-5447-4a9e-b46f-d1f9003f4368">Discovery Service Set</link>
+      <link xlink:href="79df831d-e896-4b88-abad-88319f42a626">SecureChannel Service Set</link>
+      <link xlink:href="0e0c01d9-9a33-4efd-8223-c8d4c7b2b0d0">Session Service Set</link>
+      <link xlink:href="defef2ce-1182-4332-a62e-773a9821a417">NodeManagement Service Set</link>
+      <link xlink:href="47230bdf-474d-409e-8912-3468cc98d385">View Service Set</link>
+      <link xlink:href="742e60d9-c5d8-45a3-8193-0ebc14633e07">Query Service Set</link>
+      <link xlink:href="8944d7a9-baff-4e2e-893e-c66396f6fef0">Method Service Set</link>
+      <link xlink:href="e0bdb98b-ab27-4798-8072-c23d26c08f06">MonitoredItem Service Set</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

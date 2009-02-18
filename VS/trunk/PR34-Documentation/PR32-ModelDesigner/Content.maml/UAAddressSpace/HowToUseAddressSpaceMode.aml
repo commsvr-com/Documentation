@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ad0fdaba-ab78-477a-ac9d-13e06cc51939" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      This topic points out some general considerations how the <token>AS</token> model can be used. Each server vendor can model its data in the appropriated way that fits to its needs, however, this topic gives some hints the server vendor may consider.
+    </para>
+      <para>
+      Typically <token>OPCUA</token> servers will offer data provided by an underlying system like a device, a configuration database, an OPC COM server, etc. Therefore the modelling of the data depends on the model of the underlying system as well as the requirements on the clients accessing the <token>OPCUA</token> server. It is also expected that companion specifications will be developed on top of <token>OPCUA</token> with additional rules how to model the data. However, the following subclauses will give some general consideration about the different concepts of <token>OPCUA</token> to model data and when they should be used and when not.
+    </para>
+      <para>
+      The subsection <link xlink:href="9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9" /> gives an overview over the design decisions made when modelling the information about the server described in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />.
+    </para>
+    </introduction>
+    <section>
+      <title>Type Definitions</title>
+      <content>
+        <para>
+        Type definitions should be used whenever it is expected that the type information may be used more than once in the same system or for interoperability between different systems supporting the same type definitions.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Object Types</title>
+      <content>
+        <para>
+        Section <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> states: “Objects are used to represent systems, system components, real-world objects, and software objects.” Therefore <link xlink:href="0d741b40-7d47-4aa1-852b-fe9007394b7f">object types</link> should be used if a type definition of those is useful.
+      </para>
+        <para>
+        From a more abstract point of view <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35">objects</link> are used to group <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045">variables</link> and other <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35">objects</link> in the <token>AS</token>. Therefore object types should be used when some common structures / groups of objects and / or variables should be described. Clients can use this knowledge to program against the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> structure and use the TranslateBrowsePathsToNodeIds service (described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />) on the instances.
+      </para>
+        <para>
+        Simple objects only having one value (e.g. a simple heat sensor) can also be modelled as <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f">variable types</link>. However, extensibility mechanisms should be considered (e.g. a complex heat sensor subtype could have several values) and whether the object should be exposed as an object in the client's GUI or just as a value. Whenever a modeller is in doubt which solution to use the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> having one <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> should be preferred.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Variable Types</title>
+      <content>
+        <para>
+          <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f">Variable types</link> are only used for <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> and should be used when there are several variables having the same semantic (e.g. set point). It is not needed to define a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> just reflecting the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data type</link> of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, e.g. an “Int32VaraibleType”.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>Properties or Data Variables</title>
+          <content>
+            <para>
+            Besides the semantic differences of <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">properties</link> and <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> there are also syntactic differences. A property is identified by its <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>, i.e. if properties having the same semantic are used several times, they should always have the same <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>. The same semantic of <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> is captured in the <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+          </para>
+            <para>
+            If it’s not clear what concept to use based on the semantic described in <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />, the different syntax can help. The following points identify that it has to be a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variable</link>:
+          </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                If it’s a complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or it should contain additional information in the form of properties.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                If the type definition may be refined (subtyping).
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                If the type definition should be made available so the client can use the AddNodes service (described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />) to create new instances of the type definition.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                If it’s a component of a complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> exposing a part of the value of the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />.
+              </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section>
+          <title>Many Variables and / or Complex Data Types</title>
+          <content>
+            <para>
+            When complex data structures should be made available to the client there are basically three different approaches:
+          </para>
+            <list class="ordered">
+              <listItem>
+                <para>
+                Create several simple <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045">variables</link> using simple <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data types</link> always reflecting parts of the simple structure. Objects are used to group the variables according to the structure of the data.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Create a complex <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data types</link> and a simple <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> using this type.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Create a complex <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data type</link> and a complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> using this type and also exposing the complex data structure as variables of the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> using simple <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data types</link></para>
+              </listItem>
+            </list>
+            <para>
+            The advantages of the first approach are that the complex structure of the data is visible in the <token>AS</token>; a generic client can easily access those data without knowledge of user-defined data types; and the client can access individual parts of the complex data. The disadvantages of the first approach are that accessing the individual data does not provide any transactional context; and for a specific client the server first has to convert the data and the client has to convert the data, again, to get the data structure the underlying system provides.
+          </para>
+            <para>
+            The advantages of the second approach are, that the data are accessed in a transaction context and the complex <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data type</link> can be constructed in a way that the server does not have to convert the data and can pass them directly to the specific client that can directly use them. The disadvantages are that the generic client might not be able to access and interpret the data or has at least the burden to read the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type description</link> to interpret the data. The structure of the data is not visible in the <token>AS</token>; additional properties describing the data structure cannot be added to the adequate places since they do not exist in the <token>AS</token>. Individual parts of the data cannot be read without accessing the whole data structure.
+          </para>
+            <para>
+            The third approach combines both other approaches. Therefore the specific client can access the data in its native format in a transactional context, whereas the generic client can access the simple <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data types</link> of the components of the complex <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />. The disadvantage is that the server shall be able to provide the native format and also interpret it to be able to provide the information in simple data types.
+          </para>
+            <para>
+            It is recommended to use the first approach. When a transactional context is needed or the client should be able to get a large amount of data instead of subscribing to several individual values, the third approach is suitable. However, the server might not always have the knowledge to interpret the complex data of the underlying system and therefore has to use the second approach just passing the data to the specific client who is able to interpret the data.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section>
+      <title>Views</title>
+      <content>
+        <para>
+        Server-defined <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" /> nodes can be used to present an excerpt of the <token>AS</token> suitable for a special class of clients, e.g. maintenance clients, engineering clients, etc. The <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" /> only provides the information needed for the purpose of the client and hides unnecessary information.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Methods</title>
+      <content>
+        <para>
+        Methods should be used whenever some input is expected and the server delivers a result. One should avoid using <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> nodes to write the input values and other variables to get the output results as it was needed to do in OPC COM since there was no concept of a <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" /> available. However, a simple OPC COM wrapper might not be able to do this.
+      </para>
+        <para>
+        Methods can also be used to trigger some execution in the server that does not require input and / or output parameters.
+      </para>
+        <para>
+        Global methods, i.e. methods that cannot directly be assigned to a special object, should be assigned to the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType">Server object</link>.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Defining Reference Types</title>
+      <content>
+        <para>
+        Defining new <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134">reference types</link> should only be done if the predefined types are not suitable. Whenever a new reference type is defined, the most appropriate reference type should be used as its supertype.
+      </para>
+        <para>
+        It is expected that servers will have new defined hierarchical <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134">reference types</link> to expose different hierarchies and new non-hierarchical references to expose relationships between nodes in the <token>AS</token>.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Defining Modelling Rules</title>
+      <content>
+        <para>
+        New <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">modelling rules</link> have to be defined if the predefined once are not appropriated for the model exposed by the server.
+      </para>
+        <para>
+        Depending on the model used by the underlying system the server may need to define new modelling rules, since the <token>OPCUA</token> server may only pass the data to the underlying system and this system may use its own internal rules for instantiation, subtyping, etc.
+      </para>
+        <para>
+        Beside this the predefined <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">modelling rules</link> might not be sufficient to specify the needed behaviour for instantiation and subtyping.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9" />
+      <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+      <link xlink:href="0d741b40-7d47-4aa1-852b-fe9007394b7f">Object types</link>
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f">Variable types</link>
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">Data variables</link>
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Properties</link>
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>
+      <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">Data type</link>
+      <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">DataTypeDescriptionType</link>
+      <link xlink:href="0a8a12b4-ea75-44d2-ab18-c2a49b8b4606" />
+      <link xlink:href="92f04f9b-1fd7-4668-8deb-626991b93201" />
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType">ServerType</link>
+      <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" />
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#ModellingRuleType">ModellingRuleType</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

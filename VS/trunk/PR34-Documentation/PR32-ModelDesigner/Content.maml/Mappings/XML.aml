@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="00084482-6519-4d24-a8ff-d731d6cfc35c" revisionNumber="1">
+  <developerSDKTechnologyOverviewOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+        "In This Section" info:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="b683099d-5c89-4c46-a277-d368f9c98a7a">Built-in Types</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="60a27dd4-fb8a-4dfb-a559-a7eb6f96ee7a">Enumerations</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="ee8d55b4-1974-4bce-916b-3b8e1364c1bc">Arrays</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="09fd76f5-78cc-48ab-9815-d4f414dd24e8">Structures</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="b929152d-8496-4aa2-a72f-d3e853fd9798">Messages</link>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </inThisSection>
+    <!-- <reference>Optional reference info</reference> -->
+    <!-- <relatedSections>Optional related sections info</relatedSections> -->
+    <!-- <externalResources>Optional external resources info</externalResources> -->
+  </developerSDKTechnologyOverviewOrientationDocument>
+</topic>

@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="d458d900-f4e3-472f-b729-7c759f1c8aa4" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+        <token>OPCUA</token> is a platform-independent standard through which various kinds of systems and devices can communicate by sending messages between clients and servers over various types of networks. It supports robust, secure communication that assures the identity of clients and servers and resists attacks. <token>OPCUA</token> defines sets of services that servers may provide, and individual servers specify to clients what service sets they support. Information is conveyed using OPC UA-defined and vendor-defined data types and servers define object models that clients can dynamically discover. Servers can provide access to both current and historical data, as well as alarms and events to notify clients of important changes. OPC UA can be mapped onto a variety of communication protocols and data can be encoded in various ways to trade off portability and efficiency.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      The main goal of the OPC Unified Architecture is to provide a consistent mechanism allowing for the integration of process control and management systems. To meet this goal, the Address Space concept is defined. The Address Space is intended to support integration by building common discipline, i.e. semantics (knowledge base) and vocabulary (representation base) - finally a language good enough to convey information up and down between levels of competence. The Address Space is a flexible real-time process environment modeling concept. Designing of a process model means that a description of the process is created. The challenge of the specification is to make this description unambiguous. Unique information representation must provide common understanding of the process behavior under control.
+    </para>
+      <para>
+      To integrate systems the possibility of describing the integration subject is only the necessary condition. But to make systems interoperable, we have to provide also information exchange. Because information is an abstract notion, it cannot be processed by physical machines. Therefore it has to be represented as computer centric data. Exchange also requires data transportation.
+    </para>
+      <para>
+      Therefore, to implement the Address Space, the OPC Unified Architecture provides:
+    </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            <token>IM</token>: to unambiguously represent information as computer centric data
+        </para>
+        </listItem>
+        <listItem>
+          <para>
+            <token>SM</token>: to transport data between communicating parties using modern network centric standards
+        </para>
+        </listItem>
+      </list>
+    </introduction>
+    <section>
+      <title>Design goals</title>
+      <content>
+        <para>
+        OPC UA allows Servers to provide Clients with type definitions for the Objects accessed from the Address Space. This allows information models to be used to describe the contents of the Address Space. OPC UA allows data to be exposed in many different formats, including binary structures and XML documents. The data format may be defined by OPC, other standard organizations or vendors. Through the Address Space, Clients can query the Server for metadata that describes the data format. In many cases, Clients with no pre-programmed knowledge of the data formats will be able to determine the formats at runtime and properly utilize data. OPC UA adds support for many relationships between Nodes instead of being limited to just a single hierarchy. In this way, an OPC UA Server may present data in a variety of hierarchies tailored to the way a set of Clients would typically like to view data. This flexibility, combined with support for type definitions, makes OPC UA applicable to a wide array of problem domains. As illustrated below, OPC UA is not targeted at just the SCADA, PLC and DCS interface, but also as a way to provide greater interoperability between higher level functions.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">OPC UA Target Applications</caption>
+          <image placement="center" xlink:href="0e34acbe-94b2-4669-b6b0-92be21fd20d5" />
+        </mediaLink>
+        <para>
+        OPC UA is designed to provide robustness of published data. A major feature of all OPC servers is the ability to
+        publish data and Event Notifications. OPC UA provides mechanisms for Clients to quickly detect and recover
+        from communication failures associated with these transfers without having to wait for long timeouts provided by the
+        underlying protocols. OPC UA is designed to support a wide range of Servers, from plant floor PLCs to enterprise Servers. Those Servers are characterized by a broad scope of size, performance, execution platforms and functional capabilities. Therefore, OPC UA defines a comprehensive set of capabilities, and Servers may implement a subset thereof. To promote interoperability, OPC UA defines subsets, referred to as Profiles, to which Servers may claim conformance. Clients can then discover the Profiles of a Server, and tailor their interactions with that Server based on the Profiles. Profiles are described in section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />. The OPC UA specifications are layered to isolate the core design from the underlying computing technology and network transport. This allows OPC UA to be mapped to future technologies as necessary, without negating the basic design. Mappings and data encodings are described in
+        section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />. Two data encodings are defined in this part:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>XML/text</para>
+          </listItem>
+          <listItem>
+            <para>UA Binary</para>
+          </listItem>
+        </list>
+        <para>In addition, two transport mappings are defined in this part:</para>
+        <list class="bullet">
+          <listItem>
+            <para>TCP</para>
+          </listItem>
+          <listItem>
+            <para>SOAP Web services over HTTP</para>
+          </listItem>
+        </list>
+        <para>Clients and Servers that support multiple transports and encodings will allow the end users to make decisions about tradeoffs between performance and XML Web service compatibility at the time of deployment, rather than having these tradeoffs determined by the OPC vendor at the time of product definition.</para>
+        <para>OPC UA is designed as the migration path for OPC clients and servers that are based on Microsoft COM technology. Care has been taken in the design of OPC-UA so that existing data exposed by OPC COM servers (DA, HDA and AE) can easily be mapped and exposed via OPC UA. Vendors may choose to migrate their products natively to OPC UA or use external wrappers to convert from OPC COM to OPC UA and vice-versa. Each of the previous OPC specifications defined its own address space model and its own set of Services. OPC UA unifies the previous models into a single integrated address space with a single set of Services.</para>
+      </content>
+    </section>
+    <section>
+      <title>Integrated models and services</title>
+      <content>
+        <para>
+        </para>
+      </content>
+      <sections>
+        <section>
+          <title>Security model</title>
+          <content>
+          </content>
+          <sections>
+            <section>
+              <title>General</title>
+              <content>
+                <para>
+                  <token>OPCUA</token> security is concerned with the authentication of clients and servers, the authentication of users, the integrity and confidentiality of their communications, and the verifiability of claims of functionality. It does not specify the circumstances under which various security mechanisms are required. That specification is crucial, but it is made by the designers of the system at a given site and may be specified by other standards. Rather, <token>OPCUA</token> provides a security model, defined in <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" />, in which security measures can be selected and configured to meet the security needs of a given installation.
+                This model includes security mechanisms and parameters. In some cases, the mechanism for exchanging security
+                parameters is defined, but the way that applications use these parameters is not. This framework also defines
+                a minimum set of security Profiles that all UA Servers support, even though they may not be used in all installations.
+                Security Profiles are described in
+                section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />.
+              </para>
+              </content>
+            </section>
+            <section>
+              <title>Discovery and Session establishment</title>
+              <content>
+                <para>
+                Application level security relies on a secure communication channel that is active for the duration of the application
+                Session and ensures the integrity of all Messages that are exchanged. This means users need to be authenticated only
+                once, when the application Session is established. The mechanisms for discovering OPC UA Servers and establishing secure
+                communication channels and application Sessions are described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+                and
+                section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />.
+                Additional information about the Discovery process is described in
+                section <link xlink:href="6331c6ab-b475-491a-8738-43edae0ed6bc" />
+                when a Session is established, the Client and Server applications negotiate a secure communications channel and
+                exchange software Certificates that identify the Client and Server and the capabilities that they provide.
+                Authority-generated software Certificates indicate the OPC UA Profiles that the applications implement and the
+                OPC UA certification level reached for each Profile. The details of each Profile and the Certificates are described
+                in
+                section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />.
+                Certificates issued by other organizations may also be exchanged during Session establishment. The Server further
+                authenticates the user and authorizes subsequent requests to access Objects in the Server. Authorization mechanisms,
+                such as access control lists, are not specified by the <token>OPCUA</token> specification. They are application or system-specific.
+              </para>
+              </content>
+            </section>
+            <section>
+              <title>Auditing</title>
+              <content>
+                <para>
+                  <token>OPCUA</token> includes support for security audit trails with traceability between Client and Server audit logs. If a security-related problem is detected at the Server, the associated Client audit log entry can be located and examined.
+                OPC UA also provides the capability for Servers to generate Event Notifications that report auditable Events to Clients
+                capable of processing and logging them. OPC UA defines security audit parameters that can be included in audit log
+                entries and in audit Event Notifications.
+                Section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> describes the data types for these parameters. Not all Servers and Clients provide all of the auditing features.
+                Profiles, found in section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />, indicate which features are supported.
+              </para>
+              </content>
+            </section>
+            <section>
+              <title>Transport security</title>
+              <content>
+                <para>
+                OPC UA security complements the security infrastructure provided by most web service capable platforms. Transport level security can be used to encrypt and sign Messages. Encryption and signatures protect against disclosure of information and protect the integrity of Messages. Encryption capabilities are provided by the underlying communications technology used to exchange Messages between OPC UA applications.
+                Section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />
+                defines the encryption and signature algorithms to be used for a given Profile.
+              </para>
+              </content>
+            </section>
+          </sections>
+        </section>
+        <section>
+          <title>Integrated Address Space model</title>
+          <content>
+            <para>
+            The set of Objects and related information that the OPC UA Server makes available to Clients is referred to as its
+            Address Space. The OPC UA Address Space represents its contents as a set of Nodes connected by References.
+          </para>
+            <para>
+            Primitive characteristics of Nodes are described by OPC-defined Attributes. Attributes are the only elements of a
+            Server that have data values. Data types that define attribute values may be simple or complex.
+          </para>
+            <para>
+            Nodes in the Address Space are typed according to their use and their meaning. Node Classes define metadata for the
+            OPC UA Address Space. Section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />
+            showes the OPC UA Node Classes.
+          </para>
+            <para>
+            The <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /><token>NodeClass</token> defines Attributes common to all Nodes, allowing identification, classification and naming.
+            Each Node Class inherits these Attributes and may additionally define its own Attributes.
+          </para>
+            <para>
+            To promote interoperability of Clients and Servers, the OPC UA Address Space is structured hierarchically with the top
+            levels the same for all Servers. Although Nodes in the Address Space are typically accessible via the hierarchy,
+            they may have References to each other, allowing the Address Space to represent an interrelated network of Nodes.
+            The model of the Address Space is defined insection <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />.
+          </para>
+            <para>
+            OPC UA Servers may subset the Address Space into Views to simplify Client access.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Integrated object model</title>
+          <content>
+            <para>
+            The OPC UA Object Model provides a consistent, integrated set of Node Classes for representing Objects in the Address Space. This model represents Objects in terms of their Variables, Events and Methods, and their relationships with other Objects.
+            Section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />
+            describes this model. The OPC UA object model allows Servers to provide type definitions for Objects and their components. Type definitions may be subclassed. They also may be common or they may be system-specific. Object Types may be defined by standards organizations, vendors or end-users. This model allows data, Alarms and Events, and their history to be integrated into a single OPC UA Server. For example, OPC UA Servers are able to represent a temperature transmitter as an Object that is composed of a temperature value, a set of alarm parameters, and a corresponding set of alarm limits.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Integrated services</title>
+          <content>
+            <para>
+            The interface between OPC UA Clients and Servers is defined as a set of Services. These Services are organized into logical groupings called Service Sets. Service Sets are discussed in <link xlink:href="14e03e6a-2c19-4124-8c10-aecd07121492" /> and described in
+            section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+          </para>
+            <para>
+            OPC UA Services provide two capabilities to Clients. They allow Clients to issue requests to Servers and receive
+            responses from them. They also allow Clients to subscribe to Servers for Notifications. Notifications are used by the
+            Server to report occurrences such as Alarms, data value changes,
+            Events, and Program execution results.
+          </para>
+            <para>
+            OPC UA Messages may be encoded as XML text or in binary format for efficiency purposes.
+            They may be transferred using multiple underlying transports, for example TCP or web services over HTTP.
+            Servers may provide different encodings and transports as described by
+            section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section>
+      <title>Sessions</title>
+      <content>
+        <para>
+        OPC UA requires a stateful model. The state information is maintained inside an application Session. Examples of state-information are Subscriptions, user credentials and continuation points for operations that span multiple requests.
+      </para>
+        <para>
+        Sessions are defined as logical connections between Clients and Servers. Servers may limit the number of concurrent Sessions based on resource availability, licensing restrictions, or other constraints. Each Session is independent of the underlying communications protocols. Failures of these protocols do not automatically cause the Session to terminate. Sessions terminate based on Client or Server request, or based on inactivity of the Client. The inactivity time interval is negotiated during Session establishment.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Redundancy</title>
+      <content>
+        <para>
+        The design of OPC UA ensures that vendors can create redundant Clients and redundant Servers in a consistent manner.
+        Redundancy may be used for high availability, fault tolerance and load balancing. The details for redundancy are found in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+        Only some Profiles (section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />),
+        will require redundancy support, but not the base Profile.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ad8b0a3f-9293-4a1e-8f03-3e463a8d5f04" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>To integrate diverse systems we must make them interoperable, but it means necessity of information exchange.</para>
+    </summary>
+    <introduction>
+      <para>Because information is an abstract notion, it cannot be processed by a physical machine. Therefore it has to be represented as computer centric data, which means that representation is:</para>
+      <list class="bullet">
+        <listItem>
+          <para>Unique – to be mutually understandable</para>
+        </listItem>
+        <listItem>
+          <para>Platform independent – to be processed by diverse systems</para>
+        </listItem>
+        <listItem>
+          <para>Transferable – to be transported between remote parties</para>
+        </listItem>
+      </list>
+      <alert>
+        <para>Computer centric representation means that the data is save-able in a binary random access memory.</para>
+      </alert>
+      <alert>
+        <para>Transferable representation means that the data is a stream of bits. </para>
+      </alert>
+      <para>
+      This section describes the concept of <token>AS</token> that allows representing the underlying real-time process in a unique and platform independent means. Section <link NS3:href="14e03e6a-2c19-4124-8c10-aecd07121492" xmlns:NS3="http://www.w3.org/1999/xlink"></link> provides more detail about services responsible for data transfer and management.
+    </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link xlink:href="1254395d-618d-46dc-ad33-39e2becadee8" />
+        </para>
+        <para>
+        The primary objective of the <token>OPCUA</token> is to provide a standard that allows servers to represent real-time process state and its environment to clients, in a unique and platform independent way. The <token>OPCUA</token> Object Model has been designed to meet this objective.
+      </para>
+        <para>
+          <link xlink:href="44be48a5-7e42-42a2-906b-86b569ed9d93" />
+        </para>
+        <para>
+        Objects and their components are represented in the <token>AS</token> as a set of nodes described by attributes and interconnected by references.
+      </para>
+      </content>
+    </inThisSection>
+    <relatedTopics>
+      <link xlink:href="57948ea6-b48e-43c9-addc-d24694886784">
+      </link>
+      <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18">
+      </link>
+      <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8">
+      </link>
+      <link xlink:href="c9cd61c1-3e7c-4fef-a834-472417145053">
+      </link>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

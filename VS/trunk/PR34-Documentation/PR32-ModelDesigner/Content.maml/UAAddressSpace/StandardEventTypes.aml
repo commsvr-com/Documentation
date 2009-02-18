@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="2191d1e7-9793-4eee-a180-a59b249f1098" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      The following subclauses define event types. Their representation in the <token>AS</token> is described in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />. Additional event types may be specified. Figure 1 informally describes the hierarchy of these event types.
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Standard EventType Hierarchy</caption>
+        <image placement="center" xlink:href="f6feabcb-2453-4480-903b-6835aef4b21f" />
+      </mediaLink>
+    </introduction>
+    <section address="BaseEventType">
+      <title>BaseEventType</title>
+      <content>
+        <para>
+        The BaseEventType defines all general characteristics of an event. All other event types derive from it. There is no other semantic associated with this type.
+      </para>
+      </content>
+    </section>
+    <section address="SystemEventType">
+      <title>SystemEventType</title>
+      <content>
+        <para>
+        System events are generated as a result of some event that occurs within the server or by a system that the server is representing.
+      </para>
+      </content>
+    </section>
+    <section address="AuditEventType">
+      <title>AuditEventType</title>
+      <content>
+        <para>
+        Audit events are generated as a result of an action taken on the server by a client of the server. For example, in response to a client issuing a write to a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, the server would generate an audit event describing the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> as the source and the user and client session as the initiators of the event.
+      </para>
+        <para>
+        Figure 2 illustrates the defined behaviour of an <token>OPCUA</token> server in response to an auditable action request. If the action is accepted, an action audit event is generated and processed by the server. If the action is not accepted due to security reasons, a security audit event is generated and processed by the server. The server may involve the underlying device or system in the process but it is the server’s responsibility to provide the event to any interested clients. Clients are free to subscribe to events from the server and will receive the audit events in response to normal Publish requests.
+      </para>
+        <para>
+        All action requests include a human readable AuditEntryId. The AuditEntryId is included in the audit event to allow human readers to correlate an event with the initiating action. The AuditEntryId typically contains who initiated the action and from where it was initiated.
+      </para>
+        <para>
+        The server may elect to optionally persist the audit events in addition to the mandatory event subscription delivery to clients.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Audit Behaviour of a Server</caption>
+          <image placement="center" xlink:href="2fc5e084-81a9-4dfa-ac23-998c9ea58dfa" />
+        </mediaLink>
+        <para>
+        Figure 3 illustrates the expected behaviour of an aggregating server in response to an auditable action request. This use case involves the aggregating server passing on the action to one of its aggregated servers. The general behaviour described above is extended by this behaviour and not replaced. That is, the request could fail and generate a security audit event within the aggregating server. The normal process is to pass the action down to an aggregated server for processing. The aggregated server will, in turn, follow this behaviour or the general behaviour and generate the appropriate audit events. The aggregating server periodically issues publish requests to the aggregated servers. These collected events are merged with self-generated events and made available to subscribing clients. If the aggregating server supports the optional persisting of AuditEvent, the collected events are persisted along with locally-generated events.
+      </para>
+        <para>
+        The aggregating server may map the authenticated user account making the request to one of its own accounts when passing on the request to an aggregated server. It shall, however, preserve the AuditEntryId by passing it on as received. The aggregating server may also generate its own audit event for the request prior to passing it on to the aggregated server, in particular, if the aggregating server needs to break a request into multiple requests that are each directed to separate aggregated servers or if part of a request is denied do to security on the aggregating server.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Audit Behaviour of an Aggregating Server</caption>
+          <image placement="center" xlink:href="c101d6e4-495b-4bc3-87ac-1227247d473f" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="AuditSecurityEventType">
+      <title>AuditSecurityEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditEventType">AuditEventType</link> and is used only for categorization of security-related events. This type follows all behaviour of its parent type.
+      </para>
+      </content>
+    </section>
+    <section address="AuditChannelEventType">
+      <title>AuditChannelEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditSecurityEventType">AuditSecurityEventType</link> and is used for categorization of security-related events from the SecureChannel service set described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditOpenSecureChannelEventType">
+      <title>AuditOpenSecureChannelEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditChannelEventType">AuditChannelEventType</link> and is used for events generated from calling the OpenSecureChannel service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditSessionEventType">
+      <title>AuditSessionEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditSecurityEventType">AuditSecurityEventType</link> and is used for categorization of security-related events from the Session service set described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCreateSessionEventType">
+      <title>AuditCreateSessionEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditSessionEventType">AuditSessionEventType</link> and is used for events generated from calling the CreateSession service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditUrlMismatchEventType">
+      <title>AuditUrlMismatchEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCreateSessionEventType">AuditCreateSessionEventType</link> and is used for events generated from calling the CreateSession service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. if the EndpointUrl used in the service call does not match the server’s HostNames (see section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> for details).
+      </para>
+      </content>
+    </section>
+    <section address="AuditActivateSessionEventType">
+      <title>AuditActivateSessionEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditSessionEventType">AuditSessionEventType</link> and is used for events generated from calling the ActivateSession service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCancelEventType">
+      <title>AuditCancelEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditSessionEventType">AuditSessionEventType</link> and is used for events generated from calling the Cancel service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateEventType">
+      <title>AuditCertificateEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditSecurityEventType">AuditSecurityEventType</link> and is used only for categorization of Certificate related Events. This type follows all behaviour of its parent type. These AuditEvents will be generated for Certificate errors in addition to other AuditEvents related to service calls.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateDataMismatchEventType">
+      <title>AuditCertificateDataMismatchEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCertificateEventType">AuditCertificateEventType</link> and is used only for categorization of Certificate related events. This type follows all behaviour of its parent type. This audit event is generated if the HostName in the URL used to connect to the server is not the same as one of the host names specified in the Certificate or if application and software certificates contain an application or product URI that does not match the URI specified in the ApplicationDescription provided with the certificate. For more details on certificates see section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateExpiredEventType">
+      <title>AuditCertificateExpiredEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCertificateEventType">AuditCertificateEventType</link> and is used only for categorization of certificate related events. This type follows all behaviour of its parent type. This audit event is generated if the current time is not after the start of the validity period and before the end.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateInvalidEventType">
+      <title>AuditCertificateInvalidEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCertificateEventType">AuditCertificateEventType</link> and is used only for categorization of certificate related events. This type follows all behaviour of its parent type. This audit event is generated if the certificate structure is invalid or if the certificate has an invalid signature.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateUntrustedEventType">
+      <title>AuditCertificateUntrustedEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCertificateEventType">AuditCertificateEventType</link> and is used only for categorization of certificate related events. This type follows all behaviour of its parent type. This audit event is generated if the certificate is not trusted i.e. if the issuer certificate is unknown.
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateRevokedEventType">
+      <title>AuditCertificateRevokedEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCertificateEventType">AuditCertificateEventType</link> and is used only for categorization of certificate related events. This type follows all behaviour of its parent type. This audit event is generated if a certificate has been revoked of if the revocation list is not available (i.e. a network interruption prevents the Application from accessing the list).
+      </para>
+      </content>
+    </section>
+    <section address="AuditCertificateMismatchEventType">
+      <title>AuditCertificateMismatchEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditCertificateEventType">AuditCertificateEventType</link> and is used only for categorization of certificate related events. This type follows all behaviour of its parent type. This audit event is generated if a certificate set of uses does not match use requested for the certificate (i.e. application, software or CA),
+      </para>
+      </content>
+    </section>
+    <section address="AuditNodeManagementEventType">
+      <title>AuditNodeManagementEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditEventType">AuditEventType</link> and is used for categorization of node management related events. This type follows all behaviour of its parent type.
+      </para>
+      </content>
+    </section>
+    <section address="AuditAddNodesEventType">
+      <title>AuditAddNodesEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditNodeManagementEventType">AuditNodeManagementEventType</link> and is used for events generated from calling the AddNodes service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditDeleteNodesEventType">
+      <title>AuditDeleteNodesEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditNodeManagementEventType">AuditNodeManagementEventType</link> and is used for events generated from calling the DeleteNodes service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditAddReferencesEventType">
+      <title>AuditAddReferencesEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditNodeManagementEventType">AuditNodeManagementEventType</link> and is used for events generated from calling the AddReferences service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditDeleteReferencesEventType">
+      <title>AuditDeleteReferencesEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditNodeManagementEventType">AuditNodeManagementEventType</link> and is used for events generated from calling the DeleteReferences service described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+      </para>
+      </content>
+    </section>
+    <section address="AuditUpdateEventType">
+      <title>AuditUpdateEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditEventType">AuditEventType</link> and is used for categorization of update related events. This type follows all behaviour of its parent type.
+      </para>
+      </content>
+    </section>
+    <section address="AuditWriteUpdateEventType">
+      <title>AuditWriteUpdateEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditUpdateEventType">AuditUpdateEventType</link> and is used for categorization of write update related events. This type follows all behaviour of its parent type.
+      </para>
+      </content>
+    </section>
+    <section address="AuditHistoryUpdateEventType">
+      <title>AuditHistoryUpdateEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditUpdateEventType">AuditUpdateEventType</link> and is used for categorization of history update related events. This type follows all behaviour of its parent type.
+      </para>
+      </content>
+    </section>
+    <section address="AuditUpdateMethodEventType">
+      <title>AuditUpdateMethodEventType</title>
+      <content>
+        <para>
+        This is a subtype of <link xlink:href="#AuditEventType">AuditEventType</link> and is used for categorization of method related events. This type follows all behaviour of its parent type.
+      </para>
+      </content>
+    </section>
+    <section address="DeviceFailureEventType">
+      <title>DeviceFailureEventType</title>
+      <content>
+        <para>
+        A DeviceFailureEvent indicates a failure in a device of the underlying system.
+      </para>
+      </content>
+    </section>
+    <section address="ModelChangeEvents">
+      <title>Model Change Events</title>
+      <content>
+        <para>
+          <link xlink:href="#BaseModelChangeEventType">Model change events</link> are generated to indicate a change of the <token>AS</token> structure. The change may consist of adding or deleting an node or reference object. Although the relationship of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> to its <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> is not modelled using references, changes to the DataType attribute of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> are also considered as model changes and therefore a model change event is generated if the <computerOutputInline>DataType attribute</computerOutputInline> changes.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>NodeVersion Property</title>
+          <content>
+            <para>
+            There is a correlation between <link xlink:href="#BaseModelChangeEventType">model change events</link> and the NodeVersion property of nodes. Every time a model change event is issued for a node, its NodeVersion shall be changed, and every time the NodeVersion is changed, a model change event shall be generated. A server shall support both the model change event and the NodeVersion property or neither, but never only one of the two mechanisms.
+          </para>
+          </content>
+        </section>
+        <section address="Views">
+          <title>Views</title>
+          <content>
+            <para>
+              <link xlink:href="#BaseModelChangeEventType">A model change event</link> is always generated in the context of a View node class including the default View where the whole <token>AS</token> is considered. Therefore the only notifiers which report the model change events are View nodes and the Server object representing the default view. Each action generating <link xlink:href="#BaseModelChangeEventType">a model change event</link> may lead to several events since it may affect different views. If, for example, a node was deleted from the <token>AS</token>, and this node was also contained in a View "A", there would be one event having the <token>AS</token> as context and another having the View "A" as context. If a node would only be removed from View "A", but still exists in the <token>AS</token>, it would generate only a <link xlink:href="#BaseModelChangeEventType">model change event</link> for View "A".
+          </para>
+            <para>
+            If a client does not want to receive duplicates of changes it has to use the filter mechanisms of the event subscription filtering only for the default view and suppress <link xlink:href="#BaseModelChangeEventType">the model change events</link> having other views as context.
+          </para>
+            <para>
+            When <link xlink:href="#BaseModelChangeEventType">a model change event</link> is issued on a view and the view supports the ViewVersion property, the ViewVersion has to be updated.
+          </para>
+          </content>
+        </section>
+        <section address="EventCompression">
+          <title>Event Compression</title>
+          <content>
+            <para>
+            An implementation is not required to issue an event for every update as it occurs. An <token>OPCUA</token> server may be capable of grouping a series of transactions or simple updates into a larger unit. This series may constitute a logical grouping or a temporal grouping of changes. A single <link xlink:href="#BaseModelChangeEventType">model change event</link> may be issued after the last change of the series, to cover all of the changes. This is referred to as event compression. A change in the NodeVersion and the ViewVersion may thus reflect a group of changes and not a single change.
+          </para>
+          </content>
+        </section>
+        <section address="BaseModelChangeEventType">
+          <title>BaseModelChangeEventType</title>
+          <content>
+            <para>The BaseModelChangeEventType is the base type for model change events and does not contain information about the changes but only indicates that changes occurred. Therefore the client shall assume that any or all of the Nodes may have changed.</para>
+          </content>
+        </section>
+        <section address="GeneralModelChangeEventType">
+          <title>GeneralModelChangeEventType</title>
+          <content>
+            <para>
+            The GeneralModelChangeEventType is a subtype of the <link xlink:href="#BaseModelChangeEventType">BaseModelChangeEventType</link>. It contains information about the node that was changed and the action that occurred <link xlink:href="#BaseModelChangeEventType">the model change event</link> (e.g. add a node object, delete a node object, etc.). If the affected object is a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, the type definition node is also present.
+          </para>
+            <para>
+            To allow event compression, a general model change event contains an array of this structure.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Guidelines for Model Change Events</title>
+          <content>
+            <para>
+            Two types of model change events are defined: the <link xlink:href="#BaseModelChangeEventType">base model change event</link> that does not contain any information about the changes and the <link xlink:href="#GeneralModelChangeEventType">general model change event</link> that identifies the changed nodes via an array. The precision used depends on both the capability of the <token>OPCUA</token> server and the nature of the update. An <token>OPCUA</token> server may use either model change event type depending on circumstances. It may also define subtypes of these event types adding additional information.
+          </para>
+            <para>
+            To ensure interoperability, the following guidelines for events should be observed:
+          </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                If the array of <link xlink:href="#GeneralModelChangeEventType">the general model change event</link> is present, then it should identify every node that has changed since the preceding <link xlink:href="#BaseModelChangeEventType">model change event</link>.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                The <token>OPCUA</token> server should emit exactly one <link xlink:href="#BaseModelChangeEventType">model change event</link> for an update or series of updates. It should not issue multiple types of <link xlink:href="#BaseModelChangeEventType">model change event</link> for the same update.
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                Any client that responds to <link xlink:href="#BaseModelChangeEventType">model change events</link> should respond to any event of the <link xlink:href="#BaseModelChangeEventType">BaseModelChangeEventType</link> including its subtypes like the <link xlink:href="#GeneralModelChangeEventType">GeneralModelChangeEventType</link>.
+              </para>
+              </listItem>
+            </list>
+            <para>
+            If a client is not capable of interpreting additional information of the subtypes of the <link xlink:href="#BaseModelChangeEventType">BaseModelChangeEventType</link>, it should treat events of these types the same way as events of the <link xlink:href="#BaseModelChangeEventType">BaseModelChangeEventType</link>.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="SemanticChangeEventType">
+      <!--<link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098#SemanticChangeEventType" />-->
+      <title>SemanticChangeEventType</title>
+      <content>
+        <para>
+        Semantic change events are generated to indicate a change of the <token>AS</token> semantics. The change consists of a change to the <computerOutputInline>Value attribute</computerOutputInline> of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link></para>
+        <para>
+        The semantic change event contains information about the node owning the property that was changed. If this is a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />, the type definition node is also present.
+      </para>
+        <para>
+        The SemanticChange bit of the <computerOutputInline>AccessLevel attribute</computerOutputInline> of a property indicates whether changes of the value are considered for semantic change events (see <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> ).
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>ViewVersion and NodeVersion Properties</title>
+          <content>
+            <para>
+            The ViewVersion and NodeVersion properties do not change due to the publication of a semantic change event.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Views</title>
+          <content>
+            <para>
+            Semantic change events are handled in the context of a view the same way as <link xlink:href="#Views">model change events (see Views)</link>.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>Event Compression</title>
+          <content>
+            <para>
+            Semantic change events can be compressed the same way as <link xlink:href="#EventCompression">model change events (see EventCompression)</link>.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />
+      <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

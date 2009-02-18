@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UAModelDesignerSolution xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ADI Solution</Name>
+  <Projects>
+    <UAModelDesignerProject>
+      <Name>ADI model</Name>
+      <FileName>ADIMOdel.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject>
+      <Name>Boiler Example</Name>
+      <FileName>BoilerExample.xml</FileName>
+    </UAModelDesignerProject>
+    <UAModelDesignerProject>
+      <Name>CommServerModel</Name>
+      <FileName>CommServerModel.xml</FileName>
+    </UAModelDesignerProject>
+  </Projects>
+</UAModelDesignerSolution>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ef0092b5-9f31-4e8d-9901-270be06e6577" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This section contains information about the <token>OPCUA</token> Services. The Services described are the collection of abstract Remote Procedure Calls (RPC) that are implemented by <token>OPCUA</token> Servers and called by <token>OPCUA</token> Clients. All interactions between <token>OPCUA</token> Clients and Servers occur via these Services. The defined Services are considered abstract because no particular RPC mechanism for implementation is defined in this section. Section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> describes one or more concrete mappings supported for implementation. For example, one mapping in section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> is to XML Web Services. In that case the Services described in this Part appear as the Web service methods in the WSDL contract.
+    </para>
+      <para>
+      Not all <token>OPCUA</token> Servers will need to implement all of the defined Services. Section <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" /> describes the Profiles that dictate which Services need to be implemented in order be to compliant with a particular Profile.
+    </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>
+            Part 4: OPC UA Specification
+          </linkText>
+            <linkAlternateText>
+            Part 4 – Services, Version 1.0 or later
+          </linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part4/</linkUri>
+          </externalLink> - Services: specifies the Services provided by <token>OPCUA</token> Servers.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

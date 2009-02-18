@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="0a157891-6492-4b05-a5d9-65c3084ec7f0" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+      Because peer to peer architecture leads to communication chaos and functions centralization in a super-system means authoritarian subordinate we need a new approach.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      This approach – called <token>PO</token> - to overcoming communication chaos and drawbacks of the centralized architecture is based on the:
+    </para>
+      <list class="ordered">
+        <listItem>
+          <para>Novel architecture</para>
+        </listItem>
+        <listItem>
+          <para>Smart process data transfer algorithms</para>
+        </listItem>
+      </list>
+    </introduction>
+    <section>
+      <title>Novel architecture</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+      <autoOutline /> -->
+        <para>
+        The first idea is an innovative approach to the systems integration problem, where instead of establishing links (ad-hoc associations between systems which lead to the communication chaos) or applying an universal supersystem, we use a so called  <token>PO</token> –  a standardized, homogenous real-time model of the process layer. It allows to share data from plant floor devices by the process control and management systems, using international standards of data exchange.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Novel architecture: Process Observer</caption>
+          <image placement="center" xlink:href="59ccea84-f8ab-438e-ad55-37b9f75395dd" />
+        </mediaLink>
+        <para>The process observer is a kind of the virtual layer, which is a “big picture” of the underlying process layer composed of unit data randomly accessible by means of a unified and standardized interface. Additionally, basing on current manufacturing data, the picture may be enriched by adding modeled data, non-available directly. Thereby, the structure of the links becomes systematic and, on the another hand, the existing functionality of the upper layers are preserved. Now, they can gather the process data in an unified, standardized way.</para>
+        <alert>
+          <para>
+          The key to successful implementation of the <token>PO</token> archetype is to provide upper layer systems a standardized, homogenous real-time model of the process layer. The <token>OPCUA</token> seems to be the only candidate to withstand these requirements.
+        </para>
+        </alert>
+      </content>
+    </section>
+    <section>
+      <title>Smart data transfer</title>
+      <content>
+        <para>
+        To use the <token>PO</token> concept, appropriate communication technologies supporting the process data acquisition are necessary. Those technologies are a set of algorithms and functions which provide a smart process data transfer. The idea of the smart data transfer is based on the following rule:
+      </para>
+        <alert>
+          <para>Transfer only once and only the most important data at any instant.</para>
+        </alert>
+        <para>This functionality is of vital importance to communication in systems with numbers of remote terminal units spread over a large geographical area, e.g. heat counters, energy consumption counters. In other words, wherever the application of dedicated to communication infrastructure is impossible or impractical and communication services offered by local providers must be employed. Innovative optimization algorithms of communication resources utilization are based on minimizing the process data transfer bandwidth as a function of the current state of the production process. They allow to:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Adapt the data sampling period according to the process current needs.</para>
+          </listItem>
+          <listItem>
+            <para>Reduce requirements concerning the channel bandwidth significantly.</para>
+          </listItem>
+          <listItem>
+            <para>Eliminate the need to transfer the same data many times by selectively activating only one communication path with remote terminal units.</para>
+          </listItem>
+          <listItem>
+            <para>Take advantage of redundancy and continuous availability control of all communication paths.</para>
+          </listItem>
+        </list>
+        <alert>
+          <para>
+          A communication server fully implementing the PO archetype is
+          <externalLink><linkText>CommServer</linkText><linkAlternateText>CommServer homepage - industrial software for communication server</linkAlternateText><linkUri>http://www.commsvr.com/Products/CommServer.aspx</linkUri></externalLink>.
+          Using the CommServer as the <token>PO</token> to integrate applications in an enterprise enables to make the communication links structure systematic and randomly access process data in an unified and standard manner by upper layer systems. Thereby, once read, data is available for all components (systems). It greatly improves the efficiency of the data acquisition and simplifies the data transfer in any enterprise.
+        </para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+      <externalLink>
+        <linkText>New idea of integration.</linkText>
+        <linkAlternateText>Introduction to complex system architecture and data flow requirements in enterprises.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Architecture/Integration.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Novel architecture of the IT and automation systems integration.</linkText>
+        <linkAlternateText>
+        The page describes novel architecture dedicated to integrating complex distributed process control with process management systems.
+      </linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Architecture/Integration/Solution.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Process and business layers robust integration - Publication [R080101]
+      </linkText>
+        <linkAlternateText>The article addresses system integration methodologies and a new Process Observer concept, which is like a bridge connection between the plant-floor, process and business management levels. It discusses at length the main features of robust data exchange in an enterprise, i.e. three-level redundancy, multi-communication capabilities and optimization methods.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Publications/RobustIntegration.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Real-Time Communication for Large Scale Distributed Control Systems - Publications [KN20070502]
+      </linkText>
+        <linkAlternateText>An article and presentation on Real-Time Communication for Large Scale Distributed Control Systems presenting novel architecture and a case study proving that it could be a collaboration platform for several power plants.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Publications/KN20070502MPostolManuscript.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServer</linkText>
+        <linkAlternateText>CommServer homepage - industrial software for communication server</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/CommServer.aspx</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

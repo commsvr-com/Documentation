@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f268d513-5215-4ded-bd94-ddaadf24d789" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This section describes the information model associated with Data Access (DA). It particularly includes additional VariableTypes and complemental descriptions of the NodeClasses and Attributes needed for Data Access, additional Properties and other information and behaviour.
+    </para>
+      <para>
+      The complete address space model, including all NodeClasses and Attributes, is described in section "<link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. The services to detect and access data are described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+    </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 8: OPC UA Specification</linkText>
+            <linkAlternateText>Part 8 – Data Access, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part8/</linkUri>
+          </externalLink> - Data Access: specifies the use of OPC UA for data access.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

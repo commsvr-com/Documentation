@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="79df831d-e896-4b88-abad-88319f42a626" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This Service Set defines Services used to open a communication channel that ensures the confidentiality and integrity of all Messages exchanged with the Server. The base concepts for UA security are defined in section <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" />.
+    </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>SecureChannel Services</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+      <autoOutline /> -->
+        <para>
+        The SecureChannel Services are unlike other Services because they are typically not implemented by the UA application directly. Instead, they are provided by the communication stack that the UA application is built on. For example, a UA Server may be built on a SOAP stack that allows applications to establish a SecureChannel using the WS SecureConversation specification. In these cases, the UA application simply needs to verify that a WS SecureConversation is active whenever it receives a Message.
+        section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />
+        describes how the SecureChannel Services are implemented with different types of communication stacks.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <content>
+            <para>
+            A SecureChannel is a long-running logical connection between a single Client and a single Server. This channel maintains a set of keys that are known only to the Client and Server and that are used to authenticate and encrypt Messages sent across the network. The SecureChannel Services allow the Client and Server to securely negotiate the keys to use.
+          </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>
+            The exact algorithms used to authenticate and encrypt Messages are described in the security policies for a Server. These policies are exposed via the Discovery Service Set. A Client selects the appropriate endpoint that supports the desired security policy by the Server when it creates a SecureChannel.
+          </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>
+            When a Client and Server are communicating via a SecureChannel they verify that all incoming Messages have been signed and/or encrypted according to the security policy. A UA application is expected to ignore any Message that does not conform to the security policy for the channel.
+          </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>
+            A SecureChannel is separate from the UA Application Session; however, a single UA Application Session may only be accessed via a single SecureChannel. This implies that the UA application is able to determine what SecureChannel is associated with each Message. A communication stack that provides a SecureChannel mechanism but that does not allow the application to know what SecureChannel was used for a given Message cannot be used to implement the SecureChannel Service Set.
+          </para>
+          </content>
+        </section>
+        <section>
+          <content>
+            <para>
+            The relationship between the UA Application Session and the SecureChannel is illustrated in Figure 1. The UA applications use the communication stack to exchange Messages. First, the SecureChannel Services are used to establish a SecureChannel between the two communication stacks, allowing them to exchange Messages in a secure way. Second, the UA applications use the Session Service Set to establish a UA application Session.
+          </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">SecureChannel and Session Services</caption>
+              <image placement="center" xlink:href="d1ef2995-498a-4ea8-933e-67932058875d" />
+            </mediaLink>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <relatedTopics>
+      <link xlink:href="41ef495e-5447-4a9e-b46f-d1f9003f4368">Discovery Service Set</link>
+      <link xlink:href="0e0c01d9-9a33-4efd-8223-c8d4c7b2b0d0">Session Service Set</link>
+      <link xlink:href="defef2ce-1182-4332-a62e-773a9821a417">NodeManagement Service Set</link>
+      <link xlink:href="47230bdf-474d-409e-8912-3468cc98d385">View Service Set</link>
+      <link xlink:href="742e60d9-c5d8-45a3-8193-0ebc14633e07">Query Service Set</link>
+      <link xlink:href="8944d7a9-baff-4e2e-893e-c66396f6fef0">Method Service Set</link>
+      <link xlink:href="e0bdb98b-ab27-4798-8072-c23d26c08f06">MonitoredItem Service Set</link>
+      <link xlink:href="267df39c-3334-4e5a-baa7-c900feedd905">Subscription Service Set</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="3774554f-8d12-4d9a-8532-85d704388d9d" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
+    <!--<link xlink:href="3774554f-8d12-4d9a-8532-85d704388d9d" />-->
+    <summary>
+      <para>
+        <token>OPCUA</token> is a set of specifications applicable to manufacturing software in application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems. These systems are intended to exchange information and to use command and control for industrial processes. <token>OPCUA</token> defines a common infrastructure model to facilitate this information exchange.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+        <token>OPCUA</token> specifies the following:</para>
+      <list class="bullet">
+        <listItem>
+          <para>The information model to represent structure, behavior, semantics, and infrastructure of the underlying real-time system.</para>
+        </listItem>
+        <listItem>
+          <para>The message model to interact between applications.</para>
+        </listItem>
+        <listItem>
+          <para>The communication models to transfer data between end-points.</para>
+        </listItem>
+        <listItem>
+          <para>The conformance model to guarantee interoperability between systems.</para>
+        </listItem>
+        <listItem>
+          <para>The security model to guarantee cyber security addressing client/server authorization, data consistency, encryption.</para>
+        </listItem>
+      </list>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link NS2:href="d458d900-f4e3-472f-b729-7c759f1c8aa4" xmlns:NS2="http://www.w3.org/1999/xlink">
+          </link>
+        </para>
+        <para>Presents design goals and main components of the standard.</para>
+      </content>
+    </inThisSection>
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 1: OPC UA Specification</linkText>
+            <linkAlternateText>Part 1 – Concepts, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part1/</linkUri>
+          </externalLink> - Concepts: presents an overview on the OPC Unified Architecture concepts.
+      </para>
+      </content>
+    </section>
+    <relatedSections>
+      <content>
+        <para>
+        </para>
+        <para>
+        </para>
+      </content>
+    </relatedSections>
+  </developerOrientationDocument>
+</topic>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<topic id="6c7e7e44-c957-4d09-b722-33c34539e875" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      The <token>OPCUA</token> systems architecture models <token>OPCUA</token> clients and servers as interacting partners. Each system may contain multiple clients and servers. Each client may interact concurrently with one or more servers, and each server may interact concurrently with one or more clients. An application may combine server and client components to allow interaction with other servers and clients.
+    </para>
+      <para>
+        <token>OPCUA</token> Clients and servers are described in the sections that follow. Figure 1 illustrates the architecture that includes a combined server and client
+    </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">OPC UA System Architecture</caption>
+        <image placement="center" xlink:href="0ab2ca2d-7cca-4e8f-98f5-643964c5411d" />
+      </mediaLink>
+      <para>OPC implements a typical client – server architecture, where the client is responsible for management of relations with the server. It means that it is responsible, in turn, for:</para>
+      <list class="ordered">
+        <listItem>
+          <para>Server discovery and localization.</para>
+        </listItem>
+        <listItem>
+          <para>Establishing the connection.</para>
+        </listItem>
+        <listItem>
+          <para>Generation of requests for selected data and provision of services to the server.</para>
+        </listItem>
+        <listItem>
+          <para>Disconnection.</para>
+        </listItem>
+      </list>
+      <para>
+      To establish connection with the selected server, the client must know how to address it, namely the client must know two important details:
+    </para>
+      <list class="bullet">
+        <listItem>
+          <para>The network address of the workstation (usually IP address) hosting the server.</para>
+        </listItem>
+        <listItem>
+          <para>A unique identifier of the server on the host.</para>
+        </listItem>
+      </list>
+      <para>
+      We need both to localize and indentify the server. In a very simple case information for both items can be entered manually in the client configuration and then no additional discovery mechanism to establish connection is necessary. Thanks to DNS (Domain Name System) it is not necessary to use a numerical form of the network address (IP address) and we can use alpha-numeric addresses that are easier to be handled. Additionally, the very operating system permits to get a list of computers connected to the local network segment.
+    </para>
+      <para>
+      There is no such a support for identification of a particular <token>OPCUA</token> server on the selected host. Therefore, a specification of <link xlink:href="6331c6ab-b475-491a-8738-43edae0ed6bc">Local Discovery Server</link> dedicated component was worked out under the OPC project with the task of supplying necessary information concerning locally installed servers including a list of servers supporting the selected <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f">profile.</link></para>
+      <para>
+      Using both browsing mechanisms during configuration the client is able to provide the user with the list of servers meeting the selected criteria.
+    </para>
+      <para>
+      Client can get support also from <link xlink:href="6331c6ab-b475-491a-8738-43edae0ed6bc">Global Discovery Servers</link>. This kind of serves provides information about servers that are available on a network. To connect clients use well-known addresses.
+    </para>
+    </introduction>
+    <relatedSections>
+      <content>
+        <para>
+          <link xlink:href="6331c6ab-b475-491a-8738-43edae0ed6bc" />
+        </para>
+        <para>This section describes how <token>OPCUA</token> clients and servers interact with discovery servers when used in different scenarios.</para>
+      </content>
+    </relatedSections>
+    <relatedTopics>
+      <link xlink:href="b8135029-bd1b-412a-a9fb-610b3c31ac09" />
+      <link xlink:href="b33c670d-5124-4207-8a5b-89eec97c23b5" />
+      <link xlink:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" />
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="546f49d5-8153-434c-9e74-d7835d7862bc" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc" />
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      The following subclauses define data types. Their representation in the <token>AS</token> and the data type hierarchy is described in section <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" />. Additional data types may by specified.
+    </para>
+    </introduction>
+    <section address="NodeId">
+      <title>NodeId</title>
+      <content>
+        <para>
+        This built-in DataType is composed of three elements that identify a node within a server.
+      </para>
+        <table>
+          <title>NodeId structure definition</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Field</para>
+              </entry>
+              <entry>
+                <para>Type</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>namespaceIndex</para>
+            </entry>
+            <entry>
+              <para>UInt16</para>
+            </entry>
+            <entry>
+              <para>The index for a namespace URI.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>identifierType</para>
+            </entry>
+            <entry>
+              <para>
+                <link xlink:href="#IdType">IdType</link>
+              </para>
+            </entry>
+            <entry>
+              <para>The format and data type of the identifier.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>identifier</para>
+            </entry>
+            <entry>
+              <para>*</para>
+            </entry>
+            <entry>
+              <para>The identifier for a node in the <token>AS</token> of an <token>OPCUA</token> server.</para>
+            </entry>
+          </row>
+        </table>
+        <para>
+        See section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> for a description of the encoding of the identifier into <token>OPCUA</token> messages.
+      </para>
+      </content>
+      <sections>
+        <section>
+          <title>namespaceIndex</title>
+          <content>
+            <para>
+            The namespace is a URI that identifies the naming authority responsible for assigning the identifier element of the NodeId. Naming authorities include the local server, the underlying system, standards bodies and consortia. It is expected that most nodes will use the URI of the server or of the underlying system.
+          </para>
+            <para>
+            Using a namespace URI allows multiple <token>OPCUA</token> servers attached to the same underlying system to use the same identifier to identify the same object. This enables clients that connect to those servers to recognise objects that they have in common.
+          </para>
+            <para>
+            Namespace URIs, like server names, are identified by numeric values in <token>OPCUA</token> services to permit more efficient transfer and processing (e.g. table lookups). The numeric values used to identify namespaces correspond to the index into the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link>. The <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link> is a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> that is part of the Server object in the <token>AS</token> (see section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> for its definition).
+          </para>
+            <para>
+            The URI for the <token>OPCUA</token> namespace is: “http://opcfoundation.org/UA/”
+          </para>
+            <para>
+            Its corresponding index in the namespace table is 0.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>identifierType</title>
+          <content>
+            <para>
+            The identifierType field of the <link xlink:href="#IdType">IdType</link> type identifies the type of a NodeId value, its format and its scope.
+          </para>
+            <para>
+            Normally the scope of NodeId values is the server in which they are defined. For certain types of NodeId values, they can uniquely identify a node within a system, or across systems (e.g. GUIDs). System-wide and globally-unique identifiers allow clients to track nodes, such as work orders, as they move between <token>OPCUA</token> servers as they progress through the system.
+          </para>
+            <para>
+            Opaque identifiers are identifiers that are free-format byte strings that might or might not be human interpretable.
+          </para>
+          </content>
+        </section>
+        <section>
+          <title>identifier</title>
+          <content>
+            <para>
+            The identifier value element is used within the context of the first two elements to identify the node. Its data type and format is defined by the <computerOutputInline>identifierType</computerOutputInline> field.
+          </para>
+            <para>
+              <computerOutputInline>Identifier</computerOutputInline> values of <link xlink:href="#IdType">IdType</link> STRING_1 are restricted to 4096 characters. <computerOutputInline>Identifier</computerOutputInline> values of <link xlink:href="#IdType">IdType</link> OPAQUE_3 are restricted to 4096 bytes.
+          </para>
+            <para>
+            A Null NodeId has special meaning. For example, many services described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> define special behaviour if a Null NodeId is passed as a parameter. Each <link xlink:href="#IdType">IdType</link> has a set of identifier values that represent a Null NodeId.
+          </para>
+            <para>
+            A Null NodeId always has a NamespaceIndex equal to 0.
+          </para>
+            <para>
+            A node in the <token>AS</token> shall not have a Null as its <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee">NodeId attribute</link>.
+          </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="QualifiedName">
+      <title>QualifiedName</title>
+      <content>
+        <para>
+        This built-in DataType contains a qualified name. It is, for example, used as <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>.
+      </para>
+        <alert>
+          <para>
+          The name part of the QualifiedName is restricted to 512 characters.
+        </para>
+        </alert>
+        <table>
+          <title>QualifiedName	structure filds:</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Name</para>
+              </entry>
+              <entry>
+                <para>Type</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>NamespaceIndex</para>
+            </entry>
+            <entry>
+              <para>UInt16</para>
+            </entry>
+            <entry>
+              <para>
+              Index that identifies the namespace that defines the name. This index is the index of that namespace in the local server’s  <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link>. The client may read the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType">NamespaceArray variable</link> to access the string value of the namespace.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>name</para>
+            </entry>
+            <entry>
+              <para>String</para>
+            </entry>
+            <entry>
+              <para>The unqualified name.</para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="LocaleId">
+      <title>LocaleId</title>
+      <content>
+        <para>
+        This simple DataType is specified as a string that is composed of a language component and a country/region component as specified by
+        <externalLink><linkText>RFC 3066</linkText><linkAlternateText>Tags for the Identification of Languages</linkAlternateText><linkUri>http://www.ietf.org/rfc/rfc3066.txt</linkUri></externalLink>. The <codeInline><![CDATA[<country/region> ]]></codeInline>component is always preceded by a hyphen. The format of the LocaleId string is shown below:
+      </para>
+        <code language="scr"><![CDATA[ <language>
+          [-<country/region>], where
+          <language>
+            is the two letter ISO 639 code for a language,
+            <country/region> is the two letter ISO 3166 code for the country/region.]]></code>
+        <para>
+        The rules for constructing LocaleId values defined by RFC 3066 are restricted as follows:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+            The <token>OPCUA</token> specification permits only zero or one <codeInline><![CDATA[<country/region>]]></codeInline> component to follow the <codeInline><![CDATA[<language>]]></codeInline> component,
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            The <token>OPCUA</token> specification also permits the <computerOutputInline>-CHS</computerOutputInline> and <computerOutputInline>-CHT</computerOutputInline> three-letter <codeInline><![CDATA[<country/region>]]></codeInline> codes for <computerOutputInline>Simplified</computerOutputInline> and <computerOutputInline>Traditional</computerOutputInline> Chinese locales.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            The <token>OPCUA</token> specification also allows the use of other <codeInline><![CDATA[<country/region>]]></codeInline> codes as deemed necessary by the client or the server.
+          </para>
+          </listItem>
+        </list>
+        <para>
+        Clients and servers always provide LocaleId values that explicitly identify the language and the country/region.
+      </para>
+        <para>
+        An empty or NULL string indicates that the LocaleId vlaue is unknown.
+      </para>
+      </content>
+    </section>
+    <section address="LocalizedText">
+      <title>LocalizedText</title>
+      <content>
+        <para>
+        This built-in DataType defines a structure containing a string in a locale-specific translation specified in the identifier for the locale. Its elements are defined in the following table:
+      </para>
+        <table>
+          <title>LocalizedText structure definition</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Field</para>
+              </entry>
+              <entry>
+                <para>Type</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>text</para>
+            </entry>
+            <entry>
+              <para>String</para>
+            </entry>
+            <entry>
+              <para>The localized text.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>locale</para>
+            </entry>
+            <entry>
+              <para>
+                <link xlink:href="#LocaleId">LocaleId</link>
+              </para>
+            </entry>
+            <entry>
+              <para>The identifier for the locale (e.g. “en-US”).</para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="Argument">
+      <title>Argument</title>
+      <content>
+        <para>
+        This structured DataType defines a method input or output argument specification. It is for example used in the input and output argument properties for methods.
+      </para>
+        <table>
+          <title>Argument structure definition</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Name</para>
+              </entry>
+              <entry>
+                <para>Type</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>name</para>
+            </entry>
+            <entry>
+              <para>String</para>
+            </entry>
+            <entry>
+              <para>The name of the argument</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>dataType</para>
+            </entry>
+            <entry>
+              <para>NodeId</para>
+            </entry>
+            <entry>
+              <para>The NodeId of the DataType of this argument</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>valueRank</para>
+            </entry>
+            <entry>
+              <para>Int32</para>
+            </entry>
+            <entry>
+              <para>Indicates whether the DataType is an array and how many dimensions the array has. It may have the following values:</para>
+              <list class="bullet">
+                <listItem>
+                  <para>n&gt;1: the DataType is an array with the specified number of dimensions.</para>
+                </listItem>
+                <listItem>
+                  <para>OneDimension (1): The DataType is an array with one dimension.</para>
+                </listItem>
+                <listItem>
+                  <para>OneOrMoreDimensions (0): The DataType is an array with one or more dimensions.</para>
+                </listItem>
+                <listItem>
+                  <para>Scalar (-1): The DataType is not an array.</para>
+                </listItem>
+                <listItem>
+                  <para>Any (-2): The DataType can be a scalar or an array with any number of dimensions.</para>
+                </listItem>
+                <listItem>
+                  <para>ScalarOrOneDimension (-3): The DataType can be a scalar or a one dimensional array.</para>
+                </listItem>
+              </list>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>arrayDimensions</para>
+            </entry>
+            <entry>
+              <para>UInt32[]</para>
+            </entry>
+            <entry>
+              <para>
+              Specifies the length of each dimension for an array dataType. It is intended to describe the capability of the DataType, not the current size. The number of elements shall be equal to the value of the valueRank. Must be null if valueRank &lt;= 0.
+            </para>
+              <para>
+              A value of 0 for an individual dimension indicates that the dimension has a variable length.
+            </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>description</para>
+            </entry>
+            <entry>
+              <para>LocalizedText</para>
+            </entry>
+            <entry>
+              <para>A localised description of the argument</para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="BaseDataType">
+      <title>BaseDataType</title>
+      <content>
+        <para>
+        This abstract DataType defines a value that can have any valid DataType.
+      </para>
+        <para>
+        It defines a special value NULL indicating that a value is not present.
+      </para>
+      </content>
+    </section>
+    <section address="Boolean">
+      <!--<link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#Boolean" >Boolean</link>-->
+      <title>Boolean</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is either TRUE or FALSE.
+      </para>
+      </content>
+    </section>
+    <section address="Byte">
+      <title>Byte</title>
+      <content>
+        <para>
+        This built-in DataType defines a value in the range of 0 to 255.
+      </para>
+      </content>
+    </section>
+    <section address="ByteString">
+      <title>ByteString</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is a sequence of <link xlink:href="#Byte">Byte</link>  values.
+      </para>
+      </content>
+    </section>
+    <section address="DateTime">
+      <title>DateTime</title>
+      <content>
+        <para>
+        This built-in DataType defines a Gregorian calendar date.
+      </para>
+      </content>
+    </section>
+    <section address="Double">
+      <title>Double</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that adheres to the <link xlink:href="#ref">IEEE 754</link> double precision data type definition.
+      </para>
+      </content>
+    </section>
+    <section address="Duration">
+      <title>Duration</title>
+      <content>
+        <para>
+        This simple DataType is a Double that defines an interval of time in milliseconds (fractions can be used to define sub-millisecond values). Negative values are generally invalid but may have special meanings where the Duration is used.
+      </para>
+      </content>
+    </section>
+    <section address="Enumeration">
+      <title>Enumeration</title>
+      <content>
+        <para>
+        This abstract DataType is the base for all enumeration types like <link xlink:href="#NodeClass">NodeClass</link>. All types inheriting from this type have a special handling for the encoding as defined in <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />. All enumeration types have to inherit from this DataType.
+      </para>
+      </content>
+    </section>
+    <section address="Float">
+      <title>Float</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that adheres to the <link xlink:href="#ref">IEEE 754</link> single precision data type definition.
+      </para>
+      </content>
+    </section>
+    <section address="SByte">
+      <title>SByte</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is a signed integer between -128 and 127 inclusive.
+      </para>
+      </content>
+    </section>
+    <section address="IdType">
+      <title>IdType</title>
+      <content>
+        <para>
+        This DataType is an enumeration that identifies the IdType of a <link xlink:href="#NodeId.">NodeId</link>.
+      </para>
+        <table>
+          <title>IdType values</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Value type</para>
+              </entry>
+              <entry>
+                <para>Value</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>NUMERIC_0</para>
+            </entry>
+            <entry>
+              <para>Numeric value</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>STRING_1</para>
+            </entry>
+            <entry>
+              <para>String value</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>GUID_2</para>
+            </entry>
+            <entry>
+              <para>Globally Unique Identifier</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>OPAQUE_3</para>
+            </entry>
+            <entry>
+              <para>Namespace specific format</para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="Image">
+      <title>Image</title>
+      <content>
+        <para>
+        This abstract DataType defines a <link xlink:href="#ByteString">ByteString</link> representing an image.
+      </para>
+      </content>
+    </section>
+    <section address="ImageBMP">
+      <title>ImageBMP</title>
+      <content>
+        <para>
+        This simple DataType defines a <link xlink:href="#ByteString">ByteString</link> representing an image in BMP format.
+      </para>
+      </content>
+    </section>
+    <section address="ImageGIF">
+      <title>ImageGIF</title>
+      <content>
+        <para>
+        This simple DataType defines a <link xlink:href="#ByteString">ByteString</link> representing an image in GIF format.
+      </para>
+      </content>
+    </section>
+    <section address="ImageJPG">
+      <title>ImageJPG</title>
+      <content>
+        <para>
+        This simple DataType defines a <link xlink:href="#ByteString">ByteString</link> representing an image in JPG format. JPG is defined in ISO/IEC IS 10918-1.
+      </para>
+      </content>
+    </section>
+    <section address="ImagePNG">
+      <title>ImagePNG</title>
+      <content>
+        <para>
+        This simple DataType defines a <link xlink:href="#ByteString">ByteString</link> representing an image in PNG format. PNG is defined in ISO/IEC 15948:2003.
+      </para>
+      </content>
+    </section>
+    <section address="Integer">
+      <title>Integer</title>
+      <content>
+        <para>
+        This abstract DataType defines an integer which length is defined by its subtypes.
+      </para>
+      </content>
+    </section>
+    <section address="Int16">
+      <title>Int16</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is a signed integer between  32,768 and 32,767 inclusive.
+      </para>
+      </content>
+    </section>
+    <section address="Int32">
+      <title>Int32</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is a signed integer between  2,147,483,648 and 2,147,483,647 inclusive.
+      </para>
+      </content>
+    </section>
+    <section address="Int64">
+      <title>Int64</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is a signed integer between  9,223,372,036,854,775,808 and 9,223,372,036,854,775,807 inclusive.
+      </para>
+      </content>
+    </section>
+    <section address="NamingRuleType">
+      <title>NamingRuleType</title>
+      <content>
+        <para>
+        This DataType is an enumeration that identifies the naming rule.
+      </para>
+        <table>
+          <title>NamingRuleType values</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Name</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>MANDATORY_1</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>OPTIONAL_2</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>CONSTRAINT_3</para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="NodeClass">
+      <title>NodeClass</title>
+      <content>
+        <para>
+        This DataType is an enumeration that identifies a <token>NodeClass</token>. Its values are defined in the following table.
+      </para>
+        <table>
+          <title>NodeClass values</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Name</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>OBJECT_1</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>VARIABLE_2</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>METHOD_4</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>OBJECT_TYPE_8</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>VARIABLE_TYPE_16</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>REFERENCE_TYPE_32</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>DATA_TYPE_64</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>VIEW_128</para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="Number">
+      <title>Number</title>
+      <content>
+        <para>
+        This abstract DataType defines a number. Details are defined by its subtypes.
+      </para>
+      </content>
+    </section>
+    <section address="String">
+      <!--<link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#String" >String</link>-->
+      <title>String</title>
+      <content>
+        <para>
+        This built-in DataType defines a Unicode character string that should exclude control characters that are not whitespaces <codeInline>(0x00 - 0x08, 0x0E-0x1F or 0x7F)</codeInline>.
+      </para>
+      </content>
+    </section>
+    <section address="Structure">
+      <title>Structure</title>
+      <content>
+        <para>
+        This abstract DataType is the base all structured types like <link xlink:href="#Argument.">Argument</link>. All types inheriting from this DataType have a special handling for the encoding as described in section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />. All structured types have to inherit from this DataType if they are not defined as primitives in this section (like <link xlink:href="#NodeId">NodeId</link>, a <link xlink:href="#NodeId">NodeId</link> is structured but treated in a special way as described in section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />).
+      </para>
+      </content>
+    </section>
+    <section address="UInteger">
+      <title>UInteger</title>
+      <content>
+        <para>
+        This abstract DataType defines an unsigned integer which length is defined by its subtypes.
+      </para>
+      </content>
+    </section>
+    <section address="UInt16">
+      <title>UInt16</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is an unsigned integer between 0 and 65,535 inclusive
+      </para>
+      </content>
+    </section>
+    <section address="UInt32">
+      <title>UInt32</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is an unsigned integer between 0 and 4,294,967,295 inclusive.
+      </para>
+      </content>
+    </section>
+    <section address="UInt64">
+      <title>UInt64</title>
+      <content>
+        <para>
+        This built-in DataType defines a value that is an unsigned integer between 0 and 18,446,744,073,709,551,615 inclusive.
+      </para>
+      </content>
+    </section>
+    <section address="UtcTime">
+      <title>UtcTime</title>
+      <content>
+        <para>
+        This simple DataType is a type used to define Coordinated Universal Time (UTC) values. All time values conveyed between <token>OPCUA</token> servers and clients are UTC values. Clients shall provide any conversions between UTC and local time. section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> describes details about this DataType.
+      </para>
+      </content>
+    </section>
+    <section address="XmlElement">
+      <title>XmlElement</title>
+      <content>
+        <para>
+        This built-in DataType is used to define XML elements. section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> describes details about this DataType.
+      </para>
+        <para>
+        XML data can always be modelled as a subtype of the <link xlink:href="#Structure">Structure</link> with a single <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">data type encoding</link> that represents the XML complexType that defines the XML element (it is not necessary to have access to the XML Schema to define a <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">data type encoding</link>). For this reason a Server should never define variables that use the XmlElement DataType unless the server has no information about the XML elements that might be in the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /><computerOutputInline>Value</computerOutputInline> attribute.
+      </para>
+      </content>
+    </section>
+    <relatedTopics address="ref">
+      <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" />
+      <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />
+      <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
+      <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#NodeId">NodeId attribute</link>
+      <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>
+      <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray variable</link>
+      <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType - data type encoding</link>
+      <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />
+      <externalLink>
+        <linkText>IEEE 754-2008: Standard for Floating-Point Arithmetic</linkText>
+        <linkAlternateText>http://ieeexplore.ieee.org</linkAlternateText>
+        <linkUri>http://ieeexplore.ieee.org/servlet/opac?punumber=4610933</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>RFC 3066: Tags for the Identification of Languages</linkText>
+        <linkAlternateText>Tags for the Identification of Languages</linkAlternateText>
+        <linkUri>http://www.ietf.org/rfc/rfc3066.txt</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

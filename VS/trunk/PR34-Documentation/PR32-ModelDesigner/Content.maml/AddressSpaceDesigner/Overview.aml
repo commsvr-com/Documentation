@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>
+        <token>ASMD</token> is a user-friendly tool supporting all aspects of the model designing process.
+    </para>
+    </summary>
+    <introduction>
+      <para>
+      Using the <token>ASMD</token> has the following advantages: easy addition and deletion
+      of nodes from the model structure, definition of nodes relationship
+      and types, nodes filtering, helpful search and find utility, type declaration, etc.
+    </para>
+    </introduction>
+    <section>
+      <title>
+      UA Address Space Model Design tool
+    </title>
+      <content>
+        <para>
+          <token>OPCUA</token> (UA) is the next generation of OPC. One of the biggest improvements in <token>OPCUA</token> is a powerful
+        <token>AS</token> and <token>IM</token>. <token>OPCUA</token> allows for the presentation of a real-time process and underlying
+        infrastructure as a consistent information model built up with nodes. The process model is represented by
+        nodes, attributes and their mutual relationships. Therefore, this powerful concept allows us
+        to present in UA not only raw process data, but also complete information about the process state and process environment.
+        The flexibility of UA ensures that there is no existing or future system that is too complicated to be exposed via UA.
+        Of course, such flexibility leads to complications during configuration, that’s why <token>ASMD</token> has been born.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Address Space Concept</caption>
+          <image placement="center" xlink:href="71d79c66-35a6-4f09-ab24-dd19bb2a5afa" />
+        </mediaLink>
+        <para>
+        Publication of process real-time and meta data in the <token>OPCUA</token><token>AS</token> requires a prior model design.
+        <token>ASMD</token> is free software intended to help developers and engineers to design <token>OPCUA</token> models.
+        The whole configuration can be prepared using a user-friendly Windows-based GUI. All nodes are presented on
+        a tree and can be edited in the property window.
+      </para>
+        <para>
+          <token>ASMD</token> is a user-friendly tool supporting all aspects of the model designing process. Using the
+        <token>ASMD</token> has the following advantages:
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>Easy addition and deletion of nodes from the model structure</para>
+          </listItem>
+          <listItem>
+            <para>Definition of nodes relationship and types</para>
+          </listItem>
+          <listItem>
+            <para>Modes filtering</para>
+          </listItem>
+          <listItem>
+            <para>Helpful search and find utility</para>
+          </listItem>
+          <listItem>
+            <para>Type declaration</para>
+          </listItem>
+          <listItem>
+            <para>nad more...</para>
+          </listItem>
+        </list>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Main GUI</caption>
+          <image placement="center" xlink:href="f762cfc2-2255-40e1-a143-0f909ad26b62" />
+        </mediaLink>
+      </content>
+    </section>
+    <section>
+      <title>Tightly coupled intelligent book on Unified Architecture</title>
+      <content>
+        <para>
+          <token>ASMD</token> is not only an editor; it is also an intelligent book. It contains much useful information
+        about UA specifications, address space concept, information model and development of the <token>OPCUA</token> models.
+        What is more, a smart content positioning system of the help window can follow object selections in the GUI.
+      </para>
+        <para>
+        Thanks to the intelligent book idea, this tool is very useful not only for <token>OPCUA</token> professionals,
+        but also for the beginners who want to learn about the <token>OPCUA</token> address space concept.
+      </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">OPC Unified Architecture eBook</caption>
+          <image placement="center" xlink:href="df45d4b0-49d4-4635-92e1-e72d9dc198ed" />
+        </mediaLink>
+        <para>
+        The content of the book is available online so it can be continuously improved to follow the
+        specification development progress. The user's application takes the advantage of automatic update
+        functionality to follow the software development progress. Both those features guarantee that your
+        development environment is always up to date.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>OPC UA Software Development Kit.</title>
+      <content>
+        <para>
+          <token>OPCF</token> has already released the <token>SDK</token> that is a collection of libraries, applications
+        and source code that allow developers to build UA applications. Any developer who wants to create an
+        <token>OPCUA</token> server of his own has to accomplish many tasks, but one of the most important is preparing of a model.
+        This could be a hard task; <token>OPCF</token><token>SDK</token> does not include any tool, which helps
+        prepare such model. The model must be made from scratch by editing the xml file. Thanks to the <token>ASMD</token>,
+        fully compliant with this SDK, preparation of the xml file that defines the model is much easier.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Features</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+            Allows creating, displaying and editing <token>OPCUA</token> models that are compatible with the <token>OPCUA</token> address space
+            concept.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            Provides the comprehensive intelligent book, the content of which is available online so it is
+            continuously improved and always up to date.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            The content smart positioning system allows providing context sensitive help.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            No XML file editing is required.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            Created for developers and engineers, for professionals and beginners.
+          </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="20a0bcad-fc1d-4b10-9beb-1a910b3c37ec" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      In this topic we analyze if using one universal, “all in one” product dedicated to integrating manufacturing management.
+    </para>
+    </introduction>
+    <section>
+      <title>Centralization instead of integration</title>
+      <content>
+        <para>One option to overcome the communication chaos problem is to use an “all in one” product dedicated to integrating manufacturing management. Usually, it is provided as one complex, total system – let’s call it a suppersystem. Most of the MES (Manufacturing Execution System) vendors offer theirs products as a panacea for all problems of the chaotic system integration. In fact, they provide a centralized processing system using adapted off-the-shelf products instead of realizing integration functions and providing a solution that allows for flexible management of process data.</para>
+        <para>Of course, this strategy is beneficial to vendors but it could be very dangerous for the users.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Centralization instead of integration</caption>
+          <image placement="center" xlink:href="8d035d0b-699b-4255-bf40-09462b31d51b" />
+        </mediaLink>
+      </content>
+    </section>
+    <section>
+      <title>5 sins of centralization</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+      <autoOutline /> -->
+        <para>Implementation of a certain management platform is not a short term task. In view of many years of operation we have to face up to the following consequences of any supersystem application:</para>
+        <list class="ordered">
+          <listItem>
+            <para>High starting expenses –applying of a supersystem is not a cheap solution. Only software price may seem attractive but unavoidable engineering and implementing costs could be very high.</para>
+          </listItem>
+          <listItem>
+            <para>Loss of the previous investments– this approach usually requires that many of the existing systems are removed, which means wasting of investment founds.</para>
+          </listItem>
+          <listItem>
+            <para>Monopolization of the provider’s role – on the free market, customers have a privileged position, because generally they can select products and, as a consequence, vendors. But in the case of supersystems engagement it is a one way route - it is extremely difficult to abandon the selection. In other words, it means that customers lose their initial strong position and, thus, maintenance and development prices might be raised.</para>
+          </listItem>
+          <listItem>
+            <para>Does the supersystem really exist? – The supersystems offer very reach functionalities and meet almost everyone’s expectations. But the word “almost” in the previous sentence can make a real difference. Because it is practically impossible to provide a fully universal system, there is a risk that we should have to modify the problem so that it could be solved by the utilized system.</para>
+          </listItem>
+          <listItem>
+            <para>Withdrawal from the market - there is clear evidence that even reputable vendors cease to provide whole groups of products over night. As a consequence, they usually do not provide development and support services any more causing many troubles with keeping the system running.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <externalLink>
+        <linkText>New idea of integration.</linkText>
+        <linkAlternateText>Introduction to complex system architecture and data flow requirements in enterprises.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Architecture/Integration.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Centralization instead of integration</linkText>
+        <linkAlternateText>Why a supersystem is used instead of subsystems integration and what it means for a user.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Architecture/Integration/Centralization.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Process and business layers robust integration - Publication [R080101]
+      </linkText>
+        <linkAlternateText>The article addresses system integration methodologies and a new Process Observer concept, which is like a bridge connection between the plant-floor, process and business management levels. It discusses at length the main features of robust data exchange in an enterprise, i.e. three-level redundancy, multi-communication capabilities and optimization methods.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Publications/RobustIntegration.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>
+        Real-Time Communication for Large Scale Distributed Control Systems - Publications [KN20070502]
+      </linkText>
+        <linkAlternateText>An article and presentation on Real-Time Communication for Large Scale Distributed Control Systems presenting novel architecture and a case study proving that it could be a collaboration platform for several power plants.</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Publications/KN20070502MPostolManuscript.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServer</linkText>
+        <linkAlternateText>CommServer homepage - industrial software for communication server</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/CommServer.aspx</linkUri>
+      </externalLink>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="48e0fc4c-b072-4e4e-b4e9-b917fab44762" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This section describes the information model associated with Historical Access (HA). It particularly includes additional and complementary descriptions of the NodeClasses and Attributes needed for Historical Access, additional standard Properties, and other information and behaviour.
+    </para>
+      <para>
+      The complete <token>AS</token> model including all NodeClasses and Attributes is specified in section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. The predefined information model is described in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />. The services to detect and access historical data and events, and description of the ExtensibleParameter types are described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />.
+    </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 11: OPC UA Specification</linkText>
+            <linkAlternateText>Part 11 – Historical Access, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part11/</linkUri>
+          </externalLink> - Historical Access: specifies the use of <token>OPCUA</token> for historical access. This access includes both historical data and historical Events.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

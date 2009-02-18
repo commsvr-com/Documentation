@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d50337d9-0aab-4665-ab7f-be4eb7bc9559" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section>
+      <title>
+      InstanceDeclaration
+    </title>
+      <content>
+        <para>
+        An InstanceDeclaration is an Object, <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> or Method that references a ModellingRule with a HasModellingRule Reference and is the TargetNode of a hierarchical Reference from a TypeDefinitionNode or another InstanceDeclaration.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>
+      Instances without ModellingRules
+    </title>
+      <content>
+        <para>
+        If no ModellingRule exists then the Node is neither considered for instantiation of a type nor considered for subtyping.
+      </para>
+        <para>
+        If a Node referenced by a TypeDefinitionNode does not reference a ModellingRule it indicates that this Node only belongs to the TypeDefinitionNode and not to the instances. For example, an ObjectType Node may contain a Property that describes scenarios where the type could be used. This Property would not be considered when creating instances of the type. This is also true for subtyping, that is, subtypes of the type definition would not inherit the referenced Node.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>
+      InstanceDeclarationHierarchy
+    </title>
+      <content>
+        <para>
+        The InstanceDeclarationHierarchy of a TypeDefinitionNode contains the TypeDefinitionNode and all InstanceDeclarations that are directly or indirectly referenced from the TypeDefinitionNode using hierarchical References in forward direction.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>
+      Similar Node of InstanceDeclaration
+    </title>
+      <content>
+        <para>
+        A similar Node of an InstanceDeclaration is a Node that has the same BrowseName and NodeClass as the InstanceDeclaration and in cases of Variables and Objects the same TypeDefinitionNode or a subtype of it.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>
+      BrowsePath
+    </title>
+      <content>
+        <para>
+        All targets of forward hierarchical References from a TypeDefinitionNode shall have a BrowseName that is unique within the TypeDefinitionNode. The same restriction applies to the targets of hierarchical References in forward direction from any InstanceDeclaration. This means that any InstanceDeclaration within the InstanceDeclarationHierarchy can be uniquely identified by a sequence of BrowseNames. This sequence of BrowseNames is called a BrowsePath.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>
+      Attribute Handling of InstanceDeclarations
+    </title>
+      <content>
+        <para>
+        Some restrictions exist regarding the Attributes of InstanceDeclarations when the InstanceDeclaration is overridden or instantiated. The BrowseName and the NodeClass shall never change and always be the same as the original InstanceDeclaration.
+      </para>
+        <para>
+        In addition, the rules defined in 6.2.7 apply for InstanceDeclarations of the NodeClass <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>
+      Attribute Handling of Variable and VariableTypes
+    </title>
+      <content>
+        <para>
+        Some restrictions exist regarding the Attributes of a VariableType or a <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> used as an InstanceDeclaration with regard to the data type of the Value Attribute.
+      </para>
+        <para>
+        When a <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> used as InstanceDeclaration or a VariableType is overridden or instantiated the following rules apply:
+      </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+            The DataType Attribute can only be changed to a new DataType if the new DataType is a subtype of the DataType originally used.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+            The ValueRank Attribute may only be further restricted
+          </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                ‘Any’ may be set to any other value;
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                ‘ScalarOrOneDimension’ may be set to ‘Scalar’ or ‘OneDimension’;
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                ‘OneOrMoreDimensions’ may be set to a concrete number of dimensions (value &gt; 0)
+              </para>
+              </listItem>
+              <listItem>
+                <para>
+                All other values of this Attribute shall not be changed.
+              </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+            The ArrayDimensions Attribute may be added if it was not provided or modify the value of an entry in the array from 0 to a different value. All other values in the array shall remain the same.
+          </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

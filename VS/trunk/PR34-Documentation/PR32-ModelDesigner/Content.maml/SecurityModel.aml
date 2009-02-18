@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="bf124b83-10b9-4995-af26-178e5fc9a6e7" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+         titles.  Specify a numeric value as the inner text to limit it to
+         a specific number of sub-topics when creating the outline.  Specify
+         zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+      <para>
+      This section describes the <token>OPCUA</token> security model. It describes the security threats of the physical, hardware, and software environments in which <token>OPCUA</token> is expected to run. It describes how <token>OPCUA</token> relies upon other standards for security. It gives an overview of the security features that are described in other parts of this book. It references services, mappings, and profiles that are described in other parts of this book. 
+    </para>
+      <para>
+      This section <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" /> is directed to readers who will develop <token>OPCUA</token> client or server applications or implement the <token>OPCUA</token> services layer.
+    </para>
+    </introduction>
+    <section>
+      <title>Read more:</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>Part 2: OPC UA Specification</linkText>
+            <linkAlternateText>Part 2 – Security Model, Version 1.0 or later</linkAlternateText>
+            <linkUri>http://www.opcfoundation.org/UA/Part2/</linkUri>
+          </externalLink> - Security Model: describes the model for securing interactions between <token>OPCUA</token> Clients and Servers.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

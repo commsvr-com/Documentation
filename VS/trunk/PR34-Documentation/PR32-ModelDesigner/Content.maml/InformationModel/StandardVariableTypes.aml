@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d43f206c-8b58-4ded-b9c8-74eaac63cb36" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--<link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36" />-->
+    <!--
+  <summary>
+    <para>Optional summary abstract</para>
+  </summary>
+  -->
+    <introduction>
+      <para>
+      Typically, the components of a complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> are fixed and can be extended by subtyping. However, because each variable of a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> can be extended with additional components the <token>OPCUA</token> specification allows the extension of the standard VariableTypes defined in this document with additional components. This allows the expression of additional information in the type definition that would be contained in each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> anyway. However, it is not allowed to restrict the components of the standard VariableTypes defined in this part. An example of extending VariableTypes would be putting the standard Property NodeVersion, defined in  section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />, into the BaseDataVariableType, stating that each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> of the server will provide a NodeVersion.
+    </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+       If using <autoOutline /> tag, add an address attribute to identify
+       it so that it can be jumped to with a hyperlink. -->
+    <section address="BaseVariableType">
+      <title>BaseVariableType</title>
+      <content>
+        <para>
+        The BaseVariableType is the abstract base type for all other VariableTypes. However, only the PropertyType and the BaseDataVariableType directly inherit from this type.
+      </para>
+        <para>
+        There are no References, except for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> References, specified for this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+      </para>
+      </content>
+    </section>
+    <section address="PropertyType">
+      <!--<link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#PropertyType" >PropertyType</link>-->
+      <title>PropertyType</title>
+      <content>
+        <para>
+        The PropertyType is a subtype of the BaseVariableType. It is used as the type definition for all Properties. Properties are defined by their <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> and therefore they do not need a specialised type definition. It is not allowed to subtype this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />. There are no References specified for this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+      </para>
+      </content>
+    </section>
+    <section address="BaseDataVariableType">
+      <title>BaseDataVariableType</title>
+      <content>
+        <para>
+        The BaseDataVariableType is a subtype of the BaseVariableType. It is used as the type definition whenever there is a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> having no more concrete type definition available. This <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is the base <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> for VariableTypes of <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link>, and all other VariableTypes of <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> shall either directly or indirectly inherit from it. However, it might not be possible for servers to provide all <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> References from this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> to its subtypes, and therefore it is not required to provide this information.There are no References except for <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> References specified for this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+      </para>
+      </content>
+    </section>
+    <section address="ServerVendorCapabilityType">
+      <title>ServerVendorCapabilityType</title>
+      <content>
+        <para>
+        This <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is an abstract type whose subtypes define capabilities of the server. Vendors may define subtypes of this type.
+      </para>
+      </content>
+    </section>
+    <section address="DataTypeDictionaryType">
+      <title>DataTypeDictionaryType</title>
+      <content>
+        <para>
+        Data type dictionaries are defined in  section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. This <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used to represent the type of the data type dictionaries. There are no references specified for this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+      </para>
+      </content>
+    </section>
+    <section address="DataTypeDescriptionType">
+      <title>DataTypeDescriptionType</title>
+      <content>
+        <para>
+        Data type descriptions are defined in  section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. This <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used as the type for the data type descriptions. There are no references specified for this <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />.
+      </para>
+      </content>
+    </section>
+    <section address="ServerStatusType">
+      <title>ServerStatusType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for information about the server status. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType having the same semantic.
+      </para>
+      </content>
+    </section>
+    <section address="BuildInfoType">
+      <title>BuildInfoType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for information about the server status. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType having the same semantic.
+      </para>
+      </content>
+    </section>
+    <section address="ServerDiagnosticsSummaryType">
+      <title>ServerDiagnosticsSummaryType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType.
+      </para>
+      </content>
+    </section>
+    <section address="SamplingRateDiagnosticsArrayType">
+      <title>SamplingRateDiagnosticsArrayType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. For each entry of the array, instances of this type will provide a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the SamplingRateDiagnosticsType <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> having the sampling rate as <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>.
+      </para>
+      </content>
+    </section>
+    <section address="SamplingRateDiagnosticsType">
+      <title>SamplingRateDiagnosticsType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType.
+      </para>
+      </content>
+    </section>
+    <section address="SubscriptionDiagnosticsArrayType">
+      <title>SubscriptionDiagnosticsArrayType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. For each entry of the array, instances of this type will provide a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the SubscriptionDiagnosticsType <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> having the SubscriptionId as <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>.
+      </para>
+      </content>
+    </section>
+    <section address="SubscriptionDiagnosticsType">
+      <title>SubscriptionDiagnosticsType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType.
+      </para>
+      </content>
+    </section>
+    <section address="SessionDiagnosticsArrayType">
+      <!--<link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionDiagnosticsArrayType" >SessionDiagnosticsArrayType</link>-->
+      <title>SessionDiagnosticsArrayType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. For each entry of the array instances of this type will provide a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the <link xlink:href="#SessionDiagnosticsVariableType">SessionDiagnosticsVariableType</link><link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />, having the SessionDiagnostics as <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>. Those Variables will also be referenced by the SessionDiagnostics.
+      </para>
+      </content>
+    </section>
+    <section address="SessionDiagnosticsVariableType">
+      <title>SessionDiagnosticsVariableType</title>
+      <!--<link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionDiagnosticsVariableType" >SessionDiagnosticsVariableType</link>-->
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType.
+      </para>
+      </content>
+    </section>
+    <section address="SessionSecurityDiagnosticsArrayType">
+      <!--<link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#SessionSecurityDiagnosticsArrayType" >SessionSecurityDiagnosticsArrayType</link>-->
+      <title>SessionSecurityDiagnosticsArrayType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. For each entry of the array instances of this type will provide a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of the SessionSecurityDiagnosticsType <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" />, having the SessionSecurityDiagnostics as <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link>. Those Variables will also be referenced by the SessionDiagnostics Objects.. Since this information is security related, it should not be made accessible to all users, but only to authorised users.
+      </para>
+      </content>
+    </section>
+    <section address="SessionSecurityDiagnosticsType">
+      <title>SessionSecurityDiagnosticsType</title>
+      <content>
+        <para>
+        This complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is used for diagnostic information. Its <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> reflect its DataType. Since this information is security-related, it should not be made accessible to all users, but only to authorised users.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

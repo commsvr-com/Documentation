@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="792493fe-9605-478d-b93a-10844c737983" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Objects and Variables described in the following sub clauses can be extended by additional Properties or References to other Nodes, except where it is stated in the text that it is restricted.</para>
+    </introduction>
+    <section>
+      <title>Objects used to organise the address space structure</title>
+      <content>
+        <para>
+        See subsection <link xlink:href="7a382ec0-73ac-49d8-8200-49e95a474ab0">Objects used to organise the <token>AS</token> structure</link>.
+      </para>
+      </content>
+    </section>
+    <section>
+      <title>Server Object and its containing Objects</title>
+      <content>
+        <para>
+        See subsection <link xlink:href="2c5b2d66-8e34-490c-9ab3-4d852a892a30">Server Object and its containing Objects</link>.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="fb00ec85-b875-4b4c-a457-45691d367490" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+    Domain Node (for the Model)– this is the main node of the UA address space model and it is associated with the main node (ModelDesign) inside the xml file that stores the model definition. Right click on the node opens the context menu, that allows us to add nodes to the model.
+    </para>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">Getting Started</link>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>
