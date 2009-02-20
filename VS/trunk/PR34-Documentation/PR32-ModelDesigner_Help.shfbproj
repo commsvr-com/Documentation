@@ -34,7 +34,7 @@
     <HelpTitle>OPC Unified Architecture</HelpTitle>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
-    <FeedbackEMailAddress>techsup%40cas.eu</FeedbackEMailAddress>
+    <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <FooterText>This documentation is designed to be used with CAS UA Address Space Model Designer %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
@@ -682,8 +682,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PR32-ModelDesigner\Content.maml\LicenseAndDisclaimer.aml" />
-    <None Include="PR32-ModelDesigner\Content.maml\Glossary.aml" />
-    <None Include="PR32-ModelDesigner\Content.maml\Contacts.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\MethodDesign.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\DictionaryDesign.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\ParametersFolder.aml" />
@@ -804,6 +802,8 @@
     <None Include="PR32-ModelDesigner\Content.maml\Concept.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\OPCUnifiedArchitecture.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Welcome.aml" />
+    <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
+    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CAS.ControlLibrary">
