@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="b8c5f048-bb7e-4742-b7f2-b61a77789ed9">
   <Topic id="b8c5f048-bb7e-4742-b7f2-b61a77789ed9" visible="True" title="Welcome" tocTitle="Welcome" linkText="Welcome" />
+  <Topic id="4c4fa639-a675-4b17-abdf-17b3560e3076" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation" />
+  <Topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" visible="True" title="Getting Starter" tocTitle="Getting Starter" linkText="Getting Starter">
+    <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components" />
+    <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Installing DataPorter" tocTitle="Installing DataPorter" linkText="Installing DataPorter" />
+    <Topic id="103bd859-f8a0-45ef-9e06-fba27d5df0f0" visible="True" title="Installing WebService Access" tocTitle="Installing WebService Access" linkText="Installing WebService Access" />
+  </Topic>
+  <Topic id="a5b37bb1-ca47-4770-900e-85b8da61cfe6" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
+    <Topic id="53d5a888-1ec6-4cce-8c7c-ce8fad66ac85" visible="True" />
+    <Topic id="c51baac8-6441-47b5-932d-a9725dd83666" visible="True" />
+    <Topic id="31e96b9e-43f2-49df-8675-966bbecce189" visible="True" />
+    <Topic id="1e3e5bb0-d5fa-4669-9502-50e5d88d4bc9" visible="True" />
+    <Topic id="e3550d59-19e8-4b3d-80a0-83c70cc39fa9" visible="True" />
+  </Topic>
+  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter" />
+  <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="True" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting" />
+  <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" />
+  <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary" />
 </Topics>

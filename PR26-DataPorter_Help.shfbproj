@@ -18,7 +18,7 @@
     <HtmlHelpName>DataPorter</HtmlHelpName>
     <WorkingPath>Temp\DataPorter\Working\</WorkingPath>
     <BuildLogFile>Temp\DataPorter\DataPorter.log</BuildLogFile>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
     <ComponentConfigurations>
       <ComponentConfig id="Cached MSDN URL References" enabled="True" xmlns="">
         <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
@@ -82,7 +82,7 @@
     </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
-    <FeedbackEMailAddress>techsup%40cas.eu</FeedbackEMailAddress>
+    <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS DataPorter %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
     <HeaderText>DataPorter</HeaderText>
@@ -103,12 +103,32 @@
     <Folder Include="CommonDocumentation\Content.maml\" />
     <Folder Include="CommonDocumentation\" />
     <Folder Include="CommonDocumentation\Graphics\" />
+    <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Configuration\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PR26-DataPorter\Content.maml\Welcome.aml" />
+    <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
+    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="PR26-DataPorter\Content.maml\TheoryOfOperation.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter.aml" />
+    <None Include="PR26-DataPorter\Content.maml\DiagnosticsAndTrubelshooting.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\InstallingDataPorter.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\InstallingWebServicesAccess.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPC2SOAP.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPC2SQL.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\Transactions.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\UsingOPCViewer.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\UsingItemDescriber.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <Tokens Include="TokensHelp.tokens" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
