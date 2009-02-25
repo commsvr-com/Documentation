@@ -14,7 +14,12 @@
     <Topic id="1e3e5bb0-d5fa-4669-9502-50e5d88d4bc9" visible="True" />
     <Topic id="e3550d59-19e8-4b3d-80a0-83c70cc39fa9" visible="True" />
   </Topic>
-  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter" />
+  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
+    <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab" />
+    <Topic id="1ab52757-7130-402b-85b4-af4b468567d0" visible="True" title="Groups Tab" tocTitle="Groups Tab" linkText="Groups Tab" />
+    <Topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" visible="True" title="Items Tab" tocTitle="Items Tab" linkText="Items Tab" />
+    <Topic id="08319621-9f18-4e3a-966c-daff610ba00e" visible="True" title="Transitions Tab" tocTitle="Transitions Tab" linkText="Transitions Tab" />
+  </Topic>
   <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="True" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting" />
   <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" />
   <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary" />

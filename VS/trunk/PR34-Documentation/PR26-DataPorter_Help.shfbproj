@@ -89,6 +89,7 @@
     <HelpTitle>DataPorter</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <Preliminary>True</Preliminary>
+    <PresentationStyle>vs2005AdWords</PresentationStyle>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -105,6 +106,7 @@
     <Folder Include="CommonDocumentation\Graphics\" />
     <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\" />
+    <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PR26-DataPorter\Content.maml\Welcome.aml" />
@@ -123,6 +125,10 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\Transactions.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\UsingOPCViewer.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\UsingItemDescriber.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\OPCClientTab.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\GroupsTab.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\ItemsTab.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\TransitionsTab.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
