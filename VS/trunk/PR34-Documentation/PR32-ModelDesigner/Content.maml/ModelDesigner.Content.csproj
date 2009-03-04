@@ -46,12 +46,10 @@
     <None Include="AddressSpaceDesigner\UserInterface.aml" />
     <None Include="Alarms.aml" />
     <None Include="Concept.aml" />
-    <None Include="Contacts.aml" />
     <None Include="DataAccess.aml" />
     <None Include="Discovery.aml" />
     <None Include="General References.aml" />
     <None Include="GettingStarted.aml" />
-    <None Include="Glossary.aml" />
     <None Include="HistoricalAccess.aml" />
     <None Include="InformationModel\BaseObjectType.aml" />
     <None Include="InformationModel\Designdecisionswhenmodellingtheserverinformation.aml" />

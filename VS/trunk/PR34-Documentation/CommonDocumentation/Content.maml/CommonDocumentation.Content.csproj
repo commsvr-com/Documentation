@@ -38,4 +38,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <None Include="Contacts.aml" />
+    <None Include="Glossary.aml" />
+  </ItemGroup>
 </Project>
