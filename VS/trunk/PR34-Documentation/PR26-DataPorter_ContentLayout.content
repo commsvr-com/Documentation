@@ -1,18 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="b8c5f048-bb7e-4742-b7f2-b61a77789ed9">
-  <Topic id="b8c5f048-bb7e-4742-b7f2-b61a77789ed9" visible="True" title="Welcome" tocTitle="Welcome" linkText="Welcome" />
-  <Topic id="4c4fa639-a675-4b17-abdf-17b3560e3076" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation" />
+  <Topic id="b8c5f048-bb7e-4742-b7f2-b61a77789ed9" visible="True" title="Welcome" tocTitle="Welcome" linkText="Welcome">
+    <Topic id="52fb9b14-2c71-4761-8ab6-a04f4d111e51" visible="True" title="DataPorter Standard" tocTitle="DataPorter Standard" linkText="DataPorter Standard" />
+    <Topic id="01327e6f-b503-4ebc-a4f2-f232b926b676" visible="True" title="DataPorter Professional" tocTitle="DataPorter Professional" linkText="DataPorter Professional" />
+  </Topic>
   <Topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" visible="True" title="Getting Starter" tocTitle="Getting Starter" linkText="Getting Starter">
-    <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components" />
-    <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Installing DataPorter" tocTitle="Installing DataPorter" linkText="Installing DataPorter" />
-    <Topic id="103bd859-f8a0-45ef-9e06-fba27d5df0f0" visible="True" title="Installing WebService Access" tocTitle="Installing WebService Access" linkText="Installing WebService Access" />
+    <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction" />
+    <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
+    <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components">
+      <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter" />
+      <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
+      <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP" tocTitle="OPC2SOAP" linkText="OPC2SOAP" />
+      <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="OPC Client for GIS" tocTitle="OPC Client for GIS" linkText="OPC Client for GIS" />
+    </Topic>
+    <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting Started" tocTitle="OPC Viewer Getting Started" linkText="OPC Viewer Getting Started">
+      <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Session Tree View" tocTitle="Session Tree View" linkText="Session Tree View" />
+      <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
+    </Topic>
+    <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="Processing Environment in OPC Viewer" tocTitle="Processing Environment in OPC Viewer" linkText="Processing Environment in OPC Viewer">
+      <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started" />
+    </Topic>
+    <Topic id="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca" visible="True" title="Example Configuration" tocTitle="Example Configuration" linkText="Example Configuration">
+      <Topic id="3b0194c2-7cec-4dce-a252-dc6b61afb48f" visible="True" title="Example Transactions" tocTitle="Example Transactions" linkText="Example Transactions" />
+    </Topic>
+    <Topic id="f594fda1-1d52-400f-8d21-e0919913f840" visible="True" title="Testing DataPorter Functionality" tocTitle="Testing DataPorter Functionality" linkText="Testing DataPorter Functionality" />
   </Topic>
   <Topic id="a5b37bb1-ca47-4770-900e-85b8da61cfe6" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
-    <Topic id="53d5a888-1ec6-4cce-8c7c-ce8fad66ac85" visible="True" />
-    <Topic id="c51baac8-6441-47b5-932d-a9725dd83666" visible="True" />
-    <Topic id="31e96b9e-43f2-49df-8675-966bbecce189" visible="True" />
-    <Topic id="1e3e5bb0-d5fa-4669-9502-50e5d88d4bc9" visible="True" />
-    <Topic id="e3550d59-19e8-4b3d-80a0-83c70cc39fa9" visible="True" />
+    <Topic id="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a" visible="True" title="Configuration Files" tocTitle="Configuration Files" linkText="Configuration Files" />
+    <Topic id="9ecbc065-4153-4193-86d0-5d264120a69a" visible="True" title="OPC Configuration" tocTitle="OPC Configuration" linkText="OPC Configuration">
+      <Topic id="662c67b6-580d-4f55-b8f6-20a4fdce79b7" visible="True" title="OPC Viewer Connection Establishment" tocTitle="OPC Viewer Connection Establishment" linkText="OPC Viewer Connection Establishment" />
+      <Topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" visible="True" title="Create Online Subscription" tocTitle="Create Online Subscription" linkText="Create Online Subscription" />
+      <Topic id="b91f20e8-d116-4706-86f4-5ebe9586774a" visible="True" title="Create Off Line Subscription" tocTitle="Create Off Line Subscription" linkText="Create Off Line Subscription" />
+      <Topic id="e8cbd036-5a13-4a3c-b6f1-637561d043fc" visible="True" title="Write Data" tocTitle="Write Data" linkText="Write Data" />
+      <Topic id="420d5fc2-c2b0-42e4-b944-d0b72e3fa4b2" visible="True" title="Read Data" tocTitle="Read Data" linkText="Read Data" />
+    </Topic>
+    <Topic id="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0" visible="True" title="Transaction and Operations" tocTitle="Transaction and Operations" linkText="Transaction and Operations" />
+    <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity" />
+    <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity" />
   </Topic>
   <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
     <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab" />

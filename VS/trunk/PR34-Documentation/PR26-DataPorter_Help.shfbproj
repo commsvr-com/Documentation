@@ -18,7 +18,7 @@
     <HtmlHelpName>DataPorter</HtmlHelpName>
     <WorkingPath>Temp\DataPorter\Working\</WorkingPath>
     <BuildLogFile>Temp\DataPorter\DataPorter.log</BuildLogFile>
-    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <HelpFileFormat>Website</HelpFileFormat>
     <ComponentConfigurations>
       <ComponentConfig id="Cached MSDN URL References" enabled="True" xmlns="">
         <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
@@ -107,6 +107,12 @@
     <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\" />
     <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Welcome\" />
+    <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\" />
+    <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted\" />
+    <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\ProcessingEnvironmentInOPCViewer\" />
+    <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PR26-DataPorter\Content.maml\Welcome.aml" />
@@ -129,6 +135,32 @@
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\GroupsTab.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\ItemsTab.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\TransitionsTab.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterStandard.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterProfessional.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCOverview.aml" />
+    <None Include="PR26-DataPorter\Content.maml\OPCViewerGettingStarted.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\ProcessingEnvironmentInOPCViewer.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\TestingDataPorterFunctionality.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\DataPorter.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPC2SOAP.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCClientForGIS.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted\SessionTreeView.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted\MainPanel.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\ProcessingEnvironmentInOPCViewer\TransactionEditorGettingStarted.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration\ExampleTransactions.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\ConfigurationFiles.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperations.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConectivity.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\OPCViewerConnectionEstablishment.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\CreateOnlineSubscriptionBrowseserver.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\CreateOffLineSubscription.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\WriteData.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\ReadData.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
