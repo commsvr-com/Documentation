@@ -1,0 +1,52 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5fd77fba-760c-4132-abaf-e14ddd0f602a}</ProjectGuid>
+    <SHFBSchemaVersion>1.8.0.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>Documentation</HtmlHelpName>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <ContentLayout Include="PR30-OPCViewer_ContentLayout.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonDocumentation\Content.maml\" />
+    <Folder Include="CommonDocumentation\" />
+    <Folder Include="CommonDocumentation\Graphics\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\" />
+    <Folder Include="PR30-OPCViewer\" />
+    <Folder Include="PR30-OPCViewer\Graphics\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
+    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\Welcome.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\Configuration.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\UsingOPCViewer.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\MainPanel.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\SessionTreeView.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted.aml" />
+    <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>
