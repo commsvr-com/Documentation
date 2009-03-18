@@ -109,10 +109,14 @@
     <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\" />
     <Folder Include="PR26-DataPorter\Content.maml\Welcome\" />
     <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\" />
-    <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted\" />
     <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\ProcessingEnvironmentInOPCViewer\" />
     <Folder Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\" />
+    <Folder Include="PR30-OPCViewer\" />
+    <Folder Include="PR30-OPCViewer\Graphics\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PR26-DataPorter\Content.maml\Welcome.aml" />
@@ -137,9 +141,7 @@
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\TransitionsTab.aml" />
     <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterStandard.aml" />
     <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterProfessional.aml" />
-    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCOverview.aml" />
     <None Include="PR26-DataPorter\Content.maml\OPCViewerGettingStarted.aml" />
-    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\ProcessingEnvironmentInOPCViewer.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\TestingDataPorterFunctionality.aml" />
@@ -147,8 +149,6 @@
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPC2SOAP.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCClientForGIS.aml" />
-    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted\SessionTreeView.aml" />
-    <None Include="PR26-DataPorter\Content.maml\GettingStarted\OPCViewerGettingStarted\MainPanel.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\ProcessingEnvironmentInOPCViewer\TransactionEditorGettingStarted.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration\ExampleTransactions.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\ConfigurationFiles.aml" />
@@ -161,6 +161,11 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\CreateOffLineSubscription.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\WriteData.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\ReadData.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceInstallation.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\SessionTreeView.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\MainPanel.aml" />
+    <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />

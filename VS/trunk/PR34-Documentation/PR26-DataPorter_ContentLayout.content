@@ -4,7 +4,7 @@
     <Topic id="52fb9b14-2c71-4761-8ab6-a04f4d111e51" visible="True" title="DataPorter Standard" tocTitle="DataPorter Standard" linkText="DataPorter Standard" />
     <Topic id="01327e6f-b503-4ebc-a4f2-f232b926b676" visible="True" title="DataPorter Professional" tocTitle="DataPorter Professional" linkText="DataPorter Professional" />
   </Topic>
-  <Topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" visible="True" title="Getting Starter" tocTitle="Getting Starter" linkText="Getting Starter">
+  <Topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
     <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction" />
     <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
     <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components">
@@ -36,7 +36,9 @@
     </Topic>
     <Topic id="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0" visible="True" title="Transaction and Operations" tocTitle="Transaction and Operations" linkText="Transaction and Operations" />
     <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity" />
-    <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity" />
+    <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
+      <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />
+    </Topic>
   </Topic>
   <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
     <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab" />
