@@ -16,6 +16,11 @@
     <!-- SHFB properties -->
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
+    <PlugInConfigurations>
+      <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -33,7 +38,8 @@
     <Folder Include="PR30-OPCViewer\Content.maml\" />
     <Folder Include="PR30-OPCViewer\" />
     <Folder Include="PR30-OPCViewer\Graphics\" />
-    <Folder Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\GettingStarted\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
@@ -41,11 +47,11 @@
     <None Include="PR30-OPCViewer\Content.maml\Welcome.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration.aml" />
     <None Include="PR30-OPCViewer\Content.maml\UsingOPCViewer.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\MainPanel.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\SessionTreeView.aml" />
     <None Include="PR30-OPCViewer\Content.maml\GettingStarted.aml" />
     <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted\MainPanel.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted\SessionTreeView.aml" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
