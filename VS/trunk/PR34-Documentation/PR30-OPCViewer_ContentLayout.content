@@ -7,6 +7,9 @@
       <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
       <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Sesion Tree View" tocTitle="Sesion Tree View" linkText="Sesion Tree View" />
     </Topic>
+    <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="OPC Viewer Processing Environment" tocTitle="OPC Viewer Processing Environment" linkText="OPC Viewer Processing Environment">
+      <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor" tocTitle="Transaction Editor" linkText="Transaction Editor" />
+    </Topic>
   </Topic>
   <Topic id="3f3eb239-28ae-46ef-b42a-2a3d4c1688d8" visible="True" />
   <Topic id="615734d2-5b06-4696-87d4-1d579804cede" visible="True" />
