@@ -100,7 +100,7 @@
     </NamespaceSummaries>
     <CppCommentsFixup>False</CppCommentsFixup>
     <PlugInConfigurations>
-      <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
+      <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
     </PlugInConfigurations>

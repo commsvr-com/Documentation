@@ -3,9 +3,9 @@
   <Topic id="2cf90670-4962-49d1-9b91-663261dd74d7" visible="True" />
   <Topic id="437d2512-d280-4e30-9e97-db7000765a08" visible="True">
     <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
-    <Topic id="58898c7b-604d-492c-868e-7d30d2a1c392" visible="True" noFile="True" title="OPC Viewer Getting started" tocTitle="OPC Viewer Getting started" linkText="OPC Viewer Getting started">
-      <Topic id="481e2186-7363-4317-b8c6-1af05e9f24ce" visible="True" noFile="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
-      <Topic id="24fe36a1-f224-4ddc-bcaf-d9ec7301cf8e" visible="True" noFile="True" title="Sesion Tree View" tocTitle="Sesion Tree View" linkText="Sesion Tree View" />
+    <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting started" tocTitle="OPC Viewer Getting started" linkText="OPC Viewer Getting started">
+      <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
+      <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Sesion Tree View" tocTitle="Sesion Tree View" linkText="Sesion Tree View" />
     </Topic>
   </Topic>
   <Topic id="3f3eb239-28ae-46ef-b42a-2a3d4c1688d8" visible="True" />

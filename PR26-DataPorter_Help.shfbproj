@@ -116,7 +116,8 @@
     <Folder Include="PR30-OPCViewer\Content.maml\" />
     <Folder Include="PR30-OPCViewer\" />
     <Folder Include="PR30-OPCViewer\Graphics\" />
-    <Folder Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\GettingStarted\" />
+    <Folder Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PR26-DataPorter\Content.maml\Welcome.aml" />
@@ -162,10 +163,10 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\WriteData.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\OPCConfiguration\ReadData.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceInstallation.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\SessionTreeView.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\OPCViewerGettingStarted\MainPanel.aml" />
     <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted\SessionTreeView.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\GettingStarted\OPCViewerGettingStarted\MainPanel.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
