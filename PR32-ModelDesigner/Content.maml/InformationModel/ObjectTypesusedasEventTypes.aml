@@ -22,12 +22,13 @@
       <!--<link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType" >BaseEventType</link>-->
       <title>BaseEventType</title>
       <content>
+        <autoOutline/>
         <para>
         This abstract type is the base <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link>. It is complex one and has components described in the following sections.
       </para>
       </content>
-      <sections address="EventId">
-        <section>
+      <sections>
+        <section address="EventId">
           <title> EventId</title>
           <content>
             <para>

@@ -11,7 +11,7 @@
          titles.  Specify a numeric value as the inner text to limit it to
          a specific number of sub-topics when creating the outline.  Specify
          zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
+     <autoOutline />
       <para>
       This Service Set defines Services used to open a communication channel that ensures the confidentiality and integrity of all Messages exchanged with the Server. The base concepts for UA security are defined in section <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7" />.
     </para>
@@ -19,11 +19,9 @@
     <!-- Add one or more top-level section elements.  These are collapsible.
        If using <autoOutline /> tag, add an address attribute to identify
        it so that it can be jumped to with a hyperlink. -->
-    <section>
+    <section address="SecureChannelServices">
       <title>SecureChannel Services</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-      <autoOutline /> -->
         <para>
         The SecureChannel Services are unlike other Services because they are typically not implemented by the UA application directly. Instead, they are provided by the communication stack that the UA application is built on. For example, a UA Server may be built on a SOAP stack that allows applications to establish a SecureChannel using the WS SecureConversation specification. In these cases, the UA application simply needs to verify that a WS SecureConversation is active whenever it receives a Message.
         section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" />

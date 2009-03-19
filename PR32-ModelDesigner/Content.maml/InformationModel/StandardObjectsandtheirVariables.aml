@@ -2,9 +2,10 @@
 <topic id="792493fe-9605-478d-b93a-10844c737983" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
+      <autoOutline/>
       <para>Objects and Variables described in the following sub clauses can be extended by additional Properties or References to other Nodes, except where it is stated in the text that it is restricted.</para>
     </introduction>
-    <section>
+    <section address="Objects">
       <title>Objects used to organise the address space structure</title>
       <content>
         <para>
@@ -12,7 +13,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Server_Object">
       <title>Server Object and its containing Objects</title>
       <content>
         <para>

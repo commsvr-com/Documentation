@@ -8,6 +8,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       The group of types  supporting management of the <token>AS</token> aand providing general information about organization, modelling and coding includes the following types derived from the <link xlink:href="08ebbdef-796a-42f6-a849-0b9017547c77" />:
     </para>

@@ -7,6 +7,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       The <token>OPCUA</token> meta model is represented by UML classes and UML objects marked with the stereotype <codeInline><![CDATA[<<TypeExtension>>]]></codeInline>. Those stereotyped UML objects represent <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data types</link> or <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134">reference types</link>. The domain model can contain user-defined reference types and data types, also marked as <codeInline><![CDATA[<<TypeExtension>>]]></codeInline>. In addition, the domain model contains  <link xlink:href="0d741b40-7d47-4aa1-852b-fe9007394b7f">object types</link>, <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36">variable types</link> etc. represented as UML objects (see Figure 1).
     </para>
@@ -18,7 +19,7 @@
         <image placement="center" xlink:href="081c57f9-eb46-4180-87fc-25c578041ec0" />
       </mediaLink>
     </introduction>
-    <section>
+    <section address="Notation">
       <title>Notation</title>
       <content>
         <para>
@@ -49,9 +50,10 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="MetaModel">
       <title>Meta Model</title>
       <content>
+        <autoOutline/>
         <alert>
           <para>
           The <token>OPCUA</token> meta model can be extended by adding attributes and defining new reference types.
@@ -59,7 +61,7 @@
         </alert>
       </content>
       <sections>
-        <section>
+        <section address="BaseNode">
           <title>BaseNode</title>
           <content>
             <mediaLink>
@@ -68,7 +70,7 @@
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="ReferenceType">
           <title>ReferenceType</title>
           <content>
             <mediaLink>
@@ -80,7 +82,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="PredefinedReferenceTypes">
           <title>Predefined ReferenceTypes</title>
           <content>
             <mediaLink>
@@ -89,7 +91,7 @@
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="Attributes">
           <title>Attributes</title>
           <content>
             <mediaLink>
@@ -104,7 +106,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="ObjectAndObjectType">
           <title>Object and ObjectType</title>
           <content>
             <mediaLink>
@@ -113,7 +115,7 @@
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="EventNotifier">
           <title>EventNotifier</title>
           <content>
             <mediaLink>
@@ -122,7 +124,7 @@
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="VariableAndVariableType">
           <title>Variable and VariableType</title>
           <content>
             <mediaLink>
@@ -143,7 +145,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="Method">
           <title>Method</title>
           <content>
             <mediaLink>
@@ -152,7 +154,7 @@
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="DataType">
           <title>DataType</title>
           <content>
             <mediaLink>
@@ -161,7 +163,7 @@
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="View">
           <title>View</title>
           <content>
             <mediaLink>

@@ -6,6 +6,7 @@
       <para> Methods are lightweight functions, whose scope is bounded by an owning object, similar to the methods of a class in object-oriented programming or an owning object type, similar to static methods of a class.</para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       Methods define callable functions. Methods are invoked using the <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">Call service</link>. Method invocations are not represented in the <token>AS</token>. Method invocations always run to completion and always return responses when complete. Methods are defined using the Method node class.
     </para>
@@ -19,12 +20,13 @@
       If the Method is used as <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18">instance declaration</link> all nodes referenced with hierarchical references in forward direction shall have unique <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> values in the context of this Method.
     </para>
     </introduction>
-    <section>
+    <section address="Attributes">
       <title>Attributes</title>
       <content>
+        <autoOutline/>
       </content>
       <sections>
-        <section>
+        <section address="Executable">
           <title>Executable</title>
           <content>
             <para>
@@ -32,7 +34,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="UserExecutable">
           <title>UserExecutable</title>
           <content>
             <para>
@@ -42,12 +44,13 @@
         </section>
       </sections>
     </section>
-    <section>
+    <section address="References">
       <title>References</title>
       <content>
+        <autoOutline/>
       </content>
       <sections>
-        <section>
+        <section address="HasProperty">
           <title>HasProperty</title>
           <content>
             <para>
@@ -55,7 +58,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="HasModellingRule">
           <title>HasModellingRule</title>
           <content>
             <para>
@@ -63,7 +66,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="HasModelParent">
           <title>HasModelParent</title>
           <content>
             <para>
@@ -71,7 +74,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="GeneratesEvent">
           <title>GeneratesEvent</title>
           <content>
             <para>

@@ -7,6 +7,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
         <token>OPCUA</token> servers shall provide type definitions for <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> and <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> nodes. The <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasTypeDefinition">HasTypeDefinition</link> reference shall be used to link an instance with its type definition represented by a type definition node. Type definitions are required, however, section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> describes a <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36">, a PropertyType and a BaseDataVariableType</link> so a server can use such a base type if no more specialised type information is available. Objects and variables nodes inherit the attributes specified by their type definition node.
     </para>
@@ -24,7 +25,7 @@
         <image placement="center" xlink:href="4306e3f9-71cc-402c-ad2a-f483164d2f34" />
       </mediaLink>
     </introduction>
-    <section>
+    <section address="ComplexTypeDefinitionNodesInstanceDeclarations">
       <title>Complex Type Definition Nodes and their Instance Declarations</title>
       <content>
         <para>
@@ -45,7 +46,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Subtyping">
       <title>Subtyping</title>
       <content>
         <para>
@@ -73,7 +74,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="InstantiationOfComplexTypeDefinitionNodes">
       <title>Instantiation of Complex Type Definition Nodes</title>
       <content>
         <para>

@@ -7,6 +7,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       The main factors that influenced the <token>OPCF</token> decision to propose a new architecture are summarized below:
     </para>
@@ -39,9 +40,10 @@
       In January’<date>2004</date> the OPC Foundation tasked a working group to create a new architecture that would take OPC to the forefront of technology and provide an interoperability framework that would be viable for the next 10 years and beyond. The first parts of this new "Unified Architecture" were released in June’2006.
     </para>
     </introduction>
-    <section>
+    <section address="StructureOfTheSpecificationsCollection">
       <title>Structure of the specifications collection</title>
       <content>
+        <autoOutline/>
         <para>
         The <token>OPCUA</token> (OPC-UA) is described in a layered set of specifications broken into Parts. It is purposely described in abstract terms and in later parts married to existing technology on which software can be built. This layering is on purpose and helps isolate changes in <token>OPCUA</token> from changes in the technology used to implement it. The structure and depth of material to absorb in learning is harder than the OPC COM Specifications. It is best to read the introductory articles and in-depth presentations before tackling the <token>OPCUA</token> Specifications. 
       </para>
@@ -71,8 +73,8 @@
       </para>
       </content>
       <sections>
-        <section>
-          <title address="CoreSpecificationParts">Core Specification Parts</title>
+        <section address="CoreSpecificationParts">
+          <title>Core Specification Parts</title>
           <content>
             <para>
             This set contains the following specifications:
@@ -118,8 +120,8 @@
             </list>
           </content>
         </section>
-        <section>
-          <title address="AccessTypeSpecificationParts">Access Type Specification Parts</title>
+        <section address="AccessTypeSpecificationParts">
+          <title>Access Type Specification Parts</title>
           <content>
             <para>
             This set contains the following specifications:

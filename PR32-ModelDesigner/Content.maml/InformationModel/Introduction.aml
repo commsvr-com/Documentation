@@ -7,6 +7,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline />
       <para>
       The Information Model describes standardised nodes of a server’s <token>AS</token>. These nodes are standardised types as well as standardised instances used for diagnostics or as entry points to server specific nodes. Thus, the Information Model defines the <token>AS</token> of an empty <token>OPCUA</token> server. However, it is not expected that all servers will provide all of these nodes.
     </para>
@@ -35,12 +36,13 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="CommonAttributes">
       <title>Common Attributes</title>
       <content>
+        <autoOutline />
       </content>
       <sections>
-        <section>
+        <section address="General">
           <title>General</title>
           <content>
             <para>For all nodes specified in this part, the attributes shall be set as specified in the table.</para>
@@ -149,7 +151,7 @@
             </table>
           </content>
         </section>
-        <section>
+        <section address="Objects">
           <title>Objects</title>
           <content>
             <para>
@@ -188,7 +190,7 @@
             </table>
           </content>
         </section>
-        <section>
+        <section address="Variables">
           <title>Variables</title>
           <content>
             <para>
@@ -284,7 +286,7 @@
             </table>
           </content>
         </section>
-        <section>
+        <section address="Variable_Types">
           <title>Variable Types</title>
           <content>
             <para>

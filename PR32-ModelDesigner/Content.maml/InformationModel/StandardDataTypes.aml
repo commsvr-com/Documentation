@@ -1,107 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--<link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" />
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
+      <autoOutline />
       <para>
-      An <token>OPCUA</token> server need not expose its DataTypes in its <token>AS</token>. Independent of the exposition of DataTypes, it shall support the DataTypes as described in the following subclauses. The <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link>, the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type descriptions</link> and the data type dictionaries of the structured data types and the references to them are described in section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> as well as the EnumStrings Properties for enumerated DataTypes.
-    </para>
-    </introduction>
-    <section>
-      <title>
-      DataTypes defined in section "Address Space" and section "Services"
-    </title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-      <autoOutline /> -->
-        <para>
-        Section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" /> and section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> defines a set of DataTypes.
+        An <token>OPCUA</token> server need not expose its DataTypes in its <token>AS</token>. Independent of the exposition of DataTypes, it shall support the DataTypes as described in the following subclauses. The <link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#DataTypeEncodingType">DataTypeEncodingType</link>, the <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDescriptionType">data type descriptions</link> and the data type dictionaries of the structured data types and the references to them are described in section <link xlink:href="90c70f9d-c1df-479e-8273-071b5960a5a4" /> as well as the EnumStrings Properties for enumerated DataTypes.
       </para>
+    </introduction>
+    <section address=" DataTypesDefinedInSectionAddressSpaceandSectionServices">
+      <title>
+        DataTypes defined in section "Address Space" and section "Services"
+      </title>
+      <content>
+        <autoOutline />
+        <para>
+          Section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" /> and section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> defines a set of DataTypes.
+        </para>
       </content>
       <sections>
-        <section>
+        <section address="SecurityTokenRequestType">
           <title>
-          SecurityTokenRequestType
-        </title>
+            SecurityTokenRequestType
+          </title>
           <content>
             <para>
-            The SecurityTokenRequestType is an enumeration that is defined as the type of the requestType parameter of the OpenSecureChannel Service.
-          </para>
+              The SecurityTokenRequestType is an enumeration that is defined as the type of the requestType parameter of the OpenSecureChannel Service.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="AddNodesItem">
           <title>
-          AddNodesItem
-        </title>
+            AddNodesItem
+          </title>
           <content>
             <para>
-            The AddNodesItem is a structure that is defined as the type of the nodesToAdd parameter of the AddNodes Service.
-          </para>
+              The AddNodesItem is a structure that is defined as the type of the nodesToAdd parameter of the AddNodes Service.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="AddReferencesItem">
           <title>
-          AddReferencesItem
-        </title>
+            AddReferencesItem
+          </title>
           <content>
             <para>
-            The AddReferencesItem is a structure that is defined as the type of the referencesToAdd parameter of the AddReferences Service.
-          </para>
+              The AddReferencesItem is a structure that is defined as the type of the referencesToAdd parameter of the AddReferences Service.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="DeleteNodesItem">
           <title>
-          DeleteNodesItem
-        </title>
+            DeleteNodesItem
+          </title>
           <content>
             <para>
-            The DeleteNodesItem is a structure that is defined as the type of the nodesToDelete parameter of the DeleteNodes Service.
-          </para>
+              The DeleteNodesItem is a structure that is defined as the type of the nodesToDelete parameter of the DeleteNodes Service.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="DeleteReferencesItem">
           <title>
-          DeleteReferencesItem
-        </title>
+            DeleteReferencesItem
+          </title>
           <content>
             <para>
-            The DeleteReferencesItem is a structure that is defined as the type of the referencesToDelete parameter of the DeleteReferences Service.
-          </para>
+              The DeleteReferencesItem is a structure that is defined as the type of the referencesToDelete parameter of the DeleteReferences Service.
+            </para>
           </content>
         </section>
       </sections>
     </section>
-    <section>
+    <section address="BuildInfo">
       <title>
-      BuildInfo
-    </title>
+        BuildInfo
+      </title>
       <content>
         <para>
-        This structure contains elements that describe the build information of the server.
-      </para>
+          This structure contains elements that describe the build information of the server.
+        </para>
       </content>
     </section>
     <section address="RedundancySupport">
       <!--<link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#RedundancySupport" >RedundancySupport</link>-->
       <title>RedundancySupport</title>
       <content>
+        <autoOutline/>
         <para>
-        This DataType is an enumeration that defines the redundancy support of the server
-      </para>
+          This DataType is an enumeration that defines the redundancy support of the server
+        </para>
       </content>
     </section>
-    <section>
+    <section address="ServerState">
       <title>
-      ServerState
-    </title>
+        ServerState
+      </title>
       <content>
         <para>
-        This DataType is an enumeration that defines the execution state of the server.
-      </para>
+          This DataType is an enumeration that defines the execution state of the server.
+        </para>
       </content>
     </section>
     <section address="RedundantServerDataType">
@@ -109,29 +105,29 @@
       <title>RedundantServerDataType</title>
       <content>
         <para>
-        This structure contains elements that describe the status of the server.
-      </para>
+          This structure contains elements that describe the status of the server.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="SamplingRateDiagnosticsDataType">
       <title>
-      SamplingRateDiagnosticsDataType
-    </title>
+        SamplingRateDiagnosticsDataType
+      </title>
       <content>
         <para>
-        This structure contains diagnostic information about the sampling rates currently used by the server.
-      </para>
+          This structure contains diagnostic information about the sampling rates currently used by the server.
+        </para>
       </content>
     </section>
     <section address="ServerDiagnosticsSummaryDataType">
       <!--<link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#ServerDiagnosticsSummaryDataType" >ServerDiagnosticsSummaryDataType</link>-->
       <title>
-      ServerDiagnosticsSummaryDataType
-    </title>
+        ServerDiagnosticsSummaryDataType
+      </title>
       <content>
         <para>
-        This structure contains diagnostic summary information for the server.
-      </para>
+          This structure contains diagnostic summary information for the server.
+        </para>
       </content>
     </section>
     <section address="ServerStatusDataType">
@@ -139,80 +135,80 @@
       <title>ServerStatusDataType</title>
       <content>
         <para>
-        This structure contains elements that describe the status of the server.
-      </para>
+          This structure contains elements that describe the status of the server.
+        </para>
       </content>
     </section>
     <section address="SessionDiagnosticsDataType">
       <!--<link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionDiagnosticsDataType" >SessionDiagnosticsDataType</link>-->
       <title>
-      SessionDiagnosticsDataType
-    </title>
+        SessionDiagnosticsDataType
+      </title>
       <content>
         <para>
-        This structure contains diagnostic information about client sessions. Most of the values represented in this structure provide information about the number of calls of a Service, the number of currently used MonitoredItems, etc. Those numbers need not provide the exact value; they need only provide the approximate number, so that the server is not burdened with providing the exact numbers.
-      </para>
+          This structure contains diagnostic information about client sessions. Most of the values represented in this structure provide information about the number of calls of a Service, the number of currently used MonitoredItems, etc. Those numbers need not provide the exact value; they need only provide the approximate number, so that the server is not burdened with providing the exact numbers.
+        </para>
       </content>
     </section>
     <section address="SessionSecurityDiagnosticsDataType">
       <!--<link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66#SessionSecurityDiagnosticsDataType" >SessionSecurityDiagnosticsDataType</link>-->
       <title>
-      SessionSecurityDiagnosticsDataType
-    </title>
+        SessionSecurityDiagnosticsDataType
+      </title>
       <content>
         <para>
-        This structure contains security-related diagnostic information about client sessions. Because this information is security-related, it should not be made accessible to all users, but only to authorised users.
-      </para>
+          This structure contains security-related diagnostic information about client sessions. Because this information is security-related, it should not be made accessible to all users, but only to authorised users.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="ServiceCounterDataType">
       <title>
-      ServiceCounterDataType
-    </title>
+        ServiceCounterDataType
+      </title>
       <content>
         <para>
-        This structure contains diagnostic information about subscriptions.
-      </para>
+          This structure contains diagnostic information about subscriptions.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="StatusResult">
       <title>
-      StatusResult
-    </title>
+        StatusResult
+      </title>
       <content>
         <para>
-        This structure combines a StatusCode and diagnostic information and can for example be used by Methods to return several StatusCodes and the corresponding diagnostic information that are not handled in the Call Service parameters. Whether the DiagnosticInformation is returned depends on the setting of the Service calls.
-      </para>
+          This structure combines a StatusCode and diagnostic information and can for example be used by Methods to return several StatusCodes and the corresponding diagnostic information that are not handled in the Call Service parameters. Whether the DiagnosticInformation is returned depends on the setting of the Service calls.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="SubscriptionDiagnosticsDataType">
       <title>
-      SubscriptionDiagnosticsDataType
-    </title>
+        SubscriptionDiagnosticsDataType
+      </title>
       <content>
         <para>
-        This structure contains diagnostic information about subscriptions.
-      </para>
+          This structure contains diagnostic information about subscriptions.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="ModelChangeStructureDataType">
       <title>
-      ModelChangeStructureDataType
-    </title>
+        ModelChangeStructureDataType
+      </title>
       <content>
         <para>
-        This structure contains elements that describe changes of the model.
-      </para>
+          This structure contains elements that describe changes of the model.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="SemanticChangeStructureDataType">
       <title>
-      SemanticChangeStructureDataType
-    </title>
+        SemanticChangeStructureDataType
+      </title>
       <content>
         <para>
-        This structure contains elements that describe a change of the model.
-      </para>
+          This structure contains elements that describe a change of the model.
+        </para>
       </content>
     </section>
     <relatedTopics>

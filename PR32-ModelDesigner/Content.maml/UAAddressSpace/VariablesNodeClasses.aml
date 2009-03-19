@@ -8,6 +8,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>Variables are used to represent values which may be simple or complex.</para>
       <para>
       Variables are always defined as properties or data variables of other nodes in the <token>AS</token>. They are never defined by themselves.

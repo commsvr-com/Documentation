@@ -7,13 +7,14 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       Using the <token>ASMD</token> has the following advantages: easy addition and deletion
       of nodes from the model structure, definition of nodes relationship
       and types, nodes filtering, helpful search and find utility, type declaration, etc.
     </para>
     </introduction>
-    <section>
+    <section address="UAAddressSpaceModelDesignTool">
       <title>
       UA Address Space Model Design tool
     </title>
@@ -67,7 +68,7 @@
         </mediaLink>
       </content>
     </section>
-    <section>
+    <section address="TightlyCoupledIntelligentBookOnUnifiedArchitecture">
       <title>Tightly coupled intelligent book on Unified Architecture</title>
       <content>
         <para>
@@ -91,7 +92,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="OPCUASoftwareDevelopmentKit">
       <title>OPC UA Software Development Kit.</title>
       <content>
         <para>
@@ -104,7 +105,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Features">
       <title>Features</title>
       <content>
         <list class="bullet">

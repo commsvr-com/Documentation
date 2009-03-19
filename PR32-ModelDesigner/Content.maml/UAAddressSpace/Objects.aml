@@ -8,6 +8,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       The Object node class inherits the base attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /> node class.
     </para>
@@ -21,12 +22,13 @@
       If the Object is created based on an instance declaration, it shall have the same <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> as its instance declaration.
     </para>
     </introduction>
-    <section>
+    <section address="Attributes">
       <title>Attributes</title>
       <content>
+        <autoOutline/>
       </content>
       <sections>
-        <section>
+        <section address="EventNotifierAttribute">
           <title>EventNotifier Attribute</title>
           <content>
             <para>
@@ -36,12 +38,13 @@
         </section>
       </sections>
     </section>
-    <section>
+    <section address="References">
       <title>References</title>
       <content>
+        <autoOutline/>
       </content>
       <sections>
-        <section>
+        <section address="HasComponentReference">
           <title>HasComponent Reference</title>
           <content>
             <para>
@@ -49,7 +52,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="HasPropertyReference">
           <title>HasProperty Reference</title>
           <content>
             <para>
@@ -57,15 +60,15 @@
           </para>
           </content>
         </section>
-        <section>
-          <title>HasModellingRule Reference </title>
+        <section address="HasModellingRuleReference">
+          <title>HasModellingRule Reference</title>
           <content>
             <para>
             To specify its modelling rule, an Object can use at most one HasModellingRule reference pointing to a ModellingRule node.
           </para>
           </content>
         </section>
-        <section>
+        <section address="HasModelParentReference">
           <title>HasModelParent Reference</title>
           <content>
             <para>
@@ -73,7 +76,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="HasNotifierAndHasEventSourceReferences">
           <title>HasNotifier and HasEventSource references</title>
           <content>
             <para>

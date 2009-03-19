@@ -5,11 +5,12 @@
       <para>To integrate diverse systems we must make them interoperable, but it means necessity of information exchange.</para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       This section describes the concept of Object Model that allows representing the underlying real-time process in a unique and platform-independent means.
     </para>
     </introduction>
-    <section>
+    <section address="Object">
       <title>Object</title>
       <content>
         <para>
@@ -31,7 +32,7 @@
         </alert>
       </content>
     </section>
-    <section>
+    <section address="Variables_and_Methods">
       <title>Variables and Methods</title>
       <content>
         <para>The Object Model defines objects in terms of variables and methods. It also allows us to express the relationships to other objects as references. In other words, the object is a placeholder collecting variables, methods and references. Using it, clients get access to the selected part of the underlying process. Therefore, the objects must have established a connection to the physical plant floor devices. On the client side, objects should provide functionality of transferring current values and operating on the object.</para>
@@ -45,13 +46,13 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Process_Data_and_Metadata">
       <title>Process Data and Metadata</title>
       <content>
         <para>Industrial process management requires information of two types: process data and metadata. From the previous discussion we know that the same way as process data represents the process physical state, metadata describes the process itself and in the <token>OPCUA</token> it is exposed simultaneously the as object relationships (see fig. 1 bellow).</para>
       </content>
     </section>
-    <section>
+    <section address="BrowseName">
       <title>BrowseName</title>
       <content>
         <para>
@@ -62,7 +63,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="ObjectsLifecycle">
       <title>Objects Lifecycle</title>
       <content>
         <para>
@@ -80,7 +81,7 @@
         </list>
       </content>
     </section>
-    <section>
+    <section address="ComplexTypes">
       <title>Complex Types</title>
       <content>
         <para>

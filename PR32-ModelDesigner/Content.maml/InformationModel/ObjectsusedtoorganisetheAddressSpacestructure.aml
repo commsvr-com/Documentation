@@ -7,6 +7,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline />
       <para>
       To promote interoperability of clients and servers, the <token>OPCUA</token><token>AS</token> is structured as a hierarchy, with the top levels standardised for all servers. Figure 1 illustrates the structure of the <token>AS</token>. All Objects in this figure are organised using Organizes References and have the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /><link xlink:href="b6fbace7-8f12-4c47-8dd2-d9223336254b#FolderType">FolderType</link> as type definition.
     </para>
@@ -18,7 +19,7 @@
       The remainder of this provides descriptions of these standard Nodes and the organization of Nodes beneath them. Servers typically implement a subset of these standard Nodes, depending on their capabilities.
     </para>
     </introduction>
-    <section>
+    <section address="Root">
       <title>Root</title>
       <content>
         <para>
@@ -26,7 +27,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Views">
       <title>Views</title>
       <content>
         <para>
@@ -41,7 +42,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Objects">
       <title>Objects</title>
       <content>
         <para>
@@ -56,7 +57,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Types">
       <title>Types</title>
       <content>
         <para>
@@ -64,7 +65,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Object_Types">
       <title>Object Types</title>
       <content>
         <para>
@@ -82,7 +83,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Variable_Types">
       <title>Variable Types</title>
       <content>
         <para>
@@ -97,7 +98,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Reference_Types">
       <title>Reference Types</title>
       <content>
         <para>
@@ -112,7 +113,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Data_Types">
       <title>Data Types</title>
       <content>
         <para>
@@ -136,7 +137,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="OPC_Binary">
       <title>OPC Binary</title>
       <content>
         <para>
@@ -144,7 +145,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="XML_Schema">
       <title>XML Schema</title>
       <content>
         <para>

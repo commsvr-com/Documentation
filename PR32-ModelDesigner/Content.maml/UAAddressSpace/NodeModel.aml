@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       Before objects making up the <token>AS</token> have been created by a server, its <token>AS</token> must be designed first. To design the <token>AS</token> as a runtime Object Model, we need a language describing it in a unique and standard way. This topic provides description of the concept where the elements are represented as nodes in the <token>AS</token>. Each node is assigned to a node class and each node represents a different element of the Object Model (see <link xlink:href="44be48a5-7e42-42a2-906b-86b569ed9d93" />).
     </para>
@@ -25,7 +26,7 @@
       Section <link xlink:href="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67" /> defines a standard set of node classes for the <token>OPCUA</token><token>AS</token>. These node classes are referred to collectively as the metadata for the <token>AS</token>. Each object in the <token>AS</token> is an instance of one of these standard node classes. No other node classes shall be used to define nodes, and as a result, clients and servers are not allowed to define new node classes or extend the definitions of these existing ones.
     </para>
     </introduction>
-    <section>
+    <section address="Attributes">
       <title>Attributes</title>
       <content>
         <para>
@@ -42,7 +43,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="References">
       <title>
       References
     </title>

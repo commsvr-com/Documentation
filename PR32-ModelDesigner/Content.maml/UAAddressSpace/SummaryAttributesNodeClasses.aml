@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       Image 1 summarises all attributes defined and points out which node classes use them either optional (O) or mandatory (M).
     </para>
@@ -16,7 +17,7 @@
         <image placement="center" xlink:href="4980d642-59f4-43e8-8a00-b71ee3eb2e52" />
       </mediaLink>
     </introduction>
-    <section>
+    <section address="BitMaskForWriteMaskAndUserWriteMask">
       <title>
       Bit mask for WriteMask and UserWriteMask
     </title>
@@ -27,7 +28,7 @@
         </mediaLink>
       </content>
     </section>
-    <section>
+    <section address="EventNotifier">
       <title>
       EventNotifier
     </title>
@@ -114,7 +115,7 @@
         </table>
       </content>
     </section>
-    <section>
+    <section address="AccessLevel">
       <title>
       AccessLevel
     </title>
@@ -214,7 +215,7 @@
         </table>
       </content>
     </section>
-    <section>
+    <section address="UserAccessLevel">
       <title>
       UserAccessLevel
     </title>

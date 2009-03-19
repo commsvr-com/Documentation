@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       Typically, the components of a complex <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> are fixed and can be extended by subtyping. However, because each variable of a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> can be extended with additional components the <token>OPCUA</token> specification allows the extension of the standard VariableTypes defined in this document with additional components. This allows the expression of additional information in the type definition that would be contained in each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> anyway. However, it is not allowed to restrict the components of the standard VariableTypes defined in this part. An example of extending VariableTypes would be putting the standard Property NodeVersion, defined in  section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />, into the BaseDataVariableType, stating that each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">DataVariable</link> of the server will provide a NodeVersion.
     </para>

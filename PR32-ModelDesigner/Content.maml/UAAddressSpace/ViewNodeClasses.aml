@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       Underlying systems are often large and clients often have an interest in only a specific subset of the data. They do not need, or want, to be burdened with viewing nodes in the <token>AS</token> for which they have no interest.
     </para>
@@ -51,7 +52,7 @@
       </para>
       </alert>
     </introduction>
-    <section>
+    <section address="ContainsNoLoopsAttribute">
       <title>ContainsNoLoops Attribute</title>
       <content>
         <para>
@@ -59,7 +60,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="EventNotifierAttribute">
       <title>EventNotifier Attribute</title>
       <content>
         <para>

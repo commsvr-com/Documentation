@@ -2,6 +2,7 @@
 <topic id="ad0fdaba-ab78-477a-ac9d-13e06cc51939" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
+      <autoOutline/>
       <para>
       This topic points out some general considerations how the <token>AS</token> model can be used. Each server vendor can model its data in the appropriated way that fits to its needs, however, this topic gives some hints the server vendor may consider.
     </para>
@@ -12,7 +13,7 @@
       The subsection <link xlink:href="9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9" /> gives an overview over the design decisions made when modelling the information about the server described in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />.
     </para>
     </introduction>
-    <section>
+    <section address="TypeDefinitions">
       <title>Type Definitions</title>
       <content>
         <para>
@@ -20,7 +21,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="ObjectTypes">
       <title>Object Types</title>
       <content>
         <para>
@@ -34,15 +35,16 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="VariableTypes">
       <title>Variable Types</title>
       <content>
+        <autoOutline/>
         <para>
           <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f">Variable types</link> are only used for <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> and should be used when there are several variables having the same semantic (e.g. set point). It is not needed to define a <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> just reflecting the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc">data type</link> of the <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />, e.g. an “Int32VaraibleType”.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="PropertiesorDataVariables">
           <title>Properties or Data Variables</title>
           <content>
             <para>
@@ -75,7 +77,7 @@
             </list>
           </content>
         </section>
-        <section>
+        <section address="Many_Variables_and_or_Complex_Data_Types">
           <title>Many Variables and / or Complex Data Types</title>
           <content>
             <para>
@@ -113,7 +115,7 @@
         </section>
       </sections>
     </section>
-    <section>
+    <section address="Views">
       <title>Views</title>
       <content>
         <para>
@@ -121,7 +123,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Methods">
       <title>Methods</title>
       <content>
         <para>
@@ -135,7 +137,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="DefiningReferenceTypes">
       <title>Defining Reference Types</title>
       <content>
         <para>
@@ -146,7 +148,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="DefiningModellingRules">
       <title>Defining Modelling Rules</title>
       <content>
         <para>

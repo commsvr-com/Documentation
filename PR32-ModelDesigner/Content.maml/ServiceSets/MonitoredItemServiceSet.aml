@@ -1,23 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="e0bdb98b-ab27-4798-8072-c23d26c08f06" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-         titles.  Specify a numeric value as the inner text to limit it to
-         a specific number of sub-topics when creating the outline.  Specify
-         zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
+
+      <autoOutline />
       <para>The MonitoredItem Service Set is used by the Client to create and maintain MonitoredItems. MonitoredItems monitor Variables, Attributes and EventNotifiers. They generate Notifications when they detect certain conditions. They monitor Variables for a change in value or status; Attributes for a change in value; and EventNotifiers for newly generated Alarm and Event reports. </para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-       If using <autoOutline /> tag, add an address attribute to identify
-       it so that it can be jumped to with a hyperlink. -->
-    <section>
+    <section address="MonitoredItemServiceSet">
       <title>MonitoredItem Service Set</title>
       <content>
         <!-- Uncomment this to create a sub-section outline

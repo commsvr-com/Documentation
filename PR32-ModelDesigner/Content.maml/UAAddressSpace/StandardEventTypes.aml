@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       The following subclauses define event types. Their representation in the <token>AS</token> is described in section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />. Additional event types may be specified. Figure 1 informally describes the hierarchy of these event types.
     </para>
@@ -266,12 +267,13 @@
     <section address="ModelChangeEvents">
       <title>Model Change Events</title>
       <content>
+        <autoOutline/>
         <para>
           <link xlink:href="#BaseModelChangeEventType">Model change events</link> are generated to indicate a change of the <token>AS</token> structure. The change may consist of adding or deleting an node or reference object. Although the relationship of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> to its <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> is not modelled using references, changes to the DataType attribute of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> or <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> are also considered as model changes and therefore a model change event is generated if the <computerOutputInline>DataType attribute</computerOutputInline> changes.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="NodeVersionProperty">
           <title>NodeVersion Property</title>
           <content>
             <para>
@@ -318,7 +320,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="GuidelinesForModelChangeEvents">
           <title>Guidelines for Model Change Events</title>
           <content>
             <para>
@@ -355,6 +357,7 @@
       <!--<link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098#SemanticChangeEventType" />-->
       <title>SemanticChangeEventType</title>
       <content>
+        <autoOutline/>
         <para>
         Semantic change events are generated to indicate a change of the <token>AS</token> semantics. The change consists of a change to the <computerOutputInline>Value attribute</computerOutputInline> of a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link></para>
         <para>
@@ -365,7 +368,7 @@
       </para>
       </content>
       <sections>
-        <section>
+        <section address="ViewVersionAndNodeVersionProperties">
           <title>ViewVersion and NodeVersion Properties</title>
           <content>
             <para>
@@ -373,7 +376,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="Views">
           <title>Views</title>
           <content>
             <para>
@@ -381,7 +384,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="EventCompression">
           <title>Event Compression</title>
           <content>
             <para>
