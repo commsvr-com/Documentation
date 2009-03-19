@@ -7,6 +7,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline />
       <!-- Uncomment this to generate an outline of the section and sub-section
          titles.  Specify a numeric value as the inner text to limit it to
          a specific number of sub-topics when creating the outline.  Specify

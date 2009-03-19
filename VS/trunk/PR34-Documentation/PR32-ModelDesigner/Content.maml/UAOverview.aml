@@ -7,6 +7,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       The main goal of the OPC Unified Architecture is to provide a consistent mechanism allowing for the integration of process control and management systems. To meet this goal, the Address Space concept is defined. The Address Space is intended to support integration by building common discipline, i.e. semantics (knowledge base) and vocabulary (representation base) - finally a language good enough to convey information up and down between levels of competence. The Address Space is a flexible real-time process environment modeling concept. Designing of a process model means that a description of the process is created. The challenge of the specification is to make this description unambiguous. Unique information representation must provide common understanding of the process behavior under control.
     </para>
@@ -29,7 +30,7 @@
         </listItem>
       </list>
     </introduction>
-    <section>
+    <section address="DesignGoals">
       <title>Design goals</title>
       <content>
         <para>
@@ -67,19 +68,21 @@
         <para>OPC UA is designed as the migration path for OPC clients and servers that are based on Microsoft COM technology. Care has been taken in the design of OPC-UA so that existing data exposed by OPC COM servers (DA, HDA and AE) can easily be mapped and exposed via OPC UA. Vendors may choose to migrate their products natively to OPC UA or use external wrappers to convert from OPC COM to OPC UA and vice-versa. Each of the previous OPC specifications defined its own address space model and its own set of Services. OPC UA unifies the previous models into a single integrated address space with a single set of Services.</para>
       </content>
     </section>
-    <section>
+    <section address="IntegratedModelsAndServices">
       <title>Integrated models and services</title>
       <content>
+        <autoOutline/>
         <para>
         </para>
       </content>
       <sections>
-        <section>
+        <section address="SecurityModel">
           <title>Security model</title>
           <content>
+            <autoOutline/>
           </content>
           <sections>
-            <section>
+            <section address="General">
               <title>General</title>
               <content>
                 <para>
@@ -92,7 +95,7 @@
               </para>
               </content>
             </section>
-            <section>
+            <section address="DiscoveryAndSessionEstablishment">
               <title>Discovery and Session establishment</title>
               <content>
                 <para>
@@ -116,7 +119,7 @@
               </para>
               </content>
             </section>
-            <section>
+            <section address="Auditing">
               <title>Auditing</title>
               <content>
                 <para>
@@ -129,7 +132,7 @@
               </para>
               </content>
             </section>
-            <section>
+            <section address="TransportSecurity">
               <title>Transport security</title>
               <content>
                 <para>
@@ -141,7 +144,7 @@
             </section>
           </sections>
         </section>
-        <section>
+        <section address="IntegratedAddressSpaceModel">
           <title>Integrated Address Space model</title>
           <content>
             <para>
@@ -172,7 +175,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="IntegratedObjectModel">
           <title>Integrated object model</title>
           <content>
             <para>
@@ -182,7 +185,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="IntegratedServices">
           <title>Integrated services</title>
           <content>
             <para>
@@ -205,7 +208,7 @@
         </section>
       </sections>
     </section>
-    <section>
+    <section address="Sessions">
       <title>Sessions</title>
       <content>
         <para>
@@ -216,7 +219,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Redundancy">
       <title>Redundancy</title>
       <content>
         <para>

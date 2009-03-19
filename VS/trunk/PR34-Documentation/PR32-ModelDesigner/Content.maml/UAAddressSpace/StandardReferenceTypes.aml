@@ -8,6 +8,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       This section defines reference types as an inherent part of the <token>OPCUA</token><token>AS</token> model. Figure 1 informally describes the hierarchy of these reference types. Additional reference types may be specified. Section <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /> describes their representation in the <token>AS</token>.
     </para>

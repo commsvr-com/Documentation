@@ -2,8 +2,7 @@
 <topic id="2c5b2d66-8e34-490c-9ab3-4d852a892a30" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <!-- <link xlink:href="2c5b2d66-8e34-490c-9ab3-4d852a892a30" /> -->
-      <!-- <autoOutline /> -->
+      <autoOutline />
       <para>
       The Server Object and its containing Objects and Variables are built in a way that the information can be gained in several ways, suitable for different kinds of clients having different requirements. Figure 1 gives an overview of the containing Objects and Variables of the diagnostic information of the Server Object and where the information can be found.
     </para>

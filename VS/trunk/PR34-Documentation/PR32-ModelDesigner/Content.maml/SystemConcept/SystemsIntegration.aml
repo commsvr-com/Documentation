@@ -7,11 +7,12 @@
  </summary>
  -->
     <introduction>
+      <autoOutline/>
       <para>
       Complexity of modern automation systems requires adequate task allocation to the distributed control subsystems. They have to cooperate in order to complete common business target function. Each subsystem (as a component) must communicate with others. This is the critical condition regardless of the system architecture. This structure is strongly dependent on organization culture, type of technology and target process. Communication is necessary for exchanging data for production state analysis, operation actions scheduling, supervisory control and task synchronization in the process as a large whole. Optimal communication has to meet real-time system requirements. It means, that time is a crucial notion which must be taken into consideration at the very beginning of the process control design stage.
     </para>
     </introduction>
-    <section>
+    <section address="System_Integration">
       <title>System Integration</title>
       <content>
         <para>
@@ -55,7 +56,7 @@
         </list>
       </content>
     </section>
-    <section>
+    <section address="Fundamental_problems_of_systems_integration">
       <title>Fundamental problems of systems integration</title>
       <content>
         <para>More then half enterprises which were surveyed in 2006 declared that difficulties with the integration of the existing systems are the most important obstacle to expand the process and business management support.</para>

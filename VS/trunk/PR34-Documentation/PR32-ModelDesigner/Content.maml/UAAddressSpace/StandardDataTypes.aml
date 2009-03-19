@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       The following subclauses define data types. Their representation in the <token>AS</token> and the data type hierarchy is described in section <link xlink:href="2b3534cf-4d77-4d4c-afd5-ab90c0157a66" />. Additional data types may by specified.
     </para>
@@ -15,6 +16,7 @@
     <section address="NodeId">
       <title>NodeId</title>
       <content>
+        <autoOutline/>
         <para>
         This built-in DataType is composed of three elements that identify a node within a server.
       </para>
@@ -74,7 +76,7 @@
       </para>
       </content>
       <sections>
-        <section>
+        <section address="namespaceIndex">
           <title>namespaceIndex</title>
           <content>
             <para>
@@ -94,7 +96,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="identifierType">
           <title>identifierType</title>
           <content>
             <para>
@@ -108,7 +110,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="identifier">
           <title>identifier</title>
           <content>
             <para>

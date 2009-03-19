@@ -7,6 +7,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline />
       <!-- Uncomment this to generate an outline of the section and sub-section
          titles.  Specify a numeric value as the inner text to limit it to
          a specific number of sub-topics when creating the outline.  Specify
@@ -28,7 +29,7 @@
     <!-- Add one or more top-level section elements.  These are collapsible.
        If using <autoOutline /> tag, add an address attribute to identify
        it so that it can be jumped to with a hyperlink. -->
-    <section>
+    <section address="ServerType_and_Server_Object">
       <title>ServerType and Server Object</title>
       <content>
         <para>
@@ -36,7 +37,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Typed_complex_Objects">
       <title>Typed complex Objects beneath the Server Object</title>
       <content>
         <para>
@@ -44,7 +45,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Properties_vs_Data_Variables">
       <title>Properties vs. Data Variables</title>
       <content>
         <para>
@@ -58,7 +59,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Complex_Variables_using_complex_DataTypes">
       <title>Complex Variables using complex DataTypes</title>
       <content>
         <para>
@@ -69,7 +70,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Complex_Variables_having_an_array">
       <title>Complex Variables having an array</title>
       <content>
         <para>
@@ -82,7 +83,7 @@
         </alert>
       </content>
     </section>
-    <section>
+    <section address="Redundant_information">
       <title>Redundant information</title>
       <content>
         <para>
@@ -99,7 +100,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Usage_of_the_BaseDataVariableType">
       <title>Usage of the BaseDataVariableType</title>
       <content>
         <para>
@@ -107,7 +108,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Subtyping">
       <title>Subtyping</title>
       <content>
         <para>
@@ -118,7 +119,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Extensibility_mechanism">
       <title>Extensibility mechanism</title>
       <content>
         <!--<para>

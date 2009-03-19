@@ -2,6 +2,7 @@
 <topic id="4ff5fa83-9b3b-4c4f-8160-f5261ba30633" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
+      <autoOutline/>
       <para>
       This topic defines a graphical notation for <token>OPCUA</token><token>AS</token> data. This notation is used in other topics to expose examples of <token>AS</token> data. However, it is not required to use this notation to expose <token>AS</token> data.
     </para>
@@ -15,7 +16,7 @@
       Common to both notations is that neither any color nor the thickness or stile of lines is relevant for the notation. Those effects can be used to highlight certain aspects of a figure.
     </para>
     </introduction>
-    <section>
+    <section address="SimpleNotation">
       <title>Simple Notation</title>
       <content>
         <para>
@@ -350,7 +351,7 @@
         </table>
       </content>
     </section>
-    <section>
+    <section address="ExtendedNotation">
       <title>
      Extended Notation
     </title>

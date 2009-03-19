@@ -8,6 +8,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       The ObjectType <token>NodeClass</token> inherits the base attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /><token>NodeClass</token> defined in <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />.  The additional <computerOutputInline>IsAbstract</computerOutputInline> attribute indicates if the ObjectType node is abstract or not.
     </para>
@@ -38,7 +39,7 @@
       All nodes referenced with hierarchical references shall have unique browse names in the context of an ObjectType (see <link xlink:href="69856d11-e274-48c1-87d7-bbc7ec5e6e18" />).
     </para>
     </introduction>
-    <section>
+    <section address="StandardFolderType">
       <title>Standard FolderType</title>
       <content>
         <para>
@@ -46,7 +47,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Client_side_creation_of_objects_of_an_ObjectType">
       <title>Client-side creation of objects of an ObjectType</title>
       <content>
         <para>

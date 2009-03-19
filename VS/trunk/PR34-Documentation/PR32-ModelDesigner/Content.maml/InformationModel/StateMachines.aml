@@ -1,53 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="022e0eb8-59d2-4c81-a7d7-3646494f55a2" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-         titles.  Specify a numeric value as the inner text to limit it to
-         a specific number of sub-topics when creating the outline.  Specify
-         zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
+      <autoOutline />
       <para>
-      This section describes the basic infrastructure to model state machines. It defines ObjectTypes, VariableTypes and ReferenceTypes and explains how they should be used.
-    </para>
+        This section describes the basic infrastructure to model state machines. It defines ObjectTypes, VariableTypes and ReferenceTypes and explains how they should be used.
+      </para>
       <para>
-      This section is normative, i.e. the types defined in the section have to be used as defined. However, it is not required but strongly recommended that a server uses these types to expose its state machines. The defined types may be subtyped to refine their behaviour.
-    </para>
+        This section is normative, i.e. the types defined in the section have to be used as defined. However, it is not required but strongly recommended that a server uses these types to expose its state machines. The defined types may be subtyped to refine their behaviour.
+      </para>
       <para>
-      The scope of the state machines described in this section is to provide an appropriate foundation for state machines needed by
-      section <link xlink:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" />
-      and
-      section <link xlink:href="96ffa07e-22ab-4d77-a1ae-e476e54a5b63" />
-      . It does not provide more complex functionality of a state machine like parallel states, forks and joins, history states, choices and junctions etc. However, the base state machine defined in this section can be extended to support such concepts.
-    </para>
+        The scope of the state machines described in this section is to provide an appropriate foundation for state machines needed by
+        section <link xlink:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" />
+        and
+        section <link xlink:href="96ffa07e-22ab-4d77-a1ae-e476e54a5b63" />
+        . It does not provide more complex functionality of a state machine like parallel states, forks and joins, history states, choices and junctions etc. However, the base state machine defined in this section can be extended to support such concepts.
+      </para>
       <para>
-      The following clauses describe examples of state machines, define state machines in the context of this section and define the representation of state machines in <token>OPCUA</token>. Finally, some examples of state machines, represented in <token>OPCUA</token>, are given.
-    </para>
+        The following clauses describe examples of state machines, define state machines in the context of this section and define the representation of state machines in <token>OPCUA</token>. Finally, some examples of state machines, represented in <token>OPCUA</token>, are given.
+      </para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-       If using <autoOutline /> tag, add an address attribute to identify
-       it so that it can be jumped to with a hyperlink. -->
-    <section>
+    <section address="Examples_of_finite_state_machines">
       <title>Examples of finite state machines</title>
       <content>
+        <autoOutline/>
         <para>
         </para>
       </content>
       <sections>
-        <section>
+        <section address="Simple_state_machine">
           <title>Simple state machine</title>
           <content>
             <para>
-            The following example provides an overview of the base features that the state machines defined in this Appendix will support. In the following a more complex example is given, that also supports sub-state machines.
-          </para>
+              The following example provides an overview of the base features that the state machines defined in this Appendix will support. In the following a more complex example is given, that also supports sub-state machines.
+            </para>
             <para>
-            Figure 1 gives an overview over a simple state machine. It contains the three states “State1”, “State2” and “State3”. There are transitions from “State1” to “State2”, “State2” to “State2”, etc. Some of the transitions provide additional information with regard to what causes (or triggers) the transition, e.g. the call of “Method1” for the transition from “State1” to “State2”. The effect (or action) of the transition can also be specified, e.g. the generation of an Event of the “EventType1” in the same transition. The notation used to identify the cause is simply listing it on the transition, the effect is prefixed with a “/”. More than one cause or effect are separated by a “,”. Not every transition has to have a cause or effect, for example the transition between “State2” and “State3”.
-          </para>
+              Figure 1 gives an overview over a simple state machine. It contains the three states “State1”, “State2” and “State3”. There are transitions from “State1” to “State2”, “State2” to “State2”, etc. Some of the transitions provide additional information with regard to what causes (or triggers) the transition, e.g. the call of “Method1” for the transition from “State1” to “State2”. The effect (or action) of the transition can also be specified, e.g. the generation of an Event of the “EventType1” in the same transition. The notation used to identify the cause is simply listing it on the transition, the effect is prefixed with a “/”. More than one cause or effect are separated by a “,”. Not every transition has to have a cause or effect, for example the transition between “State2” and “State3”.
+            </para>
             <mediaLink>
               <caption placement="after" lead="Figure 1">Example of a simple state machine</caption>
               <image placement="center" xlink:href="ac079556-eb78-44dc-9c34-7330fc715f13" />
@@ -55,12 +44,12 @@
             <para>For simplicity, the state machines described in this section will only support causes in form of specifying Methods that have to be called and effects in form of EventTypes of Events that are generated. However, the defined infrastructure allows extending this to support additional different causes and effects.</para>
           </content>
         </section>
-        <section>
+        <section address="State_machine_containing_substates">
           <title>State machine containing substates</title>
           <content>
             <para>
-            Figure 2 shows an example of a state machine where “State6” is a sub-state-machine. This means, that when the overall state machine is in State6, this state can be distinguish to be in the sub-states “State7” or “State8”. Sub-state-machines can be nested, i.e. “State7” could be another sub-state-machine.
-          </para>
+              Figure 2 shows an example of a state machine where “State6” is a sub-state-machine. This means, that when the overall state machine is in State6, this state can be distinguish to be in the sub-states “State7” or “State8”. Sub-state-machines can be nested, i.e. “State7” could be another sub-state-machine.
+            </para>
             <mediaLink>
               <caption placement="after" lead="Figure 2">Example of a state machine having a sub-machine</caption>
               <image placement="center" xlink:href="9db19ad2-d040-4cc9-9fc9-b863ae7a7317" />
@@ -69,460 +58,463 @@
         </section>
       </sections>
     </section>
-    <section>
+    <section address="Definition_of_state_machine">
       <title>Definition of state machine</title>
       <content>
         <para>
-        The infrastructure of state machines defined in this section only deals with the basics of state machines needed to support
-        section <link xlink:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" />
-        and
-        section <link xlink:href="96ffa07e-22ab-4d77-a1ae-e476e54a5b63" />
-        . The intention is to keep the basic simple but extensible.
-      </para>
+          The infrastructure of state machines defined in this section only deals with the basics of state machines needed to support
+          section <link xlink:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" />
+          and
+          section <link xlink:href="96ffa07e-22ab-4d77-a1ae-e476e54a5b63" />
+          . The intention is to keep the basic simple but extensible.
+        </para>
         <para>
-        For the state machines defined in this section we assume that state machines are typed and instances of a type have their states and semantics specified by the type. For some types this means that the states and transitions are fixed. For other types the states and transitions may be dynamic or unknown. A state machine where all the states are specified explicitly by the type is called a finite state machine.
-      </para>
+          For the state machines defined in this section we assume that state machines are typed and instances of a type have their states and semantics specified by the type. For some types this means that the states and transitions are fixed. For other types the states and transitions may be dynamic or unknown. A state machine where all the states are specified explicitly by the type is called a finite state machine.
+        </para>
         <para>
-        Therefore we distinguish between StateMachineType and StateMachine. The StateMachineType specifies a description of the state machine – its states, transitions, etc. – whereas the StateMachine is an instance of the StateMachineType and only contains the current state.
-      </para>
+          Therefore we distinguish between StateMachineType and StateMachine. The StateMachineType specifies a description of the state machine – its states, transitions, etc. – whereas the StateMachine is an instance of the StateMachineType and only contains the current state.
+        </para>
         <para>
-        Each StateMachine contains information about the current state. If the StateMachineType has SubStateMachines, the StateMachine also contains information about the current state of the SubStateMachines. StateMachines which have their states completely defined by the type are instances of a FiniteStateMachineType.
-      </para>
+          Each StateMachine contains information about the current state. If the StateMachineType has SubStateMachines, the StateMachine also contains information about the current state of the SubStateMachines. StateMachines which have their states completely defined by the type are instances of a FiniteStateMachineType.
+        </para>
         <para>
-        Each FiniteStateMachineType has one or more States. For simplicity we do not distinguish between different States like the start or the end states.
-      </para>
+          Each FiniteStateMachineType has one or more States. For simplicity we do not distinguish between different States like the start or the end states.
+        </para>
         <para>
-        Each State can have one or more SubStateMachines.
-      </para>
+          Each State can have one or more SubStateMachines.
+        </para>
         <para>
-        Each FiniteStateMachineType may have one or more Transitions. A Transition is directed and points from one State to another State.
-      </para>
+          Each FiniteStateMachineType may have one or more Transitions. A Transition is directed and points from one State to another State.
+        </para>
         <para>
-        Each Transition can have one or more Causes. A Cause leads a FiniteStateMachine to change its current State from the source of the Transition to its target. In this Appendix we only specify Method calls to be Causes of Transitions. Transitions do not have to have a Cause. A Transition can always be caused by some server-internal logic that is not exposed in the <token>AS</token>.
-      </para>
+          Each Transition can have one or more Causes. A Cause leads a FiniteStateMachine to change its current State from the source of the Transition to its target. In this Appendix we only specify Method calls to be Causes of Transitions. Transitions do not have to have a Cause. A Transition can always be caused by some server-internal logic that is not exposed in the <token>AS</token>.
+        </para>
         <para>
-        Each Transition can have one or more Effects. An Effect occurs if the Transition is used to change the State of a StateMachine. In this Appendix we only specify the generation of Events to be Effects of a Transition. A Transition is not required to expose any Effects in the <token>AS</token>.
-      </para>
+          Each Transition can have one or more Effects. An Effect occurs if the Transition is used to change the State of a StateMachine. In this Appendix we only specify the generation of Events to be Effects of a Transition. A Transition is not required to expose any Effects in the <token>AS</token>.
+        </para>
         <para>
-        Although this section only specifies simple concepts for state machines, the provided infrastructure is extensible. If needed, special States can be defined as well as additional Causes or Effects.
-      </para>
+          Although this section only specifies simple concepts for state machines, the provided infrastructure is extensible. If needed, special States can be defined as well as additional Causes or Effects.
+        </para>
       </content>
     </section>
-    <section>
+    <section address="Representation_of_state_machines">
       <title>
-      Representation of state machines in the <token>AS</token></title>
+        Representation of state machines in the <token>AS</token>
+      </title>
       <content>
+        <autoOutline/>
         <para>
         </para>
       </content>
       <sections>
-        <section>
+        <section address="Overview">
           <title>Overview</title>
           <content>
             <para>
-            The types defined in this section are illustrated in Figure 3. The MyFiniteStateMachineType is a minimal example which illustrates how these Types can be used to describe a StateMachine. See
-            section <link xlink:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" />
-            for additional examples of StateMachines.
-          </para>
+              The types defined in this section are illustrated in Figure 3. The MyFiniteStateMachineType is a minimal example which illustrates how these Types can be used to describe a StateMachine. See
+              section <link xlink:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" />
+              for additional examples of StateMachines.
+            </para>
             <mediaLink>
               <caption placement="after" lead="Figure 3">The StateMachine Information Model</caption>
               <image placement="center" xlink:href="51fff8cb-44b1-4b3f-a371-c283749e9139" />
             </mediaLink>
           </content>
         </section>
-        <section>
+        <section address="StateMachineType">
           <title>StateMachineType</title>
           <content>
             <para>
-            The StateMachineType is the base <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> for all StateMachineTypes. It defines a single <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> which represents the current state of the machine. An instance of this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> shall generate an Event whenever a significant state change occurs. The Server decides which state changes are significant. Servers shall use the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link><link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> to indicate which Event(s) could be produced by the StateMachine.
-          </para>
+              The StateMachineType is the base <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> for all StateMachineTypes. It defines a single <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> which represents the current state of the machine. An instance of this <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> shall generate an Event whenever a significant state change occurs. The Server decides which state changes are significant. Servers shall use the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link><link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> to indicate which Event(s) could be produced by the StateMachine.
+            </para>
             <para>
-            Subtypes may add Methods which affect the state of the machine. The Executable Attribute is used to indicate whether the Method is valid given the current state of the machine. The generation of AuditEvents for Methods is described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. A StateMachine may not be active. In this case, the CurrentState and LastTransition Variables shall have a status equal to Bad_StateNotActive.
-          </para>
+              Subtypes may add Methods which affect the state of the machine. The Executable Attribute is used to indicate whether the Method is valid given the current state of the machine. The generation of AuditEvents for Methods is described in section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. A StateMachine may not be active. In this case, the CurrentState and LastTransition Variables shall have a status equal to Bad_StateNotActive.
+            </para>
             <para>
-            Subtypes may add components which are instances of StateMachineTypes. These components are considered to be sub-states of the StateMachine. SubStateMachines are only active when the parent machine is in an appropriate state.
-          </para>
+              Subtypes may add components which are instances of StateMachineTypes. These components are considered to be sub-states of the StateMachine. SubStateMachines are only active when the parent machine is in an appropriate state.
+            </para>
             <para>
               <legacyBold>Events</legacyBold> produced by SubStateMachines may be suppressed by the parent machine. In some cases, the parent machine will produce a single Event that reflects changes in multiple SubStateMachines.
-          </para>
+            </para>
             <para>
               <legacyBold>FiniteStateMachineType</legacyBold> is subtype of StateMachineType that provides a mechanism to explicitly define the states and transitions. A Server should use this mechanism if it knows what the possible states are and the state machine is not trivial.
-          </para>
+            </para>
             <para>
               <legacyBold>CurrentState</legacyBold> stores the current state of an instance of the StateMachineType. CurrentState provides a human readable name for the current state which may not be suitable for use in application control logic. Applications should use the Id Property of CurrentState if they need a unique identifier for the state.
-          </para>
+            </para>
             <para>
               <legacyBold>LastTransition</legacyBold> stores the last transition which occurred in an instance of the StateMachineType. LastTransition provides a human readable name for the last transition which may not be suitable for use in application control logic. Applications should use the Id Property of LastTransition if they need a unique identifier for the transition.
-          </para>
+            </para>
           </content>
         </section>
-        <section>
+        <section address="StateVariableType">
           <title>StateVariableType</title>
           <content>
             <para>
-            The StateVariableType is the base <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> for Variables that store the current state of a StateMachine as a human readable name
-          </para>
+              The StateVariableType is the base <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> for Variables that store the current state of a StateMachine as a human readable name
+            </para>
             <para>
               <legacyBold>Id</legacyBold> is a name which uniquely identifies the current state within the StateMachineType. A subtype may restrict the DataType.
-          </para>
+            </para>
             <para>
               <legacyBold>Name</legacyBold> is a QualifiedName which uniquely identifies the current state within the StateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>Number</legacyBold> is an integer which uniquely identifies the current state within the StateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>EffectiveDisplayName</legacyBold> contains a human readable name for the current state of the state machine after taking the state of any SubStateMachines in account. There is no rule specified for which state or sub-state should be used. It is up to the server and will depend on the semantics of the StateMachineType.
-          </para>
+            </para>
             <para>
-            StateMachines produce Events which may include the current state of a StateMachine. In that case servers shall provide all the optional Properties of the StateVariableType in the Event, even if they are not provided on the instances in the <token>AS</token>.
-          </para>
+              StateMachines produce Events which may include the current state of a StateMachine. In that case servers shall provide all the optional Properties of the StateVariableType in the Event, even if they are not provided on the instances in the <token>AS</token>.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="TransitionVariableType">
           <title>TransitionVariableType</title>
           <content>
             <para>
-            The TransitionVariableType is the base <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> for Variables that store a Transition that occurred within a StateMachine as a human readable name.
-          </para>
+              The TransitionVariableType is the base <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> for Variables that store a Transition that occurred within a StateMachine as a human readable name.
+            </para>
             <para>
-            The SourceTimestamp for the value specifies when the Transition occurred. This value may also be exposed with the TransitionTime Property.
-          </para>
+              The SourceTimestamp for the value specifies when the Transition occurred. This value may also be exposed with the TransitionTime Property.
+            </para>
             <para>
               <legacyBold>Id</legacyBold> is a name which uniquely identifies a Transition within the StateMachineType. A subtype may restrict the DataType.
-          </para>
+            </para>
             <para>
               <legacyBold>Name</legacyBold> is a QualifiedName which uniquely identifies a transition within the StateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>Number</legacyBold> is an integer which uniquely identifies a transition within the StateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>TransitionTime</legacyBold> specifies when the transition occurred.
-          </para>
+            </para>
           </content>
         </section>
-        <section>
+        <section address="FiniteStateMachineType">
           <title>FiniteStateMachineType</title>
           <content>
             <para>
-            The FiniteStateMachineType is the base <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> for StateMachines that explicitly define the possible States and Transitions. Once the States are defined subtypes shall not add new States
-          </para>
+              The FiniteStateMachineType is the base <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> for StateMachines that explicitly define the possible States and Transitions. Once the States are defined subtypes shall not add new States
+            </para>
             <para>
-            The States of the machine are represented with instances of the StateType <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />. Each State shall have a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> which is unique within the StateMachine and shall have a StateNumber which shall also be unique across all States defined in the StateMachine. A concrete subtype of FiniteStateMachineType shall define at least one State.
-          </para>
+              The States of the machine are represented with instances of the StateType <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />. Each State shall have a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> which is unique within the StateMachine and shall have a StateNumber which shall also be unique across all States defined in the StateMachine. A concrete subtype of FiniteStateMachineType shall define at least one State.
+            </para>
             <para>
-            A StateMachine may define one State which is an instance of the InitialStateType. This State is the State that the machine goes into when it is activated.
-          </para>
+              A StateMachine may define one State which is an instance of the InitialStateType. This State is the State that the machine goes into when it is activated.
+            </para>
             <para>
-            The Transitions that may occur are represented with instances of the TransitionType. Each Transition shall have a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> which is unique within the StateMachine and may have a TransitionNumber which shall also be unique across all Transitions defined in the StateMachine.
-          </para>
+              The Transitions that may occur are represented with instances of the TransitionType. Each Transition shall have a <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> which is unique within the StateMachine and may have a TransitionNumber which shall also be unique across all Transitions defined in the StateMachine.
+            </para>
             <para>
-            The initial State for a Transition is a StateType Object which is the target of a FromState Reference. The final State for a Transition is a StateType Object which is the target of a ToState Reference. The FromState and ToState References shall always be specified.
-          </para>
+              The initial State for a Transition is a StateType Object which is the target of a FromState Reference. The final State for a Transition is a StateType Object which is the target of a ToState Reference. The FromState and ToState References shall always be specified.
+            </para>
             <para>
-            A Transition may produce an Event. The Event is indicated by a HasEffect Reference to a subtype of <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>. The StateMachineType shall have <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> References to the targets of a HasEffect Reference for each of its Transitions.
-          </para>
+              A Transition may produce an Event. The Event is indicated by a HasEffect Reference to a subtype of <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>. The StateMachineType shall have <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#GeneratesEvent">GeneratesEvent</link> References to the targets of a HasEffect Reference for each of its Transitions.
+            </para>
             <para>
-            A FiniteStateMachineType may define Methods that cause a transition to occur. These Methods are targets of HasCause References for each of the Transitions that may be triggered by the Method. The Executable Attribute for a Method is used to indicate whether the current State of the machine allows the Method to be called.
-          </para>
+              A FiniteStateMachineType may define Methods that cause a transition to occur. These Methods are targets of HasCause References for each of the Transitions that may be triggered by the Method. The Executable Attribute for a Method is used to indicate whether the current State of the machine allows the Method to be called.
+            </para>
             <para>
-            A FiniteStateMachineType may have sub-state-machines which are represented as instances of StateMachineType ObjectTypes. Each State shall have a HasSubStateMachine Reference to the StateMachineType Object which represents the child States. The SubStateMachine is not active if the parent State is not active.
-          </para>
+              A FiniteStateMachineType may have sub-state-machines which are represented as instances of StateMachineType ObjectTypes. Each State shall have a HasSubStateMachine Reference to the StateMachineType Object which represents the child States. The SubStateMachine is not active if the parent State is not active.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="FiniteStateVariableType">
           <title>FiniteStateVariableType</title>
           <content>
             <para>
-            The FiniteStateVariableType is a subtype of StateVariableType and is used to store the current state of a FiniteStateMachine as a human readable name
-          </para>
+              The FiniteStateVariableType is a subtype of StateVariableType and is used to store the current state of a FiniteStateMachine as a human readable name
+            </para>
             <para>
               <legacyBold>Id</legacyBold> is inherited from the StateVariableType and overridden to reflect the required DataType. This value shall be the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of one of the State Objects of the FiniteStateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>Name</legacyBold> inherited from StateVariableType shall be the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> of one of the State Objects of the FiniteStateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>Number</legacyBold> inherited from StateVariableType shall be the StateNumber for one of the State Objects of the FiniteStateMachineType
-          </para>
+            </para>
           </content>
         </section>
-        <section>
+        <section address="FiniteTransitionVariableType">
           <title>FiniteTransitionVariableType</title>
           <content>
             <para>
-            The FiniteTransitionVariableType is a subtype of TransitionVariableType and is used to store a Transition that occurred within a FiniteStateMachine as a human readable name.
-          </para>
+              The FiniteTransitionVariableType is a subtype of TransitionVariableType and is used to store a Transition that occurred within a FiniteStateMachine as a human readable name.
+            </para>
             <para>
               <legacyBold>Id</legacyBold> is inherited from the TransitionVariableType and overridden to reflect the required DataType. This value shall be the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of one of the Transition Objects of the FiniteStateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>Name</legacyBold> inherited from the TransitionVariableType shall be the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName</link> of one of the Transition Objects of the FiniteStateMachineType.
-          </para>
+            </para>
             <para>
               <legacyBold>Number</legacyBold> inherited from the TransitionVariableType shall be the TransitionNumber for one of the Transition Objects of the FiniteStateMachineType.
-          </para>
+            </para>
           </content>
         </section>
-        <section>
+        <section address="StateType">
           <title>StateType</title>
           <content>
             <para>
-            States of a FiniteStateMachine are represented as Objects of the StateType
-          </para>
+              States of a FiniteStateMachine are represented as Objects of the StateType
+            </para>
           </content>
         </section>
-        <section>
+        <section address="InitialStateType">
           <title>InitialStateType</title>
           <content>
             <para>
-            The InitialStateType is a subtype of the StateType and is formally defined in Table 148. An Object of the InitialStateType represents the State that a FiniteStateMachine enters when it activated. Each FiniteStateMachine can have at most one State of type InitialStateType, but a FiniteStateMachine does not have to have a State of this type.
-          </para>
+              The InitialStateType is a subtype of the StateType and is formally defined in Table 148. An Object of the InitialStateType represents the State that a FiniteStateMachine enters when it activated. Each FiniteStateMachine can have at most one State of type InitialStateType, but a FiniteStateMachine does not have to have a State of this type.
+            </para>
             <para>
-            A StateMachine goes into its initial state whenever the parent state is entered. However, a state machine may define a transition that goes directly to a state of the SubStateMachine. In this case the SubStateMachine goes into that State instead of the initial State. The two scenarios are illustrated in Figure 4. The transition from State5 to State6 causes the SubStateMachine to go into the initial State (State7), however, the transition from State4 to State8 causes the parent machine to go to State6 and the SubStateMachine will go to State8.
-          </para>
+              A StateMachine goes into its initial state whenever the parent state is entered. However, a state machine may define a transition that goes directly to a state of the SubStateMachine. In this case the SubStateMachine goes into that State instead of the initial State. The two scenarios are illustrated in Figure 4. The transition from State5 to State6 causes the SubStateMachine to go into the initial State (State7), however, the transition from State4 to State8 causes the parent machine to go to State6 and the SubStateMachine will go to State8.
+            </para>
             <mediaLink>
               <caption placement="after" lead="Figure 4">Example of an initial State in a sub-machine</caption>
               <image placement="center" xlink:href="7541e48c-8c6a-4c1a-a1be-e064491d8e10" />
             </mediaLink>
             <para>
-            If no initial state for a SubStateMachine exists and the State having the SubStateMachine is entered directly, then the State of the SubStateMachine is server specific.
-          </para>
+              If no initial state for a SubStateMachine exists and the State having the SubStateMachine is entered directly, then the State of the SubStateMachine is server specific.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="TransitionTypeateType">
           <title>TransitionTypeateType</title>
           <content>
             <para>
-            Transitions of a FiniteStateMachine are represented as Objects of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType.
-          </para>
+              Transitions of a FiniteStateMachine are represented as Objects of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType.
+            </para>
             <para>
-            Each valid Transition shall have exactly one FromState Reference and exactly one ToState Reference, each pointing to an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType.
-          </para>
+              Each valid Transition shall have exactly one FromState Reference and exactly one ToState Reference, each pointing to an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType.
+            </para>
             <para>
-            Each Transition can have one or more HasCause References pointing to the cause that triggers the Transition.
-          </para>
+              Each Transition can have one or more HasCause References pointing to the cause that triggers the Transition.
+            </para>
             <para>
-            Each Transition can have one or more HasEffect References pointing to the effects that occur when the Transition was triggered.
-          </para>
+              Each Transition can have one or more HasEffect References pointing to the effects that occur when the Transition was triggered.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="FromState">
           <title>FromState</title>
           <content>
             <para>
-            The FromState is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
-          </para>
+              The FromState is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+            </para>
             <para>
-            The semantic of this type is to point form a Transition to the starting State the Transition connects.
-          </para>
+              The semantic of this type is to point form a Transition to the starting State the Transition connects.
+            </para>
             <para>
-            The SourceNode of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The TargetNode of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType or one of its subtypes.
-          </para>
+              The SourceNode of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The TargetNode of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType or one of its subtypes.
+            </para>
             <para>
-            Each Transition can have one or more HasEffect References pointing to the effects that occur when the Transition was triggered.
-          </para>
+              Each Transition can have one or more HasEffect References pointing to the effects that occur when the Transition was triggered.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="ToState">
           <title>ToState</title>
           <content>
             <para>
-            The ToState is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
-          </para>
+              The ToState is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+            </para>
             <para>
-            The semantic of this  type is to point form a Transition to the ending State the Transition connects.
-          </para>
+              The semantic of this  type is to point form a Transition to the ending State the Transition connects.
+            </para>
             <para>
-            The source node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The target node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType or one of its subtypes.
-          </para>
+              The source node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The target node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType or one of its subtypes.
+            </para>
             <para>
-            References of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> may be only exposed uni-directional. Sometimes this is required, for example, if a Transition points to a State of a sub-machine.
-          </para>
+              References of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> may be only exposed uni-directional. Sometimes this is required, for example, if a Transition points to a State of a sub-machine.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="HasCause">
           <title>HasCause</title>
           <content>
             <para>
-            The HasCause type is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
-          </para>
+              The HasCause type is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+            </para>
             <para>
-            The semantic of this type is to point form a Transition to something that causes the Transition. In this Appendix we only define Methods as Causes. However, the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> is not restricted to point to Methods.
-          </para>
+              The semantic of this type is to point form a Transition to something that causes the Transition. In this Appendix we only define Methods as Causes. However, the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> is not restricted to point to Methods.
+            </para>
             <para>
-            The source node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The TargetNode can be of any <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee">node class</link>.
-          </para>
+              The source node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The TargetNode can be of any <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee">node class</link>.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="HasEffect">
           <title>HasEffect</title>
           <content>
             <para>
-            The HasEffect is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
-          </para>
+              The HasEffect is a concrete reference type and can be used directly. It is a subtype of NonHierarchicalReferences.
+            </para>
             <para>
-            The semantic of this reference type is to point form a Transition to something that will be effected when the Transition is triggered. In this Appendix we only define EventTypes as Effects. However, the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> is not restricted to point to EventTypes.
-          </para>
+              The semantic of this reference type is to point form a Transition to something that will be effected when the Transition is triggered. In this Appendix we only define EventTypes as Effects. However, the <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> is not restricted to point to EventTypes.
+            </para>
             <para>
-            The source node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The TargetNode can be of any <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee">node class</link>.
-          </para>
+              The source node of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> TransitionType or one of its subtypes. The TargetNode can be of any <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee">node class</link>.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="HasSubStateMachine">
           <title>HasSubStateMachine</title>
           <content>
             <para>
-            The HasSubStateMachine is a concrete type and can be used directly. It is a subtype of NonHierarchicalReferences.
-          </para>
+              The HasSubStateMachine is a concrete type and can be used directly. It is a subtype of NonHierarchicalReferences.
+            </para>
             <para>
-            The semantic of this type is to point from a State to an instance of a StateMachineType which represents the sub-states for the State.
-          </para>
+              The semantic of this type is to point from a State to an instance of a StateMachineType which represents the sub-states for the State.
+            </para>
             <para>
-            The SourceNode of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType. The TargetNode shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateMachineType or one of its subtypes. Each Object can be the TargetNode of at most one HasSubStateMachine Reference.
-          </para>
+              The SourceNode of this <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateType. The TargetNode shall be an Object of the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> StateMachineType or one of its subtypes. Each Object can be the TargetNode of at most one HasSubStateMachine Reference.
+            </para>
             <para>
-            The SourceNode (the state) and the TargetNode (the SubStateMachine) shall belong to the same StateMachine, i.e. both shall be referenced from the same Object of type StateMachineType using a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> Reference or a subtype of <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>.
-          </para>
+              The SourceNode (the state) and the TargetNode (the SubStateMachine) shall belong to the same StateMachine, i.e. both shall be referenced from the same Object of type StateMachineType using a <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> Reference or a subtype of <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link>.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="TransitionEventType">
           <title>TransitionEventType</title>
           <content>
             <para>
-            The TransitionEventType is a subtype of the <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>. It can be used to generate an Event identifying that a Transition of a StateMachine was triggered.
-          </para>
+              The TransitionEventType is a subtype of the <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>. It can be used to generate an Event identifying that a Transition of a StateMachine was triggered.
+            </para>
             <para>
-            The TransitionEventType inherits the Properties of the <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>.
-          </para>
+              The TransitionEventType inherits the Properties of the <link xlink:href="f430b65b-e139-41d1-a250-269480d3e36c#BaseEventType">BaseEventType</link>.
+            </para>
             <para>
-            The inherited Property SourceNode shall be filled with the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the StateMachine instance were the Transition occurs. If the Transition occurs in a SubStateMachine, then the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the SubStateMachine has to be used. If the Transition occurs between a StateMachine and a SubStateMachine, then the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the StateMachine has to be used, independent of the direction of the Transition.
-          </para>
+              The inherited Property SourceNode shall be filled with the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the StateMachine instance were the Transition occurs. If the Transition occurs in a SubStateMachine, then the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the SubStateMachine has to be used. If the Transition occurs between a StateMachine and a SubStateMachine, then the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the StateMachine has to be used, independent of the direction of the Transition.
+            </para>
             <para>
               <legacyBold>Transition</legacyBold> identifies the Transition that triggered the Event.
-          </para>
+            </para>
             <para>
               <legacyBold>FromState</legacyBold> identifies the State before the Transition.
-          </para>
+            </para>
             <para>
               <legacyBold>ToState</legacyBold> identifies the State after the Transition.
-          </para>
+            </para>
           </content>
         </section>
-        <section>
+        <section address="AuditUpdateStateEventType">
           <title>AuditUpdateStateEventType</title>
           <content>
             <para>
-            The AuditUpdateStateEventType is a subtype of the AuditUpdateMethodEventType. It can be used to generate an Event identifying that a Transition of a StateMachine was triggered.
-          </para>
+              The AuditUpdateStateEventType is a subtype of the AuditUpdateMethodEventType. It can be used to generate an Event identifying that a Transition of a StateMachine was triggered.
+            </para>
             <para>
-            The AuditUpdateStateEventType inherits the Properties of the AuditUpdateMethodEventType.
-          </para>
+              The AuditUpdateStateEventType inherits the Properties of the AuditUpdateMethodEventType.
+            </para>
             <para>
-            The inherited Property SourceNode shall be filled with the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the StateMachine instance were the State changed. If the State changed in a SubStateMachine, then the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#NodeId">NodeId</link> of the SubStateMachine has to be used.
-          </para>
+              The inherited Property SourceNode shall be filled with the <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> of the StateMachine instance were the State changed. If the State changed in a SubStateMachine, then the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#NodeId">NodeId</link> of the SubStateMachine has to be used.
+            </para>
             <para>
-            The SourceName for Events of this type should be the effect that generated the event (e.g. the name of a Method). If the effect was generated by a Method call, the SourceName should be the name of the Method prefixed with “Method/”.
-          </para>
+              The SourceName for Events of this type should be the effect that generated the event (e.g. the name of a Method). If the effect was generated by a Method call, the SourceName should be the name of the Method prefixed with “Method/”.
+            </para>
             <para>
               <legacyBold>OldStateId</legacyBold> reflects the Id of the state prior the change.
-          </para>
+            </para>
             <para>
               <legacyBold>NewStateId</legacyBold> reflects the new Id of the state after the change.
-          </para>
+            </para>
           </content>
         </section>
-        <section>
+        <section address="Special_Restrictions_on_subtyping_StateMachines">
           <title>Special Restrictions on subtyping StateMachines</title>
           <content>
             <para>
-            In general, all rules on subtyping apply for StateMachine types as well. Some additional rules apply for StateMachine types. If a StateMachine type is not abstract, subtypes of it shall not change the behaviour of it. That means, that in that case a subtype shall not add States and it shall not add Transitions between its States. However, a subtype may add SubStateMachines, it may add Transitions from the States to the States of the SubStateMachine, and it may add Causes and Effects to a Transition. In addition, a subtype of a StateMachine type shall not remove States or Transitions.
-          </para>
+              In general, all rules on subtyping apply for StateMachine types as well. Some additional rules apply for StateMachine types. If a StateMachine type is not abstract, subtypes of it shall not change the behaviour of it. That means, that in that case a subtype shall not add States and it shall not add Transitions between its States. However, a subtype may add SubStateMachines, it may add Transitions from the States to the States of the SubStateMachine, and it may add Causes and Effects to a Transition. In addition, a subtype of a StateMachine type shall not remove States or Transitions.
+            </para>
           </content>
         </section>
       </sections>
     </section>
-    <section>
+    <section address="Examples_of_StateMachines">
       <title>Examples of StateMachines in the address space</title>
       <content>
+        <autoOutline/>
       </content>
       <sections>
-        <section>
+        <section address="StateMachineType_using_inheritance">
           <title>
-          StateMachineType using inheritance
-        </title>
+            StateMachineType using inheritance
+          </title>
           <content>
             <mediaLink>
               <caption placement="after" lead="Figure 5">Example of a StateMachineType using inheritance</caption>
               <image placement="center" xlink:href="8c3b4271-0d98-47e1-9e1d-462527a4261d" />
             </mediaLink>
             <para>
-            In Figure 5 an example of a StateMachine is given using the Notation described in the section of section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. First, a new StateMachineType is defined, called “MyStateMachineType”, inheriting from the base FiniteStateMachineType. It contains two States, “State1” and “State2” and a Transition “Transition1” between them. The Transition points to a Method “MyMethod” as the Cause of the Transition and an <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link> “EventType1” as the Effect of the Transition.
-          </para>
+              In Figure 5 an example of a StateMachine is given using the Notation described in the section of section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />. First, a new StateMachineType is defined, called “MyStateMachineType”, inheriting from the base FiniteStateMachineType. It contains two States, “State1” and “State2” and a Transition “Transition1” between them. The Transition points to a Method “MyMethod” as the Cause of the Transition and an <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">event type</link> “EventType1” as the Effect of the Transition.
+            </para>
             <para>
-            Instances of “MyStateMachineType” can be created, for example “MyStateMachine”. It has a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> “CurrentState” representing the current State. The “MyStateMachine” Object only includes the Nodes which expose information specific to the instance.
-          </para>
+              Instances of “MyStateMachineType” can be created, for example “MyStateMachine”. It has a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> “CurrentState” representing the current State. The “MyStateMachine” Object only includes the Nodes which expose information specific to the instance.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="StateMachineType_with_a_sub-machine_using_inheritance">
           <title>
-          StateMachineType with a sub-machine using inheritance
-        </title>
+            StateMachineType with a sub-machine using inheritance
+          </title>
           <content>
             <mediaLink>
               <caption placement="after" lead="Figure 6">Example of a StateMachineType with a SubStateMachine using inheritance</caption>
               <image placement="center" xlink:href="d71a046e-8526-40fa-8f52-e99c6ca81f81" />
             </mediaLink>
             <para>
-            Figure 6 gives an example of a StateMachineType having a SubStateMachine for its “State1”. For simplicity no effects and causes are shown, as well as type information for the States or ModellingRules.
-          </para>
+              Figure 6 gives an example of a StateMachineType having a SubStateMachine for its “State1”. For simplicity no effects and causes are shown, as well as type information for the States or ModellingRules.
+            </para>
             <para>
-            The “MyStateMachineType” contains an Object “MySubMachine” of type “AnotherStateMachineType” representing a SubStateMachine. The “State1” references this Object with a HasSubStateMachine Reference, thus it is a SubStateMachine of “State1”. Since “MySubMachine” is an Object of type “AnotherStateMachineType” it has a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing the current State. Since it is used as an InstanceDeclaration, no value is assigned to this <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />.
-          </para>
+              The “MyStateMachineType” contains an Object “MySubMachine” of type “AnotherStateMachineType” representing a SubStateMachine. The “State1” references this Object with a HasSubStateMachine Reference, thus it is a SubStateMachine of “State1”. Since “MySubMachine” is an Object of type “AnotherStateMachineType” it has a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing the current State. Since it is used as an InstanceDeclaration, no value is assigned to this <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" />.
+            </para>
             <para>
-            An Object of “MyStateMachineType”, called “MyStateMachine” has Variables for the current State, but also has an Object “MySubMachine” and a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing the current state of the SubStateMachine. Since the SubStateMachine is only used when “MyStateMachine” is in “State1”, a client would receive a Bad_StateNotActive StatusCode when reading the SubStateMachine CurrentState <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> if “MyStateMachine” is in a different State.
-          </para>
+              An Object of “MyStateMachineType”, called “MyStateMachine” has Variables for the current State, but also has an Object “MySubMachine” and a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> representing the current state of the SubStateMachine. Since the SubStateMachine is only used when “MyStateMachine” is in “State1”, a client would receive a Bad_StateNotActive StatusCode when reading the SubStateMachine CurrentState <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> if “MyStateMachine” is in a different State.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="StateMachineType_using_containment">
           <title>
-          StateMachineType using containment
-        </title>
+            StateMachineType using containment
+          </title>
           <content>
             <mediaLink>
               <caption placement="after" lead="Figure 7">Example of a StateMachineType using containment</caption>
               <image placement="center" xlink:href="732c556d-13dc-4ce5-8bc7-3c425dfc613e" />
             </mediaLink>
             <para>
-            Figure 7 gives an example of an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> not only representing a StateMachine but also having some other functionality. The <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> “MyObjectType” has an Object “MyComponent” representing this other functionality. But is also contains a StateMachine “MyStateMachine” of the type “MyStateMachineType”. Objects of “MyObjectType” also contain such an Object representing the StateMachine and a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> containing the current state of the StateMachine, as shown in the Figure.
-          </para>
+              Figure 7 gives an example of an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> not only representing a StateMachine but also having some other functionality. The <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> “MyObjectType” has an Object “MyComponent” representing this other functionality. But is also contains a StateMachine “MyStateMachine” of the type “MyStateMachineType”. Objects of “MyObjectType” also contain such an Object representing the StateMachine and a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> containing the current state of the StateMachine, as shown in the Figure.
+            </para>
           </content>
         </section>
-        <section>
+        <section address="Example_of_a_StateMachine_having_Transitions_to_SubStateMachines">
           <title>
-          Example of a StateMachine having Transitions to SubStateMachines
-        </title>
+            Example of a StateMachine having Transitions to SubStateMachines
+          </title>
           <content>
             <para>
-            The StateMachines shown so far only had Transitions between States on the same level, i.e. on the same StateMachine. Of cause, it is possible and often required to have Transitions between States of the StateMachine and States of its SubStateMachine.
-          </para>
+              The StateMachines shown so far only had Transitions between States on the same level, i.e. on the same StateMachine. Of cause, it is possible and often required to have Transitions between States of the StateMachine and States of its SubStateMachine.
+            </para>
             <para>
-            Because a SubStateMachine can be defined by another StateMachineType and this type can be used in several places, it is not possible to add a bi-directional Reference from one of the shared States of the SubStateMachine to another StateMachine. In this case it is suitable to expose the FromState or ToState References uni-directional, i.e. only pointing from the Transition to the State and not have the other direction browsable. If a Transition points from a State of a SubStateMachine to a State of another sub-machine, both, the FromState and the ToState Reference, are handled uni-directional.
-          </para>
+              Because a SubStateMachine can be defined by another StateMachineType and this type can be used in several places, it is not possible to add a bi-directional Reference from one of the shared States of the SubStateMachine to another StateMachine. In this case it is suitable to expose the FromState or ToState References uni-directional, i.e. only pointing from the Transition to the State and not have the other direction browsable. If a Transition points from a State of a SubStateMachine to a State of another sub-machine, both, the FromState and the ToState Reference, are handled uni-directional.
+            </para>
             <para>
-            A Client shall be able to handle the information of a StateMachine if the ToState and FromState References are only exposed as forward References and the inverse References are omitted.
-          </para>
+              A Client shall be able to handle the information of a StateMachine if the ToState and FromState References are only exposed as forward References and the inverse References are omitted.
+            </para>
             <para>
-            Figure 8 gives an example of a state machine having a transition from a sub-state to a state.
-          </para>
+              Figure 8 gives an example of a state machine having a transition from a sub-state to a state.
+            </para>
             <mediaLink>
               <caption placement="after" lead="Figure 8">Example of a state machine with transitions from sub-states</caption>
               <image placement="center" xlink:href="22ca0c1b-0c93-4b88-9687-e32e4831e1ea" />
             </mediaLink>
             <para>
-            In Figure 9, the representation of this example as StateMachineType in the <token>AS</token> is given. The “Transition1”, part of the definition of “MyStateMachineType”, points to the “StateX” of the StateMachineType “AnotherStateMachineType”. The Reference is only exposed as forward Reference and the inverse Reference is omitted. Thus, there is no Reference from the “StateX” of “AnotherStateMachineType” to any part of “MyStateMachineType” and “AnotherStateMachineType” can be used in other places as well.
-          </para>
+              In Figure 9, the representation of this example as StateMachineType in the <token>AS</token> is given. The “Transition1”, part of the definition of “MyStateMachineType”, points to the “StateX” of the StateMachineType “AnotherStateMachineType”. The Reference is only exposed as forward Reference and the inverse Reference is omitted. Thus, there is no Reference from the “StateX” of “AnotherStateMachineType” to any part of “MyStateMachineType” and “AnotherStateMachineType” can be used in other places as well.
+            </para>
             <mediaLink>
               <caption placement="after" lead="Figure 9">Example of a StateMachineType having Transitions to SubStateMachines</caption>
               <image placement="center" xlink:href="2c3ba049-e127-46ca-90f8-2235d469db17" />

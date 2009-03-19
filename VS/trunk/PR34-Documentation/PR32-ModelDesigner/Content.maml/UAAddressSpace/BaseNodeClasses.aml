@@ -8,13 +8,15 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       The <token>OPCUA</token><token>AS</token> model defines a Base node class from which all other node classes are derived. The derived node classes represent the various components of the <token>OPCUA</token> Object Model. There are no references specified for the Base node class.
     </para>
     </introduction>
-    <section>
+    <section address="Attributes">
       <title>Attributes</title>
       <content>
+        <autoOutline/>
       </content>
       <sections>
         <section address="NodeId">

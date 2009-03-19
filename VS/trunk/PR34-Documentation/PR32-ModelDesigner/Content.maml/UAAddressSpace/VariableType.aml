@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       VariableType nodes are used to provide type definitions for variables. <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> types are defined using the VariableType node class.
     </para>
@@ -38,7 +39,7 @@
       </para>
       </alert>
     </introduction>
-    <section>
+    <section address="Client_sideCreationOfVariables">
       <title>Client-side creation of Variables</title>
       <content>
         <para>

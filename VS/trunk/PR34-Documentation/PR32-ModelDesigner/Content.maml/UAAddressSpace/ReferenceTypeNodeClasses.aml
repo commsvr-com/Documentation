@@ -8,11 +8,12 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline/>
       <para>
       The <token>OPCUA</token> specification defines a set of reference types provided as an inherent part of the <token>OPCUA</token><token>AS</token> model. These reference types are defined in <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134" /> section and their representation in the <token>AS</token> is described in  section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" />. Servers may also define reference types. In addition, section <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577" /> describes NodeManagement services that allow clients to add reference types to the <token>AS</token>.
     </para>
     </introduction>
-    <section>
+    <section address="Attributes">
       <title>Attributes</title>
       <content>
         <para>
@@ -65,15 +66,16 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="References">
       <title>References</title>
       <content>
+        <autoOutline/>
         <para>
           <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link> references and <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasProperty">HasProperty</link> references are the only reference types that may be used with ReferenceType nodes as source node. ReferenceType nodes shall not be the source node of other types of references.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="HasProperty">
           <title>
           HasProperty
         </title>
@@ -89,7 +91,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="HasSubtype">
           <title>
           HasSubtype
         </title>

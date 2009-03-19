@@ -8,6 +8,7 @@
     </para>
     </summary>
     <introduction>
+      <autoOutline />
       <para>
       Subsections describe main components of the complex types.
     </para>
@@ -21,6 +22,7 @@
       <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType" >ServerType</link>-->
       <title>ServerType</title>
       <content>
+        <autoOutline />
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the capabilities supported by the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
       </para>
@@ -122,12 +124,13 @@
     <section address="ServerCapabilitiesType">
       <title>ServerCapabilitiesType</title>
       <content>
+        <autoOutline />
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the capabilities supported by the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="ServerProfileArray">
           <title>ServerProfileArray</title>
           <content>
             <para>
@@ -135,7 +138,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="LocaleIdArray">
           <title>LocaleIdArray</title>
           <content>
             <para>
@@ -143,7 +146,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="MinSupportedSampleRate">
           <title>MinSupportedSampleRate</title>
           <content>
             <para>
@@ -151,7 +154,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="MaxBrowseContinuationPoints">
           <title>MaxBrowseContinuationPoints</title>
           <content>
             <para>
@@ -159,7 +162,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="MaxQueryContinuationPoints">
           <title>MaxQueryContinuationPoints</title>
           <content>
             <para>
@@ -167,7 +170,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="MaxHistoryContinuationPoints">
           <title>MaxHistoryContinuationPoints</title>
           <content>
             <para>
@@ -175,7 +178,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SupportsAuditing">
           <title>SupportsAuditing</title>
           <content>
             <para>
@@ -196,12 +199,13 @@
     <section address="ServerDiagnosticsType">
       <title>ServerDiagnosticsType</title>
       <content>
+        <autoOutline />
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="ServerDiagnosticsSummary">
           <title>ServerDiagnosticsSummary</title>
           <content>
             <para>
@@ -209,7 +213,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SamplingRateDiagnosticsArray">
           <title>SamplingRateDiagnosticsArray</title>
           <content>
             <para>
@@ -217,7 +221,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SubscriptionDiagnosticsArray">
           <title>SubscriptionDiagnosticsArray</title>
           <content>
             <para>
@@ -225,7 +229,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SessionsDiagnosticsSummary">
           <title>SessionsDiagnosticsSummary</title>
           <content>
             <para>
@@ -233,7 +237,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="EnabledFlag">
           <title>EnabledFlag</title>
           <content>
             <para>
@@ -255,6 +259,7 @@
       <title>SessionsDiagnosticsSummaryType</title>
       <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#SessionsDiagnosticsSummaryType" >SessionsDiagnosticsSummaryType</link>-->
       <content>
+        <autoOutline/>
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about the sessions of the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
       </para>
@@ -265,7 +270,7 @@
         </alert>
       </content>
       <sections>
-        <section>
+        <section address="SessionDiagnosticsArray">
           <title>SessionDiagnosticsArray</title>
           <content>
             <para>
@@ -273,7 +278,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SessionSecurityDiagnosticsArray">
           <title>SessionSecurityDiagnosticsArray</title>
           <content>
             <para>
@@ -286,12 +291,13 @@
     <section address="SessionDiagnosticsObjectType">
       <title>SessionDiagnosticsObjectType</title>
       <content>
+        <autoOutline/>
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines diagnostic information about a session of the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="SessionDiagnostics">
           <title>SessionDiagnostics</title>
           <content>
             <para>
@@ -299,7 +305,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SessionSecurityDiagnostics">
           <title>SessionSecurityDiagnostics</title>
           <content>
             <para>
@@ -307,7 +313,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="SubscriptionDiagnosticsArray">
           <title>SubscriptionDiagnosticsArray</title>
           <content>
             <para>
@@ -329,12 +335,13 @@
       <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerRedundancyType" >ServerRedundancyType</link>-->
       <title>ServerRedundancyType</title>
       <content>
+        <autoOutline/>
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> defines the redundancy capabilities supported by the <token>OPCUA</token> server. It is complex type and has components described in the following sections.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="RedundancySupport">
           <title>RedundancySupport</title>
           <content>
             <para>
@@ -347,12 +354,13 @@
     <section address="TransparentRedundancyType">
       <title>TransparentRedundancyType</title>
       <content>
+        <autoOutline/>
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is a subtype of <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> and is used to identify the capabilities of the <token>OPCUA</token> server for server-controlled redundancy with a transparent switchover for the client. It is complex type and has components described in the following sections.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="RedundancySupport">
           <title>RedundancySupport</title>
           <content>
             <para>
@@ -360,7 +368,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="CurrentServerId">
           <title>CurrentServerId</title>
           <content>
             <para>
@@ -368,7 +376,7 @@
           </para>
           </content>
         </section>
-        <section>
+        <section address="RedundantServerArray">
           <title>RedundantServerArray</title>
           <content>
             <para>
@@ -381,12 +389,13 @@
     <section address="NonTransparentRedundancyType">
       <title>NonTransparentRedundancyType</title>
       <content>
+        <autoOutline/>
         <para>
         This <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> is a subtype of <link xlink:href="#ServerRedundancyType">ServerRedundancyType</link> and is used to identify the capabilities of the <token>OPCUA</token> server for non-transparent redundancy. It is complex type and has components described in the following sections.
       </para>
       </content>
       <sections>
-        <section>
+        <section address="ServerUriArray">
           <title>ServerUriArray</title>
           <content>
             <para>

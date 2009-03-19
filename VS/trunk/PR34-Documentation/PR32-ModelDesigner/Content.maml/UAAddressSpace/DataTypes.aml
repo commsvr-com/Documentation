@@ -3,10 +3,11 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!--<link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" />-->
     <introduction>
+      <autoOutline/>
       <para>
       </para>
     </introduction>
-    <section>
+    <section address="Model">
       <title>Model</title>
       <content>
         <para>
@@ -82,7 +83,7 @@
         <para>OPC Binary and W3C XML Schema are examples of data type systems. OPC Binary uses XML to describe binary data values. W3C XML Schema is specified in XML Schema Part 1 and XML Schema Part 2.</para>
       </content>
     </section>
-    <section>
+    <section address="Encoding_Rules">
       <title>Encoding Rules</title>
       <content>
         <para>
@@ -105,7 +106,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="DataType_Node_Class">
       <title>DataType Node Class</title>
       <content>
         <para>
@@ -129,7 +130,7 @@
         <para>DataType nodes shall not be the source node of other types of references. However, they may be the target node of other references.</para>
       </content>
     </section>
-    <section>
+    <section address="Dictionary_Description_Encoding_and_System">
       <title>Dictionary, Description, Encoding and System</title>
       <content>
         <para>

@@ -7,10 +7,11 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       </para>
     </introduction>
-    <section>
+    <section address="How_is_chaos_created">
       <title>How is chaos created?</title>
       <content>
         <para>Common integration practice is to achieve short-term ad-hoc objectives by creating dedicated point-to-point links between the subsystems everywhere it is necessary. Most of the links are established between components of the process and control layer, where supervisory control systems receive data from plant-floor devices and subsystems.</para>
@@ -22,7 +23,7 @@
         <para>At the next stage of system maturity, new links are created between systems on the business management and control layers. Future enterprise expansion will force to build next direct cross links between business management and production. Additionally, redundant communication links are required to meet an appropriate level of reliability. Finally, we have to deal with communication chaos, which is difficult to be controlled. These chaotic point-to-point links make common resources impossible to be used by many potential client systems.</para>
       </content>
     </section>
-    <section>
+    <section address="6_sins_of_chaos">
       <title>6 sins of chaos</title>
       <content>
         <para>After years of establishing ad hoc links, the interconnection network becomes very complicated and chaotic causing that we have to deal with the following problems:</para>

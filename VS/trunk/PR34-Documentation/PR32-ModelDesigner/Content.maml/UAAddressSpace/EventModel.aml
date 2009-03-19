@@ -8,6 +8,7 @@
   </summary>
   -->
     <introduction>
+      <autoOutline/>
       <para>
       This section describes a general purpose eventing system that can be used in many diverse vertical markets.
     </para>
@@ -55,7 +56,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="EventCategorization">
       <title>
       Event Categorization
     </title>

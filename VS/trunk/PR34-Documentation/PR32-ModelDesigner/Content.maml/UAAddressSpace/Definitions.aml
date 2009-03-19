@@ -2,8 +2,9 @@
 <topic id="d50337d9-0aab-4665-ab7f-be4eb7bc9559" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
+      <autoOutline/>
     </introduction>
-    <section>
+    <section address="InstanceDeclaration">
       <title>
       InstanceDeclaration
     </title>
@@ -13,7 +14,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Instances_without_ModellingRules">
       <title>
       Instances without ModellingRules
     </title>
@@ -26,7 +27,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="InstanceDeclarationHierarchy">
       <title>
       InstanceDeclarationHierarchy
     </title>
@@ -36,7 +37,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Similar_Node_of_InstanceDeclaration">
       <title>
       Similar Node of InstanceDeclaration
     </title>
@@ -46,7 +47,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="BrowsePath">
       <title>
       BrowsePath
     </title>
@@ -56,7 +57,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Attribute_Handling_of_InstanceDeclarations">
       <title>
       Attribute Handling of InstanceDeclarations
     </title>
@@ -69,7 +70,7 @@
       </para>
       </content>
     </section>
-    <section>
+    <section address="Attribute_Handling_of_Variable_and_VariableTypes">
       <title>
       Attribute Handling of Variable and VariableTypes
     </title>
