@@ -852,6 +852,36 @@
       <ImageId>2139D8D3-13BC-4a65-A812-CEC601B68C41</ImageId>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\EncodingXmlElementsinaBinaryStream.JPG">
+      <ImageId>5D6938AD-9D68-45a8-AC2A-1F4E94FFB6E7</ImageId>
+      <AlternateText>Encoding XmlElements in a Binary Stream</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\NodeIdComponents.JPG">
+      <AlternateText>NodeId Components</AlternateText>
+      <ImageId>BC5B5E73-8A86-4484-87B9-2FA5181263B6</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\NodeIdEncodingValues.JPG">
+      <AlternateText>NodeId Encoding Values</AlternateText>
+      <ImageId>935918F2-FB5F-49e1-96BD-95F9D858601E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\StandardNodeIdBinaryEncoding.JPG">
+      <ImageId>D741494C-6D58-488c-967F-6D6209859AEA</ImageId>
+      <AlternateText>Standard NodeId Binary Encoding</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\StringNodeId.JPG">
+      <AlternateText>A String NodeId</AlternateText>
+      <ImageId>4AB3163D-45B4-4e87-9CE3-C16977A027B2</ImageId>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

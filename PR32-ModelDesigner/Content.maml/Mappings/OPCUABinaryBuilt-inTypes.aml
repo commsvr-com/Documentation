@@ -184,6 +184,54 @@
         </para>
       </content>
     </section>
+    <section address="XmlElement">
+      <title>XmlElement</title>
+      <content>
+        <para>
+          An XmlElement is an XML fragment serialized as UTF-8 string and then encoded as ByteString
+        </para>
+        <para>
+          Figure 6 illustrates how the XmlElement  “<A>Hot水</A>” should be encoded in a byte stream.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 6">Encoding XmlElements in a Binary Stream</caption>
+          <image placement="center" xlink:href="5D6938AD-9D68-45a8-AC2A-1F4E94FFB6E7" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="NodeId">
+      <title>NodeId</title>
+      <content>
+        <para>
+          The components of a NodeId are described the Figure 7.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 7">NodeId Components</caption>
+          <image placement="center" xlink:href="BC5B5E73-8A86-4484-87B9-2FA5181263B6" />
+        </mediaLink>
+        <para>
+          The encoding of a NodeId varies according to the contents of the instance. For that reason the first byte of the encoded form indicates the format of the rest of the encoded NodeId. The possible encoding formats are shown on Figure 8. The tables that follow describe the structure of the each possible format (they exclude the byte which indicates the format).
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 8">NodeId Encoding Values</caption>
+          <image placement="center" xlink:href="935918F2-FB5F-49e1-96BD-95F9D858601E" />
+        </mediaLink>
+        <para>
+          The standard NodeId encoding has the structure shown on Figure 9. The standard encoding is used for all formats that do not have an explicit format defined.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 9">Standard NodeId Binary Encoding</caption>
+          <image placement="center" xlink:href="D741494C-6D58-488c-967F-6D6209859AEA" />
+        </mediaLink>
+        <para>
+          An example of a String NodeId with Namespace = 1 and Identifier = “Hot水” is shown in Figure 10.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 10">A String NodeId</caption>
+          <image placement="center" xlink:href="4AB3163D-45B4-4e87-9CE3-C16977A027B2" />
+        </mediaLink>
+      </content>
+    </section>
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>
