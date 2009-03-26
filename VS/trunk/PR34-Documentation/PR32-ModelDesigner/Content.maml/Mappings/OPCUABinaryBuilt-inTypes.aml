@@ -1,45 +1,188 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="7f816c6d-3aa2-4f38-9992-16d892e6fe4a" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-         titles.  Specify a numeric value as the inner text to limit it to
-         a specific number of sub-topics when creating the outline.  Specify
-         zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <autoOutline />
+      <para></para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-       If using <autoOutline /> tag, add an address attribute to identify
-       it so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Section title</title>
+    <section address="Boolean">
+      <title>Boolean</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-      <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          A Boolean value shall be encoded as a single byte where a value of 0 (zero) is false and any non-zero value is true.
+        </para>
+        <para>
+          Encoders shall use the value of 1 to indicate a true value; however, decoders shall treat any non-zero value as true.
+        </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-         sub-sections.  These are not collapsible.
-    <sections>
-        <section address="SubSection1">
-            <title>Sub-section 1</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-        <section address="SubSection2">
-            <title>Sub-section 2</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-    </sections> -->
+    </section>
+    <section address="Integer">
+      <title>Integer</title>
+      <content>
+        <para>
+          All integer types shall be encoded as little endian values where the least significant byte appears first in the stream.
+        </para>
+        <para>
+          The Figure 1 illustrates how the value 1,000,000,000 (Hex: 3B9ACA00) should be encoded as a 32 bit integer in the stream.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Encoding Integers in a Binary Stream</caption>
+          <image placement="center" xlink:href="C7C01A18-A2CC-454b-BDD5-CC87F13E7A81" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="FloatingPoint">
+      <title>Floating Point</title>
+      <content>
+        <para>
+          All floating point values shall be encoded with the appropriate IEEE-754binary representation which has three basic components: the sign, the exponent, and the fraction. The bit ranges assigned to each component depend on the width of the type. Figure 2 lists the bit ranges for the supported floating point types.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Encoding Integers in a Binary Stream</caption>
+          <image placement="center" xlink:href="D8C89BC7-692B-457b-81FB-0A0C80225FD9" />
+        </mediaLink>
+        <para>
+          In addition, the order of bytes in the stream is significant. All floating point values shall be encoded with the least significant byte appearing first (i.e. little endian).
+        </para>
+        <para>
+          The Figure 3 illustrates how the value -6.5 (Hex: C0D00000) should be encoded as a Float.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Encoding Integers in a Binary Stream</caption>
+          <image placement="center" xlink:href="6AE206A2-9361-4ead-83F2-B97D5EDC8594" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="String">
+      <title>String</title>
+      <content>
+        <para>
+          All String values are encoded as a sequence of UTF8characters without a null terminator and preceded by the length in bytes..
+        </para>
+        <para>
+          The length in bytes is encoded as Int32. A value of -1 is used to indicate a ‘null’ string.
+        </para>
+        <para>
+          Figure 4 illustrates how the multilingual string “水Boy” should be encoded in a byte stream.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Encoding Strings in a Binary Stream</caption>
+          <image placement="center" xlink:href="E23B55DE-91DF-4e8a-B445-BB3AF487489D" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="DateTime">
+      <title>DateTime</title>
+      <content>
+        <para>
+          A DateTime value shall be encoded as a 64-bit signed integer (see <link xlink:href="#Integer">Integer</link> ) which represents the number of 100 nanosecond intervals since January 1, 1601 (UTC)..
+        </para>
+        <para>
+          Not all platforms will be able to represent the full range of dates and times that can be represented with this encoding. For example, the UNIX time_t structure only has a 1 second resolution and cannot represent dates prior to 1970. For this reason, a number of rules shall be applied when dealing with date/time values that exceed the dynamic range of a platform. These rules are:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              A date/time value is encoded as 0 if either:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  The value equal to or earlier than 1601-01-01 12:00AM
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The value is the earliest date that can be represented with the platform’s encoding.
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              A date/time is encoded as the maximum value for an Int64 if either:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  The value is equal to or greater than 9999-01-01 11:59:59PM
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The value is the latest date that can be represented with the platform’s encoding
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              A date/time is decoded as the earliest time that can be represented on the platform if either:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  The encoded value is 0
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The encoded value represents a time earlier than the earliest time that can be represented with the platform’s encoding.
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              A date/time is decoded as the latest time that can be represented on the platform if either:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  The encoded value is the maximum value for an Int64
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The encoded value represents a time later than the latest time that can be represented with the platform’s encoding.
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+        <para>
+          These rules imply that the earliest and latest times that can be represented on a given platform are invalid date/time values and should be treated that way by applications.
+        </para>
+        <para>
+          A decoder shall truncate the value if a decoder encounters a DateTime value with a resolution that is greater than the resolution supported on the platform.
+        </para>
+      </content>
+    </section>
+    <section address="Guid">
+      <title>Guid</title>
+      <content>
+        <para>
+          A Guid is encoded a the structure shown in <link xlink:href="ed06838a-603f-4c9e-92e1-bf215ecf46e6">section Overview topic GUID</link> . The fields are encode sequentially according to the data type for field.
+        </para>
+        <para>
+          Figure 5 illustrates how the Guid “72962B91-FA75-4ae6-8D28-B404DC7DAF63” should be encoded in a byte stream.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 5">Encoding Guids in a Binary Stream</caption>
+          <image placement="center" xlink:href="2139D8D3-13BC-4a65-A812-CEC601B68C41" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="ByteString">
+      <title>ByteString</title>
+      <content>
+        <para>
+          A ByteString is encoded as sequence of bytes preceded by its length in bytes. The length is encoded as a 32-bit signed integer as described above.
+        </para>
+        <para>
+          If the length of the byte string is -1 then the byte string is ‘null’.
+        </para>
+      </content>
     </section>
     <relatedTopics>
     </relatedTopics>

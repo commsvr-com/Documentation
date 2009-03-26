@@ -8,13 +8,17 @@
   -->
     <introduction>
       <para>
+        The OPC UA Binary Encoding is a data format developed to meet the performance needs of OPC UA applications. This format is designed primarily for fast encoding and decoding, however, the size of the encoded data on the wire was also a consideration.
+      </para>
+      <para>
+        The OPC UA Binary Encoding relies on several primitive data types with clearly defined encoding rules that can be sequentially written to or read from a binary stream. A structure is encoded by sequentially writing the encoded form of each field. If a given field is also a structure then the values of its fields are written sequentially before writing the next field in the containing structure. All fields shall be written to the stream even if they contain Null values. The encodings for each primitive type specify how to encode a Null value for the type.
+      </para>
+      <para>
+        The OPC UA Binary Encoding does not include any type or field name information because all OPC UA applications are expected to have advance knowledge of the services and structures that they support. An exception is an ExtensionObject which provides an identifier and a size for the complex structure it represents. This allows a decoder to skip over types that it does not recognize.
       </para>
     </introduction>
     <inThisSection>
       <content>
-        <para>
-        "In This Section" info:
-      </para>
         <list class="bullet">
           <listItem>
             <para>

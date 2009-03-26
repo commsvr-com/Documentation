@@ -77,7 +77,7 @@
       <Topic id="bf124b83-10b9-4995-af26-178e5fc9a6e7" visible="True" title="Security Model" tocTitle="Security Model" />
       <Topic id="ef0092b5-9f31-4e8d-9901-270be06e6577" visible="True" title="Services" tocTitle="Services" />
       <Topic id="90c70f9d-c1df-479e-8273-071b5960a5a4" visible="True" title="Mappings" tocTitle="Mappings">
-        <Topic id="abcfe76a-a551-4fa3-be28-0af2cb04f3ba" visible="False" title="Data Encoding" tocTitle="Data Encoding" linkText="Data Encoding">
+        <Topic id="abcfe76a-a551-4fa3-be28-0af2cb04f3ba" visible="True" title="Data Encoding" tocTitle="Data Encoding" linkText="Data Encoding">
           <Topic id="2d1f7bc3-3cda-452f-9f24-ee9da2c9be94" visible="True" title="Overview" tocTitle="Overview" linkText="Overview">
             <Topic id="e6dbd978-9b2f-475e-bcb3-304975700033" visible="True" title="Built-in Types" tocTitle="Built-in Types" linkText="Built-in Types" />
             <Topic id="ed06838a-603f-4c9e-92e1-bf215ecf46e6" visible="True" title="Guid" tocTitle="Guid" linkText="Guid" />

@@ -28,7 +28,7 @@
     </SandcastlePath>
     <WorkingPath>Temp\UAModelDesigner\Working\</WorkingPath>
     <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
     <FrameworkVersion>2.0.50727</FrameworkVersion>
     <Preliminary>True</Preliminary>
     <HelpTitle>OPC Unified Architecture</HelpTitle>
@@ -38,7 +38,7 @@
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <FooterText>This documentation is designed to be used with CAS UA Address Space Model Designer %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <PresentationStyle>vs2005</PresentationStyle>
     <NamingMethod>MemberName</NamingMethod>
     <HelpFileVersion>1.0.0.6</HelpFileVersion>
     <ComponentConfigurations>
@@ -821,6 +821,36 @@
   </ItemGroup>
   <ItemGroup>
     <Tokens Include="TokensHelp.tokens" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\EncodingIntegersinaBinaryStream.JPG">
+      <AlternateText>Encoding Integers in a Binary Stream</AlternateText>
+      <ImageId>C7C01A18-A2CC-454b-BDD5-CC87F13E7A81</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\SupportedFloatingPointTypes.JPG">
+      <AlternateText>Supported Floating Point Types</AlternateText>
+      <ImageId>D8C89BC7-692B-457b-81FB-0A0C80225FD9</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\EncodingFloatingPointsinaBinaryStream.JPG">
+      <AlternateText>Encoding Floating Points in a Binary Stream</AlternateText>
+      <ImageId>6AE206A2-9361-4ead-83F2-B97D5EDC8594</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\EncodingStringsinaBinaryStream.JPG">
+      <AlternateText>Encoding Strings in a Binary Stream</AlternateText>
+      <ImageId>E23B55DE-91DF-4e8a-B445-BB3AF487489D</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\EncodingGuidsinaBinaryStream.JPG">
+      <AlternateText>Encoding Guids in a Binary Stream</AlternateText>
+      <ImageId>2139D8D3-13BC-4a65-A812-CEC601B68C41</ImageId>
+    </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
