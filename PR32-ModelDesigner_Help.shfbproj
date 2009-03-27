@@ -882,6 +882,78 @@
       <ImageId>4AB3163D-45B4-4e87-9CE3-C16977A027B2</ImageId>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\TwoByteNodeIdBinaryEncoding.JPG">
+      <AlternateText>Two Byte NodeId Binary Encoding</AlternateText>
+      <ImageId>2529AB16-7821-4212-92B9-52A1F56419DD</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ATwoByteNodeId.JPG">
+      <AlternateText>A Two Byte NodeId</AlternateText>
+      <ImageId>5693ABAE-BE7E-41be-8269-D2723C40DE8A</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\FourByteNodeIdBinaryEncoding.JPG">
+      <AlternateText>Four Byte NodeId Binary Encoding</AlternateText>
+      <ImageId>618DE0E7-CC48-4cef-A4D5-80F3BEE42271</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\AFourByteNodeId.JPG">
+      <AlternateText>A Four Byte NodeId</AlternateText>
+      <ImageId>87FA3B2B-C9E9-410e-B139-33D5AE852573</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ExpandedNodeIdBinaryEncoding.JPG">
+      <ImageId>BA3A9523-F137-439b-BC54-70BA58A2B223</ImageId>
+      <AlternateText>ExpandedNodeId Binary Encoding</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\DiagnosticInfoBinaryEncoding.JPG">
+      <AlternateText>DiagnosticInfo Binary Encoding</AlternateText>
+      <ImageId>57204E0D-6FD7-411a-AF0F-7AFA09317A2E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\QualifiedNameBinaryEncoding.JPG">
+      <AlternateText>QualifiedName Binary Encoding</AlternateText>
+      <ImageId>87CF0259-4139-461d-90C3-0BA514B5D8C3</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\LocalizedTextBinaryEncoding.JPG">
+      <AlternateText>LocalizedText Binary Encoding</AlternateText>
+      <ImageId>FAE3B142-BC6B-4b7c-A0E9-F58A785E5F7B</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ExtensionObjectBinaryEncoding.JPG">
+      <AlternateText>Extension Object Binary Encoding</AlternateText>
+      <ImageId>74DB4F5B-71DB-4fc2-BC08-42CCBD07EB68</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\VariantBinaryEncoding.JPG">
+      <AlternateText>Variant Binary Encoding</AlternateText>
+      <ImageId>00FEF49C-9A99-4324-9B20-C35FCA52A378</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\DataValueBinaryEncoding.JPG">
+      <AlternateText>Data Value Binary Encoding</AlternateText>
+      <ImageId>B43BE252-5F0E-424a-810E-B12664D6D82E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\SampleOPCUABinaryEncodedStructure.JPG">
+      <AlternateText>Sample OPC UA Binary Encoded Structure</AlternateText>
+      <ImageId>89B9FE4F-CF60-40f0-93E8-E198118E8CD6</ImageId>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

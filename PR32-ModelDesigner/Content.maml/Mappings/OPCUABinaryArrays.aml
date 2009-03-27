@@ -1,39 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="efb24dab-cd14-4f59-a392-cd2b44e22f15" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-
     <introduction>
-
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        Arrays that occur outside of a Variant are encoded as a sequence of elements preceded by the number of elements encoded as an Int32 value. If an array is Null then its length is encoded as -1. An array of zero length is different from an array that is Null so encoders and decoders shall preserve this distinction.
+      </para>
+      <para>
+        Multi-dimensional arrays can only be encoded within a Variant.
+      </para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-       If using <autoOutline /> tag, add an address attribute to identify
-       it so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-      <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-         sub-sections.  These are not collapsible.
-    <sections>
-        <section address="SubSection1">
-            <title>Sub-section 1</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-        <section address="SubSection2">
-            <title>Sub-section 2</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-    </sections> -->
-    </section>
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>

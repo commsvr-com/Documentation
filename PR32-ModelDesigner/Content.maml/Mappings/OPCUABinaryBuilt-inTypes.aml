@@ -230,6 +230,174 @@
           <caption placement="after" lead="Figure 10">A String NodeId</caption>
           <image placement="center" xlink:href="4AB3163D-45B4-4e87-9CE3-C16977A027B2" />
         </mediaLink>
+        <para>
+          The Two Byte NodeId encoding has the structure shown on Figure 11.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 11">Two Byte NodeId Binary Encoding</caption>
+          <image placement="center" xlink:href="2529AB16-7821-4212-92B9-52A1F56419DD" />
+        </mediaLink>
+        <para>
+          An example of a Two Byte NodeId with Identifier = 72 is shown in Figure 12.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 12">A Two Byte NodeId</caption>
+          <image placement="center" xlink:href="5693ABAE-BE7E-41be-8269-D2723C40DE8A" />
+        </mediaLink>
+        <para>
+          The Four Byte NodeId encoding has the structure shown in Figure 13.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 13">Four Byte NodeId Binary Encoding</caption>
+          <image placement="center" xlink:href="618DE0E7-CC48-4cef-A4D5-80F3BEE42271" />
+        </mediaLink>
+        <para>
+          An example of a Four Byte NodeId with Namespace = 5 and Identifier = 1025 is shown in Figure 14.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 14">A Four Byte NodeId</caption>
+          <image placement="center" xlink:href="87FA3B2B-C9E9-410e-B139-33D5AE852573" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="ExpandedNodeId">
+      <title>ExpandedNodeId</title>
+      <content>
+        <para>
+          An ExpandedNodeId extends the NodeId structure by allowing the NamespaceUri to be explicitly specified instead of using the NamespaceIndex. The NamespaceUri is optional. If it is specified then the NamespaceIndex inside the NodeId shall be ignored.
+        </para>
+        <para>
+          The ExpandedNodeId is encoded by first encoding a NodeId as described in <link xlink:href="#NodeId">NodeId</link> and then encoding NamespaceUri as a String.
+        </para>
+        <para>
+          An instance of an ExpandedNodeId may still use the NamespaceIndex instead of the NamespaceUri. In this case, the NamespaceUri is not encoded in the stream. The presence of the NamespaceUri in the stream is indicated by setting the NamespaceUri flag in the encoding format byte for the NodeId.
+        </para>
+        <para>
+          If the NamespaceUri is present then the encoder shall encode the NamespaceIndex as 0 in the stream when the NodeId portion is encoded. The unused NamespaceIndex is included in the stream for consistency,
+        </para>
+        <para>
+          An ExpandedNodeId may also have a ServerIndex which is encoded as a <link xlink:href="e6dbd978-9b2f-475e-bcb3-304975700033">UInt32</link> after the NamespaceUri. The ServerIndex flag in the NodeId encoding byte indicates whether the ServerIndex is present in the stream. The ServerIndex is omitted if it is equal to zero.
+        </para>
+        <para>
+          The ExpandedNodeId encoding has the structure shown in Figure 15.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 15">ExpandedNodeId Binary Encoding</caption>
+          <image placement="center" xlink:href="BA3A9523-F137-439b-BC54-70BA58A2B223" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="StatusCode">
+      <title>StatusCode</title>
+      <content>
+        <para>
+          A StatusCode is encoded as a <link xlink:href="e6dbd978-9b2f-475e-bcb3-304975700033">UInt32</link>
+        </para>
+      </content>
+    </section>
+    <section address="DiagnosticInfo">
+      <title>DiagnosticInfo</title>
+      <content>
+        <para>
+          A DiagnosticInfo structure is described in <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577"/>. It specifies a number of fields that could be missing. For that reason, the encoding uses a bit mask to indicate which fields are actually present in the encoded form.
+        </para>
+        <para>
+          As described in <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577"/>, the SymbolicId, NamespaceUri, LocalizedText and Locale fields are indexes in a string table which is returned in the response header. Only the index of the string in this table is encoded. An index of -1 indicates that there is no value for the string.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 16">DiagnosticInfo Binary Encoding</caption>
+          <image placement="center" xlink:href="57204E0D-6FD7-411a-AF0F-7AFA09317A2E" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="QualifiedName">
+      <title>QualifiedName</title>
+      <content>
+        <para>
+          A QualifiedName structure is encoded as shown in Figure 17.
+        </para>
+        <para>
+          The abstract QualifiedName structure is defined in <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocaleId"/> .
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 17">QualifiedName Binary Encoding</caption>
+          <image placement="center" xlink:href="87CF0259-4139-461d-90C3-0BA514B5D8C3" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="LocalizedText">
+      <title>LocalizedText</title>
+      <content>
+        <para>
+          A LocalizedText structure contains two fields that could be missing. For that reason, the encoding uses a bit mask to indicate which fields are actually present in the encoded form.
+        </para>
+        <para>
+          The abstract LocalizedText structure is defined in <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#LocalizedText"/>.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 18">LocalizedText Binary Encoding</caption>
+          <image placement="center" xlink:href="FAE3B142-BC6B-4b7c-A0E9-F58A785E5F7B" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="ExtensionObject">
+      <title>ExtensionObject</title>
+      <content>
+        <para>
+          An ExtensionObject is encoded as sequence of bytes prefixed by the NodeId of its DataTypeEncoding and the number of bytes encoded.
+        </para>
+        <para>
+          An ExtensionObject may be encoded by the application which means it is passed as a ByteString or an XmlElement  to the encoder. In this case, the encoder will be able to write the number of bytes in the object before it encodes the bytes. However, an ExtensionObject may know how to encode/decode itself which means the encoder shall calculate the number of bytes before it encodes the object or it shall be able seek backwards in the stream and update the length after encoding the body
+        </para>
+        <para>
+          When a decoder encounters an ExtensionObject it shall check if it recognizes the DataTypeEncoding identifier. If it does then it can call the appropriate function to decode the object body. If the decoder does not recognize the type it shall use the EncodingMask to determine if the body is a ByteString or an XmlElement and then decode the object body.
+        </para>
+        <para>
+          The serialized form of a ExtensionObject is shown in Figure 19.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 19">Extension Object Binary Encoding</caption>
+          <image placement="center" xlink:href="74DB4F5B-71DB-4fc2-BC08-42CCBD07EB68" />
+        </mediaLink>
+        <para>
+          ExtensionObjects are used in two contexts: as values contained in Variant structures or as parameters in OPC UA messages.
+        </para>
+      </content>
+    </section>
+    <section address="Variant">
+      <title>Variant</title>
+      <content>
+        <para>
+          An Variant is a union of the built-in types.
+        </para>
+        <para>
+          The structure of an Variant is shown in Figure 20
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 20">Variant Binary Encoding</caption>
+          <image placement="center" xlink:href="00FEF49C-9A99-4324-9B20-C35FCA52A378" />
+        </mediaLink>
+        <para>
+          The possible types and their identifiers that can be encoded in an Variant are shown in <link xlink:href="e6dbd978-9b2f-475e-bcb3-304975700033"/>
+        </para>
+      </content>
+    </section>
+    <section address="DataValue">
+      <title>DataValue</title>
+      <content>
+        <para>
+          A DataValue is always preceded by a mask that indicates which fields are present in the stream.
+        </para>
+        <para>
+          The fields of a DataValue are described in Figure 21.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 21">Data Value Binary Encoding</caption>
+          <image placement="center" xlink:href="B43BE252-5F0E-424a-810E-B12664D6D82E" />
+        </mediaLink>
+        <para>
+          The Picoseconds fields store the difference between a high resolution timestamp with a resolution of 10ps and the Timestamp field value which only has a 100ns resolution. The Picoseconds fields shall contain values less than 10000. The decoder shall treat values greater than or equal to 10000 as the value ‘9999’.
+        </para>
       </content>
     </section>
     <relatedTopics>
