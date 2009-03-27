@@ -954,6 +954,36 @@
       <ImageId>89B9FE4F-CF60-40f0-93E8-E198118E8CD6</ImageId>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\XMLDataTypeMappingsforIntegers.JPG">
+      <AlternateText>XML Data Type Mappings for Integers</AlternateText>
+      <ImageId>D5AFDF66-CC5B-496a-B5D0-0473C13288B6</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\XMLDataTypeMappingsforFloatingPoints.JPG">
+      <AlternateText>XML Data Type Mappings for Floating Points</AlternateText>
+      <ImageId>BCE6C2BA-6751-4334-AB02-CB54FAFA1470</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ComponentsofNodeId.JPG">
+      <AlternateText>Components of NodeId</AlternateText>
+      <ImageId>03279423-5692-49f7-B8B4-2E232164E3E3</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ComponentsofExpandedNodeId.JPG">
+      <AlternateText>Components of ExpandedNodeId</AlternateText>
+      <ImageId>E1CACAEE-1930-4e84-B0EB-6A035F7C725B</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ComponentsofEnumeration.JPG">
+      <AlternateText>Components of Enumeration</AlternateText>
+      <ImageId>A28434AB-E4A1-4719-940D-FD4D648E06C2</ImageId>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

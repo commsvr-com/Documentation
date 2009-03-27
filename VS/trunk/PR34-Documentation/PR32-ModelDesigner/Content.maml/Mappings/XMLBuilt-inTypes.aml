@@ -1,45 +1,415 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="b683099d-5c89-4c46-a277-d368f9c98a7a" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-         titles.  Specify a numeric value as the inner text to limit it to
-         a specific number of sub-topics when creating the outline.  Specify
-         zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        Most built-in types are encoded in XML using the formats defined in XML Schema <link xlink:href="bf124b83-10b9-4995-af26-178e5fc9a6e7"/> specification. Any special restrictions or usages are discussed below. Some of the built-in types have an XML Schema defined for them using the syntax defined in XML Schema <link xlink:href="3774554f-8d12-4d9a-8532-85d704388d9d"/>.
+      </para>
+      <para>
+        The prefix xs: is used to denote a symbol defined by the XML Schema specification.
+      </para>
+      <autoOutline />
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-       If using <autoOutline /> tag, add an address attribute to identify
-       it so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Section title</title>
+    <section address="Boolean">
+      <title>Boolean</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-      <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          A Boolean value is encoded as an xs:boolean value.
+        </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-         sub-sections.  These are not collapsible.
-    <sections>
-        <section address="SubSection1">
-            <title>Sub-section 1</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-        <section address="SubSection2">
-            <title>Sub-section 2</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-    </sections> -->
+    </section>
+    <section address="Integer">
+      <title>Integer</title>
+      <content>
+        <para>
+          Integer values are encoded using one of the sub types of the xs:decimal type. The mappings between the OPC UA integer types and XML schema data types are shown in Figure 1.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">XML Data Type Mappings for Integers</caption>
+          <image placement="center" xlink:href="D5AFDF66-CC5B-496a-B5D0-0473C13288B6" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="FloatingPoint">
+      <title>Floating Point</title>
+      <content>
+        <para>
+          Floating point values are encoded using one of the XML floating point types. The mappings between the OPC UA floating point types and XML schema data types are shown in Figure 2.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">XML Data Type Mappings for Floating Points</caption>
+          <image placement="center" xlink:href="BCE6C2BA-6751-4334-AB02-CB54FAFA1470" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="DateTime">
+      <title>DateTime</title>
+      <content>
+        <para>
+          A DateTime value is encoded as an xs:dateTime value.
+        </para>
+        <para>
+          All DateTime values shall be encoded as UTC times or with the time zone explicitly specified.
+        </para>
+        <alert>
+          <para>Correct:</para>
+          <para>
+            2002-10-10T00:00:00+05:00
+          </para>
+          <para>
+            2002-10-09T19:00:00Z
+          </para>
+        </alert>
+        <alert>
+          <para>Incorrect:</para>
+          <para>
+            2002-10-09T19:00:00
+          </para>
+        </alert>
+        <para>
+          It is recommended that all xs:dateTime values be represented in UTC format.
+        </para>
+        <para>
+          The earliest and latest date/time values that can be represented on a platform have special meaning and shall not be literally encoded in XML.
+        </para>
+        <para>
+          The earliest date/time value on a platform shall be encoded in XML as '0001-01-01T00:00:00Z'.
+        </para>
+        <para>
+          The latest date/time value on a platform shall be encoded in XML as '9999-12-31T11:59:59Z'
+        </para>
+        <para>
+          If a decoder encounters a xs:dateTime value that cannot be represented on the platform it should convert the value to either the earliest or latest date/time that can be represented on the platform. The XML decoder should not generate an error if it encounters an out of range date value.
+        </para>
+        <para>
+          The earliest date/time value on a platform is equivalent to a Null date/time value.
+        </para>
+      </content>
+    </section>
+    <section address="Guid">
+      <title>Guid</title>
+      <content>
+        <para>
+          A Guid is encoded using the string representation defined in Section <link xlink:href="ed06838a-603f-4c9e-92e1-bf215ecf46e6"/> .
+        </para>
+        <para>
+          The XML schema for a Guid is:
+        </para>
+        <code language="xml">
+          <![CDATA[<xs:complexType name="Guid">
+            <xs:sequence>
+              <xs:element name="String" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>]]>
+        </code>
+      </content>
+    </section>
+    <section address="ByteString">
+      <title>ByteString</title>
+      <content>
+        <para>
+          A ByteString value is encoded as an xs:base64Binary value.
+        </para>
+        <para>
+          The XML schema for a ByteString is:
+        </para>
+        <code language="xml">
+          <![CDATA[<xs:element name="ByteString" type="xs:base64Binary" nillable="true" />]]>
+        </code>
+      </content>
+    </section>
+    <section address="XmlElement">
+      <title>XmlElement</title>
+      <content>
+        <para>
+          An XmlElement value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="XmlElement">
+  <xs:sequence>
+    <xs:any minOccurs="0" maxOccurs="1" processContents="lax" />
+  </xs:sequence>
+</xs:complexType>]]>
+        </code>
+        <para>
+          XmlElements may only be used inside Variant or ExtensionObject values.
+        </para>
+      </content>
+    </section>
+    <section address="NodeId">
+      <title>NodeId</title>
+      <content>
+        <para>
+          A NodeId value is encoded as a xs:string with the syntax:
+        </para>
+        <code language="scr">
+         <![CDATA[ns=<namespaceindex>;<type>=<value>]]>
+        </code>
+        <para>
+          The elements of the syntax are described in Figure 3.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Components of NodeId</caption>
+          <image placement="center" xlink:href="03279423-5692-49f7-B8B4-2E232164E3E3" />
+        </mediaLink>
+        <para>
+          Examples of NodeIds:
+        </para>
+        <code language="scr">
+          <![CDATA[
+i=13 
+ns=10;i=-1 
+ns=10;s=Hello:World 
+g=09087e75-8e5e-499b-954f-f2a9603db28a 
+n=1;b=M/RbKBsRVkePCePcx24oRA==
+]]>
+        </code>
+        <para>
+          The XML schema for a NodeId is:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="NodeId">
+  <xs:sequence>
+    <xs:element name="Identifier" type="xs:string" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>]]>
+        </code>
+      </content>
+    </section>
+    <section address="ExpandedNodeId">
+      <title>ExpandedNodeId</title>
+      <content>
+        <para>
+          An ExpandedNodeId  value is encoded as a xs:string with the syntax:
+        </para>
+        <code language="scr">
+          <![CDATA[
+svr=<serverindex>;ns=<namespaceindex>;<type>=<value>
+or
+svr=<serverindex>;nsu=<uri>;<type>=<value>
+          ]]>
+        </code>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Components of ExpandedNodeId</caption>
+          <image placement="center" xlink:href="E1CACAEE-1930-4e84-B0EB-6A035F7C725B" />
+        </mediaLink>
+        <para>
+          The XML schema for a ExpandedNodeId is:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="ExpandedNodeId">
+  <xs:sequence>
+    <xs:element name="Identifier" type="xs:string" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>      
+          ]]>
+        </code>
+      </content>
+    </section>
+    <section address="StatusCode">
+      <title>StatusCode</title>
+      <content>
+        <para>
+          A StatusCode is formatted in an xs:string as an 8 digit hexadecimal number.
+        </para>
+        <para>
+          The XML schema for a StatusCode is:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="StatusCode">
+  <xs:sequence>
+    <xs:element name="Code" type="xs:string" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+      </content>
+    </section>
+    <section address="DiagnosticInfo">
+      <title>DiagnosticInfo</title>
+      <content>
+        <para>
+          An DiagnosticInfo  value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="DiagnosticInfo">
+  <xs:sequence>
+    <xs:element name="SymbolicId" type="xs:int" minOccurs="0" />
+    <xs:element name="NamespaceURI" type="xs:int" minOccurs="0" />
+    <xs:element name="LocalizedText" type="xs:int" minOccurs="0"/>
+    <xs:element name="Locale" type="xs:int" minOccurs="0/>
+    <xs:element name="AdditionalInfo" type="xs:string" minOccurs="0" />
+    <xs:element name="InnerStatusCode" type="tns:StatusCode" minOccurs="0" />
+    <xs:element name="InnerDiagnosticInfo" type="tns:DiagnosticInfo" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+      </content>
+    </section>
+    <section address="QualifiedName">
+      <title>QualifiedName</title>
+      <content>
+        <para>
+          A QualifiedName value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="QualifiedName">
+   <xs:sequence>
+     <xs:element name="NamespaceIndex" type="xs:int" minOccurs="0" />
+     <xs:element name="Name" type="xs:string" minOccurs="0" />
+   </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+      </content>
+    </section>
+    <section address="LocalizedText">
+      <title>LocalizedText</title>
+      <content>
+        <para>
+          A LocalizedText value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="LocalizedText">
+  <xs:sequence>
+    <xs:element name="Locale" type="xs:string" minOccurs="0" />
+    <xs:element name="Text" type="xs:string" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+      </content>
+    </section>
+    <section address="ExtensionObject">
+      <title>ExtensionObject</title>
+      <content>
+        <para>
+          An ExtensionObject  value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="ExtensionObject">
+  <xs:sequence>
+    <xs:element name="TypeId" type="tns:NodeId" minOccurs="0" />
+    <xs:element name="Body" minOccurs="0">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:any minOccurs="0" processContents="lax"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+        <para>
+          The body of the ExtensionObject contains a single element which is either a ByteString or XML encoded Structure. A decoder can distinguish between the two by inspecting the top level element. An element with the name tns:ByteString contains a OPC UA Binary encoded body. Any other name shall contain an OPC UA XML encoded body.
+        </para>
+        <para>
+          The TypeId is the NodeId for the DataTypeEncoding Object.
+        </para>
+      </content>
+    </section>
+    <section address="Variant">
+      <title>Variant</title>
+      <content>
+        <para>
+          A Variant  value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="Variant">
+  <xs:sequence>
+    <xs:element name="Value" minOccurs="0" nillable="true">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:any minOccurs="0" processContents="lax"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+        <para>
+          If the Variant represents a scalar value then it shall contain a single child element with the name of the built-in type. For example, the single precision floating point value 3.1415 would be encoded as:
+        </para>
+        <code language="xml">
+          <![CDATA[<tns:Float>3.1415</tns:Float>]]>
+        </code>
+        <para>
+          If the Variant represents a single dimensional array then it shall contain a single child element with the prefix 'ListOf' and the name built-in type. For example an array of strings would be encoded as:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<tns:ListOfString>
+  <tns:String>Hello</tns:String>
+  <tns:String>World</tns:String>
+</tns:ListOfString>
+          ]]>
+        </code>
+        <para>
+          If the Variant represents a Multidimensional array then it shall contain a child element with the name ‘Matrix’ with the two sub-elements shown in this example:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<tns:Matrix>
+  <tns:Dimensions>
+    <tns:Int32>2</tns:Int32>
+    <tns:Int32>2</tns:Int32>
+  </tns:Dimensions>
+  <tns:Elements>
+    <tns:String>A</tns:String>
+    <tns:String>B</tns:String>
+    <tns:String>C</tns:String>
+    <tns:String>D</tns:String>
+  </tns:Elements>
+</tns:Matrix>
+]]>
+        </code>
+        <para>
+          In this example, the array has the following elements:
+        </para>
+        <code language="scr">
+          [0,0] = "A"; [0,1] = "B"; [1,0] = "C"; [1,1] = "D"
+        </code>
+        <para>
+          The elements of a multi-dimensional array are always flattened into a single dimensional array where the higher rank dimensions are serialized first. This single dimensional array is encoded as a child of the ‘Elements’ element. The ‘Dimensions’ element is an array of Int32 values that specify the dimensions of the array starting with the lowest rank dimension. The multi-dimensional array can be reconstructed by using the dimensions encoded.
+        </para>
+        <para>
+          The complete set of built-in type names is found in <link xlink:href="e6dbd978-9b2f-475e-bcb3-304975700033"/> 
+        </para>
+      </content>
+    </section>
+    <section address="DataValue">
+      <title>DataValue</title>
+      <content>
+        <para>
+          A DataValue value is encoded as a xs:complexType with the following XML schema:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<xs:complexType name="DataValue">
+  <xs:sequence>
+    <xs:element name="Value" type="tns:Variant" minOccurs="0" nillable="true" />
+    <xs:element name="StatusCode" type="tns:StatusCode" minOccurs="0" />
+    <xs:element name="SourceTimestamp" type="xs:dateTime" minOccurs="0" />
+    <xs:element name="SourcePicoseconds" type="xs:unsignedShort" minOccurs="0"/>
+    <xs:element name="ServerTimestamp" type="xs:dateTime" minOccurs="0" />
+    <xs:element name="ServerPicoseconds" type="xs:unsignedShort" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
+          ]]>
+        </code>
+      </content>
     </section>
     <relatedTopics>
     </relatedTopics>

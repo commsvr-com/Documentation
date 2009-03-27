@@ -1,46 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="60a27dd4-fb8a-4dfb-a559-a7eb6f96ee7a" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-         titles.  Specify a numeric value as the inner text to limit it to
-         a specific number of sub-topics when creating the outline.  Specify
-         zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        Enumerations that are used as parameters in the Messages defined in <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577"/> are encoded as xs:string with the following syntax:
+      </para>
+      <code language="scr">
+        <![CDATA[<symbol>_<value>]]>
+      </code>
+      <para>
+        The elements of the syntax are described in Figure 1.
+      </para>
+      <mediaLink>
+        <caption placement="after" lead="Figure 1">Components of Enumeration</caption>
+        <image placement="center" xlink:href="A28434AB-E4A1-4719-940D-FD4D648E06C2" />
+      </mediaLink>
+      <para>
+        For example, the XML schema for the NodeClass enumeration is:
+      </para>
+      <code language="xml">
+        <![CDATA[
+<xs:simpleType name="NodeClass">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Unspecified_0" />
+    <xs:enumeration value="Object_1" />
+    <xs:enumeration value="Variable_2" />
+    <xs:enumeration value="Method_4" />
+    <xs:enumeration value="ObjectType_8" />
+    <xs:enumeration value="VariableType_16" />
+    <xs:enumeration value="ReferenceType_32" />
+    <xs:enumeration value="DataType_64" />
+    <xs:enumeration value="View_128" />
+  </xs:restriction>
+</xs:simpleType>
+        ]]>
+      </code>
+      <para>
+        Enumerations that are stored in a Variant are encoded as an Int32 value.
+      </para>
+      <para>
+        For example, any Variable could have a value with a DataType of NodeClass. In this case the corresponding numeric value is placed in the Variant (e.g. NodeClass::Object would be stored as a 1).
+      </para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-       If using <autoOutline /> tag, add an address attribute to identify
-       it so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-      <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-         sub-sections.  These are not collapsible.
-    <sections>
-        <section address="SubSection1">
-            <title>Sub-section 1</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-        <section address="SubSection2">
-            <title>Sub-section 2</title>
-            <content>
-                <para>Sub-section content.</para>
-            </content>
-        </section>
-    </sections> -->
-    </section>
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>

@@ -6,7 +6,7 @@
       An ExtensionObject is a container for any complex data types which cannot be encoded as one of the other built-in data types. The ExtensionObject contains a complex value serialized as a sequence of bytes or as an XML element. It also contains an identifier which indicates what data it contains and how it is encoded.
     </para>
       <para>
-      Complex data types are represented in a Server address space as sub-types of the Structure data type. The encodings available for any given complex data type are represented as a DataTypeEncoding  Object in the Server address space. The NodeId for the DataTypeEncoding Object is the identifier stored in the ExtensionObject. Clause 5.8 of Part 3 describes how DataTypeEncoding node are related to other nodes the address space.
+      Complex data types are represented in a Server address space as sub-types of the Structure data type. The encodings available for any given complex data type are represented as a DataTypeEncoding  Object in the Server address space. The NodeId for the DataTypeEncoding Object is the identifier stored in the ExtensionObject. <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23"/> describes how DataTypeEncoding node are related to other nodes the address space.
     </para>
       <para>
       Server implementers should use namespace qualified numeric NodeIds for any DataTypeEncoding Objects they define. This will minimize the overhead introduced by packing complex data values into ExtensionObjects.
