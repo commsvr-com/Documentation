@@ -15,7 +15,7 @@
         <image placement="center" xlink:href="643a54e6-c563-4289-918d-5f3a9225fab5" />
       </mediaLink>
       <para>
-      Most of these data types are the same as the abstract types defined in Part 3 and Part 4, however, the  ExtensionObject and Variant types are defined in this document. In addition, this document defines a representation for the Guid type defined in Part 3.
+      Most of these data types are the same as the abstract types defined in <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e"/> and <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577"/> , however, the  ExtensionObject and Variant types are defined in this document. In addition, this document defines a representation for the Guid type defined in <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e"/>.
     </para>
     </introduction>
     <relatedTopics>

@@ -1,17 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="abcfe76a-a551-4fa3-be28-0af2cb04f3ba" revisionNumber="1">
   <developerSDKTechnologyOverviewOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-  <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  -->
     <introduction>
-      <para>Required introduction</para>
+      <para></para>
     </introduction>
     <inThisSection>
       <content>
-        <para>"In This Section" info</para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="2d1f7bc3-3cda-452f-9f24-ee9da2c9be94">Overview</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="54d77249-bb3b-4e7b-b3ef-aa5f17826bd1">OPC UA Binary</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="00084482-6519-4d24-a8ff-d731d6cfc35c">XML</link>
+            </para>
+          </listItem>
+        </list>
       </content>
     </inThisSection>
     <!-- <reference>Optional reference info</reference> -->

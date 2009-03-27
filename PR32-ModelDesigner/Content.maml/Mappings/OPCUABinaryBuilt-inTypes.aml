@@ -2,8 +2,9 @@
 <topic id="7f816c6d-3aa2-4f38-9992-16d892e6fe4a" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <autoOutline />
+
       <para></para>
+      <autoOutline />
     </introduction>
     <section address="Boolean">
       <title>Boolean</title>
