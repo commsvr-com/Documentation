@@ -187,6 +187,66 @@
   <ItemGroup>
     <Tokens Include="TokensHelp.tokens" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\Welcome_DataPorter.JPG">
+      <AlternateText>DataPorter</AlternateText>
+      <ImageId>AC997C71-9029-4d68-8DA2-AFFE98111EE8</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_Standard.JPG">
+      <AlternateText>DataPorter Standard</AlternateText>
+      <ImageId>CC3A9F6B-7703-48fe-B327-B301BAD16BE2</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F01.png">
+      <AlternateText>OPC bridging</AlternateText>
+      <ImageId>FF88A069-7D1E-4c5f-854A-18C9C84C0802</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F02.png">
+      <AlternateText>OPC aggregation</AlternateText>
+      <ImageId>D82ACF30-EC70-4230-B436-E9194C50FB6F</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F03.png">
+      <AlternateText>OPC distribution</AlternateText>
+      <ImageId>DD8D1C7B-2648-480f-A91B-3485638FDCA4</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F04.png">
+      <AlternateText>OPC calculation</AlternateText>
+      <ImageId>83F7157D-05D0-4c48-8419-69230F9BE813</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_Profesional.JPG">
+      <AlternateText>DataPorter Professional</AlternateText>
+      <ImageId>D0307DCF-3737-4be6-B246-7BCB649EF961</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F05.png">
+      <AlternateText>OPC - SQL exchange</AlternateText>
+      <ImageId>9BCAC6A4-46A2-49d1-8A85-21EE00E05627</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F06.png">
+      <AlternateText>OPC - XML exchange</AlternateText>
+      <ImageId>7485AA2C-0776-47b2-BF7F-781D5831C385</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_F07.png">
+      <AlternateText>OPC - SQL, XML mixed exchange</AlternateText>
+      <ImageId>FA31BEB2-DBDA-483a-9C0E-0B70ABD898A3</ImageId>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>
