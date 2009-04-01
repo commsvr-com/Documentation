@@ -28,7 +28,7 @@
     </SandcastlePath>
     <WorkingPath>Temp\UAModelDesigner\Working\</WorkingPath>
     <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
-    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <HelpFileFormat>Website</HelpFileFormat>
     <FrameworkVersion>2.0.50727</FrameworkVersion>
     <Preliminary>True</Preliminary>
     <HelpTitle>OPC Unified Architecture</HelpTitle>
@@ -103,7 +103,7 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-    </PlugInConfigurations>
+<PlugInConfig id="HelpTopicsPlugin" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -736,7 +736,6 @@
     <None Include="PR32-ModelDesigner\Content.maml\Mappings\Guid.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Mappings\Built-inTypes.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Mappings\Overview.aml" />
-    <None Include="PR32-ModelDesigner\Content.maml\Mappings\DataEncoding.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Mappings.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Services.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\SecurityModel.aml" />
