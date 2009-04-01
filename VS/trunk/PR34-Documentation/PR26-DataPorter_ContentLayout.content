@@ -10,8 +10,8 @@
     <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components">
       <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter" />
       <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer" />
-      <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP" tocTitle="OPC2SOAP" linkText="OPC2SOAP" />
-      <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="OPC Client for GIS" tocTitle="OPC Client for GIS" linkText="OPC Client for GIS" />
+      <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP Extension " tocTitle="OPC2SOAP" linkText="OPC2SOAP" />
+      <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="System integration using DataPorter OPC  client with OPC2SOAP extension in GIS application." tocTitle="OPC Client for GIS" linkText="OPC Client for GIS" />
     </Topic>
     <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting Started" tocTitle="OPC Viewer Getting Started" linkText="OPC Viewer Getting Started">
       <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Session Tree View" tocTitle="Session Tree View" linkText="Session Tree View" />

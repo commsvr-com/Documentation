@@ -1,82 +1,125 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="43c8f91f-83b4-4715-b716-2575b08ec224" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        OPC2SOAP is an extension for DataPorter software that makes data from OPC servers available through the HTTP-SOAP protocol.
+      </para>
+      <autoOutline/>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Introduction">
+      <title>Introduction</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <mediaLink>
+          <image placement="center" xlink:href="47D035DD-B3CE-4895-B081-B63405AF2698" />
+        </mediaLink>
+        <para>
+          OPC2SOAP is a module that provides easy and free access (reading/saving) to process data from different sources (OPC servers) in any user application and every modern automation system. OPC2SOAP is hosted by IIS that is responsible for simple communication using HTTP protocol. DataPorter™ fully manages communication with OPC servers (it creates subscriptions, reads variable values according to the set time requirements, recovers lost connections, etc.) and, therefore, an integration of OPC with user applications is very simple. In practice, using of the HTTP/SOAP protocol for data transfer between the OPC2SOAP component and user application makes placing of the component on any computer possible and makes the application platform independent of the toolkit platform. In other words, the OPC client has not to be compiled in the user program and setting up a HTTP connection is the only requirement. An example of the deployment diagram is shown in the figure below:
+        </para>
+        <mediaLink>
+          <caption placement="after" >DataPorter (OPC client) with OPC2SOAP extension – deployment diagram</caption>
+          <image placement="center" xlink:href="72517EC7-2A9F-4972-B73A-13893066049D" />
+        </mediaLink>
+        <alert>
+          <para>
+            Read [OPCClientForGIS]  to find example case study that shows how OPC2SOAP can be used in real environment.
+          </para>
+        </alert>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="StandardTechnologiesUsedInOPC2SOAPModule">
+      <title>Standard technologies used in OPC2SOAP module</title>
+      <content>
+        <para>
+          In order to ensure an open structure of the software, the proposed solution is based on such standard technologies as:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              OPC – an advanced standard of industrial process control basing on Microsoft Windows OLE ;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              XML (eXtensible Markup Language) – description language using tags;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              XML (eXtensible Markup Language) – description language using tags;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              SOAP (Simple Object Access Protocol) – text protocol providing access and invoking of rem0ote object functions;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              WSDL (Web Services Description Language) – description language of web services.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          The software provides a safe, non-collision and optimum functioning of all systems with which it cooperates and from which it acquires data. OPC2SOAP has two web services:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              OPCDataAccess – service responsible for access to current process data and their description;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPCAdvancedDataAccess – access to current and buffered process data. The component builds a FIFO queue in which there are collected process variables (states, events) for which no value can be omitted.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="OPC2SOAPModuleFeatures ">
+      <title>OPC2SOAP module features</title>
+      <content>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              simultaneous communication with numerous OPC servers;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              integrated data queueing mechanisms guarantee that no data will be lost (it provides consistency of data of events in the process system and the data base of the supervisory system);
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              an easy configuration of any OPC client by means of an integrated configuration program or edition of XML files – knowledge of no programming language is required;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              diagnostic data are available through HTTP/SOAP, graphical user interface and HTML reports;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              implementation of a watchdog mechanism, that prevents hang-ups resulting from improper configuration or operation;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              significant information is saved in application logs of Windows;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              it is based on .NET technology.
+            </para>
+          </listItem>
+        </list>
+      </content>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
