@@ -9,7 +9,7 @@
     <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
     <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components">
       <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter" />
-      <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
+      <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer" />
       <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP" tocTitle="OPC2SOAP" linkText="OPC2SOAP" />
       <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="OPC Client for GIS" tocTitle="OPC Client for GIS" linkText="OPC Client for GIS" />
     </Topic>

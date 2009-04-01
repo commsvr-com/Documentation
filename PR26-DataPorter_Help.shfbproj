@@ -247,6 +247,66 @@
       <ImageId>FA31BEB2-DBDA-483a-9C0E-0B70ABD898A3</ImageId>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\InstallingDataPorter_1.JPG">
+      <AlternateText>Setup welcome dialog box</AlternateText>
+      <ImageId>4191772F-10E8-4e6b-83F7-7C6A2827D675</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\InstallingDataPorter_2.JPG">
+      <AlternateText>User information dialog box</AlternateText>
+      <ImageId>1EE9135B-AC3F-4b05-ADD8-14920C8D02DB</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\InstallingDataPorter_3.JPG">
+      <AlternateText>Installation dialog box</AlternateText>
+      <ImageId>1D31DCD4-511B-4aa5-B902-DC66C2031922</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\InstallingDataPorter_4.JPG">
+      <AlternateText>Confirmation dialog box</AlternateText>
+      <ImageId>E2D34B3E-5560-419c-B043-D52CFF741186</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\InstallingDataPorter_5.JPG">
+      <AlternateText>Installation dialog box</AlternateText>
+      <ImageId>718CFA02-10C1-41a6-9D0C-00301A75EAC5</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\InstallingDataPorter_6.JPG">
+      <AlternateText>Installation complete dialog box</AlternateText>
+      <ImageId>6E35F4A5-4367-4bf7-9793-1F2B3C94302E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_package.JPG">
+      <AlternateText>DataPorter package</AlternateText>
+      <ImageId>65862BC6-2035-40ba-8085-DA977BCC7E16</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\main_servers.jpg">
+      <AlternateText>DataPorter - main window</AlternateText>
+      <ImageId>D98C72E2-6DF7-4ac7-AC4C-9EB4CB944F0C</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR30-OPCViewer\Graphics\OPCViewer.JPG">
+      <AlternateText>OPC Viewer</AlternateText>
+      <ImageId>DE648479-62D1-47a8-87E9-E3E0517CDE0E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR30-OPCViewer\Graphics\OPCViewer_1.jpg">
+      <AlternateText>OPC Viewer</AlternateText>
+      <ImageId>0006084D-01B6-42b7-8282-55F1968BDF01</ImageId>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

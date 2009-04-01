@@ -1,64 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" revisionNumber="1">
   <developerWalkthroughDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
       <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        This chapter guides you through the process of setting up DataPorter. These instructions, which describe how to install DataPorter, must be followed carefully to ensure a successful and trouble-free installation.
+      </para>
+      <alert>
+        <para>
+          The installation of DataPorter has to be done on Administrator account.
+        </para>
+        <para>
+          Make sure that you have all prerequisites installed before (.NET Framework 2.0 and OPC Core Components).
+        </para>
+      </alert>
     </introduction>
     <!-- <prerequisites><content>Optional prerequisites info</content></prerequisites> -->
     <!-- One or more procedure or section with procedure -->
     <procedure>
-      <title>Procedure title</title>
+      <title>
+        To install the DataPorter application, proceed as follows:
+      </title>
       <steps class="ordered">
         <step>
           <content>
-            <para>First step</para>
+            <para>
+              Launch Setup.exe or DataPorter_x_xx_x.exe (where x_xx_x is DataPorter version number).
+              DataPorter Welcome dialog box (Figure 1) appears.
+            </para>
+            <para>
+              Read information and click Next.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">Setup welcome dialog box</caption>
+              <image placement="center" xlink:href="4191772F-10E8-4e6b-83F7-7C6A2827D675" />
+            </mediaLink>
           </content>
         </step>
         <step>
           <content>
-            <para>Second step</para>
+            <para>User information dialog box (Figure 2) appears.
+            </para>
+            <para>
+              Enter User name, Company name and e-mail address in appropriate text boxes and click Next.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2">User information dialog box</caption>
+              <image placement="center" xlink:href="1EE9135B-AC3F-4b05-ADD8-14920C8D02DB" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Installation dialog box (Figure 3) appears.
+            </para>
+            <para>
+              Default location for application files is specified as:
+            </para>
+            <alert>
+              <para>
+                C:\Program Files\CAS\DataPorter
+              </para>
+            </alert>
+            <para>
+              You can change it to a different location by clicking Browse button or by writing the path manually in the text box.  Disc Cost button shows the amount of necessary and available space on the target drive. Choose option Everyone to install CommServer for anyone who uses this computer or Just me option to install only for yourself.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 3">Installation dialog box</caption>
+              <image placement="center" xlink:href="1D31DCD4-511B-4aa5-B902-DC66C2031922" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Confirmation dialog box (Figure 4) appears.
+            </para>
+            <para>
+              Click Next to start installation. You may also change any previous information by clicking Back button.
+            </para>           
+            <mediaLink>
+              <caption placement="after" lead="Figure 4">Installation dialog box</caption>
+              <image placement="center" xlink:href="E2D34B3E-5560-419c-B043-D52CFF741186" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Installation Progress dialog box (Figure 5) appears.
+            </para>
+            <para>
+              Installation in progress. Wait until your computer has finished the installation.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 5">Installation dialog box</caption>
+              <image placement="center" xlink:href="718CFA02-10C1-41a6-9D0C-00301A75EAC5" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Installation Complete dialog box (Figure 6) appears.
+            </para>
+            <para>
+              The installation has been successfully completed; click Close button to exit the installation.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 6">Installation complete dialog box</caption>
+              <image placement="center" xlink:href="6E35F4A5-4367-4bf7-9793-1F2B3C94302E" />
+            </mediaLink>
+            <para>
+              All necessary files have been copied to the target folder on your computer, the software components have been registered and short-cut icons have been created in the Start menu (Start->Programs->CAS->DataPorter).
+            </para>
           </content>
         </step>
       </steps>
       <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
-    <!-- Optional additional procedure or section with procedure -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <procedure>
-          <title>Procedure #2</title>
-          <steps class="ordered">
-            <step>
-              <content>
-                <para>First step</para>
-              </content>
-            </step>
-            <step>
-              <content>
-                <para>Second step</para>
-              </content>
-            </step>
-          </steps>
-          <!-- <conclusion>Optional conclusion</conclusion> -->
-        </procedure>
-      </content>
-    </section>
-    <!-- Optional next steps info
-    <nextSteps>
-      <content><para>Next steps info goes here</para></content>
-    </nextSteps>
-    -->
+    
     <relatedTopics>
       <!-- One or more of the following:
            - A local link

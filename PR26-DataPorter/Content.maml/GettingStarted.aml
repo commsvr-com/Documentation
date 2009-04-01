@@ -1,45 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+
+      <para>
+        The topics in this section will help you install DataPorter™, become familiar with the DataPorter™, and create your first configuration:
+      </para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="GettingStarted">
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="176fbec7-2274-4b9b-8212-7b7a8a41e32b"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="efa83c9a-0ca8-45e3-b80f-7b6506409f1f"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6dd63460-0a6a-445f-8c51-4cdca08539e8"/>
+            </para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+      
     </section>
     <relatedTopics>
       <!-- One or more of the following:
