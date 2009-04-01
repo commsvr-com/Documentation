@@ -123,6 +123,7 @@
     <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\" />
     <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\Reporting\" />
     <Folder Include="PR26-DataPorter\Content.maml\Welcome\" />
+    <Folder Include="PR30-OPCViewer\Graphics\ico\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
@@ -305,6 +306,91 @@
     <Image Include="PR30-OPCViewer\Graphics\OPCViewer_1.jpg">
       <AlternateText>OPC Viewer</AlternateText>
       <ImageId>0006084D-01B6-42b7-8282-55F1968BDF01</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\opc2soap_ver2.jpg">
+      <AlternateText>OPC2SOAP Extension</AlternateText>
+      <ImageId>47D035DD-B3CE-4895-B081-B63405AF2698</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\opc2soap_uml_DIAGRAM.jpg">
+      <AlternateText>OPC2SOAP extension</AlternateText>
+      <ImageId>72517EC7-2A9F-4972-B73A-13893066049D</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\OPCDataOnGis.jpg">
+      <AlternateText>DataPorter OPC on GIS</AlternateText>
+      <ImageId>6330A1DE-2E8D-489a-A856-2498E52128E1</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR26-DataPorter\Graphics\opc2gis_ver2.jpg">
+      <AlternateText>OPC2GIS</AlternateText>
+      <ImageId>EA667444-1DFC-499b-978C-35E824DDCFE8</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_48.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_48_Disable.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_fail__48.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_sb_48.png" />
+    <Image Include="PR30-OPCViewer\Graphics\ico\FloppyDisk.png">
+      <AlternateText>Save</AlternateText>
+      <ImageId>B063F380-BB7F-4915-953E-720C9700B95B</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\help.png">
+      <AlternateText>Help</AlternateText>
+      <ImageId>C23F3BA0-92A8-4e8a-9483-9A9D12438FB4</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\Network_ConnectTo.png">
+      <AlternateText>OPC Connect</AlternateText>
+      <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
+    </Image>
+    <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR30-OPCViewer\Graphics\ico\Open.png">
+      <AlternateText>Load</AlternateText>
+      <ImageId>4C2670BD-9ADB-4396-86D2-CEDB1C32CFC1</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\search.png">
+      <AlternateText>OPC Brows</AlternateText>
+      <ImageId>8D51CCC3-5213-4d49-9124-E9A90C956B96</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_48.png">
+      <AlternateText>OPC Server Add</AlternateText>
+      <ImageId>950E909F-55BC-4635-82BC-71178CF801C1</ImageId>
+    </Image>
+    <Content Include="PR30-OPCViewer\Graphics\ico\serwer_opc_connect_48.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\serwer_opc_disconnect_48.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\serwer_opc_fail_48.png" />
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_info_48.png">
+      <AlternateText>OPC info</AlternateText>
+      <ImageId>F26B375B-DDE1-4f8a-BC1C-853B0C8A9064</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_read_48.png">
+      <AlternateText>OPC Read</AlternateText>
+      <ImageId>66D1F067-A920-420e-9D60-9DB7A33D60CB</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_start_48.png">
+      <AlternateText>OPC Start</AlternateText>
+      <ImageId>3CFEE26A-BDC4-4c6c-BA41-037708679A1B</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_stop_48.png">
+      <AlternateText>OPC Stop</AlternateText>
+      <ImageId>85FAC8D0-3E88-49f8-90D9-043E0789B1D6</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_write_48.png">
+      <AlternateText>OPC Write</AlternateText>
+      <ImageId>5045B7FC-FA27-41b7-BC09-FD65D2522ACC</ImageId>
+    </Image>
+    <Content Include="PR30-OPCViewer\Graphics\ico\tag_element_48.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\tag_element_fail_48.png" />
+    <Content Include="PR30-OPCViewer\Graphics\ico\tag_element_sb_48.png" />
+    <Image Include="PR30-OPCViewer\Graphics\opc_viewer_main_window_withnumber.jpg">
+      <AlternateText>OPC Viewer Main Window</AlternateText>
+      <ImageId>98E3B520-45C9-4e41-825A-EDECBC6CA676</ImageId>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->

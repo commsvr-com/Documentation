@@ -1,82 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para></para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="MainWindow">
+      <title>Main window </title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <alert>
+          <para>
+            This guide describes the default configuration (session file) attached to OPC Viewer and DataPorter software. To use this configuration, you must have CommServer with the default configuration installed.
+          </para>
+        </alert>
+        <para>
+          The main window of OPC Viewer is shown below:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="98E3B520-45C9-4e41-825A-EDECBC6CA676" />
+        </mediaLink>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Main menu – gives access to all options and functions.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Main tools strip – quick access to main functions like:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Loading(<mediaLinkInline>
+                    <image xlink:href="4C2670BD-9ADB-4396-86D2-CEDB1C32CFC1"/>
+                  </mediaLinkInline>) and saving(<mediaLinkInline>
+                    <image xlink:href="B063F380-BB7F-4915-953E-720C9700B95B"/>
+                  </mediaLinkInline>) session,
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Connecting (<mediaLinkInline>
+                    <image xlink:href="3CFEE26A-BDC4-4c6c-BA41-037708679A1B"/>
+                  </mediaLinkInline>), disconnecting (<mediaLinkInline>
+                    <image xlink:href="85FAC8D0-3E88-49f8-90D9-043E0789B1D6"/>
+                  </mediaLinkInline>) and requesting for status (<mediaLinkInline>
+                    <image xlink:href="F26B375B-DDE1-4f8a-BC1C-853B0C8A9064"/>
+                  </mediaLinkInline>) of the selected OPC server,
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Browsing  (<mediaLinkInline>
+                    <image xlink:href="8D51CCC3-5213-4d49-9124-E9A90C956B96"/>
+                  </mediaLinkInline>), reading (<mediaLinkInline>
+                    <image xlink:href="66D1F067-A920-420e-9D60-9DB7A33D60CB"/>
+                  </mediaLinkInline>) and writing (<mediaLinkInline>
+                    <image xlink:href="5045B7FC-FA27-41b7-BC09-FD65D2522ACC"/>
+                  </mediaLinkInline>) to OPC server,
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  About dialog (<mediaLinkInline>
+                    <image xlink:href="C23F3BA0-92A8-4e8a-9483-9A9D12438FB4"/>
+                  </mediaLinkInline>).
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              Server connect tools strip – this strip allows to select a server to which we want to connect. The server can be selected through the browse network function (<mediaLinkInline>
+                <image xlink:href="853B89FE-4D10-4df9-81D1-311253CC5D27"/>
+              </mediaLinkInline>) or its address can be written manually in the address bar. It is possible to select preferred specification to be used during connection (Data Access 2.XX or Data Access 3.00). After selecting the server, click on Add (<mediaLinkInline>
+                <image xlink:href="950E909F-55BC-4635-82BC-71178CF801C1"/>
+              </mediaLinkInline>) to add the server to session.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Tab panel selector – depending on the selected tab (OPC Environment or Processing Environment), it changes  the view in the main panel (6).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Session tree view – this tree shows the current configuration of the OPC Viewer (more information in “Session Tree View” topic).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Main panel – this panel presents various information depending on the selected tab (6) (more information in “Main Panel” topic).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Server status strip – this strip display status information about the recently selected OPC server.
+            </para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
