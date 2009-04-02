@@ -333,10 +333,22 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_48.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_48_Disable.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_fail__48.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\blok_danych_sb_48.png" />
+    <Image Include="PR30-OPCViewer\Graphics\ico\blok_danych_48.png">
+      <AlternateText>Normal</AlternateText>
+      <ImageId>A999C610-4D92-49c0-9BF9-007BF7A6C601</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\blok_danych_48_Disable.png">
+      <AlternateText>Disable</AlternateText>
+      <ImageId>E0D582B9-C4EC-44ba-9D9F-17A5307904FD</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\blok_danych_fail__48.png">
+      <AlternateText>Faile</AlternateText>
+      <ImageId>6F697F71-6ED1-41c8-B54B-350F1C4FBA5E</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\blok_danych_sb_48.png">
+      <AlternateText>Inactive</AlternateText>
+      <ImageId>7819402E-F96B-4778-9A6C-C0FD7D915559</ImageId>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\ico\FloppyDisk.png">
       <AlternateText>Save</AlternateText>
       <ImageId>B063F380-BB7F-4915-953E-720C9700B95B</ImageId>
@@ -362,9 +374,18 @@
       <AlternateText>OPC Server Add</AlternateText>
       <ImageId>950E909F-55BC-4635-82BC-71178CF801C1</ImageId>
     </Image>
-    <Content Include="PR30-OPCViewer\Graphics\ico\serwer_opc_connect_48.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\serwer_opc_disconnect_48.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\serwer_opc_fail_48.png" />
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_connect_48.png">
+      <AlternateText>Server OPC connected</AlternateText>
+      <ImageId>66E9A85D-CEE6-46de-AAB1-F3D50F64BD5F</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_disconnect_48.png">
+      <AlternateText>Server OPC disconnect</AlternateText>
+      <ImageId>378C71F3-320F-414b-A00A-3D0C11625984</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_fail_48.png">
+      <AlternateText>Server OPC fail</AlternateText>
+      <ImageId>9C016DC5-2814-4936-B24B-7A9D7EC22766</ImageId>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_info_48.png">
       <AlternateText>OPC info</AlternateText>
       <ImageId>F26B375B-DDE1-4f8a-BC1C-853B0C8A9064</ImageId>
@@ -385,9 +406,26 @@
       <AlternateText>OPC Write</AlternateText>
       <ImageId>5045B7FC-FA27-41b7-BC09-FD65D2522ACC</ImageId>
     </Image>
-    <Content Include="PR30-OPCViewer\Graphics\ico\tag_element_48.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\tag_element_fail_48.png" />
-    <Content Include="PR30-OPCViewer\Graphics\ico\tag_element_sb_48.png" />
+    <Image Include="PR30-OPCViewer\Graphics\ico\tag_element_48.png">
+      <AlternateText>Tag element</AlternateText>
+      <ImageId>BADC3785-9F1D-42cd-A19B-56AB53DBAAE1</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\tag_element_fail_48.png">
+      <AlternateText>Tag element fail</AlternateText>
+      <ImageId>D7723262-B494-4696-AAF9-676504B365BB</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\tag_element_sb_48.png">
+      <AlternateText>Tag element inactive</AlternateText>
+      <ImageId>8053D682-89F2-412b-B146-A66570EEEA63</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_treeview_opc_environment.jpg">
+      <AlternateText>OPC Viewer tree</AlternateText>
+      <ImageId>EB36C6EF-9762-419a-9C2E-514B4F8BDA24</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_opcenvironment.jpg">
+      <AlternateText>OPC Environment</AlternateText>
+      <ImageId>889C3679-2A98-4001-AB5E-AC260BD8CA00</ImageId>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\opc_viewer_main_window_withnumber.jpg">
       <AlternateText>OPC Viewer Main Window</AlternateText>
       <ImageId>98E3B520-45C9-4e41-825A-EDECBC6CA676</ImageId>
