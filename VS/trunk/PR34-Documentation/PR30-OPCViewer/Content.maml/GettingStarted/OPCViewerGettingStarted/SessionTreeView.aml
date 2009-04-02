@@ -1,82 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        OPC Viewer represents the current session configuration as a tree. Any session is a container where each node contains configuration of an object such as server, subscription, tag, transaction, etc. Any session includes the following environment: OPC, Processing and Database (the existence of the particular environment depends on the installed license type). The most important nodes for the mentioned environments are described below. As needed, you can then add other objects to the session.
+      </para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="SessionTreeView">
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          Any session can be freely saved and recalled from an XML file. OPC Viewer stores the definition of the session in the file: .oses. To allow flexible management of the session, configuration of selected node types can be exported and imported from the session. It allows us to store any node independently or transfer configuration of the particular objects, e.g. OPC servers, between sessions.
+        </para>
+        <para>
+          To make navigation easy, the session is displayed in the left pane of the graphical user interface as a hierarchy of nodes. Each node in the tree might contain other nodes, called child nodes. You can display parent nodes, or nodes that contain child nodes, as expanded or collapsed.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="EB36C6EF-9762-419a-9C2E-514B4F8BDA24" />
+        </mediaLink>
+        <para>
+          The session tree typically contains the following nodes:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              OPC Environment – this is the root of all server connections and subscriptions created in this session.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPC server – this node represents the connection to an OPC server. The OPC Environment node can contain many OPC server nodes. OPC server can be in various states like: connected (<mediaLinkInline>
+                <image xlink:href="66E9A85D-CEE6-46de-AAB1-F3D50F64BD5F"/>
+              </mediaLinkInline>), disconnected (<mediaLinkInline>
+                <image xlink:href="378C71F3-320F-414b-A00A-3D0C11625984"/>
+              </mediaLinkInline>), fail (<mediaLinkInline>
+                <image xlink:href="9C016DC5-2814-4936-B24B-7A9D7EC22766"/>
+              </mediaLinkInline>).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Subscription – this node represents the group of items (tags) that can be added to the parent OPC server.  Subscriptions can be in various states like: normal (<mediaLinkInline>
+                <image xlink:href="A999C610-4D92-49c0-9BF9-007BF7A6C601"/>
+              </mediaLinkInline> ), inactive (<mediaLinkInline>
+                <image xlink:href="7819402E-F96B-4778-9A6C-C0FD7D915559"/>
+              </mediaLinkInline> ), disabled(<mediaLinkInline>
+                <image xlink:href="E0D582B9-C4EC-44ba-9D9F-17A5307904FD"/>
+              </mediaLinkInline> ) , fail(<mediaLinkInline>
+                <image xlink:href="6F697F71-6ED1-41c8-B54B-350F1C4FBA5E"/>
+              </mediaLinkInline> ).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Items – these nodes represent items (tags) that belong to the parent subscription. Items can be in various states like: normal (<mediaLinkInline>
+                <image xlink:href="BADC3785-9F1D-42cd-A19B-56AB53DBAAE1"/>
+              </mediaLinkInline> ) , inactive (<mediaLinkInline>
+                <image xlink:href="8053D682-89F2-412b-B146-A66570EEEA63"/>
+              </mediaLinkInline> ), fail (<mediaLinkInline>
+                <image xlink:href="D7723262-B494-4696-AAF9-676504B365BB"/>
+              </mediaLinkInline> )
+            </para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
