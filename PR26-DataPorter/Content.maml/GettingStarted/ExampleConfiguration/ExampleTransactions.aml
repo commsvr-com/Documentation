@@ -1,82 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="3b0194c2-7cec-4dce-a252-dc6b61afb48f" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <autoOutline />
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Transaction0">
+      <title>Transaction 0 - set value into OPC tag</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          This transaction is responsible for setting some values to first three registers:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="25F8791E-40A8-49cb-81EB-427AD60E2529" />
+        </mediaLink>
+        <para>
+          This transaction can be defined using the C# notation as:
+        </para>
+        <code language="c#">
+          R100 = Random( 100 ); //random numbers from 0 to 100 is assigned to register 100
+          R101 = System.DateTime.Now.Minute; //current minute from system time is assigned to register 101
+          R102 = 123; //value 123 is assigned to register 102
+        </code>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="Transaction1">
+      <title>Transaction 1 - data bridging and addition</title>
+      <content>
+        <para>
+          The transaction is shown in the picture below:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="B0FA38AD-7820-4a05-BBE9-358DDCD32CF6" />
+        </mediaLink>
+        <para>
+          The meaning is:
+        </para>
+        <code language="c#">
+          R105 = R100; //move the value of register R100 to register R105
+          R106 = R100 + R101; //add values from registers R100 and R101 and assign the result to register R106
+        </code>
+        <alert>
+          <para>
+            To avoid reading of R100 twice, the “splitter” <![CDATA[(“-<”)]]> operation is used.
+            To verify whether this operation works, check the value of R105 (is it equal to R100 ?) and R106 (is it equal to R100 + R101?). The answer should be yes to the above questions.
+          </para>
+        </alert>
+      </content>
+    </section>
+    <section address="Transaction2">
+      <title>Transaction 2 – OPC calculations (multiplication)</title>
+      <content>
+        <para>
+          This transaction presents comparison of using multiply and 10pow operations. 10pow operation scales the input value. It calculates the selected power of 10 and multiplies this value by the input value. (e.g.: operation parameter: ‘0’ – do not scale the value (10^0=1); ‘1’ means multiply the source value by 10 (10^1=10); ‘-2’ – divide the source value by 100 (10^(-2)=0.01=1/100).
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="4CF60251-6B52-4d57-A1A9-130DA1D5FDDE" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          R107 = 10 * R101;
+          R108 = 10pow( R101 , 1 ); // note: 10pow(R101,1) = 10^1 * R101 = 10 * R100
+        </code>
+        <para>
+          Of course, after this operation the R107 and R108 values should be equal.
+        </para>
+      </content>
+    </section>
+    <section address="Transaction3">
+      <title>Transaction 3 - OPC mixed calculations</title>
+      <content>
+        <para>
+          This transaction is doing some simple math:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="8435B7F6-6616-4047-9914-0D1C4AFD64C6" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          R109 = R103 + R104;
+          R110 = R103 * R104;
+        </code>
+        <para>
+          Change the R103 and R104 values using OPC Viewer to see the results.
+        </para>
+      </content>
+    </section>
+    <section address="Transaction4">
+      <title>Transaction 4 – OPC logical operations</title>
+      <content>
+        <para>
+          This transaction presents some logical operations:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="44C637F1-DBFE-4ea4-A22B-58BCBCEBF5C1" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          <![CDATA[F100 = Test.If.Value.Is.InRange( R100 , 0 , 100 ); // this means:
+          // if (R100 > 0 && R100 < 100) 
+//   F100 = 1; // true
+// else
+//   F100 = 0; // false
+F101 = Test.If.Are.Equal ( R100 + R100 , R100 * 2 );// this means:
+// if ((R100 + R100 ) == R100 * 2) 
+//   F101 = 1; // true
+// else
+//   F101 = 0; // false]]>
+        </code>
+        <alert>
+          <para>
+            That value of R100 is a random number between 0 and 100. Of course, after this transaction the F100 and F101 values must be 1 (this means that DataPorter works as expected).
+          </para>
+        </alert>
+      </content>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
