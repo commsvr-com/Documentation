@@ -20,7 +20,7 @@
     <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="Processing Environment in OPC Viewer" tocTitle="Processing Environment in OPC Viewer" linkText="Processing Environment in OPC Viewer">
       <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started" />
     </Topic>
-    <Topic id="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca" visible="True" title="Example Configuration" tocTitle="Example Configuration" linkText="Example Configuration">
+    <Topic id="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca" visible="True" title="DataPorter example configuration" tocTitle="DataPorter example configuration" linkText="DataPorter example configuration">
       <Topic id="3b0194c2-7cec-4dce-a252-dc6b61afb48f" visible="True" title="Example Transactions" tocTitle="Example Transactions" linkText="Example Transactions" />
     </Topic>
     <Topic id="f594fda1-1d52-400f-8d21-e0919913f840" visible="True" title="Testing DataPorter Functionality" tocTitle="Testing DataPorter Functionality" linkText="Testing DataPorter Functionality" />

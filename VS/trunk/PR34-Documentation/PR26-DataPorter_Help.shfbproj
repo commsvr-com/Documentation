@@ -362,6 +362,50 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR26-DataPorter\Graphics\Transaction4.JPG">
+      <AlternateText>Transaction 4 – OPC logical operations</AlternateText>
+      <ImageId>44C637F1-DBFE-4ea4-A22B-58BCBCEBF5C1</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction3.JPG">
+      <AlternateText>Transaction 3 - OPC mixed calculations</AlternateText>
+      <ImageId>8435B7F6-6616-4047-9914-0D1C4AFD64C6</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction2.JPG">
+      <AlternateText>Transaction 2 – OPC calculations (multiplication)</AlternateText>
+      <ImageId>4CF60251-6B52-4d57-A1A9-130DA1D5FDDE</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction1.JPG">
+      <AlternateText>Transaction 1 - data bridging and addition</AlternateText>
+      <ImageId>B0FA38AD-7820-4a05-BBE9-358DDCD32CF6</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction0.JPG">
+      <AlternateText>Transaction 0 - set value into OPC tag</AlternateText>
+      <ImageId>25F8791E-40A8-49cb-81EB-427AD60E2529</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DemoConfiguration_OPCTags.JPG">
+      <AlternateText>Demo Configuration OPC Tags and Groups</AlternateText>
+      <ImageId>0130E142-DFEA-40f8-BBEB-D27C6CA91067</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DemoConfiguration.JPG">
+      <AlternateText>Demo Configuration</AlternateText>
+      <ImageId>0ED807DD-C5FC-4148-9EA4-71B637381592</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_transactioneditor_sampletransaction.jpg">
+      <AlternateText>OPC Viewer Sample Transaction</AlternateText>
+      <ImageId>E76D02D1-BE9F-4add-B1B4-64C05AB86B46</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_transactioneditor_contextmenu.jpg">
+      <AlternateText>OPC Viewer Transactioneditor Context menu</AlternateText>
+      <ImageId>4AC04F4B-A336-4228-9036-E751F9F31F30</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opc_viewer_transactioneditor_withnumber.jpg">
+      <AlternateText>OPC Viewer Transactioneditor</AlternateText>
+      <ImageId>D47D4602-5094-47cc-9F5C-265340976F80</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_treeview_processing_environment.jpg">
+      <AlternateText>OPC Viewer Treeview Processing Environment</AlternateText>
+      <ImageId>2689C695-E9D6-4143-BB9E-E139AC32582C</ImageId>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\ico\Open.png">
       <AlternateText>Load</AlternateText>
       <ImageId>4C2670BD-9ADB-4396-86D2-CEDB1C32CFC1</ImageId>

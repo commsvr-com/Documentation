@@ -1,82 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="69b396de-0b04-4c94-9910-78062d830054" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <autoOutline />
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="MainPanel">
+      <title>Main Panel</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          When “Processing Environment” tab is selected in Main Panel, this panel allows editing the transaction selected on the tree explorer.  It contains the following areas and objects:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="D47D4602-5094-47cc-9F5C-265340976F80" />
+        </mediaLink>
+        <list class ="ordered">
+          <listItem>
+            <para>
+              Graphical transaction editor – This area presents the transaction graphically. Usually it contains many operations objects with connections between them.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Transaction property grid –it contains all settings for this transaction.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Connection – it allows defining the flow of the data connecting outputs and inputs of operations.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Operations – operations are represented by a figure. The shape and color depends on the represented operation type. Each operation is an atomic part of a transaction, that represents a particular task or computation (e.g. read/write an item, add/sub/multiply/divide, compare, save to data base, etc. ). To improve readability, each operation type has different colors. Each operation can contain 0 or more inputs and outputs. Couples of inputs and outputs of different operation can be connected together. The connections determine the processing sequence of the operations in time. Transaction cannot contain circular connections.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Sample input or output. – to create a connection, click the left mouse button on a particular output and then click on the selected input.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Operations can be moved freely on the graphical editor. Each operation shape or connection can be selected by clicking on it. Selected objects are marked with black and red diagonal lines. Double click on the operation shape opens the operation property dialog window. Right click in the editor area opens the context menu allowing managing the content.
+        </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="EditorContextMenu">
+      <title>Editor Context Menu</title>
+      <content>
+        <para>
+          The editor context menu is illustrated below:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="4AC04F4B-A336-4228-9036-E751F9F31F30" />
+        </mediaLink>
+        <list class ="ordered">
+          <listItem>
+            <para>
+              Removes the selected connection.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Removes the selected operation.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Changes the zoom (size of operations and the connections) in the editor (default is 100%).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Adds an operation to the current transaction. It opens a submenu with all available operation types (6).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Reallocates all figures on the editor panel to make the transaction more readable.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Submenu with available operation types. Clicking on an operation type adds the operation to the panel and opens operation property dialog.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address ="ExampleTransaction">
+      <title>Example Transaction</title>
+      <content>
+        <para>
+          The example below illustrates a simple transaction:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="E76D02D1-BE9F-4add-B1B4-64C05AB86B46" />
+        </mediaLink>
+        <para>
+          This example defines the transaction that contains four operations. It reads values of OPC items: R/1500 and R/1501, adds the obtained tags values and writes the result to the tag R/1502.
+        </para>
+      </content>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

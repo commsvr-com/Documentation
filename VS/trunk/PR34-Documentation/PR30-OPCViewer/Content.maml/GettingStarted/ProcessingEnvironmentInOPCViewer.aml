@@ -1,82 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="470275f3-3420-43f8-bdd4-de1c00c66593" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        When DataPorter license is installed the following adds-on are available in OPC Viewer.
+      </para>
+      <autoOutline />
     </introduction>
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="ProcessingEnvironmentInSessionTreeView">
+      <title>Processing environment in session Tree View</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          OPC Viewer represents the current session configuration as a tree. Any session is a container where each node contains configuration of an object such as server, subscription, tag, transaction, etc. Any session includes the following environment: OPC, Processing and Database Database (the existence of the particular environment depends on the installed license type). The most important nodes for the mentioned environments are described below. As needed, you can then add other objects to the session.
+        </para>
+        <para>
+          Any session can be freely saved and recalled from an XML file. OPC Viewer stores the definition of the session in the file: .oses. To allow flexible management of the session, configuration of selected node types can be exported and imported from the session. It allows us to store any node independently or transfer configuration of the particular objects, e.g. OPC servers, between sessions.
+        </para>
+        <para>
+          To make navigation easy, the session is displayed in the left pane of the graphical user interface as a hierarchy of nodes. Each node in the tree might contain other nodes, called child nodes. You can display parent nodes, or nodes that contain child nodes, as expanded or collapsed.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="2689C695-E9D6-4143-BB9E-E139AC32582C" />
+        </mediaLink>
+        <para>
+          The session tree typically contains the following nodes:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Processing Environment – This is the root of a set of operations to be processed in real-time by the DataPorter™ software.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Transaction node - Transaction is a set of operations that is  processed in real-time as one whole.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Operations – Each operation is an atomic part of a transaction. It performs various tasks (e.g. read/write an item, add/sub/multiply/divide, compare, save to data base, etc… ) depending on the operation type.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          To perform any task, click right mouse button on the selected node to open context menu with available options. Options depend on the node. Examples of the available options are:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Connecting and disconnecting the server.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Adding and removing of subscription, item, and transaction.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Reading and writing to server.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              etc.
+            </para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
+    </section>
+    <section address="MainPanel">
+      <title>Processing Environment Editor Tab in OPC Viewer main panel</title>
+      <content>
+        <para>
+          Depending on the selected tab, this panel presents detailed  information relevant to the selected node:
+        </para>
+        <autoOutline />
+      </content>
       <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+        <section address="OPCEnvironmentTab">
+          <title>OPC Environment tab - This panel displays values from OPC.</title>
+          <content>
+            <para>
+              This tab was described in previous topic (OPC Viewer Getting Started).
+            </para>
+          </content>
+        </section>
+        <section address="ProcessingEnvironmentEditor">
+          <title>Processing Environment Editor – This panel displays the transaction editor.</title>
+          <content>
+            <para>
+              When “Processing Environment” tab is selected, this panel allows editing the transaction selected on the tree explorer.  Read topic: “Transaction Editor getting started” to learn more details.
+            </para>
+          </content>
+        </section>
+      </sections>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
