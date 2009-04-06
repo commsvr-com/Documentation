@@ -102,8 +102,9 @@
           The meaning of this transaction is (using C# notation):
         </para>
         <code language="c#">
-          <![CDATA[F100 = Test.If.Value.Is.InRange( R100 , 0 , 100 ); // this means:
-          // if (R100 > 0 && R100 < 100) 
+          <![CDATA[
+F100 = Test.If.Value.Is.InRange( R100 , 0 , 100 ); // this means:
+// if (R100 > 0 && R100 < 100) 
 //   F100 = 1; // true
 // else
 //   F100 = 0; // false
@@ -118,6 +119,102 @@ F101 = Test.If.Are.Equal ( R100 + R100 , R100 * 2 );// this means:
             That value of R100 is a random number between 0 and 100. Of course, after this transaction the F100 and F101 values must be 1 (this means that DataPorter works as expected).
           </para>
         </alert>
+      </content>
+    </section>
+    <section address="Transaction5">
+      <title>Transaction 5 - OPC calculations (division and subtraction)</title>
+      <content>
+        <para>
+          This transaction presents some logical operations:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="3D107577-8D73-4d2f-86D6-9395ABBD82A5" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          <![CDATA[
+F102 = Test.If.Are.Equal ( R101 / R101 , 1 );// this means:
+// if ((R101 / R101) == 1) 
+//   F102 = 1; // true
+// else
+//   F102 = 0; // false
+F103 = Test.If.Are.Equal ( R101 - R101 , 0 );// this means:
+// if ((R101 - R101) == 0) 
+//   F103 = 1; // true
+// else
+//   F103 = 0; // false
+]]>
+        </code>
+        <para>
+          Of course, after this transaction the F102 and F103 values must be 1 (this means that DataPorter works as expected).
+        </para>
+        <alert>
+          <para>
+            If the R101 value is 0 (the system minute is 0) the transaction returns an error and no values are written.
+          </para>
+        </alert>
+      </content>
+    </section>
+    <section address="Transaction6">
+      <title>Transaction 6 - OPC mixed calculations and logical operations (rising test)</title>
+      <content>
+        <para>
+          This transaction presents some logical operations:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="E9DC1508-823A-492e-83E4-A0103CD69C76" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          <![CDATA[
+F100 = Test.If.Value.Is.InRange(10pow( R100 , 2 ) – R100 * 100, 0 , 1 ); 
+// this means:
+// temp1 = 10pow( R100 , 2 ); //temp1 = R100 * 10^2; //this is temporal variable
+// temp2 = R100 * 100; // this is second temporal variable
+// if ( (temp1-temp2) >= 0 && (temp1-temp2) < 1) 
+//   F104 = 1; // true
+// else
+//   F104 = 0; // false]]>
+        </code>
+        <para>
+          Analyze the code to find that the F104 value should be always 1.
+        </para>
+      </content>
+    </section>
+    <section address="Transaction7and8">
+      <title>Transaction 7 and Transaction 8 – OPC mixed logical operations</title>
+      <content>
+        <para>
+          This transaction presents some logical operations:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="8F72BF13-AA19-4a13-A4D7-5200FC9EF00B" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          <![CDATA[
+F105= Test.If.Value.Is.InRange(R105, 0 , 50 );
+F106 = Test.If.Are.Equal ( R103 , R104 );
+]]>
+        </code>
+        <mediaLink>
+          <image placement="center" xlink:href="D6747399-C490-4cff-B6AA-E17AC39D1646" />
+        </mediaLink>
+        <para>
+          The meaning of this transaction is (using C# notation):
+        </para>
+        <code language="c#">
+          <![CDATA[
+F105= Test.If.Value.Is.InRange(R109, 0 , 100 );
+F105= Test.If.Value.Is.InRange(R110, 0 , 100 );
+]]>
+        </code>
       </content>
     </section>
     <relatedTopics>
