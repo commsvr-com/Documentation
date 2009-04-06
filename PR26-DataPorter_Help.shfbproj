@@ -362,6 +362,22 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR26-DataPorter\Graphics\Transaction8.JPG">
+      <AlternateText>OPC mixed logical operations</AlternateText>
+      <ImageId>D6747399-C490-4cff-B6AA-E17AC39D1646</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction7.JPG">
+      <AlternateText>OPC mixed logical operations</AlternateText>
+      <ImageId>8F72BF13-AA19-4a13-A4D7-5200FC9EF00B</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction6.JPG">
+      <AlternateText>Transaction 6 - OPC mixed calculations and logical operations (rising test)</AlternateText>
+      <ImageId>E9DC1508-823A-492e-83E4-A0103CD69C76</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction5.JPG">
+      <AlternateText>Transaction 5 - OPC calculations (division and subtraction)</AlternateText>
+      <ImageId>3D107577-8D73-4d2f-86D6-9395ABBD82A5</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\Transaction4.JPG">
       <AlternateText>Transaction 4 – OPC logical operations</AlternateText>
       <ImageId>44C637F1-DBFE-4ea4-A22B-58BCBCEBF5C1</ImageId>
