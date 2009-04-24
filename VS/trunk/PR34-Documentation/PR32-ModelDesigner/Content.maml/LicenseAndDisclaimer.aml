@@ -22,7 +22,7 @@
         </linkAlternateText><linkUri>http://www.opcfoundation.org</linkUri></externalLink>.
     </para>
       <para>
-      Parts of the documentation are inspired by <token>OPCUA</token> specifications. The intention of the author and the publisher is to make <token>OPCUA</token> more understandable. This documentation is not the specification and it is not meant to be any replacement for the specification.
+        The portions of this documentation copied from the <token>OPCUA</token> Specifications are a copyright of the OPC Foundation and used by permission. The intention of the author and the publisher is to make <token>OPCUA</token> more understandable. This documentation is not the specification and it is not meant to be any replacement for the specification.
     </para>
       <para>
       The author has made every effort to include up-to-date and true information about <token>OPCUA</token>, but does not give any warranty. In case of any doubt and for more details please search the official <token>OPCUA</token> specifications available at
