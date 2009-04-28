@@ -124,6 +124,8 @@
     <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\Reporting\" />
     <Folder Include="PR26-DataPorter\Content.maml\Welcome\" />
     <Folder Include="PR30-OPCViewer\Graphics\ico\" />
+    <Folder Include="PR26-DataPorter\Graphics\operations\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
@@ -181,6 +183,8 @@
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\Reporting\SampleReport.aml" />
     <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterProfessional.aml" />
     <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterStandard.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\TransactionAndOperationConfiguration.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\ListOfAvailableOperations.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
@@ -362,6 +366,22 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Content Include="PR26-DataPorter\Graphics\operations\10Power.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\Add.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\AreEqual.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\Avg.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\BufferedAccessQueue.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\const.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\DBSave.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\Div.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\Multiplicity.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\ReadOPC.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\ReadSystemItem.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\RND.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\Split.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\Sub.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\ValueInRange.JPG" />
+    <Content Include="PR26-DataPorter\Graphics\operations\WriteOPC.JPG" />
     <Image Include="PR26-DataPorter\Graphics\Transaction8.JPG">
       <AlternateText>OPC mixed logical operations</AlternateText>
       <ImageId>D6747399-C490-4cff-B6AA-E17AC39D1646</ImageId>

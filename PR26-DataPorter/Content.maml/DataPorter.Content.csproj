@@ -42,6 +42,8 @@
     <None Include="Configuration.aml" />
     <None Include="Configuration\ConfigurationFiles.aml" />
     <None Include="Configuration\SQLConectivity.aml" />
+    <None Include="Configuration\TransactionAndOperation\ListOfAvailableOperations.aml" />
+    <None Include="Configuration\TransactionAndOperation\TransactionAndOperationConfiguration.aml" />
     <None Include="Configuration\WebServiceConectivity.aml" />
     <None Include="Configuration\WebServiceConectivity\ServiceInstallation.aml" />
     <None Include="DiagnosticsAndTrubelshooting.aml" />
