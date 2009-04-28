@@ -1,29 +1,169 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="b8c5f048-bb7e-4742-b7f2-b61a77789ed9">
   <Topic id="b8c5f048-bb7e-4742-b7f2-b61a77789ed9" visible="True" title="Welcome" tocTitle="Welcome" linkText="Welcome">
-    <Topic id="52fb9b14-2c71-4761-8ab6-a04f4d111e51" visible="True" title="DataPorter Standard" tocTitle="DataPorter Standard" linkText="DataPorter Standard" />
-    <Topic id="01327e6f-b503-4ebc-a4f2-f232b926b676" visible="True" title="DataPorter Professional" tocTitle="DataPorter Professional" linkText="DataPorter Professional" />
+    <HelpKeywords>
+      <HelpKeyword index="NamedUrlIndex" term="Welcome" />
+    </HelpKeywords>
+    <Topic id="52fb9b14-2c71-4761-8ab6-a04f4d111e51" visible="True" title="DataPorter Standard" tocTitle="DataPorter Standard" linkText="DataPorter Standard">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="DataPorter operations" />
+        <HelpKeyword index="K" term="DataPorter operations, aggregation" />
+        <HelpKeyword index="K" term="DataPorter operations, bridging" />
+        <HelpKeyword index="K" term="DataPorter operations, calkulation" />
+        <HelpKeyword index="K" term="DataPorter operations, distribution" />
+        <HelpKeyword index="K" term="DataPorter Standard" />
+        <HelpKeyword index="K" term="standard operations" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="01327e6f-b503-4ebc-a4f2-f232b926b676" visible="True" title="DataPorter Professional" tocTitle="DataPorter Professional" linkText="DataPorter Professional">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="DataPorter operations" />
+        <HelpKeyword index="K" term="DataPorter operations, aggregation" />
+        <HelpKeyword index="K" term="DataPorter operations, bridging" />
+        <HelpKeyword index="K" term="DataPorter operations, calculation" />
+        <HelpKeyword index="K" term="DataPorter operations, distribution" />
+        <HelpKeyword index="K" term="DataPorter operations, SQL  XML mixed exchange" />
+        <HelpKeyword index="K" term="DataPorter operations, SQL exchange" />
+        <HelpKeyword index="K" term="DataPorter operations, XML exchange" />
+        <HelpKeyword index="K" term="DataPorter Professional" />
+        <HelpKeyword index="K" term="professional operations" />
+        <HelpKeyword index="K" term="SQL" />
+        <HelpKeyword index="K" term="XML" />
+      </HelpKeywords>
+    </Topic>
   </Topic>
   <Topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
-    <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction" />
-    <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
+    <HelpKeywords>
+      <HelpKeyword index="K" term="DataPorter, Getting Started" />
+    </HelpKeywords>
+    <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="DataPorter, Instalation" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="COM" />
+        <HelpKeyword index="K" term="DCOM" />
+        <HelpKeyword index="K" term="DCS" />
+        <HelpKeyword index="K" term="HMI" />
+        <HelpKeyword index="K" term="OPC" />
+        <HelpKeyword index="K" term="OPC DA" />
+        <HelpKeyword index="K" term="OPC Overview" />
+        <HelpKeyword index="K" term="OPC specification " />
+        <HelpKeyword index="K" term="OPC UA" />
+        <HelpKeyword index="K" term="PLC" />
+        <HelpKeyword index="K" term="SCADA" />
+      </HelpKeywords>
+    </Topic>
     <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components">
-      <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter" />
-      <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer" />
-      <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP Extension " tocTitle="OPC2SOAP" linkText="OPC2SOAP" />
-      <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="System integration using DataPorter OPC  client with OPC2SOAP extension in GIS application." tocTitle="OPC Client for GIS" linkText="OPC Client for GIS" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="DataPorter components" />
+      </HelpKeywords>
+      <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="DataPorter components, DataPorter" />
+          <HelpKeyword index="K" term="DataPorter, Engine" />
+          <HelpKeyword index="K" term="DataPorter, Monitor " />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="DataPorter components, OPC Viewer" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP Extension " tocTitle="OPC2SOAP" linkText="OPC2SOAP">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="DataPorter components, OPC2SOAP" />
+          <HelpKeyword index="K" term="HTML" />
+          <HelpKeyword index="K" term="HTTP" />
+          <HelpKeyword index="K" term="HTTP/SOAP" />
+          <HelpKeyword index="K" term="OPC" />
+          <HelpKeyword index="K" term="OPC2SOAP" />
+          <HelpKeyword index="K" term="OPC2SOAP, OPCAdvancedDataAccess" />
+          <HelpKeyword index="K" term="OPC2SOAP, OPCDataAccess" />
+          <HelpKeyword index="K" term="SOAP" />
+          <HelpKeyword index="K" term="WSDL" />
+          <HelpKeyword index="K" term="XML" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="System integration using DataPorter OPC  client with OPC2SOAP extension in GIS application." tocTitle="OPC Client for GIS" linkText="OPC Client for GIS">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="DataPorter components, OPC Client for GIS" />
+          <HelpKeyword index="K" term="GIS" />
+          <HelpKeyword index="K" term="GIS Smallworld" />
+          <HelpKeyword index="K" term="Integration" />
+          <HelpKeyword index="K" term="OPC Client for GIS" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
     <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting Started" tocTitle="OPC Viewer Getting Started" linkText="OPC Viewer Getting Started">
-      <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
-      <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Session Tree View" tocTitle="Session Tree View" linkText="Session Tree View" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="OPC Viewer" />
+        <HelpKeyword index="K" term="OPC Viewer, Getting Started" />
+        <HelpKeyword index="K" term="OPC Viewer, Main menu" />
+        <HelpKeyword index="K" term="OPC Viewer, Main panel" />
+        <HelpKeyword index="K" term="OPC Viewer, Main tool strip" />
+        <HelpKeyword index="K" term="OPC Viewer, Main window" />
+        <HelpKeyword index="K" term="OPC Viewer, server connect tool strip" />
+        <HelpKeyword index="K" term="OPC Viewer, Server status" />
+        <HelpKeyword index="K" term="OPC Viewer,Tab panel selector" />
+      </HelpKeywords>
+      <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="OPC Viewer, OPC Environment tab" />
+          <HelpKeyword index="K" term="OPC Viewer, Processing Environment tab" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Session Tree View" tocTitle="Session Tree View" linkText="Session Tree View">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="OPC Viewer, Items" />
+          <HelpKeyword index="K" term="OPC Viewer, OPC Environment" />
+          <HelpKeyword index="K" term="OPC Viewer, OPC server" />
+          <HelpKeyword index="K" term="OPC Viewer, Session Tree View" />
+          <HelpKeyword index="K" term="OPC Viewer, Subscription" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
     <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="Processing Environment in OPC Viewer" tocTitle="Processing Environment in OPC Viewer" linkText="Processing Environment in OPC Viewer">
-      <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="OPC Viewer, Processing Environment" />
+        <HelpKeyword index="K" term="OPC Viewer, Processing Environment Editor Tab" />
+        <HelpKeyword index="K" term="OPC Viewer, Processing Environment in session Tree View" />
+      </HelpKeywords>
+      <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor, Context Menu" />
+          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor, Example Transaction" />
+          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor, Main Panel" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
     <Topic id="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca" visible="True" title="DataPorter example configuration" tocTitle="DataPorter example configuration" linkText="DataPorter example configuration">
-      <Topic id="3b0194c2-7cec-4dce-a252-dc6b61afb48f" visible="True" title="Example Transactions" tocTitle="Example Transactions" linkText="Example Transactions" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="DataPorter, Example Configuration" />
+      </HelpKeywords>
+      <Topic id="3b0194c2-7cec-4dce-a252-dc6b61afb48f" visible="True" title="Example Transactions" tocTitle="Example Transactions" linkText="Example Transactions">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Example Transactions, Adding and Bridging" />
+          <HelpKeyword index="K" term="Example Transactions, Calculation (division, substraction)" />
+          <HelpKeyword index="K" term="Example Transactions, Calculation (multiplication)" />
+          <HelpKeyword index="K" term="Example Transactions, Calculation and Logical" />
+          <HelpKeyword index="K" term="Example Transactions, Logical" />
+          <HelpKeyword index="K" term="Example Transactions, Mixed calculation" />
+          <HelpKeyword index="K" term="Example Transactions, Mixed logical" />
+          <HelpKeyword index="K" term="Example Transactions, Read OPC Tag" />
+          <HelpKeyword index="K" term="Example Transactions, Set value" />
+          <HelpKeyword index="K" term="Example Transactions, Write OPC Tag" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
-    <Topic id="f594fda1-1d52-400f-8d21-e0919913f840" visible="True" title="Testing DataPorter Functionality" tocTitle="Testing DataPorter Functionality" linkText="Testing DataPorter Functionality" />
+    <Topic id="f594fda1-1d52-400f-8d21-e0919913f840" visible="True" title="Testing DataPorter Functionality" tocTitle="Testing DataPorter Functionality" linkText="Testing DataPorter Functionality">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="DataPorter, Testing environment " />
+        <HelpKeyword index="K" term="DataPorter, Testing functionality" />
+      </HelpKeywords>
+    </Topic>
   </Topic>
   <Topic id="a5b37bb1-ca47-4770-900e-85b8da61cfe6" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
     <Topic id="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a" visible="True" title="Configuration Files" tocTitle="Configuration Files" linkText="Configuration Files" />
@@ -34,7 +174,10 @@
       <Topic id="e8cbd036-5a13-4a3c-b6f1-637561d043fc" visible="True" title="Write Data" tocTitle="Write Data" linkText="Write Data" />
       <Topic id="420d5fc2-c2b0-42e4-b944-d0b72e3fa4b2" visible="True" title="Read Data" tocTitle="Read Data" linkText="Read Data" />
     </Topic>
-    <Topic id="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0" visible="True" title="Transaction and Operations" tocTitle="Transaction and Operations" linkText="Transaction and Operations" />
+    <Topic id="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0" visible="True" title="Transaction and Operations" tocTitle="Transaction and Operations" linkText="Transaction and Operations">
+      <Topic id="513d802a-9060-4c19-a3d4-0e549a583007" visible="True" title="Transaction and operation configuration" tocTitle="Transaction and operation configuration" linkText="Transaction and operation configuration" />
+      <Topic id="11e85dab-2c01-4ee3-9b12-2d396ed80bab" visible="True" />
+    </Topic>
     <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity" />
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
       <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="11e85dab-2c01-4ee3-9b12-2d396ed80bab" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>Below there is a list of available operations:</para>
+    </summary>
+    <introduction>
+      <autoOutline />
+      <para></para>
+    </introduction>
+
+    <section address="StandardOperations">
+      <title>Standard operations:</title>
+      <content>
+        <autoOutline />
+        <para></para>
+      </content>
+      <sections>
+        <section address="Generators">
+          <title>Generators</title>
+          <content>
+            <autoOutline />
+            <para></para>
+          </content>
+          <sections>
+            <section address="RandomValue">
+              <title>Random Value</title>
+              <content>
+                <para>
+                  This operation generates a random value to its output. The value from 0 to the value that is set as an operation parameter.
+                </para>
+              </content>
+            </section>
+            <section address="">
+              <title>Sub-section 2</title>
+              <content>
+                <para>Sub-section content.</para>
+              </content>
+            </section>
+          </sections>
+        </section>
+        <section address="SubSection2">
+          <title>Sub-section 2</title>
+          <content>
+            <para>Sub-section content.</para>
+          </content>
+        </section>
+      </sections>
+    </section>
+
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
