@@ -8,9 +8,8 @@
       <autoOutline />
       <para></para>
     </introduction>
-
     <section address="StandardOperations">
-      <title>Standard operations:</title>
+      <title>Standard operations</title>
       <content>
         <autoOutline />
         <para></para>
@@ -29,61 +28,658 @@
                 <para>
                   This operation generates a random value to its output. The value from 0 to the value that is set as an operation parameter.
                 </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Operation parameter</legacyBold>
+                </para>
+                <para>
+                  The upper value of random range.
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
               </content>
             </section>
-            <section address="">
-              <title>Sub-section 2</title>
+            <section address="SetConstantValue">
+              <title>Set Constant Value</title>
               <content>
-                <para>Sub-section content.</para>
+                <para>
+                  This operation sets a constant value to the output.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="B9F0D5E8-EFC3-4a1c-AA5F-D37E5257EC08" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Operation parameter</legacyBold>
+                </para>
+                <para>
+                  Represents a real number value. To indicate whether the number is positive or negative, apply + or - unary operators to the numeric constant. This creates a numeric expression that represents the signed numeric value. Numeric constants use positive when + or - unary operators are not applied.
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>  
+          </sections>
+        </section>
+        <section address="IO">
+          <title>IO</title>
+          <content>
+            <autoOutline />
+            <para></para>
+          </content>
+          <sections>
+            <section address="BufferedAccessQueue ">
+              <title>Buffered Access Queue </title>
+              <content>
+                <para>
+                  This operation stores the input tag in buffered queue. Access to buffered queue is available via Web Services (XML/AOAP).
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Operation parameter</legacyBold>
+                </para>
+                <para>
+                  The parameter is the name of the queue.
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="ReadOPCItem">
+              <title>Read OPC Item</title>
+              <content>
+                <para>
+                  This operation reads the value of an OPC item as configured in the OPC client configuration.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="15DA8BC5-C742-4051-98AE-EBCDBA1FD9F4" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Item</legacyBold>
+                </para>
+                <para>
+                  The OPC item selected from the drop-down list.
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="ReadSystemItem">
+              <title>Read System Item</title>
+              <content>
+                <para>
+                  This operation sets the value of a system variable (e.g. second, hour, minute, etc.) to the output.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="B9F0D5E8-EFC3-4a1c-AA5F-D37E5257EC08" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Item parameter</legacyBold>
+                </para>
+                <para>
+                  The following value can be selected from the drop-down list including the following items.
+                </para>
+                <table>
+                  <tableHeader>
+                    <row>
+                      <entry>
+                        <para>
+                          System Item
+                        </para>
+                      </entry>
+                      <entry>
+                        <para>
+                        Description
+                        </para>
+                      </entry>
+                    </row>
+                  </tableHeader>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Date
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns the current system date and time
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Day
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the day part of the specified date. The day component is expressed as a value between 1 and 31.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.DayOfWeek
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the day of week part of the specified date. DayOfWeek enumerated constant indicates the day of the week of this DateTime value.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.DayOfYear
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the day of year part of the specified date. The day of the year component is expressed as a value between 1 and 366.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Hour
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the hour part of the specified time. The hour component is expressed as a value between 0 and 23.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Kind
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns a value that indicates whether the time represented by this instance is based on local time, Coordinated Universal Time (UTC), or neither.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Milliseconds
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the milliseconds part of the specified time. The milliseconds component is expressed as a value between 0 and 999.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Minute
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the minute part of the specified time. The minute component is expressed as a value between 0 and 59.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Month
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the month part of the specified date. The month component is expressed as a value between 1 and 12.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Second
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the seconds part of the specified time. The seconds between 0 and 59.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Ticks
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Gets the number of ticks that represent the date and time intervals that have elapsed since 12:00:00 midnight, January 1, 0001
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.TimeOfDay
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Gets the time of Day that represents the fraction of the day that has elapsed since midnight.
+                      </para>
+                    </entry>
+                  </row>
+                  <row>
+                    <entry>
+                      <para>
+                        System.DateTime.Now.Year
+                      </para>
+                    </entry>
+                    <entry>
+                      <para>
+                        Returns an integer representing the year part of the specified date. The year between 1 and 9999.
+                      </para>
+                    </entry>
+                  </row>
+                </table>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="WriteOPCItem">
+              <title>Write OPC Item</title>
+              <content>
+                <para>
+                  This operation writes the value of input in the selected OPC item.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="814365EB-E393-4548-8C83-BEB3A3997DDD" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Item parameter</legacyBold>
+                </para>
+                <para>
+                  The OPC item selected from the drop-down list.
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
               </content>
             </section>
           </sections>
         </section>
-        <section address="SubSection2">
-          <title>Sub-section 2</title>
+        <section address="Logic">
+          <title>Logic</title>
           <content>
-            <para>Sub-section content.</para>
+            <autoOutline />
+            <para></para>
+          </content>
+          <sections>
+            <section address="AreEqual">
+              <title>Are Equal</title>
+              <content>
+                <para>
+                  This operation tests if values of inputs are equal. If so, the operation sets true (a value greater than zero) on the output and false (zero) otherwise.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="E653E8B4-2553-48a5-BCED-FACE8B180FEE" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="Valueisinrange">
+              <title>Value is in range</title>
+              <content>
+                <para>
+                  This operation tests whether the value on the input is within the selected range. If so, the operation sets true (a value greater than zero) on the output, and false (zero) otherwise.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="9F6831CD-F5CF-4b05-B462-0FA03F58D664" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Low Limit</legacyBold>
+                </para>
+                <para>
+                  The value of the low interval endpoint.
+                  If “Can be equal” is selected, the value can be equal to this endpoint value.
+                </para>
+                <para>
+                  <legacyBold>Hi Limit</legacyBold>
+                </para>
+                <para>
+                  The value of the upper interval endpoint.
+                  If “Can be equal” is selected, the value can be equal to this endpoint value.
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>        
+          </sections>
+        </section>
+        <section address="Math">
+          <title>Math</title>
+          <content>
+            <autoOutline />
+            <para></para>
+          </content>
+          <sections>
+            <section address="Add">
+              <title>Add</title>
+              <content>
+                <para>
+                  This operation adds values of inputs.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="3751EAB2-A54E-4961-B367-9E3E40DEF454" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="Average">
+              <title>Average</title>
+              <content>
+                <para>
+                  This operation calculates an arithmetic average of inputs.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="71E08C37-778B-475f-BFC5-C7EE66F0732E" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="Div">
+              <title>Div</title>
+              <content>
+                <para>
+                  This operation divides the value of the first  input by the value of the second input.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="0F24EC0E-6230-44b2-8105-A5F9B08C6275" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="Multiplicity">
+              <title>Multiplicity</title>
+              <content>
+                <para>
+                  This operation multiplies values of inputs.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="1B7820C1-1941-40c2-8E48-B5B4C34DED4F" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="PowerOf10">
+              <title>Power Of 10</title>
+              <content>
+                <para>
+                  This operation scales the input value. It calculates the selected power of 10 and multiplies this value by the input value.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="B3EF6D81-03A8-456a-BDDA-9621C0E82478" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Operation parameter</legacyBold>
+                </para>
+                <para>
+                  The value of the power to raise 10 to. The value argument can be of integer type, e.g. operation parameter ‘0’ – do not scale the value (10^0=1); ‘1’ - multiply the source value by 10 (10^1=10); ‘-2’ – divide the source value by 100 (10^(-2)=0.01=1/100).
+                </para>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+            <section address="Subtract">
+              <title>Subtract</title>
+              <content>
+                <para>
+                  This operation subtracts the value of the second input from the value of the first input.
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="19BFC362-5C07-40b9-9774-DDC480AD2D77" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>
+          </sections>
+        </section>
+        <section address="Special">
+          <title>Special</title>
+          <content>
+            <autoOutline />
+            <para></para>
+          </content>
+          <sections>
+            <section address="Splitter">
+              <title>Splitter</title>
+              <content>
+                <para>
+                  This operation splits the input signal to outputs (it gets the value of the input and sets this value to both outputs).
+                </para>
+                <mediaLink>
+                  <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+                </mediaLink>
+                <para>
+                  <legacyBold>Name</legacyBold>
+                </para>
+                <para>
+                  Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+                </para>
+                <para>
+                  <legacyBold>Comment</legacyBold>
+                </para>
+                <para>
+                  This is an optional comment  about this operation.
+                </para>
+              </content>
+            </section>         
+          </sections>
+        </section>
+      </sections>
+    </section>
+    <section address="Professionaloperations">
+      <title>Professional operations</title>
+      <content>
+        <autoOutline />
+        <para></para>
+      </content>
+      <sections>
+        <section address="DBsave">
+          <title>DB save</title>
+          <content>
+            <para>
+              This operation writes data into a database of your choice.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+            </mediaLink>
+            <para>
+              <legacyBold>Operation parameter</legacyBold>
+            </para>
+            <para>
+              Read topic: [SQLConectivity] to find more information about it.
+            </para>
+            <para>
+              <legacyBold>Number of inputs</legacyBold>
+            </para>
+            <para>
+              The number of inputs selected from the drop-down list.
+            </para>
+            <para>
+              <legacyBold>Name</legacyBold>
+            </para>
+            <para>
+              Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+            </para>
+            <para>
+              <legacyBold>Comment</legacyBold>
+            </para>
+            <para>
+              This is an optional comment  about this operation.
+            </para>
           </content>
         </section>
       </sections>
     </section>
-
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

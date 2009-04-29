@@ -12,7 +12,6 @@
         <HelpKeyword index="K" term="DataPorter operations, calkulation" />
         <HelpKeyword index="K" term="DataPorter operations, distribution" />
         <HelpKeyword index="K" term="DataPorter Standard" />
-        <HelpKeyword index="K" term="standard operations" />
       </HelpKeywords>
     </Topic>
     <Topic id="01327e6f-b503-4ebc-a4f2-f232b926b676" visible="True" title="DataPorter Professional" tocTitle="DataPorter Professional" linkText="DataPorter Professional">
@@ -26,7 +25,6 @@
         <HelpKeyword index="K" term="DataPorter operations, SQL exchange" />
         <HelpKeyword index="K" term="DataPorter operations, XML exchange" />
         <HelpKeyword index="K" term="DataPorter Professional" />
-        <HelpKeyword index="K" term="professional operations" />
         <HelpKeyword index="K" term="SQL" />
         <HelpKeyword index="K" term="XML" />
       </HelpKeywords>
@@ -176,7 +174,38 @@
     </Topic>
     <Topic id="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0" visible="True" title="Transaction and Operations" tocTitle="Transaction and Operations" linkText="Transaction and Operations">
       <Topic id="513d802a-9060-4c19-a3d4-0e549a583007" visible="True" title="Transaction and operation configuration" tocTitle="Transaction and operation configuration" linkText="Transaction and operation configuration" />
-      <Topic id="11e85dab-2c01-4ee3-9b12-2d396ed80bab" visible="True" />
+      <Topic id="11e85dab-2c01-4ee3-9b12-2d396ed80bab" visible="True" title="List of available operations " tocTitle="List of available operations " linkText="List of available operations ">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Generators" />
+          <HelpKeyword index="K" term="Generators, Random Value" />
+          <HelpKeyword index="K" term="Generators, Set Constant Value" />
+          <HelpKeyword index="K" term="IO" />
+          <HelpKeyword index="K" term="IO, Buffered Access Queue " />
+          <HelpKeyword index="K" term="IO, Read OPC Item" />
+          <HelpKeyword index="K" term="IO, Read System Item" />
+          <HelpKeyword index="K" term="IO, Write OPC Item" />
+          <HelpKeyword index="K" term="Logic" />
+          <HelpKeyword index="K" term="Logic, Are Equal" />
+          <HelpKeyword index="K" term="Logic, Value is in range" />
+          <HelpKeyword index="K" term="Math" />
+          <HelpKeyword index="K" term="Math, Add" />
+          <HelpKeyword index="K" term="Math, Average" />
+          <HelpKeyword index="K" term="Math, Div" />
+          <HelpKeyword index="K" term="Math, Multiplicity" />
+          <HelpKeyword index="K" term="Math, Power Of 10" />
+          <HelpKeyword index="K" term="Math, Subtract" />
+          <HelpKeyword index="K" term="Professional operations" />
+          <HelpKeyword index="K" term="Professional operations, DB save" />
+          <HelpKeyword index="K" term="Special" />
+          <HelpKeyword index="K" term="Special, Splitter" />
+          <HelpKeyword index="K" term="Standard operation,  Generators" />
+          <HelpKeyword index="K" term="Standard operation,  IO" />
+          <HelpKeyword index="K" term="Standard operation,  Logic" />
+          <HelpKeyword index="K" term="Standard operation,  Math" />
+          <HelpKeyword index="K" term="Standard operation,  Special" />
+          <HelpKeyword index="K" term="Standard operations" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
     <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity" />
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">

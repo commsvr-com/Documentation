@@ -366,22 +366,58 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
-    <Content Include="PR26-DataPorter\Graphics\operations\10Power.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\Add.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\AreEqual.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\Avg.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\10Power.JPG">
+      <AlternateText>Power Of 10</AlternateText>
+      <ImageId>B3EF6D81-03A8-456a-BDDA-9621C0E82478</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\Add.JPG">
+      <AlternateText>Add</AlternateText>
+      <ImageId>3751EAB2-A54E-4961-B367-9E3E40DEF454</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\AreEqual.JPG">
+      <AlternateText>Are Equal</AlternateText>
+      <ImageId>E653E8B4-2553-48a5-BCED-FACE8B180FEE</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\Avg.JPG">
+      <ImageId>71E08C37-778B-475f-BFC5-C7EE66F0732E</ImageId>
+      <AlternateText>Average</AlternateText>
+    </Image>
     <Content Include="PR26-DataPorter\Graphics\operations\BufferedAccessQueue.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\const.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\const.JPG">
+      <AlternateText>Set Constant Value</AlternateText>
+      <ImageId>B9F0D5E8-EFC3-4a1c-AA5F-D37E5257EC08</ImageId>
+    </Image>
     <Content Include="PR26-DataPorter\Graphics\operations\DBSave.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\Div.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\Multiplicity.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\ReadOPC.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\Div.JPG">
+      <ImageId>0F24EC0E-6230-44b2-8105-A5F9B08C6275</ImageId>
+      <AlternateText>Div</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\Multiplicity.JPG">
+      <AlternateText>Multiplicity</AlternateText>
+      <ImageId>1B7820C1-1941-40c2-8E48-B5B4C34DED4F</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\ReadOPC.JPG">
+      <AlternateText>Read OPC Item</AlternateText>
+      <ImageId>15DA8BC5-C742-4051-98AE-EBCDBA1FD9F4</ImageId>
+    </Image>
     <Content Include="PR26-DataPorter\Graphics\operations\ReadSystemItem.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\RND.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\RND.JPG">
+      <AlternateText>Random Value</AlternateText>
+      <ImageId>454CB99B-4A82-4504-8B3A-696B27950E5C</ImageId>
+    </Image>
     <Content Include="PR26-DataPorter\Graphics\operations\Split.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\Sub.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\ValueInRange.JPG" />
-    <Content Include="PR26-DataPorter\Graphics\operations\WriteOPC.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\Sub.JPG">
+      <AlternateText>Subtract</AlternateText>
+      <ImageId>19BFC362-5C07-40b9-9774-DDC480AD2D77</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\ValueInRange.JPG">
+      <AlternateText>Value is in range</AlternateText>
+      <ImageId>9F6831CD-F5CF-4b05-B462-0FA03F58D664</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\WriteOPC.JPG">
+      <AlternateText>Write OPC Item</AlternateText>
+      <ImageId>814365EB-E393-4548-8C83-BEB3A3997DDD</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\Transaction8.JPG">
       <AlternateText>OPC mixed logical operations</AlternateText>
       <ImageId>D6747399-C490-4cff-B6AA-E17AC39D1646</ImageId>
