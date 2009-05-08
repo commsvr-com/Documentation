@@ -20,14 +20,14 @@
     <BuildLogFile>Temp\DataPorter\DataPorter.log</BuildLogFile>
     <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
     <ComponentConfigurations>
-      <ComponentConfig id="Cached MSDN URL References" enabled="True" xmlns="">
+      <ComponentConfig id="Cached MSDN URL References" enabled="True">
         <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
           <cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
           <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@SDKLinks}" />
           <targets files="reflection.xml" type="{@ProjectLinks}" />
         </component>
       </ComponentConfig>
-      <ComponentConfig id="Code Block Component" enabled="True" xmlns="">
+      <ComponentConfig id="Code Block Component" enabled="True">
         <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
           <!-- Base path for relative filenames in source attributes
                  (optional) -->
@@ -56,7 +56,7 @@
           <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
         </component>
       </ComponentConfig>
-      <ComponentConfig id="Post-transform Component" enabled="True" xmlns="">
+      <ComponentConfig id="Post-transform Component" enabled="True">
         <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
           <!-- Code colorizer files (required).
                  Attributes:
@@ -76,10 +76,11 @@
       </ComponentConfig>
     </ComponentConfigurations>
     <PlugInConfigurations>
-      <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
+      <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-    </PlugInConfigurations>
+<PlugInConfig id="Hierarchical Table of Contents" enabled="True"><configuration><toc minParts="4" insertBelow="True" /></configuration></PlugInConfig>
+<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
@@ -382,12 +383,18 @@
       <ImageId>71E08C37-778B-475f-BFC5-C7EE66F0732E</ImageId>
       <AlternateText>Average</AlternateText>
     </Image>
-    <Content Include="PR26-DataPorter\Graphics\operations\BufferedAccessQueue.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\BufferedAccessQueue.JPG">
+      <ImageId>454CB99B-4A82-4504-8B3A-696B27950E5C</ImageId>
+      <AlternateText>Buffered Access Queue</AlternateText>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\operations\const.JPG">
       <AlternateText>Set Constant Value</AlternateText>
       <ImageId>B9F0D5E8-EFC3-4a1c-AA5F-D37E5257EC08</ImageId>
     </Image>
-    <Content Include="PR26-DataPorter\Graphics\operations\DBSave.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\DBSave.JPG">
+      <ImageId>7004F64E-0162-4641-9A32-FD4B813A5C59</ImageId>
+      <AlternateText>DBSave</AlternateText>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\operations\Div.JPG">
       <ImageId>0F24EC0E-6230-44b2-8105-A5F9B08C6275</ImageId>
       <AlternateText>Div</AlternateText>
@@ -400,12 +407,18 @@
       <AlternateText>Read OPC Item</AlternateText>
       <ImageId>15DA8BC5-C742-4051-98AE-EBCDBA1FD9F4</ImageId>
     </Image>
-    <Content Include="PR26-DataPorter\Graphics\operations\ReadSystemItem.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\ReadSystemItem.JPG">
+      <ImageId>B9F0D5E8-EFC3-4a1c-AA5F-D37E5257EC08</ImageId>
+      <AlternateText>Read System Item.</AlternateText>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\operations\RND.JPG">
       <AlternateText>Random Value</AlternateText>
-      <ImageId>454CB99B-4A82-4504-8B3A-696B27950E5C</ImageId>
+      <ImageId>5068F1DC-F46A-4046-8CB8-BB84B356F3AA</ImageId>
     </Image>
-    <Content Include="PR26-DataPorter\Graphics\operations\Split.JPG" />
+    <Image Include="PR26-DataPorter\Graphics\operations\Split.JPG">
+      <ImageId>D3B9B568-7F52-45fb-80AD-78F7F76D0393</ImageId>
+      <AlternateText>Split</AlternateText>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\operations\Sub.JPG">
       <AlternateText>Subtract</AlternateText>
       <ImageId>19BFC362-5C07-40b9-9774-DDC480AD2D77</ImageId>

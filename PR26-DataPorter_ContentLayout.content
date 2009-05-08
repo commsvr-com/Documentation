@@ -60,6 +60,7 @@
       </HelpKeywords>
       <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter">
         <HelpKeywords>
+          <HelpKeyword index="K" term="DataPorter" />
           <HelpKeyword index="K" term="DataPorter components, DataPorter" />
           <HelpKeyword index="K" term="DataPorter, Engine" />
           <HelpKeyword index="K" term="DataPorter, Monitor " />
