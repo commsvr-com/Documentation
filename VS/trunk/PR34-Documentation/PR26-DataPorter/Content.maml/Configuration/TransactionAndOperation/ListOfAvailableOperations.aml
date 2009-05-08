@@ -29,7 +29,7 @@
                   This operation generates a random value to its output. The value from 0 to the value that is set as an operation parameter.
                 </para>
                 <mediaLink>
-                  <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+                  <image placement="center" xlink:href="5068F1DC-F46A-4046-8CB8-BB84B356F3AA" />
                 </mediaLink>
                 <para>
                   <legacyBold>Operation parameter</legacyBold>
@@ -90,7 +90,7 @@
           </content>
           <sections>
             <section address="BufferedAccessQueue ">
-              <title>Buffered Access Queue </title>
+              <title>Buffered Access Queue</title>
               <content>
                 <para>
                   This operation stores the input tag in buffered queue. Access to buffered queue is available via Web Services (XML/AOAP).
@@ -615,7 +615,7 @@
                   This operation splits the input signal to outputs (it gets the value of the input and sets this value to both outputs).
                 </para>
                 <mediaLink>
-                  <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+                  <image placement="center" xlink:href="D3B9B568-7F52-45fb-80AD-78F7F76D0393" />
                 </mediaLink>
                 <para>
                   <legacyBold>Name</legacyBold>
@@ -649,7 +649,7 @@
               This operation writes data into a database of your choice.
             </para>
             <mediaLink>
-              <image placement="center" xlink:href="454CB99B-4A82-4504-8B3A-696B27950E5C" />
+              <image placement="center" xlink:href="7004F64E-0162-4641-9A32-FD4B813A5C59" />
             </mediaLink>
             <para>
               <legacyBold>Operation parameter</legacyBold>

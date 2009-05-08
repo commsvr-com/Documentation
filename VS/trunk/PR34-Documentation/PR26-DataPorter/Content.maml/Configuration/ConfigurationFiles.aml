@@ -1,82 +1,175 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
+      <autoOutline />
       <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="DataPorter_configuration_files">
+      <title>DataPorter configuration files</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>DataPorter stores the configuration in the following three files:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              CAS.DataPorter.exe.config – a configuration file for main application settings (for details see section: “DataPorter™ configuration file (CAS.DataPorter.exe.config)”).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              XML database file – a configuration file that stores information about servers, tags and operations (for details see topic: “OPC Viewer getting started”  or topic: „Using DataPorter/Using OPC Viewer” ).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              XML description file – a configuration file that stores additional information describing tags configured in the XML database file (for details see topic: “ItemDescriber”).
+            </para>
+          </listItem>
+        </list>
+        <para>
+          DataPorter™ stores the configuration as an XML file. The default DataPorter configuration file is DemoConfiguration.oses. Default location of this file is:
+        </para>
+        <para>
+          <legacyBold>
+            "c:\Program Files\CAS\DataPorter\DemoConfiguration.oses"
+          </legacyBold>
+        </para>
+        <para>
+          You can edit any configuration file using the OPC Viewer tool.
+        </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="CAS.DataPorter.exe.config">
+      <title>
+        DataPorter configuration file (CAS.DataPorter.exe.config)
+      </title>
+      <content>
+        <para>
+          CAS.DataPorter.exe.config is the main configuration file of DataPorter. Change this file to set advanced features for the application. Find this file in your DataPorter™ directory. Default location is:
+        </para>
+        <para>
+          <legacyBold>
+            "c:\Program Files\CAS\DataPorter\CAS.DataPorter.exe.config"
+          </legacyBold>
+        </para>
+        <para>
+          You can edit this file using any text editor. An example of the configuration file is shown below:
+        </para>
+        <code language="xml">
+          <![CDATA[
+          <?xml version="1.0" encoding="utf-8" ?>
+          <configuration>
+            <appSettings>
+              <add key="HTTPSoapPort" value="8001"/>
+              <add key="TCPBinaryPort" value="8002"/>
+              <add key="configfile" value="DemoConfiguration.oses"/>
+              <add key="PLCNaN" value="65535"/>
+              <add key="MinAvgMax_FrameResponse_management" value="20"/>
+              <add key="MinAvgMax_CharacterGap_management" value="500"/>
+              <add key="MinAvgMax_Tag_management" value="50"/>
+              <add key="MinAvgMax_Group_management" value="50"/>
+              <add key="MinAvgMax_Group_Read_management" value="50"/>
+              <add key="MinAvgMax_Transition_management" value="50"/>
+              <add key="WaitForReconnectServerInSec" value="30"/>
+              <add key="WaitForFirstGroupUpdateSendInMiliSec" value="1000"/>
+              <add key="UseLocalTime" value="False"></add>
+            </appSettings>
+          </configuration>]]>
+        </code>
+        <para>
+          Each parameter is configured in the following way:
+        </para>
+        <code language="xml">
+          <![CDATA[
+          <add key="attribute name" value="value" />
+          ]]>
+        </code>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>attribute name</legacyBold> – this is an internal name that DatPorter™ software associated with a particular functionality. (Names are not freely configured. Only  DataPorter internal names can be used. The example above uses the whole set of available names).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>value</legacyBold> –  the value of a particular attribute. This value must be in  compliance with a particular type of this attribute; below there are listed types that are available and can by changed by any user.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          The following parameters must be set:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>configfile</legacyBold> – specifies the file, where the communication configuration is stored (the default value is “DemoConfiguration.oses”)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>MinAvgMax_Tag_management</legacyBold> – the value indicates the number of tag read operations to be used to update current statistics (for more details see topic: “Using DataPorter™/Item Tab” )
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>MinAvgMax_Group_management</legacyBold> – the value indicates the number of transition executions  in the current group, which are used to update current statistics (for more details see chapter: “Using DataPorter™/Group Tab” for more details)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>MinAvgMax_Group_Read_management</legacyBold> – the value indicates the number of group read operations to be used to update current statistics (for more details see chapter: “Using DataPorter™/Group Tab”)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>MinAvgMax_Transition_management</legacyBold> – the value indicates the number of operations on transitions to be used to update current statistics (see chapter: “Using DataPorter™/Transaction Tab”)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>PLCNaN</legacyBold> – the value that is written to the OPC tag if BAD QUALITY tag should be written. E.g. if we want to copy tag1 to tag2 and tag1 has BAD QUALITY, then the value defined by the PLCNaN will be assigned (written) to tag2
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>WaitForReconnectServerInSec</legacyBold> – this is a period of time in seconds that a client waits after an error before it tries to reconnect to a server
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>HTTPSoapPor, TCPBinaryPort</legacyBold> – ports numbers that are used for communication with OPCWSDataAccess webservice (do not change it unless you want to run two DataPorters simultaneously on one PC)
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Other parameters such as:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              “MinAvgMax_FrameResponse_management”
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “MinAvgMax_CharacterGap_management”
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “UseLocalTime”
+            </para>
+          </listItem>
+        </list>
+        <para>
+          are for internal use only of the runtime library and should not be changed.
+        </para>
+        <para>
+          You can also edit this file to add problem tracing to DataPorter™ and run software in the “debug” mode (for details refer to topic: “Diagnostic and troubleshooting/Tracing”).
+        </para>
+      </content>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
