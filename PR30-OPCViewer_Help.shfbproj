@@ -66,7 +66,6 @@
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration\OPCViewerConnectionEstablishment.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration\ReadData.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration\WriteData.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\Configuration\TransactionAndOperations.aml" />
     <None Include="PR30-OPCViewer\Content.maml\OPCViewer.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Welcome\OPCViewer.aml" />
   </ItemGroup>
