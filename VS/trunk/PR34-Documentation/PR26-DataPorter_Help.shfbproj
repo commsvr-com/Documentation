@@ -144,7 +144,6 @@
     <None Include="PR30-OPCViewer\Content.maml\UsingOPCViewer.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Welcome.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration.aml" />
-    <None Include="PR30-OPCViewer\Content.maml\Configuration\TransactionAndOperations.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration\CreateOffLineSubscription.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration\CreateOnlineSubscriptionBrowseserver.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration\OPCConfiguration\OPCViewerConnectionEstablishment.aml" />
@@ -193,6 +192,7 @@
     <None Include="PR26-DataPorter\Content.maml\Welcome\DataPorterStandard.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\TransactionAndOperationConfiguration.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\ListOfAvailableOperations.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperations.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
@@ -374,6 +374,18 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_write_edit2.JPG">
+      <AlternateText>OPC Viewer – Edit Item Values window</AlternateText>
+      <ImageId>46F24CBD-75E5-4294-8064-13FE348BDCF3</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_write_edit.JPG">
+      <AlternateText>OPC Viewer – Write Items window</AlternateText>
+      <ImageId>D297047A-0EE8-41ec-9046-EA8A84771B5B</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_write.JPG">
+      <AlternateText>OPC Viewer – write to subscription</AlternateText>
+      <ImageId>B4626A26-18F7-438d-98EA-84697446ABD4</ImageId>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription3.JPG">
       <AlternateText>OPC Viewer – added items</AlternateText>
       <ImageId>5EFB0358-D477-41df-989A-BA0A411259F6</ImageId>
