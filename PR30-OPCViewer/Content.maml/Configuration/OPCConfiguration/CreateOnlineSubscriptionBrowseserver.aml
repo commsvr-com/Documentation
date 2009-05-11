@@ -1,70 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" revisionNumber="1">
   <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
-    <introduction>
-      <para>Required introduction</para>
-    </introduction>
-    <!-- Optional procedures followed by optional code example but must have
-         at least one procedure or code example -->
     <procedure>
-      <title>Procedure title</title>
+      <title>Creation of online subscription</title>
       <steps class="ordered">
         <step>
           <content>
-            <para>First step</para>
+            <para>
+              To create a subscription, click the right button on the connected OPC server and select “Create Subscription...” and “Browse server…”. Click on “Next” in the window that appears.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">OPC Viewer – creation of subscription</caption>
+              <image placement="center" xlink:href="963D4711-BFD5-4830-9413-8BE0949841F2" />
+            </mediaLink>
           </content>
         </step>
         <step>
           <content>
-            <para>Second step</para>
+            <para>
+              In the next window (Figure  2) browse the server address space and select requested items.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2">OPC Viewer – adding tags</caption>
+              <image placement="center" xlink:href="3F7CB5AE-96F2-41fb-89E6-8C36E45AAC7E" />
+            </mediaLink>
+            <para>
+              Items available on the OPC server are shown on a tree-list on the left of the window. Items selected to be added to subscription are on the list on the right of the window. To add an item, double click on the item name. When all requested items are added, click on the “Next” button. In the next window, verify the subscription settings (e.g. scanning rate or name) and click on “Done”.
+            </para>
           </content>
         </step>
+        <step>
+          <para>
+            Items added to the subscription appear in the OPC viewer main window (Figure  3).
+          </para>
+          <mediaLink>
+            <caption placement="after" lead="Figure 3">OPC Viewer – adding tags</caption>
+            <image placement="center" xlink:href="5EFB0358-D477-41df-989A-BA0A411259F6" />
+          </mediaLink>
+        </step>
       </steps>
-      <!-- <conclusion>Optional conclusion</conclusion> -->
     </procedure>
-    <!-- <codeExample>Optional code example</codeExample> -->
-    <!-- <buildInstructions>Optional instructions for building a
-         code example.</buildInstructions> -->
-    <!-- <robustProgramming>Optional discussion of error handling and other
-         issues related to writing solid code.</robustProgramming> -->
-    <!-- <security>Optional discussion of security issues.</security> -->
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID">Link text</link>
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerHowToDocument>
 </topic>

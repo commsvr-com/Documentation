@@ -79,8 +79,15 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-<PlugInConfig id="Hierarchical Table of Contents" enabled="True"><configuration><toc minParts="4" insertBelow="True" /></configuration></PlugInConfig>
-<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
+      <PlugInConfig id="Hierarchical Table of Contents" enabled="True">
+        <configuration>
+          <toc minParts="4" insertBelow="True" />
+        </configuration>
+      </PlugInConfig>
+      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
@@ -367,6 +374,42 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription3.JPG">
+      <AlternateText>OPC Viewer – added items</AlternateText>
+      <ImageId>5EFB0358-D477-41df-989A-BA0A411259F6</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription2.JPG">
+      <AlternateText>OPC Viewer – adding tags</AlternateText>
+      <ImageId>3F7CB5AE-96F2-41fb-89E6-8C36E45AAC7E</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription.JPG">
+      <AlternateText>OPC Viewer – creation of subscription</AlternateText>
+      <ImageId>963D4711-BFD5-4830-9413-8BE0949841F2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_server_status.jpg">
+      <AlternateText>OPC Viewer – Server Status</AlternateText>
+      <ImageId>D55DCD75-F011-487b-AE3A-C63B62BDFF15</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect_server.JPG">
+      <AlternateText>OPC Viewer – successful connection</AlternateText>
+      <ImageId>19E9E97F-0372-47dd-B26F-F6F30B2DB12F</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect3.JPG">
+      <AlternateText>OPC Viewer – Connect</AlternateText>
+      <ImageId>9E1346E3-EB04-47cc-BE97-025C32597D28</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect_multiple_servers.JPG">
+      <AlternateText>OPC Viewer – multiple OPC servers</AlternateText>
+      <ImageId>76BFB630-BED6-499e-B8B7-57DF45DE9D61</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect2.JPG">
+      <AlternateText>OPC Viewer – Select Server Window</AlternateText>
+      <ImageId>E299BCFF-DD8A-4633-8EF5-B4F36099DEC2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect1.JPG">
+      <AlternateText>OPC Viewer connect</AlternateText>
+      <ImageId>4937AE5C-5867-4890-ADA0-225921D1D8C2</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\operations\10Power.JPG">
       <AlternateText>Power Of 10</AlternateText>
       <ImageId>B3EF6D81-03A8-456a-BDDA-9621C0E82478</ImageId>
