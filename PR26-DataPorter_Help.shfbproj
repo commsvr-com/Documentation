@@ -374,6 +374,30 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR26-DataPorter\Graphics\RemoveTransaction.JPG">
+      <AlternateText>Removal of a transaction</AlternateText>
+      <ImageId>4CB085DD-8EC8-43bd-921B-4CE4943E922D</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\RemoveOperation.PNG">
+      <AlternateText>Remove Operation</AlternateText>
+      <ImageId>99173EF0-C1AD-4879-99FB-FAA6306167CE</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\SelectOperation.JPG">
+      <AlternateText>Selected operation</AlternateText>
+      <ImageId>8EA1C966-B4A6-4596-8385-123131A4F0FB</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\AddOperation.JPG">
+      <AlternateText>Adding an operation</AlternateText>
+      <ImageId>407F4312-8443-49de-8B74-8F54D7F7BE80</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\ustawienia_transakcji1.jpg">
+      <AlternateText>Properties for transaction</AlternateText>
+      <ImageId>9C7F5226-2841-4538-9BD4-B88BCB3EB3AB</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\AddTransaction.JPG">
+      <ImageId>6544FDC7-B381-4b65-9AAB-EE3889009C4F</ImageId>
+      <AlternateText>Add Transaction</AlternateText>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\opcviewer_write_edit2.JPG">
       <AlternateText>OPC Viewer – Edit Item Values window</AlternateText>
       <ImageId>46F24CBD-75E5-4294-8064-13FE348BDCF3</ImageId>

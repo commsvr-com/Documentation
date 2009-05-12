@@ -1,82 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="513d802a-9060-4c19-a3d4-0e549a583007" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <autoOutline />
+      <para></para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Adding_transaction">
+      <title>Adding a transaction</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>
+          To add a transaction to the configuration in “Session tree view”, click the right mouse button on the Processing Environment node and select “Add new transaction”.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="6544FDC7-B381-4b65-9AAB-EE3889009C4F" />
+        </mediaLink>
+        <para>
+          Configuration of the transaction is the next step. In the Processing Environment Editor go to the transaction property grid and set up properties for the transaction (see the figure below for details).
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="9C7F5226-2841-4538-9BD4-B88BCB3EB3AB" />
+        </mediaLink>
+        <para>
+          General Settings:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              BadQualityValue – this value is used if any input of operation in this transaction has BAD quality
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Comment – optional comment for this transaction
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Name – unique transaction name
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              StopIfBadQuality – if it is true and any input of operation in this transaction has BAD quality, the transaction is not executed
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Launching conditions:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              MinimumUpdateRate –  this is the longest time period between two consecutive executions of this transaction (in ms). If this setting is blank (null), the transaction is executed only if Deadband occurs
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              TransactionRate – this is the time period between two consecutive tests that check the possibility of executing the transaction
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Trigger Item – a source item for the transaction. The value can be blank – if so, it is impossible to check the Deadband condition.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Trigger Item Deadband – percentage of the current item value that has to change to execute the transaction (the value is between 0 and 1,  0 – means execute on every change). If this setting is blank (null), the transaction is executed only if MinUpdateRate occurs
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>
+            When the engine of DataPorter™ transactions checks whether to execute the transaction, it does not matter which event - Deadband or MinUpdateRate - occurs (any of these events can launch the transaction).
+          </para>
+        </alert>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="Adding_an_operation">
+      <title>
+        Adding an operation
+      </title>
+      <content>
+        <para>
+          To add an operation to the selected transaction, click the right mouse button in the Graphical Transaction Editor and select the operation type you want to add. All operations are described in the topic: “List of operations”.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="407F4312-8443-49de-8B74-8F54D7F7BE80" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="Removal_of_an_operation">
+      <title>
+        Removal of an operation
+      </title>
+      <content>
+        <para>
+          To remove an operation from the transaction, select the operation in the Graphical Transaction Editor by left clicking  on it. The selected operation will change the border color.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="8EA1C966-B4A6-4596-8385-123131A4F0FB" />
+        </mediaLink>
+        <para>
+          Right click on the selected operation and choose “Remove Selected Shape”.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="99173EF0-C1AD-4879-99FB-FAA6306167CE" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="Removal_transaction">
+      <title>
+        Removal of a transaction
+      </title>
+      <content>
+        <para>
+          To remove atransaction from the configuration in “Session tree view”, right click on the transaction and select “Remove transaction”. This will remove the selected transaction and all operations in this transaction.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="4CB085DD-8EC8-43bd-921B-4CE4943E922D" />
+        </mediaLink>
+      </content>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
 
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

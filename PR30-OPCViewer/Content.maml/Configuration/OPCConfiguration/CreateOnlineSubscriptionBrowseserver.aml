@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" revisionNumber="1">
   <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
     <procedure>
       <title>Creation of online subscription</title>
       <steps class="ordered">
