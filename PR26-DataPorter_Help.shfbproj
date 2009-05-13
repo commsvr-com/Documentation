@@ -134,6 +134,7 @@
     <Folder Include="PR30-OPCViewer\Graphics\ico\" />
     <Folder Include="PR26-DataPorter\Graphics\operations\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
@@ -193,6 +194,8 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\TransactionAndOperationConfiguration.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\ListOfAvailableOperations.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperations.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ExampleSimpleDatabaseConfiguration.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ExampleAdvancedDatabaseConfiguration.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
@@ -374,6 +377,42 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR26-DataPorter\Graphics\transaction_2inputs_example.jpg">
+      <AlternateText>2 imputs transaction example</AlternateText>
+      <ImageId>431FE6D0-E0E1-4566-996A-4CAFA4449E8A</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\numberofinputs2.jpg">
+      <AlternateText>Number of inputs</AlternateText>
+      <ImageId>78332F6F-3B8A-4f69-B477-CD393BD7F481</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\glowny rysunek.jpg">
+      <ImageId>455C119C-ED6B-46f0-A8DE-E916AB984F1D</ImageId>
+      <AlternateText>Default Configuration Of Dataporter For Storing Into The Database</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\wynik_działania.jpg">
+      <ImageId>04CD962F-CA66-4339-A962-419E0A6CB657</ImageId>
+      <AlternateText>Most recent rows in the database</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\ustawienia_transakcji0i1.jpg">
+      <ImageId>24B233FD-16A3-4b46-AF56-BC6060938238</ImageId>
+      <AlternateText>Transaction</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\transakcja-bloczki.jpg">
+      <AlternateText>Transaction</AlternateText>
+      <ImageId>3E07C543-535C-4834-8C85-DB66B98382E4</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\sesja_z_transakcjami.jpg">
+      <ImageId>D40D24E0-16D1-4454-B65A-9FBDF4700D00</ImageId>
+      <AlternateText>OPC Viewer transaction</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\sesja w opcviewerze.jpg">
+      <ImageId>0CD995E1-4BBD-4eb4-AEF0-FD3EFC0BAE40</ImageId>
+      <AlternateText>OPC Viewer sql</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\dataporter_SQL.png">
+      <ImageId>44E241EA-A1C9-4cff-B101-8AD405118A55</ImageId>
+      <AlternateText>DataPorter SQL</AlternateText>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\RemoveTransaction.JPG">
       <AlternateText>Removal of a transaction</AlternateText>
       <ImageId>4CB085DD-8EC8-43bd-921B-4CE4943E922D</ImageId>

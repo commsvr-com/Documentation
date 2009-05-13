@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="9f3954b0-cc3e-46d1-a3e6-59649db7e738" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        This walkthrough explains the possibility of using DataPorter to store data from OPC into database.
+      </para>
+      <para>
+        The following requirements must be met:
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            MS SQL 2005 Express (It is a free version of MS SQL 2005 database and it can be downloaded from Microsoft websites) database is installed on the test PC. Access to the database is configured so that an integrated MS Windows authentication is used and the selected user has relevant privileges in the database.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            An OPC server is installed on the test PC – in this example a CommServer with default configuration is installed.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            DataPorter version 1.21 or higher is installed on the test PC.
+          </para>
+        </listItem>
+      </list>
+      <mediaLink>
+        <image placement="center" xlink:href="44E241EA-A1C9-4cff-B101-8AD405118A55" />
+      </mediaLink>
+      <autoOutline />
+    </introduction>
+    <section address="DataPorter_initial_configuration">
+      <title>DataPorter initial configuratione</title>
+      <content>
+        <para>
+          DataPorter is installed with a sample file of MS SQL Express database, which can easily be used to initiate storing into the database. After DataPorter has been installed, the database file is, by default, in the following location:
+        </para>
+        <para>
+          %programfiles%\cas\CAS DataPorter\DataPorterDataBase.mdf
+        </para>
+        <alert>
+          <para>
+            We assume that DataPorter is installed in a default location (unchanged during the installation). %programfiles% is a system variable that determines location of the "Program files" catalogue in the system. It is " C:\Program Files" by default. To check what is the location on a given computer enter echo %programfiles% in the command line (Start Menu-> Run->cmd). Information about the "Program Files" catalogue location is displayed.
+          </para>
+        </alert>
+        <para>
+          The goal of the exercise is to configure DataPorter software to store current values of the following tags (from OPC server into the database):
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              PLC/R/100 always every 10 seconds
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              PLC/R/101 always when its value changes
+            </para>
+          </listItem>
+        </list>
+        <para>
+          To start storing from OPC into the above mentioned database, configure DataPorter using OPC Viewer:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Create a session including one group (e.g. called "gr1") that contains two OPC tags: PLC/R/100 and PLC/R/101; the result should be similar to the figure below:
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="0CD995E1-4BBD-4eb4-AEF0-FD3EFC0BAE40" />
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              Now, create two transactions of two operations: Read OPC Item and PeriodicDB Save each. The figure below shows a fragment of the session tree with the two created transactions:
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="D40D24E0-16D1-4454-B65A-9FBDF4700D00" />
+            </mediaLink>
+          </listItem>
+        </list>
+        <para>
+          Transaction0 is responsible for storing PLC/R/100 at 10-second intervals and Transaction1stores each change of the PLC/R/101 tag value. The layout of operation blocks for each transaction looks the same; only the input parameter (the tag name) and transaction settings are different. The figure below shows an example layout of the blocks:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="3E07C543-535C-4834-8C85-DB66B98382E4" />
+        </mediaLink>
+        <para>
+          Blocks for Transaction1 differ in the input parameter (the PLC/R/101 tag name) of the Read Item block only.
+        </para>
+        <para>
+          The transaction settings (shown in the property window on the right of the application window). The figure below shows a comparison of those two settings:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="24B233FD-16A3-4b46-AF56-BC6060938238" />
+        </mediaLink>
+        <para>
+          As you can see, the basic differences are as follows:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Minimum Update Rate set to 10000 for Transaction0 - a value given in milliseconds (i.e. 10 seconds), which shows how often the transaction must be executed.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Trigger Item set to PLC/R/101 (gr1) for Transaction1 – means that a change of the PLC/R/101 tag value triggers the transaction (in Trigger Item Deadband you can set a percentage value to determine how great the change must be to trigger the transaction; a blank field means that any change is important).
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>
+            Of course both the settings, i.e. Minimum Update Rate and Trigger Item may be combined and, then, we receive a condition of the following type: trigger the transaction if the value of the selected tag changes but not less often than Minimum Update Rate (trigger the transaction at least every Minimum Update Rate)
+          </para>
+        </alert>
+        <para>
+          Settings of the "DB Save" operation block are also important but it is not necessary to modify the settings as DataPorter software has been preconfigured to use the mentioned database.
+        </para>
+        <para>
+          Now, the created session can be stored, preferably in the file:
+        </para>
+        <para>
+          “%programfiles%\cas\CAS DataPorter\DemoConfiguration.oses”
+        </para>
+        <alert>
+          <para>
+            We assume that the default name of the DataPorter configuration file has not been changed.
+          </para>
+        </alert>
+        <para>
+          DataPorter software can be started now. DataPorter will store data into the base in the mentioned DataPorterDataBase.mdf file.
+        </para>
+      </content>
+    </section>
+    <section address="Database_attached_to_DataPorter">
+      <title>
+        Information about a database attached to DataPorter (file: DataPorterDataBase.mdf)
+      </title>
+      <content>
+        <para>
+          Let's take a closer look at the database attached to DataPorter. The base includes one table: OPCDataTable with the following columns:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              timestamp [datetime] NOT NULL – time stamp of the instant when inserting is effected,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              name [nchar](255) NOT NULL – name of the stored tag,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              opcvalue [float] NULL – tag value (as a real number),
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              opcquality [nchar](20) NULL – quality of the stored tag (the quality is stored as a text).
+            </para>
+          </listItem>
+        </list>
+        <para>
+          The "DB Save" operation block executes the following SQL query inserting data to the base:
+        </para>
+        <code language="scr">
+          INSERT INTO OPCDataTable VALUES
+          (getdate(),'input[0].name', 'input[0].value', 'input[0].quality')
+        </code>
+        <para>
+          The input[0] parameter means that the query uses the element (tag) connected to the first input of the "DB Save" operation block (but counted from 0); the next fields (here after a dot) show what is put in a given field.
+        </para>
+        <para>
+          It is also important how DataPorter is connected to the database. So called "connection string" is used to describe the connection. The following connection string is used in the default configuration:
+        </para>
+        <code language="scr">
+          "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf; Integrated Security=True; Connect Timeout=30; User Instance=True"
+        </code>
+        <para>
+          The method of connection defined that way causes that only one application (only one system process) may be connected to that database; therefore it is much better to connect the DataPorterDataBase.mdf file to the MS SQL or MS SQL Express database server and use the database by many applications.
+        </para>
+      </content>
+    </section>
+    <section address="Connection_of_DataPorter_to_the_local_database_server">
+      <title>
+        Connection of DataPorter to the local database server
+      </title>
+      <content>
+        <para>
+          Before you proceed with the activities described below, connect the database file attached to DataPorter (DataPorterDataBase.mdf) to MS SQL or MS SQL Express database. The name of the database created that way shall be DataPorterDataBase. DataPorter has been prepared so that you can easily "switch" from the local file to the MS SQL database server. For that purpose, click twice on the "DB Save" operation block. Next, find the following two lines at the beginning of the configuration:
+        </para>
+        <code language="scr">
+          <![CDATA[
+          <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+          ]]>
+        </code>
+        <code language="scr">
+          <![CDATA[
+          <!-- <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteNonQuery" async="false"> -->
+          ]]>
+        </code>
+        <para>
+          Those two lines (starting with "<![CDATA[<]]>") describe the method of connecting to the database (i.e. connection string and database type selection respectively). The second line (definition of connecting to the database) is not used (it is only a comment, according to XML). In order to switch over to the local MS SQL server, remove the first line and remove the comment marks from the second line (remove "<![CDATA[<!—" at the beginning and "-->]]>" at the end of the line) and you get the following from the above two lines:
+        </para>
+        <code language="scr">
+          <![CDATA[
+          <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteNonQuery" async="false">
+          ]]>
+        </code>
+        <para>
+          Finally, save the configuration and restart DataPorter.
+        </para>
+        <para>
+          To verify if storing into the database works properly, use the database manager and check the content of OPCDataTable table or simply enter (Menu Start -> Run -> cmd) in the command line:
+        </para>
+        <code language="scr">
+          sqlcmd -S localhost\SQLEXPRESS -d DataPorterDataBase -Q"SELECT TOP 5 * FROM [DataPorterDataBase].[dbo].[OPCDataTable] ORDER BY timestamp DESC"
+        </code>
+        <para>
+          That command should return five most recent rows in the database. In my example it produced the following result:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="04CD962F-CA66-4339-A962-419E0A6CB657" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="Troubleshooting">
+      <title>
+        Troubleshooting
+      </title>
+      <content>
+        <para>
+          If problems occur (e.g. no entries in the database), examine the application logs, both in the Windows system logs (Menu Start->Run->eventvwr.msc) and DataPorter logs ("%ProgramFiles%\CAS\CAS DataPorter\log\DataPorter.log"), where entries should help us find the problem reason.
+        </para>
+        <para>
+          Check also whether the MS SQL database server is configured in a proper way, the integrated authentication is enabled, and the present user has sufficient privileges in the database.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
