@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="42ac5182-238c-41a2-81a7-f66a77089b02" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        This document describes advanced possibilities of storing the data from OPC into the database. The document is to some extent a continuation of the article titled “Example simple database configuration”. We, therefore, recommend that you read about the basics of how to configure storing into the database first.
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="455C119C-ED6B-46f0-A8DE-E916AB984F1D" />
+      </mediaLink>
+      <autoOutline />
+    </introduction>
+    <section address="Default_Configuration">
+      <title>Default Configuration Of Dataporter For Storing Into The Database</title>
+      <content>
+        <para>
+          By default, DataPorter installs the database for which it has preconfigured settings that make data saving possible. Let's take a closer look at the default configuration of the “DB Save” operation block. The operation is configured using XML. The default configuration of the “DB Save” operation assumes that the operation has one input and the following parameter configuration:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- such text is comment -->
+<!-- sample query - the goal of this example is to show how to save in the database value of process variable (from OPC), that is connected to first (number: 0) input of the operation. Here is beginning of parameter definition  (the whole definition of this parameter must be included inside object: "Param") -->
+<Param>
+  <!-- operation DB definition, it contains information about the database provider and the connection string (one of the definition is commented to show the difference between attaching the SQLserver hosted database or the file.
+object  "operationdb" indicates the it is operation on the database, (it is posible to have many "operationdb" definitions inside one "Param"). name attribute indicate the right data base providerr (ORACLE, OLEDB, ODBC, MSSQL); in this example it is  oracle. The next parameter is connection string, this string contains all neccessary informations that are required to connect to the database; the syntax depends on the database provider (more details at:http://msdn.microsoft.com). In this walkthrough user id: has value: scott, data source=orcl (the name of the serviced configured above), password: tiger (because password is inside quotations we have to use &quot;).
+ -->
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+    <!-- <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteNonQuery" async="false"> -->
+    <!-- command: in the command object there is definition of query parts; here we have:  INSERT INTO OPCDataTable VALUES (getdate(), , which is the beginning of the query, command attribute separator defines the interspace that is used to separate elements (in this example it is coma). 
+Structure of the DataBase: 
+CREATE TABLE OPCDataTable
+(
+   	[timestamp] [datetime] NOT NULL,
+   	[name] [nchar](255) NOT NULL,
+	  [opcvalue] [float] NULL,
+	  [opcquality] [nchar](20) NULL
+)
+The function getdate () is the function of SQL server used to obtain current date, this current date is inserted as the first filed of the database row.
+ -->
+    <command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>
+    <!-- name of the variable connected to first (#0) input -->
+    <input name="0:name"></input>
+    <command separator=", ">', </command>
+    <!-- value of the variable connected to first (#0) input -->
+    <input name="0:value"></input>
+    <command separator=", ">, '</command>
+    <!-- value of the quality connected to first (#0) input -->
+    <input name="0:quality"></input>
+    <command separator=", ">') </command>
+    <!-- end of DB query -->
+  </operationdb>
+</Param>
+          ]]>
+        </code>
+        <para>
+          At first glance it may seem complicated but when we remove all comments (green text between ”<!-- ” and ”--> ”) we receive (numbers on the left  side show the line number and they will be of help when describing the parameter):
+        </para>
+        <list class="ordered">
+          <listItem>
+            <code language="xml">
+              <![CDATA[<?xml version="1.0" encoding="utf-8" ?>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<Param>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<input name="0:name"></input>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<command separator=", ">', </command>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<input name="0:value"></input>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<command separator=", ">, '</command>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<input name="0:quality"></input>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[<command separator=", ">') </command>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[</operationdb>]]>
+            </code>
+          </listItem>
+          <listItem>
+            <code language="xml">
+              <![CDATA[</Param>]]>
+            </code>
+          </listItem>
+        </list>
+        <para>
+          So, we have in the individual lines:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              a standard definition of an XML document
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              beginning of parameter definition (the whole parameter definition must be inside the <![CDATA[<Param>]]> element)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <![CDATA[<operationdb>]]> element shows that it is an operation of storing into the database (<![CDATA[<Param>]]> may include many <![CDATA[<operationdb>]]> definitions, but it is only one such an operation in this case). The name  attribute indicates a relevant provider of connection to the database (ORACLE, OLEDB, ODBC, MSSQL); MSSQL in the case concerned. The next parameter is a connection string that describes the method of connection to the database; its syntax must be in conformity with the selected connection provider (for more information visit http://msdn.microsoft.com). The stop parameter means that the operation must be stopped if the current query is unsuccessful; false means continuation. The type parameter shows the query execution method; the following attributes are available: <legacyItalic>ExecuteNonQuery</legacyItalic> – to be used  when storing into the database and <legacyItalic>ExecuteScalar</legacyItalic> – to be used when reading from the database. async is the last parameter - false in this example, which means that the query is executed synchronously, i.e. DataPorter is waiting for the query result.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              the command element defines a fragment of the query to be inserted; here:  INSERT INTO OPCDataTable VALUES (getdate(),', i.e. the beginning of the query; command element defines, what separator will be used to separate the following elements (here: a comma).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              a fragment of SQL query: the name of tag connected to 0 input is inserted
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              a fragment of SQL query: the following characters: close quotation, comma and space are inserted
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              a fragment of SQL query: the value of tag connected to 0 input is inserted
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              a fragment of SQL query: the following characters: close quotation, comma and space are inserted
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              a fragment of SQL query: the quality of tag connected to 0 input is inserted
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              a fragment of SQL query: the end of the query, i.e. close quotation and bracket are inserted
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              closing of operationdb element (opened in line 2)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              closing of Param element (opened in line 1)
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Finally, thanks to this code, as a result of the operation, connection to the database is established and the following query is executed:
+        </para>
+        <code language="scr">
+          INSERT INTO OPCDataTable VALUES
+          (getdate(),'input[0].name', 'input[0].value', 'input[0].quality')
+        </code>
+        <para>
+          The input[0] parameter means that the query uses the element (tag) connected to the first input of the "DB Save" operation block (but counted from 0); the next fields (here after a dot) show what is put in a given field.
+        </para>
+      </content>
+    </section>
+    <section address="Detailed_Information">
+      <title>
+        Detailed Information About Parameter Configutarion In ”Db Save” Operation Parameter
+      </title>
+      <content>
+        <para>
+          The idea of storing into the database in DataPorter makes execution of certain arithmetic operations, conditional operations and storing into the database operations possible.
+        </para>
+        <para>
+          The configuration is saved in Param – in XML form. Inside <![CDATA[<Param>]]> there may be the following elements (the number of elements is optional):
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <![CDATA[<operationdb>]]> - operation of storing into the database, the name attribute – selects the database type (ORACLE, OLEDB, ODBC, MSSQL), the connectionstring attribute is used as a definition of connection to the database. It contains information concerning the selected database, user and password. The syntax using the operationdb element for the MS SQL database is shown in the previous section; a similar definition for the Oracle database could be as follows:
+            </para>
+            <code language="scr">
+              <![CDATA[<operationdb name="oracle" connectionstring="user id=scott;data source=orcl;password=&quot;tiger&quot;" stop="false">]]>
+            </code>
+            <para>
+              In our example an Oracle service named orcl  has been configured. Furthermore, scott user with the tiger password has been activated in the database (it is a standard test user of Oracle). In that definition, user id: has the value of scott, data source=orcl (the name of the service configured previously), password: the password, i.e. tiger (instead of inverted commas, we have <![CDATA[&quot;]]> inside the parameter).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <![CDATA[<operationopc>]]> - operations on the values of inputs and the accumulator; the name and type of operation shall be given. Permitted operation types: nop (no operation – an empty operation), assign (assigning to the accumulator), add (addition), sub (subtraction), mul (multiplication), div (division), or (logical or), and (logical and), xor (exclusive or). The following internal elements are possible: input (operation block input), internal (internal value, e.g. parameters connected with time and date; the correct parameter is selected by entering the right value for the “name” attribute; the following values of the name parameter are available: year, month, day, date, dayofweek, hour, millisecond, minute, second, ticks, timeofday, dayofyear), const (numerical constants used for arithmetic operations or accumulator initialization).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <![CDATA[<operationif>]]> - allows us to execute conditional operations; defines the operation name, its type “and” or “or” depending on whether the conjunction “and” or “or” appears between individual comparisons. The following activities are possible inside the operation: reset (resets the comparison result set previously), stopreset (resets the result of operation stop requirement as set previously), greater (is the accumulator value greater than), less (is the accumulator value lower than), equal (does the accumulator value equal), stop (sets the stop requirement according to the comparison results).
+            </para>
+          </listItem>
+        </list>
+      </content>
+      <sections>
+        <section address="DB_Save_operation_block">
+          <title>
+            Using the ”DB Save” operation block
+          </title>
+          <content>
+            <para>
+              The ”DB Save” operation block inputs may be used as elements of <![CDATA[<operationdb>]]>, <![CDATA[<operationopc>]]>. The inputs are numbered from 0, i.e. if the operation has one input only, its number is 0. Reference to the input is shown below:
+            </para>
+            <code language="xml">
+              <![CDATA[<input name="0:property"></input>]]>
+            </code>
+            <para>
+              As the name attribute, give the input number (here: 0) and, after a colon (:), the name of the relevant property field. The following fields (properties) are available:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  name – name of the tag connected to the input, e.g.<![CDATA[<input name="0:name"></input>]]>
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  value – value of the tag connected to the input, e.g. <![CDATA[<input name="0:value"></input>]]>
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  quality – quality of the tag connected to the input, e.g. <![CDATA[<input name="0:quality"></input>]]>
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  timestamp – time stamp of the tag connected to the input, e.g. <![CDATA[<input name="0:timestamp"></input>]]>
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="Example_Configurations">
+      <title>Example Configurations</title>
+      <content>
+        <para>
+        </para>
+        <autoOutline/>
+      </content>
+      <sections>
+        <section address="Using _conditional_operations">
+          <title>
+            Using of conditional operations and the accumulator
+          </title>
+          <content>
+            <para>
+              The example below shows usage of conditional operations:
+            </para>
+            <code language="xml">
+              <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<Param>
+  <operationopc name="opc" type="assign">
+    <internal name="minute"></internal>
+  </operationopc>
+  <operationif name="if" type="and">
+    <reset value="none"></reset>
+    <less value="30"></less>
+    <greater value="15"></greater>
+    <stop value="false"></stop>
+  </operationif>
+  <!-- Data base operation -->
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+    <command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>
+    <input name="0:name"></input>
+    <command separator=", ">', </command>
+    <input name="0:value"></input>
+    <command separator=", ">, '</command>
+    <input name="0:quality"></input>
+    <command separator=", ">') </command>
+  </operationdb>
+</Param>
+              ]]>
+            </code>
+            <para>
+              In our example, the value of current minute from the system timer in the computer is inserted into the accumulator. In the conditional operation, the value of previous comparisons is reset. If the accumulator value (minute) is lower than 30 and greater than 15, the next operations will be executed (storing of data into the database); otherwise, the stop requirement for further operations is set (nothing is stored into the database).
+            </para>
+          </content>
+        </section>
+        <section address="Using_many_inputs">
+          <title>
+            Using many inputs to the ”DB Save” operation blocks
+          </title>
+          <content>
+            <para>
+              The example shows using of many inputs to the “DB Save” operation block. We assume that OPCDataDoubleValue of the following structure exists in the database:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  timestamp [datetime] NOT NULL – here we store the time stamp of the instant when inserting is effected
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  opcvaluefirst [float] NULL – here we store (as a real number) the value of the first tag (connected to input 0)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  opcvaluesecond [float] NULL – here we store (as a real number) the value of the second tag (connected to input 1)
+                </para>
+              </listItem>
+            </list>
+            <para>
+              In order to use many inputs, the ”DB Save” operation block must be configures as in the figure below:
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="78332F6F-3B8A-4f69-B477-CD393BD7F481" />
+            </mediaLink>
+            <para>
+              Next you can design a transaction so that two elements are connected to the ”DB Save” operation inputs. The figure below shows an example of such a solution:
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="431FE6D0-E0E1-4566-996A-4CAFA4449E8A" />
+            </mediaLink>
+            <para>
+              Now, enter a text similar to the one below as the operation parameter.
+            </para>
+            <code language="xml">
+              <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<Param>
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+    <command separator=", ">INSERT INTO OPCDataDoubleValue VALUES (getdate(),'</command>
+    <input name="0:value"></input>
+    <command separator=", ">', </command>
+    <input name="1:value"></input>
+    <command separator=", ">') </command>
+  </operationdb>
+</Param>
+              ]]>
+            </code>
+            <para>
+              Such an operation will result in connection to the database and execution of the following query:
+            </para>
+            <code language ="scr">
+              INSERT INTO OPCDataDoubleValue VALUES
+              (getdate(),'input[0].value', 'input[1].value')
+            </code>
+          </content>
+        </section>
+      </sections>
+    </section>
+    <section address="Troubleshooting">
+      <title>
+        Troubleshooting
+      </title>
+      <content>
+        <para>
+          If problems occur (e.g. no entries in the database), examine the application logs, both in the Windows system logs (Menu Start->Run->eventvwr.msc) and DataPorter logs ("%ProgramFiles%\CAS\CAS DataPorter\log\DataPorter.log"), where entries should help us find the problem reason.
+        </para>
+        <para>
+          Check also whether the MS SQL database server is configured in a proper way, the integrated authentication is enabled, and the present user has sufficient privileges in the database.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

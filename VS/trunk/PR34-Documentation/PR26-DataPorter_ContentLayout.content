@@ -208,7 +208,10 @@
         </HelpKeywords>
       </Topic>
     </Topic>
-    <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity" />
+    <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity">
+      <Topic id="9f3954b0-cc3e-46d1-a3e6-59649db7e738" visible="True" title="Example simple database configuration" tocTitle="Example simple database configuration" linkText="Example simple database configuration" />
+      <Topic id="42ac5182-238c-41a2-81a7-f66a77089b02" visible="True" title="Storing From Opc Into Sql (Advanced Configuration)" tocTitle="Storing From Opc Into Sql (Advanced Configuration)" linkText="Storing From Opc Into Sql (Advanced Configuration)" />
+    </Topic>
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
       <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />
     </Topic>
