@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="3bddf5c3-5d5a-4569-85db-fcdc52a1b34a" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        By default, the web service is available at the following location:
+      </para>
+      <para>
+        <legacyBold>http://localhost/CAS.OPCWSDataAccess/OPCAdvancedDataAccess.asmx</legacyBold>
+      </para>
+      <para>
+        Web service title: OPC Advanced Data Access Web Service.
+      </para>
+      <alert>
+        <para>
+          For a formal definition, please review the WSDL file.
+        </para>
+      </alert>
+      <autoOutline />
+    </introduction>
+    <section address="Miscellaneous_functions">
+      <title>Miscellaneous functions:</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>GetVersion</legacyBold> – this function returns the version of the current web service interface.  Besides returning the version, this function may be useful for debugging purposes. If this function works properly (no exception occurs) it means that the web service extension (OPC2SOAP) is able to establish that connection with DataPorter main engine and everything is installed properly.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Buffered_Queues_functions:">
+      <title>Buffered Queues functions:</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>GetAvailiableQueues</legacyBold> - gets all queues names available via this service
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>ConnectToQueue</legacyBold> – connects to the selected buffered queue
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>StartTransaction</legacyBold> – starts the transaction of read operation from the buffered queue
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>EndTransaction</legacyBold> – ends the transaction
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Property_queries:">
+      <title>Property queries:</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_OneItem</legacyBold> - returns available properties for one selected item
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_OneItem_returnValues</legacyBold> - returns all properties and values for one selected item
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_OneItem_Proplist</legacyBold> - returns properties for one selected item based on the property list
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_OneItem_Proplist_returnValues</legacyBold> - returns properties and values for one selected item based on the property list
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_MultiItem_PropList</legacyBold> - returns properties of many items based on the property list
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_MultiItem_Proplist_returnValues</legacyBold> - returns properties and values of many items based on the property list
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_Proplist</legacyBold> - returns available properties based on the property list
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetAvailableProperties_Proplist_returnValues</legacyBold> - returns available properties and values based on the property list
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetOPCProperties</legacyBold> - lists all available OPC properties
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetProperty_OneItem</legacyBold> - returns the value of particular property of one selected item
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Browse_items_functions">
+      <title>Browse items functions:</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>GetAvailiableItems</legacyBold> - gets all item names available via this service
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Read_value_functions">
+      <title>Read value functions:</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>GetValue_OneItem</legacyBold> – returns the value (with quality and timestamp) of one item passed as item name
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>GetValue_MultiItem</legacyBold> – returns the value (with quality and timestamp) of many items passed as an array of item names.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Write_value_functions">
+      <title>Write value functions:</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>SetValueAsDouble_OneItem</legacyBold> - sets the value of an item as Double
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>SetValueAsInt32_OneItem</legacyBold> - sets the value of an item as Integer 32
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>SetValueAsString_OneItem</legacyBold> - sets the value of an item as String
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
