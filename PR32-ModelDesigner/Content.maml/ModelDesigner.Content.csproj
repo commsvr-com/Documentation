@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{92BA1BF7-8B3C-46C0-A602-334FA6D5E06C}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -162,6 +162,7 @@
     <None Include="UAAddressSpace\ViewNodeClasses.aml" />
     <None Include="UAOverview.aml" />
     <None Include="UserInterface.aml" />
+    <None Include="VersionHistory.aml" />
     <None Include="Welcome.aml" />
   </ItemGroup>
 </Project>
