@@ -28,7 +28,7 @@
     </SandcastlePath>
     <WorkingPath>Temp\UAModelDesigner\Working\</WorkingPath>
     <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
-    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <HelpFileFormat>Website</HelpFileFormat>
     <FrameworkVersion>2.0.50727</FrameworkVersion>
     <Preliminary>True</Preliminary>
     <HelpTitle>OPC Unified Architecture</HelpTitle>
@@ -38,7 +38,7 @@
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <FooterText>This documentation is designed to be used with CAS UA Address Space Model Designer %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <PresentationStyle>vs2005</PresentationStyle>
+    <PresentationStyle>vs2005AdWords</PresentationStyle>
     <NamingMethod>MemberName</NamingMethod>
     <HelpFileVersion>1.0.0.6</HelpFileVersion>
     <ComponentConfigurations>
@@ -49,9 +49,15 @@
           <targets files="reflection.xml" type="{@ProjectLinks}" />
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Base path for relative filenames in source attributes
-                 (optional) --><basePath value="{@ProjectFolder}" /><!-- Connect to language filter (optional).  If omitted,
-                 language filtering is enabled by default. --><languageFilter value="true" /><!-- Code colorizer options (required).
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Base path for relative filenames in source attributes
+                 (optional) -->
+          <basePath value="{@ProjectFolder}" />
+          <!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. -->
+          <languageFilter value="true" />
+          <!-- Code colorizer options (required).
                  Attributes:
                     Language syntax configuration file (required)
                     XSLT style file (required)
@@ -61,16 +67,29 @@
                     Enable outlining (optional)
                     Keep XML comment "see" tags within the code (optional)
                     Tab size override (optional, 0 = Use syntax file setting)
-                    Use language name as default title (optional) --><colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" /></component></ComponentConfig>
-<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
+                    Use language name as default title (optional) -->
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). --><outputPath value="Output\" /><!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). -->
+          <outputPath value="Output\" />
+          <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="Z:\trunk\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. -->
+          <logoFile filename="Z:\trunk\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <DocumentationSources>
       <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.dll" />
       <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.XML" />
@@ -84,10 +103,7 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-      <PlugInConfig id="HelpTopicsPlugin" enabled="True">
-        <configuration />
-      </PlugInConfig>
-    </PlugInConfigurations>
+<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -787,6 +803,7 @@
     <None Include="PR32-ModelDesigner\Content.maml\Welcome.aml" />
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
     <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\VersionHistory.aml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CAS.ControlLibrary">

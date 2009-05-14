@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="139fef33-0f86-4fe8-8620-51905ec6e36b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        The topics in this section describe the various changes made to the OPC UA Address Space Model Designer over the life of the project.
+      </para>
+      <alert>
+        <para>
+          Download latest version of <externalLink>
+            <linkText>OPC UA Address Space Model Designer</linkText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkUri>
+          </externalLink>
+        </para>
+        <para>
+          See also the movie <externalLink>
+            <linkText>"Introduction to OPC UA Address Space modeling using CAS Address Space Model Designer”</linkText>
+            <linkUri>http://www.youtube.com/watch?v=pYOQA4atlRI</linkUri>
+          </externalLink>
+        </para>
+      </alert>
+      <autoOutline />
+    </introduction>
+    <section address="REL_1.10.80">
+      <title>Version 1.10.80</title>
+      <content>
+        <para>
+          Thursday, May 07, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Explorer-style navigation functionality is added. Now it is possible to use navigation arrows located on the toolbar to view previously visited nodes.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              GoTo DataType functionality is added to the context menu of the node. It gives the possibility of navigating to DataType coupled with the selected node.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Coupled Nodes functionality is added. Now, nodes coupled with the selected node (i.e. base types, targets etc. ) appear on the tree. This functionality can by switched on/off in Tools menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Sample model solution is installed automatically in "My Documents\UAAddressSpaceModelDesigner\Sample" folder.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Toolbars are now more functional. They can be moved to any side of the application window.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Configuration is moved under Tools menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Intelligent book synchronization can be switched on/off in Help menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some minor bugfixes and improvements.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="REL_1.10.71">
+      <title>Version 1.10.71</title>
+      <content>
+        <para>
+          Friday, April 24, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Node Copy/Cut/Paste functionality is added in node context menu. Now it is possible to copy (cut) node and then paste it into another appropriate node. Copied node is stored as XML text in system clipboard, so it can be pasted to any text editor (this XML is compatible with OPC Foundation UA SDK model definition).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Build functionality is added. Now the model can be built (C# classes are generated from the model) directly from the CAS UA Address Space Model Designer. Try Build option from the Tools menu. What is more , output directory and CSV filename can be configured in properties of each Project (model).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Message which appears when the user tries to load the model as solution is changed. Now it is more informative.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some minor bugfixes.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Framework 2.0 and Framework 3.0 required.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="REL_1.10.50">
+      <title>Version 1.10.50</title>
+      <content>
+        <para>
+          Wednesday, March 25, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Filtering is improved (filtered nodes are hidden instead of marking with another color; when defining the filter, node classes (according to OPC UA specification) can be selected to hide and unhide particular nodes)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Naming convention for namespace prefixes in the XML output document is changed
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Many improvements and bugfixes to the internal application engine.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="REL_1.10.40">
+      <title>Version 1.10.40</title>
+      <content>
+        <para>
+          Wednesday, March 11, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Built-in types are based on OPC Foundation UA and are read-only now;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Namespace references based on file paths are added;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              The main window displays the name of the solution file in the title bar;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Warning about unsaved changes is displayed when the user wants to clear, open or exit;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              The issue with namespaces for method parameters is fixed;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              The issue with allTopics.xml file is fixed;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Help content changes only if Help Tab is active;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              The selected node on the Model tree is always marked;
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="REL_1.10.00">
+      <title>Version 1.10.00</title>
+      <content>
+        <para>
+          Friday, February 06, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Model search functionality is added
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Built-in models: Standard Types, Built-In Types, Data Types are replaced by model: UA Defined Types
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              White characters (like spaces) are removed from names automatically
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some of the unused properties (e.g. Declaration, Description, etc.) are removed
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              XML namespaces are added to the header of the output model file (now, namespaces are defined once at the beginning of the file)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some small improvements and bug fixes
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="announcement_release">
+      <title>Announcement release</title>
+      <content>
+        <para>
+          Monday, December 08, 2008
+        </para>
+        <para>
+          OPC Unified Architecture (UA) is the next generation of OPC; one of its biggest improvements is a powerful Address Space and Information Model.
+        </para>
+        <para>
+          To make the designing of the OPC UA Address Space Model easier, CAS introduces an UA Model Designer, that is a powerful tool, which allows creating, displaying and editing OPC UA models compatible with the OPC Unified Architecture address space concept. What is more, it provides a comprehensive intelligent ebook with smart positioning system providing a context-sensitive help. The tool is created for developers and engineers, for professionals and beginners.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
