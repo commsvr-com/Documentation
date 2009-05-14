@@ -214,6 +214,7 @@
     </Topic>
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
       <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />
+      <Topic id="3bddf5c3-5d5a-4569-85db-fcdc52a1b34a" visible="True" title="Service Description" tocTitle="Service Description" linkText="Service Description" />
     </Topic>
   </Topic>
   <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">

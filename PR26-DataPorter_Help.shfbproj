@@ -196,6 +196,7 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperations.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ExampleSimpleDatabaseConfiguration.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ExampleAdvancedDatabaseConfiguration.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceDescription.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
