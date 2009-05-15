@@ -215,9 +215,11 @@
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
       <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />
       <Topic id="3bddf5c3-5d5a-4569-85db-fcdc52a1b34a" visible="True" title="Service Description" tocTitle="Service Description" linkText="Service Description" />
+      <Topic id="1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea" visible="True" title="Service Debugging" tocTitle="Service Debugging" linkText="Service Debugging" />
+      <Topic id="b447d5c6-1b3b-4840-abfb-318b650ecc65" visible="True" title="ItemDescriber" tocTitle="ItemDescriber" linkText="ItemDescriber" />
     </Topic>
   </Topic>
-  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
+  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="False" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
     <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab" />
     <Topic id="1ab52757-7130-402b-85b4-af4b468567d0" visible="True" title="Groups Tab" tocTitle="Groups Tab" linkText="Groups Tab" />
     <Topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" visible="True" title="Items Tab" tocTitle="Items Tab" linkText="Items Tab" />
@@ -228,7 +230,7 @@
     </Topic>
     <Topic id="11f9a6d3-474d-4184-b6e2-f12e3bba9637" visible="True" />
   </Topic>
-  <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="True" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting">
+  <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="False" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting">
     <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" />
     <Topic id="b2b37f09-e751-4aa0-afa6-dc716e759773" visible="True">
       <Topic id="410af3c3-9dde-48af-b625-e10236b40ed8" visible="True" />

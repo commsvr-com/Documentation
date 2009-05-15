@@ -178,7 +178,8 @@
           It is also important how DataPorter is connected to the database. So called "connection string" is used to describe the connection. The following connection string is used in the default configuration:
         </para>
         <code language="scr">
-          "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf; Integrated Security=True; Connect Timeout=30; User Instance=True"
+          "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf; 
+          Integrated Security=True; Connect Timeout=30; User Instance=True"
         </code>
         <para>
           The method of connection defined that way causes that only one application (only one system process) may be connected to that database; therefore it is much better to connect the DataPorterDataBase.mdf file to the MS SQL or MS SQL Express database server and use the database by many applications.
@@ -195,12 +196,16 @@
         </para>
         <code language="scr">
           <![CDATA[
-          <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+          <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+          AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;
+          Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
           ]]>
         </code>
         <code language="scr">
           <![CDATA[
-          <!-- <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteNonQuery" async="false"> -->
+          <!-- <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+          Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" 
+          type="ExecuteNonQuery" async="false"> -->
           ]]>
         </code>
         <para>
@@ -208,7 +213,9 @@
         </para>
         <code language="scr">
           <![CDATA[
-          <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteNonQuery" async="false">
+          <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+          Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" 
+          type="ExecuteNonQuery" async="false">
           ]]>
         </code>
         <para>
@@ -218,7 +225,8 @@
           To verify if storing into the database works properly, use the database manager and check the content of OPCDataTable table or simply enter (Menu Start -> Run -> cmd) in the command line:
         </para>
         <code language="scr">
-          sqlcmd -S localhost\SQLEXPRESS -d DataPorterDataBase -Q"SELECT TOP 5 * FROM [DataPorterDataBase].[dbo].[OPCDataTable] ORDER BY timestamp DESC"
+          sqlcmd -S localhost\SQLEXPRESS -d DataPorterDataBase -Q
+          "SELECT TOP 5 * FROM [DataPorterDataBase].[dbo].[OPCDataTable] ORDER BY timestamp DESC"
         </code>
         <para>
           That command should return five most recent rows in the database. In my example it produced the following result:
