@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <autoOutline />
+      <para>
+      </para>
+    </introduction>
+    <section address="Service_debugging">
+      <title>Service debugging</title>
+      <content>
+        <para>
+          By default, the web service is available at the following location:
+        </para>
+        <para>
+          <legacyLink>http://localhost/CAS.OPCWSDataAccess/OPCAdvancedDataAccess.asmx</legacyLink>
+        </para>
+        <para>
+          It is not a website, but can be opened locally (only localhost as host name can be used) in any browser. This enables a primitive debugging interface, like in the figure below.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="AD6DD952-4EBD-4fc5-85B2-433B967036AF" />
+        </mediaLink>
+        <para>
+          It is possible to click on a particular function and try to invoke it.
+        </para>
+        <para>
+          It is reasonable to start from function “GetVersion”. This function returns the version of the current web service interface.  Besides returning the version, this function may be useful for debugging purposes. If this function works properly (no exception occurs) it means that the web service extension (OPC2SOAP) is able to establish that connection with DataPorter main engine and everything is installed properly.
+        </para>
+      </content>
+    </section>
+    <section address="IISandASP.NETintegration">
+      <title>
+        IIS and ASP.NET integration
+      </title>
+      <content>
+        <para>
+          After IIS installation we need to check if ASP.NET is integrated with IIS. If ASP.NET is not integrated with IIS we need to:
+        </para>
+        <list class ="ordered">
+          <listItem>
+            <para>
+              Launch the command window (Start ->Launch and write in “cmd”). See the picture below.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Go to the .Net Framework folder, default c:\windows\Microsoft.NET\Framework\v2.0.50727
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Write “aspnet_regiis -i” in the command window. After successful installation we have ASP.NET integrated with IIS.
+            </para>
+          </listItem>
+        </list>
+        <mediaLink>
+          <image placement="center" xlink:href="26B4890E-DD4E-4d23-84BE-BC6877716165" />
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

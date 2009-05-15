@@ -197,6 +197,8 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ExampleSimpleDatabaseConfiguration.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ExampleAdvancedDatabaseConfiguration.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceDescription.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceDebugging.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ItemDescriber.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
@@ -378,6 +380,22 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Image Include="PR26-DataPorter\Graphics\ItemDescriber2.JPG">
+      <AlternateText>ItemDescriber</AlternateText>
+      <ImageId>CC1991EB-C695-4656-89C3-27AE6C27AB39</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\ItemDescriber1.JPG">
+      <AlternateText>ItemDescriber</AlternateText>
+      <ImageId>FC50764E-4393-40bc-9034-63BF822FD3F2</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\ASPNET_IIS_integration.JPG">
+      <AlternateText>ASPNET IIS integration</AlternateText>
+      <ImageId>26B4890E-DD4E-4d23-84BE-BC6877716165</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_WS_in_IE.jpg">
+      <AlternateText>WebService</AlternateText>
+      <ImageId>AD6DD952-4EBD-4fc5-85B2-433B967036AF</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\transaction_2inputs_example.jpg">
       <AlternateText>2 imputs transaction example</AlternateText>
       <ImageId>431FE6D0-E0E1-4566-996A-4CAFA4449E8A</ImageId>

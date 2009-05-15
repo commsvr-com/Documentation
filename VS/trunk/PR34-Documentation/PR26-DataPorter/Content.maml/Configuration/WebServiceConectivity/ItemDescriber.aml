@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b447d5c6-1b3b-4840-abfb-318b650ecc65" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        This tool allows us to generate a CSV file or an XML file that stores the configuration of a description for items configured in DataPorter or CommServer. The user can describe items by setting particular properties.
+      </para>
+      <para>
+        The main window is divided into two sections. On the right side, there is a list of properties and corresponding identifiers. On the left side, there are item names (syntax is “item name” or “server name/subscription  name/item name”).
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="FC50764E-4393-40bc-9034-63BF822FD3F2" />
+      </mediaLink>
+      <para>
+        After adding an item name, click on “+” next to the name and select “ItmesItemProperty”. The list on the left changes the view to the property list for this particular item. The user can configure properties by adding couples: PropertyCode (code/identifier from the table on the right of the window) value of selected properties (Value).
+      </para>
+      <alert>
+        <para>
+          When configuring properties remember to take OPC Foundation recommendations into consideration.
+        </para>
+      </alert>
+      <para>
+        The ItemDescriber window in the Item properties editing mode is shown below :
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="CC1991EB-C695-4656-89C3-27AE6C27AB39" />
+      </mediaLink>
+      <para>
+        After having finished the configuration of the selected item you can go back to the item list by clicking on „<![CDATA[<-]]>” button in the right top corner.
+      </para>
+    </introduction>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

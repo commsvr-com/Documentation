@@ -20,14 +20,34 @@
           <![CDATA[
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- such text is comment -->
-<!-- sample query - the goal of this example is to show how to save in the database value of process variable (from OPC), that is connected to first (number: 0) input of the operation. Here is beginning of parameter definition  (the whole definition of this parameter must be included inside object: "Param") -->
+<!-- sample query - the goal of this example is to show how to save in the database value 
+of process variable (from OPC), that is connected to first (number: 0) input of the operation. 
+Here is beginning of parameter definition  (the whole definition of this parameter must be 
+included inside object: "Param") -->
 <Param>
-  <!-- operation DB definition, it contains information about the database provider and the connection string (one of the definition is commented to show the difference between attaching the SQLserver hosted database or the file.
-object  "operationdb" indicates the it is operation on the database, (it is posible to have many "operationdb" definitions inside one "Param"). name attribute indicate the right data base providerr (ORACLE, OLEDB, ODBC, MSSQL); in this example it is  oracle. The next parameter is connection string, this string contains all neccessary informations that are required to connect to the database; the syntax depends on the database provider (more details at:http://msdn.microsoft.com). In this walkthrough user id: has value: scott, data source=orcl (the name of the serviced configured above), password: tiger (because password is inside quotations we have to use &quot;).
+  <!-- operation DB definition, it contains information about the database 
+  provider and the connection string (one of the definition is commented to 
+  show the difference between attaching the SQLserver hosted database or the file.
+object  "operationdb" indicates the it is operation on the database, 
+(it is posible to have many "operationdb" definitions inside one "Param"). 
+name attribute indicate the right data base providerr (ORACLE, OLEDB, ODBC, MSSQL); 
+in this example it is  oracle. The next parameter is connection string, 
+this string contains all neccessary informations that are required to connect to the database; 
+the syntax depends on the database provider (more details at:http://msdn.microsoft.com). 
+In this walkthrough user id: has value: scott, data source=orcl 
+(the name of the serviced configured above), password: tiger 
+(because password is inside quotations we have to use &quot;).
  -->
-  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
-    <!-- <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteNonQuery" async="false"> -->
-    <!-- command: in the command object there is definition of query parts; here we have:  INSERT INTO OPCDataTable VALUES (getdate(), , which is the beginning of the query, command attribute separator defines the interspace that is used to separate elements (in this example it is coma). 
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+  AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;
+  Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+    <!-- <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+    Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" 
+    type="ExecuteNonQuery" async="false"> -->
+    <!-- command: in the command object there is definition of query parts; here we have:  
+    INSERT INTO OPCDataTable VALUES (getdate(), , which is the beginning of the query, 
+    command attribute separator defines the interspace that is used to separate elements 
+    (in this example it is coma). 
 Structure of the DataBase: 
 CREATE TABLE OPCDataTable
 (
@@ -36,7 +56,8 @@ CREATE TABLE OPCDataTable
 	  [opcvalue] [float] NULL,
 	  [opcquality] [nchar](20) NULL
 )
-The function getdate () is the function of SQL server used to obtain current date, this current date is inserted as the first filed of the database row.
+The function getdate () is the function of SQL server used to obtain current date, 
+this current date is inserted as the first filed of the database row.
  -->
     <command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>
     <!-- name of the variable connected to first (#0) input -->
@@ -56,68 +77,23 @@ The function getdate () is the function of SQL server used to obtain current dat
         <para>
           At first glance it may seem complicated but when we remove all comments (green text between ”<!-- ” and ”--> ”) we receive (numbers on the left  side show the line number and they will be of help when describing the parameter):
         </para>
-        <list class="ordered">
-          <listItem>
-            <code language="xml">
-              <![CDATA[<?xml version="1.0" encoding="utf-8" ?>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<Param>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<input name="0:name"></input>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<command separator=", ">', </command>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<input name="0:value"></input>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<command separator=", ">, '</command>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<input name="0:quality"></input>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[<command separator=", ">') </command>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[</operationdb>]]>
-            </code>
-          </listItem>
-          <listItem>
-            <code language="xml">
-              <![CDATA[</Param>]]>
-            </code>
-          </listItem>
-        </list>
+        <code language="xml">
+          1. <![CDATA[<?xml version="1.0" encoding="utf-8" ?>]]>
+          2.   <![CDATA[<Param>]]>
+          3.      <![CDATA[<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+                   AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;
+                   Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">]]>
+          4.      <![CDATA[<command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>]]>
+          5.      <![CDATA[<input name="0:name"></input>]]>
+          6.      <![CDATA[<command separator=", ">', </command>]]>
+          7.      <![CDATA[<input name="0:value"></input>]]>
+          8.      <![CDATA[<command separator=", ">, '</command>]]>
+          9.      <![CDATA[<input name="0:quality"></input>]]>
+          10.     <![CDATA[<command separator=", ">') </command>]]>
+          11.     <![CDATA[</operationdb>]]>
+          12.   <![CDATA[</Param>]]>
+        </code>
+
         <para>
           So, we have in the individual lines:
         </para>
@@ -212,7 +188,8 @@ The function getdate () is the function of SQL server used to obtain current dat
               <![CDATA[<operationdb>]]> - operation of storing into the database, the name attribute – selects the database type (ORACLE, OLEDB, ODBC, MSSQL), the connectionstring attribute is used as a definition of connection to the database. It contains information concerning the selected database, user and password. The syntax using the operationdb element for the MS SQL database is shown in the previous section; a similar definition for the Oracle database could be as follows:
             </para>
             <code language="scr">
-              <![CDATA[<operationdb name="oracle" connectionstring="user id=scott;data source=orcl;password=&quot;tiger&quot;" stop="false">]]>
+              <![CDATA[<operationdb name="oracle" connectionstring="user id=scott;data source=orcl;
+              password=&quot;tiger&quot;" stop="false">]]>
             </code>
             <para>
               In our example an Oracle service named orcl  has been configured. Furthermore, scott user with the tiger password has been activated in the database (it is a standard test user of Oracle). In that definition, user id: has the value of scott, data source=orcl (the name of the service configured previously), password: the password, i.e. tiger (instead of inverted commas, we have <![CDATA[&quot;]]> inside the parameter).
@@ -301,7 +278,9 @@ The function getdate () is the function of SQL server used to obtain current dat
     <stop value="false"></stop>
   </operationif>
   <!-- Data base operation -->
-  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+  AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;
+  Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
     <command separator=", ">INSERT INTO OPCDataTable VALUES (getdate(),'</command>
     <input name="0:name"></input>
     <command separator=", ">', </command>
@@ -362,7 +341,9 @@ The function getdate () is the function of SQL server used to obtain current dat
               <![CDATA[
 <?xml version="1.0" encoding="utf-8" ?>
 <Param>
-  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;
+  AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;
+  Connect Timeout=30;User Instance=True" stop="false" type="ExecuteNonQuery" async="false">
     <command separator=", ">INSERT INTO OPCDataDoubleValue VALUES (getdate(),'</command>
     <input name="0:value"></input>
     <command separator=", ">', </command>
