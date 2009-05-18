@@ -5,65 +5,25 @@
       <para>
         The topics in this section will help you install DataPorter™, become familiar with the DataPorter™, and create your first configuration:
       </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            <link xlink:href="176fbec7-2274-4b9b-8212-7b7a8a41e32b"/>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="efa83c9a-0ca8-45e3-b80f-7b6506409f1f"/>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="6dd63460-0a6a-445f-8c51-4cdca08539e8"/>
+          </para>
+        </listItem>
+      </list>
     </introduction>
-    <section address="GettingStarted">
-      <content>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <link xlink:href="176fbec7-2274-4b9b-8212-7b7a8a41e32b"/>
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <link xlink:href="efa83c9a-0ca8-45e3-b80f-7b6506409f1f"/>
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <link xlink:href="6dd63460-0a6a-445f-8c51-4cdca08539e8"/>
-            </para>
-          </listItem>
-        </list>
-      </content>
-      
-    </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
