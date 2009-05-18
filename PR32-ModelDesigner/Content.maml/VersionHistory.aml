@@ -21,6 +21,49 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="REL_1.10.90">
+      <title>Version 1.10.90</title>
+      <content>
+        <para>
+          Monday, May 15, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Application main menu includes entries to the planned functionality and allows the user to send comments and requests to OPC UA AS Model Designer development team. Intentionally it is a survey that allows us to harmonize the development priorities with your needs.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Model build is done silently in background (none command window appears) - the whole output from build process is available in a new Output panel
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              The spelling of the directory that contains sample solution is fixed ("My Douments\UAAddessSpaceModelDesigner\Sample" is changed to "My Douments\UAAddressSpaceModelDesigner\Sample")
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Version history is available online
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Synchronization with OPC Fundation SDK 1.00.233.2
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some minor bugfixes and improvements.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="REL_1.10.80">
       <title>Version 1.10.80</title>
       <content>
