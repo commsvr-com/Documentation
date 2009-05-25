@@ -219,7 +219,7 @@
       <Topic id="b447d5c6-1b3b-4840-abfb-318b650ecc65" visible="True" title="ItemDescriber" tocTitle="ItemDescriber" linkText="ItemDescriber" />
     </Topic>
   </Topic>
-  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="False" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
+  <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
     <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab" />
     <Topic id="1ab52757-7130-402b-85b4-af4b468567d0" visible="True" title="Groups Tab" tocTitle="Groups Tab" linkText="Groups Tab" />
     <Topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" visible="True" title="Items Tab" tocTitle="Items Tab" linkText="Items Tab" />
