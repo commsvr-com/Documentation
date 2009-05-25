@@ -1,82 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="08319621-9f18-4e3a-966c-daff610ba00e" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        This tab presents information about transactions and operations that are configured. The tab is split into two sections. On the left side there is a list of configured transactions and operations. Names for items on the list have the following syntax: X(ID:(id_of_input_item)-> (id_of_output_item), where X could be T (for transactions) and O (for operations), ID is a transaction or operation identifier, id_of_input_item and id_of_output_item are identifiers of input and output items or –1 if no item is specified. Select one of the item from the list to show statistics for this item on the statistics panel (Transaction statistics).
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="50225FFF-B2C9-47c8-8D2C-6A831BCACD6B" />
+      </mediaLink>
+      <para>
+        Find the following information on the statistics panel (Transactions statistics):
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            <legacyItalic>Transaction name</legacyItalic> – name of the item (tag from the configuration)
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Transaction details</legacyItalic> –  additional information about the transaction, e.g. type of the operation presented as a human readable name, identifier, item names, etc…
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Transaction counter</legacyItalic> – information about how many times this transaction was executed
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Min/Avg/Max gr. Transaction execution rate [ms]</legacyItalic> – measured time between two sequential executions of this transaction (it can be different from time from the configuration). DataPorter shows minimal (Min), average (Avg) and maximal (Max) time
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Transaction Type</legacyItalic> – type of the transaction/operation in human readable way
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Transaction scanning rate [ms]</legacyItalic> – scanning rate of transaction execution in this group (this value comes from configuration)
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Deadband [%]</legacyItalic> – deadband from the configuration (percentage of the source item that has to change to execute the transaction)
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Min update rate [ms]</legacyItalic> – minimum update rate from the configuration (this is the longest period of time between two executions of this transaction (in ms). If this setting is blank (null) the transaction is executed only if deadband occurs)
+          </para>
+        </listItem>
+      </list>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

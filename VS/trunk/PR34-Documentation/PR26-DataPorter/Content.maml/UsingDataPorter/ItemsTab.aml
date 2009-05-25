@@ -1,82 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
+    
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        This tab presents information about items (tags) that are configured. The tab is split into two sections. On the left side there is a list of configured items. Select one of the items to show statistics for this item on the statistics panel (Item statistics).
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="50B89758-7D7A-48e7-BF93-8C8342BBBB0E" />
+      </mediaLink>
+      <para>
+        Find the following information on the statistics panel (Item statistics):
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            <legacyItalic>Item/Tag name</legacyItalic> – name of the item (tag from the configuration)
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Item details</legacyItalic> –  additional information about the item, e.g. identifier, name, value and quality
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Item active time</legacyItalic> – time (in seconds) that informs how long the group is in an active state
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Min/Avg/Max transaction scan rate [ms]</legacyItalic> – measured time (in milliseconds ) between two subsequent readings of this item (it can be different from time from the configuration). DataPorter shows minimal (Min), average (Avg) and maximal (Max) time
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Item value</legacyItalic> – value of this item
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Item state</legacyItalic> – quality of this item
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Write successes</legacyItalic> – quantity of successful write operations for this item
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Write fails</legacyItalic> – quantity of unsuccessful write operations for this item
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Read successes</legacyItalic> – quantity of successful read operations for this item
+          </para>
+          <alert>
+            <para>
+              If client can connect to the server and is able to read data, this value should be incremented
+            </para>
+          </alert>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Read fails</legacyItalic> – quantity of unsuccessful read operations for this item
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <legacyItalic>Last Error</legacyItalic> – displays the last error that occurs in read/write operation. If no error occurs DataPorter will display: “none” or “S_OK”
+          </para>
+        </listItem>
+      </list>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
-    <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+    
+    <relatedTopics> 
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
