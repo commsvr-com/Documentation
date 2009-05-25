@@ -56,7 +56,10 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
+      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
@@ -66,7 +69,7 @@
     <HelpTitle>DataPorter</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <Preliminary>True</Preliminary>
-    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <PresentationStyle>vs2005AdWordsDP</PresentationStyle>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -349,6 +352,7 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
+    <Content Include="YouTube.html" />
     <Image Include="PR26-DataPorter\Graphics\ItemDescriber2.JPG">
       <AlternateText>ItemDescriber</AlternateText>
       <ImageId>CC1991EB-C695-4656-89C3-27AE6C27AB39</ImageId>
