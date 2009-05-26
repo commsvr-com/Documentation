@@ -1,82 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="11f9a6d3-474d-4184-b6e2-f12e3bba9637" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
+<topic id="f3f78005-8f41-44be-a0d3-719472e15edf" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
+      <para>
+        This section describes how to install a new license in DataPorter. By default, software is installed with a demo license and has some limitations. Information about the DataPorter version can be found in topics:
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            DataPorterStandard
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            DataPorterProfessional
+          </para>
+        </listItem>
+      </list>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
+    <procedure>
+      <title>To install the license, follow the instructions below:</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>
+              Start DataPorter software (see [UsingDataPorter#Starting Dataporter])
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Select Help->About to open the About window:
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="444DD3A7-E939-4d1f-A451-4D2ECEA110E9" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+             Change tab to License tab:
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="7302A959-90E2-4824-BA14-1CE45DE52B00" />
+            </mediaLink>
+            <para>
+              This tab provides information about the installed licenses. By clicking on any installed license you can see detailed information.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="68BF2A74-60D5-4bfa-97F5-D793916158E3" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+             To install a new license, click on the “Install new license” button and chose the license to be installed.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="F75CB069-3934-4fb4-B529-EAC8AECCD829" />
+            </mediaLink>
+            <para>
+              After successful installation of the new license, a message “Installation succeeded” appears.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="54E742FC-E009-4e7a-BB56-71CCF9A7B0D8" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+            Now, restart DataPorter (see [UsingDataPorter]) to start using the new license.
+            </para>
+            <alert>
+              <para>
+                Any new license should be installed on user’s account used to run DataPorter.
+              </para>
+            </alert>
+          </content>
+        </step>
+      </steps>
+    </procedure>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
-  </developerConceptualDocument>
+  </developerHowToDocument>
 </topic>

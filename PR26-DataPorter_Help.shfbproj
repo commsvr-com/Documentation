@@ -178,7 +178,6 @@
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\ExampleConfiguration\ExampleTransactions.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\GroupsTab.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\ItemsTab.aml" />
-    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\LicenseInstallation.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\OPCClientTab.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\Reporting.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\TransitionsTab.aml" />
@@ -194,6 +193,7 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceDescription.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceDebugging.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ItemDescriber.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\LicenseInstallation.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
@@ -376,6 +376,34 @@
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Content Include="YouTube.html" />
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_about_license_succeeded.JPG">
+      <AlternateText>DataPorter about license succeeded</AlternateText>
+      <ImageId>54E742FC-E009-4e7a-BB56-71CCF9A7B0D8</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_about_license_install.JPG">
+      <AlternateText>DataPorter about license install</AlternateText>
+      <ImageId>F75CB069-3934-4fb4-B529-EAC8AECCD829</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_about_license_details.JPG">
+      <ImageId>68BF2A74-60D5-4bfa-97F5-D793916158E3</ImageId>
+      <AlternateText>DataPorter about license details</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_about_license.JPG">
+      <AlternateText>DataPorter about license</AlternateText>
+      <ImageId>7302A959-90E2-4824-BA14-1CE45DE52B00</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_about.JPG">
+      <AlternateText>DataPorter about</AlternateText>
+      <ImageId>444DD3A7-E939-4d1f-A451-4D2ECEA110E9</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\sample_report.jpg">
+      <ImageId>FE554CE2-9821-46cf-9773-4CEAC8487B89</ImageId>
+      <AlternateText>sample Report</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\TrayIcon.JPG">
+      <AlternateText>Tray Icon</AlternateText>
+      <ImageId>B3859DC3-EFCC-4c82-85BA-4768B298059E</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\main_transitions.jpg">
       <AlternateText>Main Transitions</AlternateText>
       <ImageId>50225FFF-B2C9-47c8-8D2C-6A831BCACD6B</ImageId>
