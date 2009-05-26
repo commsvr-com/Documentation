@@ -16,7 +16,7 @@
           Start Menu -> All Programs -> CAS -> DataPorter -> DataPorter
         </para>
         <para>
-          DataPorter reads the configuration file automatically (default localization is: "c:\Program Files\CAS\CAS.DataPorter\OpcClient_config.XML") and connects to the configured OPC Server.
+          DataPorter reads the configuration file automatically (default location is: "c:\Program Files\CAS\CAS.DataPorter\OpcClient_config.XML") and connects to the configured OPC Server.
         </para>
       </content>
     </section>
@@ -26,10 +26,10 @@
       </title>
       <content>
         <para>
-          The application GUI informs a user about DataPorter and connection state.
+          The application GUI informs any user about the DataPorter and connection state.
         </para>
         <para>
-          To easier the diagnostic information are grouped logically. Each set of information is shown on tab. Here is a list of available tabs:
+          To easier the diagnostic, information are grouped logically. Each set of information is shown on a tab. Below there is a list of available tabs:
         </para>
         <list class ="bullet">
           <listItem>
@@ -54,7 +54,7 @@
           </listItem>
         </list>
         <para>
-          To find other information about DataPorter user interface read topics below:
+          To find detailed information about DataPorter user interface, read the following topics:
         </para>
         <list class="bullet">
           <listItem>
@@ -81,7 +81,7 @@
       </title>
       <content>
         <para>
-          To stop DataPorter select close button on main window and answer “yes” when question: “Do you want to close the application?” appears.
+          To stop DataPorter select the close button on the main window and answer “yes” when question: “Do you want to close the application?” appears.
         </para>
       </content>
     </section>
