@@ -11,7 +11,7 @@
           </terms>
           <definition>
             <para>
-            The collection of information that an<token>OPCUA</token>Server makes visible to its Clients. See section <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" /> for a description of the contents and structure of the server <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />.
+            The collection of information that an<token>OPCUA</token>Server makes visible to its Clients.
           </para>
           </definition>
         </glossaryEntry>
@@ -21,7 +21,7 @@
           </terms>
           <definition>
             <para>
-            A type of Event associated with a state condition that typically requires acknowledgement. See section <link NS2:href="2ba1f4ae-e619-4821-87ae-8b1073901d99" xmlns:NS2="http://www.w3.org/1999/xlink"></link> for a description of Alarms.
+            A type of Event associated with a state condition that typically requires acknowledgement.
           </para>
           </definition>
         </glossaryEntry>
@@ -83,8 +83,8 @@
           </terms>
           <definition>
             <para>
-            The data type dictionary is represented as a <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> of type <link xlink:href="d43f206c-8b58-4ded-b9c8-74eaac63cb36#DataTypeDictionaryType">DataTypeDictionaryType</link> in the Address Space, the description about the data types is contained in its Value attribute.
-          </para>
+              The data type dictionary is represented as a Variable of type DataTypeDictionaryType in the Address Space, the description about the data types is contained in its Value attribute.
+            </para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -119,8 +119,8 @@
           </terms>
           <definition>
             <para>
-            A type defined in or derived from a type defined in section <link xlink:href="2191d1e7-9793-4eee-a180-a59b249f1098" />.
-          </para>
+              A type defined in or derived from a type defined in section Standard Event Types.
+            </para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -137,7 +137,7 @@
           </terms>
           <definition>
             <para>
-            An organizational framework that defines, characterizes and relates information resources of a given system or set of systems. The core address space model supports the representation of Information Models in the<token>AS</token>. For more information see &lt;link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" /&gt;.
+            An organizational framework that defines, characterizes and relates information resources of a given system or set of systems. The core address space model supports the representation of Information Models in the<token>AS</token>.
           </para>
           </definition>
         </glossaryEntry>
@@ -171,7 +171,7 @@
           </terms>
           <definition>
             <para>
-            The indexes into the <link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#NamespaceArray">NamespaceArray</link> table.
+            The indexes into the NamespaceArray table.
           </para>
           </definition>
         </glossaryEntry>
@@ -217,8 +217,8 @@
           </terms>
           <definition>
             <para>
-            A Node that represents a physical or abstract element of a system. Objects are modelled using the <token>OPCUA</token> Object Model. Systems, subsystems and devices are examples of Objects. An Object may be defined as an instance of an <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />.
-          </para>
+            A Node that represents a physical or abstract element of a system. Objects are modelled using the <token>OPCUA</token> Object Model. Systems, subsystems and devices are examples of Objects. An Object may be defined as an instance of an ObjectType.
+            </para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -243,8 +243,8 @@
           </terms>
           <definition>
             <para>
-            A specific set of capabilities, described in section <link NS2:href="69c22282-3ad0-4937-8982-4d5c5ac95b7f" xmlns:NS2="http://www.w3.org/1999/xlink"></link>, to which a Server may claim conformance. Each Server may claim conformance to more than one Profile.
-          </para>
+              A specific set of capabilities, described in section Profiles, to which a Server may claim conformance. Each Server may claim conformance to more than one Profile.
+            </para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -268,7 +268,7 @@
             <term termClass="ReferenceType">ReferenceType</term>
           </terms>
           <definition>
-            <para>A Node that represents the type definition of a Reference. The <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> specifies the semantics of a Reference. The name of a <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> identifies how source Nodes are related to target Nodes and generally reflects an operation between the two, such as “A Contains B”.</para>
+            <para>A Node that represents the type definition of a Reference. The ReferenceType specifies the semantics of a Reference. The name of a ReferenceType identifies how source Nodes are related to target Nodes and generally reflects an operation between the two, such as “A Contains B”.</para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -295,8 +295,8 @@
           </terms>
           <definition>
             <para>
-            A Client-callable operation in an <token>OPCUA</token> Server. Services are described in section <link NS2:href="ef0092b5-9f31-4e8d-9901-270be06e6577" xmlns:NS2="http://www.w3.org/1999/xlink"></link>. A Service is similar to a method call in a programming language or an operation in a Web services WSDL contract.
-          </para>
+            A Client-callable operation in an <token>OPCUA</token> Server. Services are described in section Services. A Service is similar to a method call in a programming language or an operation in a Web services WSDL contract.
+            </para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -328,7 +328,7 @@
             <term termClass="Variable">Variable</term>
           </terms>
           <definition>
-            <para>A <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is a Node that contains a value.</para>
+            <para>A Variable is a Node that contains a value.</para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>
@@ -469,7 +469,7 @@
             <term termClass="UDDI">UDDI</term>
           </terms>
           <definition>
-            <para>Universal <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#Description">Description</link>, Discovery and Integration</para>
+            <para>Universal Description, Discovery and Integration.</para>
           </definition>
         </glossaryEntry>
         <glossaryEntry>

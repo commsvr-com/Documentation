@@ -41,7 +41,7 @@
         <step>
           <content>
             <para>
-             Change tab to License tab:
+              Change tab to License tab:
             </para>
             <mediaLink>
               <image placement="center" xlink:href="7302A959-90E2-4824-BA14-1CE45DE52B00" />
@@ -57,7 +57,7 @@
         <step>
           <content>
             <para>
-             To install a new license, click on the “Install new license” button and chose the license to be installed.
+              To install a new license, click on the “Install new license” button and chose the license to be installed.
             </para>
             <mediaLink>
               <image placement="center" xlink:href="F75CB069-3934-4fb4-B529-EAC8AECCD829" />
@@ -73,7 +73,7 @@
         <step>
           <content>
             <para>
-            Now, restart DataPorter (see [UsingDataPorter]) to start using the new license.
+              Now, restart DataPorter (see [UsingDataPorter]) to start using the new license.
             </para>
             <alert>
               <para>

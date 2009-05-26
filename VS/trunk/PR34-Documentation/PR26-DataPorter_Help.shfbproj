@@ -18,7 +18,7 @@
     <HtmlHelpName>DataPorter</HtmlHelpName>
     <WorkingPath>Temp\DataPorter\Working\</WorkingPath>
     <BuildLogFile>Temp\DataPorter\DataPorter.log</BuildLogFile>
-    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <HelpFileFormat>Website</HelpFileFormat>
     <ComponentConfigurations>
       <ComponentConfig id="Cached MSDN URL References" enabled="True">
         <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
@@ -92,7 +92,7 @@
     <HelpTitle>DataPorter</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <Preliminary>True</Preliminary>
-    <PresentationStyle>vs2005</PresentationStyle>
+    <PresentationStyle>vs2005AdWordsDP</PresentationStyle>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -133,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
-    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
     <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration.aml" />
     <None Include="PR30-OPCViewer\Content.maml\GettingStarted.aml" />
@@ -194,6 +193,7 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ServiceDebugging.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ItemDescriber.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\LicenseInstallation.aml" />
+    <None Include="CommonDocumentation\Content.maml\GlossaryDataPorter.aml" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
