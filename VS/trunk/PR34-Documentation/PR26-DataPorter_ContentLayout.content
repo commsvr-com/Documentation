@@ -230,16 +230,16 @@
     </Topic>
     <Topic id="f3f78005-8f41-44be-a0d3-719472e15edf" visible="True" />
   </Topic>
-  <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="False" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting">
-    <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" />
-    <Topic id="b2b37f09-e751-4aa0-afa6-dc716e759773" visible="True">
-      <Topic id="410af3c3-9dde-48af-b625-e10236b40ed8" visible="True" />
-      <Topic id="d949081b-3f82-4089-89e8-9aedca21c7b0" visible="True" />
-      <Topic id="d518dabe-e485-4897-8a9f-db0a7a646e74" visible="True" />
-      <Topic id="a3d27a7a-1695-44da-9bf5-9fc24acedabf" visible="True" />
-      <Topic id="a4bf4faf-744d-4089-9ecc-e9f5b0250a6a" visible="True" />
+  <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="True" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting">
+    <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" />
+    <Topic id="b2b37f09-e751-4aa0-afa6-dc716e759773" visible="True" title="Tracing" tocTitle="Tracing" linkText="Tracing">
+      <Topic id="410af3c3-9dde-48af-b625-e10236b40ed8" visible="True" title="Enabling Tracing" tocTitle="Enabling Tracing" linkText="Enabling Tracing" />
+      <Topic id="d949081b-3f82-4089-89e8-9aedca21c7b0" visible="True" title="Tracing Switches" tocTitle="Tracing Switches" linkText="Tracing Switches" />
+      <Topic id="d518dabe-e485-4897-8a9f-db0a7a646e74" visible="True" title="Tracing Sources" tocTitle="Tracing Sources" linkText="Tracing Sources" />
+      <Topic id="a3d27a7a-1695-44da-9bf5-9fc24acedabf" visible="True" title="Tracing Listeners" tocTitle="Tracing Listeners" linkText="Tracing Listeners" />
+      <Topic id="a4bf4faf-744d-4089-9ecc-e9f5b0250a6a" visible="True" title="Tracing Filters" tocTitle="Tracing Filters" linkText="Tracing Filters" />
     </Topic>
-    <Topic id="616bf5f0-90f5-48c3-a115-6773b8d4f1aa" visible="True" />
+    <Topic id="616bf5f0-90f5-48c3-a115-6773b8d4f1aa" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
   </Topic>
   <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" />
   <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary" />
