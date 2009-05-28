@@ -36,7 +36,7 @@
             Items added to the subscription appear in the OPC viewer main window (Figure  3).
           </para>
           <mediaLink>
-            <caption placement="after" lead="Figure 3">OPC Viewer – adding tags</caption>
+            <caption placement="after" lead="Figure 3">OPC Viewer – added items</caption>
             <image placement="center" xlink:href="5EFB0358-D477-41df-989A-BA0A411259F6" />
           </mediaLink>
         </step>

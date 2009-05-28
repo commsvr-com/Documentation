@@ -31,7 +31,7 @@
       <autoOutline />
     </introduction>
     <section address="DataPorter_initial_configuration">
-      <title>DataPorter initial configuratione</title>
+      <title>DataPorter initial configuration</title>
       <content>
         <para>
           DataPorter is installed with a sample file of MS SQL Express database, which can easily be used to initiate storing into the database. After DataPorter has been installed, the database file is, by default, in the following location:
@@ -81,7 +81,7 @@
           </listItem>
         </list>
         <para>
-          Transaction0 is responsible for storing PLC/R/100 at 10-second intervals and Transaction1stores each change of the PLC/R/101 tag value. The layout of operation blocks for each transaction looks the same; only the input parameter (the tag name) and transaction settings are different. The figure below shows an example layout of the blocks:
+          Transaction0 is responsible for storing PLC/R/100 at 10-second intervals and Transaction1 stores each change of the PLC/R/101 tag value. The layout of operation blocks for each transaction looks the same; only the input parameter (the tag name) and transaction settings are different. The figure below shows an example layout of the blocks:
         </para>
         <mediaLink>
           <image placement="center" xlink:href="3E07C543-535C-4834-8C85-DB66B98382E4" />

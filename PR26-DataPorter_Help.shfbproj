@@ -196,9 +196,6 @@
     <None Include="CommonDocumentation\Content.maml\GlossaryDataPorter.aml" />
   </ItemGroup>
   <ItemGroup>
-    <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
-  </ItemGroup>
-  <ItemGroup>
     <Tokens Include="TokensHelp.tokens" />
   </ItemGroup>
   <ItemGroup>
@@ -732,6 +729,9 @@
       <AlternateText>OPC Viewer Main Window</AlternateText>
       <ImageId>98E3B520-45C9-4e41-825A-EDECBC6CA676</ImageId>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
