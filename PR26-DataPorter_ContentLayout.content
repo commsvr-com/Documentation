@@ -6,16 +6,18 @@
     </HelpKeywords>
     <Topic id="52fb9b14-2c71-4761-8ab6-a04f4d111e51" visible="True" title="DataPorter Standard" tocTitle="DataPorter Standard" linkText="DataPorter Standard">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, DataPorter Standard" />
         <HelpKeyword index="K" term="DataPorter operations" />
         <HelpKeyword index="K" term="DataPorter operations, aggregation" />
         <HelpKeyword index="K" term="DataPorter operations, bridging" />
-        <HelpKeyword index="K" term="DataPorter operations, calkulation" />
+        <HelpKeyword index="K" term="DataPorter operations, calculation" />
         <HelpKeyword index="K" term="DataPorter operations, distribution" />
         <HelpKeyword index="K" term="DataPorter Standard" />
       </HelpKeywords>
     </Topic>
     <Topic id="01327e6f-b503-4ebc-a4f2-f232b926b676" visible="True" title="DataPorter Professional" tocTitle="DataPorter Professional" linkText="DataPorter Professional">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, DataPorter Professional" />
         <HelpKeyword index="K" term="DataPorter operations" />
         <HelpKeyword index="K" term="DataPorter operations, aggregation" />
         <HelpKeyword index="K" term="DataPorter operations, bridging" />
@@ -32,15 +34,19 @@
   </Topic>
   <Topic id="d43b1514-ca9c-46af-b42f-ca57769bdd09" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
     <HelpKeywords>
+      <HelpKeyword index="K" term="Getting Started" />
       <HelpKeyword index="K" term="DataPorter, Getting Started" />
     </HelpKeywords>
     <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction">
       <HelpKeywords>
         <HelpKeyword index="K" term="DataPorter, Instalation" />
+        <HelpKeyword index="K" term="Getting Started, Instalation" />
       </HelpKeywords>
     </Topic>
     <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, OPC Overview" />
+        <HelpKeyword index="K" term="OPC Overview" />
         <HelpKeyword index="K" term="COM" />
         <HelpKeyword index="K" term="DCOM" />
         <HelpKeyword index="K" term="DCS" />
@@ -56,6 +62,7 @@
     </Topic>
     <Topic id="6dd63460-0a6a-445f-8c51-4cdca08539e8" visible="True" title="DataPorter components" tocTitle="DataPorter components" linkText="DataPorter components">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, DataPorter components" />
         <HelpKeyword index="K" term="DataPorter components" />
       </HelpKeywords>
       <Topic id="aa040123-9cb4-4139-8d76-75071f6ce46a" visible="True" title="DataPorter" tocTitle="DataPorter" linkText="DataPorter">
@@ -68,11 +75,13 @@
       </Topic>
       <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer">
         <HelpKeywords>
+          <HelpKeyword index="K" term="Getting Started, OPC Viewer" />
           <HelpKeyword index="K" term="DataPorter components, OPC Viewer" />
         </HelpKeywords>
       </Topic>
       <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP Extension " tocTitle="OPC2SOAP" linkText="OPC2SOAP">
         <HelpKeywords>
+          <HelpKeyword index="K" term="Getting Started, OPC2SOAP" />
           <HelpKeyword index="K" term="DataPorter components, OPC2SOAP" />
           <HelpKeyword index="K" term="HTML" />
           <HelpKeyword index="K" term="HTTP" />
@@ -88,6 +97,7 @@
       </Topic>
       <Topic id="aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0" visible="True" title="System integration using DataPorter OPC  client with OPC2SOAP extension in GIS application." tocTitle="OPC Client for GIS" linkText="OPC Client for GIS">
         <HelpKeywords>
+          <HelpKeyword index="K" term="Getting Started, OPC Client for GIS" />
           <HelpKeyword index="K" term="DataPorter components, OPC Client for GIS" />
           <HelpKeyword index="K" term="GIS" />
           <HelpKeyword index="K" term="GIS Smallworld" />
@@ -126,6 +136,7 @@
     </Topic>
     <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="Processing Environment in OPC Viewer" tocTitle="Processing Environment in OPC Viewer" linkText="Processing Environment in OPC Viewer">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, Processing Environment" />
         <HelpKeyword index="K" term="OPC Viewer, Processing Environment" />
         <HelpKeyword index="K" term="OPC Viewer, Processing Environment Editor Tab" />
         <HelpKeyword index="K" term="OPC Viewer, Processing Environment in session Tree View" />
@@ -136,15 +147,18 @@
           <HelpKeyword index="K" term="Transaction Editor, Example Transaction" />
           <HelpKeyword index="K" term="Transaction Editor, Main Panel" />
           <HelpKeyword index="K" term="Transaction Editor, Context Menu" />
+          <HelpKeyword index="K" term="Transaction Editor" />
         </HelpKeywords>
       </Topic>
     </Topic>
     <Topic id="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca" visible="True" title="DataPorter example configuration" tocTitle="DataPorter example configuration" linkText="DataPorter example configuration">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, Example Configuration" />
         <HelpKeyword index="K" term="DataPorter, Example Configuration" />
       </HelpKeywords>
       <Topic id="3b0194c2-7cec-4dce-a252-dc6b61afb48f" visible="True" title="Example Transactions" tocTitle="Example Transactions" linkText="Example Transactions">
         <HelpKeywords>
+          <HelpKeyword index="K" term="Example Transactions" />
           <HelpKeyword index="K" term="Example Transactions, Adding and Bridging" />
           <HelpKeyword index="K" term="Example Transactions, Calculation (division, substraction)" />
           <HelpKeyword index="K" term="Example Transactions, Calculation (multiplication)" />
@@ -160,6 +174,8 @@
     </Topic>
     <Topic id="f594fda1-1d52-400f-8d21-e0919913f840" visible="True" title="Testing DataPorter Functionality" tocTitle="Testing DataPorter Functionality" linkText="Testing DataPorter Functionality">
       <HelpKeywords>
+        <HelpKeyword index="K" term="Getting Started, Testing environment" />
+        <HelpKeyword index="K" term="Getting Started, Testing functionality" />
         <HelpKeyword index="K" term="DataPorter, Testing environment " />
         <HelpKeyword index="K" term="DataPorter, Testing functionality" />
       </HelpKeywords>
@@ -167,10 +183,12 @@
   </Topic>
   <Topic id="a5b37bb1-ca47-4770-900e-85b8da61cfe6" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
     <HelpKeywords>
+      <HelpKeyword index="K" term="Getting Started, Configuration" />
       <HelpKeyword index="K" term="Configuration" />
     </HelpKeywords>
     <Topic id="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a" visible="True" title="Configuration Files" tocTitle="Configuration Files" linkText="Configuration Files">
       <HelpKeywords>
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config" />
         <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_FrameResponse_management" />
         <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_CharacterGap_management" />
         <HelpKeyword index="K" term="CAS.DataPorter.exe.config, UseLocalTime" />
@@ -276,7 +294,7 @@
           <HelpKeyword index="K" term="Standard operation, Logic" />
           <HelpKeyword index="K" term="Standard operation, Math" />
           <HelpKeyword index="K" term="Standard operation, Special" />
-          <HelpKeyword index="K" term="Standard operations" />
+          <HelpKeyword index="K" term="Standard operation" />
         </HelpKeywords>
       </Topic>
     </Topic>
@@ -285,7 +303,7 @@
         <HelpKeyword index="K" term="Configuration, SQL Conectivity" />
         <HelpKeyword index="K" term="SQL Conectivity" />
       </HelpKeywords>
-      <Topic id="9f3954b0-cc3e-46d1-a3e6-59649db7e738" visible="True" title="Example simple database configuration" tocTitle="Example simple database configuration" linkText="Example simple database configuration" >
+      <Topic id="9f3954b0-cc3e-46d1-a3e6-59649db7e738" visible="True" title="Example simple database configuration" tocTitle="Example simple database configuration" linkText="Example simple database configuration">
         <HelpKeywords>
           <HelpKeyword index="K" term="SQL Conectivity, verify connection" />
           <HelpKeyword index="K" term="SQL Conectivity, requirements" />
@@ -296,6 +314,7 @@
           <HelpKeyword index="K" term="SQL Conectivity, DataPorterDataBase.mdf" />
           <HelpKeyword index="K" term="SQL Conectivity, Troubleshooting" />
           <HelpKeyword index="K" term="SQL Conectivity, Connection to the local database server" />
+          <HelpKeyword index="K" term="sample database file" />
           <HelpKeyword index="K" term="sample database file, columns" />
           <HelpKeyword index="K" term="sample database file, timestamp" />
           <HelpKeyword index="K" term="sample database file, name" />
@@ -311,6 +330,7 @@
           <HelpKeyword index="K" term="SQL Conectivity, Default Configuration" />
           <HelpKeyword index="K" term="SQL Conectivity, Advanced Configuration" />
           <HelpKeyword index="K" term="SQL Conectivity, Advanced Configuration Parameters" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration" />
           <HelpKeyword index="K" term="SQL Advanced Configuration, operationdb" />
           <HelpKeyword index="K" term="SQL Advanced Configuration, operationopc" />
           <HelpKeyword index="K" term="SQL Advanced Configuration, operationif" />
@@ -323,33 +343,240 @@
       </Topic>
     </Topic>
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
-      <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />
-      <Topic id="3bddf5c3-5d5a-4569-85db-fcdc52a1b34a" visible="True" title="Service Description" tocTitle="Service Description" linkText="Service Description" />
-      <Topic id="1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea" visible="True" title="Service Debugging" tocTitle="Service Debugging" linkText="Service Debugging" />
-      <Topic id="b447d5c6-1b3b-4840-abfb-318b650ecc65" visible="True" title="ItemDescriber" tocTitle="ItemDescriber" linkText="ItemDescriber" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Configuration, Web Service Conectivity" />
+        <HelpKeyword index="K" term="Web Service Conectivity" />
+      </HelpKeywords>
+      <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Web Service Conectivity, requirements" />
+          <HelpKeyword index="K" term="Web Service Conectivity, installation" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="3bddf5c3-5d5a-4569-85db-fcdc52a1b34a" visible="True" title="Service Description" tocTitle="Service Description" linkText="Service Description">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Web Service Conectivity, Miscellaneous functions" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetVersion" />
+          <HelpKeyword index="K" term="Web Service Conectivity, Buffered Queues functions" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailiableQueues" />
+          <HelpKeyword index="K" term="Web Service Conectivity, ConnectToQueue" />
+          <HelpKeyword index="K" term="Web Service Conectivity, StartTransaction" />
+          <HelpKeyword index="K" term="Web Service Conectivity, EndTransaction" />
+          <HelpKeyword index="K" term="Web Service Conectivity, Property queries" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_OneItem" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_OneItem_returnValues" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_OneItem_Proplist" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_OneItem_Proplist_returnValues" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_MultiItem_PropList" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_MultiItem_Proplist_returnValues" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_MultiItem_Proplist_returnValues" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_Proplist" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailableProperties_Proplist_returnValues" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetOPCProperties" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetProperty_OneItem" />
+          <HelpKeyword index="K" term="Web Service Conectivity, Browse items functions" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetAvailiableItems" />
+          <HelpKeyword index="K" term="Web Service Conectivity, Read value functions" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetValue_OneItem" />
+          <HelpKeyword index="K" term="Web Service Conectivity, GetValue_MultiItem" />
+          <HelpKeyword index="K" term="Web Service Conectivity, Write value functions" />
+          <HelpKeyword index="K" term="Web Service Conectivity, SetValueAsDouble_OneItem" />
+          <HelpKeyword index="K" term="Web Service Conectivity, SetValueAsInt32_OneItem" />
+          <HelpKeyword index="K" term="Web Service Conectivity, SetValueAsString_OneItem" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea" visible="True" title="Service Debugging" tocTitle="Service Debugging" linkText="Service Debugging">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Web Service Conectivity, Service debugging" />
+          <HelpKeyword index="K" term="Web Service Conectivity, IIS" />
+          <HelpKeyword index="K" term="Web Service Conectivity, ASP.NET" />
+          <HelpKeyword index="K" term="Web Service Conectivity, IIS and ASP.NET integration" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="b447d5c6-1b3b-4840-abfb-318b650ecc65" visible="True" title="ItemDescriber" tocTitle="ItemDescriber" linkText="ItemDescriber">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Web Service Conectivity, ItemDescriber" />
+          <HelpKeyword index="K" term="Web Service Conectivity, XML configuration" />
+          <HelpKeyword index="K" term="Web Service Conectivity, CSV file" />
+          <HelpKeyword index="K" term="Web Service Conectivity, items properties" />
+          <HelpKeyword index="K" term="Web Service Conectivity, list of properties " />
+          <HelpKeyword index="K" term="Web Service Conectivity, configure properties" />
+          <HelpKeyword index="K" term="Web Service Conectivity, properties editing" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
   </Topic>
   <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">
-    <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab" />
-    <Topic id="1ab52757-7130-402b-85b4-af4b468567d0" visible="True" title="Groups Tab" tocTitle="Groups Tab" linkText="Groups Tab" />
-    <Topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" visible="True" title="Items Tab" tocTitle="Items Tab" linkText="Items Tab" />
-    <Topic id="08319621-9f18-4e3a-966c-daff610ba00e" visible="True" title="Transitions Tab" tocTitle="Transitions Tab" linkText="Transitions Tab" />
-    <Topic id="5a8897db-1916-49c7-a797-d2e4ca301b9c" visible="True" />
-    <Topic id="ed3586ba-f503-4196-ab9b-c9704a62345f" visible="True">
-      <Topic id="7aad350a-9f79-4028-92ff-789350c200a7" visible="True" />
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Using DataPorter" />
+      <HelpKeyword index="K" term="Using DataPorter, Starting the DataPorter" />
+      <HelpKeyword index="K" term="Using DataPorter, DataPorter GUI" />
+      <HelpKeyword index="K" term="Using DataPorter, Stopping the DataPorter" />
+    </HelpKeywords>
+    <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, OPC Client tab" />
+        <HelpKeyword index="K" term="OPC Client tab" />
+        <HelpKeyword index="K" term="OPC Client tab, Server name" />
+        <HelpKeyword index="K" term="OPC Client tab, Server url" />
+        <HelpKeyword index="K" term="OPC Client tab, Server info" />
+        <HelpKeyword index="K" term="OPC Client tab, Server time start" />
+        <HelpKeyword index="K" term="OPC Client tab, Connect/Disconnect time" />
+        <HelpKeyword index="K" term="OPC Client tab, Registered groups" />
+        <HelpKeyword index="K" term="OPC Client tab, Registered tags" />
+        <HelpKeyword index="K" term="OPC Client tab, Write successes" />
+        <HelpKeyword index="K" term="OPC Client tab, Write fails" />
+        <HelpKeyword index="K" term="OPC Client tab, Read successes" />
+        <HelpKeyword index="K" term="OPC Client tab, Read fails" />
+      </HelpKeywords>
     </Topic>
-    <Topic id="f3f78005-8f41-44be-a0d3-719472e15edf" visible="True" />
+    <Topic id="1ab52757-7130-402b-85b4-af4b468567d0" visible="True" title="Groups Tab" tocTitle="Groups Tab" linkText="Groups Tab">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, Groups Tab" />
+        <HelpKeyword index="K" term="Groups Tab" />
+        <HelpKeyword index="K" term="Groups Tab, Group name" />
+        <HelpKeyword index="K" term="Groups Tab, Group details" />
+        <HelpKeyword index="K" term="Groups Tab, Group active time" />
+        <HelpKeyword index="K" term="Groups Tab, Min/Avg/Max transaction scan rate" />
+        <HelpKeyword index="K" term="Groups Tab, Min/Avg/Max gr. read time" />
+        <HelpKeyword index="K" term="Groups Tab, Registered transactions" />
+        <HelpKeyword index="K" term="Groups Tab, Registered tags" />
+        <HelpKeyword index="K" term="Groups Tab, Write successes" />
+        <HelpKeyword index="K" term="Groups Tab, Write fails" />
+        <HelpKeyword index="K" term="Groups Tab, Read successes" />
+        <HelpKeyword index="K" term="Groups Tab, Read fails" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" visible="True" title="Items Tab" tocTitle="Items Tab" linkText="Items Tab">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, Items Tab" />
+        <HelpKeyword index="K" term="Items Tab" />
+        <HelpKeyword index="K" term="Items Tab, Item/Tag name" />
+        <HelpKeyword index="K" term="Items Tab, Item details" />
+        <HelpKeyword index="K" term="Items Tab, Item active time" />
+        <HelpKeyword index="K" term="Items Tab, Min/Avg/Max transaction scan rate" />
+        <HelpKeyword index="K" term="Items Tab, Item value" />
+        <HelpKeyword index="K" term="Items Tab, Item state" />
+        <HelpKeyword index="K" term="Items Tab, Write successes" />
+        <HelpKeyword index="K" term="Items Tab, Write fails" />
+        <HelpKeyword index="K" term="Items Tab, Read successes" />
+        <HelpKeyword index="K" term="Items Tab, Read fails" />
+        <HelpKeyword index="K" term="Items Tab, Last Error" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="08319621-9f18-4e3a-966c-daff610ba00e" visible="True" title="Transaction Tab" tocTitle="Transaction Tab" linkText="Transaction Tab">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, Transaction Tab" />
+        <HelpKeyword index="K" term="Transaction Tab" />
+        <HelpKeyword index="K" term="Transaction Tab, Transaction name" />
+        <HelpKeyword index="K" term="Transaction Tab, Transaction details" />
+        <HelpKeyword index="K" term="Transaction Tab, Transaction counter" />
+        <HelpKeyword index="K" term="Transaction Tab, Min/Avg/Max gr. Transaction execution rate" />
+        <HelpKeyword index="K" term="Transaction Tab, Transaction Type" />
+        <HelpKeyword index="K" term="Transaction Tab, Transaction scanning rate" />
+        <HelpKeyword index="K" term="Transaction Tab, Deadband" />
+        <HelpKeyword index="K" term="Transaction Tab, Min update rate" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="5a8897db-1916-49c7-a797-d2e4ca301b9c" visible="True" title="Tray Icon" tocTitle="Tray Icon" linkText="Tray Icon">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, Tray Icon" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="ed3586ba-f503-4196-ab9b-c9704a62345f" visible="True" title="Reporting" tocTitle="Reporting" linkText="Reporting">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Reporting" />
+        <HelpKeyword index="K" term="Using DataPorter, Reporting" />
+      </HelpKeywords>
+      <Topic id="7aad350a-9f79-4028-92ff-789350c200a7" visible="True" title="Sample Report" tocTitle="Sample Report" linkText="Sample Report">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Using DataPorter, Sample Report" />
+          <HelpKeyword index="K" term="Reporting, Sample Report" />
+        </HelpKeywords>
+      </Topic>
+    </Topic>
+    <Topic id="f3f78005-8f41-44be-a0d3-719472e15edf" visible="True" title="License Installation" tocTitle="License Installation" linkText="License Installation">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, License Installation" />
+      </HelpKeywords>
+    </Topic>
   </Topic>
   <Topic id="5b627d61-bf0f-4a14-83b9-982b8b002afc" visible="True" title="Diagnostics and Trubelshooting" tocTitle="Diagnostics and Trubelshooting" linkText="Diagnostics and Trubelshooting">
-    <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" />
-    <Topic id="b2b37f09-e751-4aa0-afa6-dc716e759773" visible="True" title="Tracing" tocTitle="Tracing" linkText="Tracing">
-      <Topic id="410af3c3-9dde-48af-b625-e10236b40ed8" visible="True" title="Enabling Tracing" tocTitle="Enabling Tracing" linkText="Enabling Tracing" />
-      <Topic id="d949081b-3f82-4089-89e8-9aedca21c7b0" visible="True" title="Tracing Switches" tocTitle="Tracing Switches" linkText="Tracing Switches" />
-      <Topic id="d518dabe-e485-4897-8a9f-db0a7a646e74" visible="True" title="Tracing Sources" tocTitle="Tracing Sources" linkText="Tracing Sources" />
-      <Topic id="a3d27a7a-1695-44da-9bf5-9fc24acedabf" visible="True" title="Tracing Listeners" tocTitle="Tracing Listeners" linkText="Tracing Listeners" />
-      <Topic id="a4bf4faf-744d-4089-9ecc-e9f5b0250a6a" visible="True" title="Tracing Filters" tocTitle="Tracing Filters" linkText="Tracing Filters" />
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Diagnostics and Trubelshooting" />
+    </HelpKeywords>
+    <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" >
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Diagnostics and Trubelshooting, System Event Log" />
+        <HelpKeyword index="K" term="System Event Log, information" />
+        <HelpKeyword index="K" term="System Event Log, warning" />
+        <HelpKeyword index="K" term="System Event Log, error" />
+        <HelpKeyword index="K" term="System Event Log, DataPorter or RealTimeLibrary" />
+        <HelpKeyword index="K" term="System Event Log, Connected to OPC server" />
+        <HelpKeyword index="K" term="System Event Log, Opc.ServerShutdownEventHandler" />
+        <HelpKeyword index="K" term="System Event Log, Opc.IdentifiedResult[] WriteTag.Write" />
+        <HelpKeyword index="K" term="System Event Log, Disconnecting From OPC Server" />
+        <HelpKeyword index="K" term="System Event Log, Disconnected from the OPC server" />
+        <HelpKeyword index="K" term="System Event Log, Error in RunTransitionChain" />
+        <HelpKeyword index="K" term="System Event Log, System.NullReferenceException" />
+        <HelpKeyword index="K" term="System Event Log, System.Data.OracleClient.OracleException" />
+      </HelpKeywords>
     </Topic>
-    <Topic id="616bf5f0-90f5-48c3-a115-6773b8d4f1aa" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
+    <Topic id="b2b37f09-e751-4aa0-afa6-dc716e759773" visible="True" title="Tracing" tocTitle="Tracing" linkText="Tracing">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Tracing" />
+        <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Tracing" />
+      </HelpKeywords>
+      <Topic id="410af3c3-9dde-48af-b625-e10236b40ed8" visible="True" title="Enabling Tracing" tocTitle="Enabling Tracing" linkText="Enabling Tracing">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Enabling Tracing" />
+          <HelpKeyword index="K" term="Tracing, Enabling Tracing" />
+          <HelpKeyword index="K" term="Enabling Tracing" />
+          <HelpKeyword index="K" term="Enabling Tracing, CAS_BaseStation_Transactions" />
+          <HelpKeyword index="K" term="Enabling Tracing, CAS_OPC_OPC_Interface" />
+          <HelpKeyword index="K" term="Enabling Tracing, System.Diagnostics.XmlWriterTraceListener" />
+          <HelpKeyword index="K" term="Enabling Tracing, System.Diagnostics.TextWriterTraceListener" />
+          <HelpKeyword index="K" term="Enabling Tracing, System.Diagnostics.EventLogTraceListener" />
+          <HelpKeyword index="K" term="Enabling Tracing, System.Diagnostics.DelimitedListTraceListener" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="d949081b-3f82-4089-89e8-9aedca21c7b0" visible="True" title="Tracing Switches" tocTitle="Tracing Switches" linkText="Tracing Switches">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Tracing Switches" />
+          <HelpKeyword index="K" term="Tracing, Tracing Switches" />
+          <HelpKeyword index="K" term="Tracing Switches" />
+          <HelpKeyword index="K" term="Tracing Switches, Off" />
+          <HelpKeyword index="K" term="Tracing Switches, Error" />
+          <HelpKeyword index="K" term="Tracing Switches, Warning" />
+          <HelpKeyword index="K" term="Tracing Switches, Info" />
+          <HelpKeyword index="K" term="Tracing Switches, Verbose" />
+         </HelpKeywords>
+      </Topic>
+      <Topic id="d518dabe-e485-4897-8a9f-db0a7a646e74" visible="True" title="Tracing Sources" tocTitle="Tracing Sources" linkText="Tracing Sources">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Tracing Sources" />
+          <HelpKeyword index="K" term="Tracing, Tracing Sources" />
+          <HelpKeyword index="K" term="Tracing Sources" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="a3d27a7a-1695-44da-9bf5-9fc24acedabf" visible="True" title="Tracing Listeners" tocTitle="Tracing Listeners" linkText="Tracing Listeners">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Tracing Listeners" />
+          <HelpKeyword index="K" term="Tracing, Tracing Listeners" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="a4bf4faf-744d-4089-9ecc-e9f5b0250a6a" visible="True" title="Tracing Filters" tocTitle="Tracing Filters" linkText="Tracing Filters">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Tracing Filters" />
+          <HelpKeyword index="K" term="Tracing, Tracing Filters" />
+        </HelpKeywords>
+      </Topic>
+    </Topic>
+    <Topic id="616bf5f0-90f5-48c3-a115-6773b8d4f1aa" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Diagnostics and Trubelshooting, Trouble Shooting" />
+      </HelpKeywords>
+    </Topic>
   </Topic>
   <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" />
   <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary" />
