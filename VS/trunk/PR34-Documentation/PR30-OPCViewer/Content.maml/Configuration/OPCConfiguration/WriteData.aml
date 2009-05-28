@@ -34,7 +34,7 @@
             <para>Now, change the value in the Edit Item Values window (Figure  3).
             </para>
             <mediaLink>
-              <caption placement="after" lead="Figure 3">OPC Viewer – Write Items window</caption>
+              <caption placement="after" lead="Figure 3">OPC Viewer – Edit Item Values window</caption>
               <image placement="center" xlink:href="46F24CBD-75E5-4294-8064-13FE348BDCF3" />
             </mediaLink>
           </content>

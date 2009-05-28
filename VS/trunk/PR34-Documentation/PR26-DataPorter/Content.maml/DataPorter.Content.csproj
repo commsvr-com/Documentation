@@ -39,6 +39,9 @@
   </Target>
   -->
   <ItemGroup>
+    <None Include="..\..\PR26-DataPorter_ContentLayout.content">
+      <Link>PR26-DataPorter_ContentLayout.content</Link>
+    </None>
     <None Include="Configuration.aml" />
     <None Include="Configuration\ConfigurationFiles.aml" />
     <None Include="Configuration\SQLConectivity.aml" />

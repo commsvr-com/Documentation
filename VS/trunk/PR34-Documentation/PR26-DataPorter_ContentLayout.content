@@ -106,7 +106,7 @@
         <HelpKeyword index="K" term="OPC Viewer, Main window" />
         <HelpKeyword index="K" term="OPC Viewer, server connect tool strip" />
         <HelpKeyword index="K" term="OPC Viewer, Server status" />
-        <HelpKeyword index="K" term="OPC Viewer,Tab panel selector" />
+        <HelpKeyword index="K" term="OPC Viewer, Tab panel selector" />
       </HelpKeywords>
       <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel">
         <HelpKeywords>
@@ -132,9 +132,10 @@
       </HelpKeywords>
       <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started">
         <HelpKeywords>
-          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor, Context Menu" />
-          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor, Example Transaction" />
-          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor, Main Panel" />
+          <HelpKeyword index="K" term="OPC Viewer, Transaction Editor" />
+          <HelpKeyword index="K" term="Transaction Editor, Example Transaction" />
+          <HelpKeyword index="K" term="Transaction Editor, Main Panel" />
+          <HelpKeyword index="K" term="Transaction Editor, Context Menu" />
         </HelpKeywords>
       </Topic>
     </Topic>
@@ -165,18 +166,89 @@
     </Topic>
   </Topic>
   <Topic id="a5b37bb1-ca47-4770-900e-85b8da61cfe6" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
-    <Topic id="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a" visible="True" title="Configuration Files" tocTitle="Configuration Files" linkText="Configuration Files" />
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Configuration" />
+    </HelpKeywords>
+    <Topic id="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a" visible="True" title="Configuration Files" tocTitle="Configuration Files" linkText="Configuration Files">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_FrameResponse_management" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_CharacterGap_management" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, UseLocalTime" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_Group_Read_management" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_Transition_management" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, PLCNaN" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, WaitForReconnectServer" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, attribute name" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, configfile" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_Group_management" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_Tag_management" />
+        <HelpKeyword index="K" term="CAS.DataPorter.exe.config, value" />
+        <HelpKeyword index="K" term="Configuration, Configuration Files" />
+        <HelpKeyword index="K" term="Configuration, file (CAS.DataPorter.exe.config)" />
+      </HelpKeywords>
+    </Topic>
     <Topic id="9ecbc065-4153-4193-86d0-5d264120a69a" visible="True" title="OPC configuration and OPC Viewer usage" tocTitle="OPC configuration and OPC Viewer usage" linkText="OPC configuration and OPC Viewer usage">
-      <Topic id="662c67b6-580d-4f55-b8f6-20a4fdce79b7" visible="True" title="OPC Viewer Connection Establishment" tocTitle="OPC Viewer Connection Establishment" linkText="OPC Viewer Connection Establishment" />
-      <Topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" visible="True" title="Create Online Subscription" tocTitle="Create Online Subscription" linkText="Create Online Subscription" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Configuration, OPC configuration" />
+        <HelpKeyword index="K" term="OPC configuration" />
+        <HelpKeyword index="K" term="OPC Viewer usage" />
+      </HelpKeywords>
+      <Topic id="662c67b6-580d-4f55-b8f6-20a4fdce79b7" visible="True" title="OPC Viewer Connection Establishment" tocTitle="OPC Viewer Connection Establishment" linkText="OPC Viewer Connection Establishment">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Configuration, OPC Viewer" />
+          <HelpKeyword index="K" term="OPC Viewer, Connection Establishment" />
+          <HelpKeyword index="K" term="OPC Viewer, multiple OPC servers" />
+          <HelpKeyword index="K" term="OPC Viewer, one OPC Server" />
+          <HelpKeyword index="K" term="OPC Viewer, Server Status" />
+          <HelpKeyword index="K" term="OPC Viewer, successful connection" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" visible="True" title="Create Online Subscription" tocTitle="Create Online Subscription" linkText="Create Online Subscription">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="OPC Viewer, online subscription" />
+          <HelpKeyword index="K" term="OPC Viewer, adding tags" />
+          <HelpKeyword index="K" term="OPC Viewer, creation of subscription" />
+        </HelpKeywords>
+      </Topic>
       <Topic id="b91f20e8-d116-4706-86f4-5ebe9586774a" visible="False" title="Create Off Line Subscription" tocTitle="Create Off Line Subscription" linkText="Create Off Line Subscription" />
-      <Topic id="e8cbd036-5a13-4a3c-b6f1-637561d043fc" visible="True" title="Write Data" tocTitle="Write Data" linkText="Write Data" />
+      <Topic id="e8cbd036-5a13-4a3c-b6f1-637561d043fc" visible="True" title="Write Data" tocTitle="Write Data" linkText="Write Data">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="OPC Viewer, Writing the data" />
+          <HelpKeyword index="K" term="OPC Viewer, Write Items window" />
+          <HelpKeyword index="K" term="OPC Viewer, Edit Item Values" />
+        </HelpKeywords>
+      </Topic>
       <Topic id="420d5fc2-c2b0-42e4-b944-d0b72e3fa4b2" visible="False" title="Read Data" tocTitle="Read Data" linkText="Read Data" />
     </Topic>
     <Topic id="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0" visible="True" title="Transaction and Operations" tocTitle="Transaction and Operations" linkText="Transaction and Operations">
-      <Topic id="513d802a-9060-4c19-a3d4-0e549a583007" visible="True" title="Transaction and operation configuration" tocTitle="Transaction and operation configuration" linkText="Transaction and operation configuration" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Configuration, Transaction" />
+        <HelpKeyword index="K" term="Configuration, Operations" />
+        <HelpKeyword index="K" term="Transaction" />
+        <HelpKeyword index="K" term="Operations" />
+        <HelpKeyword index="K" term="Operations, operation sequence" />
+      </HelpKeywords>
+      <Topic id="513d802a-9060-4c19-a3d4-0e549a583007" visible="True" title="Transaction and operation configuration" tocTitle="Transaction and operation configuration" linkText="Transaction and operation configuration">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Transaction, Adding a transaction" />
+          <HelpKeyword index="K" term="Operations, Adding an operation" />
+          <HelpKeyword index="K" term="Transaction, Removal of an operation" />
+          <HelpKeyword index="K" term="Operations, Removal of a transaction" />
+          <HelpKeyword index="K" term="Transaction, BadQualityValue" />
+          <HelpKeyword index="K" term="Transaction, Comment" />
+          <HelpKeyword index="K" term="Transaction, Name" />
+          <HelpKeyword index="K" term="Transaction, StopIfBadQuality" />
+          <HelpKeyword index="K" term="Transaction, General Settings" />
+          <HelpKeyword index="K" term="Transaction, MinimumUpdateRate" />
+          <HelpKeyword index="K" term="Transaction, TransactionRate" />
+          <HelpKeyword index="K" term="Transaction, Trigger Item" />
+          <HelpKeyword index="K" term="Transaction, Trigger Item Deadband" />
+          <HelpKeyword index="K" term="Transaction, Launching conditions" />
+        </HelpKeywords>
+      </Topic>
       <Topic id="11e85dab-2c01-4ee3-9b12-2d396ed80bab" visible="True" title="List of available operations " tocTitle="List of available operations " linkText="List of available operations ">
         <HelpKeywords>
+          <HelpKeyword index="K" term="Configuration, available operations" />
           <HelpKeyword index="K" term="Generators" />
           <HelpKeyword index="K" term="Generators, Random Value" />
           <HelpKeyword index="K" term="Generators, Set Constant Value" />
@@ -199,18 +271,56 @@
           <HelpKeyword index="K" term="Professional operations, DB save" />
           <HelpKeyword index="K" term="Special" />
           <HelpKeyword index="K" term="Special, Splitter" />
-          <HelpKeyword index="K" term="Standard operation,  Generators" />
-          <HelpKeyword index="K" term="Standard operation,  IO" />
-          <HelpKeyword index="K" term="Standard operation,  Logic" />
-          <HelpKeyword index="K" term="Standard operation,  Math" />
-          <HelpKeyword index="K" term="Standard operation,  Special" />
+          <HelpKeyword index="K" term="Standard operation, Generators" />
+          <HelpKeyword index="K" term="Standard operation, IO" />
+          <HelpKeyword index="K" term="Standard operation, Logic" />
+          <HelpKeyword index="K" term="Standard operation, Math" />
+          <HelpKeyword index="K" term="Standard operation, Special" />
           <HelpKeyword index="K" term="Standard operations" />
         </HelpKeywords>
       </Topic>
     </Topic>
     <Topic id="26dd91e2-db6e-4a3a-ac32-a7f14422e466" visible="True" title="SQL Conectivity" tocTitle="SQL Conectivity" linkText="SQL Conectivity">
-      <Topic id="9f3954b0-cc3e-46d1-a3e6-59649db7e738" visible="True" title="Example simple database configuration" tocTitle="Example simple database configuration" linkText="Example simple database configuration" />
-      <Topic id="42ac5182-238c-41a2-81a7-f66a77089b02" visible="True" title="Storing From Opc Into Sql (Advanced Configuration)" tocTitle="Storing From Opc Into Sql (Advanced Configuration)" linkText="Storing From Opc Into Sql (Advanced Configuration)" />
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Configuration, SQL Conectivity" />
+        <HelpKeyword index="K" term="SQL Conectivity" />
+      </HelpKeywords>
+      <Topic id="9f3954b0-cc3e-46d1-a3e6-59649db7e738" visible="True" title="Example simple database configuration" tocTitle="Example simple database configuration" linkText="Example simple database configuration" >
+        <HelpKeywords>
+          <HelpKeyword index="K" term="SQL Conectivity, verify connection" />
+          <HelpKeyword index="K" term="SQL Conectivity, requirements" />
+          <HelpKeyword index="K" term="SQL Conectivity, initial configuration" />
+          <HelpKeyword index="K" term="SQL Conectivity, transaction settings" />
+          <HelpKeyword index="K" term="SQL Conectivity, sample database file" />
+          <HelpKeyword index="K" term="SQL Conectivity, database attached to DataPorter" />
+          <HelpKeyword index="K" term="SQL Conectivity, DataPorterDataBase.mdf" />
+          <HelpKeyword index="K" term="SQL Conectivity, Troubleshooting" />
+          <HelpKeyword index="K" term="SQL Conectivity, Connection to the local database server" />
+          <HelpKeyword index="K" term="sample database file, columns" />
+          <HelpKeyword index="K" term="sample database file, timestamp" />
+          <HelpKeyword index="K" term="sample database file, name" />
+          <HelpKeyword index="K" term="sample database file, opcvalue" />
+          <HelpKeyword index="K" term="sample database file, opcquality" />
+          <HelpKeyword index="K" term="sample database file, opcquality" />
+          <HelpKeyword index="K" term="sample database file, attach to MS SQL" />
+          <HelpKeyword index="K" term="sample database file, attach to MS SQL Express" />
+        </HelpKeywords>
+      </Topic>
+      <Topic id="42ac5182-238c-41a2-81a7-f66a77089b02" visible="True" title="Storing From Opc Into Sql (Advanced Configuration)" tocTitle="Storing From Opc Into Sql (Advanced Configuration)" linkText="Storing From Opc Into Sql (Advanced Configuration)">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="SQL Conectivity, Default Configuration" />
+          <HelpKeyword index="K" term="SQL Conectivity, Advanced Configuration" />
+          <HelpKeyword index="K" term="SQL Conectivity, Advanced Configuration Parameters" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, operationdb" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, operationopc" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, operationif" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, Example" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, conditional operations" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, accumulator" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, using many inputs" />
+          <HelpKeyword index="K" term="SQL Advanced Configuration, Troubleshooting" />
+        </HelpKeywords>
+      </Topic>
     </Topic>
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
       <Topic id="372debd4-ee98-4036-839f-8f98112d0a2a" visible="True" title="Service Installation" tocTitle="Service Installation" linkText="Service Installation" />
