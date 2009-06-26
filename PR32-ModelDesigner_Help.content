@@ -105,6 +105,7 @@
       <Topic id="48e0fc4c-b072-4e4e-b4e9-b917fab44762" visible="True" title="Historical Access" tocTitle="Historical Access" />
       <Topic id="6331c6ab-b475-491a-8738-43edae0ed6bc" visible="True" title="Discovery" tocTitle="Discovery" />
       <Topic id="26dc2eeb-89bf-42ce-817d-e82319ac04b7" visible="True" title="References" tocTitle="General References" />
+      <Topic id="id1" visible="True" title="UA Defined Types" tocTitle="UA Defined Types" linkText="UA Defined Types" />
     </Topic>
     <Topic id="f3357669-a041-405d-884b-19f5eafcabed" visible="True" title="Address Space Model Designer Tool" tocTitle="Address Space Model Designer">
       <Topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" visible="True" title="Overview" tocTitle="Overview" />
