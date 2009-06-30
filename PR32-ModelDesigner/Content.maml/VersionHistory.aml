@@ -21,6 +21,54 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="REL_1.11.00">
+      <title>Version 1.11.00</title>
+      <content>
+        <para>
+          Monday, Jun 29, 2009
+        </para>
+        <para>
+          The main changes and new functionalities are listed below:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Possibility of creating the configuration for the OPC UA server is added. This feature is the first step to the "Interoperability without programming" concept. It is possible to create plug-ins for UA Address Space Model Designer, which allow us to configure the server and the bindings between instance nodes in the model and the actual real-time process data sources. Configuration of this functionality (i.e. choosing sources) is available in the "UA Server" menu. A sample plug-in is installed in "My documents\UAAddressSpaceModelDesigner\Sample ". Bindings can be configured inside the instance nodes configuration (objects, variables, properties) as a "Process Bindings" property. What is more, for each instance node many data sources can be configured, so redundancy is available. Currently, an OPC DA client is available as the data source, so any OPC server can be a source of data.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Synchronization with OPC Foundation SDK 1.00.238.1 Stable
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Export of the model to the documentation format file (in the MAML language, based on XML) is added. Now it is possible to export the model to the MAML file and use it in the documentation creation process. To use the "Export" function, select the node, which represents the project, and then choose "To MAML" option from the "File -> Export" menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              A visual editor of the state machines is available. Now it is possible to easily add new transitions, delete transitions or change causes of the transitions in the particular state machine using graphical editor.  The editor can be started after selecting a node, which represents the state machine, and selecting "State Machine Editor" from the "Tools -> Custom Editor" menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPC Viewer is integrated with the UA Address Space Model Designer. It can be started in the Tools menu and used as an OPC DA client configuration tool.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              The example boiler model is improved.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some minor bugfixes and improvements.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="REL_1.10.90">
       <title>Version 1.10.90</title>
       <content>
