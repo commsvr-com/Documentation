@@ -161,6 +161,7 @@
     <None Include="UAAddressSpace\VariableType.aml" />
     <None Include="UAAddressSpace\ViewNodeClasses.aml" />
     <None Include="UAOverview.aml" />
+    <None Include="UA_Glossary.aml" />
     <None Include="UserInterface.aml" />
     <None Include="VersionHistory.aml" />
     <None Include="Welcome.aml" />
