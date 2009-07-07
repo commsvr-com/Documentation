@@ -42,6 +42,9 @@
             </step>
           </steps>
         </procedure>
+        <mediaLink>
+          <image placement="center" xlink:href="UAModelDesigner_openingsamplesolution-witharrows" />
+        </mediaLink>
       </content>
     </section>
     <!-- <codeExample>Optional code example</codeExample> -->

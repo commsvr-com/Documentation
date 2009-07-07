@@ -115,6 +115,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\SystemConcept\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\ServiceSets\" />
@@ -994,6 +996,34 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings_boilers.jpg">
+      <ImageId>UAModelDesigner_samplesolution_and_processBindings_boilers</ImageId>
+      <AlternateText>Sample solution and process bindings (only boilers)</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_openingsamplesolution-witharrows.jpg">
+      <AlternateText>How to open sample solution</AlternateText>
+      <ImageId>UAModelDesigner_openingsamplesolution-witharrows</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings.jpg">
+      <ImageId>UAModelDesigner_samplesolution_and_processBindings</ImageId>
+      <AlternateText>Sample solution and process bindings</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-SelectEditor_composition.jpg">
+      <AlternateText>Selection of OPC UA Server editor</AlternateText>
+      <ImageId>ASMD-UAServer-SelectEditor_composition</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-editconfiguration_composition.jpg">
+      <ImageId>ASMD-UAServer-editconfiguration_composition</ImageId>
+      <AlternateText>UA Server edit configuration window</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output-composition.jpg">
+      <ImageId>ASMD-sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output-composition</ImageId>
+      <AlternateText>sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-openconfiguration_composition.jpg">
+      <ImageId>ASMD-UAServer-openconfiguration_composition</ImageId>
+      <AlternateText>How to open sample configuration</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
