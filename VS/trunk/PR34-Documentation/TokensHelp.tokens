@@ -12,4 +12,5 @@
   <item id="SM">Service Model</item>
   <item id="UA">Unified Architecture</item>
   <item id="UADA">UA Data Access</item>
+  <item id="UACommServer">CAS UA CommServer</item>
 </content>

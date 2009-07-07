@@ -78,13 +78,12 @@
         </listItem>
         <listItem>
           <para>
-            <token>ASMD</token> that is a user-friendly tool supporting all aspects of
-          the <token>APCUA</token><token>AS</token> model designing process
+            <token>ASMD</token> that is a user-friendly tool supporting all aspects of the <token>OPCUA</token> <token>AS</token> model designing process
         </para>
         </listItem>
         <listItem>
           <para>
-          Documentation containing information about the Address Space Model Designer tool
+          Documentation containing information about the <token>ASMD</token> tool
         </para>
         </listItem>
       </list>

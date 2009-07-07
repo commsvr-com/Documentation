@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f9f6641e-0f03-443a-b7b9-8c34aecfdb40" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+      <autoOutline />
+      <para>
+        Publication of process real-time and metadata in the Unified Architecture Address Space requires a prior model design. UA Model Designer software is intended to help developers and engineers to design <token>OPCUA</token> models. The whole configuration can be prepared using a user-friendly Windows-based GUI. All nodes are presented on a tree and can be edited in the property window. This section contains an example that shows how to start from the real-time process and finish the design on a model in UA Address Space Model Designer.
+      </para>
+    </introduction>
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Real_World">
+      <title>
+        Real-time Process
+      </title>
+      <content>
+        <para>
+          This example considers the real process in a boiler producing steam from water. The system (boiler) consist of:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              input and output pipes
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              boiler drum
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              control module
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              sensors
+            </para>
+          </listItem>
+        </list>
+        <para>
+          The boiler is showed on the figure below.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="4388aedd-b93b-457b-b06b-e72bb0edba33" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="OPC_UA_Model">
+      <title>
+        OPC UA Model
+      </title>
+      <content>
+        <para>
+          The first step is to prepare UA Address Space model diagram. An exemplary diagram that describes the a/m boiler is shown below.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="2b8dcca0-7938-4a8c-9ff5-30df31b2884d" />
+        </mediaLink>
+      </content>
+    </section>
+    <section address="OPC_UA_Model_Designer">
+      <title>
+        OPC UA Model Designer
+      </title>
+      <content>
+        <para>
+          Now we can port the design prepared in previous step to the UA Model Designer. An exemplary design is shown below.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="04d3f30a-faa5-4294-b605-e2febca7f8da" />
+        </mediaLink>
+        <list class="ordered">
+          <listItem>
+            <para>
+              <legacyBold>Namespaces</legacyBold> – this model uses the standard <token>OPCUA</token> namespace (Opc.Ua : http://opcfoundation.org/UA/) and defines an own namespace Opc.Ua.Sample (http://opcfoundation.org/UA/Sample/)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>References</legacyBold> – this model defines three references. FlowTo and HotFlowTo are used to describe the flow of water and steam. SignalTo references are used to describe the flow of the signals in the boiler. Exemplary reference usage is shown in the figure below.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="0d8e7feb-8cef-4c82-bfd0-dbd89d61125f" />
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Types definitions</legacyBold> – those are definitions of types used in the model. Each important object in the system being designed should have a type definition. Such type definition includes information about what type instance should provide (e.g. variables, properties, methods). This model defines many types for sensors, controllers, valves, etc. A sample Generic Sensor Type Definition is shown below. It contains: output (variable), many object types that contain information about device failure, recalibration, phase inversion, alarm and references with information that many events can occur in this sensor. An exemplary design is shown in the figure below.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="62e52a01-6272-4641-a602-cdcdcb069c85" />
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Method definition</legacyBold> – this model defines one method that is used to create instance of the type (BoilerType in this case)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Boiler type</legacyBold> – this is the type definition for Boiler (similar to definitions in item 3). This type includes all necessary objects in the system (e.g. input pipe, output pipe, drum, etc.)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Boiler</legacyBold> – this is instance of the boiler type; this node represents the real boiler (Boiler1)
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>
+            Nodes in the model design tree view have context menu that allows us to add or remove nodes.
+          </para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="7e21ba07-c79c-48e0-a034-c4310ee2a5b4"/>
+      <link xlink:href="b2d1ce6e-b091-49b0-8563-ce0dab8a79da"/>
+      <link xlink:href="0ba3d783-093d-4394-87ef-aff8a46fff94"/>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

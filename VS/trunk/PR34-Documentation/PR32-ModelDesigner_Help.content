@@ -109,7 +109,13 @@
     </Topic>
     <Topic id="f3357669-a041-405d-884b-19f5eafcabed" visible="True" title="Address Space Model Designer Tool" tocTitle="Address Space Model Designer">
       <Topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" visible="True" title="Overview" tocTitle="Overview" />
-      <Topic id="a2d66e41-32df-404d-99bb-f4e495891493" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started" />
+      <Topic id="a2d66e41-32df-404d-99bb-f4e495891493" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
+        <Topic id="7e21ba07-c79c-48e0-a034-c4310ee2a5b4" visible="True" title="Sample Solution" tocTitle="Sample Solution">
+          <Topic id="b2d1ce6e-b091-49b0-8563-ce0dab8a79da" visible="True" title="How To: Open Sample Solution" tocTitle="How To: Open Sample Solution" />
+          <Topic id="f9f6641e-0f03-443a-b7b9-8c34aecfdb40" visible="True" />
+          <Topic id="0ba3d783-093d-4394-87ef-aff8a46fff94" visible="True" title="Walkthrough: Process DataBinding" tocTitle="Walkthrough: Process DataBinding" />
+        </Topic>
+      </Topic>
       <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" visible="False" title="User Interface" tocTitle="User Interface">
         <Topic id="e7e440ad-68fb-4c4b-bc09-26765163b898" visible="False" title="Menus" tocTitle="Menus" />
       </Topic>

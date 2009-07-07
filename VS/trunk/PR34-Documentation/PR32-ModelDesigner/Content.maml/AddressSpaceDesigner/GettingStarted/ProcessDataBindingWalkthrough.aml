@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="0ba3d783-093d-4394-87ef-aff8a46fff94" revisionNumber="1">
+  <developerWalkthroughDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <summary>
+      <para>In this walkthrough you will select a dedicated UA server configuration editor and add/modify real-time process data-bindings of the selected model nodes.</para>
+    </summary>
+
+    <introduction>
+      <!--<autoOutline />-->
+      <para>
+        <token>ASMD</token> by default is installed with a sample solution. This solution contains a project with the model of a boiler. This model is described in the <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/> topic.
+      </para>
+      <para>
+        Architecture of the <token>ASMD</token> allows vendors of the UA servers to develop plug-ins providing configuration editor. The editor is used to modify the general settings and define model nodes data-bindings with the real-time process.
+      </para>
+      <alert>
+        <para>
+          The dialog boxes and menu commands you see might differ from those described depending on your active settings or edition. To change your settings, choose <userInput>Options</userInput> on the <userInput>Tools</userInput> menu. For more information, see <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493"/>
+        </para>
+      </alert>
+    </introduction>
+    <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+    <section>
+      <content>
+        <para>
+          In the sample solution the <userInput>CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll</userInput> configuration editor for the <token>UACommServer</token> is preselected. To change the editor follow the procedure below.
+        </para>
+        <procedure>
+          <title>To Select UA Server Configuration Editor</title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  Start <token>ASMD</token>
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Open the solution if not opened yet (for more details see: <link xlink:href="b2d1ce6e-b091-49b0-8563-ce0dab8a79da"/>)
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Select <userInput>Select Editor ...</userInput> on the <userInput>UA  Server</userInput> menu (see pt 1 on the figure below). The dialog <userInput>Open Configuration Editor</userInput> is then displayed.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Using <userInput>Open Configuration Editor</userInput> dialog box open the vendor specific plug-in providing the server configuration functionality (see pts 2 and 3 on figure below), i.e. implementing necessary interfaces.
+                </para>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+        <para>
+          Alternatively, you can select UA server configuration editor using the solution properties.
+        </para>
+        <para>
+          In the sample solution a configuration file for the editor is preselected. The configuration file contains general server settings and information how to bind the address space nodes with the underlying real-time process. To change the configuration file follow the procedure below.
+        </para>
+      </content>
+    </section>
+    <procedure>
+      <title>To Select UA Server Configuration File</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Select the configuration editor if not selected yet.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Select <userInput>Configuration/Open …</userInput> on the <userInput>UA Server</userInput> menu (see pt 1 on the figure below). The dialog <userInput>UA Server configuration file</userInput> is then displayed.
+            </para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Using UA Server configuration file dialog box open the server specific configuration file providing the setting needed to setup the server at startup and runtime (see pts 2 and 3 on the figure below).</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>After selecting the configuration file settings can be edited using an editor provided by the plug-in assembly.</para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+    <procedure>
+      <title>To Edit the UA Server Configuration Settings</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Select the configuration editor and file if not selected yet</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Select Configuration/Edit … on the UA Server menu. The editor dialog is then displayed.</para>
+          </content>
+        </step>
+      </steps>
+      <conclusion>
+        <content>
+          <para>Alternatively, you can select UA server configuration editor using the solution properties.</para>
+        </content>
+      </conclusion>
+    </procedure>
+    <section>
+      <content>
+        <para>In the sample solution a configuration file for the editor is preselected. The configuration file contains general server settings and information how to bind the address space nodes with the underlying real-time process. To change the configuration file follow the procedure below.</para>
+        <procedure>
+          <title>To Select UA Server Configuration File</title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>Select the configuration editor if not selected yet.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Select <userInput>Configuration/Open …</userInput> on the <userInput>UA Server</userInput> menu (see pt 1 on the figure below). The dialog <userInput>UA Server configuration file</userInput> is then displayed.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Using UA Server configuration file dialog box open the server specific configuration file providing the setting needed to setup the server at startup and runtime (see pts 2 and 3 on the figure below).</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>After selecting the configuration file settings can be edited using an editor provided by the plug-in assembly.</para>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+      </content>
+    </section>
+    <!-- <prerequisites><content>Optional prerequisites info</content></prerequisites> -->
+    <!-- One or more procedure or section with procedure -->
+    <procedure>
+      <title>To Edit the UA Server Configuration Settings</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Select the configuration editor and file if not selected yet.</para>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Select <userInput>Configuration/Edit...</userInput> on the <userInput>UA Server</userInput> menu. The editor dialog is then displayed.
+            </para>
+          </content>
+        </step>
+      </steps>
+      <!--<conclusion>Optional conclusion</conclusion>-->
+    </procedure>
+    <section address="Section1">
+      <content>
+        <para>
+          One of the most common scenarios for UA server deployment is to set process data-bindings. To set and edit process data-bindings you can use:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <userInput>UA Server</userInput> on main menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>Context menu for the selected node.</para>
+          </listItem>
+          <listItem>
+            <para>Property grid for the selected node.</para>
+          </listItem>
+        </list>
+        <alert>
+          <para>In the described procedure the <userInput>UA Server</userInput> entry is used.</para>
+        </alert>
+        <alert>
+          <para>The dialog boxes and menu commands you see might differ depending on used the server configuration editor.</para>
+        </alert>
+        
+        <procedure>
+          <title>To Set Model Node to Bind to the Process Data</title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>Browse to the <userInput>Boilers | Boiler1 | InputPipe | FlowTransmitter1 | Output</userInput> variable (see pt 1 on the figure below).</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Select <userInput>Output: process bindings | Edit ….</userInput> on the <userInput>UA Server</userInput> menu (see pt 2 on the figure below). The dialog provided by the selected configuration editor plug-in is then displayed.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Dialog provided by the <token>UACommServer</token> configuration editor displays two properties groups:</para>
+                <list class="bullet">
+                  <listItem>
+                    <para>
+                      <userInput>Model</userInput>
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <userInput>Redundant Data Sources</userInput>
+                    </para>
+                  </listItem>
+                </list>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Properties from the <userInput>Model</userInput> group are read only and present description of the node.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>To define new and edit process data-sources click <userInput>(…)</userInput> button (see pt 3 on the figure below) on the right side of the <userInput>(DataSources)</userInput> property located in the <userInput>Redundant Data Sources</userInput> group. The dialog <userInput>DataSourceConfiguration Collection Editor</userInput> is then displayed.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Use this dialog to create new and edit existing data-bindings.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Use <userInput>Name</userInput> property to define selected data-binding identifier.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>To modify the data-source select <userInput>Source</userInput> property and use drop down list containing available for the server data-sources from which select appropriate one. Changing the data-source may cause displaing additional dialog, for example <userInput>Subscription Item Selection</userInput> for <userInput>OPC Client</userInput> data-source (see pt 4 on the figure below).</para>
+              </content>
+            </step>
+          </steps>
+          <!-- <conclusion>Optional conclusion</conclusion> -->
+        </procedure>
+      </content>
+    </section>
+    <!-- Optional next steps info
+    <nextSteps>
+      <content><para>Next steps info goes here</para></content>
+    </nextSteps>
+    -->
+    <relatedTopics>
+      
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerWalkthroughDocument>
+</topic>
