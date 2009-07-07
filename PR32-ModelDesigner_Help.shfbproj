@@ -28,7 +28,7 @@
     </SandcastlePath>
     <WorkingPath>Temp\UAModelDesigner\Working\</WorkingPath>
     <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
     <FrameworkVersion>2.0.50727</FrameworkVersion>
     <Preliminary>True</Preliminary>
     <HelpTitle>OPC Unified Architecture</HelpTitle>
@@ -38,7 +38,7 @@
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <FooterText>This documentation is designed to be used with CAS UA Address Space Model Designer %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <PresentationStyle>vs2005</PresentationStyle>
     <NamingMethod>MemberName</NamingMethod>
     <HelpFileVersion>1.0.0.6</HelpFileVersion>
     <ComponentConfigurations>
@@ -71,7 +71,7 @@
           <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
         </component>
       </ComponentConfig>
-      <ComponentConfig id="Post-transform Component" enabled="True">
+      <ComponentConfig id="Post-transform Component" enabled="False">
         <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
           <!-- Code colorizer files (required).
                  Attributes:
@@ -115,6 +115,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\SystemConcept\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\ServiceSets\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\UAAddressSpace\" />
@@ -684,6 +685,10 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\LicenseAndDisclaimer.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\MethodDesign.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\DictionaryDesign.aml" />

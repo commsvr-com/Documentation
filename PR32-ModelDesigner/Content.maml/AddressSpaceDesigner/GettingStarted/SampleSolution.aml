@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7e21ba07-c79c-48e0-a034-c4310ee2a5b4" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+    <introduction>
+      <para>This section contains information about the Address Space Model Designer sample solution that illustrates the structure, and techniques used to design models and define bindings between model nodes and real-time process data.</para>
+    </introduction>
+    <section>
+      <title>Locating Sample Files</title>
+      <content>
+        <para>
+          By default, the sample solution is installed with software. This solution contains a project of a boiler model. This model is described in the <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/> topics.
+        </para>
+        <para>The default location for the sample solution is the following directory:</para>
+        <para>
+          <userInput>%USERPROFILE%</userInput> variable represents the location of the profile for the current user. The default location of the <userInput>%USERPROFILE%</userInput> is <userInput>C:\Documents and Settings\&lt;username&gt;</userInput>.
+        </para>
+        <alert>
+          <para>
+            This directory name is different in other than English versions of MS Windows and if the user moves his <userInput>My Document</userInput> directory to other than default location.
+          </para>
+        </alert>
+        <para></para>
+        <table>
+          <title>The files of the sample solution are listed in the following table.</title>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>File</para>
+              </entry>
+              <entry>
+                <para>Content</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>
+                BoilerExampleSolution.uamdsl
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Address Space Model Designer solution. This file contains the configuration of the sample solution and references to other files that are used in this solution.
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                BoilerDesign.csv
+              </para>
+            </entry>
+            <entry>
+              <para>
+                CSV file that contains Node Identifiers
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                BoilerDesign.xml
+              </para>
+            </entry>
+            <entry>
+              <para>
+                XML file with the model
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Sample Plug-in file for CAS UA CommServer that is to be used to edit the configuration file and define process data bindings.
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                CAS.UAServer.DemoConfiguration.uasconfig
+              </para>
+            </entry>
+            <entry>
+              <para>
+                An example of the configuration file of CAS UA CommServer. This file is created and edited by CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll configuration editor.
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                CAS.ModelDesigner.DataPorterAccess.dll
+              </para>
+            </entry>
+            <entry>
+              <para>
+                A component used by CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll to configure OPC DA classic access as data source that is used for defining process data-bindings.
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                DemoConfiguration.oses
+              </para>
+            </entry>
+            <entry>
+              <para>
+                A sample OPC DA client configuration (compatible with CAS OPC Viewer and CAS DataPorter products).
+              </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="b2d1ce6e-b091-49b0-8563-ce0dab8a79da"/> 
+      <link xlink:href="0ba3d783-093d-4394-87ef-aff8a46fff94"/>
+      <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

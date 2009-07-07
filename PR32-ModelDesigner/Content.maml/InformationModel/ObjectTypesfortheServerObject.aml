@@ -53,7 +53,7 @@
           <title>NamespaceArray</title>
           <content>
             <para>
-            The NamespaceArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> defines an array of namespace URIs. This <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is also referred as namespace table. The indexes into this table are referred to as namespace indexes. Namespace indexes are used in <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> values provided as <token>OPCUA</token><link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">services</link> parameters, rather than the longer namespace URI. Index 0 is reserved for the <token>OPCUA</token> namespace, and index 1 is reserved for the local server. Clients may read the entire table or they may read individual entries in the table.
+            The NamespaceArray <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> defines an array of namespace URIs. This <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is also referred as namespace table. The indexes into this table are referred to as namespace indexes. Namespace indexes are used in <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link> values provided as <token>OPCUA</token> <link xlink:href="ef0092b5-9f31-4e8d-9901-270be06e6577">services</link> parameters, rather than the longer namespace URI. Index 0 is reserved for the <token>OPCUA</token> namespace, and index 1 is reserved for the local server. Clients may read the entire table or they may read individual entries in the table.
           </para>
             <alert>
               <para>The server must not modify or delete entries of this table while any client has an open session to the server, because clients may cache this table.</para>
@@ -99,7 +99,7 @@
           <title>ServerDiagnostics</title>
           <content>
             <para>
-            The ServerDiagnostics <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> defines diagnostic information about the <token>OPCUA&gt;</token> server.
+            The ServerDiagnostics <link xlink:href="d38394a1-c1c0-4c91-8a38-4fa47ad2bf35" /> defines diagnostic information about the <token>OPCUA</token> server.
           </para>
           </content>
         </section>
