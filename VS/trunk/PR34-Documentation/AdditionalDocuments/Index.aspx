@@ -7,9 +7,15 @@
 <title>{@HTMLHelpName}</title>
 <link rel="stylesheet" href="TOC.css">
 <script type="text/javascript" src="TOC.js"></script>
-</head>
+<script type="text/javascript" src="url.js"></script>
+<script type="text/javascript">
+addLoadEvent(Initialize);
+addLoadEvent(ParseUrl);
+</script>
+</head> 
 
-<body onload="javascript: Initialize();" onresize="javascript: ResizeTree();">
+<body onresize="javascript: ResizeTree();">
+
 <form id="IndexForm" runat="server">
 
 <div id="TOCDiv" class="TOCDiv">

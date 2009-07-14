@@ -9,3 +9,14 @@ modyfie \\Cas_06\Inetpub\intranet\UAModelDesigner\OPCUAModelDesigner.xml file. T
 uploaded to google webmaster tools as sitemap.
 
 After update from repository we need to change manual in ComponentsConfiguration -> Post-transform Component.
+
+
+Sandcastle and permanent links in html documentation
+1. Copy script_manifold.js to \Sandcastle\Presentation\vs2005AdWords\Scripts\
+2. Copy index.html, index aspx and url.js to c:\Program Files\EWSoftware\Sandcastle Help File Builder\Web
+
+
+
+
+
+
