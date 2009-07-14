@@ -1,4 +1,4 @@
-window.onload=LoadPage;
+window.onload = function() { LoadPage(); BringOutUrl(); };
 window.onunload=Window_Unload;
 //window.onresize=ResizeWindow;
 window.onbeforeprint = set_to_print;
@@ -252,7 +252,7 @@ function LoadPage()
 	SetCollapseAll();
 
 	// split screen
-	var screen = new SplitScreen('header', 'mainSection');
+	var screen = new SplitScreen('header', 'header2', 'mainSection');
 
 	// init devlang filter checkboxes
 	SetupDevlangsFilter();
@@ -1234,3 +1234,15 @@ function sendfeedback(subject, id,alias){
 	var title = document.getElementsByTagName("TITLE")[0].innerText.replace(rExp, "''");
 	location.href = "mailto:" + alias + "?subject=" + subject + title + "&body=Topic%20ID:%20" + id + "%0d%0aURL:%20" + url + "%0d%0a%0d%0aComments:%20";
 }
+
+function BringOutUrl() {
+    var url = window.location.href;
+    var idx = url.indexOf("/html/");
+    if (idx > 0) {
+        var rel = url.substr(idx + 1);
+        idx = url.lastIndexOf("/", idx);
+        var root = url.substr(0, idx);
+        window.parent.location.hash = rel;
+    }
+}
+
