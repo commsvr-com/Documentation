@@ -76,7 +76,7 @@
           <row>
             <entry>
               <para>
-                CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll
+                CAS.UA.Server.ServerConfiguration.dll
               </para>
             </entry>
             <entry>
@@ -93,7 +93,7 @@
             </entry>
             <entry>
               <para>
-                An example of the configuration file of CAS UA CommServer. This file is created and edited by CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll configuration editor.
+                An example of the configuration file of CAS UA CommServer. This file is created and edited by CAS.UA.Server.ServerConfiguration.dll configuration editor.
               </para>
             </entry>
           </row>
@@ -105,7 +105,7 @@
             </entry>
             <entry>
               <para>
-                A component used by CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll to configure OPC DA classic access as data source that is used for defining process data-bindings.
+                A component used by CAS.UA.Server.ServerConfiguration.dll to configure OPC DA classic access as data source that is used for defining process data-bindings.
               </para>
             </entry>
           </row>

@@ -26,7 +26,7 @@
     <section>
       <content>
         <para>
-          In the sample solution the <userInput>CAS.ModelDesigner.UAServerConfiguration.PlugIn.dll</userInput> configuration editor for the <token>UACommServer</token> is preselected. To change the editor follow the procedure below.
+          In the sample solution the <userInput>CAS.UA.Server.ServerConfiguration.dll</userInput> configuration editor for the <token>UACommServer</token> is preselected. To change the editor follow the procedure below.
         </para>
         <procedure>
           <title>To Select UA Server Configuration Editor</title>
