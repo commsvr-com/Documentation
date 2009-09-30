@@ -51,7 +51,7 @@
                  the parent folder of the output path of the HTML files (see
                  SaveComponent). --><outputPath value="Output\" /><!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="C:\VS2008\Projects\Documentation\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. --><logoFile filename="Z:\trunk\VS\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
@@ -61,7 +61,7 @@
       </PlugInConfig>
     </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS DataPorter %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
@@ -107,6 +107,7 @@
     <Folder Include="PR26-DataPorter\Graphics\operations\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\" />
+    <Folder Include="PR26-DataPorter\Graphics\icons\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
@@ -171,6 +172,8 @@
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\ItemDescriber.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\LicenseInstallation.aml" />
     <None Include="CommonDocumentation\Content.maml\GlossaryDataPorter.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\IconsAndStates.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\DataPorter_Service.aml" />
   </ItemGroup>
   <ItemGroup>
     <Tokens Include="TokensHelp.tokens" />
@@ -350,6 +353,66 @@
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Content Include="YouTube.html" />
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_service.JPG">
+      <AlternateText>DataPorter_service.JPG</AlternateText>
+      <ImageId>DataPorter_service.JPG</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\grupa 32.png">
+      <ImageId>grupa 32.png</ImageId>
+      <AlternateText>grupa 32.png</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\grupa_fail 32.png">
+      <AlternateText>grupa_fail 32.png</AlternateText>
+      <ImageId>grupa_fail 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\grupa_sb 32.png">
+      <AlternateText>grupa_sb 32.png</AlternateText>
+      <ImageId>grupa_sb 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\grupa_spec 32.png">
+      <AlternateText>grupa_spec 32.png</AlternateText>
+      <ImageId>grupa_spec 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\serwer opc 32.png">
+      <AlternateText>serwer opc 32.png</AlternateText>
+      <ImageId>serwer opc 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\serwer opc_fail 32.png">
+      <AlternateText>serwer opc_fail 32.png</AlternateText>
+      <ImageId>serwer opc_fail 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\serwer opc_sb 32.png">
+      <AlternateText>serwer opc_sb 32.png</AlternateText>
+      <ImageId>serwer opc_sb 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\tag_element 32.png">
+      <AlternateText>tag_element 32.png</AlternateText>
+      <ImageId>tag_element 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\tag_element_fail 32.png">
+      <AlternateText>tag_element_fail 32.png</AlternateText>
+      <ImageId>tag_element_fail 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\tag_element_sb 32.png">
+      <AlternateText>tag_element_sb 32.png</AlternateText>
+      <ImageId>tag_element_sb 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\tag_element_spec 32.png">
+      <AlternateText>tag_element_spec 32.png</AlternateText>
+      <ImageId>tag_element_spec 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\transformacja 32.png">
+      <AlternateText>transformacja 32.png</AlternateText>
+      <ImageId>transformacja_32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\transformacja_sb 32.png">
+      <AlternateText>transformacja_sb 32.png</AlternateText>
+      <ImageId>transformacja_sb 32.png</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\icons\transformacja_spec 32.png">
+      <AlternateText>transformacja_spec 32.png</AlternateText>
+      <ImageId>transformacja_spec 32.png</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\DataPorter_about_license_succeeded.JPG">
       <AlternateText>DataPorter about license succeeded</AlternateText>
       <ImageId>54E742FC-E009-4e7a-BB56-71CCF9A7B0D8</ImageId>
