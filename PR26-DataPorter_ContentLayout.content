@@ -313,7 +313,6 @@
         <HelpKeyword index="K" term="Debug" />
         <HelpKeyword index="K" term="Diagnostic" />
         <HelpKeyword index="K" term="configfile" />
-
         <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_FrameResponse_management" />
         <HelpKeyword index="K" term="CAS.DataPorter.exe.config, MinAvgMax_CharacterGap_management" />
         <HelpKeyword index="K" term="CAS.DataPorter.exe.config, UseLocalTime" />
@@ -330,6 +329,7 @@
         <HelpKeyword index="K" term="Configuration, file (CAS.DataPorter.exe.config)" />
       </HelpKeywords>
     </Topic>
+    <Topic id="f865bba4-1656-4559-bc89-dd474f5c8b60" visible="True" title="DataPorter service" tocTitle="DataPorter service" linkText="DataPorter service" />
     <Topic id="9ecbc065-4153-4193-86d0-5d264120a69a" visible="True" title="OPC configuration and OPC Viewer usage" tocTitle="OPC configuration and OPC Viewer usage" linkText="OPC configuration and OPC Viewer usage">
       <HelpKeywords>
         <HelpKeyword index="K" term="Configuration, OPC configuration" />
@@ -409,7 +409,6 @@
           <HelpKeyword index="K" term="Transaction, Trigger Item" />
           <HelpKeyword index="K" term="Transaction, Trigger Item Deadband" />
           <HelpKeyword index="K" term="Transaction, Launching conditions" />
-
           <HelpKeyword index="K" term="Add" />
           <HelpKeyword index="K" term="Add, transaction" />
           <HelpKeyword index="K" term="Add, operation" />
@@ -700,7 +699,7 @@
         <HelpKeyword index="K" term="Write successes" />
         <HelpKeyword index="K" term="Write fails" />
         <HelpKeyword index="K" term="Read successes" />
-        <HelpKeyword index="K" term="Read fails" />      
+        <HelpKeyword index="K" term="Read fails" />
       </HelpKeywords>
     </Topic>
     <Topic id="5da055b4-bc8b-45b1-a34d-62b9a099eb55" visible="True" title="Items Tab" tocTitle="Items Tab" linkText="Items Tab">
@@ -739,7 +738,7 @@
         <HelpKeyword index="K" term="Transaction Type" />
         <HelpKeyword index="K" term="Transaction scanning rate" />
         <HelpKeyword index="K" term="Deadband" />
-        <HelpKeyword index="K" term="Min update rate" />      
+        <HelpKeyword index="K" term="Min update rate" />
       </HelpKeywords>
     </Topic>
     <Topic id="5a8897db-1916-49c7-a797-d2e4ca301b9c" visible="True" title="Tray Icon" tocTitle="Tray Icon" linkText="Tray Icon">
@@ -747,6 +746,7 @@
         <HelpKeyword index="K" term="Using DataPorter, Tray Icon" />
       </HelpKeywords>
     </Topic>
+    <Topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" visible="True" title="Icons and States" tocTitle="Icons and States" linkText="Icons and States" />
     <Topic id="ed3586ba-f503-4196-ab9b-c9704a62345f" visible="True" title="Reporting" tocTitle="Reporting" linkText="Reporting">
       <HelpKeywords>
         <HelpKeyword index="K" term="Reporting" />
@@ -770,7 +770,7 @@
     <HelpKeywords>
       <HelpKeyword index="K" term="Diagnostics and Trubelshooting" />
     </HelpKeywords>
-    <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" >
+    <Topic id="41a3c9ec-191c-4c9c-990a-e953f18a49d3" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log">
       <HelpKeywords>
         <HelpKeyword index="K" term="Diagnostics and Trubelshooting, System Event Log" />
         <HelpKeyword index="K" term="System Event Log" />
@@ -848,12 +848,12 @@
       </HelpKeywords>
     </Topic>
   </Topic>
-  <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" >
-      <HelpKeywords>
-        <HelpKeyword index="K" term="Contact" />
-        <HelpKeyword index="K" term="Support" />
-      </HelpKeywords>
-    </Topic>
+  <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Contact" />
+      <HelpKeyword index="K" term="Support" />
+    </HelpKeywords>
+  </Topic>
   <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary">
     <HelpKeywords>
       <HelpKeyword index="K" term="Glossary" />

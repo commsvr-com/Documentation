@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f865bba4-1656-4559-bc89-dd474f5c8b60" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        DataPorter (from version 1.30) is installed as Windows Service.
+      </para>
+    </introduction>
+    <section address="DataPorter_service ">
+      <title>DataPorter service</title>
+      <content>
+        <para>
+          The figure below shows the Services MMC with DataPorter service:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="DataPorter_service.JPG" />
+        </mediaLink>
+        <para>
+          By default, the service name is “DataPorter”; the service can be started manually and the service is run with privileges of the Local System account.
+        </para>
+        <alert>
+          <para>
+            Change the “Startup Type” to “Automatic” to start the service when Windows starts (nobody has to be logged in).
+          </para>
+          <para>
+            If the “Local System” account is used to run DataPorter make sure that this account has sufficient DCOM privileges to launch and connect to the selected OPC server.
+          </para>
+          <para>
+            The “Local System” account cannot be used when communication between other PCs is necessary, another account with appropriate privileges.
+          </para>
+          <para>
+            Change the “Log On As” account to run DataPorter on another account. This might be necessary when communication over the network is used or if DCOM settings prohibit to use the “Local Service” account. Remember to make sure that the selected account has sufficient privileges to access the  DataPorter application directory and “Log on as a service” privileges (this security setting determines which service accounts can register a process as a service). Here is an article that describes how to set up special privileges for a particular account: <externalLink>
+              <linkText>http://technet.microsoft.com/en-us/library/cc739424%28WS.10%29.aspx</linkText>
+              <linkAlternateText>http://technet.microsoft.com/en-us/library/cc739424%28WS.10%29.aspx</linkAlternateText>
+              <linkUri>http://technet.microsoft.com/en-us/library/cc739424%28WS.10%29.aspx</linkUri>
+            </externalLink>
+          </para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

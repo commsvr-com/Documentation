@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <autoOutline />
+    </introduction>
+    <section address="Transaction">
+      <title>Transaction</title>
+      <content>
+        <list class ="bullet">
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="transformacja_sb 32.png"/>
+            </mediaLinkInline> - initial state (if the transaction has been created but DataPorter has never checked the condition whether the transaction can be executed)
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="transformacja_spec 32.png"/>
+            </mediaLinkInline> - DataPorter at least once checked the condition whether the transaction can be executed; the other possibility is that the transaction has been executed but an error occurred afterwards
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="transformacja_32.png"/>
+            </mediaLinkInline> - the transaction has been executed successfully
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Tag">
+      <title>Tag</title>
+      <content>
+        <list class ="bullet">
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="tag_element_sb 32.png"/>
+            </mediaLinkInline> - a tag has been created but it has not been added to the OPC server and has never been read
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="tag_element_spec 32.png"/>
+            </mediaLinkInline> - quality is not good
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="tag_element 32.png"/>
+            </mediaLinkInline> - read operation is finished successfully, there is no problem with this item (tag)
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="tag_element_fail 32.png"/>
+            </mediaLinkInline> - the last write or read operation failed, the item was not available in OPC server, or another error occurred
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Group">
+      <title>Group</title>
+      <content>
+        <list class ="bullet">
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="grupa_sb 32.png"/>
+            </mediaLinkInline> - the group is not active
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="grupa_spec 32.png"/>
+            </mediaLinkInline> - there was a problem with some items(tags) that belong to that group
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="grupa 32.png"/>
+            </mediaLinkInline> - there is no problem with this group
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="grupa_fail 32.png"/>
+            </mediaLinkInline> - the group cannot be added to the OPC server
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Server">
+      <title>Server</title>
+      <content>
+        <list class ="bullet">
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="serwer opc_sb 32.png"/>
+            </mediaLinkInline> - the server is waiting to be connected
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="serwer opc 32.png"/>
+            </mediaLinkInline> - the server is connected
+          </listItem>
+          <listItem>
+            <mediaLinkInline>
+              <image xlink:href="serwer opc_fail 32.png"/>
+            </mediaLinkInline> - the server is disconnected
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
