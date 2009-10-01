@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f0eee719-9f00-47e8-8c6a-2052ba3f7dfa" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        Capabilities of DataPorter database related operations (“DB” blocks) go beyond simple reading and writing from/to database.
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="AdvancedDBOperation.jpg" />
+      </mediaLink>
+    </introduction>
+    <section>
+      <content>
+        <para>
+          A good example is “Advance DataBase Operation” (“DB+” block). It contains outputs and inputs, so items (form OPC or any other generator) can be connected to inputs and outputs. This offers such possibilities as:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Reading and writing from/to database at the same time (in the same operation)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Performing some calculations
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Processing advanced condition
+            </para>
+          </listItem>
+        </list>
+        <para>
+          By default, the “DB+” block is preconfigured to perform example calculations. Lets analyze an example. The goal of this example is to show how to use the built-in language to manipulate the values of inputs and outputs. The figure below presents an example transaction:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="Transaction_AdbancedDB_oper.jpg" />
+        </mediaLink>
+        <para>
+          It this example, the “DB+” operation block may contain an XML configuration similar to the following:
+        </para>
+        <code language ="xml">
+          <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- such text is comment -->
+<Param>
+  <operationopc name="opc" type="assign">
+    <input name="0:value"></input>
+    <!--value of input 0 is inserted to the acumulator-->
+  </operationopc>
+  <operationopc name="opc" type="add">
+    <input name="1:value"></input>
+    <!--value of input 1 is added to the acumulator-->
+  </operationopc>
+  <operationopc name="opc" type="write">
+    <output name="0"></output>
+    <!--value of acumulator is written to output 0 (= Input 0 + Input 1)-->
+  </operationopc>
+  <operationopc name="opc" type="assign">
+    <input name="0:value"></input>
+    <!--value of input 0 is inserted to the acumulator-->
+  </operationopc>
+  <operationopc name="opc" type="sub">
+    <input name="1:value"></input>
+    <!--value of input 1 is substracted from the acumulator-->
+  </operationopc>
+  <operationopc name="opc" type="write">
+    <output name="1"></output>
+    <!--value of acumulator is written to output 1 (=Input 0 - Input 1)-->
+  </operationopc>
+</Param>  
+          ]]>
+        </code>
+        <para>
+          The result of this example is shown below:
+
+        </para>
+        <code language="scr">
+          output(0) = input (0) + input (1)
+          output(1) = input (0) - input (1)
+        </code>
+        <para>
+          So, after execution of this transaction:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              PLC/R/100 contains the value of  PLC/G/000 + PLC/G/001
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              PLC/R/101 contains the value of  PLC/G/000 - PLC/G/001
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -27,12 +27,22 @@
           <targets files="reflection.xml" type="{@ProjectLinks}" />
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Base path for relative filenames in source attributes
-                 (optional) --><basePath value="{@ProjectFolder}" /><!-- Connect to language filter (optional).  If omitted,
-                 language filtering is enabled by default. --><languageFilter value="true" /><!-- Allow missing source files (Optional).  If omitted,
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Base path for relative filenames in source attributes
+                 (optional) -->
+          <basePath value="{@ProjectFolder}" />
+          <!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. -->
+          <languageFilter value="true" />
+          <!-- Allow missing source files (Optional).  If omitted,
                  it will generate errors if referenced source files
-                 are missing. --><allowMissingSource value="false" /><!-- Remove region markers from imported code blocks.  If omitted,
-                 region markers in imported code blocks are left alone. --><removeRegionMarkers value="false" /><!-- Code colorizer options (required).
+                 are missing. -->
+          <allowMissingSource value="false" />
+          <!-- Remove region markers from imported code blocks.  If omitted,
+                 region markers in imported code blocks are left alone. -->
+          <removeRegionMarkers value="false" />
+          <!-- Code colorizer options (required).
                  Attributes:
                     Language syntax configuration file (required)
                     XSLT style file (required)
@@ -42,16 +52,29 @@
                     Enable outlining (optional)
                     Keep XML comment "see" tags within the code (optional)
                     Tab size override (optional, 0 = Use syntax file setting)
-                    Use language name as default title (optional) --><colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" /></component></ComponentConfig>
-<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
+                    Use language name as default title (optional) -->
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). --><outputPath value="Output\" /><!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). -->
+          <outputPath value="Output\" />
+          <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="Z:\trunk\VS\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. -->
+          <logoFile filename="Z:\trunk\VS\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
@@ -108,6 +131,8 @@
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\TransactionAndOperation\" />
     <Folder Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\" />
     <Folder Include="PR26-DataPorter\Graphics\icons\" />
+    <Folder Include="PR26-DataPorter\Content.maml\Configuration\DataPorterMonitor\" />
+    <Folder Include="PR26-DataPorter\Content.maml\UsingDataPorter\DataPorterMonitor\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
@@ -174,6 +199,14 @@
     <None Include="CommonDocumentation\Content.maml\GlossaryDataPorter.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\IconsAndStates.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\DataPorter_Service.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\DataPorter_Monitor.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\DataPorterMonitor\DataPorterLocalServiceController.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\DataPorter_Monitor.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\DataPorterMonitor\DataPorterLocalServiceController.aml" />
+    <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\DataPorterMonitor\DataPorterMonitorConnectionControllerPanel.aml" />
+    <None Include="PR26-DataPorter\Content.maml\StartingStoppingandCheckingTheDataPorterStatus.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\ReadingDataFromSQLandCopyingToOPC.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\SQLConnectivity\AdvancedDataBaseOperationBlock.aml" />
   </ItemGroup>
   <ItemGroup>
     <Tokens Include="TokensHelp.tokens" />
@@ -353,6 +386,34 @@
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Content Include="YouTube.html" />
+    <Image Include="PR26-DataPorter\Graphics\Transaction_AdbancedDB_oper.jpg">
+      <AlternateText>Transaction_AdbancedDB_oper.jpg</AlternateText>
+      <ImageId>Transaction_AdbancedDB_oper.jpg</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\AdvancedDBOperation.jpg">
+      <AlternateText>AdvancedDBOperation.jpg</AlternateText>
+      <ImageId>AdvancedDBOperation.jpg</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\Transaction_DB2OPC.jpg">
+      <AlternateText>Transaction_DB2OPC.jpg</AlternateText>
+      <ImageId>Transaction_DB2OPC.jpg</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\FromSQLtoOPC.jpg">
+      <AlternateText>FromSQLtoOPC.jpg</AlternateText>
+      <ImageId>FromSQLtoOPC.jpg</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_MonitorConnectionControllerPanel.JPG">
+      <AlternateText>DataPorter_MonitorConnectionControllerPanel.JPG</AlternateText>
+      <ImageId>DataPorter_MonitorConnectionControllerPanel.JPG</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_LocalServiceController.JPG">
+      <AlternateText>DataPorter_LocalServiceController.JPG</AlternateText>
+      <ImageId>DataPorter_LocalServiceController.JPG</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\DataPorter_Monitor.JPG">
+      <AlternateText>DataPorter_Monitor.JPG</AlternateText>
+      <ImageId>DataPorter_Monitor.JPG</ImageId>
+    </Image>
     <Image Include="PR26-DataPorter\Graphics\DataPorter_service.JPG">
       <AlternateText>DataPorter_service.JPG</AlternateText>
       <ImageId>DataPorter_service.JPG</ImageId>

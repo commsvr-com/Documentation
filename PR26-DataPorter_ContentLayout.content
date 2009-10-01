@@ -48,6 +48,7 @@
         <HelpKeyword index="K" term="Instalation" />
       </HelpKeywords>
     </Topic>
+    <Topic id="69b44a32-2a87-4094-bfde-ed54175ec272" visible="True" title="Starting, stopping and checking the DataPorter status  " tocTitle="Starting, stopping and checking the DataPorter status  " linkText="Starting, stopping and checking the DataPorter status  " />
     <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview">
       <HelpKeywords>
         <HelpKeyword index="K" term="Getting Started, OPC Overview" />
@@ -329,7 +330,7 @@
         <HelpKeyword index="K" term="Configuration, file (CAS.DataPorter.exe.config)" />
       </HelpKeywords>
     </Topic>
-    <Topic id="f865bba4-1656-4559-bc89-dd474f5c8b60" visible="True" title="DataPorter service" tocTitle="DataPorter service" linkText="DataPorter service" />
+    <Topic id="f865bba4-1656-4559-bc89-dd474f5c8b60" visible="True" title="DataPorter Service" tocTitle="DataPorter Service" linkText="DataPorter Service" />
     <Topic id="9ecbc065-4153-4193-86d0-5d264120a69a" visible="True" title="OPC configuration and OPC Viewer usage" tocTitle="OPC configuration and OPC Viewer usage" linkText="OPC configuration and OPC Viewer usage">
       <HelpKeywords>
         <HelpKeyword index="K" term="Configuration, OPC configuration" />
@@ -510,7 +511,7 @@
           <HelpKeyword index="K" term="attach to MS SQL Express" />
         </HelpKeywords>
       </Topic>
-      <Topic id="42ac5182-238c-41a2-81a7-f66a77089b02" visible="True" title="Storing From Opc Into Sql (Advanced Configuration)" tocTitle="Storing From Opc Into Sql (Advanced Configuration)" linkText="Storing From Opc Into Sql (Advanced Configuration)">
+      <Topic id="42ac5182-238c-41a2-81a7-f66a77089b02" visible="True" title="Storing From Opc Into Sql" tocTitle="Storing From Opc Into Sql " linkText="Storing From Opc Into Sql">
         <HelpKeywords>
           <HelpKeyword index="K" term="SQL Conectivity, Default Configuration" />
           <HelpKeyword index="K" term="SQL Conectivity, Advanced Configuration" />
@@ -527,6 +528,8 @@
           <HelpKeyword index="K" term="SQL Conectivity, Troubleshooting" />
         </HelpKeywords>
       </Topic>
+      <Topic id="169261d2-f2b0-43f0-908a-bf6d23099aa1" visible="True" title="Reading from SQL and copying to OPC " tocTitle="Reading from SQL and copying to OPC " linkText="Reading from SQL and copying to OPC " />
+      <Topic id="f0eee719-9f00-47e8-8c6a-2052ba3f7dfa" visible="True" title="Advanced DataBase operation block" tocTitle="Advanced DataBase operation block" linkText="Advanced DataBase operation block" />
     </Topic>
     <Topic id="de6ca2b7-82fe-4941-b899-e46d90a2eb27" visible="True" title="Web Service Conectivity" tocTitle="Web Service Conectivity" linkText="Web Service Conectivity">
       <HelpKeywords>
@@ -745,6 +748,10 @@
       <HelpKeywords>
         <HelpKeyword index="K" term="Using DataPorter, Tray Icon" />
       </HelpKeywords>
+    </Topic>
+    <Topic id="5b3e730c-02f2-47de-b836-afbd3c53ac23" visible="True" title="DataPorter Monitor " tocTitle="DataPorter Monitor " linkText="DataPorter Monitor ">
+      <Topic id="011a5d28-2395-4dea-9d9c-71bb7b141ead" visible="True" title="DataPorter local service controller " tocTitle="DataPorter local service controller " linkText="DataPorter local service controller " />
+      <Topic id="e7a0eb27-ca29-424e-88db-652c5670b82f" visible="True" title="DataPorter Monitor connection controller panel" tocTitle="DataPorter Monitor connection controller panel" linkText="DataPorter Monitor connection controller panel" />
     </Topic>
     <Topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" visible="True" title="Icons and States" tocTitle="Icons and States" linkText="Icons and States" />
     <Topic id="ed3586ba-f503-4196-ab9b-c9704a62345f" visible="True" title="Reporting" tocTitle="Reporting" linkText="Reporting">

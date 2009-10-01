@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="e7a0eb27-ca29-424e-88db-652c5670b82f" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para></para>
+    </introduction>
+    <section>
+      <content>
+        <mediaLink>
+          <image placement="center" xlink:href="DataPorter_MonitorConnectionControllerPanel.JPG" />
+        </mediaLink>
+        <para>
+          This panel allows you to control the connection state between DataPorter (engine and service) and DataPorter Monitor. Monitor can be connected to DataPorter that is installed on the local PC or on another PC on the network. To connect DataPorter, enter the PC name or IP address (Host) and the port number on which DataPorter is listening. By default, the Host is localhost and the port is 7999. In the picture above there is an example that shows the monitor connected to DataPorter installed on another PC (not locally) and the name of this PC (the Host) is cas_xptest_002. The button Connect/Disconnect enables you to establish the connection or disconnect from DataPorter. The “Connected to:” subpanel displays information about current connection (protocol, host, port, application name and application version); there is also a button “Shutdown req.” that is used to send a request to shutdown the DataPorter Engine (this is a method of DataPorter shutting down alternative  to stopping the DataPorter service).
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

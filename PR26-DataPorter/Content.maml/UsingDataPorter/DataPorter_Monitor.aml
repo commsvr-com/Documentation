@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="5b3e730c-02f2-47de-b836-afbd3c53ac23" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para></para>
+    </introduction>
+    <section address="Section1">
+      <content>
+        <para>
+          DataPorter Monitor is a tool (available from version 1.30) that can be used to control the local or remote DataPorter instances (data connection controller can be used to control the state of the connection). The application GUI informs the user about the DataPorter and connection state.
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="DataPorter_Monitor.JPG" />
+        </mediaLink>
+        <alert>
+          <para>
+            By default, after launching the Monitor, it tries to connect to the DataPorter Service. If the service is not running (it is stopped) the connection cannot be established and an information message is displayed (this is not an error or the indication that something is wrong, but it is just an information that the local DataPorter service is not running).
+          </para>
+          <para>
+            By default, the Monitor starts minimized; double click on the DataPorter Monitor Tray icon displays the Monitor window.
+          </para>         
+        </alert>
+        <para>
+          To make diagnostics easier, information are grouped logically. Each set of information is shown on a tab. Below there is a list of available tabs:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Configured servers
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Configured Subscriptions
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Configured Items (e.g. you can find values of items read by DataPorter)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Configured Transaction
+            </para>
+          </listItem>
+        </list>
+        <para>
+          It is recommended to read also the following related topics:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="011a5d28-2395-4dea-9d9c-71bb7b141ead"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="e7a0eb27-ca29-424e-88db-652c5670b82f"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="5a8897db-1916-49c7-a797-d2e4ca301b9c"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="ed3586ba-f503-4196-ab9b-c9704a62345f"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="f3f78005-8f41-44be-a0d3-719472e15edf"/>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
