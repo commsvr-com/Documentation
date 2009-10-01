@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="011a5d28-2395-4dea-9d9c-71bb7b141ead" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para></para>
+    </introduction>
+    <section>
+      <content>
+        <mediaLink>
+          <image placement="center" xlink:href="DataPorter_LocalServiceController.JPG" />
+        </mediaLink>
+        <para>
+          This tool strip that is available in DataPorter Monitor and OPC Viewer (DataPorter configuration) allows you to control the DataPorter local service. It allows for start, stop and restart of the local DataPorter (on the same PC as an application with that tool strip). This tool strip displays also the status of the local DataPorter service.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

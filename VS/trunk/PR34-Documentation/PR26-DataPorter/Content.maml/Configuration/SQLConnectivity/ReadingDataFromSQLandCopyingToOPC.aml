@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="169261d2-f2b0-43f0-908a-bf6d23099aa1" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        DataPorter allows also to read data from SQL database and write those data to OPC.
+      </para>
+      <mediaLink>
+        <image placement="center" xlink:href="FromSQLtoOPC.jpg" />
+      </mediaLink>
+    </introduction>
+    <section>
+      <content>
+        <para>
+          The simplest way to achieve this is to add a new transaction to the configuration, that contains two operation blocks: DB Read (Periodic DataBase read) and Write Item, see example in the figure below:
+        </para>
+        <mediaLink>
+          <image placement="center" xlink:href="Transaction_DB2OPC.jpg" />
+        </mediaLink>
+        <para>
+          The Write Item operation indicates the OPC item in which data from the database shall be stored. The DB Read operation must be configured to connect to the desired database and perform an appropriate select query.
+        </para>
+        <para>
+          The configuration of the “DB read” operation is very similar to “DB save”, so it is recommend that the following articles are read to learn how the database operations work in DataPorter:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="9f3954b0-cc3e-46d1-a3e6-59649db7e738"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="42ac5182-238c-41a2-81a7-f66a77089b02"/>
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Lets take a look at the default configuration of “DB read”. This operation is preconfigured to use an example DataBase (installed by default with the DataPorter); the table has the structure crated by the following command:
+        </para>
+        <code language="scr">
+          <![CDATA[
+CREATE TABLE OPCDataTable
+(
+   	[timestamp] [datetime] NOT NULL,
+   	[name] [nchar](255) NOT NULL,
+	  [opcvalue] [float] NULL,
+	  [opcquality] [nchar](20) NULL
+)
+          ]]>
+        </code>
+        <para>
+          In this example we want to read always the newest value stored in this database table , so we want to execute the following query:
+        </para>
+        <code language="scr">
+          <![CDATA[
+SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc
+          ]]>
+        </code>
+        <para>
+          Note that currently only one value can be processed and read from one query. To read many elements from the database, many queries must be executed, but all of those queries can be a part of one operation in DataPorter and the operation will have many outputs.
+        </para>
+        <para>
+          It this example, the “DB read” operation may contain an XML configuration similar to the following:
+        </para>
+        <code language="xml">
+          <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<Param>
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteScalar" async="false">
+    <command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
+  </operationdb>
+  <operationopc name="opc" type="write">
+    <output name="0"></output>
+    <!--value of accumulator is written to output 0 -->
+  </operationopc>
+</Param>
+          ]]>
+        </code>
+        <para>
+          This sample script contains:
+        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              Database connection configuration (inside the operationdb element). In this example the default (installed with DataPorter) database file is used (more about database connection configuration can be found in article: [Storing From Opc Into Sql (Advanced Configuration)]. Note that a special type of operationdb is used: type=”ExecuteScalar”, which means that the query is executed in a special mode where only the first line of the response is processed. (DataPorter executes the query, and returns the first column of the first row from the result set returned by the query. Additional columns or rows are ignored.) It is also necessary to use the async="false" option of the operationdb element, which means that DataPorter waits inside this operation till the result of the query is available.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Selection query inside the command element, that contains the query presented above. The result of the query is stored inside an accumulator.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Writing the result of query (stored temporarily inside the accumulator) to the OPC item connected to the first (no. 0) output.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

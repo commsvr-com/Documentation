@@ -46,8 +46,10 @@
     <None Include="Configuration\ConfigurationFiles.aml" />
     <None Include="Configuration\DataPorter_Service.aml" />
     <None Include="Configuration\SQLConectivity.aml" />
+    <None Include="Configuration\SQLConnectivity\AdvancedDataBaseOperationBlock.aml" />
     <None Include="Configuration\SQLConnectivity\ExampleAdvancedDatabaseConfiguration.aml" />
     <None Include="Configuration\SQLConnectivity\ExampleSimpleDatabaseConfiguration.aml" />
+    <None Include="Configuration\SQLConnectivity\ReadingDataFromSQLandCopyingToOPC.aml" />
     <None Include="Configuration\TransactionAndOperations.aml" />
     <None Include="Configuration\TransactionAndOperation\ListOfAvailableOperations.aml" />
     <None Include="Configuration\TransactionAndOperation\TransactionAndOperationConfiguration.aml" />
@@ -74,7 +76,11 @@
     <None Include="GettingStarted\ExampleConfiguration\ExampleTransactions.aml" />
     <None Include="GettingStarted\InstallingDataPorter.aml" />
     <None Include="GettingStarted\TestingDataPorterFunctionality.aml" />
+    <None Include="StartingStoppingandCheckingTheDataPorterStatus.aml" />
     <None Include="UsingDataPorter.aml" />
+    <None Include="UsingDataPorter\DataPorterMonitor\DataPorterLocalServiceController.aml" />
+    <None Include="UsingDataPorter\DataPorterMonitor\DataPorterMonitorConnectionControllerPanel.aml" />
+    <None Include="UsingDataPorter\DataPorter_Monitor.aml" />
     <None Include="UsingDataPorter\GroupsTab.aml" />
     <None Include="UsingDataPorter\IconsAndStates.aml" />
     <None Include="UsingDataPorter\ItemsTab.aml" />
