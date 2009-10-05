@@ -655,13 +655,101 @@
               <legacyBold>Operation parameter</legacyBold>
             </para>
             <para>
-              Read topic: [SQLConectivity] to find more information about it.
+              Read topic <link xlink:href="26dd91e2-db6e-4a3a-ac32-a7f14422e466"/> to find more information about it.
             </para>
             <para>
               <legacyBold>Number of inputs</legacyBold>
             </para>
             <para>
               The number of inputs selected from the drop-down list.
+            </para>
+            <para>
+              <legacyBold>Number of outputs</legacyBold>
+            </para>
+            <para>
+              The number of outputs selected from the drop-down list.
+            </para>
+            <para>
+              <legacyBold>Name</legacyBold>
+            </para>
+            <para>
+              Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+            </para>
+            <para>
+              <legacyBold>Comment</legacyBold>
+            </para>
+            <para>
+              This is an optional comment  about this operation.
+            </para>
+          </content>
+        </section>
+        <section address="DBread">
+          <title>DB read</title>
+          <content>
+            <para>
+              This operation reads data from a database of your choice.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="DBRead.JPG" />
+            </mediaLink>
+            <para>
+              <legacyBold>Operation parameter</legacyBold>
+            </para>
+            <para>
+              Read topic <link xlink:href="26dd91e2-db6e-4a3a-ac32-a7f14422e466"/> to find more information about it.
+            </para>
+            <para>
+              <legacyBold>Number of inputs</legacyBold>
+            </para>
+            <para>
+              The number of inputs selected from the drop-down list.
+            </para>
+            <para>
+              <legacyBold>Number of outputs</legacyBold>
+            </para>
+            <para>
+              The number of outputs selected from the drop-down list.
+            </para>
+            <para>
+              <legacyBold>Name</legacyBold>
+            </para>
+            <para>
+              Name that identifies this operation. It doesn't matter (for DataPorter engine) what name is chosen, but it should be unique to other operation names and give information about purpose of this operation. This name is displayed in “Session tree view” and DataPorter statistics.
+            </para>
+            <para>
+              <legacyBold>Comment</legacyBold>
+            </para>
+            <para>
+              This is an optional comment  about this operation.
+            </para>
+          </content>
+        </section>
+        <section address="AdvancedDatabaseOperation">
+          <title>Advanced Database Operation</title>
+          <content>
+            <para>
+              This operation allows to transfer data between OPC and database. It has build-in conditional engine and XML script interpreter. Configuration is stored inside operation parameter as XML data. XML describes what should be done in this operation.
+            </para>
+            <mediaLink>
+              <image placement="center" xlink:href="DBAdv.JPG" />
+            </mediaLink>
+            <para>
+              <legacyBold>Operation parameter</legacyBold>
+            </para>
+            <para>
+              Read topic <link xlink:href="26dd91e2-db6e-4a3a-ac32-a7f14422e466"/> to find more information about it.
+            </para>
+            <para>
+              <legacyBold>Number of inputs</legacyBold>
+            </para>
+            <para>
+              The number of inputs selected from the drop-down list.
+            </para>
+            <para>
+              <legacyBold>Number of outputs</legacyBold>
+            </para>
+            <para>
+              The number of outputs selected from the drop-down list.
             </para>
             <para>
               <legacyBold>Name</legacyBold>
