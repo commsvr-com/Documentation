@@ -649,6 +649,34 @@
       <HelpKeyword index="K" term="MainWindow" />
       <HelpKeyword index="K" term="Stopping the DataPorter" />
     </HelpKeywords>
+    <Topic id="5b3e730c-02f2-47de-b836-afbd3c53ac23" visible="True" title="DataPorter Monitor " tocTitle="DataPorter Monitor " linkText="DataPorter Monitor ">
+      <Topic id="011a5d28-2395-4dea-9d9c-71bb7b141ead" visible="True" title="DataPorter local service controller " tocTitle="DataPorter local service controller " linkText="DataPorter local service controller " />
+      <Topic id="e7a0eb27-ca29-424e-88db-652c5670b82f" visible="True" title="DataPorter Monitor connection controller panel" tocTitle="DataPorter Monitor connection controller panel" linkText="DataPorter Monitor connection controller panel" />
+    </Topic>
+    <Topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" visible="True" title="Icons and States" tocTitle="Icons and States" linkText="Icons and States" />
+    <Topic id="5a8897db-1916-49c7-a797-d2e4ca301b9c" visible="True" title="Tray Icon" tocTitle="Tray Icon" linkText="Tray Icon">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, Tray Icon" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="ed3586ba-f503-4196-ab9b-c9704a62345f" visible="True" title="Reporting" tocTitle="Reporting" linkText="Reporting">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Reporting" />
+        <HelpKeyword index="K" term="Using DataPorter, Reporting" />
+      </HelpKeywords>
+      <Topic id="7aad350a-9f79-4028-92ff-789350c200a7" visible="True" title="Sample Report" tocTitle="Sample Report" linkText="Sample Report">
+        <HelpKeywords>
+          <HelpKeyword index="K" term="Using DataPorter, Sample Report" />
+          <HelpKeyword index="K" term="Reporting, Sample Report" />
+        </HelpKeywords>
+      </Topic>
+    </Topic>
+    <Topic id="f3f78005-8f41-44be-a0d3-719472e15edf" visible="True" title="License Installation" tocTitle="License Installation" linkText="License Installation">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="Using DataPorter, License Installation" />
+        <HelpKeyword index="K" term="License, Installation" />
+      </HelpKeywords>
+    </Topic>
     <Topic id="24cb0bb9-21b7-4f84-a319-7d0dfa259224" visible="True" title="OPC Client tab" tocTitle="OPC Client tab" linkText="OPC Client tab">
       <HelpKeywords>
         <HelpKeyword index="K" term="Using DataPorter, OPC Client tab" />
@@ -742,34 +770,6 @@
         <HelpKeyword index="K" term="Transaction scanning rate" />
         <HelpKeyword index="K" term="Deadband" />
         <HelpKeyword index="K" term="Min update rate" />
-      </HelpKeywords>
-    </Topic>
-    <Topic id="5a8897db-1916-49c7-a797-d2e4ca301b9c" visible="True" title="Tray Icon" tocTitle="Tray Icon" linkText="Tray Icon">
-      <HelpKeywords>
-        <HelpKeyword index="K" term="Using DataPorter, Tray Icon" />
-      </HelpKeywords>
-    </Topic>
-    <Topic id="5b3e730c-02f2-47de-b836-afbd3c53ac23" visible="True" title="DataPorter Monitor " tocTitle="DataPorter Monitor " linkText="DataPorter Monitor ">
-      <Topic id="011a5d28-2395-4dea-9d9c-71bb7b141ead" visible="True" title="DataPorter local service controller " tocTitle="DataPorter local service controller " linkText="DataPorter local service controller " />
-      <Topic id="e7a0eb27-ca29-424e-88db-652c5670b82f" visible="True" title="DataPorter Monitor connection controller panel" tocTitle="DataPorter Monitor connection controller panel" linkText="DataPorter Monitor connection controller panel" />
-    </Topic>
-    <Topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" visible="True" title="Icons and States" tocTitle="Icons and States" linkText="Icons and States" />
-    <Topic id="ed3586ba-f503-4196-ab9b-c9704a62345f" visible="True" title="Reporting" tocTitle="Reporting" linkText="Reporting">
-      <HelpKeywords>
-        <HelpKeyword index="K" term="Reporting" />
-        <HelpKeyword index="K" term="Using DataPorter, Reporting" />
-      </HelpKeywords>
-      <Topic id="7aad350a-9f79-4028-92ff-789350c200a7" visible="True" title="Sample Report" tocTitle="Sample Report" linkText="Sample Report">
-        <HelpKeywords>
-          <HelpKeyword index="K" term="Using DataPorter, Sample Report" />
-          <HelpKeyword index="K" term="Reporting, Sample Report" />
-        </HelpKeywords>
-      </Topic>
-    </Topic>
-    <Topic id="f3f78005-8f41-44be-a0d3-719472e15edf" visible="True" title="License Installation" tocTitle="License Installation" linkText="License Installation">
-      <HelpKeywords>
-        <HelpKeyword index="K" term="Using DataPorter, License Installation" />
-        <HelpKeyword index="K" term="License, Installation" />
       </HelpKeywords>
     </Topic>
   </Topic>

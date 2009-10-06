@@ -2,7 +2,8 @@
 <topic id="a5b37bb1-ca47-4770-900e-85b8da61cfe6" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <para>This chapter describes the DataPorter configuration.
+      <para>
+        This chapter describes the DataPorter configuration.
       </para>
       <para>
         The following topics are covered in this chapter:
@@ -10,31 +11,36 @@
       <list class="bullet">
         <listItem>
           <para>
-            DataPorter configuration files, topic [ConfigurationFiles]
+            <link xlink:href="cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            OPC client configuration, topic: [OPCConfiguration]
+            <link xlink:href="f865bba4-1656-4559-bc89-dd474f5c8b60"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            Transaction and operation concept, topic: [TransactionAndOperations]
+            <link xlink:href="9ecbc065-4153-4193-86d0-5d264120a69a"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            SQL Connectivity, topic: [SQLConectivity]
+            <link xlink:href="9d3af1dd-79cf-4f15-af3d-921d9ebeffc0"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            Web services DataPorter extension (OPC2SOAP), topic [WebServiceConectivity]
+            <link xlink:href="26dd91e2-db6e-4a3a-ac32-a7f14422e466"/>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="de6ca2b7-82fe-4941-b899-e46d90a2eb27"/>
           </para>
         </listItem>
       </list>
-    </introduction>   
+    </introduction>
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>

@@ -18,47 +18,47 @@
       <list class="bullet">
         <listItem>
           <para>
-            OPC Viewer getting started
+            <link xlink:href="1f94da82-7fee-46c6-9832-6e643a0caa59"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            Processing environment in OPC Viewer
+            <link xlink:href="470275f3-3420-43f8-bdd4-de1c00c66593"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            DataPorter example configuration
+            <link xlink:href="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            Connecting OPC server using OPC Viewer
+            <link xlink:href="662c67b6-580d-4f55-b8f6-20a4fdce79b7"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            Creating online subscription
+            <link xlink:href="cd9b99cf-299d-47b0-a8a6-348d38f83e25"/>
           </para>
         </listItem>
+        <!--<listItem>
+          <para>
+            <link xlink:href="b91f20e8-d116-4706-86f4-5ebe9586774a"/>
+          </para>
+        </listItem>-->
         <listItem>
           <para>
-            Creating offline subscription
+            <link xlink:href ="e8cbd036-5a13-4a3c-b6f1-637561d043fc"/>
           </para>
         </listItem>
-        <listItem>
+        <!--<listItem>
           <para>
-            Read data from OPC server
+            <link xlink:href ="420d5fc2-c2b0-42e4-b944-d0b72e3fa4b2"/>
           </para>
-        </listItem>
+        </listItem>-->
         <listItem>
           <para>
-            Write data to OPC server
-          </para>
-        </listItem>
-        <listItem>
-          <para>
-            Testing DataPorter functionality
+            <link xlink:href="f594fda1-1d52-400f-8d21-e0919913f840"/>
           </para>
         </listItem>
       </list>

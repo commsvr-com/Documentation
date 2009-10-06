@@ -23,12 +23,17 @@
       <list class="bullet">
         <listItem>
           <para>
-            System Event Log
+            <link xlink:href="41a3c9ec-191c-4c9c-990a-e953f18a49d3"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            Tracing
+            <link xlink:href="b2b37f09-e751-4aa0-afa6-dc716e759773"/>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="616bf5f0-90f5-48c3-a115-6773b8d4f1aa"/>
           </para>
         </listItem>
       </list>

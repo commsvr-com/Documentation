@@ -386,13 +386,13 @@
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Content Include="YouTube.html" />
-    <Image Include="PR26-DataPorter\Graphics\DBRead.JPG">
-      <AlternateText>DBRead.JPG</AlternateText>
-      <ImageId>DBRead.JPG</ImageId>
-    </Image>
-    <Image Include="PR26-DataPorter\Graphics\DBAdv.JPG">
+    <Image Include="PR26-DataPorter\Graphics\operations\DBAdv.JPG">
       <AlternateText>DBAdv.JPG</AlternateText>
       <ImageId>DBAdv.JPG</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\operations\DBRead.JPG">
+      <AlternateText>DBRead.JPG</AlternateText>
+      <ImageId>DBRead.JPG</ImageId>
     </Image>
     <Image Include="PR26-DataPorter\Graphics\Transaction_AdbancedDB_oper.jpg">
       <AlternateText>Transaction_AdbancedDB_oper.jpg</AlternateText>
