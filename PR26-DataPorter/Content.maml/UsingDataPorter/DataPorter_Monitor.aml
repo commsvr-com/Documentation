@@ -18,7 +18,7 @@
           </para>
           <para>
             By default, the Monitor starts minimized; double click on the DataPorter Monitor Tray icon displays the Monitor window.
-          </para>         
+          </para>
         </alert>
         <para>
           To make diagnostics easier, information are grouped logically. Each set of information is shown on a tab. Below there is a list of available tabs:
@@ -26,22 +26,22 @@
         <list class ="bullet">
           <listItem>
             <para>
-              Configured servers
+              Configured servers - <link xlink:href="24cb0bb9-21b7-4f84-a319-7d0dfa259224"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              Configured Subscriptions
+              Configured Subscriptions - <link xlink:href ="1ab52757-7130-402b-85b4-af4b468567d0"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              Configured Items (e.g. you can find values of items read by DataPorter)
+              Configured Items (e.g. you can find values of items that DataPorter reads)- <link xlink:href ="5da055b4-bc8b-45b1-a34d-62b9a099eb55"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              Configured Transaction
+              Configured transitions and operations - <link xlink:href="08319621-9f18-4e3a-966c-daff610ba00e"/>
             </para>
           </listItem>
         </list>

@@ -7,17 +7,28 @@
       </para>
     </introduction>
     <section address="Starting_DataPorter">
-      <title>Starting the DataPorter</title>
+      <title>Starting and Stoping the DataPorter</title>
       <content>
         <para>
-          To start DataPorter select:
+          To find detailed information read the following topics:
         </para>
-        <para>
-          Start Menu -> All Programs -> CAS -> DataPorter -> DataPorter
-        </para>
-        <para>
-          DataPorter reads the configuration file automatically (default location is: "c:\Program Files\CAS\CAS.DataPorter\OpcClient_config.XML") and connects to the configured OPC Server.
-        </para>
+        <list class ="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="f865bba4-1656-4559-bc89-dd474f5c8b60"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="5b3e730c-02f2-47de-b836-afbd3c53ac23"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="69b44a32-2a87-4094-bfde-ed54175ec272"/>
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
     <section address="DataPorter_GUI">
@@ -34,22 +45,22 @@
         <list class ="bullet">
           <listItem>
             <para>
-              Configured servers
+              Configured servers - <link xlink:href="24cb0bb9-21b7-4f84-a319-7d0dfa259224"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              Configured Subscriptions
+              Configured Subscriptions - <link xlink:href ="1ab52757-7130-402b-85b4-af4b468567d0"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              Configured Items (e.g. you can find values of items that DataPorter reads)
+              Configured Items (e.g. you can find values of items that DataPorter reads)- <link xlink:href ="5da055b4-bc8b-45b1-a34d-62b9a099eb55"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              Configured transitions and operations
+              Configured transitions and operations - <link xlink:href="08319621-9f18-4e3a-966c-daff610ba00e"/>
             </para>
           </listItem>
         </list>
@@ -59,30 +70,25 @@
         <list class="bullet">
           <listItem>
             <para>
-              [TrayIcon]
+              <link xlink:href="5a8897db-1916-49c7-a797-d2e4ca301b9c"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              [Reporting]
+              <link xlink:href="5b3e730c-02f2-47de-b836-afbd3c53ac23"/>
             </para>
           </listItem>
           <listItem>
             <para>
-              [LicenseInstallation]
+              <link xlink:href ="ed3586ba-f503-4196-ab9b-c9704a62345f"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="f3f78005-8f41-44be-a0d3-719472e15edf"/>
             </para>
           </listItem>
         </list>
-      </content>
-    </section>
-    <section address="Stopping_DataPorter">
-      <title>
-        Stopping the DataPorter
-      </title>
-      <content>
-        <para>
-          To stop DataPorter select the close button on the main window and answer “yes” when question: “Do you want to close the application?” appears.
-        </para>
       </content>
     </section>
     <relatedTopics>

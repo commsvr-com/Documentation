@@ -8,27 +8,27 @@
       <list class="bullet">
         <listItem>
           <para>
-            [EnablingTracing]
+            <link xlink:href="410af3c3-9dde-48af-b625-e10236b40ed8"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            [TracingSwitches]
+            <link xlink:href="d949081b-3f82-4089-89e8-9aedca21c7b0"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            [TracingSwitches]
+            <link xlink:href="d518dabe-e485-4897-8a9f-db0a7a646e74"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            [TracingListeners]
+            <link xlink:href="a3d27a7a-1695-44da-9bf5-9fc24acedabf"/>
           </para>
         </listItem>
         <listItem>
           <para>
-            [TracingFilters]
+            <link xlink:href="a4bf4faf-744d-4089-9ecc-e9f5b0250a6a"/>
           </para>
         </listItem>
       </list>
