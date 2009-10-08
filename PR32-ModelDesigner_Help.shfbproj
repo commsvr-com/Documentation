@@ -1003,6 +1003,10 @@
       <AlternateText>How to open sample configuration</AlternateText>
     </Image>
     <Content Include="YouTube.html" />
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
+      <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
+      <ImageId>ASMD_ProcessBindingsForCommServer.jpg</ImageId>
+    </Image>
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_references.jpg">
       <AlternateText>ASMD References</AlternateText>
       <ImageId>ASMD_references</ImageId>
