@@ -159,7 +159,7 @@
           <image placement="center" xlink:href="UAModelDesigner_samplesolution_and_processBindings_boilers" />
         </mediaLink>
         <procedure>
-          <title>To Set Model Node to Bind to the Process Data</title>
+          <title>To Set Model Node to Bind to the Process Data (for OPC Client)</title>
           <steps class="ordered">
             <step>
               <content>
@@ -232,6 +232,81 @@
         </procedure>
         <mediaLink>
           <image placement="center" xlink:href="ASMD-sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output-composition" />
+        </mediaLink>
+        <procedure>
+          <title>To Set Model Node to Bind to the Process Data (for CommServer)</title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  Browse to the <userInput>Boilers | Boiler1 | InputPipe | FlowTransmitter1 | Output</userInput> variable (see pt 1 on the figure below).
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Select <userInput>Output: process bindings | Edit ….</userInput> on the <userInput>UA Server</userInput> menu (see pt 2 on the figure below). The dialog provided by the selected configuration editor plug-in is then displayed.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Dialog provided by the <token>UACommServer</token> configuration editor displays two properties groups:
+                </para>
+                <list class="bullet">
+                  <listItem>
+                    <para>
+                      <userInput>Model</userInput>
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <userInput>Redundant Data Sources</userInput>
+                    </para>
+                  </listItem>
+                </list>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Properties from the <userInput>Model</userInput> group are read only and present description of the node.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  To define new and edit process data-sources click <userInput>(…)</userInput> button (see pt 3 on the figure below) on the right side of the <userInput>(DataSources)</userInput> property located in the <userInput>Redundant Data Sources</userInput> group. The dialog <userInput>DataSourceConfiguration Collection Editor</userInput> is then displayed.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>Use this dialog to create new and edit existing data-bindings.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Use <userInput>Name</userInput> property to define selected data-binding identifier.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  To modify the data-source select <userInput>Source</userInput> property and use drop down list containing available for the server data-sources from which select appropriate one. Changing the data-source may cause displaing additional dialog, for example <userInput>CommServer tag selection dialog</userInput> for <userInput>CommServer</userInput> data-source. The tag can be selected from the tree  (see pt 4 on the figure below).
+                </para>
+              </content>
+            </step>
+          </steps>
+          <!-- <conclusion>Optional conclusion</conclusion> -->
+        </procedure>
+        <mediaLink>
+          <image placement="center" xlink:href="ASMD_ProcessBindingsForCommServer.jpg" />
         </mediaLink>
       </content>
     </section>
