@@ -88,6 +88,7 @@
     <None Include="UsingDataPorter\OPCClientTab.aml" />
     <None Include="UsingDataPorter\Reporting.aml" />
     <None Include="UsingDataPorter\Reporting\SampleReport.aml" />
+    <None Include="UsingDataPorter\StartingStoppingandCheckingTheDataPorterStatus.aml" />
     <None Include="UsingDataPorter\TransitionsTab.aml" />
     <None Include="UsingDataPorter\TrayIcon.aml" />
     <None Include="Welcome.aml" />

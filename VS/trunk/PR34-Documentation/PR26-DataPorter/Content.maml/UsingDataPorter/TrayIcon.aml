@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
       <para>
-        DataPorter has its own tray icon on the system tray. You can hide / unhide or close the application window and the tray icon provides access to the application any time it is necessary.
+        DataPorter Monitor has its own tray icon on the system tray. You can hide / unhide or close the application window and the tray icon provides access to the application any time it is necessary.
       </para>
       <para>
         Double click on the icon allows us to unhide the application window, right click displays menu that allows to hide/unhide the window and exit the application.
