@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b42a5ab7-d614-405e-8d96-b856949f9c43" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      </para>
+    </introduction>
+    <section address="License">
+      <title>
+      License
+      </title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>
+              Download License Agreement.
+            </linkText>
+            <linkAlternateText>
+              License Agreement for CommServer™ software family Computer Program.
+            </linkAlternateText>
+            <linkUri>
+              http://www.commsvr.com/DownloadCenter/ProductSoftware/LicenseAgreement.aspx
+            </linkUri>
+          </externalLink>
+        </para>
+        <para>
+          <externalLink>
+            <linkText>
+              More information about licensing.
+            </linkText>
+            <linkAlternateText>
+              More information about licensing.
+            </linkAlternateText>
+            <linkUri>
+              http://www.commsvr.com/Products/Licenses.aspx
+            </linkUri>
+          </externalLink>
+        </para>
+        <para>
+          <externalLink>
+            <linkText>
+              Procedure of license acquisition.
+            </linkText>
+            <linkAlternateText>
+              Procedure of license acquisition of the CommServer software family.
+            </linkAlternateText>
+            <linkUri>
+              http://www.commsvr.com/Products/Licenses/Licenseacquisition.aspx
+            </linkUri>
+          </externalLink>
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

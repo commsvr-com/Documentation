@@ -655,7 +655,7 @@
       <HelpKeyword index="K" term="MainWindow" />
       <HelpKeyword index="K" term="Stopping the DataPorter" />
     </HelpKeywords>
-    <Topic id="53D6DF1A-9BF4-452d-B60C-05F07B138760" visible="True" title="Starting, stopping and checking the DataPorter status  " tocTitle="Starting, stopping and checking the DataPorter status  " linkText="Starting, stopping and checking the DataPorter status  " >
+    <Topic id="53D6DF1A-9BF4-452d-B60C-05F07B138760" visible="True" title="Starting, stopping and checking the DataPorter status  " tocTitle="Starting, stopping and checking the DataPorter status  " linkText="Starting, stopping and checking the DataPorter status  ">
       <HelpKeywords>
         <HelpKeyword index="K" term="Using DataPorter, Starting" />
         <HelpKeyword index="K" term="Using DataPorter, Stopping" />
@@ -663,19 +663,18 @@
       </HelpKeywords>
     </Topic>
     <Topic id="5b3e730c-02f2-47de-b836-afbd3c53ac23" visible="True" title="DataPorter Monitor " tocTitle="DataPorter Monitor " linkText="DataPorter Monitor ">
-      <Topic id="011a5d28-2395-4dea-9d9c-71bb7b141ead" visible="True" title="DataPorter local service controller " tocTitle="Local service controller " linkText="DataPorter local service controller " >
+      <Topic id="011a5d28-2395-4dea-9d9c-71bb7b141ead" visible="True" title="DataPorter local service controller " tocTitle="Local service controller " linkText="DataPorter local service controller ">
         <HelpKeywords>
           <HelpKeyword index="K" term="DataPorter Monitor, Service controller" />
         </HelpKeywords>
       </Topic>
-      
-      <Topic id="e7a0eb27-ca29-424e-88db-652c5670b82f" visible="True" title="Connection controller panel" tocTitle="Connection controller panel" linkText="DataPorter Monitor connection controller panel"  >
+      <Topic id="e7a0eb27-ca29-424e-88db-652c5670b82f" visible="True" title="Connection controller panel" tocTitle="Connection controller panel" linkText="DataPorter Monitor connection controller panel">
         <HelpKeywords>
           <HelpKeyword index="K" term="DataPorter Monitor, Connection controller panel" />
         </HelpKeywords>
       </Topic>
     </Topic>
-    <Topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" visible="True" title="Icons and States" tocTitle="Icons and States" linkText="Icons and States"  >
+    <Topic id="199bb2bf-7931-4f08-ae71-43d728990f2f" visible="True" title="Icons and States" tocTitle="Icons and States" linkText="Icons and States">
       <HelpKeywords>
         <HelpKeyword index="K" term="DataPorter Monitor, Icons" />
         <HelpKeyword index="K" term="DataPorter Monitor, States" />
@@ -888,6 +887,7 @@
       <HelpKeyword index="K" term="Support" />
     </HelpKeywords>
   </Topic>
+  <Topic id="b42a5ab7-d614-405e-8d96-b856949f9c43" visible="True" title="License" tocTitle="License" linkText="License" />
   <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary">
     <HelpKeywords>
       <HelpKeyword index="K" term="Glossary" />

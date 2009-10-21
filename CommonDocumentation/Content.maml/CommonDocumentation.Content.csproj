@@ -42,6 +42,7 @@
     <None Include="Contacts.aml" />
     <None Include="Glossary.aml" />
     <None Include="GlossaryDataPorter.aml" />
+    <None Include="License.aml" />
     <None Include="OPCOverview.aml" />
   </ItemGroup>
   <ItemGroup>
