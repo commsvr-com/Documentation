@@ -91,6 +91,7 @@
     <None Include="UsingDataPorter\StartingStoppingandCheckingTheDataPorterStatus.aml" />
     <None Include="UsingDataPorter\TransitionsTab.aml" />
     <None Include="UsingDataPorter\TrayIcon.aml" />
+    <None Include="VersionHistory.aml" />
     <None Include="Welcome.aml" />
     <None Include="Welcome\DataPorterProfessional.aml" />
     <None Include="Welcome\DataPorterStandard.aml" />
