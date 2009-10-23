@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="bc19c589-8632-46c0-9dee-8a4dd27c6fac" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        The topics in this section describe the various changes made to the DataPorter over the life of the project.
+      </para>
+      <alert>
+        <para>
+          Download latest version of <externalLink>
+            <linkText>DataPorter</linkText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx</linkUri>
+          </externalLink>
+        </para>
+      </alert>
+      <autoOutline />
+    </introduction>
+    <section address="rel_1_30_00">
+      <title>Version 1.30.00</title>
+      <content>
+        <para>
+          Wednesday, August 12, 2009
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              DataPorter has now the ability to run as Windows service. Nobody has to be logged in to run DataPorter. DataPorter as ordinary service can be configured to start automatically, run on a particular account, no interaction with a desktop is required
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              New DataPorter monitor is available. This new tool allows displaying the statistics from the DataPorter engine (from a local or remote PC):
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  The user interface in comparison to the previous DataPorter window is improved
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  New icons are used
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  New Toolstrip to control (start, stop restart) the local DataPorter service is added
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  New statistics information
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Transaction statistics allows for an easier analysis and are more informative
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              Software is linked to new online DataPorter documentation.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              New operation blocks are available: "DB Read" and "DB +". Those new blocks allow reading outputs from database operations. Those new blocks are preconfigured to proceed example activity
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              DataPorter configuration application (OPC Viewer) has a new toolstrip to control (start, stop restart) the local DataPorter service)
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_21_01">
+      <title>Version 1.21.01</title>
+      <content>
+        <para>
+          Wednesday, January 07, 2009
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Writing values from OPC to database is available in DataPorter demo version now. DataPorter can write data to any database. Built-in drivers allow for the connection to databases like Microsoft SQL, Oracle or any other using ODBC.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              DataPorter installs preconfigured MsSQL database by default. It is very easy to start writing to that database; the only thing that must be done is adding the “DB save” block to transaction in the configuration (no programming, SQL scripting, or connection defining is necessary).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              DataPorter allows writing to OPC from web services (previously, only reading from OPC via web services was available, now you can set the value in OPC using web services).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              There is a new possibility of triggering the transactions. For any transaction a trigger item can be defined. A change of the value of this item executes the transaction. The user can define the change percentage that causes the execution
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_2_0">
+      <title>Version 1.2.0</title>
+      <content>
+        <para>
+          Wednesday, September 03, 2008
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              New graphical user interface fully compatible with OPC Viewer (free OPC client from CommServer Software family). Thanks to new interface, browsing the server (off-line / on-line) and adding OPC items to configuration is straightforward.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Graphical transaction editor that supports creation of transactions as a diagram of operations. Each operation is presented as a simple block that can be easy connected with other operations.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              New transaction engine supports more complex transactions. New way of displaying the transaction as tree diagram simplifies the configuration and makes it more readable.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              New operations - Data Porter supports more mathematical functions; now it is possible to create a transaction that represents almost any mathematical equation.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              New OPC client engine that supports synchronous and asynchronous communication and has more flexible configuration opportunities. It is easier now to optimize the connection.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_1_6 ">
+      <title>Version 1.1.6</title>
+      <content>
+        <para>
+          28.03.2008
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Changed name from OPC Client Transporter to DataPorter.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Information about OPC Foundation components in About box.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Added button Filter at the CreateSubscription dialog.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Added instalation packages for CAS.OPCWSAccess, WS2Remoting and other components compatible with GIS.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Fixed problems with arithmetic operations.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_1_5">
+      <title>1.1.5</title>
+      <content>
+        <para>
+          12.11.2007
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              OPC Client Config: fixed problems with importing CSV tag list.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Fixed problem with displaying information about operation and transaction
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Tested conditional save to database.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_1_3">
+      <title>Version 1.1.3</title>
+      <content>
+        <para>
+          09.06.2007
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Tested with OPC Analyzer.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Fixed problems with timestamp and deadband.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Fixed problem with transactions.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_1_1">
+      <title>Version 1.1.1</title>
+      <content>
+        <para>
+          10.12.2005
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              IntelligentDBSave - multiconditional operation was added.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Selection of OPC DA version was added.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some small improvements and bug fixes
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_1_1_0">
+      <title>Version 1.1.0</title>
+      <content>
+        <para>
+          10.10.2005
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Web Service support was added.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPC Viewer was added - free OPC Client.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Documentation (polish) was added.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
