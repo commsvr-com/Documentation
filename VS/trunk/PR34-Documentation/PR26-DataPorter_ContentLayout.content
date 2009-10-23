@@ -881,6 +881,7 @@
       </HelpKeywords>
     </Topic>
   </Topic>
+  <Topic id="bc19c589-8632-46c0-9dee-8a4dd27c6fac" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
   <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts">
     <HelpKeywords>
       <HelpKeyword index="K" term="Contact" />
