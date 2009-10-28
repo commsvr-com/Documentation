@@ -70,7 +70,7 @@
                  the parent folder of the output path of the HTML files (see
                  SaveComponent). --><outputPath value="Output\" /><!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="Z:\trunk\VS\PR34-Documentation\PR32-ModelDesigner\Graphics\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. --><logoFile filename="\\Hq.cas.com.pl\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
     <DocumentationSources>
       <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.dll" />
       <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.XML" />
@@ -84,7 +84,10 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
+      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
