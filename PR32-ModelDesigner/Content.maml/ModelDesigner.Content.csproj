@@ -49,6 +49,7 @@
     <None Include="AddressSpaceDesigner\Overview.aml" />
     <None Include="AddressSpaceDesigner\UserInterface.aml" />
     <None Include="Alarms.aml" />
+    <None Include="CommServerUA..aml" />
     <None Include="Concept.aml" />
     <None Include="DataAccess.aml" />
     <None Include="Discovery.aml" />

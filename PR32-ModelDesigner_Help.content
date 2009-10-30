@@ -107,7 +107,7 @@
       <Topic id="26dc2eeb-89bf-42ce-817d-e82319ac04b7" visible="True" title="References" tocTitle="General References" />
       <Topic id="EC699025-4E92-4871-A8FB-8D2AAFEB3618" visible="True" title="UA Defined Types" tocTitle="UA Defined Types" linkText="UA Defined Types" />
     </Topic>
-    <Topic id="f3357669-a041-405d-884b-19f5eafcabed" visible="True" title="Address Space Model Designer Tool" tocTitle="Address Space Model Designer">
+    <Topic id="f3357669-a041-405d-884b-19f5eafcabed" visible="True" title="Address Space Model Designer Tool" tocTitle="OPC UA Address Space Model Designer" linkText="{75F272F7-B26B-49b1-8A65-2AC006DA4AB3}">
       <Topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" visible="True" title="Overview" tocTitle="Overview" />
       <Topic id="a2d66e41-32df-404d-99bb-f4e495891493" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
         <Topic id="7e21ba07-c79c-48e0-a034-c4310ee2a5b4" visible="True" title="Sample Solution" tocTitle="Sample Solution">
@@ -150,8 +150,9 @@
           <Topic id="811f5b81-0070-4870-8a98-4277c3ea877d" visible="True" title="Method" tocTitle="Method" />
         </Topic>
       </Topic>
+      <Topic id="139fef33-0f86-4fe8-8620-51905ec6e36b" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
     </Topic>
-    <Topic id="139fef33-0f86-4fe8-8620-51905ec6e36b" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
+    <Topic id="8792522c-01ff-49f8-ba2a-e3df7abf6140" visible="True" title="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server" tocTitle="CommServer UA Server" linkText="{2265025D-B20B-4538-8068-1B9E991B94DB}" />
     <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" />
     <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary" />
     <Topic id="51ab4127-b8e8-4042-9959-39fe8491fa32" visible="True" title="License and disclaimer " tocTitle="License and disclaimer " />

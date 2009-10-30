@@ -3,15 +3,15 @@
   <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <summary>
       <para>
-      Welcome to <token>ASMD</token> - a key to open the <token>OPCUA</token> Address Space world.
-    </para>
+        Welcome to <token>ASMD</token> - a key to open the <token>OPCUA</token> Address Space world.
+      </para>
     </summary>
     <introduction>
       <para>
-      This section contains information about the <token>ASMD</token> that is a user-friendly tool supporting
-      all aspects of the <token>OPCUA</token><token>AS</token> model designing process. Using the <token>ASMD</token>
-      has the following advantages:
-    </para>
+        This section contains information about the <token>ASMD</token> that is a user-friendly tool supporting
+        all aspects of the <token>OPCUA</token><token>AS</token> model designing process. Using the <token>ASMD</token>
+        has the following advantages:
+      </para>
       <list class="bullet">
         <listItem>
           <para>easy addition and deletion of nodes from the model structure</para>
@@ -37,16 +37,16 @@
       <content>
         <para>
           <link xlink:href="b322d93f-41ba-43f4-b17d-e402af6c9cf0" />
-        A general overview of the <token>ASMD</token> functions.
-      </para>
+          A general overview of the <token>ASMD</token> functions.
+        </para>
         <para>
           <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
-        A set of walkthrough topics that introduces you to the experience of using <token>ASMD</token> applications.
-      </para>
+          A set of walkthrough topics that introduces you to the experience of using <token>ASMD</token> applications.
+        </para>
         <para>
           <link xlink:href="a00c7b09-b053-4e7c-a4c9-423068284d27">User Interface</link>
-        An Overview of the <token>ASMD</token> GUI.
-      </para>
+          An Overview of the <token>ASMD</token> GUI.
+        </para>
       </content>
     </inThisSection>
     <relatedSections>
@@ -55,22 +55,25 @@
           <link xlink:href="3774554f-8d12-4d9a-8532-85d704388d9d" />
         </para>
         <para>
-        General concept of the <token>OPCUA</token></para>
+          General concept of the <token>OPCUA</token>
+        </para>
         <para>
           <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />
         </para>
         <para>
-        General concept of the <token>OPCUA</token><token>AS</token></para>
+          General concept of the <token>OPCUA</token><token>AS</token>
+        </para>
         <para>
           <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
         </para>
         <para>
-        General concept of the <token>IM</token></para>
+          General concept of the <token>IM</token>
+        </para>
         <para>
           <externalLink>
             <linkText>
-            Download page of the Address Space Model Designer
-          </linkText>
+              Download page of the Address Space Model Designer
+            </linkText>
             <linkAlternateText>Address Space Model Designer is a user-friendly tool supporting all aspects of the OPC Unified Architecture Address Space model designing process.</linkAlternateText>
             <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkUri>
           </externalLink>
