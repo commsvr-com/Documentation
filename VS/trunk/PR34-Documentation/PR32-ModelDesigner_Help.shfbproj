@@ -115,6 +115,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\" />
     <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\" />
     <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\" />
@@ -687,6 +688,10 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\Configuration.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Installing.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\GettingStarted.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\113378b1-919a-4fd6-891c-1f81f06a8dc3.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA..aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />

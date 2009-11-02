@@ -8,41 +8,104 @@
     </summary>
     <introduction>
       <para>
-        <token>UACommServer</token> is a package of communication software to manage data transfer. 
-        It’s a fully configurable <token>OPCUA</token> server that provides <userInput>a multi-protocol</userInput>, 
-        <userInput>multi-medium</userInput> and <userInput>multi-channel</userInput> redundant access to physical process 
-        control device data. To ensure short response time and effective utilization of the physical device communication 
+        <token>UACommServer</token> is a package of communication software to manage data transfer.
+        It’s a fully configurable <token>OPCUA</token> server that provides a <userInput>multi-protocol</userInput>,
+        <userInput>multi-medium</userInput> and <userInput>multi-channel</userInput> redundant access to physical process
+        control device data. To ensure short response time and effective utilization of the physical device communication
         channels throughput, a unique scan on demand algorithm was implemented. CommServer software provides:
       </para>
       <list class="bullet">
         <listItem>
           <para>Integration of production supervision systems (MES, SCADA) with management systems of operations and supplies in an enterprise (ERP, SAP, CRM).</para>
         </listItem>
-      <listItem>
-        <para>Building of communication basing on a uniform standard.</para>
-      </listItem>
-      <listItem>
-        <para>Optimization of communication infrastructure utilization of visualization and supervision systems, e.g.:</para>
-        <list class="bullet">
-          <listItem>
-            <para>Reduction of GPRS broadcast costs by about 80%</para>
-          </listItem>
-          <listItem>
-            <para>Increase of radio communication systems efficiency by over 600%</para>
-          </listItem>
-        </list>        
-      </listItem>
-      <listItem>
-        <para>Considerably easier (cheaper) extension and connection of next objects.</para>
-      </listItem>
-      <listItem>
-        <para>Increase of functionalities and efficiencies of the existing systems.</para>
-      </listItem>
-      <listItem>
-        <para>Creation of OPC UA servers for non-standard (own) protocols.</para>
-      </listItem>
+        <listItem>
+          <para>Building of communication basing on a uniform standard.</para>
+        </listItem>
+        <listItem>
+          <para>Optimization of communication infrastructure utilization of visualization and supervision systems, e.g.:</para>
+          <list class="bullet">
+            <listItem>
+              <para>Reduction of GPRS broadcast costs by about 80%</para>
+            </listItem>
+            <listItem>
+              <para>Increase of radio communication systems efficiency by over 600%</para>
+            </listItem>
+          </list>
+        </listItem>
+        <listItem>
+          <para>Considerably easier (cheaper) extension and connection of next objects.</para>
+        </listItem>
+        <listItem>
+          <para>Increase of functionalities and efficiencies of the existing systems.</para>
+        </listItem>
+        <listItem>
+          <para>Creation of OPC UA servers for non-standard (own) protocols.</para>
+        </listItem>
       </list>
+      <table >
+        <title>Main Features</title>
+        <row>
+          <entry>
+            <para>
+              Multi-protocols (new protocols can be added by plug-ins)
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              Protocol-independent - ones user has defined the process tags and scanning rules, the protocol
+              can be changed easily without any change of the previous configuration
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              Multi-link and redundancy capabilities (physical devices can be accessed using different protocols,
+              channels, seg-ments and interfaces coupled together in virtual communication pipes)
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              Advanced polling algorithm - scanning on demand – minimizes utilization of the physical data communication chan-nels
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              Diagnostic information is provided by OPC tags and a management console
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              Implementation of a watchdog mechanism that prevents deadlock in case of faulty configuration or malfunction
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              Significant information are logged in Windows Application Log
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              It takes the advantages of the most recent technology -.NET Framework
+            </para>
+          </entry>
+        </row>
+      </table>
+      <para></para>
     </introduction>
+
     <!-- <inThisSection>Optional description of content in this section</inThisSection> -->
     <!-- <reference>Optional reference section</reference> -->
     <!-- <relatedSections>Optional related sections info</relatedSections> -->

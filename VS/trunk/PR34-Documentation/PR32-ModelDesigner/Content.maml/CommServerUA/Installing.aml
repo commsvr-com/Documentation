@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" revisionNumber="1">
+  <developerWalkthroughDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <!-- <autoOutline /> -->
+      <para>
+        This chapter guides you through the process of setting up <token>UACommServer</token>. These instructions, which describe how to install <token>UACommServer</token>, must be followed carefully to ensure a successful and trouble-free installation.
+      </para>
+      <alert>
+        <para>
+          The installation of <token>UACommServer</token> has to be done on Administrator account.
+        </para>
+      </alert>
+    </introduction>
+    <prerequisites>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Microsoft . NET Framework 3.5
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPC Core Components
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Windows 2000/Windows XP/Windows Vista/Windows 7
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </prerequisites>
+    <!-- One or more procedure or section with procedure -->
+    <procedure>
+      <title>
+        To install the application, proceed as follows:
+      </title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>
+              Launch Setup.exe or CommServerUASetup_X_XX_XX.exe (where x_xx_x is <token>UACommServer</token> version number).
+              <token>UACommServer</token> Welcome dialog box <!--(Figure 1)--> appears.
+            </para>
+            <para>
+              Read information and click Next.
+            </para>
+            <!--<mediaLink>
+              <caption placement="after" lead="Figure 1">Setup welcome dialog box</caption>
+              <image placement="center" xlink:href="4191772F-10E8-4e6b-83F7-7C6A2827D675" />
+            </mediaLink>-->
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              User information dialog box (<!--Figure 2)--> appears.
+            </para>
+            <para>
+              Enter User name, Company name and e-mail address in appropriate text boxes and click Next.
+            </para>
+            <!--<mediaLink>
+              <caption placement="after" lead="Figure 2">User information dialog box</caption>
+              <image placement="center" xlink:href="1EE9135B-AC3F-4b05-ADD8-14920C8D02DB" />
+            </mediaLink>-->
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Installation dialog box <!--(Figure 3)--> appears.
+            </para>
+            <para>
+              Default location for application files is specified as:
+            </para>
+            <alert>
+              <para>
+                C:\Program Files\CAS\CommServerUA
+              </para>
+            </alert>
+            <para>
+              You can change it to a different location by clicking Browse button or by writing the path manually in the text box.  Disc Cost button shows the amount of necessary and available space on the target drive. Choose option Everyone to install CommServer for anyone who uses this computer or Just me option to install only for yourself.
+            </para>
+            <!--<mediaLink>
+              <caption placement="after" lead="Figure 3">Installation dialog box</caption>
+              <image placement="center" xlink:href="1D31DCD4-511B-4aa5-B902-DC66C2031922" />
+            </mediaLink>-->
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Confirmation dialog box <!--(Figure 4)--> appears.
+            </para>
+            <para>
+              Click Next to start installation. You may also change any previous information by clicking Back button.
+            </para>
+            <!--<mediaLink>
+              <caption placement="after" lead="Figure 4">Installation dialog box</caption>
+              <image placement="center" xlink:href="E2D34B3E-5560-419c-B043-D52CFF741186" />
+            </mediaLink>-->
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Installation Progress dialog box <!--(Figure 5)--> appears.
+            </para>
+            <para>
+              Installation in progress. Wait until your computer has finished the installation.
+            </para>
+            <!--<mediaLink>
+              <caption placement="after" lead="Figure 5">Installation dialog box</caption>
+              <image placement="center" xlink:href="718CFA02-10C1-41a6-9D0C-00301A75EAC5" />
+            </mediaLink>-->
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Installation Complete dialog box <!--(Figure 6)--> appears.
+            </para>
+            <para>
+              The installation has been successfully completed; click Close button to exit the installation.
+            </para>
+            <!--<mediaLink>
+              <caption placement="after" lead="Figure 6">Installation complete dialog box</caption>
+              <image placement="center" xlink:href="6E35F4A5-4367-4bf7-9793-1F2B3C94302E" />
+            </mediaLink>-->
+            <para>
+              All necessary files have been copied to the target folder on your computer, the software components have been registered and short-cut icons have been created in the Start menu <userInput>Start->Programs->CAS->CommServerUA</userInput>.
+            </para>
+          </content>
+        </step>
+      </steps>
+      <!-- <conclusion>Optional conclusion</conclusion> -->
+    </procedure>
+
+    <relatedTopics>
+      <externalLink>
+        <linkText>CommServerUA product home page</linkText>
+        <linkAlternateText>CommServerUA product home page</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/CommServerUA.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>Download CommServerUA server</linkText>
+        <linkAlternateText>Download CommServerUA server</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkUri>
+      </externalLink>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerWalkthroughDocument>
+</topic>
