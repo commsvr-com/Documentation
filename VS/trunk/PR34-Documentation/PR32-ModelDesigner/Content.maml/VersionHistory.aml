@@ -21,8 +21,63 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="REL_2_10_00">
+      <title>Version 2.10.00</title>
+      <content>
+        <para>
+          Friday, October 30, 2009
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Tested (as a component of CommServer UA) for Compliance and Interoperability at OPC Interoperability Workshop (2009) in Nuremberg, Germany.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              After choosing of the UA Server configuration plugin, the existing configuration file can be chosen
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Value of the DefaultValue property is now editable using a complex XML editor. OPC UA Address Space Model Designer supports now the Range and EUTypes properties
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Added OPC Core Components as prerequisites for installation. If they have not been installed on a user’s computer previously, they are installed with OPC UA Address Space Model Designer
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+             Application settings can now be reset to built-in, default values using the new Reset button in the Options window
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Popular namespaces for OPC UA Types, XML Schema and XML Schema-instance are added to each model file automatically
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Synchronization with OPC Foundation SDK 1.01.305.0
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPC Viewer rel. 3.00.02 is a component of the OPC UA Address Space Model Designer 2.10.00
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Small improvements and bug fixes
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="REL_1.11.10">
-      <title>Version 1.11.00</title>
+      <title>Version 1.11.10</title>
       <content>
         <para>
           Wednesday, September 16, 2009
