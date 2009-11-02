@@ -50,7 +50,10 @@
     <None Include="AddressSpaceDesigner\UserInterface.aml" />
     <None Include="Alarms.aml" />
     <None Include="CommServerUA..aml" />
+    <None Include="CommServerUA\GettingStarted.aml" />
+    <None Include="CommServerUA\Installing.aml" />
     <None Include="Concept.aml" />
+    <None Include="Configuration.aml" />
     <None Include="DataAccess.aml" />
     <None Include="Discovery.aml" />
     <None Include="General References.aml" />
@@ -170,5 +173,8 @@
     <None Include="UserInterface.aml" />
     <None Include="VersionHistory.aml" />
     <None Include="Welcome.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommServerUA\Configuration\" />
   </ItemGroup>
 </Project>
