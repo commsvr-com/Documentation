@@ -1,26 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" revisionNumber="1">
-  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">    
   <summary>
-    <para>Optional summary abstract</para>
-  </summary>
-  
+    <para></para>
+  </summary>  
   <introduction>
-    <para>
-      The following resources related to Sandcastle and XML documentation comments are available:
+    <para>  
     </para>
-  </introduction>-->
+  </introduction>
     <reference>
       <content>
         <para>
-        You can find the latest information on <token>ASMD</token> at the Commserver website
-      </para>
+          You can find the latest information at the Commserver website:
+        </para>
         <para>
           <externalLink>
             <linkText>www.commsvr.com</linkText>
-            <linkAlternateText>OPC UA Address Space Model Designer – powerful toolkit for Address Space in OPC Unified Architecture</linkAlternateText>
-            <linkUri>http://www.commsvr.com/Products/UAModelDesigner.aspx</linkUri>
+            <linkAlternateText>Commserver website</linkAlternateText>
+            <linkUri>http://www.commsvr.com/</linkUri>
           </externalLink>
         </para>
         <para>More about CAS you can find at:</para>
@@ -34,7 +31,7 @@
         <para>You can also email us at the:</para>
         <para>
           <externalLink>
-            <linkText>Feedback module:</linkText>
+            <linkText>Feedback module</linkText>
             <linkAlternateText>Click to sen email</linkAlternateText>
             <linkUri>http://www.commsvr.com/tabid/85/language/en-US/Default.aspx</linkUri>
           </externalLink>
@@ -43,11 +40,44 @@
     </reference>
     <relatedTopics>
       <externalLink>
-        <linkText>
-        OPC Foundation
-      </linkText>
+        <linkText>OPC Foundation</linkText>
         <linkAlternateText>The OPC Foundation - Dedicated to Interoperability in Automation</linkAlternateText>
         <linkUri>http://www.opcfoundation.org/</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServer software</linkText>
+        <linkAlternateText>CommServer software</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/CommServer.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServer UA software</linkText>
+        <linkAlternateText>CommServer UA software</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/CommServerUA.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>OPC Servers powered by CommServer</linkText>
+        <linkAlternateText>OPC servers powered by CommServer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/OPCServer.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>OPC UA Address Space Model Designer – powerful toolkit for Address Space in OPC Unified Architecture</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/UAModelDesigner.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServer OPC UA server wrapper</linkText>
+        <linkAlternateText>CommServer OPC UA server wrapper</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/OPCUAWRAPPER.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>DataPorter</linkText>
+        <linkAlternateText>DataPorter is an independent package of the CommServer software family</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/DataPorterDescription.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>OPC Viewer</linkText>
+        <linkAlternateText>OPC Viewer - Freeware, simple and easy OPC DA Client</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/OPCViewer.aspx</linkUri>
       </externalLink>
     </relatedTopics>
   </developerOrientationDocument>
