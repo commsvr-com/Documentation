@@ -79,7 +79,10 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
+      <PlugInConfig id="HelpTopicsGenerator" enabled="False">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
@@ -88,8 +91,8 @@
     <HeaderText>DataPorter</HeaderText>
     <HelpTitle>DataPorter</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
-    <Preliminary>True</Preliminary>
-    <PresentationStyle>vs2005</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <PresentationStyle>vs2005AdWordsDP</PresentationStyle>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
