@@ -49,7 +49,9 @@
     <None Include="AddressSpaceDesigner\Overview.aml" />
     <None Include="AddressSpaceDesigner\UserInterface.aml" />
     <None Include="Alarms.aml" />
-    <None Include="CommServerUA..aml" />
+    <None Include="ASMD_VersionHistory.aml" />
+    <None Include="CommServerUA.aml" />
+    <None Include="CommServerUA\CommServerUA_Version_History.aml" />
     <None Include="CommServerUA\GettingStarted.aml" />
     <None Include="CommServerUA\Installing.aml" />
     <None Include="Concept.aml" />
@@ -171,7 +173,6 @@
     <None Include="UAOverview.aml" />
     <None Include="UA_Glossary.aml" />
     <None Include="UserInterface.aml" />
-    <None Include="VersionHistory.aml" />
     <None Include="Welcome.aml" />
   </ItemGroup>
   <ItemGroup>

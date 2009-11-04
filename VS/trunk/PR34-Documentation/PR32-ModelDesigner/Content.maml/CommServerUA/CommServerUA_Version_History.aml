@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a49e5b1a-cd9d-4d12-a9cb-3c31e04e2bc0" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        The topics in this section describe the various changes made to the CommServer UA over the life of the project.
+      </para>
+      <alert>
+        <para>
+          Download latest version of <externalLink>
+            <linkText>CommServer UA</linkText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkUri>
+          </externalLink>
+        </para>
+      </alert>
+      <autoOutline />
+    </introduction>
+    <section address="REL_1_00_20">
+      <title>Version 1.00.20</title>
+      <content>
+        <para>
+          Sunday, November 01, 2009
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Tested (as a component of CommServer UA) for Compliance and Interoperability at OPC Interoperability Workshop (2009) in Nuremberg, Germany.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              OPC UA Address Space Model Designer rel. 2.10.00 and OPC Viewer rel. 3.00.02 are components of CommServer UA rel. 1.00.20.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              CommServer supports OPC UA server interface and allows serving data from three data sources:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  CommServer Communication Engine (multi-protocol, multi-medium and multi-channel redundant access to physical process control device data)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  OPC DA Client (works as OPC DA wrapper with fully configurable address space)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Simulator (data are simulated)
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
