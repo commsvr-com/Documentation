@@ -15,6 +15,58 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_2_00_02">
+      <title>Version 2.00.02</title>
+      <content>
+        <para>
+          Friday, October 30, 2009
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Tested for Compliance and Interoperability at OPC Interoperability Workshop (2009) in Nuremberg, Germany
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Changes and improvements in user interface:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  link to the license agreement
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  graphical improvements of DataProter Installer
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  sorting of the item list in DataPorter and OPC Viewer
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              OPC Viewer rel. 3.00.02 is a component of DataPorter 2.00.02
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Added OPC Core Components as prerequisites for installation
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some improvements and bug fixes
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_1_30_00">
       <title>Version 1.30.00</title>
       <content>
