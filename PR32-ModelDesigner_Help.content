@@ -152,11 +152,12 @@
       </Topic>
       <Topic id="139fef33-0f86-4fe8-8620-51905ec6e36b" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
     </Topic>
-    <Topic id="8792522c-01ff-49f8-ba2a-e3df7abf6140" visible="True" title="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server" tocTitle="CommServer UA Server" linkText="{2265025D-B20B-4538-8068-1B9E991B94DB}">
+    <Topic id="8792522c-01ff-49f8-ba2a-e3df7abf6140" visible="True" title="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server" tocTitle="CommServer UA Server" linkText="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server">
       <Topic id="a31ee2de-dca7-4cfd-bd76-67472753f12b" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="CommServerUAGettingStarted">
         <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation and First Launch" tocTitle="Instalation" linkText="CommServerUAGettingStartedInstalation" />
       </Topic>
-      <Topic id="fddc297e-3ac3-4bf2-919e-df25435ad611" visible="True" />
+      <Topic id="fddc297e-3ac3-4bf2-919e-df25435ad611" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration" />
+      <Topic id="a49e5b1a-cd9d-4d12-a9cb-3c31e04e2bc0" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
     </Topic>
     <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts" />
     <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary" />

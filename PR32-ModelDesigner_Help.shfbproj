@@ -691,7 +691,6 @@
     <None Include="PR32-ModelDesigner\Content.maml\Configuration.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Installing.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\GettingStarted.aml" />
-    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\113378b1-919a-4fd6-891c-1f81f06a8dc3.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA..aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
@@ -819,8 +818,10 @@
     <None Include="PR32-ModelDesigner\Content.maml\Welcome.aml" />
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
     <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
-    <None Include="PR32-ModelDesigner\Content.maml\VersionHistory.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UA_Glossary.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMD_VersionHistory.aml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CAS.ControlLibrary">
