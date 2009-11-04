@@ -79,17 +79,14 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-      <PlugInConfig id="HelpTopicsGenerator" enabled="False">
-        <configuration />
-      </PlugInConfig>
-    </PlugInConfigurations>
+<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
-    <FooterText>This documentation is designed to be used with CAS DataPorter %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <HeaderText>DataPorter</HeaderText>
-    <HelpTitle>DataPorter</HelpTitle>
+    <FooterText>This documentation is designed to be used with CAS DataPorter %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx&amp;quot%3b title=&amp;quot%3bDataPorter - ports data between most popular standards %28OPC, XML, SQL%29 – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DataPorter/Index.aspx&amp;quot%3b title=&amp;quot%3bDataPorter online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HelpTitle>DataPorter - ports data between most popular standards %28OPC, XML, SQL%29</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <Preliminary>False</Preliminary>
     <PresentationStyle>vs2005AdWordsDP</PresentationStyle>
