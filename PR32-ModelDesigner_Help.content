@@ -114,6 +114,7 @@
           <Topic id="b2d1ce6e-b091-49b0-8563-ce0dab8a79da" visible="True" title="How To: Open Sample Solution" tocTitle="How To: Open Sample Solution" />
           <Topic id="f9f6641e-0f03-443a-b7b9-8c34aecfdb40" visible="True" />
           <Topic id="0ba3d783-093d-4394-87ef-aff8a46fff94" visible="True" title="Walkthrough: Process DataBinding" tocTitle="Walkthrough: Process DataBinding" />
+          <Topic id="adf47b46-959f-4bb0-99fd-355c9de4bbe1" visible="True" title="Walkthrough: Create UA Wrapper" tocTitle="Walkthrough: Create UA Wrapper" />
         </Topic>
       </Topic>
       <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" visible="False" title="User Interface" tocTitle="User Interface">

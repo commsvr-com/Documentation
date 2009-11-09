@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="adf47b46-959f-4bb0-99fd-355c9de4bbe1" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        Creating of the CommServer OPC UA server wrapper is a simple process, which can be recapitulated in 5 steps:
+      </para>
+      <list class="ordered" address="Creating_of_the_UA_Wrapper_steps">
+        <listItem>
+          <para>
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Connection_to_OPC_Server">Connect to OPC server using OPC Viewer.</link>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Creation_of_the_online_subscription">Create online subscription in OPC Viewer.</link>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Export_address_space_to_dictionary_file">Export address space to dictionary file using OPC Viewer.</link>  
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Create_new_project_and_select_plugin">Create new project in UA Address Space Model Designer and choose configuration plugin.</link>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Import_OPC_DA_address_space_to_the_model">Import OPC DA address space to the model.</link>
+          </para>
+        </listItem>
+      </list>
+      <alert>
+        <para>
+          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and others using OPC. OPC Viewer has the functionality of saving current configuration in a file called session. This session file is compatible with the DataPorter configuration file, that’s why OPC Viewer is the recommended configuration tool for DataPorter. DataPorter package contains OPC Viewer application with a special license that enables the Processing Environment editor.
+        </para>
+      </alert>
+    </introduction>
+    <section address="Connection_to_OPC_Server">
+      <autoOutline/>
+      <title>Connection to OPC Server</title>
+      <content>
+        <procedure >
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  To start OPC Viewer select:
+                </para>
+                <para>
+                  <legacyUnderline>Start Menu -> All Programs -> CAS -> DataPorter -> OPC Viewer</legacyUnderline>
+                </para>
+                <para>
+                  The main window appears.
+                </para>
+                <para>
+                  To connect to OPC Server, select <![CDATA[<Browse…>]]> from the Server dropdown list.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 1">OPC Viewer – main window</caption>
+                  <image placement="center" xlink:href="4937AE5C-5867-4890-ADA0-225921D1D8C2" />
+                </mediaLink>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Click the Add icon in menu ( <mediaLinkInline>
+                    <image xlink:href="950E909F-55BC-4635-82BC-71178CF801C1"/>
+                  </mediaLinkInline> )
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  The Select Server window appears  (Figure  2); select OPC Server from a local or remote computer (e.g. CAS.CommServer.OPC.Da.Server):
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 2">OPC Viewer – Select Server Window</caption>
+                  <image placement="center" xlink:href="E299BCFF-DD8A-4633-8EF5-B4F36099DEC2" />
+                </mediaLink>
+                <para>
+                  If you want to connect to a server on a remote computer, select the computer and check what servers are available (to check available servers click on “+” next to the computer name). If the requested computer is not on the list it is possible to connect to this computer using its IP address written in the input box on the address bar:
+                </para>
+                <para>
+                  <legacyItalic>opcda://computer_ip_address/progID_OPC_server</legacyItalic>
+                </para>
+                <alert>
+                  <para>
+                    Remember to configure DCOM properly before connecting to the other computer.
+                  </para>
+                </alert>
+                <para>
+                  The added OPC server is not connected ( <mediaLinkInline>
+                    <image xlink:href="378C71F3-320F-414b-A00A-3D0C11625984"/>
+                  </mediaLinkInline> ).
+                </para>
+                <para>
+                  You can add a multiple OPC server to the configuration. It can be the same OPC server or any other OPC server.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 3">OPC Viewer – multiple OPC servers</caption>
+                  <image placement="center" xlink:href="76BFB630-BED6-499e-B8B7-57DF45DE9D61" />
+                </mediaLink>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Click the right mouse button on the added server and select “Connect” or click “Connect to Server” icon  ( <mediaLinkInline>
+                    <image xlink:href="3CFEE26A-BDC4-4c6c-BA41-037708679A1B"/>
+                  </mediaLinkInline> ) in the menu.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 4">OPC Viewer – Connect</caption>
+                  <image placement="center" xlink:href="9E1346E3-EB04-47cc-BE97-025C32597D28" />
+                </mediaLink>
+                <para>
+                  After successful connection to the OPC server, the icon changes to <mediaLinkInline>
+                    <image xlink:href="66E9A85D-CEE6-46de-AAB1-F3D50F64BD5F"/>
+                  </mediaLinkInline> and we can create an online subscription.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 5">OPC Viewer – successful connection</caption>
+                  <image placement="center" xlink:href="19E9E97F-0372-47dd-B26F-F6F30B2DB12F" />
+                </mediaLink>
+                <alert>
+                  <para>
+                    When we are not connected to the OPC server we can create an offline subscription.
+                  </para>
+                </alert>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Now we can check the status of the connected OPC server. Click the right mouse button on the OPC server and select “View Status” or click icon ( <mediaLinkInline>
+                    <image xlink:href="F26B375B-DDE1-4f8a-BC1C-853B0C8A9064"/>
+                  </mediaLinkInline> ) on the toolbar.
+                </para>
+                <para>
+                  The Server Status window appears:
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 6">OPC Viewer – Server Status</caption>
+                  <image placement="center" xlink:href="D55DCD75-F011-487b-AE3A-C63B62BDFF15" />
+                </mediaLink>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+      </content>
+      
+    </section>
+    <section address="Creation_of_the_online_subscription">
+      <autoOutline/>
+      <title>Create online subscription in OPC Viewer.</title>
+      <content>
+        <procedure>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  To create a subscription, click the right button on the connected OPC server and select “Create Subscription...” and “Browse server…”. Click on “Next” in the window that appears.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 7">OPC Viewer – creation of subscription</caption>
+                  <image placement="center" xlink:href="963D4711-BFD5-4830-9413-8BE0949841F2" />
+                </mediaLink>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  In the next window (Figure  8) browse the server address space and select requested items.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 8">OPC Viewer – adding tags</caption>
+                  <image placement="center" xlink:href="3F7CB5AE-96F2-41fb-89E6-8C36E45AAC7E" />
+                </mediaLink>
+                <para>
+                  Items available on the OPC server are shown on a tree-list on the left of the window. Items selected to be added to subscription are on the list on the right of the window. To add an item, double click on the item name. When all requested items are added, click on the “Next” button. In the next window, verify the subscription settings (e.g. scanning rate or name) and click on “Done”.
+                </para>
+              </content>
+            </step>
+            <step>
+              <para>
+                Items added to the subscription appear in the OPC viewer main window (Figure  9).
+              </para>
+              <mediaLink>
+                <caption placement="after" lead="Figure 9">OPC Viewer – added items</caption>
+                <image placement="center" xlink:href="5EFB0358-D477-41df-989A-BA0A411259F6" />
+              </mediaLink>
+            </step>
+          </steps>
+        </procedure>
+      </content>
+    </section>
+    <section address="Export_address_space_to_dictionary_file">
+      <autoOutline/>
+      <title>Export address space to dictionary file using OPC Viewer</title>
+      <content>
+      </content>
+    </section>
+    <section address="Create_new_project_and_select_plugin">
+      <autoOutline/>
+      <title>Create new project in UA Address Space Model Designer and choose configuration plugin.</title>
+      <content>
+      </content>
+    </section>
+    <section address="Import_OPC_DA_address_space_to_the_model">
+      <autoOutline/>
+      <title>Import OPC DA address space to the model.</title>
+      <content>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>
+
+
+
+
+
+

@@ -115,6 +115,9 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR30-OPCViewer\Graphics\ico\" />
+    <Folder Include="PR30-OPCViewer\Graphics\" />
+    <Folder Include="PR30-OPCViewer\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\" />
     <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\" />
     <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\" />
@@ -688,6 +691,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Configuration.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Installing.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\GettingStarted.aml" />
@@ -1043,6 +1047,64 @@
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_NodeClass_name.jpg">
       <AlternateText>ASMD NodeClass</AlternateText>
       <ImageId>ASMD_NodeClass_name</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect1.JPG">
+      <AlternateText>OPC Viewer connect</AlternateText>
+      <ImageId>4937AE5C-5867-4890-ADA0-225921D1D8C2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_48.png">
+      <AlternateText>OPC Server Add</AlternateText>
+      <ImageId>950E909F-55BC-4635-82BC-71178CF801C1</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect2.JPG">
+      <AlternateText>OPC Viewer – Select Server Window</AlternateText>
+      <ImageId>E299BCFF-DD8A-4633-8EF5-B4F36099DEC2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_disconnect_48.png">
+      <AlternateText>Server OPC disconnect</AlternateText>
+      <ImageId>378C71F3-320F-414b-A00A-3D0C11625984</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect_multiple_servers.JPG">
+      <AlternateText>OPC Viewer – multiple OPC servers</AlternateText>
+      <ImageId>76BFB630-BED6-499e-B8B7-57DF45DE9D61</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_start_48.png">
+      <AlternateText>OPC Start</AlternateText>
+      <ImageId>3CFEE26A-BDC4-4c6c-BA41-037708679A1B</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect3.JPG">
+      <AlternateText>OPC Viewer – Connect</AlternateText>
+      <ImageId>9E1346E3-EB04-47cc-BE97-025C32597D28</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_connect_48.png">
+      <AlternateText>Server OPC connected</AlternateText>
+      <ImageId>66E9A85D-CEE6-46de-AAB1-F3D50F64BD5F</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect_server.JPG">
+      <AlternateText>OPC Viewer – successful connection</AlternateText>
+      <ImageId>19E9E97F-0372-47dd-B26F-F6F30B2DB12F</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_info_48.png">
+      <AlternateText>OPC info</AlternateText>
+      <ImageId>F26B375B-DDE1-4f8a-BC1C-853B0C8A9064</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_server_status.jpg">
+      <AlternateText>OPC Viewer – Server Status</AlternateText>
+      <ImageId>D55DCD75-F011-487b-AE3A-C63B62BDFF15</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription.JPG">
+      <AlternateText>OPC Viewer – creation of subscription</AlternateText>
+      <ImageId>963D4711-BFD5-4830-9413-8BE0949841F2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription2.JPG">
+      <AlternateText>OPC Viewer – adding tags</AlternateText>
+      <ImageId>3F7CB5AE-96F2-41fb-89E6-8C36E45AAC7E</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription3.JPG">
+      <AlternateText>OPC Viewer – added items</AlternateText>
+      <ImageId>5EFB0358-D477-41df-989A-BA0A411259F6</ImageId>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
