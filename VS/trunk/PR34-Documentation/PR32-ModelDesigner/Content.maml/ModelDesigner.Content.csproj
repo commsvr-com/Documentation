@@ -42,6 +42,7 @@
     <None Include="AddressSpaceDesigner.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
+    <None Include="AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
