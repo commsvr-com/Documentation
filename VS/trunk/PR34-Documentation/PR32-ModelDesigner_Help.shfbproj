@@ -1035,6 +1035,10 @@
       <ImageId>ASMD-UAServer-openconfiguration_composition</ImageId>
       <AlternateText>How to open sample configuration</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg">
+      <ImageId>OPCV_create_odic_file</ImageId>
+      <AlternateText>Export address space to dictionary file</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
