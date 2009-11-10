@@ -203,6 +203,21 @@
       <autoOutline/>
       <title>Export address space to dictionary file using OPC Viewer</title>
       <content>
+        <procedure >
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  To export the server address space to a dictionary file, click the right button on the connected OPC server and select “Browse Items...”.
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 10">OPC Viewer – export of the server address space to a dictionary file</caption>
+                  <image placement="center" xlink:href="OPCV_create_odic_file" />
+                </mediaLink>
+              </content>
+            </step>
+          </steps>
+        </procedure >    
       </content>
     </section>
     <section address="Create_new_project_and_select_plugin">
