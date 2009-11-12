@@ -1039,6 +1039,18 @@
       <ImageId>OPCV_create_odic_file</ImageId>
       <AlternateText>Export address space to dictionary file</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg">
+      <ImageId>OPCV_save_odic_file</ImageId>
+      <AlternateText>Save file containing server address space</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg">
+      <AlternateText>Create new project in the solution</AlternateText>
+      <ImageId>ASMD_new_project</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg">
+      <ImageId>ASMD_select_editor</ImageId>
+      <AlternateText>Select configuration editor</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
