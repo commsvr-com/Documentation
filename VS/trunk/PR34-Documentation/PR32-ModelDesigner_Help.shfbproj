@@ -1059,6 +1059,10 @@
       <ImageId>ASMD_Build_imported_model</ImageId>
       <AlternateText>Build imported model</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Save_oses_file.jpg">
+      <ImageId>ASMD_Save_oses_file</ImageId>
+      <AlternateText>Save *.oses file</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
