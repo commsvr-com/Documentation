@@ -204,6 +204,7 @@
               </content>
             </step>
             <step>
+              <content>
               <para>
                 Items added to the subscription appear in the OPC viewer main window (Figure  9).
               </para>
@@ -211,7 +212,20 @@
                 <caption placement="after" lead="Figure 9">OPC Viewer – added items</caption>
                 <image placement="center" xlink:href="5EFB0358-D477-41df-989A-BA0A411259F6" />
               </mediaLink>
+              </content>
             </step>
+            <step>
+              <content>
+                <para>
+                  Finaly the subscription must be saved as a *.oses file as it is on figure 10. 
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 10">OPC Viewer – save subscription as *.oses file</caption>
+                  <image placement="center" xlink:href="ASMD_Save_oses_file" />
+                </mediaLink>
+              </content>
+            </step>
+            
           </steps>
         </procedure>
       </content>
@@ -229,7 +243,7 @@
                   The first step to export the server address space to a dictionary file is to click the right mouse button on the connected OPC server and select “Browse Items...”.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 10">OPC Viewer – Browse server items</caption>
+                  <caption placement="after" lead="Figure 11">OPC Viewer – Browse server items</caption>
                   <image placement="center" xlink:href="OPCV_create_odic_file" />
                 </mediaLink>
               </content>
@@ -240,7 +254,7 @@
                   After appearing of the new dialog, click on the "Save" button, choose "Save as type" as "Dictionary files (*.odic)" and choose location of the *.odic file, where the address space will be saved.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 11">OPC Viewer – Saving the server address space in a dictionary file</caption>
+                  <caption placement="after" lead="Figure 12">OPC Viewer – Saving the server address space in a dictionary file</caption>
                   <image placement="center" xlink:href="OPCV_save_odic_file" />
                 </mediaLink>
               </content>
@@ -278,7 +292,7 @@
                   After first launching of the UA Address Space Model Designer you need to click on the "Main" panel instead of "Help" panel on which version history is being displayed.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 12">UA Address Space Model Designer – Create new project in the solution</caption>
+                  <caption placement="after" lead="Figure 13">UA Address Space Model Designer – Create new project in the solution</caption>
                   <image placement="center" xlink:href="ASMD_new_project" />
                 </mediaLink>
               </content>
@@ -286,13 +300,13 @@
             <step>
               <content>
                 <para>
-                  In the next step it is needed to select configuration editor. The figure 13 shows how to select the correct plugin for CommServerUA located in:
+                  In the next step it is needed to select configuration editor. The figure 14 shows how to select the correct plugin for CommServerUA located in:
                 </para>
                 <para>
                 <userInput>%USERPROFILE%\My Documents\UAAddressSpaceModelDesigner\Sample</userInput>
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 13">UA Address Space Model Designer – Select configuration editor</caption>
+                  <caption placement="after" lead="Figure 14">UA Address Space Model Designer – Select configuration editor</caption>
                   <image placement="center" xlink:href="ASMD_select_editor" />
                 </mediaLink>
                 <para>
@@ -314,10 +328,10 @@
               <step>
                 <content>
                 <para>
-                  To import address space from DA server to UA model click with the right button on the "Solution -> Project -> Domain" and choose "Import -> From OPC DA ...". This operation is shown on figure 14 below
+                  To import address space from DA server to UA model click with the right button on the "Solution -> Project -> Domain" and choose "Import -> From OPC DA ...". This operation is shown on figure 15 below
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 14">UA Address Space Model Designer – Import address space from *.odic file to the model</caption>
+                  <caption placement="after" lead="Figure 15">UA Address Space Model Designer – Import address space from *.odic file to the model</caption>
                   <image placement="center" xlink:href="ASMD_Import_From_OPC_DA" />
                 </mediaLink>
                  </content>
@@ -332,7 +346,7 @@
               <step>
                 <content>
                 <para>
-                 Finally you get fully functional model with data bindings. Now you can build the model and get ready UA server configuration. To build the model you need to choose from the toolbar: "Tools -> Build / Verify -> Build Solution", as it is on figure 15. After choosing this option you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier), so you should do this.   
+                 Finally you get fully functional model with data bindings. Now you can build the model and get ready UA server configuration. To build the model you need to choose from the toolbar: "Tools -> Build / Verify -> Build Solution", as it is on figure 16. After choosing this option you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier), so you should do this.   
                 </para>
                   <alert>
                     <para>
@@ -340,9 +354,16 @@
                     </para>
                   </alert>
                   <mediaLink>
-                  <caption placement="after" lead="Figure 15">UA Address Space Model Designer – Build the model</caption>
+                  <caption placement="after" lead="Figure 16">UA Address Space Model Designer – Build the model</caption>
                   <image placement="center" xlink:href="ASMD_Build_imported_model" />
                 </mediaLink>
+                </content>
+              </step>
+              <step>
+                <content>
+                  <para>
+                    Now you can start CommServerUA with similar configuration, as it is in your old OPC Classic server! 
+                  </para>
                 </content>
               </step>
             </steps>
