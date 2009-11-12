@@ -1051,6 +1051,14 @@
       <ImageId>ASMD_select_editor</ImageId>
       <AlternateText>Select configuration editor</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Import_From_OPC_DA.jpg">
+      <ImageId>ASMD_Import_From_OPC_DA</ImageId>
+      <AlternateText>Import from OPC DA</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Build_imported_model.jpg">
+      <ImageId>ASMD_Build_imported_model</ImageId>
+      <AlternateText>Build imported model</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>

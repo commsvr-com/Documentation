@@ -237,7 +237,7 @@
             <step>
               <content>
                 <para>
-                  After appearing of the new dialog, click on the "Save" button and choose location of the *.odic file, where the address space will be saved.
+                  After appearing of the new dialog, click on the "Save" button, choose "Save as type" as "Dictionary files (*.odic)" and choose location of the *.odic file, where the address space will be saved.
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 11">OPC Viewer – Saving the server address space in a dictionary file</caption>
@@ -266,6 +266,7 @@
       </content>
     </section>
     <section address="Create_new_project_and_select_plugin">
+      <autoOutline/>
       <title>Create new project in UA Address Space Model Designer and choose configuration plugin.</title>
       <content>
         <procedure>
@@ -305,8 +306,47 @@
     </section>
     <section address="Import_OPC_DA_address_space_to_the_model">
       <autoOutline/>
-      <title>Import OPC DA address space to the model.</title>
+      <title>Import OPC DA address space and build the model.</title>
       <content>
+        <procedure>
+          <title></title>
+            <steps class="ordered">
+              <step>
+                <content>
+                <para>
+                  To import address space from DA server to UA model click with the right button on the "Solution -> Project -> Domain" and choose "Import -> From OPC DA ...". This operation is shown on figure 14 below
+                </para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 14">UA Address Space Model Designer – Import address space from *.odic file to the model</caption>
+                  <image placement="center" xlink:href="ASMD_Import_From_OPC_DA" />
+                </mediaLink>
+                 </content>
+              </step>
+              <step>
+                <content>
+                  <para>
+                    After choosing of the import you will be asked to choose *odic file, so choose the file that you have created in 3rd point of this tutorial. Then you will be asked to choose *oses file, so choose the file that you have created in 2nd point of this tutorial.
+                  </para>
+                </content>
+                </step>
+              <step>
+                <content>
+                <para>
+                 Finally you get fully functional model with data bindings. Now you can build the model and get ready UA server configuration. To build the model you need to choose from the toolbar: "Tools -> Build / Verify -> Build Solution", as it is on figure 15. After choosing this option you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier), so you should do this.   
+                </para>
+                  <alert>
+                    <para>
+                      If there are any problems with Build process check if all files have proper names and location and if there are still problems - to reset UA Address Space Model Designer options to default values ("Reset" button is in "Tools -> Options").
+                    </para>
+                  </alert>
+                  <mediaLink>
+                  <caption placement="after" lead="Figure 15">UA Address Space Model Designer – Build the model</caption>
+                  <image placement="center" xlink:href="ASMD_Build_imported_model" />
+                </mediaLink>
+                </content>
+              </step>
+            </steps>
+        </procedure>
       </content>
     </section>
     <relatedTopics>
