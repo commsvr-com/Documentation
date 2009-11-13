@@ -18,7 +18,7 @@
         </listItem>
         <listItem>
           <para>
-            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Export_address_space_to_dictionary_file">Export address space to dictionary file using OPC Viewer.</link>  
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Export_address_space_to_dictionary_file">Export address space to a dictionary file using OPC Viewer.</link>  
           </para>
         </listItem>
         <listItem>
@@ -28,13 +28,13 @@
         </listItem>
         <listItem>
           <para>
-            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Import_OPC_DA_address_space_to_the_model">Import OPC DA address space to the model.</link>
+            <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Import_OPC_DA_address_space_to_the_model">Import OPC DA address space and build the model.</link>
           </para>
         </listItem>
       </list>
       <alert>
         <para>
-          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and others using OPC. OPC Viewer has the functionality of saving current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process. OPC Viewer and UA Address Space Model Designer can be downloaded as a package with CommServerUA from here:
+          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and other users of the OPC. OPC Viewer has the functionality of saving current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process. OPC Viewer and UA Address Space Model Designer can be downloaded as a package with CommServerUA from here:
           <externalLink>
             <linkText>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkText>
             <linkAlternateText>CommSErverUA package</linkAlternateText>
@@ -45,7 +45,7 @@
     </introduction>
     <section address="Connection_to_OPC_Server">
       <autoOutline/>
-      <title>Connection to OPC Server</title>
+      <title>1. Connect to OPC server using OPC Viewer.</title>
       <content>
         <procedure >
           <title></title>
@@ -59,7 +59,7 @@
                   <legacyUnderline>Start Menu -> All Programs -> CAS -> OPCViewer -> CAS OPCViewer</legacyUnderline>
                 </para>
                 <para>
-                  or if the OPC Viewer is installed with CommServerUA:
+                  or if the OPC Viewer is installed as a part of the CommServerUA package:
                 </para>
                 <para>
                   <legacyUnderline>Start Menu -> All Programs -> CAS -> CommServerUA -> OPC Viewer (OPC DA Classic Client)</legacyUnderline>
@@ -95,7 +95,7 @@
                   <image placement="center" xlink:href="E299BCFF-DD8A-4633-8EF5-B4F36099DEC2" />
                 </mediaLink>
                 <para>
-                  If you want to connect to a server on a remote computer, select the computer and check what servers are available (to check available servers click on “+” next to the computer name). If the requested computer is not on the list it is possible to connect to this computer using its IP address written in the input box on the address bar:
+                  If you want to connect to a server on a remote computer, select the computer and check what servers are available (to check available servers click on “+” next to the computer name). If the requested computer is not on the list, it is possible to connect to this computer using its IP address written in the input box on the address bar:
                 </para>
                 <para>
                   <legacyItalic>opcda://computer_ip_address/progID_OPC_server</legacyItalic>
@@ -168,7 +168,7 @@
     </section>
     <section address="Creation_of_the_online_subscription">
       <autoOutline/>
-      <title>Create online subscription in OPC Viewer.</title>
+      <title>2. Create online subscription in OPC Viewer.</title>
       <content>
         <procedure>
           <title></title>
@@ -176,7 +176,7 @@
             <step>
               <content>
                 <para>
-                  To create a subscription, click the right button on the connected OPC server and select “Create Subscription...” and “Browse server…”. Click on “Next” in the window that appears.
+                  To create a subscription, click the right mouse button on the connected OPC server and select “Create Subscription...” and “Browse server…”. Click on “Next” in the window that appears.
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 7">OPC Viewer – creation of subscription</caption>
@@ -191,7 +191,7 @@
                 </para>
                 <alert>
                   <para>
-                  In the process of creating UA Wrapper it is recommended, but not nescessary, to select for the subscription all items from the server.
+                  In the process of creating UA Wrapper it is recommended, but not nescessary, to select all server items for the subscription.
                   </para>
                 </alert>
                 <mediaLink>
@@ -217,7 +217,7 @@
             <step>
               <content>
                 <para>
-                  Finaly the subscription must be saved as a *.oses file as it is on figure 10. 
+                  Finally the subscription must be saved as a session file (*.oses) as it is on figure 10. 
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 10">OPC Viewer – save subscription as *.oses file</caption>
@@ -232,7 +232,7 @@
     </section>
     <section address="Export_address_space_to_dictionary_file">
       <autoOutline/>
-      <title>Export address space to dictionary file using OPC Viewer</title>
+      <title>3. Export address space to a dictionary file using OPC Viewer</title>
       <content>
         <procedure>
           <title></title>
@@ -240,7 +240,7 @@
             <step>
               <content>
                 <para>
-                  The first step to export the server address space to a dictionary file is to click the right mouse button on the connected OPC server and select “Browse Items...”.
+                  The first step to export address space to a dictionary file is to click the right mouse button on the connected OPC server and select “Browse Items...”.
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 11">OPC Viewer – Browse server items</caption>
@@ -251,7 +251,7 @@
             <step>
               <content>
                 <para>
-                  After appearing of the new dialog, click on the "Save" button, choose "Save as type" as "Dictionary files (*.odic)" and choose location of the *.odic file, where the address space will be saved.
+                  After appearing of the new dialog, click on the "Save" button (Figure 12). In the window that appears, choose "Dictionary files (*.odic)" in the "Save as type" drop-down list and choose location of the *.odic file, where the address space will be saved.
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 12">OPC Viewer – Saving the server address space in a dictionary file</caption>
@@ -262,13 +262,13 @@
             <step>
               <content>
                 <para>
-                  This is the end of work with OPC Viewer for now. In next steps we will use UA Address Space Model Designer. If UA Address Space Model Designer is installed as a standalone application, it can be launched by selecting:
+                  This is the end of work with OPC Viewer. In the next steps we will use UA Address Space Model Designer. If UA Address Space Model Designer is installed as a standalone application, it can be launched by selecting:
                 </para>
                 <para>
                   <legacyUnderline> Start Menu -> All Programs -> CAS -> CAS UA Address Space Model Designer</legacyUnderline>
                 </para>
                 <para>
-                  or if the CommServerUA is installed:
+                  or if the UA Address Space Model Designer is installed as part of the CommServerUA package:
                 </para>
                 <para>
                   <legacyUnderline> Start Menu -> All Programs -> CAS -> CommServerUA -> OPC UA Address Space Model Designer</legacyUnderline>
@@ -281,7 +281,7 @@
     </section>
     <section address="Create_new_project_and_select_plugin">
       <autoOutline/>
-      <title>Create new project in UA Address Space Model Designer and choose configuration plugin.</title>
+      <title>4. Create new project in UA Address Space Model Designer and choose configuration plugin.</title>
       <content>
         <procedure>
           <title></title>
@@ -300,7 +300,7 @@
             <step>
               <content>
                 <para>
-                  In the next step it is needed to select configuration editor. The figure 14 shows how to select the correct plugin for CommServerUA located in:
+                  On the figure 14 you can see the selection of the onfiguration plugin located in:
                 </para>
                 <para>
                 <userInput>%USERPROFILE%\My Documents\UAAddressSpaceModelDesigner\Sample</userInput>
@@ -310,7 +310,7 @@
                   <image placement="center" xlink:href="ASMD_select_editor" />
                 </mediaLink>
                 <para>
-                  After clicking on the "OK" button you need to click "Cancel" button on the appearing dialog "UA server configuration file" because the configuration will be created automatically in a moment. 
+                  After clicking on the "OK" button the "UA server configuration file" will appear. You need to click "Cancel" button on this dialog because the configuration will be created automatically in a moment.
                 </para>
               </content>
             </step>
@@ -320,7 +320,7 @@
     </section>
     <section address="Import_OPC_DA_address_space_to_the_model">
       <autoOutline/>
-      <title>Import OPC DA address space and build the model.</title>
+      <title>5. Import OPC DA address space and build the model.</title>
       <content>
         <procedure>
           <title></title>
@@ -328,7 +328,7 @@
               <step>
                 <content>
                 <para>
-                  To import address space from DA server to UA model click with the right button on the "Solution -> Project -> Domain" and choose "Import -> From OPC DA ...". This operation is shown on figure 15 below
+                  To import address space from DA server to UA model click with the right mouse button on the "Solution -> Project -> Domain" and choose "Import -> From OPC DA ...". This operation is shown on figure 15:
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 15">UA Address Space Model Designer – Import address space from *.odic file to the model</caption>
@@ -339,18 +339,18 @@
               <step>
                 <content>
                   <para>
-                    After choosing of the import you will be asked to choose *odic file, so choose the file that you have created in 3rd point of this tutorial. Then you will be asked to choose *oses file, so choose the file that you have created in 2nd point of this tutorial.
+                    After clicking on the "From OPC DA ..." you will be asked to choose dictionary file (*odic), so choose the file that you have created in 3rd point of this tutorial. Then you will be asked to choose session file (*oses), so choose the file that you have created in 2nd point of this tutorial.
                   </para>
                 </content>
                 </step>
               <step>
                 <content>
                 <para>
-                 Finally you get fully functional model with data bindings. Now you can build the model and get ready UA server configuration. To build the model you need to choose from the toolbar: "Tools -> Build / Verify -> Build Solution", as it is on figure 16. After choosing this option you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier), so you should do this.   
+                 Finally you get the fully functional model with the data bindings. Now you can build the model and get all configuration files required for launching CommServerUA. To build the model you need to choose from the toolbar: "Tools -> Build/Verify -> Build Solution", as it is on figure 16. After choosing this option you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier), so you should do this.   
                 </para>
                   <alert>
                     <para>
-                      If there are any problems with Build process check if all files have proper names and location and if there are still problems - to reset UA Address Space Model Designer options to default values ("Reset" button is in "Tools -> Options").
+                      If there are any problems with Build process, check if all files have correct names and locations and if there are still problems - reset UA Address Space Model Designer options to default values ("Reset" button is in "Tools -> Options").
                     </para>
                   </alert>
                   <mediaLink>
