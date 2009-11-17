@@ -3,7 +3,7 @@
   <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
       <para>
-        Creating of the CommServer OPC UA server wrapper is a simple process, which can be recapitulated in 5 steps:
+        Configuration of the CommServer UA to wrap OPC DA server is a straightforward process, which can be done in 5 steps:
       </para>
       <list class="ordered" address="Creating_of_the_UA_Wrapper_steps">
         <listItem>
@@ -34,14 +34,68 @@
       </list>
       <alert>
         <para>
-          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and other users of the OPC. OPC Viewer has the functionality of saving current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process. OPC Viewer and UA Address Space Model Designer can be downloaded as a package with CommServerUA from here:
-          <externalLink>
-            <linkText>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkText>
-            <linkAlternateText>CommSErverUA package</linkAlternateText>
-            <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkUri>
-          </externalLink>
+          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and other users of the OPC. OPC Viewer has the functionality of saving current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process.
         </para>
       </alert>
+      <alert>
+        <para>
+          Both OPC Viewer and UA Address Space Model Designer are included in:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              CommServerUA package which can be downloaded from 
+              <externalLink>
+                <linkText>here</linkText>
+                <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkAlternateText>
+                <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              UA Address Space Model Designer package which can be downloaded from 
+              <externalLink>
+                <linkText>here</linkText>
+                <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkAlternateText>
+                <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+        <para>
+          In this walkthrough, the CommServerUA package is used.
+        </para>
+      </alert>
+      <para>
+        <legacyBold>
+          Prerequisits
+        </legacyBold>
+      </para>
+      <list class="ordered">
+        <listItem>
+          <para>
+            CommServer is installed (CommServer can be downloaded from
+          <externalLink>
+            <linkText>here</linkText>
+            <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx</linkAlternateText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx</linkUri>
+          </externalLink>
+            )
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            CommServerUA is installed (CommServerUA can be downloaded from
+            <externalLink>
+              <linkText>here</linkText>
+              <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkAlternateText>
+              <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkUri>
+            </externalLink>
+            )
+          </para>
+        </listItem>
+      </list>
     </introduction>
     <section address="Connection_to_OPC_Server">
       <autoOutline/>
@@ -53,13 +107,7 @@
             <step>
               <content>
                 <para>
-                  To start OPC Viewer, which is installed as a standalone application, select:
-                </para>
-                <para>
-                  <legacyUnderline>Start Menu -> All Programs -> CAS -> OPCViewer -> CAS OPCViewer</legacyUnderline>
-                </para>
-                <para>
-                  or if the OPC Viewer is installed as a part of the CommServerUA package:
+                  To start OPC Viewer, select:
                 </para>
                 <para>
                   <legacyUnderline>Start Menu -> All Programs -> CAS -> CommServerUA -> OPC Viewer (OPC DA Classic Client)</legacyUnderline>
@@ -67,38 +115,21 @@
                 <para>
                   The main window appears.
                 </para>
-                <para>
-                  To connect to OPC Server, select <![CDATA[<Browse…>]]> from the Server dropdown list.
-                </para>
-                <mediaLink>
-                  <caption placement="after" lead="Figure 1">OPC Viewer – main window</caption>
-                  <image placement="center" xlink:href="4937AE5C-5867-4890-ADA0-225921D1D8C2" />
-                </mediaLink>
               </content>
             </step>
             <step>
               <content>
                 <para>
-                  Click the Add icon in menu ( <mediaLinkInline>
-                    <image xlink:href="950E909F-55BC-4635-82BC-71178CF801C1"/>
-                  </mediaLinkInline> )
-                </para>
-              </content>
-            </step>
-            <step>
-              <content>
-                <para>
-                  The Select Server window appears  (Figure  2); select OPC Server from a local or remote computer (e.g. CAS.CommServer.OPC.Da.Server):
+                  To connect to a OPC Server, click “Browse network” icon 
+                  <mediaLinkInline><image xlink:href="853B89FE-4D10-4df9-81D1-311253CC5D27"/></mediaLinkInline>
+                  in the menu. The Select Server window appears (Figure 1); select OPC Server from a local or remote computer (e.g. CAS.CommServer.OPC.Da.Server):
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 2">OPC Viewer – Select Server Window</caption>
+                  <caption placement="after" lead="Figure 1">OPC Viewer – Select Server Window</caption>
                   <image placement="center" xlink:href="E299BCFF-DD8A-4633-8EF5-B4F36099DEC2" />
                 </mediaLink>
                 <para>
-                  If you want to connect to a server on a remote computer, select the computer and check what servers are available (to check available servers click on “+” next to the computer name). If the requested computer is not on the list, it is possible to connect to this computer using its IP address written in the input box on the address bar:
-                </para>
-                <para>
-                  <legacyItalic>opcda://computer_ip_address/progID_OPC_server</legacyItalic>
+                  Select the computer and check what servers are available (to check available servers click on “+” next to the computer name).
                 </para>
                 <alert>
                   <para>
@@ -114,7 +145,7 @@
                   You can add a multiple OPC server to the configuration. It can be the same OPC server or any other OPC server.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 3">OPC Viewer – multiple OPC servers</caption>
+                  <caption placement="after" lead="Figure 2">OPC Viewer – multiple OPC servers</caption>
                   <image placement="center" xlink:href="76BFB630-BED6-499e-B8B7-57DF45DE9D61" />
                 </mediaLink>
               </content>
@@ -122,26 +153,26 @@
             <step>
               <content>
                 <para>
-                  Click the right mouse button on the added server and select “Connect” or click “Connect to Server” icon  ( <mediaLinkInline>
+                  Click the right mouse button on the added server and select “Connect” from the context menu or click “Connect to Server” icon ( <mediaLinkInline>
                     <image xlink:href="3CFEE26A-BDC4-4c6c-BA41-037708679A1B"/>
-                  </mediaLinkInline> ) in the menu.
+                  </mediaLinkInline> ) on the toolbar.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 4">OPC Viewer – Connect</caption>
+                  <caption placement="after" lead="Figure 3">OPC Viewer – Connect</caption>
                   <image placement="center" xlink:href="9E1346E3-EB04-47cc-BE97-025C32597D28" />
                 </mediaLink>
                 <para>
                   After successful connection to the OPC server, the icon changes to <mediaLinkInline>
                     <image xlink:href="66E9A85D-CEE6-46de-AAB1-F3D50F64BD5F"/>
-                  </mediaLinkInline> and we can create an online subscription.
+                  </mediaLinkInline>
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 5">OPC Viewer – successful connection</caption>
+                  <caption placement="after" lead="Figure 4">OPC Viewer – successful connection</caption>
                   <image placement="center" xlink:href="19E9E97F-0372-47dd-B26F-F6F30B2DB12F" />
                 </mediaLink>
                 <alert>
                   <para>
-                    When we are not connected to the OPC server we can create an offline subscription.
+                    If OPC server is not connected, an offline subscription can be created.
                   </para>
                 </alert>
               </content>
@@ -149,15 +180,15 @@
             <step>
               <content>
                 <para>
-                  Now we can check the status of the connected OPC server. Click the right mouse button on the OPC server and select “View Status” or click icon ( <mediaLinkInline>
+                  To check the status of the connected OPC server from the server node context menu select “View Status” or click icon ( <mediaLinkInline>
                     <image xlink:href="F26B375B-DDE1-4f8a-BC1C-853B0C8A9064"/>
                   </mediaLinkInline> ) on the toolbar.
                 </para>
                 <para>
-                  The Server Status window appears:
+                  The Server Status dialog appears:
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 6">OPC Viewer – Server Status</caption>
+                  <caption placement="after" lead="Figure 5">OPC Viewer – Server Status</caption>
                   <image placement="center" xlink:href="D55DCD75-F011-487b-AE3A-C63B62BDFF15" />
                 </mediaLink>
               </content>
@@ -176,40 +207,33 @@
             <step>
               <content>
                 <para>
-                  To create a subscription, click the right mouse button on the connected OPC server and select “Create Subscription...” and “Browse server…”. Click on “Next” in the window that appears.
+                  To create a subscription, click the right mouse button on the connected OPC server and select “Create Subscription...-> Browse server…” from the context menu. Create Subscription dialog windows appears. Provide the subscription name and click on “Next” button to continue.
                 </para>
-                <mediaLink>
-                  <caption placement="after" lead="Figure 7">OPC Viewer – creation of subscription</caption>
-                  <image placement="center" xlink:href="963D4711-BFD5-4830-9413-8BE0949841F2" />
-                </mediaLink>
               </content>
             </step>
             <step>
               <content>
                 <para>
-                  In the next window (Figure  8) browse the server address space and select requested items.
+                  Browse a tree view on the left pane (Figure 6) and select requested items. To add an item to a subscription, double click on the item name. When all requested items are added, click on the “Next” button. In the next window, verify the subscription settings (e.g. scanning rate or name) and click on “Done”.
                 </para>
                 <alert>
                   <para>
-                  In the process of creating UA Wrapper it is recommended, but not nescessary, to select all server items for the subscription.
+                    In the process of the UA Wrapper configuration  it is recommended, but not required , that all server items are added to one of the created subscriptions
                   </para>
                 </alert>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 8">OPC Viewer – adding tags</caption>
+                  <caption placement="after" lead="Figure 6">OPC Viewer – adding tags</caption>
                   <image placement="center" xlink:href="3F7CB5AE-96F2-41fb-89E6-8C36E45AAC7E" />
                 </mediaLink>
-                <para>
-                  Items available on the OPC server are shown on a tree-list on the left of the window. Items selected to be added to subscription are on the list on the right of the window. To add an item, double click on the item name. When all requested items are added, click on the “Next” button. In the next window, verify the subscription settings (e.g. scanning rate or name) and click on “Done”.
-                </para>
               </content>
             </step>
             <step>
               <content>
               <para>
-                Items added to the subscription appear in the OPC viewer main window (Figure  9).
+                Items added to the subscription appear in the OPC viewer main window (Figure 7).
               </para>
               <mediaLink>
-                <caption placement="after" lead="Figure 9">OPC Viewer – added items</caption>
+                <caption placement="after" lead="Figure 7">OPC Viewer – added items</caption>
                 <image placement="center" xlink:href="5EFB0358-D477-41df-989A-BA0A411259F6" />
               </mediaLink>
               </content>
@@ -217,15 +241,10 @@
             <step>
               <content>
                 <para>
-                  Finally the subscription must be saved as a session file (*.oses) as it is on figure 10. 
+                  Finally the subscription must be saved as a session file (*.oses)  by choosing from menu “Session -> Save”.
                 </para>
-                <mediaLink>
-                  <caption placement="after" lead="Figure 10">OPC Viewer – save subscription as *.oses file</caption>
-                  <image placement="center" xlink:href="ASMD_Save_oses_file" />
-                </mediaLink>
               </content>
             </step>
-            
           </steps>
         </procedure>
       </content>
@@ -240,10 +259,10 @@
             <step>
               <content>
                 <para>
-                  The first step to export address space to a dictionary file is to click the right mouse button on the connected OPC server and select “Browse Items...”.
+                  Click the right mouse button on the selected OPC server node and select “Browse Items...” from the context menu. Address Space Dictionary Management dialog appears.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 11">OPC Viewer – Browse server items</caption>
+                  <caption placement="after" lead="Figure 8">OPC Viewer – Browse server items</caption>
                   <image placement="center" xlink:href="OPCV_create_odic_file" />
                 </mediaLink>
               </content>
@@ -251,10 +270,10 @@
             <step>
               <content>
                 <para>
-                  After appearing of the new dialog, click on the "Save" button (Figure 12). In the window that appears, choose "Dictionary files (*.odic)" in the "Save as type" drop-down list and choose location of the *.odic file, where the address space will be saved.
+                  Click the "Save" button (Figure 9). In the window that appears, choose "Dictionary files (*.odic)" in the "Save as type" drop-down list and choose location of the *.odic file, where the address space will be saved.
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 12">OPC Viewer – Saving the server address space in a dictionary file</caption>
+                  <caption placement="after" lead="Figure 9">OPC Viewer – Saving the server address space in a dictionary file</caption>
                   <image placement="center" xlink:href="OPCV_save_odic_file" />
                 </mediaLink>
               </content>
@@ -262,16 +281,7 @@
             <step>
               <content>
                 <para>
-                  This is the end of work with OPC Viewer. In the next steps we will use UA Address Space Model Designer. If UA Address Space Model Designer is installed as a standalone application, it can be launched by selecting:
-                </para>
-                <para>
-                  <legacyUnderline> Start Menu -> All Programs -> CAS -> CAS UA Address Space Model Designer</legacyUnderline>
-                </para>
-                <para>
-                  or if the UA Address Space Model Designer is installed as part of the CommServerUA package:
-                </para>
-                <para>
-                  <legacyUnderline> Start Menu -> All Programs -> CAS -> CommServerUA -> OPC UA Address Space Model Designer</legacyUnderline>
+                  Created session file and dictionary file will be further used by the Address Space Model Designer to automatically create configuration for the CommServerUA.
                 </para>
               </content>
             </step>
@@ -289,10 +299,25 @@
             <step>
               <content>
                 <para>
-                  After first launching of the UA Address Space Model Designer you need to click on the "Main" panel instead of "Help" panel on which version history is being displayed.
+                  To launch Address Space Model Designer select:
+                  <legacyUnderline>Start Menu -> All Programs -> CAS -> CommServerUA -> OPC UA Address Space Model Designer</legacyUnderline>
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  After first launching of the UA Address Space Model Designer "Help" panel with version history is being displayed. Click on the "Main" panel to manage the solution content.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  To create new project select “Solution -> Add Project ->New” from the context menu (Figure 10).
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 13">UA Address Space Model Designer – Create new project in the solution</caption>
+                  <caption placement="after" lead="Figure 10">UA Address Space Model Designer – Create new project in the solution</caption>
                   <image placement="center" xlink:href="ASMD_new_project" />
                 </mediaLink>
               </content>
@@ -300,18 +325,26 @@
             <step>
               <content>
                 <para>
-                  On the figure 14 you can see the selection of the onfiguration plugin located in:
+                  Open CommServerUA configuration editor using UA Server menu (figure 11). The default location of this editor is:
                 </para>
                 <para>
                 <userInput>%USERPROFILE%\My Documents\UAAddressSpaceModelDesigner\Sample</userInput>
                 </para>
+                <para>
+                  After clicking on the "Open" button the "UA server configuration file" dialog appears. In this walkthrough the configuration is created from scratch using default setting, hence click "Cancel" button to skip opening a file.
+                </para>
+                <para>
+                  For more information about using plugins as the external configuration editors see
+                  <externalLink>
+                    <linkText>here</linkText>
+                    <linkAlternateText>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/0ba3d783-093d-4394-87ef-aff8a46fff94.htm</linkAlternateText>
+                    <linkUri>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/0ba3d783-093d-4394-87ef-aff8a46fff94.htm</linkUri>
+                  </externalLink>
+                </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 14">UA Address Space Model Designer – Select configuration editor</caption>
+                  <caption placement="after" lead="Figure 11">UA Address Space Model Designer – Select configuration editor</caption>
                   <image placement="center" xlink:href="ASMD_select_editor" />
                 </mediaLink>
-                <para>
-                  After clicking on the "OK" button the "UA server configuration file" will appear. You need to click "Cancel" button on this dialog because the configuration will be created automatically in a moment.
-                </para>
               </content>
             </step>
           </steps>
@@ -328,41 +361,39 @@
               <step>
                 <content>
                 <para>
-                  To import address space from DA server to UA model click with the right mouse button on the "Solution -> Project -> Domain" and choose "Import -> From OPC DA ...". This operation is shown on figure 15:
+                  To import address space from DA server to UA model click the right mouse button over the context menu of the "Solution -> Project -> Domain" and select "Import -> From OPC DA ...".
                 </para>
-                <mediaLink>
-                  <caption placement="after" lead="Figure 15">UA Address Space Model Designer – Import address space from *.odic file to the model</caption>
-                  <image placement="center" xlink:href="ASMD_Import_From_OPC_DA" />
-                </mediaLink>
-                 </content>
+                </content>
               </step>
               <step>
                 <content>
                   <para>
-                    After clicking on the "From OPC DA ..." you will be asked to choose dictionary file (*odic), so choose the file that you have created in 3rd point of this tutorial. Then you will be asked to choose session file (*oses), so choose the file that you have created in 2nd point of this tutorial.
-                  </para>
+                    After clicking on the "From OPC DA ..." you will be asked to open  dictionary file (*odic) created above, so choose the file that you have created in 
+                    <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Export_address_space_to_dictionary_file">section 3</link>.
+                    Then you will be asked to choose session file (*oses), so choose the file that you have created in
+                    <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Creation_of_the_online_subscription">section 2</link>.
+                </para>
                 </content>
                 </step>
               <step>
                 <content>
-                <para>
-                 Finally you get the fully functional model with the data bindings. Now you can build the model and get all configuration files required for launching CommServerUA. To build the model you need to choose from the toolbar: "Tools -> Build/Verify -> Build Solution", as it is on figure 16. After choosing this option you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier), so you should do this.   
-                </para>
+                  <para>
+                    Finally you get the fully functional model with the data bindings. Now you can build the model and get all configuration files required for launching CommServerUA.
+                  </para>
+                </content>
+              </step>
+              <step>
+                <content>
+                  <para>
+                    To build the model you need to select from the menu bar: "Tools -> Build/Verify -> Build Solution". Before starting the build operation you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier).
+                  </para>
                   <alert>
                     <para>
                       If there are any problems with Build process, check if all files have correct names and locations and if there are still problems - reset UA Address Space Model Designer options to default values ("Reset" button is in "Tools -> Options").
                     </para>
                   </alert>
-                  <mediaLink>
-                  <caption placement="after" lead="Figure 16">UA Address Space Model Designer – Build the model</caption>
-                  <image placement="center" xlink:href="ASMD_Build_imported_model" />
-                </mediaLink>
-                </content>
-              </step>
-              <step>
-                <content>
                   <para>
-                    Now you can start CommServerUA with similar configuration, as it is in your old OPC Classic server! 
+                    Now you can use CommServerUA with similar configuration, as it is in your old OPC Classic server.
                   </para>
                 </content>
               </step>
