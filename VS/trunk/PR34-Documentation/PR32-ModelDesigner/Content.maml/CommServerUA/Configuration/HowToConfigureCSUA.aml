@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7291baf0-ddef-4b59-9bb2-2bcef48d2e76" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        After installation of the <token>UACommServer</token> the default configuration is uploaded. To get more details about default configuration see
+        <externalLink>
+          <linkText>this topic</linkText>
+          <linkAlternateText>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/f9f6641e-0f03-443a-b7b9-8c34aecfdb40.htm</linkAlternateText>
+          <linkUri>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/f9f6641e-0f03-443a-b7b9-8c34aecfdb40.htm</linkUri>
+        </externalLink>
+        This short tutorial shows how to upload custom user configuration to the CommServerUA.
+      </para>
+    </introduction>
+    <section>
+      <title>
+        Configuration of the CommServerUA
+      </title>
+      <content>
+        <alert>
+          <para>
+            Default location of the CommServerUA after installation is: <legacyBold>%ProgramFiles%\CAS\CommServerUA</legacyBold>.
+          </para>
+        </alert>
+        <procedure>
+          <title></title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>
+                  Copy the folder with server configuration to the location of the CommServerUA. The folder which is being copied must contain:
+                </para>
+                <list class="bullet">
+                  <listItem>
+                    <para>
+                      Models included in the solution (as an XML files)
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      Dictionary files for the models included in the solution (*.csv files)
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      Configuration file(*.uasconfig file)
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      OPCViewer session (*.oses file) if it is needed.
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      Folder with files created during the Build process.
+                    </para>
+                  </listItem>
+                </list>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Open <legacyBold>CAS.UA.CommServer.exe.config</legacyBold> file and change the following XML elements:
+                </para>
+                <list class="ordered">
+                  <listItem>
+                    <para>
+                      <legacyBold>CAS.UA.Server</legacyBold> -> <legacyBold>ConfigurationLocation</legacyBold> -> <legacyBold>FilePath</legacyBold> - here should be the file path to the configuration file (*.uasconfig file).
+                    </para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <legacyBold>applicationSettings</legacyBold> -> <legacyBold>CAS.UA.Server.Properties.Settings</legacyBold> -> <legacyBold>setting</legacyBold> -> <legacyBold>value</legacyBold>- here should be the file path to the configuration file (*.uasconfig file).
+                    </para>
+                  </listItem>
+                </list>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>

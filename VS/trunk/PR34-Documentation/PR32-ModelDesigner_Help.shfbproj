@@ -1,4 +1,4 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which
          assemblies to include from solution and project documentation
@@ -115,6 +115,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\" />
     <Folder Include="PR30-OPCViewer\Graphics\ico\" />
     <Folder Include="PR30-OPCViewer\Graphics\" />
     <Folder Include="PR30-OPCViewer\" />
@@ -691,6 +692,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\HowToConfigureCSUA.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Configuration.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Installing.aml" />
@@ -1134,7 +1136,7 @@
       <AlternateText>OPC Viewer – added items</AlternateText>
       <ImageId>5EFB0358-D477-41df-989A-BA0A411259F6</ImageId>
     </Image>
-      <Image Include="PR30-OPCViewer\Graphics\ico\Network_ConnectTo.png">
+    <Image Include="PR30-OPCViewer\Graphics\ico\Network_ConnectTo.png">
       <AlternateText>OPC Connect</AlternateText>
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
