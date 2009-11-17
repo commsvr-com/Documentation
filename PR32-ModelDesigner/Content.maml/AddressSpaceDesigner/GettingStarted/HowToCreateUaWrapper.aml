@@ -393,7 +393,8 @@
                     </para>
                   </alert>
                   <para>
-                    Now you can use CommServerUA with similar configuration, as it is in your old OPC Classic server.
+                    Now you can use CommServerUA with similar configuration, as it is in your old OPC Classic server. Information about configuring CSUA can be found 
+                    <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76">here</link>
                   </para>
                 </content>
               </step>

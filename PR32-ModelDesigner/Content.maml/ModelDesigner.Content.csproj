@@ -53,6 +53,7 @@
     <None Include="ASMD_VersionHistory.aml" />
     <None Include="CommServerUA.aml" />
     <None Include="CommServerUA\CommServerUA_Version_History.aml" />
+    <None Include="CommServerUA\Configuration\HowToConfigureCSUA.aml" />
     <None Include="CommServerUA\GettingStarted.aml" />
     <None Include="CommServerUA\Installing.aml" />
     <None Include="Concept.aml" />
@@ -175,8 +176,5 @@
     <None Include="UA_Glossary.aml" />
     <None Include="UserInterface.aml" />
     <None Include="Welcome.aml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CommServerUA\Configuration\" />
   </ItemGroup>
 </Project>
