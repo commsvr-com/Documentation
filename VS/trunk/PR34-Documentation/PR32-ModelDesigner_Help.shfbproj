@@ -1084,6 +1084,10 @@
       <ImageId>ASMD_BuildSolution</ImageId>
       <AlternateText>Building a solution</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
+      <AlternateText>Solution, projects, libraries</AlternateText>
+      <ImageId>ASMD_SolutionProjectsLibraries</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
