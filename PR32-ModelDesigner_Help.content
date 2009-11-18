@@ -123,7 +123,7 @@
           <Topic id="729ee2c6-0ed4-4130-8e45-d13db54604a7" visible="True" title="Model tree" tocTitle="Model tree" linkText="Model tree" />
           <Topic id="849ec94e-10ed-4f25-bfdc-6284575b793a" visible="True" title="Reference modeling" tocTitle="Reference modeling" linkText="Reference modeling" />
         </Topic>
-        <Topic id="50f9146b-15b4-49c9-a12a-ff2f72ef220b" visible="True" title="Solution and projects" tocTitle="Solution and projects" linkText="Solution and projects" />
+        <Topic id="50f9146b-15b4-49c9-a12a-ff2f72ef220b" visible="True" title="Managing Solutions, Projects, and Files " tocTitle="Managing Solutions, Projects, and Files " linkText="Managing Solutions, Projects, and Files " />
         <Topic id="d6957c91-d52c-4d0b-92f1-e9aa87b70450" visible="True" title="How to build a solution" tocTitle="How to build a solution" linkText="How to build a solution" />
       </Topic>
       <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" visible="False" title="User Interface" tocTitle="User Interface">
