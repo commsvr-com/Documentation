@@ -115,6 +115,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modelling\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\" />
     <Folder Include="PR30-OPCViewer\Graphics\ico\" />
     <Folder Include="PR30-OPCViewer\Graphics\" />
@@ -692,6 +694,13 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modelling\ASMD_Modeling_ModelTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modelling\ASMD_Modeling_GraphicalNotation.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionBuild.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionAndProjects.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModelling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_Modelling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\Using_ASMD.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\HowToConfigureCSUA.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Configuration.aml" />
