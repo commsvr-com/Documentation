@@ -1104,6 +1104,10 @@
       <ImageId>ASMD_FromProcessToModel</ImageId>
       <AlternateText>From real-time process to model</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg">      
+       <ImageId>ASMD_GraphicalNotation</ImageId>      
+       <AlternateText>Graphical notation</AlternateText>    
+     </Image>    
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
