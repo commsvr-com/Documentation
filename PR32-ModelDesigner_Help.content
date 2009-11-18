@@ -118,13 +118,13 @@
         </Topic>
       </Topic>
       <Topic id="9423bb38-07a5-470a-99c8-a033b30c4ad8" visible="True" title="Using OPC UA Address Space Model Designer" tocTitle="Using OPC UA Address Space Model Designer" linkText="Using OPC UA Address Space Model Designer">
-        <Topic id="28cdfb00-5b8d-4cf3-93bd-b8cf390fc1c7" visible="True" title="Modelling" tocTitle="Modelling" linkText="Modelling">
+        <Topic id="28cdfb00-5b8d-4cf3-93bd-b8cf390fc1c7" visible="True" title="Modeling" tocTitle="Modeling" linkText="Modeling">
           <Topic id="27bef542-34c2-4ce4-a501-29d483347f53" visible="True" title="Graphical notation" tocTitle="Graphical notation" linkText="Graphical notation" />
           <Topic id="729ee2c6-0ed4-4130-8e45-d13db54604a7" visible="True" title="Model tree" tocTitle="Model tree" linkText="Model tree" />
+          <Topic id="849ec94e-10ed-4f25-bfdc-6284575b793a" visible="True" title="Reference modeling" tocTitle="Reference modeling" linkText="Reference modeling" />
         </Topic>
-        <Topic id="849ec94e-10ed-4f25-bfdc-6284575b793a" visible="True" title="Reference modelling" tocTitle="Reference modelling" linkText="Reference modelling" />
         <Topic id="50f9146b-15b4-49c9-a12a-ff2f72ef220b" visible="True" title="Solution and projects" tocTitle="Solution and projects" linkText="Solution and projects" />
-        <Topic id="d6957c91-d52c-4d0b-92f1-e9aa87b70450" visible="True" title="Build of the solution" tocTitle="Build of the solution" linkText="Build of the solution" />
+        <Topic id="d6957c91-d52c-4d0b-92f1-e9aa87b70450" visible="True" title="Building a solution" tocTitle="Building a solution" linkText="Building a solution" />
       </Topic>
       <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" visible="False" title="User Interface" tocTitle="User Interface">
         <Topic id="e7e440ad-68fb-4c4b-bc09-26765163b898" visible="False" title="Menus" tocTitle="Menus" />
