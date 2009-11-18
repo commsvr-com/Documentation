@@ -49,12 +49,12 @@
     <None Include="AddressSpaceDesigner\Menus.aml" />
     <None Include="AddressSpaceDesigner\Overview.aml" />
     <None Include="AddressSpaceDesigner\UserInterface.aml" />
-    <None Include="AddressSpaceDesigner\UsingASMD\ASMD_Modelling.aml" />
-    <None Include="AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModelling.aml" />
+    <None Include="AddressSpaceDesigner\UsingASMD\ASMD_Modeling.aml" />
     <None Include="AddressSpaceDesigner\UsingASMD\ASMD_SolutionAndProjects.aml" />
     <None Include="AddressSpaceDesigner\UsingASMD\ASMD_SolutionBuild.aml" />
-    <None Include="AddressSpaceDesigner\UsingASMD\Modelling\ASMD_Modeling_GraphicalNotation.aml" />
-    <None Include="AddressSpaceDesigner\UsingASMD\Modelling\ASMD_Modeling_ModelTree.aml" />
+    <None Include="AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_GraphicalNotation.aml" />
+    <None Include="AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_ModelTree.aml" />
+    <None Include="AddressSpaceDesigner\UsingASMD\Modeling\ASMD_ReferenceModeling.aml" />
     <None Include="AddressSpaceDesigner\Using_ASMD.aml" />
     <None Include="Alarms.aml" />
     <None Include="ASMD_VersionHistory.aml" />
