@@ -47,6 +47,7 @@
     <None Include="AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
     <None Include="AddressSpaceDesigner\Menus.aml" />
+    <None Include="AddressSpaceDesigner\NodesClasses.aml" />
     <None Include="AddressSpaceDesigner\Overview.aml" />
     <None Include="AddressSpaceDesigner\UserInterface.aml" />
     <None Include="AddressSpaceDesigner\UsingASMD\ASMD_Modeling.aml" />
@@ -117,6 +118,7 @@
     <None Include="Nodes\NamespacesFolder.aml" />
     <None Include="Nodes\NodeDesign.aml" />
     <None Include="Nodes\ObjectDesign.aml" />
+    <None Include="Nodes\Objects.aml" />
     <None Include="Nodes\ObjectTypeDesign.aml" />
     <None Include="Nodes\Parameter.aml" />
     <None Include="Nodes\ParametersFolder.aml" />
@@ -126,6 +128,7 @@
     <None Include="Nodes\ReferenceTypeDesign.aml" />
     <None Include="Nodes\StateMachineTypeDesign.aml" />
     <None Include="Nodes\TypeDesign.aml" />
+    <None Include="Nodes\Types.aml" />
     <None Include="Nodes\VariableDesign.aml" />
     <None Include="Nodes\VariableTypeDesign.aml" />
     <None Include="Nodes\ViewDesign.aml" />

@@ -695,6 +695,9 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\Nodes\Objects.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\Nodes\Types.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\NodesClasses.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_Modeling.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_ReferenceModeling.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_ModelTree.aml" />

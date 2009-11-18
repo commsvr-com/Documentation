@@ -129,12 +129,12 @@
       <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" visible="False" title="User Interface" tocTitle="User Interface">
         <Topic id="e7e440ad-68fb-4c4b-bc09-26765163b898" visible="False" title="Menus" tocTitle="Menus" />
       </Topic>
-      <Topic id="8880dab5-b615-4716-aadd-f6adc3ba74d3" visible="True" noFile="True" title="Nodes classes" tocTitle="Nodes classes">
+      <Topic id="8880dab5-b615-4716-aadd-f6adc3ba74d3" visible="True" title="Nodes classes" tocTitle="Nodes classes" linkText="Nodes classes">
         <Topic id="fb00ec85-b875-4b4c-a457-45691d367490" visible="True" title="Model (Domain)" tocTitle="Model (Domain)" />
         <Topic id="b35e8d52-ef43-41a3-bead-dee070980880" visible="True" title="Children" tocTitle="Children" />
         <Topic id="825c51fd-1649-4681-95c9-19ceb9a4f718" visible="True" title="Namespace" tocTitle="Namespace" />
         <Topic id="f1cff0ba-a492-4eea-ad99-c4acbcb60808" visible="True" title="Namespaces Folder" tocTitle="Namespaces Folder" />
-        <Topic id="f8823e82-3f6b-4f3d-b244-772820b3a9b2" visible="True" noFile="True" title="Types" tocTitle="Types">
+        <Topic id="f8823e82-3f6b-4f3d-b244-772820b3a9b2" visible="True" title="Types" tocTitle="Types">
           <Topic id="401602f6-68cf-4f77-81f6-3c6b6a088c6e" visible="True" title="Type" tocTitle="Type" />
           <Topic id="83ddb144-04c8-45b5-8067-a44757422ff0" visible="True" title="VariableType" tocTitle="VariableType" />
           <Topic id="66e5ee05-9fa5-41f7-a735-2abcee7880db" visible="True" title="DataType" tocTitle="DataType" />
@@ -143,7 +143,7 @@
           <Topic id="74b62f4b-91af-4faf-b453-26ae2a212069" visible="True" title="ObjectType" tocTitle="ObjectType" />
           <Topic id="2eddb75a-7f03-48bf-9ac9-3505f26e178c" visible="True" title="ReferenceType" tocTitle="ReferenceType" />
         </Topic>
-        <Topic id="35593b68-434e-4481-b356-6be27895a5ec" visible="True" noFile="True" title="Objects" tocTitle="Objects">
+        <Topic id="35593b68-434e-4481-b356-6be27895a5ec" visible="True" title="Objects" tocTitle="Objects">
           <Topic id="3326223f-4b54-48f6-add4-e8dbf92b4b8a" visible="True" title="Object" tocTitle="Object" />
           <Topic id="e07d2ea9-9fbf-4090-9f51-c13bcfd376d3" visible="True" title="Node" tocTitle="Node" />
           <Topic id="a53158d1-fa3a-4757-a0c5-d04306548411" visible="True" title="Reference" tocTitle="Reference" />

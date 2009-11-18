@@ -19,7 +19,7 @@
           <image placement="center" xlink:href="ASMD_ASMDApproach" />
         </mediaLink>
         <para>
-          The model is presented on the tree and uses icons that represent the node classes. At the beginning there are Namespaces declarations. Those namespaces are used in the model definition. The fist namespace: “Opc.Ua” refers to built-in OPC UA types and the second namespace (“Opc.UA.Sample”) is used to collect elements from our Boiler sample design.
+          The model is presented on the tree and uses icons that represent the <link xlink:href="8880dab5-b615-4716-aadd-f6adc3ba74d3">node classes</link>. At the beginning there are Namespaces declarations. Those namespaces are used in the model definition. The fist namespace: “Opc.Ua” refers to built-in OPC UA types and the second namespace (“Opc.UA.Sample”) is used to collect elements from our Boiler sample design.
         </para>
         <para>
           After namespaces, the tree contains types and methods definitions (like: BoilerDrumType, FlowTo reference type, CreateInstance method). Those definitions are used in the Boiler model. The main element is the Boiler type definition consisting of pipes, drum, controllers, just like it was shown before.
