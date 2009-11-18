@@ -1088,6 +1088,22 @@
       <AlternateText>Solution, projects, libraries</AlternateText>
       <ImageId>ASMD_SolutionProjectsLibraries</ImageId>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg">
+      <AlternateText>Modeling steps</AlternateText>
+      <ImageId>ASMD_ModelingSteps</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg">
+      <AlternateText>From real-time process to model using XML file</AlternateText>
+      <ImageId>ASMD_FromProcessToModelWithXml</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg">
+      <ImageId>ASMD_FromProcessToModelWithASMD</ImageId>
+      <AlternateText>From real-time process to model using UA Address Space Model Designer</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg">
+      <ImageId>ASMD_FromProcessToModel</ImageId>
+      <AlternateText>From real-time process to model</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
