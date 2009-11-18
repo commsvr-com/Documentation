@@ -115,6 +115,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\" />
@@ -1074,6 +1075,14 @@
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Save_oses_file.jpg">
       <ImageId>ASMD_Save_oses_file</ImageId>
       <AlternateText>Save *.oses file</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg">
+      <ImageId>ASMD_CodeGeneration</ImageId>
+      <AlternateText>Code generation</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg">
+      <ImageId>ASMD_BuildSolution</ImageId>
+      <AlternateText>Building a solution</AlternateText>
     </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
