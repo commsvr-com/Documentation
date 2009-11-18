@@ -1116,6 +1116,14 @@
       <ImageId>ASMD_AttachObject</ImageId>
       <AlternateText>Attaching object</AlternateText>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_Indicator.jpg">
+      <AlternateText>Indicator</AlternateText>
+      <ImageId>ASMD_Indicator</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg">
+      <AlternateText>UA Address Space Model Designer approach</AlternateText>
+      <ImageId>ASMD_ASMDApproach</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
