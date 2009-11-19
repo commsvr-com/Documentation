@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f8823e82-3f6b-4f3d-b244-772820b3a9b2" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      The following topics describe particular types
+      </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link xlink:href="401602f6-68cf-4f77-81f6-3c6b6a088c6e">Type</link>
+        </para>
+        <para>
+          <link xlink:href="83ddb144-04c8-45b5-8067-a44757422ff0">VariableType</link>
+        </para>
+        <para>
+          <link xlink:href="66e5ee05-9fa5-41f7-a735-2abcee7880db">DataType</link>
+        </para>
+        <para>
+          <link xlink:href="22203f7a-b6ed-458f-ab86-5174ba4757f3">EventType</link>
+        </para>
+        <para>
+          <link xlink:href="a5703461-ab5e-4a2f-9307-8403e0d8a74e">StateMachineType</link>
+        </para>
+        <para>
+          <link xlink:href="74b62f4b-91af-4faf-b453-26ae2a212069">ObjectType</link>
+        </para>
+        <para>
+          <link xlink:href="2eddb75a-7f03-48bf-9ac9-3505f26e178c">ReferenceType</link>
+        </para>
+      </content>
+    </inThisSection>
+    <relatedTopics>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>
