@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="35593b68-434e-4481-b356-6be27895a5ec" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        The following topics describe particular objects
+      </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link xlink:href="3326223f-4b54-48f6-add4-e8dbf92b4b8a">Object</link>
+        </para>
+        <para>
+          <link xlink:href="e07d2ea9-9fbf-4090-9f51-c13bcfd376d3">Node</link>
+        </para>
+        <para>
+          <link xlink:href="a53158d1-fa3a-4757-a0c5-d04306548411">Reference</link>
+        </para>
+        <para>
+          <link xlink:href="5d8e3b3c-cfeb-4007-a54f-64838ce85ce1">ReferenceFolder</link>
+        </para>
+        <para>
+          <link xlink:href="35491dad-5010-4746-8a35-04631122f7a2">Property</link>
+        </para>
+        <para>
+          <link xlink:href="05d23c43-3193-4f79-a14f-7e072490c209">Instance</link>
+        </para>
+        <para>
+          <link xlink:href="bdcb7390-4a61-4980-b9c4-b7512b8599ad">Variable</link>
+        </para>
+        <para>
+          <link xlink:href="54653630-5450-4075-a05b-74a77892722c">View</link>
+        </para>
+        <para>
+          <link xlink:href="71e57e6f-fbfb-4bd3-ab5a-7c0047c3d97c">Encoding</link>
+        </para>
+        <para>
+          <link xlink:href="ac026ef7-e1c1-4bd1-aeab-fa8e59156b02">EncodingsFolder</link>
+        </para>
+        <para>
+          <link xlink:href="d9a18287-f02e-48f0-b223-6336e45c52b6">Parameter</link>
+        </para>
+        <para>
+          <link xlink:href="6f47d37f-5bd0-48f9-9436-3cc2ce332f10">ParametersFolder</link>
+        </para>
+        <para>
+          <link xlink:href="3999d25b-08cf-44ae-ab93-3a7c1b948f2b">Dictionary</link>
+        </para>
+        <para>
+          <link xlink:href="811f5b81-0070-4870-8a98-4277c3ea877d">Method</link>
+        </para>
+      </content>
+    </inThisSection>
+    <relatedTopics>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>

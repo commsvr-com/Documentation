@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8880dab5-b615-4716-aadd-f6adc3ba74d3" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+      The following topics describe nodes classes.
+      </para>
+    </introduction>
+    <inThisSection>
+      <content>
+        <para>
+          <link xlink:href="fb00ec85-b875-4b4c-a457-45691d367490">Model design</link>
+        </para>
+        <para>
+          <link xlink:href="b35e8d52-ef43-41a3-bead-dee070980880">Children</link>
+        </para>
+        <para>
+          <link xlink:href="825c51fd-1649-4681-95c9-19ceb9a4f718">Namespace</link>
+        </para>
+        <para>
+          <link xlink:href="f1cff0ba-a492-4eea-ad99-c4acbcb60808">Namespaces folder</link>
+        </para>
+        <para>
+          <link xlink:href="f8823e82-3f6b-4f3d-b244-772820b3a9b2">Types</link>
+        </para>
+        <para>
+          <link xlink:href="35593b68-434e-4481-b356-6be27895a5ec">Objects</link>
+        </para>
+      </content>
+    </inThisSection>
+  </developerOrientationDocument>
+</topic>
