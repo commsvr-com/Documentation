@@ -34,7 +34,7 @@
       </list>
       <alert>
         <para>
-          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and other users of the OPC. OPC Viewer has the functionality of saving current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process.
+          OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and other users of the OPC. OPC Viewer has the functionality of saving the current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process.
         </para>
       </alert>
       <alert>
@@ -69,7 +69,7 @@
       </alert>
       <para>
         <legacyBold>
-          Prerequisits
+          Prerequisites
         </legacyBold>
       </para>
       <list class="ordered">
@@ -125,7 +125,7 @@
                   in the menu. The Select Server window appears (Figure 1); select OPC Server from a local or remote computer (e.g. CAS.CommServer.OPC.Da.Server):
                 </para>
                 <mediaLink>
-                  <caption placement="after" lead="Figure 1">OPC Viewer – Select Server Window</caption>
+                  <caption placement="after" lead="Figure 1">OPC Viewer – Select Server window</caption>
                   <image placement="center" xlink:href="E299BCFF-DD8A-4633-8EF5-B4F36099DEC2" />
                 </mediaLink>
                 <para>
@@ -180,7 +180,7 @@
             <step>
               <content>
                 <para>
-                  To check the status of the connected OPC server from the server node context menu select “View Status” or click icon ( <mediaLinkInline>
+                  To check the status of the connected OPC server select “View Status” from the server node context menu or click icon ( <mediaLinkInline>
                     <image xlink:href="F26B375B-DDE1-4f8a-BC1C-853B0C8A9064"/>
                   </mediaLinkInline> ) on the toolbar.
                 </para>
@@ -241,7 +241,7 @@
             <step>
               <content>
                 <para>
-                  Finally the subscription must be saved as a session file (*.oses)  by choosing from menu “Session -> Save”.
+                  Finally the subscription must be saved as a session file (*.oses)  by choosing “Session -> Save” from menu.
                 </para>
               </content>
             </step>
@@ -281,7 +281,7 @@
             <step>
               <content>
                 <para>
-                  Created session file and dictionary file will be further used by the Address Space Model Designer to automatically create configuration for the CommServerUA.
+                  The created session file and dictionary file will be further used by the Address Space Model Designer to automatically create configuration for the CommServerUA.
                 </para>
               </content>
             </step>
@@ -307,7 +307,7 @@
             <step>
               <content>
                 <para>
-                  After first launching of the UA Address Space Model Designer "Help" panel with version history is being displayed. Click on the "Main" panel to manage the solution content.
+                  After first launching of the UA Address Space Model Designer the "Help" panel with version history is being displayed. Click on the "Main" panel to manage the solution content.
                 </para>
               </content>
             </step>
@@ -331,10 +331,10 @@
                 <userInput>%USERPROFILE%\My Documents\UAAddressSpaceModelDesigner\Sample</userInput>
                 </para>
                 <para>
-                  After clicking on the "Open" button the "UA server configuration file" dialog appears. In this walkthrough the configuration is created from scratch using default setting, hence click "Cancel" button to skip opening a file.
+                  After clicking on the "Open" button the "UA server configuration file" dialog appears. In this walkthrough the configuration is created from scratch using default setting, hence click the "Cancel" button to skip opening a file.
                 </para>
                 <para>
-                  For more information about using plugins as the external configuration editors see
+                  For more information about using plugins as external configuration editors see
                   <externalLink>
                     <linkText>here</linkText>
                     <linkAlternateText>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/0ba3d783-093d-4394-87ef-aff8a46fff94.htm</linkAlternateText>
@@ -361,7 +361,7 @@
               <step>
                 <content>
                 <para>
-                  To import address space from DA server to UA model click the right mouse button over the context menu of the "Solution -> Project -> Domain" and select "Import -> From OPC DA ...".
+                  To import address space from DA server to UA model click the right mouse button on the context menu of the "Solution -> Project -> Domain" and select "Import -> From OPC DA ...".
                 </para>
                 </content>
               </step>
@@ -385,7 +385,7 @@
               <step>
                 <content>
                   <para>
-                    To build the model you need to select from the menu bar: "Tools -> Build/Verify -> Build Solution". Before starting the build operation you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier).
+                    To build the model you need to select: "Tools -> Build/Verify -> Build Solution" from the menu bar. Before starting the build operation you will be asked to save the solution file, model file, configuration file and *.csv file (if you did not save those files earlier).
                   </para>
                   <alert>
                     <para>
@@ -393,8 +393,7 @@
                     </para>
                   </alert>
                   <para>
-                    Now you can use CommServerUA with similar configuration, as it is in your old OPC Classic server. Information about configuring CSUA can be found 
-                    <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76">here</link>
+                    Now you can use CommServerUA with the configuration similar to your old OPC Classic server. In <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76">this topic</link> you can read more about configuring CommServerUA. 
                   </para>
                 </content>
               </step>
