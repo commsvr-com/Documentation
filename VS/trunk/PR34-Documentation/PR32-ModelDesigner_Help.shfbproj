@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which
          assemblies to include from solution and project documentation
@@ -1115,13 +1115,13 @@
       <AlternateText>Reference modeling</AlternateText>
       <ImageId>ASMD_ReferenceModeling</ImageId>
     </Image>
-    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_AttachObject.jpg">
-      <ImageId>ASMD_AttachObject</ImageId>
-      <AlternateText>Attaching object</AlternateText>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg">
+      <ImageId>ASMD_references</ImageId>
+      <AlternateText>OPC UA Address Space Model Designer references</AlternateText>
     </Image>
-    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_Indicator.jpg">
-      <AlternateText>Indicator</AlternateText>
-      <ImageId>ASMD_Indicator</ImageId>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg">
+      <AlternateText>NodeClass name</AlternateText>
+      <ImageId>ASMD_NodeClass_name</ImageId>
     </Image>
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg">
       <AlternateText>UA Address Space Model Designer approach</AlternateText>

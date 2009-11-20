@@ -48,7 +48,7 @@
         </para>
         <mediaLink>
           <caption placement="after" lead="Figure 2">Attaching of the object to the root folder</caption>
-          <image placement="center" xlink:href="ASMD_AttachObject" />
+          <image placement="center" xlink:href="ASMD_references" />
         </mediaLink>
         <para>
           The example shows how the Server object is attached to the Objects folder that is attached to the Root folder.The "browse view" shows how the address space becomes available in the OPC UA server during runtime, while "XML" and "model view" show how all those references are available during the modeling step.

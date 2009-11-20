@@ -39,7 +39,7 @@
         </para>
         <mediaLink>
           <caption placement="after" lead="Figure 2">NodeClass indicator</caption>
-          <image placement="center" xlink:href="ASMD_Indicator" />
+          <image placement="center" xlink:href="ASMD_NodeClass_name" />
         </mediaLink>
       </content>
     </section>
