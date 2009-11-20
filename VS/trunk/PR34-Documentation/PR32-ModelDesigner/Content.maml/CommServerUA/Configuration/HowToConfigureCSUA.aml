@@ -31,7 +31,7 @@
             <step>
               <content>
                 <para>
-                  1.	Copy the folder with the new server configuration to the location of the CommServer UA application, such folder should contain:
+                  Copy the folder with the new server configuration to the location of the CommServer UA application, such folder should contain:
                 </para>
                 <list class="bullet">
                   <listItem>
