@@ -33,11 +33,11 @@
     <Preliminary>True</Preliminary>
     <HelpTitle>OPC Unified Architecture - specification applicable to manufacturing software in application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems.</HelpTitle>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b title=&amp;quot%3bOPC Unified Architecture&amp;quot%3b  target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
-    <FooterText>This documentation is designed to be used with CAS UA Address Space Model Designer %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx&amp;quot%3b title=&amp;quot%3bOPC UA Address Space Model Designer – powerful toolkit for Address Space in OPC Unified Architecture&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
+    <FooterText>This documentation is designed to be used with CommServer Software Family %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware.aspx&amp;quot%3b title=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
     <PresentationStyle>vs2005AdWords</PresentationStyle>
     <NamingMethod>MemberName</NamingMethod>
     <HelpFileVersion>1.0.0.6</HelpFileVersion>
