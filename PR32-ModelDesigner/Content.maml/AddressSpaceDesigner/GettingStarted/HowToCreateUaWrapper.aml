@@ -334,12 +334,7 @@
                   After clicking on the "Open" button the "UA server configuration file" dialog appears. In this walkthrough the configuration is created from scratch using default setting, hence click the "Cancel" button to skip opening a file.
                 </para>
                 <para>
-                  For more information about using plugins as external configuration editors see
-                  <externalLink>
-                    <linkText>here</linkText>
-                    <linkAlternateText>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/0ba3d783-093d-4394-87ef-aff8a46fff94.htm</linkAlternateText>
-                    <linkUri>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/0ba3d783-093d-4394-87ef-aff8a46fff94.htm</linkUri>
-                  </externalLink>
+                  For more information about using plugins as external configuration editors see <link xlink:href="0ba3d783-093d-4394-87ef-aff8a46fff94"/>.
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 11">UA Address Space Model Designer – Select configuration editor</caption>
@@ -369,9 +364,9 @@
                 <content>
                   <para>
                     After clicking on the "From OPC DA ..." you will be asked to open  dictionary file (*odic) created above, so choose the file that you have created in 
-                    <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Export_address_space_to_dictionary_file">section 3</link>.
+                    <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Export_address_space_to_dictionary_file">Export address space to a dictionary file using OPC Viewer</link>
                     Then you will be asked to choose session file (*oses), so choose the file that you have created in
-                    <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Creation_of_the_online_subscription">section 2</link>.
+                    <link xlink:href="adf47b46-959f-4bb0-99fd-355c9de4bbe1#Creation_of_the_online_subscription">Create online subscription in OPC Viewer</link>.
                 </para>
                 </content>
                 </step>
@@ -393,7 +388,7 @@
                     </para>
                   </alert>
                   <para>
-                    Now you can use CommServerUA with the configuration similar to your old OPC Classic server. In <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76">this topic</link> you can read more about configuring CommServerUA. 
+                    Now you can use CommServerUA with the configuration similar to your old OPC Classic server. In <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76"/> topic you can read more about configuring CommServerUA. 
                   </para>
                 </content>
               </step>
@@ -402,6 +397,23 @@
       </content>
     </section>
     <relatedTopics>
+      <externalLink>
+        <linkText>CommServer download</linkText>
+        <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>CommServerUA download</linkText>
+        <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx</linkUri>
+      </externalLink>
+      <externalLink>
+        <linkText>UA Address Space Model Designer</linkText>
+        <linkAlternateText>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkUri>
+      </externalLink>
+      <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76"/>
+      <link xlink:href="0ba3d783-093d-4394-87ef-aff8a46fff94"/>
     </relatedTopics>
   </developerHowToDocument>
 </topic>
