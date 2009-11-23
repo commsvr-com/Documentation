@@ -3,13 +3,7 @@
   <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
       <para>
-        By default  CAS CommServer UA™  is installed with the default configuration (read the 
-        <externalLink>
-        <linkText>following</linkText>
-        <linkAlternateText>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/f9f6641e-0f03-443a-b7b9-8c34aecfdb40.htm</linkAlternateText>
-        <linkUri>http://www.commsvr.com/UAModelDesigner/Index.aspx?topic=html/f9f6641e-0f03-443a-b7b9-8c34aecfdb40.htm</linkUri>
-      </externalLink>
-        topic to find more information about it). This short tutorial shows how to change the default configuration to the custom one. This short tutorial shows how to upload custom user configuration to the CommServerUA.
+        By default  CAS CommServer UA™  is installed with the default configuration (read <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/> to find more information about it). This short tutorial shows how to change the default configuration to the custom one. This short tutorial shows how to upload custom user configuration to the CommServerUA.
       </para>
     </introduction>
     <section>
@@ -91,6 +85,7 @@
       </content>
     </section>
     <relatedTopics>
+      <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/>
     </relatedTopics>
   </developerHowToDocument>
 </topic>
