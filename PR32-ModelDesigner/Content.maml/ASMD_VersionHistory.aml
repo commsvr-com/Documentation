@@ -21,6 +21,26 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="REL_2_10_10">
+      <title>Version 2.10.10</title>
+      <content>
+        <para>
+          Friday, January 15, 2009
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Synchronization with OPC Foundation SDK 1.01.308.0
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some minor bugfixes and improvements.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="REL_2_10_00">
       <title>Version 2.10.00</title>
       <content>
