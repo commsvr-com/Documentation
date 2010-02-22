@@ -102,7 +102,7 @@
       <title>Reference Types</title>
       <content>
         <para>
-        This standard Object is the browse entry point for <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> Nodes. Figure 6 illustrates the organization of ReferenceTypes. Organizes References are used to define ReferenceTypes and Objects referenced by the “ReferenceTypes” Object. The “ReferenceTypes” Object shall not reference any other NodeClasses. See Błąd! Nie można odnaleźć źródła odsyłacza. for a discussion of the standard ReferenceTypes that appear beneath the “ReferenceTypes” Object.
+        This standard Object is the browse entry point for <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> Nodes. Figure 6 illustrates the organization of ReferenceTypes. Organizes References are used to define ReferenceTypes and Objects referenced by the “ReferenceTypes” Object. The “ReferenceTypes” Object shall not reference any other NodeClasses. See <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134"/> for a discussion of the standard ReferenceTypes that appear beneath the “ReferenceTypes” Object.
       </para>
         <mediaLink>
           <caption placement="after" lead="Figure 6">ReferenceType Definitions</caption>

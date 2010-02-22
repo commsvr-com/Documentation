@@ -13,13 +13,13 @@
     </para>
       <alert>
         <para>
-        To see detailed definition use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" /> application and expand the BaseObjectType <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link></para>
+        To see detailed definition use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed"> UA Address Space Model Designer </link> application and expand the BaseObjectType <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link></para>
       </alert>
     </introduction>
     <relatedTopics>
       <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />
       <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasSubtype">HasSubtype</link>
-      <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" />
+      <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed"> UA Address Space Model Designer </link>
       <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
     </relatedTopics>
   </developerConceptualDocument>
