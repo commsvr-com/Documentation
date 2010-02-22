@@ -14,7 +14,7 @@
     </para>
       <alert>
         <para>
-        Because the types description does not provide complete definition, to see details of the definitions use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" /> application and expand appropriate <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link>.
+        Because the types description does not provide complete definition, to see details of the definitions use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed"> UA Address Space Model Designer </link> application and expand appropriate <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link>.
       </para>
       </alert>
     </introduction>
@@ -235,7 +235,7 @@
       <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName attribute</link>
       <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link>
       <link xlink:href="1f82af61-a0d9-4730-8cf1-d93ab765f2d2">Value attribute</link>
-      <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed" />
+      <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed"> UA Address Space Model Designer </link>
       <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
       <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">EventType</link>
       <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link>
