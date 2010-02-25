@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="2dea0752-d490-47e6-8444-ac73e07601fc" revisionNumber="1">
+  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Welcome to CommServer</para>
+    </introduction>
+    <relatedTopics>
+      <link xlink:href="70fab453-5d5f-4972-aa7a-2d312cc524d0">Who should use this manual?</link>
+      <link xlink:href="a2014641-7f7e-4966-a6f1-364541fa138c">Overview</link>
+    </relatedTopics>
+  </developerOrientationDocument>
+</topic>
