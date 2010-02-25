@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelDesigner.Content", "PR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schemas", "..\EX02-MAML\Sandcastle\Schemas\Schemas.csproj", "{45329FE0-9593-46D3-82C2-4AC9D18C7AD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommServer.Content", "PR21-CommServer\Content.maml\CommServer.Content.csproj", "{97F9B45D-77EF-4DAF-AF39-39E3B7AB7DF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{45329FE0-9593-46D3-82C2-4AC9D18C7AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45329FE0-9593-46D3-82C2-4AC9D18C7AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45329FE0-9593-46D3-82C2-4AC9D18C7AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F9B45D-77EF-4DAF-AF39-39E3B7AB7DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F9B45D-77EF-4DAF-AF39-39E3B7AB7DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F9B45D-77EF-4DAF-AF39-39E3B7AB7DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F9B45D-77EF-4DAF-AF39-39E3B7AB7DF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
