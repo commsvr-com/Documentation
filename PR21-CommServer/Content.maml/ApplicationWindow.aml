@@ -16,13 +16,21 @@
     <section address ="Section2">
       <title>Channel</title>
       <content>
-        <para><legacyBold><legacyItalic>Channel</legacyItalic></legacyBold> – a virtual communication channel that provides communication via many types of media (radio communication (400 MHz band, trunked radio), GPRS, cable TV, satellite, etc.). Communication through different channels is simultaneous. The user can create unlimited number of channels. The following parameters must be set:</para>
+        <para>
+          <legacyBold>
+            <legacyItalic>Channel</legacyItalic>
+          </legacyBold> – a virtual communication channel that provides communication via many types of media (radio communication (400 MHz band, trunked radio), GPRS, cable TV, satellite, etc.). Communication through different channels is simultaneous. The user can create unlimited number of channels. The following parameters must be set:
+        </para>
         <list class="bullet">
           <listItem>
-            <para><legacyItalic>ChannelID</legacyItalic> – channel unique numerical identifier</para>
+            <para>
+              <legacyItalic>ChannelID</legacyItalic> – channel unique numerical identifier
+            </para>
           </listItem>
           <listItem>
-            <para><legacyItalic>Name</legacyItalic> human readable channel name</para>
+            <para>
+              <legacyItalic>Name</legacyItalic> human readable channel name
+            </para>
           </listItem>
         </list>
       </content>
@@ -30,12 +38,17 @@
     <section address="Section3">
       <title>Protocol</title>
       <content>
-        <para><legacyBold><legacyItalic>Protocol</legacyItalic></legacyBold> – a communication protocol (a kind of language) which is used for communication with remote devices. An unlimited number of communication protocols can be selected for each channel. </para>
+        <para>
+          <legacyBold>
+            <legacyItalic>Protocol</legacyItalic>
+          </legacyBold> – a communication protocol (a kind of language) which is used for communication with remote devices. An unlimited number of communication protocols can be selected for each channel.
+        </para>
         <para>Following information should be set to assign a new protocol:</para>
         <list class="bullet">
           <listItem>
             <para>
-              <legacyItalic>Name</legacyItalic> - human readable protocol name</para>
+              <legacyItalic>Name</legacyItalic> - human readable protocol name
+            </para>
           </listItem>
           <listItem>
             <para>
@@ -44,7 +57,8 @@
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>FrameTimeOut</legacyItalic> – maximal wait time for the next character while waiting for the response frame end (a silent interval separating message frames, e.g.  3.5 character times for MODBUS) (if applicable)</para>
+              <legacyItalic>FrameTimeOut</legacyItalic> – maximal wait time for the next character while waiting for the response frame end (a silent interval separating message frames, e.g.  3.5 character times for MODBUS) (if applicable)
+            </para>
           </listItem>
           <listItem>
             <para>
@@ -93,6 +107,211 @@
           <listItem>
             <para>
               <legacyItalic>SerialType</legacyItalic> - port type, please select from the dropdown list (RS, NoSerrial (simulator),  Ethernet (UDP or TCP protocol)).
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Section4">
+      <title>Segments</title>
+      <content>
+        <para>
+          <legacyItalic>
+            <legacyBold>Segments</legacyBold>
+          </legacyItalic> - segment settings:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> -  human readable name
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Address</legacyItalic> - address of this segment ( IP, phone number, etc.)
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 3">Segment Window</caption>
+              <image placement="center" xlink:href = "d3de8b7b-4cca-4e42-9b63-fd621ae9b610"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>KeepConnect</legacyItalic> - this parameter defines if the connection is to be kept in spite of there is no data to transmit. The connection is kept as long as another segment becomes ready to be connected (important in case when keeping up the connection costs nothing and other segments are inactive).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>PickupConn </legacyItalic> – if true, remote station is able to establish connection - for example in case of alarm
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeIdleKeepConn</legacyItalic> – this parameter defines how long the segment should be in the data transfer mode, when there is no data to transfer
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeKeepConn</legacyItalic> – how long the segment should be in the data transfer mode
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeReconnect</legacyItalic> - if the connection cannot be established this setting defines the time when the next retry takes place
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeScan</legacyItalic> - period of time between connections (in milliseconds)
+            </para>
+          </listItem>
+        </list>
+        <para>Ports are attributed to subsequent segments. Each station has several communication interfaces (communication ports) that are used to establish the connection and data transfer. Important feature of the port is that only one port from the set of ports that belong to the selected station can be active.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Port window</caption>
+          <image placement="center" xlink:href = "8bf675aa-71cd-4e3d-ad5a-8cb69b19d549"/>
+        </mediaLink>
+        <para>Configuration of any port is as follows:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Address</legacyItalic> - protocol address of the station (e.g. number of  SBUS station).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>InactTime</legacyItalic> - indicates how long the port can stay deactivated.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>InactTimeAFailure</legacyItalic> - indicates how long the port can stay deactivated, when connection in this port is lost.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>InterfaceNum</legacyItalic> - indicates if a particular interface is the primary or extra one for this station; the value can be 0 or 1.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> – human readable port name, which facilitates identification of the port.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address ="Section5">
+      <title>Station</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Station</legacyItalic></legacyBold> – station definitions; the Station represents a remote object with which communication should be established. The only parameter to be defined is its name. It can contain letters as well as numbers.
+        </para>
+      </content>
+    </section>
+    <section address="Section6">
+      <title>Groups</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Groups </legacyItalic></legacyBold> – any group is a set of process variables for which common scanning rules are defined :
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> – human readable name for the group
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 5">Groups window</caption>
+              <image placement="center" xlink:href = "8c749ec5-cfdc-4924-8c57-23dc4240e959"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeOut</legacyItalic> - maximal time, which can elapse between two consecutive data refreshments without changing the quality. After expiration thereof the server will change the quality of all tags belonging to the group to BAD. This parameter is in force if the scan mode is NORMAL.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeOutFast</legacyItalic> - maximal time, which can elapse between two consecutive data refreshments without changing the quality. After expiration thereof the server will change the quality of all tags belonging to the group to BAD. This parameter is in force if the scan mode is FAST.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeScan</legacyItalic> - frequency of scanning this group (when NORMAL scanning is enabled)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeScanFast</legacyItalic> - frequency of scanning this group (when FAST scanning is enabled)
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Section7">
+      <title>Data Blocks</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Data Blocks</legacyItalic></legacyBold> - Data Blocks are defined within the group.
+        </para>
+        <para>The following parameters are defined for Data Blocks:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Address</legacyItalic> - the first address of the address space which contains all process variables (coils, inputs, registers,  timers, etc.)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>DataType</legacyItalic> - data type (interpretation depends on the protocol or the device in use), e.g. Flags, Inputs, Outputs, Registers, Timers, Counters. Please select the data type from the dropdown list.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> - human readable name
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 6">Data Blocks window</caption>
+              <image placement="center" xlink:href = "3690da8c-cde9-4ee4-ac0f-e9fe57cd1c72"/>
+            </mediaLink>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section>
+      <title>Tags</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Tags</legacyItalic></legacyBold> - tag definition:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> - tag human readable name. This name appears in the OPC server items list. You can use slash to create groups of tags, e.g. you can use as names: group1/tag1, group1/tag2.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Writeable</legacyItalic> - if true, it indicates that the corresponding tag is inherently writable. For example, a value representing physical output or an adjustable parameter such as a setpoint or alarm limit is generally writable. It is possible that a value representing physical output with no read-back capability might be marked writable but not readable
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Alarm</legacyItalic> - this attribute informs if there is an alarm associated with  this tag (the server is obligated to listen on the channel this tag belongs to and pick up incoming connection).  If true, the remote station is able to establish connection with the server, and the server will service it.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>AlarmMask</legacyItalic> - alarm mask defines condition when the remote station is in the alarm state, and, as a result, should start to establish connection to the server in an independent alarm channel.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>DataTypeConversion</legacyItalic> - this parameter establishes the format of the Tag, which is made available by the server. Please select proper value from the dropdown list (e.g. N/A, SBYTE, BYTE, DECIMAL, BOOLEAN, DATETIME, DURATION, STRING, ANYTYPE, SHORT, USHORT, INT, UINT, LONG, ULONG, FLOAT, DOUBLE). Note that ‘N/A’ setting means that type conversion is not requested and the server serves this value using canonical type of the value (type that is specific for the address space and protocol being the source for this tag.
             </para>
           </listItem>
         </list>
