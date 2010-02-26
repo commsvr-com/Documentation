@@ -1,28 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="13f68a0a-131d-4449-aad2-6118dc43ac77" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Rapid Development Kit</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>There are hundreds of vendor specific protocols widely used by the process control industry. Many plant-floor devices manufacturers provide proprietary solutions making the integration process very difficult and error prone. The three types of data providers (mentioned above) support three main functions:</para>
+        <list class="bullet">
+          <listItem>
+            <para>communication of the plant-floor devices data to any client application in a standard way;</para>
+          </listItem>
+          <listItem>
+            <para>monitoring of the hosting and commutation resources;</para>
+          </listItem>
+          <listItem>
+            <para>simulation of the real time process.</para>
+          </listItem>
+        </list>
+        <para>This list is not complete and the diversity of individual application needs causes that the number of off-the-shelf components may be a serious limit. Therefore, CommServer allows to easily develop data providers according to a custom specification. To support this process, a Data Provider Rapid Development Kit is available as a complementary product. This engineering tool consists of a compiled library (a kind of framework) and a source skeleton. The only thing that has to be done is to fill up the skeleton. To make the testing process as simple as possible, the kit provides a dedicated diagnostic tool called XBusMeasure TM . This tool allows to read/write data exactly the same way as it is done by the server, but the configuration is much easier and user dialogs provide all diagnostic information in one place. You can find more information in a separate manual.</para>
+        <alert>
+          <para><legacyBold><legacyItalic>CommServer</legacyItalic></legacyBold> can be easily equipped with a vendor specific data provider (driver) using RDK.</para>
+        </alert>
       </content>
       <!-- If a section contains a sections element, its content creates
            sub-sections.  These are not collapsible.

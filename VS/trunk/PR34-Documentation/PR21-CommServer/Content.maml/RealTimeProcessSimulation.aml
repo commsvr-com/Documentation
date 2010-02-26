@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7244450d-1e29-4d70-a7d8-677ff665fc8c" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Real time process simulation</title>
+      <content>
+        <para>Accessing data from the plant–floor devices and integrating it into the existing business systems is a complex process. Usually, it needs many stages, starting from a feasibility study and finishing with the commissioning. In this process, the factory approval test (FAT) is a critical point for the whole projects. The main question is how to prepare the testing environment to be similar to the production environment to an acceptable extent to make the tests useful. CommServer seems to be perfect solution for all these problems. The only thing we have to do is to prepare the Simulation Data Provider (SYM) in place of the Protocol Medium Couple used finally in the production environment.</para>
+        <para>To meet the real time process requirements, a Rapid Development Kit described later can be used to implement an adequate process model of a real system or object. </para>
+        <para>After approval tests only the data provider settings have to be changed leaving the rest of configuration untouched. This makes the process migration from the testing to the production environment risk free and very easy. Of course, it is possible to change back the data provider settings to start working in a simulation environment if need be.</para>
+        <alert>
+          <para><legacyBold><legacyItalic>CommServer</legacyItalic></legacyBold> can work in simulation and production environments and allows to change the mode seamlessly.</para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

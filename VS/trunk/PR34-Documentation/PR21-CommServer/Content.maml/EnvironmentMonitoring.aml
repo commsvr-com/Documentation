@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c568062a-f162-4c35-818f-1c5954345bff" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Environment monitoring</title>
+      <content>
+        <para>In a real environment, monitoring and management of the recourses making up the information and communication infrastructure are often of the same importance as access to real time data. We can distinguish the following types of information for this infrastructure:</para>
+        <list class="bullet">
+          <listItem>
+            <para>the server software behavioral performance counters;</para>
+          </listItem>
+          <listItem>
+            <para>hosting hardware and operating system performance counters;</para>
+          </listItem>
+          <listItem>
+            <para>communication resources parameters and performance counters.</para>
+          </listItem>
+        </list>
+        <para>To address these needs, CommServer has built-in miscellaneous counters published on the OPC interface side as tags. These tags are updated in real time and can be used for diagnostic purposes. Similarly, each of the data providers can update counters predefined and published as OPC tags. </para>
+        <para>A specialized data provider called Monitor (MON) can be used to access hardware and operating system performance counters. Using this plug-in provided by the executing platform counters can be freely published as OPC tags. The counters can also be accessed remotely allowing to monitor other nodes of the process management system.</para>
+        <para>Using the plug-in concept it is possible to sample data from active devices distributed on the communication network and enable access to them in the standard way using OPC tags. According to the needs the data provider uses distributed agents collecting data locally and feeding them to the provider using proprietary protocols.</para>
+        <alert>
+          <para>CommServer allows to access real data from the plant-floor and infrastructure behavioral data in a consistent way and integrate it into an existing business systems.</para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,45 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="9a49ee2f-9ab6-4ab2-b918-63cffedf8e3f" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Optimal transfer algorithm</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>In a typical architecture of remote process control information, we have plant-floor devices on the field side and many applications on the process and business management side. It is a typical client server access scenario, where the application plays the role of clients reading from and writing to process variables according to their needs. Allowing clients to directly access process data has two main disadvantages: </para>
+        <list class="bullet">
+          <listItem>
+            <para>clients have to speak a language that is proprietary for them and native for plant-floor devices - a protocol;</para>
+          </listItem>
+          <listItem>
+            <para>the same data requested by many clients have to be transferred many times over the whole communication path.</para>
+          </listItem>
+        </list>
+        <para>Using an intermediate communication server located close to the clients allows to overcome most of the problems. Its main task is to allow transparent access to real time process data by clients. This access has to be bidirectional, but inherently asymmetric. Typically, in this scenario, many clients read the same process data, but to protect the control process consistency only one is allowed to write to process variables. </para>
+        <para><legacyBold><legacyItalic>CommServer</legacyItalic></legacyBold>has been developed to meet these requirements. It has a modular architecture with tree main layers: scanner, cache and an implementation of the OPC interface. </para>
+        <para>The <legacyBold><legacyItalic>Scanner</legacyItalic></legacyBold> module is a communication engine responsible for keeping the process data in the cache fresh. The scanner can communicate with remote units in one of two modes: solicited and unsolicited ones. In the solicited mode, it pools all of the remote units on the regular basis sending data requests frames to keep the cached data fresh according to the clients needs. In the unsolicited mode the Scanner listens to the underlying network traffic to get all the packets in promiscuous mode and match them in pairs: request and response to obtain the current value of process variables. In the unsolicited mode, the server can work only passively as one-way data path. It means that it is impossible to write down to remote process devices.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Solicited (left side) versus unsolicited (right side) mode</caption>
+          <image placement="center" xlink:href = "7dc2b330-964c-4cb9-9c15-767c158a2237"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para><legacyBold><legacyItalic>Cache</legacyItalic></legacyBold> is an intermediate storage of real time process data. The cache reflects the latest value of the data as well as the quality and timestamp.</para>
+          </listItem>
+          <listItem>
+            <para>The <legacyBold><legacyItalic>OPC Interface</legacyItalic></legacyBold> module processes all client requests located on the process and business layers. </para>
+          </listItem>
+          <listItem>
+            <para>The <legacyBold><legacyItalic>Server</legacyItalic></legacyBold> module is responsible for the synchronization of all of them in time.</para>
+          </listItem>
+        </list>
+        <para>The communication process managed by the scanner can be interrupted by client direct read/write requests and disturbed by communication errors. Additionally, communication paths redundancy and the adaptive sampling algorithm cause that the load of individual communication route changes in time. Furthermore, we need to deal with “the stupid client” syndrome, where any client unconscious of the limitations unnecessarily requests too high update rate. As the server is an intermediate component in the communication process, it  makes a virtual representation of the very process at the upper layer boundary and, in consequence. The server, having detailed knowledge of the communication limitations and real time process data, has to prevent monopolization of the resources by any malicious client.</para>
+        <para><legacyBold><legacyItalic>CommServer</legacyItalic></legacyBold> addresses all these issues by providing an optimal transfer algorithm which harmonizes individual sampling rates with client update rate requests to minimize a difference between both of them. </para>
+        <para>To minimize communication overhead real time process data are read in blocks. Blocks can be defined in configuration to match the plant-floor devices resources. Moreover, blocks can be grouped. Any group has been assigned a sampling rate and it is scheduled in the sampling queue as one item. This sampling rate is a function of client requests and limitation set in the server configuration. The scheduling algorithm keeps the real time sampling rate as close as possible to the evaluated one, i.e. minimizes the difference between them.</para>
+        <para>An overload coefficient is calculated for each group, as the real time sampling rate to the requested sampling rate ratio. To make the scanning process fair, the scheduling algorithm keeps this overload coefficient equal for all groups assigned to the same communication path. This prevents “starvation” disease, i.e. keeping important data fresh causes that update of less important data is not possible at all. </para>
+        <alert>
+          <para><legacyBold><legacyItalic>Optimal transfer algorithm</legacyItalic></legacyBold> guarantees that all data is sampled in any circumstances. </para>
+        </alert>
+        <para>Practically it means that all groups on the same scanning path have the real time sampling rate equal to the requested sampling rate if the overload coefficient is less than 1. If the coefficient is greater than 1 the scheduling algorithm distributes communication path bandwidth proportionally to the requested sampling rate to the groups.</para>
+        <para>In some applications we may have another requirement, i.e. a request to keep the bandwidth utilization below a preset limit. For example, that is the case where we use toll network. Additionally, for these systems we provide the possibility of controlling the overload coefficient on the requested level, which  keeps the selected data transfer path below the limits. </para>
+        <alert>
+          <para><legacyBold><legacyItalic>Optimal transfer algorithm</legacyItalic></legacyBold> guarantees bandwidth consumption on a preset level.</para>
+        </alert>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
       <!-- One or more of the following:
