@@ -1,82 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>CommServer configuration file (CommServer.exe.config)</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>CASOpcDaWrapper.exe.config is the main configuration file of CommServer; please find this file in your CommServer directory. Default location is: </para>
+        <para>c:\Program Files\CAS\CommServer\CASOpcDaWrapper.exe.config </para>
+        <para>You can edit this file using any text editor. An example of the configuration file is shown below:</para>
+        <code language="xml">
+          <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<appSettings>
+		<add key="configfile" value="comunicationNetXmlDoc.XML" />
+		<add key="MinAvgMax_FrameResponse_management" value="20" />
+		<add key="MinAvgMax_CharacterGap_management" value="500" />
+		<!-- internal RTLib config part -->
+		<add key="PLCNaN" value="65535" />
+		<add key="MinAvgMax_Tag_management" value="50" />
+		<add key="MinAvgMax_Group_management" value="50" />
+		<add key="MinAvgMax_Group_Read_management" value="50" />
+		<add key="MinAvgMax_Transition_management" value="50" /> 
+		<add key="WaitForReconnectServerInSec" value="30" />
+		<!-- end of internal RTLib config part -->
+	</appSettings>
+</configuration>
+]]>
+        </code>
+        <para>The following parameters must be set:</para>
+        <list class="bullet">
+          <listItem>
+            <para><legacyItalic>configfile</legacyItalic>  – specifies the file, where the communication configuration is saved (default value is “comunicationNetXmlDoc.XML”; see next chapter for more details)</para>
+          </listItem>
+          <listItem>
+            <para><legacyItalic>MinAvgMax_FrameResponse_management</legacyItalic> – the value indicates the number of frames when frame response statistics are updated (see Błąd! Nie można odnaleźć źródła odsyłacza.) section for more details)</para>
+          </listItem>
+          <listItem>
+            <para><legacyItalic>MinAvgMax_CharacterGap_management </legacyItalic> – the value indicates the number of characters (bytes) in a communication channel when Character Gap statistics are updated (see Błąd! Nie można odnaleźć źródła odsyłacza.).
+            </para>
+          </listItem>
+        </list>
+        <para>Other parameters such as: “PLCNaN”, “MinAvgMax_Tag_management”, “MinAvgMax_Group_management”, “MinAvgMax_Group_Read_management”, “MinAvgMax_Transition_management”, “WaitForReconnectServerInSec” are internal settings of RTLib and should not be changed.</para>
+        <para>You can also edit this file to add problem tracing to CommServer and run the software in “debug” mode( for details please read chapter: “Błąd! Nie można odnaleźć źródła odsyłacza.”)</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

@@ -222,6 +222,9 @@
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\RealTimeProcessSimulation.aml" />
+    <None Include="PR21-CommServer\Content.maml\EnvironmentMonitoring.aml" />
+    <None Include="PR21-CommServer\Content.maml\Protocol-MediumCouple.aml" />
     <None Include="PR21-CommServer\Content.maml\Requirements.aml" />
     <None Include="PR21-CommServer\Content.maml\TracingFilters.aml" />
     <None Include="PR21-CommServer\Content.maml\TracingListeners.aml" />
