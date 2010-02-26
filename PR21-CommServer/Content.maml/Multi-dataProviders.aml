@@ -1,82 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="c20e9632-40ea-44d9-828d-02d2929a1a97" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Multi-data providers</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>One of main objectives of using an OPC server is to provide a uniform bridge between digital plant-floor devices and systems providing services at the process and business management levels. In the beginning, this bridge was invented as a translator between vendor specific languages (protocols) used by the devices for data access and a widely accepted  one – OPC. It is a simplification, but in this concept an OPC server plays a similar role to the printer driver. Therefore, each OPC server has to be equipped with a vendor specific component, usually the whole or part of the scanner layer is dedicated for a selected protocol and communication medium.</para>
+        <para>Making the whole layer vendor-specific has many disadvantages and, therefore, CommServer offers a more flexible solution using a well defined interface implemented by external components called Data Providers  (Fig. 1).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Multi-data provider architecture</caption>
+          <image placement="center" xlink:href = "5715a0a7-9962-447a-8d0d-fa94a05c9306"/>
+        </mediaLink>
+        <para>Data providers are responsible for managing communication network and accessing plant-floor devices. In a real environment, monitoring and management of the recourses making up the information processing and communication infrastructure are often of the same importance as access to real time data. To commence factory tests of any system, we need to build a testing environment. Using the data provider concept it is possible to provide all of the mentioned kinds of information in the standard way using the OPC interface. The data providers carry out tree main functions to achieve these objectives:</para>
+        <list class="bullet">
+          <listItem>
+            <para>communication of the plant-floor devices data to any client application in a standard way - called Protocol-Medium Couple (PMC);</para>
+          </listItem>
+          <listItem>
+            <para>monitoring of the host and commutation resources - called Monitor;</para>
+          </listItem>
+          <listItem>
+            <para>simulation of the real time process - called  Simulator.</para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

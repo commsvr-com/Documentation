@@ -1,45 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>CommServer components</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>CommServer package consists of the following components:</para>
+        <list class="bullet">
+          <listItem>
+            <para>NetworkConfig,</para>
+          </listItem>
+          <listItem>
+            <para>CommServer Engine</para>
+          </listItem>
+          <listItem>
+            <para>CommServer Console </para>
+          </listItem>
+        </list>
+        <para>All of these components are shown in the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Schema Of CommServer Components</caption>
+          <image placement="center" xlink:href = "6c416684-bda6-4536-9a84-b4040d0041fc"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>NetworkConfig is an application that is used for editing the configuration of CommServer. It saves configuration in the XML file (Config XML in the figure above). More details about these components  see chapter <legacyBold>Błąd! Nie można odnaleźć źródła odsyłacza..</legacyBold> </para>
+          </listItem>
+          <listItem>
+            <para>CommServer Engine is the main part of the CommServer package. It consists of a scanner, cache and OPC Server. It has two interfaces: OPC is the main interface that serves the data to all client applications and a diagnostic interface that allows to be attached via CommServer console to provide diagnostic information.</para>
+          </listItem>
+          <listItem>
+            <para>The last component is CommServer Console (it is called also server HMI (human machine interface))  that is a tool to monitor CommServer (more information see chapter <legacyBold> Błąd! Nie można odnaleźć źródła odsyłacza.</legacyBold>). </para>
+          </listItem>
+        </list>
+        <para>The figure above shows also an OPC Client which is not a part of the CommServer package (this could be any OPC client compatible with OPC. Data Access 1.0a, 2.00, 2.05a, 3.0). The server is launched by the client. And it is the only way to launch the CommServer server. When the server is not working, the attempt to launch the console will end by an error message. To find whether CommServer is launched please find “CASOpcDaWrapper” in Windows Task Manager on tab Processes (you can launch Task Manager by giving the command taskmgr in Start menu -> run ). If <legacyBold>‘CASOpcDaWrapper’</legacyBold> process is launched, it means that OPC server service is working.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
       <!-- One or more of the following:

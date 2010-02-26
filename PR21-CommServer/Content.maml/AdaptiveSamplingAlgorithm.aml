@@ -1,82 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="5e52ef36-fda2-4cd3-9a26-fdfa1c62d4fc" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Adaptive sampling algorithm</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>According to the OPC specification, the scanner module is responsible for keeping the cached data fresh, but it is worth stressing that “freshness” of the data depends on the process state and can change in time drastically. The communication server (in order to optimize the data transfer costs) should adapt the sampling rate to current process control needs. To achieve this, CommServer uses an algorithm called <legacyBold><legacyItalic>adaptive sampling algorithm</legacyItalic></legacyBold> (ASA).</para>
+        <para>To illustrate that the meaning of the data “freshness” is not obvious, let's analyze the needs of a remote process control of a heat chamber – a node in the heat distribution network, as an example.  It works like a kitchen tap – generally is opened or closed - controlling the flow of water. But there are some differences, actually dimension of the pipe is typically 900mm and water flow (about 6000t/h) is controlled by at least 4 valves equipped with actuators working synchronously in a sequence. In this application their states have to be monitored and controlled remotely (up to 20km). The chamber can be in one of the four available states:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Closed</para>
+          </listItem>
+          <listItem>
+            <para>Opening</para>
+          </listItem>
+          <listItem>
+            <para>Opened</para>
+          </listItem>
+          <listItem>
+            <para>Closing</para>
+          </listItem>
+        </list>
+        <para>The state sequence is illustrated in the figure (Fig. 1).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Diagram of valve states</caption>
+          <image placement="center" xlink:href = "b74f234c-356a-4fb6-a537-a7921f228cf2"/>
+        </mediaLink>
+        <para>Typically, the chamber is opened or closed – it means that these states last for a long time - days or even months. Because these states are pretty stable and cannot be disturbed, the time between snapshots (raw data) of the process can be measured in hours. We must face other requirements when any of the valves is in a transient position: opening or closing.  It usually lasts for a few minutes only and can be recognized as a special or alarm state. In this case, the movement raw data sampling rate should guarantee a delay less than a few seconds to allow a safe remote control of the valves. In the worse case approach we would have to transfer a lot of useless data most of the time. </para>
+        <para>To address this problem, the sampling scheduling mechanism built in the CommServer communication engine adapts continuously the scanning policy according to the controlled real time process state (Fig. 2). According to the real time process state the raw process data sampling rate is adjusted.</para>
+        <alert>
+          <para><legacyBold><legacyItalic>Adaptive sampling algorithm</legacyItalic></legacyBold> preserves communication paths bandwidth and costs.</para>
+        </alert>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Adaptive  sampling algorithm</caption>
+          <image placement="center" xlink:href = "bef35982-f690-41e9-90c2-c5f0ee11345d"/>
+        </mediaLink>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

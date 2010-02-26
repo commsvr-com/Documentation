@@ -1,82 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="6dd58056-8068-4153-a70f-045af253f5fe" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Installing CommServer</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <alert>
+          <para>The installation of CommServer has to be done on Administrator account. </para>
+          <para>Make sure that you have all prerequisites installed before (Ms NET Framework 2.0 and OPC Core Components)</para>
+        </alert>
+        <para>To install CommServer application, perform the following steps:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Launch <legacyBold>CommServerSetup.exe.</legacyBold></para>
+          </listItem>
+          <listItem>
+            <para>CommServer <legacyBold>Welcome</legacyBold> dialog box (Fig. 1). </para>
+            <para>Read information and click <legacyBold>Next</legacyBold>.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">Setup Welcome Dialog Box</caption>
+              <image placement="center" xlink:href = "7508f5ce-3a30-46d5-9115-109dcb8d7ca9"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para><legacyBold>User information</legacyBold>  dialog box (Fig. 2).</para>
+            <para>Enter <legacyBold>User name</legacyBold>, <legacyBold>Company name</legacyBold> <legacyBold>and e-mail</legacyBold> address in appropriate text boxes and click <legacyBold>Next</legacyBold>.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2">User Information Dialog Box</caption>
+              <image placement="center" xlink:href = "7846481b-f627-4e35-8873-a0d9a624c271"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para><legacyBold>Installation</legacyBold> dialog box (Fig. 3).</para>
+            <para>Default location for application files is specified as <legacyBold>C:\Program Files\CAS\CommServer</legacyBold>.</para>
+            <para>You can change it to a different location by clicking <legacyBold>Browse</legacyBold> button or by writing the path manually into text box.  <legacyBold>Disc Cost</legacyBold> button shows the amount of necessary and available space on target drive. Choose option <legacyBold>Everyone</legacyBold> to install CommServer for anyone who uses this computer or <legacyBold>Just me</legacyBold> option to install only for yourself.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 3">Installation Dialog Box</caption>
+              <image placement="center" xlink:href = "3c6ab46f-65d4-4fdf-aa54-16ef6bc47edf"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para><legacyBold>Confirmation</legacyBold> dialog box (Fig. 4)</para>
+            <para>Click <legacyBold>Next</legacyBold> to start installation. You may also change any previous information by clicking <legacyBold>Back</legacyBold> button.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 4">Confirmation Dialog Box</caption>
+              <image placement="center" xlink:href = "b1588129-87b0-423f-a61e-52be2428283b"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para><legacyBold>Installation Progress</legacyBold> dialog box (Fig. 5).</para>
+            <para>Installation in progress. Wait until computer has finished the installation.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 5">Installation Dialog Box</caption>
+              <image placement="center" xlink:href = "55f4839f-3629-4718-9981-1105983749d3"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para><legacyBold>Installation Complete</legacyBold> dialog box (Fig. 6)</para>
+            <para>The installation has been successfully finished; click <legacyBold>Close</legacyBold> button to exit the installation.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 6">Installation Complete Dialog Box</caption>
+              <image placement="center" xlink:href = "32880667-e842-439a-ac42-96e5d26aa25c"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>All necessary files have been copied to target folder on your computer, the software components have been registered and short-cut icons have been created in start menu (Start->Programs->CAS->CommServer).</para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
