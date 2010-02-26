@@ -76,6 +76,7 @@
     <None Include="DiagnosticInformation.aml" />
     <None Include="DiagnosticsAndTroubleshooting.aml" />
     <None Include="EnablingTracing.aml" />
+    <None Include="EnvironmentMonitoring.aml" />
     <None Include="GettingStarted.aml" />
     <None Include="ImportingConfigurationToolsFromSBUSorMODBUSWizconBLSfiles.aml" />
     <None Include="InstallingCommServer.aml" />
@@ -96,8 +97,10 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Protocol-MediumCouple.aml" />
     <None Include="ProtocolTab.aml" />
     <None Include="RapidDevelopmentKit.aml" />
+    <None Include="RealTimeProcessSimulation.aml" />
     <None Include="ReportUtility.aml" />
     <None Include="ScanSettings.aml" />
     <None Include="Segments.aml" />
