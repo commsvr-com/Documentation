@@ -216,6 +216,54 @@
       <AlternateText>Impot menu</AlternateText>
       <ImageId>6336d43d-0f91-467c-b88a-c8dbaa5a943b</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\database_structure.jpg">
+      <AlternateText>Database structure</AlternateText>
+      <ImageId>a7f512a7-cf95-4603-8cf3-1cdf6fe768bd</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Logical_relationship.jpg">
+      <ImageId>eafa115c-c561-445b-90a9-c7eff926f694</ImageId>
+      <AlternateText>Logical relationship between groups, data blocks and tags</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\station_tab.jpg">
+      <AlternateText>Station tab</AlternateText>
+      <ImageId>8671e756-1234-428b-828e-cc5c45dd8da9</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\segments_tab.jpg">
+      <ImageId>4f4f6a62-f40a-4fa7-b971-1797da285268</ImageId>
+      <AlternateText>Segments tab</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\interface_tab.jpg">
+      <ImageId>a79152b0-5240-434f-9fb0-cac8ee85f499</ImageId>
+      <AlternateText>Interface tab</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\protocol_tab.jpg">
+      <ImageId>46b2a13f-01d1-4b44-9cfc-bb73088969d2</ImageId>
+      <AlternateText>Protocol tab</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\application_menu.jpg">
+      <ImageId>8dbf6630-b267-4cdd-a6cf-2e93275c9fa2</ImageId>
+      <AlternateText>Application menu</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\tray_icon.jpg">
+      <ImageId>36d7eb8a-381a-4a91-8588-e7d1eda43952</ImageId>
+      <AlternateText>Tray icon</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\OPC_Client_server-starting_page.jpg">
+      <AlternateText>OPC Client server-starting page</AlternateText>
+      <ImageId>5ecf9f38-9173-432e-8522-e6669afe6c82</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\starting_the_server.jpg">
+      <AlternateText>Starting the server</AlternateText>
+      <ImageId>1eec0ae8-324d-4152-af70-8b170b175032</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Server_selection_window.jpg">
+      <AlternateText>Server selection window</AlternateText>
+      <ImageId>2e697692-67ba-4995-9ce1-a702b1915c5c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\OPC_Viewer – Items_window.jpg">
+      <AlternateText>OPC Viewer – Items window</AlternateText>
+      <ImageId>98cab6ae-6c1d-43d4-baf8-5cfd5c93d1aa</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
