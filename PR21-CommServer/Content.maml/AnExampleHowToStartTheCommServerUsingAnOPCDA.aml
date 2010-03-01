@@ -15,6 +15,27 @@
               <image placement="center" xlink:href = "5ecf9f38-9173-432e-8522-e6669afe6c82"/>
             </mediaLink>
           </listItem>
+          <listItem>
+            <para>Now the user should choose an appropriate server. In this example the user should choose from the dropdown list <![CDATA[<Browse…>]]>(Fig. 2)</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2">Starting the server</caption>
+              <image placement="center" xlink:href = "1eec0ae8-324d-4152-af70-8b170b175032"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>The "Select Server" window appears. Click on ‘CAS.CommServer.OPC.Da.Server’ server and click ‘OK’ (Fig. 3).</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 3">Server selection window</caption>
+              <image placement="center" xlink:href = "2e697692-67ba-4995-9ce1-a702b1915c5c"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>After the connection to OPC server has been established please add subscription and items. The figure below shows an example window with items values that are read from CommServer.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 4">OPC Viewer – Items window</caption>
+              <image placement="center" xlink:href = "98cab6ae-6c1d-43d4-baf8-5cfd5c93d1aa"/>
+            </mediaLink>
+          </listItem>
         </list>
       </content>
     </section>
