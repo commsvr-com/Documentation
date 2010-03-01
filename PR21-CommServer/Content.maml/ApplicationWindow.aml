@@ -281,7 +281,7 @@
         </list>
       </content>
     </section>
-    <section>
+    <section address="Section8">
       <title>Tags</title>
       <content>
         <para>
@@ -313,6 +313,49 @@
             <para>
               <legacyItalic>DataTypeConversion</legacyItalic> - this parameter establishes the format of the Tag, which is made available by the server. Please select proper value from the dropdown list (e.g. N/A, SBYTE, BYTE, DECIMAL, BOOLEAN, DATETIME, DURATION, STRING, ANYTYPE, SHORT, USHORT, INT, UINT, LONG, ULONG, FLOAT, DOUBLE). Note that ‘N/A’ setting means that type conversion is not requested and the server serves this value using canonical type of the value (type that is specific for the address space and protocol being the source for this tag.
             </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>StateHighTrigger</legacyItalic> - if this attribute is true, this tag is used to switch on the FAST scanning mode (see StateMask for additional details)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>StateLowTrigger</legacyItalic> - if this attribute is true, this tag is used to switch off the FAST scanning mode (and enter the NORMAL scanning mode ) (see StateMask for additional details)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>StateMask</legacyItalic> - defines conditions when the remote station is to enter the alarm state and the scan mode should be switched  – this conditions are used to switch between the fast and normal scan modes.  Condition that turns-on fast scanning is true if the detected change is from 0 to 1.  To turn-off fast scanning the server is waiting for 1 to 0 change.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 7">Tags Window</caption>
+              <image placement="center" xlink:href = "4f2a1c9e-6773-4ab7-bed2-4d13a3055bdb"/>
+            </mediaLink>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Section9">
+      <title>Bits definition</title>
+      <content>
+        <para>
+          <legacyBold><legacyItalic>Bits definition</legacyItalic></legacyBold> - an additional functionality that allows you to automatically divide the register into separate bits. You have to define:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>BitNumber</legacyItalic> - indicates the specified bit in the register that should be used to calculate the value
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> - human readable name, that will be used as the OPC tag name
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 8">Bit definition settings</caption>
+              <image placement="center" xlink:href = "f2848c74-eee0-47a1-b1a5-77efd5b5c27c"/>
+            </mediaLink>
           </listItem>
         </list>
       </content>

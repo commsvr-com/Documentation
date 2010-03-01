@@ -1,82 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="d5e08d79-e19f-4d89-8e9d-3aff6957b6ee" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Importing configuration tools from SBUS or MODBUS Wizcon BLS files</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Another tool allows to automatically prepare configuration directly from “.bls” file (it is a standard Axeda Wizcon block file). Datablocks, groups and tags are created automatically. To take the advantage of this tool,<legacyBold> you have to define communication parameters and structure first (channels, protocols, ports, segments and stations)</legacyBold>, then select SBUS or MODBUS from “Import Settings” menu, import “.bls” file, and set the timeout and the fast scan coefficient. </para>
+        <para>The file can be created manually, see example file below:</para>
+        <code language="scr">
+            ;Version 8.0 Wizcon Block Data
+            ;Block address	 Length	 Scanning	Fast_Scanning
+            11R0100   18             6000	 1000
+            10F0500   26             8000
+        </code>
+        <list class="bullet">
+          <listItem>
+            <para>The above file defines two datablocks: Sbus protocol, station 17, 18 registers from address 100, scan time 6s (1s – in FAST scan mode)</para>
+          </listItem>
+          <listItem>
+            <para>Sbus protocol, station 16, 26 flags from address 500, scan time 8s (FAST scan depends on the fast scan coefficient, that is set during import)</para>
+          </listItem>
+        </list>
+        <alert>
+          <para>Channel, protocol, station and ports should be defined before import.</para>
+          <para>All tag groups, data blocks, tags and tagbits are cleared before import, so the imported file should contain all data definitions.</para>
+        </alert>
+        <para>The idea of importing those files is to facilitate changes to large amounts of data. Those files can be imported to MS Excel and modified according to user's needs.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
