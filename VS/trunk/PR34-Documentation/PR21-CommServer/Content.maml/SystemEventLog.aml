@@ -1,82 +1,173 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="47256181-0c02-48e0-8654-05603b6f3b16" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>System Event Log</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>CommServer uses a standard Windows mechanism – EventLog to provide information about activity - warnings or errors.</para>
+        <para>When CommServer starts for the first time it registers itself as an EventLog source.</para>
+        <para>The table below shows main eventlogs entries.</para>
+        <table>
+          <row>
+            <entry>
+              <para>
+                <legacyBold>Type</legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                <legacyBold>Source</legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                <legacyBold>Category</legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                <legacyBold>Event</legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                <legacyBold>Description</legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                <legacyBold>Explanation</legacyBold>
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>information</para>
+            </entry>
+            <entry>
+              <para>Communication Server</para>
+            </entry>
+            <entry>
+              <para>---</para>
+            </entry>
+            <entry>
+              <para>10</para>
+            </entry>
+            <entry>
+              <para>A new SBUS channel protocol created with COM2,4800,0,0</para>
+            </entry>
+            <entry>
+              <para>CommServer has just started and uses the SBUS protocol over serial line on the port COM 2; serial settings are COM2,4800,0,0</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>warning</para>
+            </entry>
+            <entry>
+              <para>Communication Server</para>
+            </entry>
+            <entry>
+              <para>92</para>
+            </entry>
+            <entry>
+              <para>11000</para>
+            </entry>
+            <entry>
+              <para>sbus[ProtocolID=2] channel protocol failed to start - port:  COM3,4800,0,0 cannot be opened.</para>
+            </entry>
+            <entry>
+              <para>CommServer has tried to start communication over SBUS and COM3, but the port could not be opened. Possible solution:</para>
+              <para>- mistake in the configuration – the COM3 does not exist</para>
+              <para>- COM3 was occupied by another application</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>information</para>
+            </entry>
+            <entry>
+              <para>Communication Server</para>
+            </entry>
+            <entry>
+              <para>---</para>
+            </entry>
+            <entry>
+              <para>0</para>
+            </entry>
+            <entry>
+              <para>Communication server started: product name: Communication Server; product version: 2.5.1714.30221</para>
+            </entry>
+            <entry>
+              <para>CommServer is successfully started; OPC server is running. The built version of the software is 2.5.1714.30221.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>error</para>
+            </entry>
+            <entry>
+              <para>Communication Server</para>
+            </entry>
+            <entry>
+              <para>---</para>
+            </entry>
+            <entry>
+              <para>0</para>
+            </entry>
+            <entry>
+              <para>Communication server finished with Assert error</para>
+            </entry>
+            <entry>
+              <para>This error forces CommServer   to  stop the service; it can be caused by an improper configuration; please verify the configuration. If the problem occurs and changes in the configuration do not overcome it, please contact the tech-support</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>error</para>
+            </entry>
+            <entry>
+              <para>Communication Server</para>
+            </entry>
+            <entry>
+              <para>130</para>
+            </entry>
+            <entry>
+              <para>240</para>
+            </entry>
+            <entry>
+              <para>Timeout error: Segment main scanner thread had to be timed out after 60s and caused a system reboot</para>
+            </entry>
+            <entry>
+              <para>CommServer finds a serious problem (maybe deadlock occurs). The operating system will be restarted. It may be caused by an improper configuration; please verify the configuration. If the problem occurs and changes in the configuration do not overcome it, please contact the tech-support and send the log.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>warning</para>
+            </entry>
+            <entry>
+              <para>Communication Server</para>
+            </entry>
+            <entry>
+              <para>248</para>
+            </entry>
+            <entry>
+              <para>30000</para>
+            </entry>
+            <entry>
+              <para>Cannot disconnect all clients (3 still connected )</para>
+            </entry>
+            <entry>
+              <para>CommServer is going to be stopped, but 3 OPC clients are still connected in spite shutdown requests sent at least 3 times.</para>
+            </entry>
+          </row>
+        </table>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

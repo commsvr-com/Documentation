@@ -1,82 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="796a8002-ad5f-4884-af4e-b5ca748e4999" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Tracing in CommServer</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>This is a modern technology based on .NET Framework, that provides a very simple and flexible method to trace a problem in runtime environment. For details about this technology please read Appendix B (Tracing).</para>
+        <alert>
+          <para>If you are not familiar with .NET Tracing technology it is strongly recommended to read the Appendix B (Tracing) first).</para>
+        </alert>
+        <para>This chapter includes basic information how to setup tracing in CommServer.</para>
+        <para>To enable tracing in CommServer please modify the following configuration file ‘CASOpcDaWrapper.exe.config’, which is located in the installation folder (default location: ‘C:\Program Files\CAS.CommServer). This file is an XML file and can be edited by any text editor. </para>
+        <para>
+          The section responsible for tracing is located between <![CDATA[<system.diagnostics>’]]> and <![CDATA[‘</system.diagnostics>’]]>. Default configuration is provided with three sources (this is first subsection – “sources”): TraceNet_to_Serial (responsible for network communication layer monitoring), NetworkConfig.ApplicationProtocol (responsible for tracing problem referred to configuration, plugins, etc…), System.Net.Sockets (responsible for tracing problems in Windows TCP/IP protocol stack). Next tracing section that the user can find is switches. After line: <!-- SourceLevels Enumeration --> the user can specify different levels of details that he wants to display. The possible levels are: Off, All, Critical, Error, Verbose, Warning, and Information. For example, to obtain all information, replace ‘Off’ with ‘All’ in the default configuration. The last subsection is "sharedListeners". Here, the  user can specify the name of destination listener (e.g. file name, default filenames are: ‘Net_to_Serial.log’ and NetworkConfig.log) where information is sent and the information filtering method (e.g.: All, Off, etc.). Files are created in the installation folder, but the user can specify the path where the file should be created (e.g. initializeData ="C:\Allcalc.log"). Tracing allows to receive information in different formats, e.g. please change ‘System.Diagnostics.DelimitedListTraceListener’ to one of options presented below:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>‘System.Diagnostics.XmlWriterTraceListener’ – generates XML file (name of the file with extension .xml)</para>
+          </listItem>
+          <listItem>
+            <para>‘System.Diagnostics.TextWriterTraceListener’ – generates more user-friendly data output (extensions .log, .txt)</para>
+          </listItem>
+          <listItem>
+            <para>‘System.Diagnostics.EventLogTraceListener’ – putting information to the system log</para>
+          </listItem>
+          <listItem>
+            <para>‘System.Diagnostics.DelimitedListTraceListener’ – is a default option and it is very easy to import it to Microsoft Excel</para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
