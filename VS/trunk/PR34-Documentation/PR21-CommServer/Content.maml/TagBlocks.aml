@@ -1,82 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="7cbe14db-8b5b-4649-9730-6c705c409336" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Tag Blocks</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>It is a very similar possibility of importing *.BLS files. The user can import whole data blocks , but the structure of the imported file is different. Please see below:</para>
+        <code language="scr">
+          StationID;TimeScan;Timeout;TimeScanFast;TimeoutFast;Address;DataType
+          ;BlockLength
+          96;5000;50000;5000;50000;200;10;8
+          96;5000;50000;5000;50000;216;10;3
+          96;5000;50000;5000;50000;220;10;1
+        </code>
+        <para>The following parameters should be set:</para>
+        <list class="bullet">
+          <listItem>
+            <para>StationID – numerical value corresponding to the station</para>
+          </listItem>
+          <listItem>
+            <para>TimeScan – frequency of NORMAL scanning, TimeScan in Group setting</para>
+          </listItem>
+          <listItem>
+            <para>TimeOut – maximal time, which can elapse between two consecutive data refreshments without changing the quality (this parameter is in force if the scan mode is NORMAL), TimeOut in Group settiong</para>
+          </listItem>
+          <listItem>
+            <para>TimeScanFast – frequency of FAST scanning, TimeScanFast in Group settings</para>
+          </listItem>
+          <listItem>
+            <para>TimeOutFast – maximal time, which can elapse between two consecutive data refreshments without changing the quality (this parameter is in force if the scan mode is FAST), TimeOutFast in Group setting</para>
+          </listItem>
+          <listItem>
+            <para>Address – address in Data block setting</para>
+          </listItem>
+          <listItem>
+            <para>DataType – this parameter indicates the data type conversion of the Tag, which is done by the server. This parameter is a number from 0 to 15 and 255:</para>
+            <list class="bullet">
+              <listItem>
+                <para>SBYTE = 0</para>
+              </listItem>
+              <listItem>
+                <para>BYTE = 1</para>
+              </listItem>
+              <listItem>
+                <para>SHORT = 2</para>
+              </listItem>
+              <listItem>
+                <para>USHORT = 3</para>
+              </listItem>
+              <listItem>
+                <para>INT = 4</para>
+              </listItem>
+              <listItem>
+                <para>UINT = 5</para>
+              </listItem>
+              <listItem>
+                <para>LONG = 6</para>
+              </listItem>
+              <listItem>
+                <para>ULONG = 7</para>
+              </listItem>
+              <listItem>
+                <para>FLOAT = 8</para>
+              </listItem>
+              <listItem>
+                <para>DOUBLE = 9</para>
+              </listItem>
+              <listItem>
+                <para>DECIMAL = 10</para>
+              </listItem>
+              <listItem>
+                <para>BOOLEAN = 11</para>
+              </listItem>
+              <listItem>
+                <para>DATETIME = 12</para>
+              </listItem>
+              <listItem>
+                <para>DURATION = 13</para>
+              </listItem>
+              <listItem>
+                <para>STRING = 14</para>
+              </listItem>
+              <listItem>
+                <para>ANY_TYPE = 15</para>
+              </listItem>
+              <listItem>
+                <para>NONE = 255</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>BlockLength – length of the block of data</para>
+          </listItem>
+        </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
