@@ -264,6 +264,18 @@
       <AlternateText>OPC Viewer – Items window</AlternateText>
       <ImageId>98cab6ae-6c1d-43d4-baf8-5cfd5c93d1aa</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\Program_main_window.jpg">
+      <ImageId>aa9305b4-b590-4750-a091-5b2220807b72</ImageId>
+      <AlternateText>Program Main Window</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\main_features.jpg">
+      <ImageId>d0f25323-8bd3-4508-b9d0-7a3dc3bf3cfb</ImageId>
+      <AlternateText>Main Features</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Operation_parameters.jpg">
+      <AlternateText>Operation Parameters</AlternateText>
+      <ImageId>1f8a07b5-71e7-4d6e-a213-6268b42dcdab</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
