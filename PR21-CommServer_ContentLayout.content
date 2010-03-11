@@ -71,6 +71,7 @@
       <Topic id="c25a81d5-8f1f-4fac-923f-314749651f1f" visible="True" title="Stations" tocTitle="Stations" linkText="Stations" />
       <Topic id="5164ca9e-1e51-4480-bc55-7b77f17c354c" visible="True" title="Segments" tocTitle="Segments" linkText="Segments" />
       <Topic id="ac0000a7-b6fe-4a07-a4b2-bf607389e948" visible="True" title="Interfaces" tocTitle="Interfaces" linkText="Interfaces" />
+      <Topic id="5791047a-0f60-476a-8e5f-7ab45c4cdd21" visible="True" title="Protocols" tocTitle="Protocols" linkText="Protocols" />
     </Topic>
     <Topic id="eae686e6-c4c0-4024-9f9b-434886e91661" visible="True" title="Appendix B (Tracing)" tocTitle="Appendix B (Tracing)" linkText="Appendix B (Tracing)">
       <Topic id="cb59e645-0c2a-4d5f-8db9-550146e3a27a" visible="True" title="Enabling Tracing" tocTitle="Enabling Tracing" linkText="Enabling Tracing" />

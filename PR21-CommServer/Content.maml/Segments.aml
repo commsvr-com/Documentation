@@ -7,48 +7,50 @@
       <title>SEGMENTS</title>
       <content>
         <table>
+          <tableHeader>
           <row>
             <entry>
               <para>
-                <legacyBold>Name</legacyBold>
+                Name
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>State</legacyBold>
+                State
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Connect Time</legacyBold>
+                Connect Time
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Connection OK</legacyBold>
+                Connection OK
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Connection fails</legacyBold>
+                Connection fails
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Write delay</legacyBold>
+                Write delay
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Read delay</legacyBold>
+                Read delay
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Over Time</legacyBold>
+                Over Time
               </para>
             </entry>
           </row>
+          </tableHeader>
           <row>
             <entry>
               <para>SBUS_W</para>

@@ -10,38 +10,40 @@
         <para>When CommServer starts for the first time it registers itself as an EventLog source.</para>
         <para>The table below shows main eventlogs entries.</para>
         <table>
+          <tableHeader>
           <row>
             <entry>
               <para>
-                <legacyBold>Type</legacyBold>
+                Type
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Source</legacyBold>
+                Source
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Category</legacyBold>
+                Category
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Event</legacyBold>
+                Event
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Description</legacyBold>
+                Description
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Explanation</legacyBold>
+                Explanation
               </para>
             </entry>
           </row>
+          </tableHeader>
           <row>
             <entry>
               <para>information</para>
