@@ -7,28 +7,30 @@
       <title>STATIONS</title>
       <content>
         <table>
+          <tableHeader>
           <row>
             <entry>
               <para>
-                <legacyBold>Station ID</legacyBold>
+                Station ID
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Name</legacyBold>
+                Name
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>On/Off</legacyBold>
+                On/Off
               </para>
             </entry>
             <entry>
               <para>
-                <legacyBold>Priority</legacyBold>
+                Priority
               </para>
             </entry>
           </row>
+          </tableHeader>
           <row>
             <entry>
               <para>1</para>
