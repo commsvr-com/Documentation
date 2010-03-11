@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="eae686e6-c4c0-4024-9f9b-434886e91661" revisionNumber="1">
+<topic id="5791047a-0f60-476a-8e5f-7ab45c4cdd21" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
     <section address="Section1">
-      <title>APPENDIX B (TRACING)</title>
+      <title>PROTOCOLS</title>
       <content>
-        <para>Traces are the publishing of specific messages that are generated during application execution. When using tracing, you must have a mechanism for collecting and recording the messages that are sent. Trace messages are received by listeners. </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Protocols</caption>
+          <image placement="center" xlink:href = "7a0638b9-5ea9-42a0-a917-9a2ab4f1ed9c"/>
+        </mediaLink>
       </content>
     </section>
     <relatedTopics>
