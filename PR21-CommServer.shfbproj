@@ -276,12 +276,17 @@
       <AlternateText>Operation Parameters</AlternateText>
       <ImageId>1f8a07b5-71e7-4d6e-a213-6268b42dcdab</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\protocols.jpg">
+      <ImageId>7a0638b9-5ea9-42a0-a917-9a2ab4f1ed9c</ImageId>
+      <AlternateText>Protocols</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\Protocols.aml" />
     <None Include="PR21-CommServer\Content.maml\RealTimeProcessSimulation.aml" />
     <None Include="PR21-CommServer\Content.maml\EnvironmentMonitoring.aml" />
     <None Include="PR21-CommServer\Content.maml\Protocol-MediumCouple.aml" />

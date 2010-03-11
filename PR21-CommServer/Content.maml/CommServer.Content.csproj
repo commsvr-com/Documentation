@@ -98,6 +98,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Protocol-MediumCouple.aml" />
+    <None Include="Protocols.aml" />
     <None Include="ProtocolTab.aml" />
     <None Include="RapidDevelopmentKit.aml" />
     <None Include="RealTimeProcessSimulation.aml" />

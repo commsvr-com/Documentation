@@ -1,82 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="cb59e645-0c2a-4d5f-8db9-550146e3a27a" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Enabling Tracing</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>To enable traces during transaction processing, you should edit application configuration file (‘CASOpcDaWrapper.exe.config’) which is located in the CommServer installation folder (default location: ‘C:\Program Files\CommServer’). </para>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Trace Level</para>
+              </entry>
+              <entry>
+                <para>Description</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>Critical</para>
+            </entry>
+            <entry>
+              <para>Serious failures, such as the following, have occurred:</para>
+              <list class="bullet">
+                <listItem>
+                  <para>An error that can cause an immediate loss of user functionality.</para>
+                </listItem>
+                <listItem>
+                  <para>An event that requires an administrator to take action to avoid loss of functionality.</para>
+                </listItem>
+                <listItem>
+                  <para>Code hangs.</para>
+                </listItem>
+              </list>
+              <para>This tracing level can also provide sufficient context for interpreting other critical traces. This can help to identify the sequence of operations leading to a serious failure.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Error</para>
+            </entry>
+            <entry>
+              <para>An error (e.g. invalid configuration or network behavior) has occurred that can result in loss of user functionality.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Warning</para>
+            </entry>
+            <entry>
+              <para>A condition exists that can subsequently result in an error or critical failure (e.g. allocation failing or approaching a limit). Normal processing of errors from user code (e.g. transaction aborted, timeouts, authentication failed) can also generate a warning.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Warning</para>
+            </entry>
+            <entry>
+              <para>A condition exists that can subsequently result in an error or critical failure (e.g. allocation failing or approaching a limit). Normal processing of errors from user code (e.g. transaction aborted, timeouts, authentication failed) can also generate a warning.</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Information</para>
+            </entry>
+            <entry>
+              <para>Messages helpful for monitoring and diagnosing the system status, measuring performance or profiling are generated. They can include transaction and enlistment lifetime events, such as a transaction being created or committed, the crossing of a significant boundary or the allocation of significant resources. A developer can then utilize such information for capacity planning and performance management.</para>
+            </entry>
+          </row>
+        </table>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
