@@ -280,6 +280,10 @@
       <ImageId>7a0638b9-5ea9-42a0-a917-9a2ab4f1ed9c</ImageId>
       <AlternateText>Protocols</AlternateText>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\CAS_Logo.jpg">
+      <ImageId>0dc06d86-3f19-466f-bfb0-96953a878e36</ImageId>
+      <AlternateText>CAS</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
