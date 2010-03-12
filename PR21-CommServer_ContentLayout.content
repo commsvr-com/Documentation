@@ -81,4 +81,5 @@
       <Topic id="2011aca3-8c11-4c81-8797-31c443976d34" visible="True" title="Tracing filters" tocTitle="Tracing filters" linkText="Tracing filters" />
     </Topic>
   </Topic>
+  <Topic id="0b2cb9b4-356b-455b-bca0-5881b9e459fa" visible="True" title="DCOM configuration example" tocTitle="DCOM configuration example" linkText="DCOM configuration example" />
 </Topics>

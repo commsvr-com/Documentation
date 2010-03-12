@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="0b2cb9b4-356b-455b-bca0-5881b9e459fa" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>DCOM configuration example</title>
+      <content>
+        <para>The example describes DCOM configuration for two computers where an OPC client installed on one of them has access to the OPC server on the other one.</para>
+        <para>In the case concerned, the OPC server is OPC ELUTIONS.OPCDA that gives access to data from the SCADA (ControlMaestro prev. Wizcon) system and is installed on a computer with Windows 2000 operating system, and the OPC client is DataPorter software installed on a computer with Windows 2003 Server system. Main task of this application is to share data from SCADA to GIS system.</para>
+        <para>Following description concern <legacyBold>only DCOM configuration for OPC client and server connection</legacyBold> (blue link on above figure) operating on two different PC machines. To configure DCOM:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Create an identical user account on both computers – the account with <legacyBold>opc</legacyBold> login and <legacyBold>123@opc</legacyBold> password has been created.</para>
+          </listItem>
+          <listItem>
+            <para>Select Start->Run on both computers and write ”dcomcnfg” to open the DCOM configuration window (the figures below show dcomcnfg view in Windows 2003 server system).</para>
+          </listItem>
+          <listItem>
+            <para>Expand ”Component Services” on the computer, click the right mouse button and select the option ”Properties” in order to set DCOM default configuration.</para>
+            <para>The window with default properties will open.</para>
+          </listItem>
+          <listItem>
+            <para>In the default properties tab, set: ”Enable distributed COM on this computer", default authentication level "Connect", default personification level "Identify".</para>
+          </listItem>
+          <listItem>
+            <para>In the default securities tab:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Access Permission – add an OPC user and set "Allow access" (the figures below show dcomcnfg view in Windows 2000 or Windows NT system)</para>
+              </listItem>
+              <listItem>
+                <para>Launch Permission - add an OPC user and set "Allow launch"</para>
+              </listItem>
+              <listItem>
+                <para>Configuration Privileges - add an OPC user and set "Read"</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>In the default protocols tab: standard (a default range of ports).</para>
+          </listItem>
+          <listItem>
+            <para>Configuration of OPCENUM (OPC Server List)</para>
+            <list class="bullet">
+              <listItem>
+                <para>authentication level "Default”</para>
+              </listItem>
+              <listItem>
+                <para>location ”Run application on this computer” </para>
+              </listItem>
+              <listItem>
+                <para>securities: access "Customize" [for an OPC user (full control")], launch "Use Default", configuration "Use Default"</para>
+              </listItem>
+              <listItem>
+                <para>Identity: System account – the setting should not be changed for OPC Enum software</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>DCOM configuration for OPC ControlMaestro server:</para>
+            <list class="bullet">
+              <listItem>
+                <para>authentication level "Default"</para>
+              </listItem>
+              <listItem>
+                <para>location ” Run application on this computer” </para>
+              </listItem>
+              <listItem>
+                <para>securities: access "Use Default", launch "Use Default", configuration "Customize" [for an OPC user (full control)]</para>
+              </listItem>
+              <listItem>
+                <para>identity: launching user</para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

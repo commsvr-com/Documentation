@@ -1,82 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
     <section address="Section1">
-      <title>Optional section title</title>
+      <title>Theory of operation</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>The following topics are included in this chapter:</para>
+
+        <para>
+          <link xlink:href="e6da9218-ee79-4a13-8665-5376fe7cf91d"></link>
+        </para>
+        <para>
+          <link xlink:href="ec8ba7f2-86b3-4005-876b-9479e94d3b9e"></link>
+        </para>
+        <para>
+          <link xlink:href="6e3310d3-495b-4d77-9452-6c23a6efe2c4"></link>
+        </para>
+        <para>
+          <link xlink:href="432a42dd-56d3-40e1-ba4a-a97ac8392f72"></link>
+        </para>
+        <para>
+          <link xlink:href="8c17a710-9ae1-402d-9179-93000c4da09b"></link>
+        </para>
+        <para>
+          <link xlink:href="c20e9632-40ea-44d9-828d-02d2929a1a97"></link>
+        </para>
+        <para>
+          <link xlink:href="13f68a0a-131d-4449-aad2-6118dc43ac77"></link>
+        </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

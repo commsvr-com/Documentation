@@ -7,9 +7,16 @@
       <title>GETTING STARTED</title>
       <content>
         <para>This chapter guides you through the process of setting up a CommServer for real-time data access. These instructions, which describe both how to install CommServer and start it for the first time, must be followed carefully to ensure a successful and trouble-free installation.</para>
+        <para>The following topics are included in this chapter:</para>
+        <para>
+          <link xlink:href="6dd58056-8068-4153-a70f-045af253f5fe"></link>
+        </para>
+        <para>
+          <link xlink:href="e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6"></link>
+        </para>
       </content>
     </section>
-    <relatedTopics>
+    <relatedTopics> 
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
