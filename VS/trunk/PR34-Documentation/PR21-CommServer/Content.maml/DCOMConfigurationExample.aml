@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="0b2cb9b4-356b-455b-bca0-5881b9e459fa" revisionNumber="1">
+<topic id="efdd4d99-ff98-46d8-a37a-33de8f522c1d" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
@@ -7,18 +7,38 @@
       <title>DCOM configuration example</title>
       <content>
         <para>The example describes DCOM configuration for two computers where an OPC client installed on one of them has access to the OPC server on the other one.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1"></caption>
+          <image placement="center" xlink:href = "b2b8550a-1573-4022-8273-9c637482f7f9"/>
+        </mediaLink>
         <para>In the case concerned, the OPC server is OPC ELUTIONS.OPCDA that gives access to data from the SCADA (ControlMaestro prev. Wizcon) system and is installed on a computer with Windows 2000 operating system, and the OPC client is DataPorter software installed on a computer with Windows 2003 Server system. Main task of this application is to share data from SCADA to GIS system.</para>
-        <para>Following description concern <legacyBold>only DCOM configuration for OPC client and server connection</legacyBold> (blue link on above figure) operating on two different PC machines. To configure DCOM:</para>
+        <para>
+          Following description concern <legacyBold>only DCOM configuration for OPC client and server connection</legacyBold> (blue link on above figure) operating on two different PC machines. To configure DCOM:
+        </para>
         <list class="ordered">
           <listItem>
-            <para>Create an identical user account on both computers – the account with <legacyBold>opc</legacyBold> login and <legacyBold>123@opc</legacyBold> password has been created.</para>
+            <para>
+              Create an identical user account on both computers – the account with <legacyBold>opc</legacyBold> login and <legacyBold>123@opc</legacyBold> password has been created.
+            </para>
           </listItem>
           <listItem>
             <para>Select Start->Run on both computers and write ”dcomcnfg” to open the DCOM configuration window (the figures below show dcomcnfg view in Windows 2003 server system).</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2"></caption>
+              <image placement="center" xlink:href = "4267893a-55af-42bf-8aff-83611b80ec7e"/>
+            </mediaLink>
           </listItem>
           <listItem>
             <para>Expand ”Component Services” on the computer, click the right mouse button and select the option ”Properties” in order to set DCOM default configuration.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 3"></caption>
+              <image placement="center" xlink:href = "732a698c-f583-42ee-a430-cdac541e7f73"/>
+            </mediaLink>
             <para>The window with default properties will open.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 4"></caption>
+              <image placement="center" xlink:href = "604d9579-57e8-44e6-ba74-8c385bdb0ad1"/>
+            </mediaLink>
           </listItem>
           <listItem>
             <para>In the default properties tab, set: ”Enable distributed COM on this computer", default authentication level "Connect", default personification level "Identify".</para>
@@ -28,12 +48,24 @@
             <list class="bullet">
               <listItem>
                 <para>Access Permission – add an OPC user and set "Allow access" (the figures below show dcomcnfg view in Windows 2000 or Windows NT system)</para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 5"></caption>
+                  <image placement="center" xlink:href = "5f967210-efc1-454f-bd55-8f6c2c2a03d8"/>
+                </mediaLink>
               </listItem>
               <listItem>
                 <para>Launch Permission - add an OPC user and set "Allow launch"</para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 6"></caption>
+                  <image placement="center" xlink:href = "477c47e5-dc7d-4045-99f1-50716dd398d3"/>
+                </mediaLink>
               </listItem>
               <listItem>
                 <para>Configuration Privileges - add an OPC user and set "Read"</para>
+                <mediaLink>
+                  <caption placement="after" lead="Figure 7"></caption>
+                  <image placement="center" xlink:href = "a0d95e51-a8df-4e6d-a00f-84fbe504de93"/>
+                </mediaLink>
               </listItem>
             </list>
           </listItem>
@@ -56,6 +88,10 @@
                 <para>Identity: System account – the setting should not be changed for OPC Enum software</para>
               </listItem>
             </list>
+            <mediaLink>
+              <caption placement="after" lead="Figure 8"></caption>
+              <image placement="center" xlink:href = "50c8a152-e6ae-4e39-b2ee-8d5411f22bc5"/>
+            </mediaLink>
           </listItem>
           <listItem>
             <para>DCOM configuration for OPC ControlMaestro server:</para>
@@ -73,6 +109,10 @@
                 <para>identity: launching user</para>
               </listItem>
             </list>
+            <mediaLink>
+              <caption placement="after" lead="Figure 9"></caption>
+              <image placement="center" xlink:href = "e7140130-3dfd-4581-aa10-38c512e4c8e1"/>
+            </mediaLink>
           </listItem>
         </list>
       </content>

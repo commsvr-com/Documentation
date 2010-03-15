@@ -284,13 +284,73 @@
       <ImageId>0dc06d86-3f19-466f-bfb0-96953a878e36</ImageId>
       <AlternateText>CAS</AlternateText>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r00.jpg">
+      <ImageId>b2b8550a-1573-4022-8273-9c637482f7f9</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r01.jpg">
+      <ImageId>4267893a-55af-42bf-8aff-83611b80ec7e</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r02.jpg">
+      <ImageId>732a698c-f583-42ee-a430-cdac541e7f73</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r03.jpg">
+      <ImageId>604d9579-57e8-44e6-ba74-8c385bdb0ad1</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r04.jpg">
+      <ImageId>5f967210-efc1-454f-bd55-8f6c2c2a03d8</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r05.jpg">
+      <ImageId>477c47e5-dc7d-4045-99f1-50716dd398d3</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r06.jpg">
+      <ImageId>a0d95e51-a8df-4e6d-a00f-84fbe504de93</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r07.jpg">
+      <ImageId>50c8a152-e6ae-4e39-b2ee-8d5411f22bc5</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r08.jpg">
+      <ImageId>e7140130-3dfd-4581-aa10-38c512e4c8e1</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r01a.jpg">
+      <ImageId>63819926-f1cd-469d-8d90-1058e1667663</ImageId>
+      <AlternateText>CommServer demo configuration</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r02a.jpg">
+      <AlternateText>The communication diagram</AlternateText>
+      <ImageId>e7f1a1dd-d325-499e-a1ca-9e3e50938bdd</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r03.jpg">
+      <AlternateText>CommServer configuration in NetworkConfig</AlternateText>
+      <ImageId>138ca7c6-6c43-422e-94ca-d18dd1cc6a34</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r04.jpg">
+      <AlternateText>Comparison of those two definitions</AlternateText>
+      <ImageId>d245e7a0-9fa1-411a-af72-792fcc0f1ccb</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r05.jpg">
+      <AlternateText>Station definition</AlternateText>
+      <ImageId>3bfe5c04-a22e-4662-8379-14e9b1eb0040</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="PR21-CommServer\Content.maml\9197a58a-f7a8-44ef-b090-1385f1e651c9.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExample.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExmaple.aml" />
+    <None Include="PR21-CommServer\Content.maml\DCOMConfigurationExample.aml" />
+    <None Include="PR21-CommServer\Content.maml\examplesandtutorials.aml" />
+    <None Include="PR21-CommServer\Content.maml\Dcom_configuration_example.aml" />
     <None Include="PR21-CommServer\Content.maml\Protocols.aml" />
     <None Include="PR21-CommServer\Content.maml\RealTimeProcessSimulation.aml" />
     <None Include="PR21-CommServer\Content.maml\EnvironmentMonitoring.aml" />

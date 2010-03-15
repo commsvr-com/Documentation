@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1c7b5f72-c925-4500-89a2-80344030eedc" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>CommServer configuration example</title>
+      <content>
+        <para>CommServer stores its configuration in an “.xml” file that contains information about channels, protocols, stations and data.  The demo configuration shipped with CommServer is stored in the CommServer installation directory in the “DefaultConfig.xml” file.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer demo configuration</caption>
+          <image placement="center" xlink:href = "63819926-f1cd-469d-8d90-1058e1667663"/>
+        </mediaLink>
+        <para>In this demo configuration, CommServer is responsible for reading data from one remote unit – called a station in CommServer terminology. This station and a protocol that is used to access the station are simulated by the DataProvider:  DP.DemoSimulator – a CommServer plugin (separately distributed component) responsible for provision of real time process data.  The station can be accessed via two communication routs:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Directly connected radio – standard serial communication is used and the station address is 0. The simulated error rate is around 5%</para>
+          </listItem>
+          <listItem>
+            <para>Radio connected via a leased line – it is necessary to use a port server that is available on IP 192.168.0.1 and TCP port number 2101, the station address is 0. Let's assume that the cost of this route is three times greater than that of the first one. The simulated error rate is around 1%</para>
+          </listItem>
+        </list>
+        <para>The communication diagram is presented in the picture below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">The communication diagram</caption>
+          <image placement="center" xlink:href = "e7f1a1dd-d325-499e-a1ca-9e3e50938bdd"/>
+        </mediaLink>
+        <para>The system requires that the following data must be gathered:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Registers from address 100 to 110 that contain static values (floating point or integers). It is possible to write to those registers. It is required to gather those data every 1 second</para>
+          </listItem>
+          <listItem>
+            <para>Flags from address 100 to 109 that contain static binary values. It is possible to write to those flags. It is required to gather those data every 1 second</para>
+          </listItem>
+          <listItem>
+            <para>Read only registers from address 10000 to 10002 that contain random generated values. It is required to gather those data every 5 second</para>
+          </listItem>
+        </list>
+        <para>Take a look at the CommServer configuration in NetworkConfig:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">CommServer configuration in NetworkConfig</caption>
+          <image placement="center" xlink:href = "138ca7c6-6c43-422e-94ca-d18dd1cc6a34"/>
+        </mediaLink>
+        <para>The following elements can be found:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Channel – there is one configured channel  named Channel0</para>
+          </listItem>
+          <listItem>
+            <para>Two protocols: DP.Demo – that is a simulator of the protocol and the remote device. The first protocol has ErrorFrequency parameter set to 20 (every 20th packet is lost, it is 5%). The other protocol has ErrorFrequency set to 100.</para>
+          </listItem>
+          <listItem>
+            <para>Two segments - the value of the segment address parameter is important in the second segment that is set to 192.168.0.1:2101 (CommServer should send a data stream to the IP address 192.168.0.1 and port number 2101, the TCP or UDP protocols can be set as a parameter in the production environment using a real DataProvider).</para>
+          </listItem>
+          <listItem>
+            <para>Port definition – this is quite an important part of the configuration; comparison of those two definitions is shown in the picture below:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 4">Comparison of those two definitions</caption>
+              <image placement="center" xlink:href = "d245e7a0-9fa1-411a-af72-792fcc0f1ccb"/>
+            </mediaLink>
+            <para>Address is the same in both cases, same as station number (0).  Inactive time – this time defines period of time for each interface in which the interface is in the inactive mode. After expiration, this interface switches off the active interface and changes its state to activate itself to check if it is still available. The switched off interface will preempt the communication after expiration of its InactTime. This solution guarantees that only one interface for the selected station is active at any instant and keeps this state as long as another interface becomes active. If there is only one interface it becomes active forever and no additional action is taken. The bigger value of this time, the more rarely this port (interface) is used, so this value should be greater for the more expensive route. The meaning of InactiveTimeAfterFailure parameter is exactly the same as InactTime, except it is used for scheduling after a communication failure occurs on this port. It is usually greater than inactive time (we do not want to try a broken connection). In this demo configuration this time is very short because all communication errors are simulated, connection is never broken, so we do not want to waste time.</para>
+          </listItem>
+          <listItem>
+            <para>Station definition – here you can find information about what data and how often should be read. The same station is linked to both ports:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 5">Station definition</caption>
+              <image placement="center" xlink:href = "3bfe5c04-a22e-4662-8379-14e9b1eb0040"/>
+            </mediaLink>
+            <para>Here we have two groups defined. The first one is pooled every 1s (timeout 5s), the other one is pooled every 5s (timeout 50s). The first group contains two data blocks: writable registers from address 100 to 110 and writable flags from address 100 to 109. The second group contains one data block of read only registers from address 10000 to 10002.</para>
+          </listItem>
+        </list>
+        <para>This sample configuration, which is delivered with CommServer software family.</para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

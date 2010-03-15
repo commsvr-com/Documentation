@@ -69,14 +69,17 @@
     <None Include="ApplicationMenu.aml" />
     <None Include="ApplicationWindow.aml" />
     <None Include="CommServerComponents.aml" />
+    <None Include="CommServerConfigurationExample.aml" />
     <None Include="CommServerConfigurationFile.aml" />
     <None Include="Configuration.aml" />
     <None Include="DatabaseStructure.aml" />
     <None Include="DataProviderDiagnostic.aml" />
+    <None Include="DCOMConfigurationExample.aml" />
     <None Include="DiagnosticInformation.aml" />
     <None Include="DiagnosticsAndTroubleshooting.aml" />
     <None Include="EnablingTracing.aml" />
     <None Include="EnvironmentMonitoring.aml" />
+    <None Include="examplesandtutorials.aml" />
     <None Include="GettingStarted.aml" />
     <None Include="ImportingConfigurationToolsFromSBUSorMODBUSWizconBLSfiles.aml" />
     <None Include="InstallingCommServer.aml" />
