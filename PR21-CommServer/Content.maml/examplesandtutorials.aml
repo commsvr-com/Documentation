@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7cebc829-1948-47d6-b093-c1c181d2de7b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Examples and tutorials</title>
+      <content>
+        <para>The following topics are included in this chapter:</para>
+        <para>
+          <link xlink:href="efdd4d99-ff98-46d8-a37a-33de8f522c1d"></link>
+        </para>
+        <para>
+          <link xlink:href="1c7b5f72-c925-4500-89a2-80344030eedc"></link>
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
