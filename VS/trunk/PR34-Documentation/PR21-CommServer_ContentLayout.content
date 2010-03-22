@@ -84,5 +84,10 @@
   <Topic id="7cebc829-1948-47d6-b093-c1c181d2de7b" visible="True" title="Examples and tutorials" tocTitle="Examples and tutorials" linkText="Examples and tutorials">
     <Topic id="efdd4d99-ff98-46d8-a37a-33de8f522c1d" visible="True" title="DCOM configuration example" tocTitle="DCOM configuration example" linkText="DCOM configuration example" />
     <Topic id="1c7b5f72-c925-4500-89a2-80344030eedc" visible="True" title="CommServer configuration example" tocTitle="CommServer configuration example" linkText="CommServer configuration example" />
+    <Topic id="317fcba8-65a2-4039-b87c-21d69b0a725b" visible="True" title="CommServer on x64 systems" tocTitle="CommServer on x64 systems" linkText="CommServer on x64 systems">
+      <Topic id="96e7311a-9d1b-4415-a309-9f910fe917ff" visible="True" title="Prerequisites" tocTitle="Prerequisites" linkText="Prerequisites" />
+      <Topic id="dddffed2-5bc9-4e1b-9c9a-e91b1e547237" visible="True" title="Port installation setup" tocTitle="Port installation setup" linkText="Port installation setup" />
+      <Topic id="c089e219-95a9-4a23-95a0-367a896128c3" visible="True" title="Summary" tocTitle="Summary" linkText="Summary" />
+    </Topic>
   </Topic>
 </Topics>

@@ -340,12 +340,41 @@
       <AlternateText>Station definition</AlternateText>
       <ImageId>3bfe5c04-a22e-4662-8379-14e9b1eb0040</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\system_information.jpg">
+      <AlternateText>System information</AlternateText>
+      <ImageId>bf989d80-4bb6-43bf-b554-44879a6539d1</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\systems_tasks.jpg">
+      <AlternateText>Tasks</AlternateText>
+      <ImageId>d56403ec-e33b-4d5e-82b1-476c08f1096f</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\download.jpg">
+      <AlternateText>OPC Core Components for x64 systems</AlternateText>
+      <ImageId>e289b4b4-0276-43da-b947-c0432903dc2b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\foldersettings.jpg">
+      <AlternateText>CommServer folder settings</AlternateText>
+      <ImageId>a1fa57eb-a2d8-44d8-a864-b6d25ea4a8b5</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\casopcdawrappersettings.jpg">
+      <AlternateText>CASOpcDaWrapper settings</AlternateText>
+      <ImageId>ccd8c4ee-bd10-42bc-9a27-230a4dfa9c72</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\dcomusers.jpg">
+      <AlternateText>Distributed COM Users</AlternateText>
+      <ImageId>c1edc2c2-428f-4a9a-bfb4-b27d1b3f66e4</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\commserver_dcom_settings.jpg">
+      <AlternateText>CommServer DCOM properties</AlternateText>
+      <ImageId>3f3baae9-6a75-4575-9918-fd979ba45fc9</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\CommServerOnX64Systems.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExample.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExmaple.aml" />
     <None Include="PR21-CommServer\Content.maml\DCOMConfigurationExample.aml" />
