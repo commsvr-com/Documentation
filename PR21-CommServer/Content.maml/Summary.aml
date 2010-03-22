@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c089e219-95a9-4a23-95a0-367a896128c3" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Summary</title>
+      <content>
+        <para>
+          <legacyBold>First launch</legacyBold>
+        </para>
+        <para>After configuration presented above now you can launch the CommServer for the first time. Follow the instruction from section “First startup” of webpage “Getting Started” to launch to CommServer for the first time.</para>
+        <para>
+          <legacyBold>Connection from remote PC</legacyBold>
+        </para>
+        <para>Follow the instruction in OPC connection test webpage to configure the communication between two computers.</para>
+        <alert>
+          <para>Remember to configure the firewall properly or turn it off.</para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

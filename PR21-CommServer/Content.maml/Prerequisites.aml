@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="96e7311a-9d1b-4415-a309-9f910fe917ff" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Prerequisites</title>
+      <content>
+        <para>
+          <legacyBold>X64 OPC Core Components installation</legacyBold>
+        </para>
+        <para>On 64 bit operating system there is necessity to install special version of OPC Core Components for x64 systems:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">OPC Core Components for x64 systems</caption>
+          <image placement="center" xlink:href = "e289b4b4-0276-43da-b947-c0432903dc2b"/>
+        </mediaLink>
+        <para>
+          <legacyBold>CommServer installation</legacyBold>
+        </para>
+        <para>The following version of CommServer should be installed: CommServerSetup_3_61_00_x86compilation.exe. This is special release based on CommServer 3.61.00 that is compiled to be run on 64 bit system as 32 bit application (in 32 bit compatibility mode).</para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

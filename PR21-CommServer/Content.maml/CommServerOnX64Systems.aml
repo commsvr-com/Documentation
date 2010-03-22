@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="317fcba8-65a2-4039-b87c-21d69b0a725b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>CommServer on x64 systems</title>
+      <content>
+        <para>This document briefly describes how to launch CommServer on x64*) system based on Windows 2008. Basic hardware configuration is showed on figure below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">System information</caption>
+          <image placement="center" xlink:href = "bf989d80-4bb6-43bf-b554-44879a6539d1"/>
+        </mediaLink>
+        <para>*) In this description x64 means 64 bit operation systems that uses WoW64 technology (on processors that supports AMD64/EMT64.instruction lists, other processors like Intel Itanium and operating systems for those processors are not considered in this article) . Other application can also be marked as x64 as designed for x64 system The next abbreviation that is used is x86 which means classic 32 bit operating systems and application for those system. Note that thanks to the WoW64 (Windows-on-Windows 64-bit) technology that is a subsystem of the Windows operating system that is capable of running 32-bit applications and is included on all 64-bit versions of Windows — including Windows XP Professional x64 Edition, IA-64 and x64 versions of Windows Server 2003 and 64-bit versions of Windows Vista and Windows Server 2008. WoW64 is supposed to take care of all the differences between 32-bit Windows and 64-bit Windows, particularly involving structural changes to Windows itself. This means that CommServer is executed as 32 bit application in 64 bit system.</para>
+        <para>Many of tips below are suitable also for Windows Server 2003 64bit, Windows Vista (x64 (64 bit) and x86 (32 bit) ), Windows 2008 (32 bit). Table below shows what tasks applies to which system:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Tasks</caption>
+          <image placement="center" xlink:href = "d56403ec-e33b-4d5e-82b1-476c08f1096f"/>
+        </mediaLink>
+        <para>** - CommServer user on 32 bit system can freely decide which version to install</para>
+        <para>*** - This must be done when UAC settings are enabled</para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

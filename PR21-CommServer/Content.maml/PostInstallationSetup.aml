@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="dddffed2-5bc9-4e1b-9c9a-e91b1e547237" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Section1">
+      <title>Post installation setup</title>
+      <content>
+        <para>
+          <legacyBold>CommServer folder settings</legacyBold>
+        </para>
+        <para>A user who launch the CommServer (on which privileges CommServer is run) should have access rights (read/write) to the CommServer directory, in this case: C:\Program Files (x86)\CAS\CommServer. The easier way to achieve it is to grant full control privileges for everyone user, see figure below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer folder settings</caption>
+          <image placement="center" xlink:href = "a1fa57eb-a2d8-44d8-a864-b6d25ea4a8b5"/>
+        </mediaLink>
+        <para>
+          <legacyBold>CASOpcDaWrapper settings</legacyBold>
+        </para>
+        <para>CASOpcDaWrapper.exe is an application that is a OPC server (this is the main executable file in the CommServer package). Because CommServer should be launched on the administrator account for the system time, make sure that you account has administrator privileges. What is more when UAC* is enabled follow tips showed on figure below to give CASOpcDaWrapper administrator privileges.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">CASOpcDaWrapper settings</caption>
+          <image placement="center" xlink:href = "ccd8c4ee-bd10-42bc-9a27-230a4dfa9c72"/>
+        </mediaLink>
+        <para>* User Account Control (UAC) is a new security component in Windows Vista and Windows 2008. UAC enables users to perform common tasks as non-administrators, called standard users in Windows Vista and Windows 2008, and as administrators without having to switch users, log off, or use Run As. A standard user account is synonymous with a user account in Windows XP. User accounts that are members of the local Administrators group will run most applications as a standard user. By separating user and administrator functions while enabling productivity, UAC is an important enhancement for Windows Vista and Windows 2008.</para>
+        <alert>
+          <para>First launch of CommServer should be done from account with administrative privileges</para>
+        </alert>
+        <para>
+          <legacyBold>DCOM related settings</legacyBold>
+        </para>
+        <para>First, to easier the DCOM configuration for remote connection we suggest to create an accout on which CommServer will be run. Lets create user: opc (to omit some problems it is good to grant administrator privileges to this user).</para>
+        <para>
+          <legacyBold>Distributed COM Users</legacyBold>
+        </para>
+        <para>Secondly it is necessary to add opc user to “Distributed COM Users” group, to achieve this follow the instruction on the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Distributed COM Users</caption>
+          <image placement="center" xlink:href = "c1edc2c2-428f-4a9a-bfb4-b27d1b3f66e4"/>
+        </mediaLink>
+        <para>
+          <legacyBold>CommServer DCOM properties</legacyBold>
+        </para>
+        <para>Now it is time to configured on which account CommServer should run. To configure it DCOMCNFG application is used, see figure below for details.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">CommServer DCOM properties</caption>
+          <image placement="center" xlink:href = "3f3baae9-6a75-4575-9918-fd979ba45fc9"/>
+        </mediaLink>
+        
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
