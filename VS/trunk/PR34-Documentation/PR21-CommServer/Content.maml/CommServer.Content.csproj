@@ -71,6 +71,7 @@
     <None Include="CommServerComponents.aml" />
     <None Include="CommServerConfigurationExample.aml" />
     <None Include="CommServerConfigurationFile.aml" />
+    <None Include="CommServerOnX64Systems.aml" />
     <None Include="Configuration.aml" />
     <None Include="DatabaseStructure.aml" />
     <None Include="DataProviderDiagnostic.aml" />
@@ -94,6 +95,8 @@
     <None Include="OptimalTransferAlgorithm.aml" />
     <None Include="OptimizationOfCommunicationPathsUtilization.aml" />
     <None Include="Overview.aml" />
+    <None Include="PostInstallationSetup.aml" />
+    <None Include="Prerequisites.aml" />
     <None Include="ProgramMainWindow.aml" />
     <None Include="ProperRunningServerDiagnosticsAndTroubleshooting.aml" />
     <None Include="Properties\Settings.settings">
@@ -112,6 +115,7 @@
     <None Include="StartingAndStoppingTheCommServer.aml" />
     <None Include="Stations.aml" />
     <None Include="StationTab.aml" />
+    <None Include="Summary.aml" />
     <None Include="SystemEventLog.aml" />
     <None Include="TagBits.aml" />
     <None Include="TagBlocks.aml" />
