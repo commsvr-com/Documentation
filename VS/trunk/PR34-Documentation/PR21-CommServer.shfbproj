@@ -374,6 +374,9 @@
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\Summary.aml" />
+    <None Include="PR21-CommServer\Content.maml\PostInstallationSetup.aml" />
+    <None Include="PR21-CommServer\Content.maml\Prerequisites.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerOnX64Systems.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExample.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExmaple.aml" />
