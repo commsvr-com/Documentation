@@ -45,7 +45,7 @@
         </para>
         <para>An example of a system running CommServer is shown in the picture below:</para>
         <mediaLink>
-          <caption placement="after" lead="Figure">An example of a process control information architecture using CommServer</caption>
+          <caption placement="after" lead="Figure 1">An example of a process control information architecture using CommServer</caption>
           <image placement="center" xlink:href = "4daebae0-4e1b-463b-bc74-71c98e9f9022"/>
         </mediaLink>
         <para>Explanation of the system components:</para>
