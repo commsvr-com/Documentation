@@ -67,7 +67,6 @@
     <None Include="AppendixB.aml" />
     <None Include="ApplicationInterface.aml" />
     <None Include="ApplicationMenu.aml" />
-    <None Include="ApplicationWindow.aml" />
     <None Include="CommServerComponents.aml" />
     <None Include="CommServerConfigurationExample.aml" />
     <None Include="CommServerConfigurationFile.aml" />
@@ -78,7 +77,6 @@
     <None Include="DCOMConfigurationExample.aml" />
     <None Include="DiagnosticInformation.aml" />
     <None Include="DiagnosticsAndTroubleshooting.aml" />
-    <None Include="EnablingTracing.aml" />
     <None Include="EnvironmentMonitoring.aml" />
     <None Include="examplesandtutorials.aml" />
     <None Include="GettingStarted.aml" />
@@ -94,7 +92,6 @@
     <None Include="OperationParameters.aml" />
     <None Include="OptimalTransferAlgorithm.aml" />
     <None Include="OptimizationOfCommunicationPathsUtilization.aml" />
-    <None Include="Overview.aml" />
     <None Include="PostInstallationSetup.aml" />
     <None Include="Prerequisites.aml" />
     <None Include="ProgramMainWindow.aml" />
@@ -121,19 +118,13 @@
     <None Include="TagBlocks.aml" />
     <None Include="TagMappings.aml" />
     <None Include="TheoryOfOperation.aml" />
-    <None Include="TheSchemeOfTheExampleStructure.aml" />
-    <None Include="TracingFilters.aml" />
     <None Include="TracingInCommServer.aml" />
-    <None Include="TracingListeners.aml" />
-    <None Include="TracingSources.aml" />
-    <None Include="TracingSwitches.aml" />
     <None Include="TrayIconCapability.aml" />
     <None Include="TroubleShooting.aml" />
     <None Include="Usage.aml" />
     <None Include="UsingCommServer.aml" />
     <None Include="UsingNetworkConfigToConfigureTheNetwork.aml" />
     <None Include="WelcomeToCommServer.aml" />
-    <None Include="WhoShouldUseThisManual.aml" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
