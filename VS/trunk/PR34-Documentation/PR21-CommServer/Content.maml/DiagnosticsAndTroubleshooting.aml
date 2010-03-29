@@ -6,10 +6,12 @@
     <section address="Section1">
       <title>Diagnostic and troubleshooting</title>
       <content>
+        <para>This section describes some common problems that users encounter while using CommServer.</para>
       </content>
     </section>
     <relatedTopics>
-      <link xlink:href="525ca262-98c3-42fd-b423-00fb98544242"></link>
+      <link xlink:href="072e8fd8-ad4d-42ea-a1f8-3f0132b02614"></link>
+      <link xlink:href="8f3a0ee9-b345-4bd8-b4db-a59be8686e66"></link>
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
