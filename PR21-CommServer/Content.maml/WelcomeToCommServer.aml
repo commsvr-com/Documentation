@@ -1,12 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="2dea0752-d490-47e6-8444-ac73e07601fc" revisionNumber="1">
-  <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <para>Welcome to CommServer</para>
+      <para>
+        Welcome to CommServer
+      </para>
     </introduction>
+    <section address="WhoShouldUseThisManual">
+      <title>Who should use this manual?</title>
+      <content>
+        <para>This manual is designed for those using CommServer for the first time. Familiarity with the Windows environment, engineering terminology, Remote Terminal Units, Supervisory Control and Data Acquisition systems is essential.</para>
+      </content>
+    </section>
+    <section address="Overview1">
+      <title>Overview</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>CommServer</legacyItalic>
+          </legacyBold> is a fully configurable communication server providing OPC connectivity. It provides a multi-protocol, multi-medium and multi-channel redundant access to digital plant-floor devices. To ensure short response time and effective utilization of the physical device communication channels throughput, unique adaptive transfer control and adaptive sampling algorithms are implemented.
+        </para>
+        <para>
+          <legacyBold>
+            <legacyItalic>CommServer</legacyItalic>
+          </legacyBold> offers the possibility of using many vendor specific communication protocols simultaneously, parallel handling of independent communication channels and redundant links with remote physical devices. Any user can define logical sets of devices (segments) with common address or scanning rules (e.g. connected by one ISDN modem or satellite transceiver). New protocols (data providers) can easily be added by plug-ins. It provides the possibility of using various communication media simultaneously, including copper and fiber optic networks, digital radio, ISDN, GSM-GPRS, WIFI and satellite transponders. The physical data communication network is monitored and the acquired diagnostic data are provided as OPC tags.
+        </para>
+        <para>
+          <legacyBold>
+            <legacyItalic>CommServer</legacyItalic>
+          </legacyBold> offers unique algorithms of scheduling the process responsible for updating of the device data cache, based on original solutions in the field of multithreaded technology. These algorithms utilize dynamic priorities and adaptable scanning rules defined for physical process variables grouped into sets to optimize the communication throughput. The scanning priority of the group and, as a consequence, the device sampling rate is a function of:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>the process control state represented by selected alarm tags and</para>
+          </listItem>
+          <listItem>
+            <para>throughput of the medium used.</para>
+          </listItem>
+        </list>
+        <para>
+          <legacyBold>
+            <legacyItalic>CommServer</legacyItalic>
+          </legacyBold> is fully configurable by an included configuration application (NetworkConfig). The configuration is stored in a widely accepted XML format, so it can easily be managed by a foreign application (all protocol parameters, interfaces, segments, channels, tags and tag groups are defined in the configuration file). The tags can be imported and exported from SQL database e.g. ORACLE - a dictionary or SCADA system e.g. WIZCON configuration files. It allows a smooth migration and integration process with third party SCADA software.
+        </para>
+        <para>An example of a system running CommServer is shown in the picture below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">An example of a process control information architecture using CommServer</caption>
+          <image placement="center" xlink:href = "4daebae0-4e1b-463b-bc74-71c98e9f9022"/>
+        </mediaLink>
+        <para>Explanation of the system components:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Base Station</legacyItalic>
+              </legacyBold> – computer hosting CommServer software – it is responsible for redundant communication with plant-floor devices;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Channel</legacyItalic>
+              </legacyBold> – virtual communication object that models independent communication via various types of media (radio,  GSM-GPRS, cable TV, satellite, FO, etc…). Communication through different channels is conducted simultaneously.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Data Provider</legacyItalic>
+              </legacyBold> = medium + protocol or simulator – it is responsible for providing data to the communication server. It can play many roles including: communication with remote plant-floor devices, simulation of a process or monitoring of the local OS or local network performance counters, cache providing horizontal communication. To establish communication with a remote unit, many components implementing a couple of protocol / communication medium are available.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Segment</legacyItalic>
+              </legacyBold>  – communication segment is a virtual group of plant-floor devices that have the same address (IP, dial number, etc.) and needs to be served using common connection (the same communication path). The basic scanning rule for the segment is that only one segment per channel is active at any instant to provide mutually exclusive access to common resources or communication medium. The segment is also responsible for connection management of the connation oriented transport protocols, e.g. TCP, ISDN, etc.
+            </para>
+            <para>The segment can be in one of the following states:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Establishing connection;</para>
+              </listItem>
+              <listItem>
+                <para>Transmitting;</para>
+              </listItem>
+              <listItem>
+                <para>Closing connection;</para>
+              </listItem>
+              <listItem>
+                <para>Inactive;</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Port</legacyItalic>
+              </legacyBold> - plant-floor devices physical (independently addressed on the segment sub-network) communication interface; e.g. serial port of a PLC connected to RS485 field bus.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Pipe</legacyItalic>
+              </legacyBold> - a couple of selected ports representing single bidirectional data stream. The main rule for a pipe is that only one port belonging to the pipe is active at the same time. To provide redundancy after failure of one communication path, another port  belonging to the same pipe is activated immediately to establish a new communication path. Behind the scene, availability of non-active ports is checked periodically.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Requirements">
+      <title>Requirements</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>CommServer</legacyItalic>
+          </legacyBold> requires the following hardware and software to run:
+        </para>
+        <para>
+          <legacyBold>Operating System:</legacyBold> Windows NT 4.0 Sp 6.0a, Windows 2000, Windows XP;
+        </para>
+        <para>
+          <legacyBold>Additional software:</legacyBold> .NET Framework 2.0, Internet Explorer, OPC Core Components 2.00 Redistributable 2.30+
+        </para>
+        <para>
+          <legacyBold>Additional hardware:</legacyBold> Standard Serial Ports (COM), Ethernet Card. Hardware depends on system requirements.
+        </para>
+      </content>
+    </section>
     <relatedTopics>
-      <link xlink:href="70fab453-5d5f-4972-aa7a-2d312cc524d0">Who should use this manual?</link>
-      <link xlink:href="a2014641-7f7e-4966-a6f1-364541fa138c">Overview</link>
     </relatedTopics>
-  </developerOrientationDocument>
+  </developerConceptualDocument>
 </topic>

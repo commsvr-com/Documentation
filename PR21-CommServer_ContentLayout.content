@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="2dea0752-d490-47e6-8444-ac73e07601fc">
-  <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" title="Welcome to CommServer" tocTitle="Welcome to CommServer" linkText="Welcome to CommServer">
-    <Topic id="70fab453-5d5f-4972-aa7a-2d312cc524d0" visible="True" title="Who should use this manual" tocTitle="Who should use this manual" linkText="Who should use this manual" />
-    <Topic id="a2014641-7f7e-4966-a6f1-364541fa138c" visible="True" title="Overview" tocTitle="Overview" linkText="Overview" />
-  </Topic>
+  <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" title="Welcome to CommServer" tocTitle="Welcome to CommServer" linkText="Welcome to CommServer" />
   <Topic id="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation">
     <Topic id="e6da9218-ee79-4a13-8665-5376fe7cf91d" visible="True" title="Introduction" tocTitle="Introduction" linkText="Introduction" />
     <Topic id="ec8ba7f2-86b3-4005-876b-9479e94d3b9e" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
@@ -26,10 +23,7 @@
   </Topic>
   <Topic id="de241950-87e4-40df-ba6c-99579ddc467e" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
     <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CommServer.exe.config)" tocTitle="CommServer configuration file (CommServer.exe.config)" linkText="CommServer configuration file (CommServer.exe.config)" />
-    <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network">
-      <Topic id="8cadf64a-406b-4ec0-9dc7-9b9745674df0" visible="True" title="Application Window" tocTitle="Application Window" linkText="Application Window" />
-      <Topic id="8db545c0-c03d-4b82-89bd-c108d9c6b8ee" visible="True" title="The scheme of the example structure" tocTitle="The scheme of the example structure" linkText="The scheme of the example structure" />
-    </Topic>
+    <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network" />
     <Topic id="9c5fc843-ce8f-41ad-913c-efa9a731f8ad" visible="True" title="Additional resources/tools" tocTitle="Additional resources/tools" linkText="Additional resources/tools">
       <Topic id="d5e08d79-e19f-4d89-8e9d-3aff6957b6ee" visible="True" title="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" tocTitle="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" linkText="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" />
       <Topic id="7cbe14db-8b5b-4649-9730-6c705c409336" visible="True" title="Tag Blocks" tocTitle="Tag Blocks" linkText="Tag Blocks" />
@@ -73,13 +67,7 @@
       <Topic id="ac0000a7-b6fe-4a07-a4b2-bf607389e948" visible="True" title="Interfaces" tocTitle="Interfaces" linkText="Interfaces" />
       <Topic id="5791047a-0f60-476a-8e5f-7ab45c4cdd21" visible="True" title="Protocols" tocTitle="Protocols" linkText="Protocols" />
     </Topic>
-    <Topic id="eae686e6-c4c0-4024-9f9b-434886e91661" visible="True" title="Appendix B (Tracing)" tocTitle="Appendix B (Tracing)" linkText="Appendix B (Tracing)">
-      <Topic id="cb59e645-0c2a-4d5f-8db9-550146e3a27a" visible="True" title="Enabling Tracing" tocTitle="Enabling Tracing" linkText="Enabling Tracing" />
-      <Topic id="33dba32a-ee28-4de4-83de-9ed4c8e17150" visible="True" title="Tracing switches" tocTitle="Tracing switches" linkText="Tracing switches" />
-      <Topic id="ff6ef9a2-ccd5-4683-b915-424881069c72" visible="True" title="Tracing sources" tocTitle="Tracing sources" linkText="Tracing sources" />
-      <Topic id="181bd54f-ed2d-421e-b157-1b2b3c933c81" visible="True" title="Tracing listeners" tocTitle="Tracing listeners" linkText="Tracing listeners" />
-      <Topic id="2011aca3-8c11-4c81-8797-31c443976d34" visible="True" title="Tracing filters" tocTitle="Tracing filters" linkText="Tracing filters" />
-    </Topic>
+    <Topic id="eae686e6-c4c0-4024-9f9b-434886e91661" visible="True" title="Appendix B (Tracing)" tocTitle="Appendix B (Tracing)" linkText="Appendix B (Tracing)" />
   </Topic>
   <Topic id="7cebc829-1948-47d6-b093-c1c181d2de7b" visible="True" title="Examples and tutorials" tocTitle="Examples and tutorials" linkText="Examples and tutorials">
     <Topic id="efdd4d99-ff98-46d8-a37a-33de8f522c1d" visible="True" title="DCOM configuration example" tocTitle="DCOM configuration example" linkText="DCOM configuration example" />
