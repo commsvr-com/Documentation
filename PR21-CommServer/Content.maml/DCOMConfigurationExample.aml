@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="DCOMConfigurationExample">
       <title>DCOM configuration example</title>
       <content>
         <para>The example describes DCOM configuration for two computers where an OPC client installed on one of them has access to the OPC server on the other one.</para>

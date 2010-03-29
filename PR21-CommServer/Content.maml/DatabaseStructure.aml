@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="DataBaseStructure">
       <title>Database structure</title>
       <content>
         <para>CommServer if fully programmable and its configuration is in the XML file. The parameter relation and the database structure are shown below:</para>

@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="ScanSettings">
       <title>Scan Settings</title>
       <content>
         <para>NetworkConfig allows the user to import only scanning settings. Any scanning setting should be previously defined in csv file. Please read the example below:</para>

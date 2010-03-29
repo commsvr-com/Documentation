@@ -3,8 +3,8 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
-      <title>CONFIGURATION</title>
+    <section address="Configuration">
+      <title>Configuration</title>
       <content>
         <para>This chapter describes the CommServer configuration.</para>
         <alert>

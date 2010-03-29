@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="OptimizationOfCommunicationPAths">
       <title>Optimization of communication paths utilization</title>
       <content>
         <para>Main job of each communication server is to make ‘every effort’ to keep the process data fresh and allow clients to access the data randomly. From the communication point of view, two more or less independent networks can be distinguished in the distributed process control information architecture (Fig. 1):</para>

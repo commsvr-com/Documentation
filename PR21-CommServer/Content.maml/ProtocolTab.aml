@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="ProtocolTab">
       <title>Protocol tab</title>
       <content>
         <para>On this tab (Fig. 1) you can find detailed information concerning a particular communication protocol. After selecting one of the protocols, you can find protocol parameters set during configuration. The program shows the following parameters:</para>

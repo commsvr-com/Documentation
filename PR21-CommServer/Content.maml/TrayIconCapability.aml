@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="TrayIconCapability">
       <title>Tray icon capability</title>
       <content>
         <para>CommServer has its own tray icon on the system tray. You can hide / unhide or close the application window and the tray icon provides access to the application any time when it is necessary.</para>

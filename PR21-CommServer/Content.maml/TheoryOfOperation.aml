@@ -3,11 +3,10 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="TheoryOfOperation">
       <title>Theory of operation</title>
       <content>
         <para>The following topics are included in this chapter:</para>
-
         <para>
           <link xlink:href="e6da9218-ee79-4a13-8665-5376fe7cf91d"></link>
         </para>

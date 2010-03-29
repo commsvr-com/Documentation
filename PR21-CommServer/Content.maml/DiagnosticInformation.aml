@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="DiagnosticInformation">
       <title>Diagnostic Information</title>
       <content>
         <para>CommServer supports two ways how the software can inform user about events and problems:</para>

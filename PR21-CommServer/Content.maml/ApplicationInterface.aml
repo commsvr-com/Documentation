@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="ApplicationInterface">
       <title>Application interface</title>
       <content>
         <para>The CommServer user interface is designed to provide any information that helps you to optimize the configuration and monitor the state of the server.</para>

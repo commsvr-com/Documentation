@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="InterfaceTab">
       <title>Interface tab</title>
       <content>
         <para>This tab (Fig. 1) helps to monitor and diagnose the communication with a particular station. All interfaces of each station are visible and can be selected for monitoring:</para>

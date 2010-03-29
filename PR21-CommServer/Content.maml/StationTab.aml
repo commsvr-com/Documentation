@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="StationTab">
       <title>Station tab</title>
       <content>
         <para>This is the first visible tab. It shows only main information – a stations list. The state of the communication is shown by an icon placed next to the station name. The icon without any red elements indicates normal/regular communication, red X next to name of station indicates a lack of communication.</para>

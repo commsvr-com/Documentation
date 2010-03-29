@@ -12,7 +12,7 @@
         <para>This manual is designed for those using CommServer for the first time. Familiarity with the Windows environment, engineering terminology, Remote Terminal Units, Supervisory Control and Data Acquisition systems is essential.</para>
       </content>
     </section>
-    <section address="Overview1">
+    <section address="Overview">
       <title>Overview</title>
       <content>
         <para>

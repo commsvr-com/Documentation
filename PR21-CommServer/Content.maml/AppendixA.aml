@@ -3,8 +3,8 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
-      <title>Appendix A</title>
+    <section address="AppendixA">
+      <title>APPENDIX A</title>
       <content>
         <mediaLink>
           <caption placement="after">CAS CommServer</caption>

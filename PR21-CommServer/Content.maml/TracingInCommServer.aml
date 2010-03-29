@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="TracingInCS">
       <title>Tracing in CommServer</title>
       <content>
         <para>This is a modern technology based on .NET Framework, that provides a very simple and flexible method to trace a problem in runtime environment. For details about this technology please read Appendix B (Tracing).</para>

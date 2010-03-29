@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="HowToStartCS">
       <title>An example how to start the CommServer using an OPC DA Client</title>
       <content>
         <para>Before this experiment please read the documentation of the OPC Client that you are using. In this chapter a Sample OPC Client from OPC Foundation  is used.</para>
