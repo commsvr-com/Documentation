@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section0">
+    <section address="UsingNetworkConfig">
       <title>Using NetworkConfig to configure the network</title>
       <content>
         <para>NetworkConfig is the main configuration application for CommServer. You can run the NetworkConfig from CommServer directory (default: Menu start -> CAS -> CommServer -> NetworkConfig) or directly using menu in the CommServer Monitor window. CommServer uses XML file (the file is specified in CASOpcDaWrapper.exe.config as the configfile parameter; see “CommServer configuration file (CommServer.exe.config)” section (default XML configuration file is: c:\Program Files\CAS\CommServer\DefaultConfig.xml)) for initiating a database of connection, protocols, remote station and process values. NetworkConfig module is designed to simplify the edition of this XML file. The whole configuration is divided into two logical sections:</para>
@@ -18,7 +18,7 @@
         <para>To understand the configuration, please open the default configuration file, which is located in your CommServer directory. Configuration parameters and interface of the NetworkConfig are described below.</para>
       </content>
     </section>
-    <section address="Section1">
+    <section address="ApplicationWindow">
       <title>Application Window</title>
       <content>
         <para>On upper left-hand side of the window there is a standard toolbar containing the following options: File, Edit, View, Tools and Help. Below the tool bar, there are additional icons which allows user direct access to some helpful options. On the left-hand side the user can find structural scheme of the configuration; the structure is showed as a tree and you can navigate though the elements of the tree like in Windows Explorer (operations like copy, cut, paste, move, add are possible; please click on the right mouse button to select proper operation from the contents menu). The user can choose here between three modes: Channels, Stations and Channels and Stations. In the sub-window on the right-hand side there are displayed parameters of the objects (Channel, Station, etc.) in the left sub-window.</para>
@@ -28,7 +28,7 @@
         </mediaLink>
       </content>
     </section>
-    <section address ="Section2">
+    <section address ="Channel">
       <title>Channel</title>
       <content>
         <para>
@@ -50,7 +50,7 @@
         </list>
       </content>
     </section>
-    <section address="Section3">
+    <section address="Protocol">
       <title>Protocol</title>
       <content>
         <para>
@@ -127,7 +127,7 @@
         </list>
       </content>
     </section>
-    <section address="Section4">
+    <section address="Segments">
       <title>Segments</title>
       <content>
         <para>
@@ -216,7 +216,7 @@
         </list>
       </content>
     </section>
-    <section address ="Section5">
+    <section address ="Station">
       <title>Station</title>
       <content>
         <para>
@@ -226,7 +226,7 @@
         </para>
       </content>
     </section>
-    <section address="Section6">
+    <section address="Groups">
       <title>Groups</title>
       <content>
         <para>
@@ -267,7 +267,7 @@
         </list>
       </content>
     </section>
-    <section address="Section7">
+    <section address="DataBlocks">
       <title>Data Blocks</title>
       <content>
         <para>
@@ -299,7 +299,7 @@
         </list>
       </content>
     </section>
-    <section address="Section8">
+    <section address="Tags">
       <title>Tags</title>
       <content>
         <para>
@@ -355,7 +355,7 @@
         </list>
       </content>
     </section>
-    <section address="Section9">
+    <section address="BitsDefinition">
       <title>Bits definition</title>
       <content>
         <para>

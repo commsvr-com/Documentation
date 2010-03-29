@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="EnvironmentMonitoring">
       <title>Environment monitoring</title>
       <content>
         <para>In a real environment, monitoring and management of the recourses making up the information and communication infrastructure are often of the same importance as access to real time data. We can distinguish the following types of information for this infrastructure:</para>

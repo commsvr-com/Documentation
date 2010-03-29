@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="AdaptiveSamplingAlgorithm">
       <title>Adaptive sampling algorithm</title>
       <content>
         <para>According to the OPC specification, the scanner module is responsible for keeping the cached data fresh, but it is worth stressing that “freshness” of the data depends on the process state and can change in time drastically. The communication server (in order to optimize the data transfer costs) should adapt the sampling rate to current process control needs. To achieve this, CommServer uses an algorithm called <legacyBold><legacyItalic>adaptive sampling algorithm</legacyItalic></legacyBold> (ASA).</para>

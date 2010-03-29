@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="CSOnx64">
       <title>CommServer on x64 systems</title>
       <content>
         <para>This document briefly describes how to launch CommServer on x64*) system based on Windows 2008. Basic hardware configuration is showed on figure below:</para>

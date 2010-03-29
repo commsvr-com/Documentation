@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="ReportUtility">
       <title>Report utility</title>
       <content>
         <para>CommServer has a built-in report utility that allows to generate reports about the communication sate. All data provided by the tabs described previously are available in the report. The report is displayed in the Internet Explorer window and can be saved from this application for future analysis.</para>

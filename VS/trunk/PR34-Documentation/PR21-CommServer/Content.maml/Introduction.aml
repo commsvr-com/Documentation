@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>>
-    <section address="Section1">
+    <section address="Introduction">
       <title>Introduction</title>
       <content>
         <para>CommServer is a server communicating plant-floor devices data to any client application in a standard way. It is like a bridge, a connection of the process plant-floor control side to the process management and business management side. To effectively fulfill its mission, many advanced solutions and technologies have been used to enable this product to offer many unique features and use it as a platform for large scale robust distributed information system.</para>

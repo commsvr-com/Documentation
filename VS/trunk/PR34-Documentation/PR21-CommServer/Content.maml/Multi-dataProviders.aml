@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="MultiDataProviders">
       <title>Multi-data providers</title>
       <content>
         <para>One of main objectives of using an OPC server is to provide a uniform bridge between digital plant-floor devices and systems providing services at the process and business management levels. In the beginning, this bridge was invented as a translator between vendor specific languages (protocols) used by the devices for data access and a widely accepted  one – OPC. It is a simplification, but in this concept an OPC server plays a similar role to the printer driver. Therefore, each OPC server has to be equipped with a vendor specific component, usually the whole or part of the scanner layer is dedicated for a selected protocol and communication medium.</para>

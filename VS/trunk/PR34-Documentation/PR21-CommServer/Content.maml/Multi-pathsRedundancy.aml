@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="MultiPathsRedundancy">
       <title>Multi-paths redundancy</title>
       <content>
         <para>Redundancy in communication is a possibility of defining excessive communication paths, which can be used to get real-time data from plant-floor devices, e.g. PLCs, DCSs, and other control devices, to HMIs, SCADA and other Process Management and Business Management layers  clients. Having many communication paths to the same remote plant-floor device, each path can be considered as backup (a kind of hot reserve) for the others. It allows to reroute the data stream in case of breakdown of one of them.</para>

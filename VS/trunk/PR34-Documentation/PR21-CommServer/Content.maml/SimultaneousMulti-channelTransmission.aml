@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="SimultaneusMultiChannelTransmission">
       <title>Simultaneous multi-channel transmission</title>
       <content>
         <para>As it was said previously, a server can usually utilize many independent communication paths to transfer the real time process data to/from plant-floor devices. In some cases, even having homogeneous infrastructure, like IP network, we can establish independent simultaneous connections using transport protocols, like TCP/UDP.  A good example of this environment is the wireless GPRS communication, very popular in the process control industry . An important feature of this medium for process control applications is a considerable transportation delay in comparison with a theoretically high bandwidth. A round trip delay for the GPRS network may exceed 4s. If the pooling model using one-channel communication (it means single TCP connection to each remote plant-floor device or only one outstanding UDP request at any time) is applied the delay limits the available sampling rate. Let’s assume that it is requited to read real time process data from 1000 plant-floor devices (e.g. heat meters). When reading raw data from these units sequentially (pooling one by one), 4000s (more than an hour!) is necessary to collect the data from all of them. Usually it is not acceptable, because to represent the real time process state the values should be got at the same time.</para>

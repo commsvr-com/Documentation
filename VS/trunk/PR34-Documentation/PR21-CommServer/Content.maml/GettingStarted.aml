@@ -3,8 +3,8 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
-      <title>GETTING STARTED</title>
+    <section address="GettingStarted">
+      <title>Getting started</title>
       <content>
         <para>This chapter guides you through the process of setting up a CommServer for real-time data access. These instructions, which describe both how to install CommServer and start it for the first time, must be followed carefully to ensure a successful and trouble-free installation.</para>
         <para>The following topics are included in this chapter:</para>

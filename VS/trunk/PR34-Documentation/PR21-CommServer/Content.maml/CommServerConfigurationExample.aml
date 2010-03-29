@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="CSConfigurationExample">
       <title>CommServer configuration example</title>
       <content>
         <para>CommServer stores its configuration in an “.xml” file that contains information about channels, protocols, stations and data.  The demo configuration shipped with CommServer is stored in the CommServer installation directory in the “DefaultConfig.xml” file.</para>

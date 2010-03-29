@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="CSConfigurationFile">
       <title>CommServer configuration file (CommServer.exe.config)</title>
       <content>
         <para>CASOpcDaWrapper.exe.config is the main configuration file of CommServer; please find this file in your CommServer directory. Default location is: </para>

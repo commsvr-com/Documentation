@@ -3,8 +3,8 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
-      <title>USING COMMSERVER</title>
+    <section address="UsingCS">
+      <title>Using CommServer</title>
       <content>
         <para>This chapter describes the CommServer user interface and how to use it.</para>
         <para>The following topics are included in this chapter:</para>

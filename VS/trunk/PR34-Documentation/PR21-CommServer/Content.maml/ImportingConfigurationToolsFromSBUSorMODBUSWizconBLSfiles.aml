@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="ImportingConfigurationTools">
       <title>Importing configuration tools from SBUS or MODBUS Wizcon BLS files</title>
       <content>
         <para>Another tool allows to automatically prepare configuration directly from “.bls” file (it is a standard Axeda Wizcon block file). Datablocks, groups and tags are created automatically. To take the advantage of this tool,<legacyBold> you have to define communication parameters and structure first (channels, protocols, ports, segments and stations)</legacyBold>, then select SBUS or MODBUS from “Import Settings” menu, import “.bls” file, and set the timeout and the fast scan coefficient. </para>

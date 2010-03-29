@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="TagBlocks">
       <title>Tag Blocks</title>
       <content>
         <para>It is a very similar possibility of importing *.BLS files. The user can import whole data blocks , but the structure of the imported file is different. Please see below:</para>

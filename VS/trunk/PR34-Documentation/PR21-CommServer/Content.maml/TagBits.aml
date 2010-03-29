@@ -3,7 +3,7 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="Section1">
+    <section address="TagBits">
       <title>Tag Bits</title>
       <content>
         <para>This import tool is designed to facilitate the configuration of tags that represent bits from other tags.</para>
