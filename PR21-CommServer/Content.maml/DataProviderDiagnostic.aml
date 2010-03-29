@@ -2,31 +2,137 @@
 <topic id="b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
+      <para>A tool for testing communication over Data Provider with slave units.</para>
     </introduction>
-    <section address="Section1">
-      <title>Data Provider Diagnostic</title>
+    <section address="ProgramMainWindow">
+      <title>Program main window:</title>
       <content>
-        <para>A tool for testing communication over Data Provider with slave units.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Program Main Window</caption>
+          <image placement="center" xlink:href = "aa9305b4-b590-4750-a091-5b2220807b72"/>
+        </mediaLink>
+      </content>
+    </section>
+    <section address="MainFeatures">
+      <title>Main features</title>
+      <content>
         <list class="bullet">
           <listItem>
-            <para>
-              <link xlink:href="7086d71c-47de-4d73-ba23-a109816bb45c"></link>
-            </para>
+            <para>Works as master for Data Provider </para>
           </listItem>
           <listItem>
-            <para>
-              <link xlink:href="d8513f9b-97d0-4bbb-ad1b-3c3efce416b9"></link>
-            </para>
+            <para>Useful for performance and error-detection testing, including:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Response time measure of slave module.</para>
+              </listItem>
+              <listItem>
+                <para>Interframe and interchar measuring in the response.</para>
+              </listItem>
+              <listItem>
+                <para>Indication of the quantity of errors occurring.</para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Usage">
+      <title>Usage</title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Usage</caption>
+          <image placement="center" xlink:href = "d0f25323-8bd3-4508-b9d0-7a3dc3bf3cfb"/>
+        </mediaLink>
+        <list class="ordered">
+          <listItem>
+            <para>number of complete received frames</para>
           </listItem>
           <listItem>
-            <para>
-              <link xlink:href="e3cf5fa7-ded2-449c-8100-7af15e304324"></link>
-            </para>
+            <para>number of sent frames</para>
           </listItem>
           <listItem>
-            <para>
-              <link xlink:href="9e0bf206-957b-4d24-ac63-66295cbf276b"></link>
-            </para>
+            <para>number of CRC errors</para>
+          </listItem>
+          <listItem>
+            <para>number of incomplete frames</para>
+          </listItem>
+          <listItem>
+            <para>number of timeouts</para>
+          </listItem>
+          <listItem>
+            <para>number of received NAK (negative acknowledge)</para>
+          </listItem>
+          <listItem>
+            <para>waiting time of the first character in response (minimum/average/maximum)</para>
+          </listItem>
+          <listItem>
+            <para>waiting time of a character in response frame (minimum/average/maximum)</para>
+          </listItem>
+          <listItem>
+            <para>amount of sent and receives bytes</para>
+          </listItem>
+          <listItem>
+            <para>average channel usage</para>
+          </listItem>
+          <listItem>
+            <para>speed of the channel</para>
+          </listItem>
+          <listItem>
+            <para>time of the test</para>
+          </listItem>
+          <listItem>
+            <para>test run counter (cycle: request + all the retries + reply)</para>
+          </listItem>
+          <listItem>
+            <para>stop the test</para>
+          </listItem>
+          <listItem>
+            <para>start the test</para>
+          </listItem>
+          <listItem>
+            <para>push to open configuration window (please see below)</para>
+          </listItem>
+          <listItem>
+            <para>stations parameters (this program allows to test three stations simultaneously), user sets the number of stations and addresses</para>
+          </listItem>
+          <listItem>
+            <para>operations parameters (please see below)</para>
+          </listItem>
+          <listItem>
+            <para>statistic reset</para>
+          </listItem>
+          <listItem>
+            <para>actual port setting</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="OperationParameters">
+      <title>Operation parameters</title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Operation Parameters</caption>
+          <image placement="center" xlink:href = "1f8a07b5-71e7-4d6e-a213-6268b42dcdab"/>
+        </mediaLink>
+        <list class="ordered">
+          <listItem>
+            <para>starting requested address</para>
+          </listItem>
+          <listItem>
+            <para>number of read/written flags or registers (this value is changed depending on setting in item 5)</para>
+          </listItem>
+          <listItem>
+            <para>value to write</para>
+          </listItem>
+          <listItem>
+            <para>operation selection: read/write</para>
+          </listItem>
+          <listItem>
+            <para>if this checkbox is checked, the client always requests the same amount of data; if no, the amount of data is changed in loop starting from the value set in item 2 to 1. </para>
+          </listItem>
+          <listItem>
+            <para>data type selection: coils or holding registers</para>
           </listItem>
         </list>
       </content>

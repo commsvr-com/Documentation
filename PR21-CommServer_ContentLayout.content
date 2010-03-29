@@ -46,19 +46,12 @@
     <Topic id="bbdb0621-a246-4932-b5bf-74957f8e22d9" visible="True" title="An example how to start the CommServer using an OPC DA" tocTitle="An example how to start the CommServer using an OPC DA" linkText="An example how to start the CommServer using an OPC DA" />
   </Topic>
   <Topic id="2104673d-806f-49d6-8359-cf3734f695e5" visible="True" title="Diagnostics and Troubleshooting" tocTitle="Diagnostics and Troubleshooting" linkText="Diagnostics and Troubleshooting">
-    <Topic id="525ca262-98c3-42fd-b423-00fb98544242" visible="True" title="Proper running server Diagnostics &amp; Troubleshooting" tocTitle="Proper running server Diagnostics &amp; Troubleshooting" linkText="Proper running server Diagnostics &amp; Troubleshooting">
-      <Topic id="072e8fd8-ad4d-42ea-a1f8-3f0132b02614" visible="True" title="Diagnostic Information" tocTitle="Diagnostic Information" linkText="Diagnostic Information">
-        <Topic id="47256181-0c02-48e0-8654-05603b6f3b16" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" />
-        <Topic id="796a8002-ad5f-4884-af4e-b5ca748e4999" visible="True" title="Tracing in CommServer" tocTitle="Tracing in CommServer" linkText="Tracing in CommServer" />
-        <Topic id="b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5" visible="True" title="Data Provider Diagnostic" tocTitle="Data Provider Diagnostic" linkText="Data Provider Diagnostic">
-          <Topic id="7086d71c-47de-4d73-ba23-a109816bb45c" visible="True" title="Program main window" tocTitle="Program main window" linkText="Program main window" />
-          <Topic id="d8513f9b-97d0-4bbb-ad1b-3c3efce416b9" visible="True" title="Main features" tocTitle="Main features" linkText="Main features" />
-          <Topic id="e3cf5fa7-ded2-449c-8100-7af15e304324" visible="True" title="Usage" tocTitle="Usage" linkText="Usage" />
-          <Topic id="9e0bf206-957b-4d24-ac63-66295cbf276b" visible="True" title="Operation parameters" tocTitle="Operation parameters" linkText="Operation parameters" />
-        </Topic>
-      </Topic>
-      <Topic id="8f3a0ee9-b345-4bd8-b4db-a59be8686e66" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
+    <Topic id="072e8fd8-ad4d-42ea-a1f8-3f0132b02614" visible="True" title="Diagnostic Information" tocTitle="Diagnostic Information" linkText="Diagnostic Information">
+      <Topic id="47256181-0c02-48e0-8654-05603b6f3b16" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" />
+      <Topic id="796a8002-ad5f-4884-af4e-b5ca748e4999" visible="True" title="Tracing in CommServer" tocTitle="Tracing in CommServer" linkText="Tracing in CommServer" />
+      <Topic id="b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5" visible="True" title="Data Provider Diagnostic" tocTitle="Data Provider Diagnostic" linkText="Data Provider Diagnostic" />
     </Topic>
+    <Topic id="8f3a0ee9-b345-4bd8-b4db-a59be8686e66" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
   </Topic>
   <Topic id="8594c004-2493-45a9-846e-3b54a98a5d9a" visible="True" title="Appendix" tocTitle="Appendix" linkText="Appendix">
     <Topic id="4f52c757-1266-4b00-85be-a77134cb4e98" visible="True" title="Appendix A (example of a report)" tocTitle="Appendix A (example of a report)" linkText="Appendix A (example of a report)">

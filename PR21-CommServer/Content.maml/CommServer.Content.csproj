@@ -85,17 +85,13 @@
     <None Include="Interfaces.aml" />
     <None Include="InterfaceTab.aml" />
     <None Include="Introduction.aml" />
-    <None Include="MainFeatures.aml" />
     <None Include="Multi-dataProviders.aml" />
     <None Include="Multi-pathsRedundancy.aml" />
     <None Include="OPCOverview.aml" />
-    <None Include="OperationParameters.aml" />
     <None Include="OptimalTransferAlgorithm.aml" />
     <None Include="OptimizationOfCommunicationPathsUtilization.aml" />
     <None Include="PostInstallationSetup.aml" />
     <None Include="Prerequisites.aml" />
-    <None Include="ProgramMainWindow.aml" />
-    <None Include="ProperRunningServerDiagnosticsAndTroubleshooting.aml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,7 +117,6 @@
     <None Include="TracingInCommServer.aml" />
     <None Include="TrayIconCapability.aml" />
     <None Include="TroubleShooting.aml" />
-    <None Include="Usage.aml" />
     <None Include="UsingCommServer.aml" />
     <None Include="UsingNetworkConfigToConfigureTheNetwork.aml" />
     <None Include="WelcomeToCommServer.aml" />
