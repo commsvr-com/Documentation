@@ -368,6 +368,10 @@
       <AlternateText>CommServer DCOM properties</AlternateText>
       <ImageId>3f3baae9-6a75-4575-9918-fd979ba45fc9</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\installation_license_dialog_box.jpg">
+      <ImageId>0EBAC22E-63AA-42b4-95C9-5F2BE74E1E94</ImageId>
+      <AlternateText>License agreement dialog box</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
