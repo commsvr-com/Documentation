@@ -24,43 +24,55 @@
             </mediaLink>
           </listItem>
           <listItem>
-            <para><legacyBold>User information</legacyBold>  dialog box (Fig. 2).</para>
+            <para>
+               License agreement dialog box (Fig. 2) appears.
+            </para>
+            <para>
+               To continue the installation, you must agree with the license terms and click "Next".
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2"></caption>
+              <image placement="center" xlink:href = "0EBAC22E-63AA-42b4-95C9-5F2BE74E1E94"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para><legacyBold>User information</legacyBold>  dialog box (Fig. 3).</para>
             <para>Enter <legacyBold>User name</legacyBold>, <legacyBold>Company name</legacyBold> <legacyBold>and e-mail</legacyBold> address in appropriate text boxes and click <legacyBold>Next</legacyBold>.</para>
             <mediaLink>
-              <caption placement="after" lead="Figure 2">User Information Dialog Box</caption>
+              <caption placement="after" lead="Figure 3">User Information Dialog Box</caption>
               <image placement="center" xlink:href = "7846481b-f627-4e35-8873-a0d9a624c271"/>
             </mediaLink>
           </listItem>
           <listItem>
-            <para><legacyBold>Installation</legacyBold> dialog box (Fig. 3).</para>
+            <para><legacyBold>Installation</legacyBold> dialog box (Fig. 4).</para>
             <para>Default location for application files is specified as <legacyBold>C:\Program Files\CAS\CommServer</legacyBold>.</para>
             <para>You can change it to a different location by clicking <legacyBold>Browse</legacyBold> button or by writing the path manually into text box.  <legacyBold>Disc Cost</legacyBold> button shows the amount of necessary and available space on target drive. Choose option <legacyBold>Everyone</legacyBold> to install CommServer for anyone who uses this computer or <legacyBold>Just me</legacyBold> option to install only for yourself.</para>
             <mediaLink>
-              <caption placement="after" lead="Figure 3">Installation Dialog Box</caption>
+              <caption placement="after" lead="Figure 4">Installation Dialog Box</caption>
               <image placement="center" xlink:href = "3c6ab46f-65d4-4fdf-aa54-16ef6bc47edf"/>
             </mediaLink>
           </listItem>
           <listItem>
-            <para><legacyBold>Confirmation</legacyBold> dialog box (Fig. 4)</para>
+            <para><legacyBold>Confirmation</legacyBold> dialog box (Fig. 5)</para>
             <para>Click <legacyBold>Next</legacyBold> to start installation. You may also change any previous information by clicking <legacyBold>Back</legacyBold> button.</para>
             <mediaLink>
-              <caption placement="after" lead="Figure 4">Confirmation Dialog Box</caption>
+              <caption placement="after" lead="Figure 5">Confirmation Dialog Box</caption>
               <image placement="center" xlink:href = "b1588129-87b0-423f-a61e-52be2428283b"/>
             </mediaLink>
           </listItem>
           <listItem>
-            <para><legacyBold>Installation Progress</legacyBold> dialog box (Fig. 5).</para>
+            <para><legacyBold>Installation Progress</legacyBold> dialog box (Fig. 6).</para>
             <para>Installation in progress. Wait until computer has finished the installation.</para>
             <mediaLink>
-              <caption placement="after" lead="Figure 5">Installation Dialog Box</caption>
+              <caption placement="after" lead="Figure 6">Installation Dialog Box</caption>
               <image placement="center" xlink:href = "55f4839f-3629-4718-9981-1105983749d3"/>
             </mediaLink>
           </listItem>
           <listItem>
-            <para><legacyBold>Installation Complete</legacyBold> dialog box (Fig. 6)</para>
+            <para><legacyBold>Installation Complete</legacyBold> dialog box (Fig. 7)</para>
             <para>The installation has been successfully finished; click <legacyBold>Close</legacyBold> button to exit the installation.</para>
             <mediaLink>
-              <caption placement="after" lead="Figure 6">Installation Complete Dialog Box</caption>
+              <caption placement="after" lead="Figure 7">Installation Complete Dialog Box</caption>
               <image placement="center" xlink:href = "32880667-e842-439a-ac42-96e5d26aa25c"/>
             </mediaLink>
           </listItem>
