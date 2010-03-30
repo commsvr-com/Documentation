@@ -6,13 +6,13 @@
     <section address="UsingNetworkConfig">
       <title>Using NetworkConfig to configure the network</title>
       <content>
-        <para>NetworkConfig is the main configuration application for CommServer. You can run the NetworkConfig from CommServer directory (default: Menu start -> CAS -> CommServer -> NetworkConfig) or directly using menu in the CommServer Monitor window. CommServer uses XML file (the file is specified in CASOpcDaWrapper.exe.config as the configfile parameter; see “CommServer configuration file (CommServer.exe.config)” section (default XML configuration file is: c:\Program Files\CAS\CommServer\DefaultConfig.xml)) for initiating a database of connection, protocols, remote station and process values. NetworkConfig module is designed to simplify the edition of this XML file. The whole configuration is divided into two logical sections:</para>
+        <para>NetworkConfig is the main configuration application for CommServer. You can run the NetworkConfig from CommServer directory (default: Menu start -> CAS -> CommServer -> NetworkConfig) or directly using menu in the CommServer Monitor window. CommServer uses XML file (the file is specified in CASOpcDaWrapper.exe.config as the configuration file parameter; see “CommServer configuration file (CommServer.exe.config)” section (default XML configuration file is: c:\Program Files\CAS\CommServer\DefaultConfig.xml)) for initiating a database of connection, protocols, remote station and process values. NetworkConfig module is designed to simplify the edition of this XML file. The whole configuration is divided into two logical sections:</para>
         <list class="bullet">
           <listItem>
             <para>Channels</para>
           </listItem>
           <listItem>
-            <para>tations</para>
+            <para>Stations</para>
           </listItem>
         </list>
         <para>To understand the configuration, please open the default configuration file, which is located in your CommServer directory. Configuration parameters and interface of the NetworkConfig are described below.</para>
@@ -58,70 +58,41 @@
             <legacyItalic>Protocol</legacyItalic>
           </legacyBold> – a communication protocol (a kind of language) which is used for communication with remote devices. An unlimited number of communication protocols can be selected for each channel.
         </para>
-        <para>Following information should be set to assign a new protocol:</para>
-        <list class="bullet">
+        <para>Protocol configuration window is on a figure 2 (below):</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Protocol window</caption>
+          <image placement="center" xlink:href = "bff58d37-aaf0-4fa2-92ea-76457752a5e5"/>
+        </mediaLink>
+        <para>To configure the DataProvider click the button with "...". The DataProvider configuration window, which appears, is on a figure 3. To accept the chosen protocol: click OK button.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">DataProvider configuration window</caption>
+          <image placement="center" xlink:href = "e4927f49-2da6-4559-98af-10da069d2a57"/>
+        </mediaLink>
+        <para>Configuration of the particular protocols is described in those topics:</para>
+        <list address="ProtocolList" class="bullet">
           <listItem>
             <para>
-              <legacyItalic>Name</legacyItalic> - human readable protocol name
+              <link xlink:href ="">MBUS</link>
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>ProtocolType</legacyItalic> - protocol type – please select the right protocol from the dropdown list. (You can select for e.g. SBUS, MODBUS, etc…). It is also possible to select a virtual (not real)  NULL protocol – a protocol for testing, actually no communication takes place using this protocol (this setting helps the user when developing and testing applications that use CommServer, or when training new users). Instead of real communication, the returned data is a kind of simulator. <legacyItalic>CharacterTimeOut</legacyItalic> – maximal time of waiting for the next character during the response. If a silent interval of more than CharacterTimeOut occurs between two characters, the message frame is declared incomplete and should be discarded by the receiver.
+              <link xlink:href ="">SBUS RS</link>
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>FrameTimeOut</legacyItalic> – maximal wait time for the next character while waiting for the response frame end (a silent interval separating message frames, e.g.  3.5 character times for MODBUS) (if applicable)
+              <link xlink:href ="">SBUS IP</link>
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>InterframeGap</legacyItalic> – time period between consecutive request frames
+              <link xlink:href ="">MODBUS RS</link>
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>MaxNumberOfRetries</legacyItalic> – maximal number of retries getting the response. After this limit has passed the base station finds that communication with the device using current interface coupled with this protocol is broken and it activates next interface in the pipe if available. The failed interface is marked inactive and will remain in this state until defined InactTimeAFailure timeout expiration.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>ResponseTimeOut</legacyItalic> – maximal time of waiting for the response from a remote device
-            </para>
-            <mediaLink>
-              <caption placement="after" lead="Figure 2">Protocol Window</caption>
-              <image placement="center" xlink:href = "bff58d37-aaf0-4fa2-92ea-76457752a5e5"/>
-            </mediaLink>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>DataBits</legacyItalic> - determines the number of bits for transfer.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Parity bit</legacyItalic> –  this bit is included as a simple means of error checking; the idea is to specify in advance whether the parity of the transmission is to be even or odd.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>StopBits</legacyItalic> –  are sent at the end of every byte transmitted in order to allow the signal-receiving hardware to resynchronise.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>BaudRate</legacyItalic> – number of bits per one second of transmission.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>SerialNum</legacyItalic> port number (e.g. COM).
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>SerialType</legacyItalic> - port type, please select from the dropdown list (RS, NoSerrial (simulator),  Ethernet (UDP or TCP protocol)).
+              <link xlink:href ="">MODBUS IP</link>
             </para>
           </listItem>
         </list>
@@ -146,9 +117,14 @@
               <legacyItalic>Address</legacyItalic> - address of this segment ( IP, phone number, etc.)
             </para>
             <mediaLink>
-              <caption placement="after" lead="Figure 3">Segment Window</caption>
+              <caption placement="after" lead="Figure 4">Segment window</caption>
               <image placement="center" xlink:href = "d3de8b7b-4cca-4e42-9b63-fd621ae9b610"/>
             </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Keep connection time</legacyItalic> – how long the segment should be in the data transfer mode
+            </para>
           </listItem>
           <listItem>
             <para>
@@ -162,12 +138,12 @@
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>TimeIdleKeepConn</legacyItalic> – this parameter defines how long the segment should be in the data transfer mode, when there is no data to transfer
+              <legacyItalic>Sampling time</legacyItalic> - period of time between connections (in milliseconds)
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>TimeKeepConn</legacyItalic> – how long the segment should be in the data transfer mode
+              <legacyItalic>TimeIdleKeepConn</legacyItalic> – this parameter defines how long the segment should be in the data transfer mode, when there is no data to transfer
             </para>
           </listItem>
           <listItem>
@@ -175,15 +151,15 @@
               <legacyItalic>TimeReconnect</legacyItalic> - if the connection cannot be established this setting defines the time when the next retry takes place
             </para>
           </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeScan</legacyItalic> - period of time between connections (in milliseconds)
-            </para>
-          </listItem>
         </list>
+      </content>
+    </section>
+    <section address="Ports">
+      <title>Ports</title>
+      <content>
         <para>Ports are attributed to subsequent segments. Each station has several communication interfaces (communication ports) that are used to establish the connection and data transfer. Important feature of the port is that only one port from the set of ports that belong to the selected station can be active.</para>
         <mediaLink>
-          <caption placement="after" lead="Figure 4">Port window</caption>
+          <caption placement="after" lead="Figure 5">Port window</caption>
           <image placement="center" xlink:href = "8bf675aa-71cd-4e3d-ad5a-8cb69b19d549"/>
         </mediaLink>
         <para>Configuration of any port is as follows:</para>
@@ -205,11 +181,6 @@
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>InterfaceNum</legacyItalic> - indicates if a particular interface is the primary or extra one for this station; the value can be 0 or 1.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
               <legacyItalic>Name</legacyItalic> – human readable port name, which facilitates identification of the port.
             </para>
           </listItem>
@@ -223,6 +194,11 @@
           <legacyBold>
             <legacyItalic>Station</legacyItalic>
           </legacyBold> – station definitions; the Station represents a remote object with which communication should be established. The only parameter to be defined is its name. It can contain letters as well as numbers.
+        </para>
+        <para>
+          <legacyBold>
+            <legacyItalic>StationPort</legacyItalic>
+          </legacyBold> – station port for this station.
         </para>
       </content>
     </section>
@@ -240,7 +216,7 @@
               <legacyItalic>Name</legacyItalic> – human readable name for the group
             </para>
             <mediaLink>
-              <caption placement="after" lead="Figure 5">Groups window</caption>
+              <caption placement="after" lead="Figure 6">Groups window</caption>
               <image placement="center" xlink:href = "8c749ec5-cfdc-4924-8c57-23dc4240e959"/>
             </mediaLink>
           </listItem>
@@ -267,15 +243,19 @@
         </list>
       </content>
     </section>
-    <section address="DataBlocks">
-      <title>Data Blocks</title>
+    <section address="Blocks">
+      <title>Blocks</title>
       <content>
         <para>
           <legacyBold>
-            <legacyItalic>Data Blocks</legacyItalic>
-          </legacyBold> - Data Blocks are defined within the group.
+            <legacyItalic>Blocks</legacyItalic>
+          </legacyBold> - Blocks are defined within the group.
         </para>
-        <para>The following parameters are defined for Data Blocks:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 7">Blocks window</caption>
+          <image placement="center" xlink:href = "0FB0E31F-1240-4465-8167-B7571F2BE113"/>
+        </mediaLink>
+        <para>The following parameters are defined for the Blocks:</para>
         <list class="bullet">
           <listItem>
             <para>
@@ -291,11 +271,23 @@
             <para>
               <legacyItalic>Name</legacyItalic> - human readable name
             </para>
-            <mediaLink>
-              <caption placement="after" lead="Figure 6">Data Blocks window</caption>
-              <image placement="center" xlink:href = "3690da8c-cde9-4ee4-ac0f-e9fe57cd1c72"/>
-            </mediaLink>
           </listItem>
+          
+          <listItem>
+            <para>
+              <legacyItalic>Tags</legacyItalic> - Collection of tags makes up a block. Each tag represents one process variable usually stored in a controller register. First tag has address set up in the block definition. All tags fills up consecutive adderss space - are adjacent.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>AddressEnd</legacyItalic> - Maximal start address in the selected address space.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>AddressStart</legacyItalic> - Minimal start address in the selected address space.
+            </para>
+          </listItem>          
         </list>
       </content>
     </section>
@@ -308,14 +300,15 @@
           </legacyBold> - tag definition:
         </para>
         <list class="bullet">
+
           <listItem>
             <para>
-              <legacyItalic>Name</legacyItalic> - tag human readable name. This name appears in the OPC server items list. You can use slash to create groups of tags, e.g. you can use as names: group1/tag1, group1/tag2.
+              <legacyItalic>AccessRights</legacyItalic> - Indicates if this item is read onlu or read/write. This is NOT related to security but rather to the nautre of the underlying hardware.
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>Writeable</legacyItalic> - if true, it indicates that the corresponding tag is inherently writable. For example, a value representing physical output or an adjustable parameter such as a setpoint or alarm limit is generally writable. It is possible that a value representing physical output with no read-back capability might be marked writable but not readable
+              <legacyItalic>Name</legacyItalic> - tag human readable name. This name appears in the OPC server items list. You can use slash to create groups of tags, e.g. you can use as names: group1/tag1, group1/tag2.
             </para>
           </listItem>
           <listItem>
@@ -335,24 +328,19 @@
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>StateHighTrigger</legacyItalic> - if this attribute is true, this tag is used to switch on the FAST scanning mode (see StateMask for additional details)
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>StateLowTrigger</legacyItalic> - if this attribute is true, this tag is used to switch off the FAST scanning mode (and enter the NORMAL scanning mode ) (see StateMask for additional details)
-            </para>
-          </listItem>
-          <listItem>
-            <para>
               <legacyItalic>StateMask</legacyItalic> - defines conditions when the remote station is to enter the alarm state and the scan mode should be switched  – this conditions are used to switch between the fast and normal scan modes.  Condition that turns-on fast scanning is true if the detected change is from 0 to 1.  To turn-off fast scanning the server is waiting for 1 to 0 change.
             </para>
-            <mediaLink>
-              <caption placement="after" lead="Figure 7">Tags Window</caption>
-              <image placement="center" xlink:href = "4f2a1c9e-6773-4ab7-bed2-4d13a3055bdb"/>
-            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>StateTrigger</legacyItalic> - indicates whether there is any state trigger associated with this item. The triggers could be low or high or none.
+            </para>
           </listItem>
         </list>
+        <mediaLink>
+          <caption placement="after" lead="Figure 8">Tags window</caption>
+          <image placement="center" xlink:href = "77310B92-A1E9-40cd-A593-02D6BC10BA19"/>
+        </mediaLink>
       </content>
     </section>
     <section address="BitsDefinition">
@@ -374,7 +362,7 @@
               <legacyItalic>Name</legacyItalic> - human readable name, that will be used as the OPC tag name
             </para>
             <mediaLink>
-              <caption placement="after" lead="Figure 8">Bit definition settings</caption>
+              <caption placement="after" lead="Figure 9">Bit definition settings</caption>
               <image placement="center" xlink:href = "f2848c74-eee0-47a1-b1a5-77efd5b5c27c"/>
             </mediaLink>
           </listItem>
@@ -385,7 +373,7 @@
       <title>The scheme of the example structure</title>
       <content>
         <mediaLink>
-          <caption placement="after" lead="Figure 9">Example structure</caption>
+          <caption placement="after" lead="Figure 10">Example structure</caption>
           <image placement="center" xlink:href = "cceff6ed-6f63-4300-bbea-0bd6be4e621b"/>
         </mediaLink>
       </content>
