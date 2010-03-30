@@ -406,6 +406,7 @@
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\BLSFiles.aml" />
     <None Include="PR21-CommServer\Content.maml\SbusRsConfiguration.aml" />
     <None Include="PR21-CommServer\Content.maml\SbusIpConfiguration.aml" />
     <None Include="PR21-CommServer\Content.maml\ModbusRsConfiguration.aml" />
@@ -463,7 +464,6 @@
     <None Include="PR21-CommServer\Content.maml\TagMappings.aml" />
     <None Include="PR21-CommServer\Content.maml\TagBits.aml" />
     <None Include="PR21-CommServer\Content.maml\TagBlocks.aml" />
-    <None Include="PR21-CommServer\Content.maml\ImportingConfigurationToolsFromSBUSorMODBUSWizconBLSfiles.aml" />
     <None Include="PR21-CommServer\Content.maml\AdditionalResourcesTools.aml" />
     <None Include="PR21-CommServer\Content.maml\TheSchemeOfTheExampleStructure.aml" />
     <None Include="PR21-CommServer\Content.maml\ApplicationWindow.aml" />

@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<topic id="d5e08d79-e19f-4d89-8e9d-3aff6957b6ee" revisionNumber="1">
+<topic id="413a881b-fd8e-494d-9b16-2e2eca1defd7" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
     <section address="ImportingConfigurationTools">
-      <title>Importing configuration tools from SBUS or MODBUS Wizcon BLS files</title>
+      <title>Importing tags from Wizcon BLS files</title>
       <content>
-        <para>Another tool allows to automatically prepare configuration directly from “.bls” file (it is a standard Axeda Wizcon block file). Datablocks, groups and tags are created automatically. To take the advantage of this tool,<legacyBold> you have to define communication parameters and structure first (channels, protocols, ports, segments and stations)</legacyBold>, then select SBUS or MODBUS from “Import Settings” menu, import “.bls” file, and set the timeout and the fast scan coefficient. </para>
+        <para>
+          Another tool allows to automatically prepare configuration directly from “.bls” file (it is a standard Axeda Wizcon block file). Datablocks, groups and tags are created automatically. To take the advantage of this tool,<legacyBold> you have to define communication parameters and structure first (channels, protocols, ports, segments and stations)</legacyBold>, then select SBUS or MODBUS from “Import Settings” menu, import “.bls” file, and set the timeout and the fast scan coefficient.
+        </para>
         <para>The file can be created manually, see example file below:</para>
         <code language="scr">
-            ;Version 8.0 Wizcon Block Data
-            ;Block address	 Length	 Scanning	Fast_Scanning
-            11R0100   18             6000	 1000
-            10F0500   26             8000
+          ;Version 8.0 Wizcon Block Data
+          ;Block address	 Length	 Scanning	Fast_Scanning
+          11R0100   18             6000	 1000
+          10F0500   26             8000
         </code>
         <list class="bullet">
           <listItem>

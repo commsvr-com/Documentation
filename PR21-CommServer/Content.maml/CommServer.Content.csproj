@@ -67,6 +67,7 @@
     <None Include="AppendixB.aml" />
     <None Include="ApplicationInterface.aml" />
     <None Include="ApplicationMenu.aml" />
+    <None Include="BLSFiles.aml" />
     <None Include="CommServerComponents.aml" />
     <None Include="CommServerConfigurationExample.aml" />
     <None Include="CommServerConfigurationFile.aml" />
@@ -80,11 +81,13 @@
     <None Include="EnvironmentMonitoring.aml" />
     <None Include="examplesandtutorials.aml" />
     <None Include="GettingStarted.aml" />
-    <None Include="ImportingConfigurationToolsFromSBUSorMODBUSWizconBLSfiles.aml" />
     <None Include="InstallingCommServer.aml" />
     <None Include="Interfaces.aml" />
     <None Include="InterfaceTab.aml" />
     <None Include="Introduction.aml" />
+    <None Include="MbusConfiguration.aml" />
+    <None Include="ModbusIpConfiguration.aml" />
+    <None Include="ModbusRsConfiguration.aml" />
     <None Include="Multi-dataProviders.aml" />
     <None Include="Multi-pathsRedundancy.aml" />
     <None Include="OPCOverview.aml" />
@@ -102,6 +105,8 @@
     <None Include="RapidDevelopmentKit.aml" />
     <None Include="RealTimeProcessSimulation.aml" />
     <None Include="ReportUtility.aml" />
+    <None Include="SbusIpConfiguration.aml" />
+    <None Include="SbusRsConfiguration.aml" />
     <None Include="ScanSettings.aml" />
     <None Include="Segments.aml" />
     <None Include="SimultaneousMulti-channelTransmission.aml" />

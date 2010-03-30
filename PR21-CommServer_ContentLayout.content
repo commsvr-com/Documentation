@@ -31,11 +31,11 @@
       <Topic id="fbb931d4-5f2b-4368-a78b-45d713fdc684" visible="True" title="SBUS RS configuration" tocTitle="SBUS RS configuration" linkText="SBUS RS configuration" />
     </Topic>
     <Topic id="9c5fc843-ce8f-41ad-913c-efa9a731f8ad" visible="True" title="Additional resources/tools" tocTitle="Additional resources/tools" linkText="Additional resources/tools">
-      <Topic id="d5e08d79-e19f-4d89-8e9d-3aff6957b6ee" visible="True" title="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" tocTitle="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" linkText="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" />
-      <Topic id="7cbe14db-8b5b-4649-9730-6c705c409336" visible="True" title="Tag Blocks" tocTitle="Tag Blocks" linkText="Tag Blocks" />
-      <Topic id="6986a621-5020-4ca1-95d1-fe3d35498ede" visible="True" title="Tag Bits" tocTitle="Tag Bits" linkText="Tag Bits" />
-      <Topic id="22578739-db40-44c7-afee-c9f366231e83" visible="True" title="Tag Mappings" tocTitle="Tag Mappings" linkText="Tag Mappings" />
-      <Topic id="c6122815-0cd7-475e-b4c5-052640d07e78" visible="True" title="Scan Settings" tocTitle="Scan Settings" linkText="Scan Settings" />
+      <Topic id="413a881b-fd8e-494d-9b16-2e2eca1defd7" visible="True" title="Importing tags from Wizcon BLS files" tocTitle="Importing tags from Wizcon BLS files" linkText="Importing tags from Wizcon BLS files" />
+      <Topic id="7cbe14db-8b5b-4649-9730-6c705c409336" visible="True" title="Importing tag blocks" tocTitle="Importing tag blocks" linkText="Importing tag blocks" />
+      <Topic id="6986a621-5020-4ca1-95d1-fe3d35498ede" visible="True" title="Importing tag bits" tocTitle="Importing tag bits" linkText="Importing tag bits" />
+      <Topic id="22578739-db40-44c7-afee-c9f366231e83" visible="True" title="Changing tag mappings" tocTitle="Changing tag mappings" linkText="Changing tag mappings" />
+      <Topic id="c6122815-0cd7-475e-b4c5-052640d07e78" visible="True" title="Importing scan settings" tocTitle="Importing scan settings" linkText="Importing scan settings" />
     </Topic>
     <Topic id="da4e8035-a2bf-4a6f-b55d-f22a46af86fd" visible="True" title="Database structure" tocTitle="Database structure" linkText="Database structure" />
   </Topic>
