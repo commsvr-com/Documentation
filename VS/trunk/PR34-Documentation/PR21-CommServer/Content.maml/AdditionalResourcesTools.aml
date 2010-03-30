@@ -11,6 +11,34 @@
           <caption placement="after" lead="Figure 1">Import menu</caption>
           <image placement="center" xlink:href = "6336d43d-0f91-467c-b88a-c8dbaa5a943b"/>
         </mediaLink>
+        <para>The import tools:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="413a881b-fd8e-494d-9b16-2e2eca1defd7">WIZCON *.BLS files</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="7cbe14db-8b5b-4649-9730-6c705c409336">Tag blocks</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6986a621-5020-4ca1-95d1-fe3d35498ede">Tag bits </link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="22578739-db40-44c7-afee-c9f366231e83">Tag mappings </link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="c6122815-0cd7-475e-b4c5-052640d07e78">Scan settings</link>
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
     <relatedTopics>
