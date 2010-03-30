@@ -196,14 +196,6 @@
       <AlternateText>Port Window</AlternateText>
       <ImageId>8c749ec5-cfdc-4924-8c57-23dc4240e959</ImageId>
     </Image>
-    <Image Include="PR21-CommServer\Graphics\port_window_3.jpg">
-      <ImageId>3690da8c-cde9-4ee4-ac0f-e9fe57cd1c72</ImageId>
-      <AlternateText>Port Window</AlternateText>
-    </Image>
-    <Image Include="PR21-CommServer\Graphics\port_window_4.jpg">
-      <AlternateText>Port Window</AlternateText>
-      <ImageId>4f2a1c9e-6773-4ab7-bed2-4d13a3055bdb</ImageId>
-    </Image>
     <Image Include="PR21-CommServer\Graphics\port_window_5.jpg">
       <AlternateText>Port Window</AlternateText>
       <ImageId>f2848c74-eee0-47a1-b1a5-77efd5b5c27c</ImageId>
@@ -371,6 +363,18 @@
     <Image Include="PR21-CommServer\Graphics\installation_license_dialog_box.jpg">
       <ImageId>0EBAC22E-63AA-42b4-95C9-5F2BE74E1E94</ImageId>
       <AlternateText>License agreement dialog box</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DataProvider_configuration_window.jpg">
+      <ImageId>E4927F49-2DA6-4559-98AF-10DA069D2A57</ImageId>
+      <AlternateText>DataProvider configuration window</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\blocks_window.jpg">
+      <AlternateText>Blocks window</AlternateText>
+      <ImageId>0FB0E31F-1240-4465-8167-B7571F2BE113</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\tags_window.jpg">
+      <AlternateText>Tags window</AlternateText>
+      <ImageId>77310B92-A1E9-40cd-A593-02D6BC10BA19</ImageId>
     </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
