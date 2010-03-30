@@ -7,11 +7,11 @@
       <title>Application interface</title>
       <content>
         <para>The CommServer user interface is designed to provide any information that helps you to optimize the configuration and monitor the state of the server.</para>
-        <para>To start CommServer Console (Server HMI), select from Start Menu: All Programs -> CAS - > CommServer -> Server HMI.</para>
+        <para>To start CommServer Server Monitor (Server HMI), select from Start Menu: All Programs -> CAS - > CommServer -> Server Monitor.</para>
         <alert>
           <para>Make sure that CommServer is running before launching the console. (To check whether CommServer is running please see whether CASOpcDaWrapper.exe exists on the processes list in Windows Task Manager).</para>
         </alert>
-        <para>CommServer Console (Server HMI) is a Windows based application which attaches to CommServer Engine via Diagnostic interface. One of the main parameters (always visible) is “Run Time” – it is time in seconds, that elapsed from the start of the application. Other statistics are shown on tabs. Statistics are divided into sections, that allow to monitor parameters from common functional groups.</para>
+        <para>CommServer Server Monitor (Server HMI) is a Windows based application which attaches to CommServer Engine via Diagnostic interface. One of the main parameters (always visible) is “Run Time” – it is time in seconds, that elapsed from the start of the application. Other statistics are shown on tabs. Statistics are divided into sections, that allow to monitor parameters from common functional groups.</para>
       </content>
     </section>
     <relatedTopics>

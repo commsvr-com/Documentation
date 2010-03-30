@@ -6,7 +6,12 @@
     <section address="ProtocolTab">
       <title>Protocol tab</title>
       <content>
-        <para>On this tab (Fig. 1) you can find detailed information concerning a particular communication protocol. After selecting one of the protocols, you can find protocol parameters set during configuration. The program shows the following parameters:</para>
+        <para>On this tab (Fig. 1) you can find detailed information concerning a particular communication protocol. </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Protocol tab</caption>
+          <image placement="center" xlink:href = "46b2a13f-01d1-4b44-9cfc-bb73088969d2"/>
+        </mediaLink>
+        <para>After selecting one of the protocols, you can find protocol parameters set during configuration. The program shows the following parameters:</para>
         <list class="bullet">
           <listItem>
             <para>
@@ -39,13 +44,6 @@
         </list>
         <para>In the right column, the program provides the following information:</para>
         <list class="bullet">
-          <listItem>
-            <para>
-              <legacyBold>
-                <legacyItalic>RX frames</legacyItalic>
-              </legacyBold> – number of complete received frames
-            </para>
-          </listItem>
           <listItem>
             <para>
               <legacyBold>
@@ -110,10 +108,6 @@
             </para>
           </listItem>
         </list>
-        <mediaLink>
-          <caption placement="after" lead="Figure 1">Protocol tab</caption>
-          <image placement="center" xlink:href = "46b2a13f-01d1-4b44-9cfc-bb73088969d2"/>
-        </mediaLink>
       </content>
     </section>
     <relatedTopics>

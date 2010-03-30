@@ -400,12 +400,17 @@
       <ImageId>4235c409-c764-4608-a930-6ada4b215fb1</ImageId>
       <AlternateText>Modbus protocol settings</AlternateText>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\port_tab.jpg">
+      <ImageId>91CF9FEC-76EC-4afc-97A9-EDEC8B842875</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\SegmentsTab.aml" />
+    <None Include="PR21-CommServer\Content.maml\PortsTab.aml" />
     <None Include="PR21-CommServer\Content.maml\BLSFiles.aml" />
     <None Include="PR21-CommServer\Content.maml\SbusRsConfiguration.aml" />
     <None Include="PR21-CommServer\Content.maml\SbusIpConfiguration.aml" />
@@ -455,7 +460,6 @@
     <None Include="PR21-CommServer\Content.maml\TrayIconCapability.aml" />
     <None Include="PR21-CommServer\Content.maml\ApplicationMenu.aml" />
     <None Include="PR21-CommServer\Content.maml\ProtocolTab.aml" />
-    <None Include="PR21-CommServer\Content.maml\InterfaceTab.aml" />
     <None Include="PR21-CommServer\Content.maml\StationTab.aml" />
     <None Include="PR21-CommServer\Content.maml\ApplicationInterface.aml" />
     <None Include="PR21-CommServer\Content.maml\UsingCommServer.aml" />

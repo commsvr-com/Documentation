@@ -83,7 +83,6 @@
     <None Include="GettingStarted.aml" />
     <None Include="InstallingCommServer.aml" />
     <None Include="Interfaces.aml" />
-    <None Include="InterfaceTab.aml" />
     <None Include="Introduction.aml" />
     <None Include="MbusConfiguration.aml" />
     <None Include="ModbusIpConfiguration.aml" />
@@ -93,6 +92,7 @@
     <None Include="OPCOverview.aml" />
     <None Include="OptimalTransferAlgorithm.aml" />
     <None Include="OptimizationOfCommunicationPathsUtilization.aml" />
+    <None Include="PortsTab.aml" />
     <None Include="PostInstallationSetup.aml" />
     <None Include="Prerequisites.aml" />
     <None Include="Properties\Settings.settings">
@@ -109,6 +109,7 @@
     <None Include="SbusRsConfiguration.aml" />
     <None Include="ScanSettings.aml" />
     <None Include="Segments.aml" />
+    <None Include="SegmentsTab.aml" />
     <None Include="SimultaneousMulti-channelTransmission.aml" />
     <None Include="StartingAndStoppingTheCommServer.aml" />
     <None Include="Stations.aml" />
