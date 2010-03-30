@@ -364,6 +364,18 @@
       <ImageId>0EBAC22E-63AA-42b4-95C9-5F2BE74E1E94</ImageId>
       <AlternateText>License agreement dialog box</AlternateText>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\MBUS_serial_COM_settings.jpg">
+      <ImageId>ea6e16b5-4a0e-4ea4-ba1e-358fcdec1fbb</ImageId>
+      <AlternateText>Settings for PC serial COM port</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MBUS_block_configuration.jpg">
+      <ImageId>2143667f-71d6-4113-a092-cf5be94289f7</ImageId>
+      <AlternateText>Example of block configuration</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPCommunication_interface_settings.jpg">
+      <ImageId>0d419686-c38d-4735-b85c-453932c7eaf9</ImageId>
+      <AlternateText>Communication interface settings</AlternateText>
+    </Image>
     <Image Include="PR21-CommServer\Graphics\DataProvider_configuration_window.jpg">
       <ImageId>E4927F49-2DA6-4559-98AF-10DA069D2A57</ImageId>
       <AlternateText>DataProvider configuration window</AlternateText>
@@ -376,12 +388,30 @@
       <AlternateText>Tags window</AlternateText>
       <ImageId>77310B92-A1E9-40cd-A593-02D6BC10BA19</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPconnection_settings_to_PLC.jpg">
+      <ImageId>8d2ed1cc-42c1-450d-988a-9def00d790d4</ImageId>
+      <AlternateText>Example of connection settings to PLC</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPexample_connection_to_PLC.jpg">
+      <ImageId>d8c4cd27-7ae8-48b4-9d62-03a6105fee14</ImageId>
+      <AlternateText>Example connection to PLC</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPprotocol_settings.jpg">
+      <ImageId>4235c409-c764-4608-a930-6ada4b215fb1</ImageId>
+      <AlternateText>Modbus protocol settings</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\SbusRsConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\SbusIpConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\ModbusRsConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\ModbusIpConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\MbusConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\MBUS_configuration.aml" />
     <None Include="PR21-CommServer\Content.maml\Summary.aml" />
     <None Include="PR21-CommServer\Content.maml\PostInstallationSetup.aml" />
     <None Include="PR21-CommServer\Content.maml\Prerequisites.aml" />
