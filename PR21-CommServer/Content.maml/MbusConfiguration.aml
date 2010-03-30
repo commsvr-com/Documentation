@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="MBUSSerialPortSettings">
+      <title>Serial port settings</title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure1">Settings for PC serial COM port</caption>
+          <image placement="center" xlink:href = "ea6e16b5-4a0e-4ea4-ba1e-358fcdec1fbb"/>
+        </mediaLink>
+        <para>
+         The following settings for PC serial COM port are recommended to be used in M-Bus communication:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>Baud rate: 2400 bps or 300 bps</para>
+          </listItem>
+          <listItem>
+            <para>Parity: Even</para>
+          </listItem>
+          <listItem>
+            <para>Data bits:8</para>
+          </listItem>
+          <listItem>
+            <para>Stop bit:1</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="MBUSConfigurationAndInterpretationOfReceivedData">
+      <title>Configuration and interpretation of received data</title>
+      <content>
+        <para>M-Bus DataProvider (according to Mode 1) reads data as classes containing records with various types of information. Each M-Bus class is represented in CommServer as a block: blocks contain metadata (description of a  particular record content) and process data. Metadata and data from each record can be made available in the OPC address space as tags. The sequence of tags and tags type shall  correspond to record fields.</para>
+        <para>To read a data block, a request with the selected data type (class) and device address on the network is sent to the device (called a station in the CommServer configuration).  The M-Bus device address is configured as a port (interface) address property. </para>
+        <para>For the performance reasons, with each class defined by the specification a simplified class is associated that allows to define blocks containing only process data values from the received M-Bus records – metadata is neglected. To publish M-Bus data as OPC tags, the user has to create groups to define the scanning policy, and blocks to define an appropriate class of data. M-Bus DataProvider allows reading the following classes of data:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Class2_Data</legacyItalic> - This class contains process data that are measured by the device,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Class2_Data_Short</legacyItalic> - This class contains the same data as Class2_Data, but description of data is excluded. Only values of the received data records are returned to CommServer as consecutive tags,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Class1_Data and Class1_Data_Short</legacyItalic> - – those classes contain data referring to alarms (this version of M-Bus DataProvider does not support Class 1)
+            </para>
+          </listItem>
+        </list>
+        <para>During configuration of the block, address and name properties are unimportant because they are not used in M-Bus communication. Below find an example of block configuration:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure2">Example of block configuration</caption>
+          <image placement="center" xlink:href = "2143667f-71d6-4113-a092-cf5be94289f7"/>
+        </mediaLink>
+        <para>After sending a request for data (User Data Class 2), the remote device responds using a frame that is available in CommServer as a block containing the following tags:</para>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Index in block</para>
+              </entry>
+              <entry>
+                <para>Meaning</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>0</para>
+            </entry>
+            <entry>
+              <para>Counter serial number*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>1</para>
+            </entry>
+            <entry>
+              <para>Manufacturer identifier *</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>2</para>
+            </entry>
+            <entry>
+              <para>Information *</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>3</para>
+            </entry>
+            <entry>
+              <para>The number of received data records (called N in this manual)*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>4</para>
+            </entry>
+            <entry>
+              <para>Record 1 – Value</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>5</para>
+            </entry>
+            <entry>
+              <para>Record 1 – Description of data type (length in bits, how the value is encoded, etc.)*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>6</para>
+            </entry>
+            <entry>
+              <para>Record 1 – Description of data  (e.g. Energy, Volume, Flow, etc.)*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>7</para>
+            </entry>
+            <entry>
+              <para>Record 1 – Engineering unit*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>...</para>
+            </entry>
+            <entry>
+              <para>...</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>4+(N-1)*4+0</para>
+            </entry>
+            <entry>
+              <para>Record N – Value</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>4+(N-1)*4+1</para>
+            </entry>
+            <entry>
+              <para>Record N – Description of data type (length in bits, how the value is encoded, etc...)*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>4+(N-1)*4+2</para>
+            </entry>
+            <entry>
+              <para>Record N – Description of data  (e.g. Energy, Volume, Flow, etc.)*</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>4+(N-1)*4+3</para>
+            </entry>
+            <entry>
+              <para>Record N – Engineering unit*</para>
+            </entry>
+          </row>
+        </table>
+        <para>Fields marked with an asterisk (*) are not available for data types with “short” postfix, e.g.. <legacyItalic>Class2_Data_Short</legacyItalic>.</para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
