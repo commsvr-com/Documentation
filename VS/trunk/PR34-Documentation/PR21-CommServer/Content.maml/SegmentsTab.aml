@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="e8865c12-8b7b-411e-a57e-148a7f9a9357" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="SegmentsTab">
+      <title>Segments tab</title>
+      <content>
+        <para>On this tab, you can find information about segments defined previously.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Segments tab</caption>
+          <image placement="center" xlink:href = "4f4f6a62-f40a-4fa7-b971-1797da285268"/>
+        </mediaLink>
+        <para>A tick next to the segment name indicates that this segment is in an active state. You can select any segment to view all statistics corresponding to that segment. You can monitor:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Segment state</legacyItalic>
+              </legacyBold> - state of the segment: connected, waiting for connect, inactive
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Connect time [s]</legacyItalic>
+              </legacyBold> – whole time in seconds CommServer was connected to that segment
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Number of connections</legacyItalic>
+              </legacyBold> – number of successful established connections to that server
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Number of connection failed</legacyItalic>
+              </legacyBold> – number of connection failed trials due to segment does not respond
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Write delay time [ms]</legacyItalic>
+              </legacyBold> – minimum, maximum and average delays in writing data. Time is measured from an incoming need to write any data (waiting to be connected state) to the connected state.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Read delay time [ms]</legacyItalic>
+              </legacyBold> – minimum, maximum and average delays in reading data. Time is measured from an incoming need to read any data (waiting to be connected state) to the connected state.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Connect time [ms]</legacyItalic>
+              </legacyBold> – Minimal / average / maximal time of the connection (in miliseconds).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Data Overtime [%]</legacyItalic>
+              </legacyBold> – this value indicates an overload level in the selected segment (the value is in percent;e.g. in this figure value 576 means, that process variable scan time is approximately 5 times longer than that set in the configuration).
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>An analysis of this information is the best way to master your configuration skills.</para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

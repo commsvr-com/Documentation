@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="25b8289d-c000-47a5-8547-a8c12d912a6d" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="PortTab">
+      <title>Port tab</title>
+      <content>
+        <para>This tab (Fig. 1) helps to monitor and diagnose the communication with a particular station.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Port tab</caption>
+          <image placement="center" xlink:href = "91CF9FEC-76EC-4afc-97A9-EDEC8B842875"/>
+        </mediaLink>
+        <para>All interfaces of each station are visible and can be selected for monitoring:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Interface state</legacyItalic>
+              </legacyBold> - (active, fail, standby)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Active time</legacyItalic>
+              </legacyBold> – total amount of time in seconds while this interface is in an active state
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Fail time</legacyItalic>
+              </legacyBold> – total amount of time in seconds while this interface is in a fail state
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Standby time</legacyItalic>
+              </legacyBold> – total amount of time in seconds while this interface is in a standby state
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>An analysis of proportion between active and fail time simplifies the decision on the main interface that should be used for communication with a particular station.</para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

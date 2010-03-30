@@ -42,7 +42,8 @@
   <Topic id="5abf8387-8650-46fa-900c-c2ec060d04ae" visible="True" title="Using CommServer" tocTitle="Using CommServer" linkText="Using CommServer">
     <Topic id="9929cfac-3930-4935-aead-b17d52ebc1c7" visible="True" title="Application interface" tocTitle="Application interface" linkText="Application interface">
       <Topic id="ba47e94c-29c1-4bff-a6a2-3ed3ea0bae11" visible="True" title="Station tab" tocTitle="Station tab" linkText="Station tab" />
-      <Topic id="666a7939-0023-4a83-a61c-68e770aa5c14" visible="True" title="Interface tab" tocTitle="Interface tab" linkText="Interface tab" />
+      <Topic id="25b8289d-c000-47a5-8547-a8c12d912a6d" visible="True" title="Port tab" tocTitle="Port tab" linkText="Port tab" />
+      <Topic id="e8865c12-8b7b-411e-a57e-148a7f9a9357" visible="True" />
       <Topic id="12707738-b6ab-4d92-97aa-82e511f8cedd" visible="True" title="Protocol tab" tocTitle="Protocol tab" linkText="Protocol tab" />
       <Topic id="0bffc8cf-63f2-41b9-b61e-d69e56bdf0d0" visible="True" title="Application menu" tocTitle="Application menu" linkText="Application menu" />
       <Topic id="1e7fb9d2-9945-46ff-85b2-cdd77395e454" visible="True" title="Tray icon capability" tocTitle="Tray icon capability" linkText="Tray icon capability" />
