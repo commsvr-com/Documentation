@@ -232,10 +232,6 @@
       <ImageId>46b2a13f-01d1-4b44-9cfc-bb73088969d2</ImageId>
       <AlternateText>Protocol tab</AlternateText>
     </Image>
-    <Image Include="PR21-CommServer\Graphics\application_menu.jpg">
-      <ImageId>8dbf6630-b267-4cdd-a6cf-2e93275c9fa2</ImageId>
-      <AlternateText>Application menu</AlternateText>
-    </Image>
     <Image Include="PR21-CommServer\Graphics\tray_icon.jpg">
       <ImageId>36d7eb8a-381a-4a91-8588-e7d1eda43952</ImageId>
       <AlternateText>Tray icon</AlternateText>
@@ -402,6 +398,22 @@
     </Image>
     <Image Include="PR21-CommServer\Graphics\port_tab.jpg">
       <ImageId>91CF9FEC-76EC-4afc-97A9-EDEC8B842875</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_view.jpg">
+      <AlternateText>View menu</AlternateText>
+      <ImageId>5914C7E7-050D-4273-B217-4128907143EF</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_tools.jpg">
+      <AlternateText>Tools menu</AlternateText>
+      <ImageId>FB47A56A-030D-4ac4-A610-3814DC544A98</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_help.jpg">
+      <AlternateText>Help menu</AlternateText>
+      <ImageId>7F427649-1DF7-4e79-A766-D34CE07C0E8E</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_file.jpg">
+      <AlternateText>File menu</AlternateText>
+      <ImageId>65F4CAE7-461A-4c08-8129-44369E1F0E64</ImageId>
     </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
