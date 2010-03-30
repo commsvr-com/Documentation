@@ -23,7 +23,13 @@
   </Topic>
   <Topic id="de241950-87e4-40df-ba6c-99579ddc467e" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
     <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CommServer.exe.config)" tocTitle="CommServer configuration file (CommServer.exe.config)" linkText="CommServer configuration file (CommServer.exe.config)" />
-    <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network" />
+    <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network">
+      <Topic id="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" visible="True" title="MBUS configuration" tocTitle="MBUS configuration" linkText="MBUS configuration" />
+      <Topic id="a8c2de7c-5c00-4835-9b36-62bddfeb54be" visible="True" title="MODBUS IP configuration" tocTitle="MODBUS IP configuration" linkText="MODBUS IP configuration" />
+      <Topic id="1b9d7777-99cc-4059-a57f-124a4d81b498" visible="True" title="MODBUS RS configuration" tocTitle="MODBUS RS configuration" linkText="MODBUS RS configuration" />
+      <Topic id="08f7c3a4-0f76-4de5-a067-f471e3d84200" visible="True" title="SBUS IP configuration" tocTitle="SBUS IP configuration" linkText="SBUS IP configuration" />
+      <Topic id="fbb931d4-5f2b-4368-a78b-45d713fdc684" visible="True" title="SBUS RS configuration" tocTitle="SBUS RS configuration" linkText="SBUS RS configuration" />
+    </Topic>
     <Topic id="9c5fc843-ce8f-41ad-913c-efa9a731f8ad" visible="True" title="Additional resources/tools" tocTitle="Additional resources/tools" linkText="Additional resources/tools">
       <Topic id="d5e08d79-e19f-4d89-8e9d-3aff6957b6ee" visible="True" title="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" tocTitle="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" linkText="Importing configuration tools from SBUS or MODBUS Wizcon BLS files" />
       <Topic id="7cbe14db-8b5b-4649-9730-6c705c409336" visible="True" title="Tag Blocks" tocTitle="Tag Blocks" linkText="Tag Blocks" />

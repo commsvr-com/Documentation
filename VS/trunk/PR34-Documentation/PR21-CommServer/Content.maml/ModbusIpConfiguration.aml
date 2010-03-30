@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a8c2de7c-5c00-4835-9b36-62bddfeb54be" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="MODBUSIPCommunicationInterfaceSettings">
+      <title>Communication interface settings</title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure1">Communication interface settings</caption>
+          <image placement="center" xlink:href = "0d419686-c38d-4735-b85c-453932c7eaf9"/>
+        </mediaLink>
+        <para>Select TCP or UDP as protocol. Socket number settings are ignored and can be set by default as –1 (this setting is valid only for slave sides of the protocol).</para>
+      </content>
+    </section>
+    <section address="MODBUSIPModbusProtocolSettings">
+      <title>Modbus protocol settings</title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure2">Modbus protocol settings</caption>
+          <image placement="center" xlink:href = "4235c409-c764-4608-a930-6ada4b215fb1"/>
+        </mediaLink>
+        <para>CommServer allows us to tune the timeout settings that are used in the Modbus DataProvider. The following settings are available:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>InterframeGap</legacyItalic> - period of time in milliseconds between consecutive request frames
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>MaxNumberOfRetries</legacyItalic> - maximal number of retries getting the response. After this limit has passed the base station finds that communication with the device using current interface coupled with this protocol is broken and it activates the next interface in the pipe if available. The failed interface is marked inactive and will remain in this state until the defined (as “inactive time after failed”) timeout expiration.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>ResponseTimeOut</legacyItalic> - maximal time of waiting for the response from a remote device
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Timeout15</legacyItalic> - maximal wait time in microseconds for the next character inside Modbus telegram (Modbus specifications defines this time as time of 1.5 character that goes through the communication layer, but due to Windows limitation it is not recommended to set this timeout to less than 11 milliseconds)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Timeout3</legacyItalic> - maximal wait time for the next character while waiting for the response frame end (a silent interval separating message frames, e.g. 3.5 character times for Modbus)
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>The default settings are optimal for communication over the serial link; if TCP/UDP transportation it is recommended to tune the settings.</para>
+        </alert>
+        <para>It is necessary to set a valid segment address. This address is the address of the PLC that we want to connect to. Below there is an example of connection settings to PLC. In this case TCP is used:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure3">Example of connection settings to PLC</caption>
+          <image placement="center" xlink:href = "8d2ed1cc-42c1-450d-988a-9def00d790d4"/>
+        </mediaLink>
+        <para>The syntax of the segment address is:</para>
+        <code><![CDATA[server_IP_address:port_to_which_commserver_establish_the_connection]]></code>
+        <para>In the figure below there is an example connection to PLC, whose IP address is 192.168.0.8 and communication port is 2101:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure4">Example connection to PLC</caption>
+          <image placement="center" xlink:href = "d8c4cd27-7ae8-48b4-9d62-03a6105fee14"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
