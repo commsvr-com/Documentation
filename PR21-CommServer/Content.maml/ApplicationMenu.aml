@@ -7,26 +7,17 @@
       <title>Application menu</title>
       <content>
         <para>Access to additional modules and options is provided via the menu.</para>
+      </content>
+    </section>
+    <section address="FileMenu">
+      <title>File menu</title>
+      <content>
         <mediaLink>
-          <caption placement="after" lead="Figure 1">Application menu</caption>
-          <image placement="center" xlink:href = ""/>
+          <caption placement="after" lead="Figure 1">File menu</caption>
+          <image placement="center" xlink:href = "65F4CAE7-461A-4c08-8129-44369E1F0E64"/>
         </mediaLink>
         <para>Please select:</para>
         <list class="bullet">
-          <listItem>
-            <para>
-              <legacyBold>
-                <legacyItalic>Hide</legacyItalic>
-              </legacyBold> – to hide the main application window and minimize it to a tray icon
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyBold>
-                <legacyItalic>Configurator</legacyItalic>
-              </legacyBold> – to open NetworkConfig
-            </para>
-          </listItem>
           <listItem>
             <para>
               <legacyBold>
@@ -37,7 +28,95 @@
           <listItem>
             <para>
               <legacyBold>
-                <legacyItalic>Help</legacyItalic>
+                <legacyItalic>Exit</legacyItalic>
+              </legacyBold> – to close the CommServer Monitor application
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="ViewMenu">
+      <title>
+        View menu
+      </title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">View menu</caption>
+          <image placement="center" xlink:href = "5914c7e7-050d-4273-b217-4128907143ef"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Hide</legacyItalic>
+              </legacyBold> – to hide the main application window and minimize it to a tray icon
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="ToolsMenu">
+      <title>
+        Tools menu
+      </title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Tools menu</caption>
+          <image placement="center" xlink:href = "fb47a56a-030d-4ac4-a610-3814dc544a98"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Configurator</legacyItalic>
+              </legacyBold> – to open NetworkConfig
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>DCOM Configuration</legacyItalic>
+              </legacyBold> – to start DCOM configurator (dcomcnfg) built-in Windows
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>XBUS Measure</legacyItalic>
+              </legacyBold> – to start DataProvider diagnostic application
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Options</legacyItalic>
+              </legacyBold> – "CommServer Monitor" application options
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Connection Type Options</legacyItalic>
+              </legacyBold> – to choose between the connection to CommServer or CommServer UA
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="HelpMenu">
+      <title>
+        Help menu
+      </title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Help menu</caption>
+          <image placement="center" xlink:href = "7f427649-1df7-4e79-a766-d34ce07c0e8e"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>
+                <legacyItalic>Contents</legacyItalic>
               </legacyBold> – to display help for the application
             </para>
           </listItem>
