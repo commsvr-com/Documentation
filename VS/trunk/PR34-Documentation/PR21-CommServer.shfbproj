@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which
          assemblies to include from solution and project documentation
@@ -415,6 +415,7 @@
     <Image Include="PR21-CommServer\Graphics\MODBUSRSexampleConnectionToPortServerOneTS.jpg">
       <AlternateText>Example connection to PortServer One TS</AlternateText>
       <ImageId>029ff583-8ac3-4838-b344-d86f36a62adb</ImageId>
+    </Image>
     <Image Include="PR21-CommServer\Graphics\port_tab.jpg">
       <ImageId>91CF9FEC-76EC-4afc-97A9-EDEC8B842875</ImageId>
     </Image>
@@ -433,7 +434,6 @@
     <Image Include="PR21-CommServer\Graphics\app_menu_file.jpg">
       <AlternateText>File menu</AlternateText>
       <ImageId>65F4CAE7-461A-4c08-8129-44369E1F0E64</ImageId>
-    </Image>
     </Image>
     <Image Include="PR21-CommServer\Graphics\MODBUSRSexampleOfConnectionSettingsToPortServerOneTSFromDIGI.jpg">
       <AlternateText>Example of connection settings to PortServer One TS from DIGI company</AlternateText>
