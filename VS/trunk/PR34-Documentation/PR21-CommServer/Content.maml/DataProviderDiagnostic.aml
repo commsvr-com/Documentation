@@ -4,17 +4,8 @@
     <introduction>
       <para>A tool for testing communication over Data Provider with slave units.</para>
     </introduction>
-    <section address="ProgramMainWindow">
-      <title>Program main window:</title>
-      <content>
-        <mediaLink>
-          <caption placement="after" lead="Figure 1">Program Main Window</caption>
-          <image placement="center" xlink:href = "aa9305b4-b590-4750-a091-5b2220807b72"/>
-        </mediaLink>
-      </content>
-    </section>
-    <section address="MainFeatures">
-      <title>Main features</title>
+    <section address="ProgramMainFeatures">
+      <title>Program main features</title>
       <content>
         <list class="bullet">
           <listItem>
@@ -41,7 +32,7 @@
       <title>Usage</title>
       <content>
         <mediaLink>
-          <caption placement="after" lead="Figure 2">Usage</caption>
+          <caption placement="after" lead="Figure 1">Usage</caption>
           <image placement="center" xlink:href = "d0f25323-8bd3-4508-b9d0-7a3dc3bf3cfb"/>
         </mediaLink>
         <list class="ordered">
@@ -64,6 +55,9 @@
             <para>number of received NAK (negative acknowledge)</para>
           </listItem>
           <listItem>
+            <para>number of synchronization errors</para>
+          </listItem>
+          <listItem>
             <para>waiting time of the first character in response (minimum/average/maximum)</para>
           </listItem>
           <listItem>
@@ -76,35 +70,33 @@
             <para>average channel usage</para>
           </listItem>
           <listItem>
-            <para>speed of the channel</para>
-          </listItem>
-          <listItem>
-            <para>time of the test</para>
-          </listItem>
-          <listItem>
-            <para>test run counter (cycle: request + all the retries + reply)</para>
-          </listItem>
-          <listItem>
-            <para>stop the test</para>
-          </listItem>
-          <listItem>
-            <para>start the test</para>
-          </listItem>
-          <listItem>
-            <para>push to open configuration window (please see below)</para>
-          </listItem>
-          <listItem>
-            <para>stations parameters (this program allows to test three stations simultaneously), user sets the number of stations and addresses</para>
-          </listItem>
-          <listItem>
             <para>operations parameters (please see below)</para>
           </listItem>
           <listItem>
             <para>statistic reset</para>
           </listItem>
           <listItem>
-            <para>actual port setting</para>
+            <para>stations parameters (this program allows to test three stations simultaneously), user sets the number of stations and addresses</para>
           </listItem>
+          <listItem>
+            <para>protocol configuration, push to open the window (to read more about this configuration see the configuration of the Protocol in this topic: <link xlink:href="82a59c6f-7225-46b8-be5d-d7517b386965#Protocol"/>)</para>
+          </listItem>
+          <listItem>
+            <para>start the test</para>
+          </listItem>
+          <listItem>
+            <para>stop the test</para>
+          </listItem>
+          <listItem>
+            <para>test run counter (cycle: request + all the retries + reply)</para>
+          </listItem>
+          <listItem>
+            <para>time of the test</para>
+          </listItem>
+          <listItem>
+            <para>speed of the channel</para>
+          </listItem>
+
         </list>
       </content>
     </section>
@@ -112,12 +104,15 @@
       <title>Operation parameters</title>
       <content>
         <mediaLink>
-          <caption placement="after" lead="Figure 3">Operation Parameters</caption>
+          <caption placement="after" lead="Figure 2">Operation Parameters</caption>
           <image placement="center" xlink:href = "1f8a07b5-71e7-4d6e-a213-6268b42dcdab"/>
         </mediaLink>
         <list class="ordered">
           <listItem>
             <para>starting requested address</para>
+          </listItem>
+          <listItem>
+            <para>data type of the received data</para>
           </listItem>
           <listItem>
             <para>number of read/written flags or registers (this value is changed depending on setting in item 5)</para>
@@ -126,13 +121,13 @@
             <para>value to write</para>
           </listItem>
           <listItem>
-            <para>operation selection: read/write</para>
-          </listItem>
-          <listItem>
             <para>if this checkbox is checked, the client always requests the same amount of data; if no, the amount of data is changed in loop starting from the value set in item 2 to 1. </para>
           </listItem>
           <listItem>
-            <para>data type selection: coils or holding registers</para>
+            <para>operation selection: read/write</para>
+          </listItem>
+          <listItem>
+            <para>data type selection depending on the address space of the device (i.e coils, holding registers)</para>
           </listItem>
         </list>
       </content>
