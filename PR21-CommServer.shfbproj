@@ -1,4 +1,4 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which
          assemblies to include from solution and project documentation
@@ -251,10 +251,6 @@
     <Image Include="PR21-CommServer\Graphics\OPC_Viewer – Items_window.jpg">
       <AlternateText>OPC Viewer – Items window</AlternateText>
       <ImageId>98cab6ae-6c1d-43d4-baf8-5cfd5c93d1aa</ImageId>
-    </Image>
-    <Image Include="PR21-CommServer\Graphics\Program_main_window.jpg">
-      <ImageId>aa9305b4-b590-4750-a091-5b2220807b72</ImageId>
-      <AlternateText>Program Main Window</AlternateText>
     </Image>
     <Image Include="PR21-CommServer\Graphics\main_features.jpg">
       <ImageId>d0f25323-8bd3-4508-b9d0-7a3dc3bf3cfb</ImageId>
