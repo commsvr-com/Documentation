@@ -57,7 +57,7 @@
           <image placement="center" xlink:href = "8d2ed1cc-42c1-450d-988a-9def00d790d4"/>
         </mediaLink>
         <para>The syntax of the segment address is:</para>
-        <code><![CDATA[server_IP_address:port_to_which_commserver_establish_the_connection]]></code>
+        <para><![CDATA[server_IP_address:port_to_which_commserver_establish_the_connection]]></para>
         <para>In the figure below there is an example connection to PLC, whose IP address is 192.168.0.8 and communication port is 2101:</para>
         <mediaLink>
           <caption placement="after" lead="Figure4">Example connection to PLC</caption>
