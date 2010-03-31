@@ -396,6 +396,25 @@
       <ImageId>4235c409-c764-4608-a930-6ada4b215fb1</ImageId>
       <AlternateText>Modbus protocol settings</AlternateText>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\DataProvider_Block_Item_settings.jpg">
+      <AlternateText>DataProvider, Block ant Item settings</AlternateText>
+      <ImageId>c3d24785-efda-4c09-97f7-9bb5d2ca398c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSsettingsForPCSerialCOMPort.jpg">
+      <AlternateText>Settings for PC serial COM port</AlternateText>
+      <ImageId>8ea49359-50e2-480b-bf4d-6746c8e89513</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSUDP_TCP.jpg">
+      <ImageId>708a7301-1662-48af-992b-5b7a3d7f77ed</ImageId>
+      <AlternateText>Using UDP/TCP as transport for Modbus RTU telegrams</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSProtocolSettings.jpg">
+      <AlternateText>MODBUS protocol settings</AlternateText>
+      <ImageId>dd6027b3-eefc-4146-bad8-97e4ef54ba95</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSexampleConnectionToPortServerOneTS.jpg">
+      <AlternateText>Example connection to PortServer One TS</AlternateText>
+      <ImageId>029ff583-8ac3-4838-b344-d86f36a62adb</ImageId>
     <Image Include="PR21-CommServer\Graphics\port_tab.jpg">
       <ImageId>91CF9FEC-76EC-4afc-97A9-EDEC8B842875</ImageId>
     </Image>
@@ -414,6 +433,11 @@
     <Image Include="PR21-CommServer\Graphics\app_menu_file.jpg">
       <AlternateText>File menu</AlternateText>
       <ImageId>65F4CAE7-461A-4c08-8129-44369E1F0E64</ImageId>
+    </Image>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSexampleOfConnectionSettingsToPortServerOneTSFromDIGI.jpg">
+      <AlternateText>Example of connection settings to PortServer One TS from DIGI company</AlternateText>
+      <ImageId>88666bf0-886e-41e0-9545-51cbfb11ca72</ImageId>
     </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
