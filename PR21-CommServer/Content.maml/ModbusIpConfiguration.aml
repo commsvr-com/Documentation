@@ -65,6 +65,74 @@
         </mediaLink>
       </content>
     </section>
+    <section address="MODBUSIPConfigurationAndInterpretationOfReceivedData">
+    <title>Configuration and interpretation of received data</title>
+      <content>
+        <para>Modbus DataProvider reads the data in blocks. Requests are sent to the device (called station in the CommServer configuration) that has an address (according to Modbus protocol) set inside port (interface) definition. The user can freely define a block of data to be read. The block of data is received as an answer from the device.</para>
+        <para>During the configuration of the data block, the following settings must be configured:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Address – the initial address of the block </para>
+          </listItem>
+          <listItem>
+            <para>Data Type – the address space in the device to be read (available address spaces are: Coils, Discrete Inputs, Holding Registers, Input Registers, Memory Bank Registers , 8 bits Holding Registers )</para>
+          </listItem>
+          <listItem>
+            <para>Name – the name of the data block in the CommServer configuration (not used during communication)</para>
+          </listItem>
+          <listItem>
+            <para>Tags collection – tags definitions inside the block. Each tag has:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Name – the name of the tag inside the OPC server address space</para>
+              </listItem>
+              <listItem>
+                <para>Access Rights - indicate if this item is read only, write only or read/write. This is NOT related to security but rather to the nature of the underlying hardware</para>
+              </listItem>
+              <listItem>
+                <para>DataTypeConversion - conversion requirements. Data will be available in the required type (if conver-sion is possible).</para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="MODBUSIPAddressingInModbusSddressVsOffset">
+      <title>Addressing in Modbus: address vs offset (reference)</title>
+      <content>
+        <para>In Modbus protocol, the block address indicates the offset of a particular element within its address space (e.g. holding register, coils, etc.), but this offset may not be equal to physical address of this element in the memory. An example of such situation is a Modicon 984 controller, where:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Register at reference 0 is address 40001 in Modicon 984</para>
+          </listItem>
+          <listItem>
+            <para>Coil at reference 0 is address 00001 in Modicon 984</para>
+          </listItem>
+        </list>
+        <para>That’s why sometimes it is necessary to change the address to offset (e.g. subtract 40001 when a Holding Register is concerned) and finally the offset (not address) must be inserted to the CommServer block configuration.</para>
+      </content>
+    </section>
+    <section address="MODBUSIP32-bitRegisterAndFloatingPointNumbersExtension">
+      <title>32-bit register and floating point numbers extension</title>
+      <content>
+        <para>The Modbus DataProvider supports also some extension to Modbus protocol, e.g.:</para>
+        <list class="bullet">
+          <listItem>
+            <para>32-bit Holding Register</para>
+          </listItem>
+          <listItem>
+            <para>Floating point values</para>
+          </listItem>
+        </list>
+        <para>In Modbus, a 32-bit register is transmitted as two standard (16-bit) registers. There are two modes of how 32-bit registers are transmitted. In the first mode (usually called Modicon), the first register contains bits 15 - 0 of the 32-bit number, and the second register contains bits 31 - 16 of the 32-bit number. In the second mode (called inverted), the order of those two registers is inverted. The Modbus DataProvider supports both modes and the mode can be selected in DataProvider settings in the RegisterOrderIn32mode property (see figure below).</para>
+        <para>In case of the necessity of using 32-bit Holding Register, a special block data type must be selected: Holding_32bit_Register (see figure below). Note that floating point numbers are available only when 32-bit registers are used.</para>
+        <para>As far as floating point numbers are concerned, the proper floating point format must be selected. This DataProvider supports two modes: Modicon [standard: the first register contains bits 15 - 0 of the 32-bit number (bits 15 - 0 of significant), and the second register contains bits 31 - 16 of the 32-bit number (exponent and bits 23 - 16 of significant)] and IEEE (inverted: IEEE floating point number format is used). The mode can be selected in DataProvider settings in the FloatingPoint  property (see figure below). What is more, conversion to System.Single must be set for each item that should be available in OPC as floating point number. </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure5">DataProvider, Block ant Item settings</caption>
+          <image placement="center" xlink:href = "c3d24785-efda-4c09-97f7-9bb5d2ca398c"/>
+        </mediaLink>
+      </content>
+    </section>
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>
