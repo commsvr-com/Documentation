@@ -7,11 +7,19 @@
       <title>Communication interface settings</title>
       <content>
         <para>Select TCP or UDP as protocol. Socket number settings are ignored and can be set by default as –1 (this setting is valid only for slave sides of the protocol).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Communication interface settings</caption>
+          <image placement="center" xlink:href = "3f5661ec-69a7-4335-a3b7-9bb5a3a7bc62"/>
+        </mediaLink>
       </content>
     </section>
     <section address="SBUSIPSBusProtocolSettings">
       <title>S-Bus protocol settings</title>
       <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Protocol Specific Parameters</caption>
+          <image placement="center" xlink:href = "ca0d0fab-5bf3-4e2c-a60a-be7d6b80ed7d"/>
+        </mediaLink>
         <para>CommServer allows us to tune the timeout settings that are used in the S-Bus DataProvider. The following settings are available:</para>
         <list class="bullet">
           <listItem>
@@ -39,9 +47,17 @@
           <para>The default settings are optimal for communication over the serial link; if TCP/UDP transportation is used it is recommended to tune the settings.</para>
         </alert>
         <para>If TCP/UDP transportation is used it is necessary to set a valid segment address. This address is the address of PLC that we want to connect to. Below there is an example of connection settings to PLC  using TCP:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Example of connection settings to PLC  using TCP</caption>
+          <image placement="center" xlink:href = "66930ae8-9f67-4f2b-ba6b-edd1f25cd3b4"/>
+        </mediaLink>
         <para>The syntax of the segment address is:</para>
         <para><![CDATA[ server_IP_address:port_to_which_commserver_establish_the_connection]]></para>
         <para>In the figure below there is an example connection to PLC, whose IP address is 192.168.0.8 and communication port is 2101:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Example connection to PLC</caption>
+          <image placement="center" xlink:href = "23699d7b-6ca8-49b7-964c-47979a1f2e72"/>
+        </mediaLink>
       </content>
     </section>
     <section address="SBUSIPConfigurationAndInterpretationOfReceivedData">

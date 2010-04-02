@@ -6,6 +6,10 @@
     <section address="SBUSRSCommunicationInterfaceSettings">
       <title>Communication interface settings</title>
       <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Communication interface settings</caption>
+          <image placement="center" xlink:href = "67f04b15-90c0-4e31-abb7-dc26dd84529c"/>
+        </mediaLink>
         <para>The following settings for PC serial COM port are default for CommServer:</para>
         <list class="bullet">
           <listItem>
@@ -22,11 +26,19 @@
           </listItem>
         </list>
         <para>It is possible also to use UDP/TCP as transport for SBUS RS telegrams. If that is the case, select TCP or UDP as protocol. Socket number settings are ignored and can be set by default as –1 (this setting is valid only for slave sides of the protocol).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">UDP/TCP as transport for SBUS RS telegrams</caption>
+          <image placement="center" xlink:href = "df293235-4c82-46eb-9192-6d7ca717ee8b"/>
+        </mediaLink>
       </content>
     </section>
     <section address="SBUSRSProtocolSettings">
       <title>S-Bus protocol settings</title>
       <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">S-Bus protocol settings</caption>
+          <image placement="center" xlink:href = "4bac5195-1337-4bde-af3f-df0a006281cb"/>
+        </mediaLink>
         <para>CommServer allows us to tune the timeout settings that are used in the S-Bus DataProvider. The following settings are available:</para>
         <list class="bullet">
           <listItem>
@@ -34,9 +46,74 @@
               <legacyItalic>InterframeGap</legacyItalic> - period of time in milliseconds between consecutive request frames
             </para>
           </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>MaxNumberOfRetries</legacyItalic> - maximal number of retries getting the response. After this limit has passed the base station finds that communication with the device using current interface coupled with this protocol is broken and it activates the next interface in the pipe if available. The failed interface is marked inactive and will remain in this state until the defined (as “inactive time after failed”) timeout expiration.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>ResponseTimeOut</legacyItalic> - maximal time of waiting for the response from a remote device
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeoutAfterFrame</legacyItalic> - a silent interval separating message frames
+            </para>
+          </listItem>
+        </list>
+        <alert>
+          <para>The default settings are optimal for communication over the serial link; if TCP/UDP transportation is used it is recommended to tune the settings.</para>
+        </alert>
+        <alert>
+          <para>Note: If TCP/UDP transportation is used it is necessary to set a valid segment address. This address is the address of the remote server that we want to connect to. Below there is an example of connection settings to PortServer One TS from DIGI company. In this case TCP is used:</para>
+          <mediaLink>
+            <caption placement="after" lead="Figure 4">Example of connection settings to PortServer One TS from DIGI company</caption>
+            <image placement="center" xlink:href = "4ce866eb-6966-429e-9e52-311bf1433a87"/>
+          </mediaLink>
+        </alert>
+        <para>The syntax of the segment address is:</para>
+        <para><![CDATA[server_IP_address:port_to_which_commserver_establish_the_connection]]></para>
+        <para>In the figure below there is an example connection to PortServer One TS, whose IP address is 192.168.0.8 and communication port is 2101:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 5">Example connection to PortServer One TS</caption>
+          <image placement="center" xlink:href = "be225e61-52b3-4ffa-b6d9-268db7a98622"/>
+        </mediaLink>
+      </content>
+    </section>
+    <section address="SBUSRSConfigurationAndInterpretationOfReceivedData">
+      <title>Configuration and interpretation of received data</title>
+      <content>
+        <para>S-Bus DataProvider reads the data in blocks. Requests are sent to the device (called station in the CommServer configuration) that has an address (according to the S-Bus protocol) set inside port (interface) definition. The user can freely define a block of data to be read. The block of data is received as an answer from the device.</para>
+        <para>During the configuration of the data block, the following settings must be configured:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Address – the initial address of the block </para>
+          </listItem>
+          <listItem>
+            <para>Data Type – the address space in the device to be read (available address spaces are: Flags, Inputs, Outputs, Regis-ters, Timers, Counters)</para>
+          </listItem>
+          <listItem>
+            <para>Name – the name of the data block in the CommServer configuration (not used during communication)</para>
+          </listItem>
+          <listItem>
+            <para>Tags collection – tags definitions inside the block. Each tag has:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Name – the name of the tag inside the OPC server address space</para>
+              </listItem>
+              <listItem>
+                <para>Access Rights - indicate if this item is read only, write only or read/write. This is NOT related to security but rather to the nature of the underlying hardware</para>
+              </listItem>
+              <listItem>
+                <para>DataTypeConversion - conversion requirements. Data will be available in the required type (if conver-sion is possible).</para>
+              </listItem>
+            </list>
+          </listItem>
         </list>
       </content>
     </section>
+    
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>
