@@ -435,6 +435,42 @@
       <AlternateText>Example of connection settings to PortServer One TS from DIGI company</AlternateText>
       <ImageId>88666bf0-886e-41e0-9545-51cbfb11ca72</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPCommunicationInterfaceSettings.jpg">
+      <ImageId>3f5661ec-69a7-4335-a3b7-9bb5a3a7bc62</ImageId>
+      <AlternateText>Communication interface settings</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPProtocolSpecificParameters.jpg">
+      <AlternateText>Protocol Specific Parameters</AlternateText>
+      <ImageId>ca0d0fab-5bf3-4e2c-a60a-be7d6b80ed7d</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPexampleOfConnectionSettingsToPLCUsingTCP.jpg">
+      <AlternateText>Example of connection settings to PLC  using TCP</AlternateText>
+      <ImageId>66930ae8-9f67-4f2b-ba6b-edd1f25cd3b4</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPexampleConnectionToPLC.jpg">
+      <AlternateText>Example connection to PLC</AlternateText>
+      <ImageId>23699d7b-6ca8-49b7-964c-47979a1f2e72</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSCommunicationInterfaceSettings.jpg">
+      <AlternateText>Communication interface settings</AlternateText>
+      <ImageId>67f04b15-90c0-4e31-abb7-dc26dd84529c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSUDPTCPAsTransportForSBUSRSTelegrams.jpg">
+      <AlternateText>UDP/TCP as transport for SBUS RS telegrams</AlternateText>
+      <ImageId>df293235-4c82-46eb-9192-6d7ca717ee8b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSprotocolSettings.jpg">
+      <AlternateText>S-Bus protocol settings</AlternateText>
+      <ImageId>4bac5195-1337-4bde-af3f-df0a006281cb</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSexampleOfConnectionSettingsToPortServerOneTSFromDIGI.jpg">
+      <AlternateText>Example of connection settings to PortServer One TS from DIGI company</AlternateText>
+      <ImageId>4ce866eb-6966-429e-9e52-311bf1433a87</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSexampleConnectionSettingsToPortServerOne.jpg">
+      <AlternateText>Example connection to PortServer One TS</AlternateText>
+      <ImageId>be225e61-52b3-4ffa-b6d9-268db7a98622</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
