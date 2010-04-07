@@ -78,4 +78,9 @@
       <Topic id="c089e219-95a9-4a23-95a0-367a896128c3" visible="True" title="Summary" tocTitle="Summary" linkText="Summary" />
     </Topic>
   </Topic>
+  <Topic id="edfb1894-1b42-4561-a0ca-cd3cf3b37405" visible="True" title="How to test OPC connection" tocTitle="How to test OPC connection" linkText="How to test OPC connection">
+    <Topic id="04834b85-db9d-4c4c-a6f1-58032fa2ba1e" visible="True" title="Test target - introduction" tocTitle="Test target - introduction" linkText="Test target - introduction" />
+    <Topic id="b97056dd-3293-4486-be51-ef7121629f45" visible="True" title="Preparing for test - computers configuration" tocTitle="Preparing for test - computers configuration" linkText="Preparing for test - computers configuration" />
+    <Topic id="bd81e043-6670-4d4a-ba74-e0be1d2822b2" visible="True" title="OPC connection test" tocTitle="OPC connection test" linkText="OPC connection test" />
+  </Topic>
 </Topics>

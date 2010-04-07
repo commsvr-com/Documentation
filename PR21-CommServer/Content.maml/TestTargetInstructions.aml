@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="04834b85-db9d-4c4c-a6f1-58032fa2ba1e" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="TesttargetInstructions">
+      <title>Test target - instructions</title>
+      <content>
+        <para>The test is run on two computers:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Computer #1: name PC1, Windows XP Sp3, Workgroup: MsGroup, IP address: 192.168.0.1*), CommServer OPC Server is installed</para>
+          </listItem>
+          <listItem>
+            <para>Computer #2: name PC2, Windows XP Sp3, Workgroup: MsGroup, IP address: 192.168.0.2, OPC Viewer is installed</para>
+          </listItem>
+        </list>
+        <para>*) The IP addresses may be given by DHCP. If that is the case, you should remember to give a correct IP address (given by a DHCP server) when connecting using the URL address (and not by browsing the network)</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Two computers</caption>
+          <image placement="center" xlink:href = "48548d5a-f540-4a89-8ebc-feb46aaa6a5b"/>
+        </mediaLink>
+        <para>The test is aimed at connecting an OPC client: OPC Viewer (from PC2) to CommServer OPC Server (on PC1). The test assumes that software from CommServer family as well as .Net Framework and OPC Core Components <legacyBold>are installed correctly on each computer</legacyBold>.</para>
+        <alert>
+          <para>The test should be run on an account with administrator privileges (only such an account makes a change of DCOM settings possible). Great caution should be exercised when configuring the DCOM model: an over-restrictive configuration may, among others, deny all users of their permissions to access the operating system and user interface.</para>
+        </alert>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

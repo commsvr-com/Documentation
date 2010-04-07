@@ -471,12 +471,68 @@
       <AlternateText>Example connection to PortServer One TS</AlternateText>
       <ImageId>be225e61-52b3-4ffa-b6d9-268db7a98622</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\OPC_test_r01.jpg">
+      <ImageId>48548d5a-f540-4a89-8ebc-feb46aaa6a5b</ImageId>
+      <AlternateText>Two computers</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r01.jpg">
+      <AlternateText>Component Services</AlternateText>
+      <ImageId>817535bc-ea71-4c4b-94f8-82e2bc7c362d</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r02.jpg">
+      <ImageId>9d92443b-e5cb-4f4e-85fa-048a66b2b401</ImageId>
+      <AlternateText>Computer Default Properties</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r03.jpg">
+      <AlternateText>Computer Properties COM Security</AlternateText>
+      <ImageId>d4fa62fa-cde3-4b6f-b24a-9f579847a171</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r04.jpg">
+      <ImageId>bab3b5f7-17df-4d21-a147-dc4dbae1bc2f</ImageId>
+      <AlternateText>Access Permission</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r05.jpg">
+      <AlternateText>Launch Permission</AlternateText>
+      <ImageId>5901853b-8081-4d7a-90a5-b33a3a76d039</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r06.jpg">
+      <AlternateText>General</AlternateText>
+      <ImageId>5c8d6587-b4f5-4381-b3bb-203886c93a59</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r07.jpg">
+      <AlternateText>Folder options</AlternateText>
+      <ImageId>22b4de83-5bf3-4c92-900c-73daeca71112</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r01.jpg">
+      <AlternateText>OPC Viewer - main window</AlternateText>
+      <ImageId>dc967ede-df70-49a0-b426-c655dbc47c4a</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r02.jpg">
+      <AlternateText>OPC Viewer</AlternateText>
+      <ImageId>1158c594-5d33-4dc5-9bc4-3822ae87ba7e</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r03_2PC.jpg">
+      <AlternateText>Select OPC server window</AlternateText>
+      <ImageId>fff67f3e-eb9c-4142-9a05-5faee11fb401</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r04.jpg">
+      <AlternateText>Connecting to server</AlternateText>
+      <ImageId>ac22a17a-9899-4ba6-a134-4adc90ce9304</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r05.jpg">
+      <AlternateText>CommServer Monitor</AlternateText>
+      <ImageId>a5371615-7e36-4b6a-a3de-499f50d68fcf</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\OPCConnectionTest.aml" />
+    <None Include="PR21-CommServer\Content.maml\PreparingForTestComputersConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\TestTargetInstructions.aml" />
+    <None Include="PR21-CommServer\Content.maml\HowToTestOPCConnection.anl.aml" />
     <None Include="PR21-CommServer\Content.maml\SegmentsTab.aml" />
     <None Include="PR21-CommServer\Content.maml\PortsTab.aml" />
     <None Include="PR21-CommServer\Content.maml\BLSFiles.aml" />
