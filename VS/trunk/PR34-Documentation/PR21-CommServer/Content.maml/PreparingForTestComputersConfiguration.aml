@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b97056dd-3293-4486-be51-ef7121629f45" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="PreparingForTestComputersConfiguration">
+      <title>Prepraing for test - computers configuration</title>
+      <content>
+        <para>Create the same account: <legacyBold>opc</legacyBold> on both the computers with the same password: <legacyBold>123@opc</legacyBold>
+        </para>
+      </content>
+    </section>
+    <section address="ConfigurationOfDCOMAndPrivileges">
+      <title>Configuration of DCOM and privileges</title>
+      <content>
+        <para>Pass to DCOM settings; do the following actions on both computers: Start Menu -> Run -> dcomcnfg. The following window should appear:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Component Services</caption>
+          <image placement="center" xlink:href = "817535bc-ea71-4c4b-94f8-82e2bc7c362d"/>
+        </mediaLink>
+        <para>Click on “Component Services/Computers/My Computer”. On “My Computer”, press the right mouse button and select “Properties” (Figure 2).</para>
+        <para>Default Properties</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Computer Default Properties</caption>
+          <image placement="center" xlink:href = "9d92443b-e5cb-4f4e-85fa-048a66b2b401"/>
+        </mediaLink>
+        <para>Select “Enable Distributed COM on this computer”. Select Connect for “Default Authentication Level”, and Identify for “Default Impersonation Level”.</para>
+        <para>COM Security</para>
+        <para>Figure 3 “COM Security” is another important tab.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Computer Properties COM Security</caption>
+          <image placement="center" xlink:href = "d4fa62fa-cde3-4b6f-b24a-9f579847a171"/>
+        </mediaLink>
+        <para>Select “Edit Limits” and “Edit Default” for Access Permissions (Figure 4):</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Access Permission</caption>
+          <image placement="center" xlink:href = "bab3b5f7-17df-4d21-a147-dc4dbae1bc2f"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>add: Administrators, opc, System, or the user Everyone to “Groups or user names”</para>
+          </listItem>
+          <listItem>
+            <para>select  Allow for each of the a/m users for “Local Access” and “Remote Access”</para>
+          </listItem>
+        </list>
+        <para>Select “Edit Limits” and “Edit Default” in Launch and Activation Permissions (Figure 5):</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 5">Launch Permission</caption>
+          <image placement="center" xlink:href = "5901853b-8081-4d7a-90a5-b33a3a76d039"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>add: Administrators, opc, System, or the user Everyone to “Groups or user names”</para>
+          </listItem>
+          <listItem>
+            <para>select  Allow for each of the a/m users for “Local Launch”, “Remote Launch”, “Local Activation”, “Remote Activation”</para>
+          </listItem>
+        </list>
+        <para>
+          <legacyBold>Other tabs</legacyBold>
+        </para>
+        <para>To be left unchanged. Finish the edition of properties with OK.</para>
+        <para>
+          <legacyBold>DCOM Config</legacyBold>
+        </para>
+        <para>Now return to the application main window. Click DCOM Config in “My Computer” subgroup. A list of components will appear in the right window. Select CAS CommServer OPC DA Server, click the right mouse button and select “Properties” (Figure 6 shows the selected object).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 6">General</caption>
+          <image placement="center" xlink:href = "5c8d6587-b4f5-4381-b3bb-203886c93a59"/>
+        </mediaLink>
+        <para>
+          <legacyBold>General</legacyBold>
+        </para>
+        <para>Select Default in the “Authentication Level” field.</para>
+        <para>
+          <legacyBold>Location</legacyBold>
+        </para>
+        <para>Select “Run Application on this Computer”.</para>
+        <para>
+          <legacyBold>Security</legacyBold>
+        </para>
+        <para>Select Use Default for “Launch and Activation Permissions”, “Access Permissions” and “Configuration Permissions”.</para>
+        <para>
+          <legacyBold>Endpoints</legacyBold>
+        </para>
+        <para>To be left unchanged.</para>
+        <para>
+          <legacyBold>Identity</legacyBold>
+        </para>
+        <para>Select “This user”, write down opc  in the “user” field and 123@opc in the “Password” field.</para>
+      </content>
+    </section>
+    <section address="PersonificationSettingsInTheSystem">
+      <title>Personification settings in the system</title>
+      <content>
+        <para>In Windows XP and Windows Vista make sure that „Use Simple File Sharing” is disabled – if it is enabled it makes that everyone is authenticated as a Guest. You can do it with the any of the following ways:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Using folder options:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Doble click on „My Computer”</para>
+              </listItem>
+              <listItem>
+                <para>Select folder options from tools menu</para>
+              </listItem>
+              <listItem>
+                <para>
+                  Select view tab, find „Use Simple File Sharing (Recommended)” and make it unchecked
+                </para>
+              </listItem>
+            </list>
+            <mediaLink>
+              <caption placement="after" lead="Figure 7">Folder options</caption>
+              <image placement="center" xlink:href = "22b4de83-5bf3-4c92-900c-73daeca71112"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>Using local security options:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Launch Local Security Settings (Control Panel -> Administrative Tools -> Local Security Settings)</para>
+              </listItem>
+              <listItem>
+                <para>Select Local Policies -> Security Options</para>
+              </listItem>
+              <listItem>
+                <para>Double click on “Network Access: Sharing and security model on local accounts”</para>
+              </listItem>
+              <listItem>
+                <para>Select “Classical – local users authenticate as themselves” and click OK</para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

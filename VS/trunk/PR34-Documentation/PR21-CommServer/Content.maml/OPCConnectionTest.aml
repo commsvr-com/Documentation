@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="bd81e043-6670-4d4a-ba74-e0be1d2822b2" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CommServerFirstLaunch">
+      <title>CommServer first launch</title>
+      <content>
+        <para>After a successful configuration, it is possible to connect to CommServer using an OPC client. Remember that the server does not start itself but it is in ready-to-launch state. Connecting to the server from any OPC client is the only method for starting the server. The following entry from the application event viewer (Start Menu -> Run -> eventvwr.msc) proves that the service has started correctly, e.g.:</para>
+        <para>
+          <legacyItalic>Communication server started [in the method: .ctor]: product name:CAS.CommServer, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3</legacyItalic>
+        </para>
+        <para>
+          Additionally, in the Windows Task Manager (Start Menu -> Run - > taskmgr) you can check if the "CASOpcDaWrapper" process is running. If so, it means that the OPC server service has been started.
+          OPC Viewer client may be used for the first launch of CommServer.
+        </para>
+      </content>
+    </section>
+    <section address="OPCViewer">
+      <title>OPC Viewer</title>
+      <content>
+        <para>In order to start “OPC Viewer” on PC2 select: Start Menu -> All Programs -> CAS -> CommServer -> OPC Viewer</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">OPC Viewer - main window</caption>
+          <image placement="center" xlink:href = "dc967ede-df70-49a0-b426-c655dbc47c4a"/>
+        </mediaLink>
+        <para>To connect to the OPC Server:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              select <![CDATA[<Browse...>]]> from a combo list on the address bar, </para>
+          </listItem>
+          <listItem>
+            <para>and then click Add. </para>
+          </listItem>
+        </list>
+        <para>Alternatively, click the Browse Network button.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">OPC Viewer</caption>
+          <image placement="center" xlink:href = "1158c594-5d33-4dc5-9bc4-3822ae87ba7e"/>
+        </mediaLink>
+        <para>There should appear the “Select Server” window (Figure 3) with the possibility of selecting the OPC server. Select CAS.CommServer.OPC.Da.Server on PC1:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Select OPC server window</caption>
+          <image placement="center" xlink:href = "fff67f3e-eb9c-4142-9a05-5faee11fb401"/>
+        </mediaLink>
+        <para>If a given computer is not on the list, connect to that computer using its IP address and putting it in the address bar:</para>
+        <list class="bullet">
+          <listItem>
+            <para>opcda://adres_ip_komputera/progID_serweraOPC, i.e.</para>
+          </listItem>
+          <listItem>
+            <para>opcda://192.168.0.1/CAS.CommServer.OPC.Da.Server**)</para>
+          </listItem>
+        </list>
+        <para>**) If the IP address of the test computer is different (e.g. as a result of using the address given by DHCP) write the correct address here. Instead of the address, you may write the computer name, e.g.: opcda://PC1/CAS.CommServer.OPC.Da.Server</para>
+        <alert>
+          <para>please bear in mind that the DCOM model must be configured in a proper way before connecting to another computer. It is also recommended that the account on which the OPC server is to be started should be configured to an interactive user or a user configured to the test needs.</para>
+        </alert>
+        <para>
+          The added server should appear as an element of the OPC Environment tree.
+          After the server has been added to the current configuration (session) you can connect thereto:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>Select the server from the list.</para>
+          </listItem>
+          <listItem>
+            <para>Click the “Connect to server” button.</para>
+          </listItem>
+        </list>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Connecting to server</caption>
+          <image placement="center" xlink:href = "ac22a17a-9899-4ba6-a134-4adc90ce9304"/>
+        </mediaLink>
+        <para>If the connection does not cause an error appearing on the computer screen, you may deem CommServer to be installed correctly. To prove it conclusively, you may start the CommServer Monitor. Select: Start Menu -> All Programs -> CAS-> CommServer-> Server Monitor. Having been started, the application should show a window similar to:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 5">CommServer Monitor</caption>
+          <image placement="center" xlink:href = "a5371615-7e36-4b6a-a3de-499f50d68fcf"/>
+        </mediaLink>
+        <alert>
+          <para>any attempt to start the CommServer Monitor without CommServer running (no client is connected thereto and the CAS.OpcDaWrapper process is missing on the task list) will end with a message informing about a problem with access to data in CommServer. It is a normal situation, as the CommServer Monitor requires a running CommServer to be able to display data from it.</para>
+        </alert>
+        <para>CommServer is launched with default configuration, which is usually stored in file:  "c:\Program Files\CAS\CommServer\DefaultConfig.xml".</para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
