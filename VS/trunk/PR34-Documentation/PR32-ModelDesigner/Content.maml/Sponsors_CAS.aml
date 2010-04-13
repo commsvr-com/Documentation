@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1bf073fd-1de4-4558-8e90-76b4790258bb" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CASContactInformation">
+      <title>Company contact information</title>
+      <content>
+        <table>
+          <row>
+            <entry>
+              <para>
+                <legacyBold>CAS</legacyBold>
+              </para>
+              <para>al. Kościuszki 103/105</para>
+              <para>90-441 Łódź</para>
+              <para>POLAND</para>
+            </entry>
+            <entry>
+              <para>
+                <legacyBold>TEL/FAX</legacyBold>
+              </para>
+              <para>(48) (42) 686 25 47</para>
+              <para>(48) (42) 686 50 28</para>
+              <para>
+                <legacyBold>Mail</legacyBold>
+              </para>
+              <para>techsupp@cas.eu</para>
+              <para>
+                <legacyBold>Website</legacyBold>
+              </para>
+              <para>
+                <externalLink>
+                  <linkText>
+                    www.cas.eu
+                  </linkText>
+                  <linkAlternateText>
+                    http://www.cas.eu
+                  </linkAlternateText>
+                  <linkUri>http://www.cas.eu</linkUri>
+                </externalLink>
+              </para>
+              <para>
+                <externalLink>
+                  <linkText>
+                    www.commsvr.com
+                  </linkText>
+                  <linkAlternateText>
+                    http://www.commsvr.com
+                  </linkAlternateText>
+                  <linkUri>http://www.commsvr.com</linkUri>
+                </externalLink>
+              </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+    <section address="CASOverview">
+      <title>Company overview</title>
+      <content>
+        <para>
+          CAS provides real time and embedded solutions, including turnkey systems for monitoring/control and
+          software development for real time distributed systems - software libraries of more than 1000000
+          source code lines used as building blocks in numerous applications. We use modern tools (mainly
+          ORACLE and Microsoft frameworks) including high level languages, e.g. C#, C++, Modula-2, Java,
+          Pascal (Delphi), Ada, etc., and operating systems: Windows, Linux and real-time Linux. We build
+          open distributed applications using XML SQL, COM+, OPC, ODBC, etc. Safe operation of the systems
+          is guaranteed by technologies such as VLAN, VPN, public key infrastructure, etc.
+        </para>
+        <para>Due to the wide range of technology areas, CAS is familiar with and is able to develop unique total open systems for various applications. All of our major projects have been developed from scratch and have been working reliably for years.</para>
+      </content>
+    </section>
+    <section address="CASPrimaryMarkets">
+      <title>Primary Markets</title>
+      <content>
+        <para>
+          We have successfully completed a variety of highly complex projects, including a flight inspection system
+          for ground radio navigation aids; distributed control systems of district heating networks, a
+          distributed system for pollution emission monitoring for power plants; a telemetric system
+          designed for remote monitoring and control of an unmanned pumping station for a power plant
+          group; a computer-aided control system for one of the largest brown coal mines in the world;
+          computer system integration for large-format visualization of information for industrial networks.
+        </para>
+      </content>
+    </section>
+    <section address="CASMainProducts">
+      <title>Main products and services</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>
+                  CommServer
+                </linkText>
+                <linkAlternateText>
+                  CommServer
+                </linkAlternateText>
+                <linkUri>http://www.commsvr.com/Products/CommServer/tabid/55/language/en-US/Default.aspx</linkUri>
+              </externalLink>
+            </para>
+            <para>
+              CommServer is a package of communication software to manage data transfer. Built-in technologies and algorithms provide an intelligent data transmission automatically adapting its parameters to the user’s or process needs.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>
+                  CommServer UA
+                </linkText>
+                <linkAlternateText>
+                  CommServer UA
+                </linkAlternateText>
+                <linkUri>http://www.commsvr.com/Products/CommServerUA/tabid/376/language/en-US/Default.aspx</linkUri>
+              </externalLink>
+            </para>
+            <para>
+              CommServer UA is a package of communication software to manage data transfer. It’s a fully configurable OPC UA server provides a multi-protocol, multi-medium and multi-channel redundant access to physical process control device data. To ensure short response time and effective utilization of the physical device communication channels throughput, a unique scan on demand algorithm was implemented.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>
+                  OPC UA Wrapper
+                </linkText>
+                <linkAlternateText>
+                  OPC UA Wrapper
+                </linkAlternateText>
+                <linkUri>http://www.commsvr.com/Products/OPCUAWRAPPER/tabid/358/language/en-US/Default.aspx</linkUri>
+              </externalLink>
+            </para>
+            <para>
+              OPC UA Wrapper is an OPC UA server that wraps the Classic OPC DA server (DCOM based) and creates the Address Space based on the XML model file obtained from CAS Address Space Model Designer
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>
+                  OPC UA Address Space Model Designer
+                </linkText>
+                <linkAlternateText>
+                  OPC UA Address Space Model Designer
+                </linkAlternateText>
+                <linkUri>http://www.commsvr.com/Products/UAModelDesigner/tabid/321/language/en-US/Default.aspx</linkUri>
+              </externalLink>
+            </para>
+            <para>
+              UA Model Designer is a powerful tool, which allows creating, displaying and editing OPC UA models compatible with the OPC Unified Architecture address space concept. The tool is created for developers and engineers, for professionals and beginners.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>
+                  DataPorter
+                </linkText>
+                <linkAlternateText>
+                  DataPorter
+                </linkAlternateText>
+                <linkUri>http://www.commsvr.com/Products/DataPorterDescription/tabid/157/language/en-US/Default.aspx</linkUri>
+              </externalLink>
+              </para><para>
+              DataPorter is an independent package of the CommServer software family. It is designed to integrate industrial applications - as an engine to port data between most popular standards.
+            </para>
+          </listItem>
+        </list>
+
+
+        
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

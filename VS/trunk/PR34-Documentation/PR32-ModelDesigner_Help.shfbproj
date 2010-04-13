@@ -1,4 +1,4 @@
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which
          assemblies to include from solution and project documentation
@@ -30,14 +30,15 @@
     <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
     <HelpFileFormat>Website</HelpFileFormat>
     <FrameworkVersion>2.0.50727</FrameworkVersion>
-    <Preliminary>True</Preliminary>
+    <Preliminary>False</Preliminary>
     <HelpTitle>OPC Unified Architecture - specification applicable to manufacturing software in application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems.</HelpTitle>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b title=&amp;quot%3bOPC Unified Architecture&amp;quot%3b  target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
-    <FooterText>This documentation is designed to be used with CommServer Software Family %28this tool is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware.aspx&amp;quot%3b title=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware.aspx&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
+    <FooterText>
+    </FooterText>
     <PresentationStyle>vs2005AdWords</PresentationStyle>
     <NamingMethod>MemberName</NamingMethod>
     <HelpFileVersion>1.0.0.6</HelpFileVersion>
@@ -49,15 +50,9 @@
           <targets files="reflection.xml" type="{@ProjectLinks}" />
         </component>
       </ComponentConfig>
-      <ComponentConfig id="Code Block Component" enabled="True">
-        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Base path for relative filenames in source attributes
-                 (optional) -->
-          <basePath value="{@ProjectFolder}" />
-          <!-- Connect to language filter (optional).  If omitted,
-                 language filtering is enabled by default. -->
-          <languageFilter value="true" />
-          <!-- Code colorizer options (required).
+<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Base path for relative filenames in source attributes
+                 (optional) --><basePath value="{@ProjectFolder}" /><!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. --><languageFilter value="true" /><!-- Code colorizer options (required).
                  Attributes:
                     Language syntax configuration file (required)
                     XSLT style file (required)
@@ -67,29 +62,16 @@
                     Enable outlining (optional)
                     Keep XML comment "see" tags within the code (optional)
                     Tab size override (optional, 0 = Use syntax file setting)
-                    Use language name as default title (optional) -->
-          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
-        </component>
-      </ComponentConfig>
-      <ComponentConfig id="Post-transform Component" enabled="True">
-        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Code colorizer files (required).
+                    Use language name as default title (optional) --><colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" /></component></ComponentConfig>
+<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) -->
-          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
-          <!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). -->
-          <outputPath value="Output\" />
-          <!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). --><outputPath value="Output\" /><!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. -->
-          <logoFile filename="\\Hq.cas.com.pl\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
-        </component>
-      </ComponentConfig>
-    </ComponentConfigurations>
+                 optional. --><logoFile filename="" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
     <DocumentationSources>
       <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.dll" />
       <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.XML" />
@@ -695,6 +677,9 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\About.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\Sponsors_CAS.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\Sponsors.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\Objects.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\Nodes\Types.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\NodesClasses.aml" />
