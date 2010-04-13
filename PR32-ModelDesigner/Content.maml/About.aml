@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="abc903f8-b430-4e1c-8a38-04eea170315b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Host">
+      <title>Host</title>
+      <content>
+        <para>
+          <legacyBold>OPC Unified Architecture</legacyBold> e-book is hosted by <legacyBold>CAS</legacyBold>.
+        </para>
+      </content>
+    </section>
+    <section address="Contact">
+      <title>Contact</title>
+      <content>
+        <para>
+          <legacyBold>CAS</legacyBold>
+        </para>
+        <para>al. Kościuszki 103/105</para>
+        <para>90-441 Łódź</para>
+        <para>POLAND</para>
+        <para>
+          <externalLink>
+            <linkText>
+              CAS Website: www.cas.eu
+            </linkText>
+            <linkAlternateText>
+              CAS Website: http://www.cas.eu
+            </linkAlternateText>
+            <linkUri>http://www.www.cas.eu</linkUri>
+          </externalLink>
+        </para>
+        <para>
+          <legacyBold>TEL/FAX</legacyBold>
+        </para>
+        <para>(48) (42) 686 25 47</para>
+        <para>(48) (42) 686 50 28</para>
+        <para>
+          <legacyBold>MAIL</legacyBold>
+        </para>
+        <para>techsupp@cas.eu</para>
+      </content>
+    </section>
+    <section address="LicenseAndDisclaimer">
+      <title>License and disclaimer</title>
+      <content>
+        <para>Copyright © 2010 CAS.</para>
+          <para>
+            This computer program and its documentation are protected by copyright law and international treaties. Unauthorized reproduction, use or distribution of this program and the documentation, or any portion thereof, will result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.
+          </para>
+          <para>
+            CAS is an OPC Foundation corporate member and uses deliverables provided by this organization.
+            <externalLink>
+              <linkText>
+                Visit OPC Foundation Website to find more information.
+              </linkText>
+              <linkAlternateText>
+                OPC Foundation Website at: http://www.opcfoundation.org
+              </linkAlternateText>
+              <linkUri>http://www.opcfoundation.org</linkUri>
+            </externalLink>.
+          </para>
+          <para>
+            The portions of this documentation copied from the <token>OPCUA</token> Specifications are a copyright of the OPC Foundation and used by permission. The intention of the author and the publisher is to make <token>OPCUA</token> more understandable. This documentation is not the specification and it is not meant to be any replacement for the specification.
+          </para>
+          <para>
+            The author has made every effort to include up-to-date and true information about <token>OPCUA</token>, but does not give any warranty. In case of any doubt and for more details please search the official <token>OPCUA</token> specifications available at
+            <externalLink>
+              <linkText>
+                OPC Foundation UA Website
+              </linkText>
+              <linkAlternateText>
+                OPC Foundation UA Website at: http://www.opcfoundation.org/UA/
+              </linkAlternateText>
+              <linkUri>http://www.opcfoundation.org/UA/</linkUri>
+            </externalLink>.
+          </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

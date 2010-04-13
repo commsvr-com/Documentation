@@ -39,6 +39,7 @@
   </Target>
   -->
   <ItemGroup>
+    <None Include="About.aml" />
     <None Include="AddressSpaceDesigner.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
@@ -148,6 +149,8 @@
     <None Include="ServiceSets\SessionServiceSet.aml" />
     <None Include="ServiceSets\SubscriptionServiceSet.aml" />
     <None Include="ServiceSets\ViewServiceSet.aml" />
+    <None Include="Sponsors.aml" />
+    <None Include="Sponsors_CAS.aml" />
     <None Include="SystemConcept\Peer2Peer.aml" />
     <None Include="SystemConcept\ProcessObserver.aml" />
     <None Include="SystemConcept\Servers.aml" />

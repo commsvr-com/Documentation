@@ -81,6 +81,7 @@
     <None Include="EnvironmentMonitoring.aml" />
     <None Include="examplesandtutorials.aml" />
     <None Include="GettingStarted.aml" />
+    <None Include="HowToTestOPCConnection.anl.aml" />
     <None Include="InstallingCommServer.aml" />
     <None Include="Interfaces.aml" />
     <None Include="Introduction.aml" />
@@ -89,11 +90,13 @@
     <None Include="ModbusRsConfiguration.aml" />
     <None Include="Multi-dataProviders.aml" />
     <None Include="Multi-pathsRedundancy.aml" />
+    <None Include="OPCConnectionTest.aml" />
     <None Include="OPCOverview.aml" />
     <None Include="OptimalTransferAlgorithm.aml" />
     <None Include="OptimizationOfCommunicationPathsUtilization.aml" />
     <None Include="PortsTab.aml" />
     <None Include="PostInstallationSetup.aml" />
+    <None Include="PreparingForTestComputersConfiguration.aml" />
     <None Include="Prerequisites.aml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,6 +122,7 @@
     <None Include="TagBits.aml" />
     <None Include="TagBlocks.aml" />
     <None Include="TagMappings.aml" />
+    <None Include="TestTargetInstructions.aml" />
     <None Include="TheoryOfOperation.aml" />
     <None Include="TracingInCommServer.aml" />
     <None Include="TrayIconCapability.aml" />
