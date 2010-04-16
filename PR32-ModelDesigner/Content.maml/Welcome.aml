@@ -3,7 +3,7 @@
   <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <summary>
       <para>
-      Welcome to <token>ASMD</token> - a key to open the <token>OPCUA</token><token>AS</token> world.
+      Welcome to the world of <token>OPCUA</token><token>AS</token>.
     </para>
     </summary>
     <introduction>
@@ -67,44 +67,6 @@
       a model for the real-time process we must apply the best practice in addition to syntax and semantic. In other words, to be
       able to write not only a simple email but also a popular novel we have to couple the learning with training processes.
     </para>
-      <para>
-      The main aim of the project <token>ASMD</token> is to bring together: learning, training and designing. To meet our objectives, we have just released:
-    </para>
-      <list class="bullet">
-        <listItem>
-          <para>
-          Documentation as a help collection containing linked topics recommended as a starting point to understand, design, develop and implement the Unified Architecture Address Space
-        </para>
-        </listItem>
-        <listItem>
-          <para>
-            <token>ASMD</token> that is a user-friendly tool supporting all aspects of the <token>OPCUA</token> <token>AS</token> model designing process
-        </para>
-        </listItem>
-        <listItem>
-          <para>
-          Documentation containing information about the <token>ASMD</token> tool
-        </para>
-        </listItem>
-      </list>
-      <para>
-      To make this tool as useful as possible, the definition of the created <token>AS</token> can be saved to the XML file
-      compatible with the schema used by the <token>SDK</token> released by the <token>OPCF</token>.
-    </para>
-      <para>
-      Using the proposed approach you can learn how to develop, design a model, save it as XML and explore the created Address Space in the Unified Architecture environment in a couple of hours.
-    </para>
-      <alert>
-        <para>
-        The tool and documentation are for free now. Enjoy the trip to the Unified Architecture Address Space.
-      </para>
-      </alert>
-      <para>
-      You can find more about terms of use at <externalLink><linkText>CommServer vortal</linkText><linkAlternateText>CommServer terms of use.</linkAlternateText><linkUri>http://www.commsvr.com</linkUri></externalLink>. We will keep free access to the documentation and the tool as long as long as official release of the specifications have been published. We will try to make free access forever but now we cannot guarantee.
-    </para>
-      <para>
-      The content of the book is available online so it can be continuously improved to follow the specification development progress. The user's application takes the advantage of automatic self-update functionality to follow the software development progress. This application can be installed and run with minimal user interaction. Both those features guarantee that your development environment is always up to date.
-    </para>
     </introduction>
     <relatedSections>
       <content>
@@ -114,18 +76,15 @@
           <link xlink:href="c55db7e8-3f15-4556-b8db-12251d39ad0a" />
         </para>
         <para>
-        Introduction to the <token>OPCUA</token><token>AS</token></para>
+        Introduction to the <token>OPCUA</token> <token>AS</token></para>
         <para>
           <link xlink:href="58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e" />
         </para>
         <para>
-        Introduction to the <token>OPCUA</token><token>IM</token></para>
+        Introduction to the <token>OPCUA</token> <token>IM</token></para>
         <para>
           <link xlink:href="3f999f23-4ad7-46a4-80dd-ab33729d5f49" />
         </para>
-        <para>
-          <token>ASMD</token> that is a user-friendly tool supporting all aspects of the <token>OPCUA</token><token>AS</token> model designing process.
-      </para>
       </content>
     </relatedSections>
     <relatedTopics>
