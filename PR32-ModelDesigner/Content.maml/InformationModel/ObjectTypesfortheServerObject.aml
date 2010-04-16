@@ -12,11 +12,6 @@
       <para>
       Subsections describe main components of the complex types.
     </para>
-      <alert>
-        <para>
-        Because the types description does not provide complete definition, to see details of the definitions use the <link xlink:href="f3357669-a041-405d-884b-19f5eafcabed"> UA Address Space Model Designer </link>  application and expand appropriate <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">model tree view node</link>.
-      </para>
-      </alert>
     </introduction>
     <section address="ServerType">
       <!--<link xlink:href="6f98c5eb-4449-4a75-aa31-39296b4c5d97#ServerType" >ServerType</link>-->
