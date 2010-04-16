@@ -106,11 +106,6 @@
         <linkAlternateText>An article and presentation on Real-Time Communication for Large Scale Distributed Control Systems presenting novel architecture and a case study proving that it could be a collaboration platform for several power plants.</linkAlternateText>
         <linkUri>http://www.commsvr.com/DownloadCenter/Publications/KN20070502MPostolManuscript.aspx</linkUri>
       </externalLink>
-      <externalLink>
-        <linkText>CommServer</linkText>
-        <linkAlternateText>CommServer homepage - industrial software for communication server</linkAlternateText>
-        <linkUri>http://www.commsvr.com/Products/CommServer.aspx</linkUri>
-      </externalLink>
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
