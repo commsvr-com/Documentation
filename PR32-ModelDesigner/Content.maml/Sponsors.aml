@@ -31,9 +31,17 @@
             <list class="bullet">
               <listItem>
                 <para>For Gold Sponsor:</para>
+                <mediaLink>
+                  <caption placement="after"></caption>
+                  <image placement="left" xlink:href = "86B2D446-DB90-4cb3-8BBE-E0A3E818B057"/>
+                </mediaLink>
               </listItem>
               <listItem>
                 <para>For Silver Sponsor:</para>
+                <mediaLink>
+                  <caption placement="after"></caption>
+                  <image placement="left" xlink:href = "FAFA7896-3A62-4ae8-8897-43B4F97BD154"/>
+                </mediaLink>
               </listItem>
             </list>
           </listItem>
@@ -47,11 +55,11 @@
           There are three sponsorship levels, defined by donation and in-return benefits of sponsorship.
         </para>
         <para>
-          Donations made to the Sponsorship Program must be coordinated with the OPC e-book Fundraising team (contact via email: 
+          Donations made to the Sponsorship Program must be coordinated with the OPC e-book Fundraising team (contact via
           <externalLink>
-            <linkText> mailto:sponsorship@cas.eu</linkText>
-            <linkAlternateText>mailto:sponsorship@cas.eu</linkAlternateText>
-            <linkUri address="mailto:sponsorship@cas.eu">mailto:sponsorship@cas.eu</linkUri>
+            <linkText> email</linkText>
+            <linkAlternateText>mailto:techsupp@cas.eu</linkAlternateText>
+            <linkUri>mailto:techsupp@cas.eu</linkUri>
           </externalLink> )
         </para>
       </content>
@@ -143,7 +151,7 @@
     </section> 
     <section address="Why_should_I_sponsor">
       <title>
-        Why should I sponsor the <token>Ebook</token>?
+        Why should I sponsor the e-book?
       </title>
       <content>
         <para>
@@ -207,13 +215,13 @@
           <externalLink>
             <linkText>e-mail</linkText>
             <linkAlternateText>email</linkAlternateText>
-            <linkUri address="email">mailto:sponsorship@cas.eu</linkUri>
+            <linkUri>mailto:techsupp@cas.eu</linkUri>
           </externalLink>
           to get more information about the Sponsorship Program. To become a sponsor coordinate the amount of the donation with the Public Relations and Fundraising team, fill the form available           
           <externalLink>
             <linkText> here</linkText>
-            <linkAlternateText>mailto:sponsorship@cas.eu</linkAlternateText>
-            <linkUri address="here">mailto:sponsorship@cas.eu</linkUri>
+            <linkAlternateText>mailto:techsupp@cas.eu</linkAlternateText>
+            <linkUri>mailto:techsupp@cas.eu</linkUri>
           </externalLink> 
           and send as an attachment (with one  logo image or two logo images – depending on the sponsorship type). All information will be kept in strictest confidence .
       </para>

@@ -1131,6 +1131,14 @@
       <AlternateText>UA Address Space Model Designer approach</AlternateText>
       <ImageId>ASMD_ASMDApproach</ImageId>
     </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\silver_sponsor.png">
+      <ImageId>FAFA7896-3A62-4ae8-8897-43B4F97BD154</ImageId>
+      <AlternateText>Silver Sponsor</AlternateText>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\gold_sponsor.png">
+      <AlternateText>Gold Sponsor</AlternateText>
+      <ImageId>86B2D446-DB90-4cb3-8BBE-E0A3E818B057</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
