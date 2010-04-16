@@ -116,6 +116,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\sponsors_logos\" />
     <Folder Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\UsingASMD\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\AddressSpaceDesigner\UsingASMD\" />
@@ -1138,6 +1139,10 @@
     <Image Include="PR32-ModelDesigner\Graphics\gold_sponsor.png">
       <AlternateText>Gold Sponsor</AlternateText>
       <ImageId>86B2D446-DB90-4cb3-8BBE-E0A3E818B057</ImageId>
+    </Image>
+    <Image Include="PR32-ModelDesigner\Graphics\sponsors_logos\cas_logo_big.jpg">
+      <AlternateText>CAS</AlternateText>
+      <ImageId>88abc54b-5ea4-40d7-a609-ae3949358b5e</ImageId>
     </Image>
     <Content Include="YouTube.html" />
     <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">

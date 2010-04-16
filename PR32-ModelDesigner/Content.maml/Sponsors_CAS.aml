@@ -6,6 +6,10 @@
     <section address="CASContactInformation">
       <title>Company contact information</title>
       <content>
+        <mediaLink>
+          <caption placement="after"></caption>
+          <image placement="left" xlink:href = "88abc54b-5ea4-40d7-a609-ae3949358b5e"/>
+        </mediaLink>
         <table>
           <row>
             <entry>
