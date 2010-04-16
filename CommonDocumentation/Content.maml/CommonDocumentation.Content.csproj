@@ -40,6 +40,7 @@
   -->
   <ItemGroup>
     <None Include="Contacts.aml" />
+    <None Include="FAQ.aml" />
     <None Include="Glossary.aml" />
     <None Include="GlossaryDataPorter.aml" />
     <None Include="License.aml" />
