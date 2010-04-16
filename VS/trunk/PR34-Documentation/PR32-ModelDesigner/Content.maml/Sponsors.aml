@@ -3,12 +3,222 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
     </introduction>
-    <section address="HowToBecomeASponsor">
-      <title>How to become a sponsor</title>
+    <section address="Sponsorship_Program">
+      <title>What is the OPC e-book Sponsorship Program ? </title>
       <content>
-        <para>Add one or more sections with content</para>
+        <para><token>Ebook</token> Sponsorship Program is an official, closest and most direct method for corporations or individuals to support the continues development of the <token>Ebook</token>. The intention of the author and the publisher is to make OPC Unified Architecture more understandable.</para>
+        <para>In return the <token>Ebook</token> will make an official acknowledgement and thanks for the donation via:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Sponsor’s logo (as appropriate according to sponsorship level),
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Sponsor’s logo and website link on Thanks page on the <token>Ebook</token> (as appropriate according to sponsorship level),
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              subtopic with links devoted to Sponsor on the <token>Ebook</token> (as appropriate according to sponsorship level),
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              an official <token>Ebook</token> logo button to place on the Sponsor's site:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>For Gold Sponsor:</para>
+              </listItem>
+              <listItem>
+                <para>For Silver Sponsor:</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              information about the e-book and the Sponsor’s logo during vendor-independent OPC events organized by the Sponsee.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          There are three sponsorship levels, defined by donation and in-return benefits of sponsorship.
+        </para>
+        <para>
+          Donations made to the Sponsorship Program must be coordinated with the OPC e-book Fundraising team (contact via email: 
+          <externalLink>
+            <linkText> mailto:sponsorship@cas.eu</linkText>
+            <linkAlternateText>mailto:sponsorship@cas.eu</linkAlternateText>
+            <linkUri address="mailto:sponsorship@cas.eu">mailto:sponsorship@cas.eu</linkUri>
+          </externalLink> )
+        </para>
       </content>
     </section>
+    <section address="SponsorshipLevels">
+      <title>
+        Sponsorship levels
+      </title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Gold Sponsor
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Your logo (max size: 300x150) on our  <token>Ebook</token> Thanks page and link in Gold Sponsors section
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Your logo (max size: 100x50) in every OPC e-book page header
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Subtopic containing Sponsor information with links and logo (max size: 300x150)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Sponsors name and logo in printed materials prepared for vendor-independent OPC events organized by the Sponsee
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  An official <token>Ebook</token> Top Sponsor logo button to place on the Sponsor's site
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Privilege to add materials to the e-book (including author’s personal and affiliation information), review materials and consult the e-book content.
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              Silver Sponsor
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Your logo (max size: 150x75) on our <token>Ebook</token> Thanks page and link in Silver Sponsors section
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Subtopic containing Sponsor information with links and logo (max size: 150x75)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Sponsors name (without logo) in printed materials prepared for vendor-independent OPC events organized by the Sponsee
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  An official <token>Ebook</token> Sponsor logo button to place on the Sponsor's site
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              Bronze Sponsor
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Link to the Sponsor’s website on our <token>Ebook</token> Thanks page in Bronze Sponsors section
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section> 
+    <section address="Why_should_I_sponsor">
+      <title>
+        Why should I sponsor the <token>Ebook</token>?
+      </title>
+      <content>
+        <para>
+          The <token>Ebook</token> Fundraising team provides the infrastructure for the <token>Ebook</token> project - the technical support, hosting, code repositories, bug tracking systems, etc. While all of the administrative effort is currently through volunteers, we need financial assistance to purchase bandwidth and keep our servers running.
+        </para>
+        <para>
+          By sponsoring the <token>Ebook</token> you show your support for our mission, which is the promotion, popularization and development of OPC Unified Architecture technology.
+        </para>
+        <para>
+          We want also to facilitate developers, integrators and end-users the access to clear and understandable information about OPC Unified Architecture.
+        </para>
+      </content>
+    </section>
+    <section address="Where_will_my_sponsorship_funds_go">
+      <title>Where will my sponsorship funds go ?</title>
+      <content>
+        <para>
+          The funds will go for:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Content development
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              E-book technical support and maintenance
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Servers and hardware
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Bandwidth costs
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Normal office expenses
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Marketing and PR
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="How_to_become_a_sponsor">
+      <title>
+        How to become a sponsor?
+      </title>
+      <content>
+        <para>
+          If you are interested in supporting the <token>Ebook</token>, please contact us via           
+          <externalLink>
+            <linkText>e-mail</linkText>
+            <linkAlternateText>email</linkAlternateText>
+            <linkUri address="email">mailto:sponsorship@cas.eu</linkUri>
+          </externalLink>
+          to get more information about the Sponsorship Program. To become a sponsor coordinate the amount of the donation with the Public Relations and Fundraising team, fill the form available           
+          <externalLink>
+            <linkText> here</linkText>
+            <linkAlternateText>mailto:sponsorship@cas.eu</linkAlternateText>
+            <linkUri address="here">mailto:sponsorship@cas.eu</linkUri>
+          </externalLink> 
+          and send as an attachment (with one  logo image or two logo images – depending on the sponsorship type). All information will be kept in strictest confidence .
+      </para>
+    </content>
+    </section> 
     <section address="Sponsors">
       <title>Sponsors</title>
       <content>
