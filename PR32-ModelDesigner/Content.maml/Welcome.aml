@@ -3,7 +3,7 @@
   <developerOrientationDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <summary>
       <para>
-      Welcome to the world of <token>OPCUA</token><token>AS</token>.
+      Welcome to the world of <token>OPCUA</token> <token>AS</token>.
     </para>
     </summary>
     <introduction>
