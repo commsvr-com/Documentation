@@ -217,29 +217,75 @@
             <linkAlternateText>email</linkAlternateText>
             <linkUri>mailto:techsupp@cas.eu</linkUri>
           </externalLink>
-          to get more information about the Sponsorship Program. To become a sponsor coordinate the amount of the donation with the Public Relations and Fundraising team, fill the form available           
-          <externalLink>
-            <linkText> here</linkText>
-            <linkAlternateText>Application form</linkAlternateText>
-            <linkUri>http://www.cas.eu/Projects/OPCUAebooksponsorship.aspx</linkUri>
-          </externalLink> 
-          and send as an attachment (with one  logo image or two logo images – depending on the sponsorship type). All information will be kept in strictest confidence .
-      </para>
+          to get more information about the Sponsorship Program. To become a sponsor coordinate the amount of the donation and the sponsorship level with the Public Relations and Fundraising team. In the next step you will be asked to fill the application form and send us  necessary information (depending on the sponsorship type). All information will be kept in strictest confidence.
+        </para>
     </content>
     </section> 
+    
     <section address="Sponsors">
-      <title>Sponsors</title>
+      <title>The OPC Unified Architecture e-book team would like to thank the following Sponsor(s)</title>
       <content>
-        <para>This e-book is sponsored by:</para>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <link xlink:href="1bf073fd-1de4-4558-8e90-76b4790258bb"></link>
-            </para>
-          </listItem>
-        </list>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>
+                  Gold Sponsors
+                </para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <mediaLink>
+                <caption placement="after"></caption>
+                <image placement="left" xlink:href = "88abc54b-5ea4-40d7-a609-ae3949358b5e"/>
+              </mediaLink>
+              <para>
+                <link xlink:href="1bf073fd-1de4-4558-8e90-76b4790258bb"></link>
+              </para>
+            </entry>
+          </row>
+        </table>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>
+                  Silver Sponsors
+                </para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry></entry>
+          </row>
+          <row>
+            <entry></entry>
+          </row>
+        </table>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>
+                  Bronze Sponsors
+                </para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>
+                
+              </para>
+            </entry>
+          </row>
+        </table>
+        
       </content>
     </section>
+    
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>
