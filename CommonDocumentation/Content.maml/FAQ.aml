@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="9CEA8CDD-33EF-4973-9EA9-FDF2003B01E0" revisionNumber="1">
+  <developerTroubleshootingDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>Frequently Asked Questions about CommServer Family products</para>
+    </introduction>
+
+    <section>
+      <title>
+        Q1. What are DataProviders?
+      </title>
+      <content>
+        <para>
+          DataProviders are responsible for managing communication networks and providing data from a particular resource (hardware or software). They can also monitor and manage resources which establish communication and information processing infrastructure; it is as important as access to real-time process data. In addition, to test any system we need to build a test environment. Using the DataProvider concept it is possible to provide access to all types of information in a standard way using an OPC interface.
+          DataProviders support three functions essential to achieving the goal:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Driver – access to process data for any client in a standard way
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Monitor -  diagnostics of the operating system and communication resources
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Simulator – simulation of  a real-time process
+            </para>
+          </listItem>
+        </list>
+        <para>
+          As CommServer components, DataProviders, are loaded dynamically as plug-ins on the server startup.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q2. Where can I find information about DataProviders ?
+      </title>
+      <content>
+        <para>
+          Information about DataProviders can be found on our website. We recommend to that you read about DataProviders in our
+          <externalLink>
+            <linkText>knowledge base</linkText>
+            <linkAlternateText>Knowledge base</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Howitworks/Technologie/Multidataproviders.aspx</linkUri>
+          </externalLink>
+        </para>
+        <para>
+          DataProviders are seen by CommServer as plug-ins. Plug-ins can be created in almost every managed programming language from the .NET platform, however C# is the recommended one.  You can read more about RDK (Rapid Development Kit) package
+          <externalLink>
+            <linkText>here</linkText>
+            <linkAlternateText>RDK</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Howitworks/Tools/DataProviderRDKSpecification.aspx</linkUri>
+          </externalLink>.
+        </para>
+        <para>
+          In addition, we recommend that you read a description of actions that need to be done to create your own DataProvider. You can fin the description
+          <externalLink>
+            <linkText>here</linkText>
+            <linkAlternateText>DataProvider</linkAlternateText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/Manuals/PR290203DataProviderRDKWalkthrough.aspx</linkUri>
+          </externalLink>.
+        </para>
+        <alert>
+          <para>
+            RDK package is available only for our partners. Information about partnership programs can be found
+            <externalLink>
+              <linkText>here</linkText>
+              <linkAlternateText>Partnership program</linkAlternateText>
+              <linkUri>http://www.commsvr.com/Partnershipprogram.aspx </linkUri>
+            </externalLink>.
+          </para>
+        </alert>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q3.  Does DataProvider RDK integrate with Visual Studio or is a separate application?
+      </title>
+      <content>
+        <para>
+          DataProvider RDK package is a source code and documentation, which form a basis for writing of DataProvider. DataProvider RDK does not integrate with Visual Studio because it is not necessary. The source code contains a sample Visual Studio solution, which implements a simple DataProvider. It has references to CommServer libraries (if RDK was installed before CommServer it may be necessary to correct references to the relevant CommServer libraries).
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q4. What language is used to write drivers for CommServer?
+      </title>
+      <content>
+        <para>
+          You can use any managed  language to write DataProvider, but sample code and technical support is available only for C# language.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q5. How does DataProvider connect to the CommServer? Is there any implemented interface or is there a parent class, which realizes communication with CommServer and in which only some functions are implemented?
+      </title>
+      <content>
+        <para>
+          It is recommended to write DataProvider so that it can realize simple functions only: read, write data block. Interface, using which the CommServer communicates with the DataProvider is very simple, e.g. CommServer asks for a block of data from the device and then the CommServer writes to the device etc. It is possible to write DataProvider so that it is some kind of buffer, which communicates with CommServer on the other hand the component realizes some advanced operations. However it is not the recommended way, because some advanced communication functions of the CommServer are lost.
+        </para>
+        <para>
+          For more information, we recommend that you read a description of actions that need to be done, to create your own DataProvider. You can find the description
+          <externalLink>
+            <linkText>here</linkText>
+            <linkAlternateText>Data provider</linkAlternateText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/Manuals/PR290203DataProviderRDKWalkthrough.aspx</linkUri>
+          </externalLink>.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q6. Can I configure CommServer using other applications or is it possible only by replacement of the configuration file ?
+      </title>
+      <content>
+        <para>
+          Currently CommServer builds its configuration from the configuration file. This configuration is read on the server startup. Therefore, now we can only modify the configuration file. This can be done either by the configuration editor (NetworkConfig) or by using another application (also your own). The configuration file is saved in XML format, so any changes are quite simple. We can provide our partners with a description of modifications and creation of this file.
+        </para>
+        <para>
+          Each DataProvider has a private area in the CommServer configuration, where private settings can be stored. DataProvider configuration interface of integrates with CommServer configuration editor (NetworkConfig) so you can configure DataProvider from the  NetworkConfig level. In order to achieve such functionality, DataProvider must of course be implemented in an appropriate way.
+        </para>
+        <para>
+          It is possible to create such a DataProvider, to make a number of configuration options available as OPC tags. This allows you to make some modifications to the configuration when CommServer is running.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q7. Is there available API, that allows direct access to CommServer data omitting OPC (Concerning both the configuration and data from the devices themselves)?
+      </title>
+      <content>
+        <para>
+          Currently there is no API, that gives direct access to the data read by CommServer outside the OPC interface. With an additional tool (DataPorter) it is possible to get access using WebServices (this solution has been implemented in several systems to communicate with GIS; to get more information about those solutions please read the
+          <externalLink>
+            <linkText>article about  OPC client for GIS</linkText>
+            <linkAlternateText>OPC for GIS</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Howitworks/OPCCasestudies/OPCClientforGIS.aspx</linkUri>
+          </externalLink> or the
+          <externalLink>
+            <linkText>article about  OPC to SOAP extension</linkText>
+            <linkAlternateText>OPC for GIS</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Howitworks/OPCCasestudies/OPC2SOAPExtension.aspx</linkUri>
+          </externalLink>
+        </para>
+        <para>
+          In addition, if there are problems with DCOM communication, access using new OPC UA standard is possible. In this case, the data is transported using WebServices or a binary protocol.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q8. Is there any possibility to derive from the CommServer class and implement my own functions, possibly extend its functionality by connecting to any events in which I can influence the application functioning?
+      </title>
+      <content>
+        <para>
+          CommServer is not a SDK package and “deriving from CommServer class” is impossible. CommServer is not one class, but the whole complicated program package. We do not provide details of the package construction. Usually CommServer has built-in appropriate functionality required by a customer.  The customer only needs to know how to find this functionality. In case of problems please send us information about the detailed needs and we will help in finding of the appropriate functionality or maybe we will extend CommServer functionality to satisfy your expectations.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q9. Does the DataProvider provide a functionality of  transferring the data to the OPC server without previous requesting for this data from the OPC server? In other words, is it possible that our device, without requesting for the data, can send data to the DataProvider and the DataProvider will forward them to the OPC server? If it is possible, how can the DataProvider do this?
+      </title>
+      <content>
+        <para>
+          It is possible to write DataProvider so that it is some kind of buffer (cache), to which data come on the one hand, and the CommServer reads the data on the other hand. This solution has a weak point: CommServer does not manage the transmission, so communication abilities cannot be used, but there is still the functionality in which CommServer can share, through OPC, data from the devices using the DataProvider buffer.
+        </para>
+        <para>
+          The source code added to the DP RDK package presents the implementation of such a buffer (cache). The only thing that needs to be implemented is the sniffing process, which can pick up a connection (e.g. using TCP protocol) and reads the data from the device and then writes it to the array. There can be two possible problems: when the sniffing process should be started and what should be done, when the communication with the device was stopped a long time ago.
+        </para>
+        <para>
+          As for starting of the sniffing process, a simple solution is to run the process at the time of loading the DataProvider to the memory, e.g. in static constructor. It seems, however, that the better solution is to write your own „CommunicationLayer”, which starts the sniffing process on using the „TConnectReqRes ConnectReq(IAddress remoteAddress)” function. This solution takes more software developer’s time to be implemented (more code must be written), but it also allows to perform CommServer connection in the communication layer at the time of connecting to the segment and easy (standard for CommServer) forwarding parameters to the DataProvider (e.g. port number on which the sniffing is being performed).
+        </para>
+        <para>
+          If communication with the device is missing, the CommServer must be informed accordingly and all OPC tags connected with this device shall have a BAD status. To that end, the sample buffer array built-in RDK DataProvider should be extended by additional data related to quality and the function “AL_ReadData_Result ApplicationLayerMaster.ReadData( IBlockDescription block, int station, out IReadValue data, byte retries )” should be implemented in such a way that AL_ReadData_Result.ALRes_DatTransferErrr is returned for the requests related to damaged device.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q10.How software (CommServer, DataPorter, OPC2SlaveGateway, etc.) is configured?
+      </title>
+      <content>
+        <para>
+          Software can be configured using the configuration editor (it is recommended) or any XML files editor.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q11.I have installed the CommServer with the default configuration (DefaultConfig.xml). All attempts start the CommServer Monitor have failed. I have also downloaded the OPC client of the XXX company, but the client informs me that there are no OPC servers installed on my computer. Where should I look for the problem?
+      </title>
+      <content>
+        <para>
+          Server is started up by OPC client and not NetworkConfig (this application is used only for the edition of the configuration – XML file editor) or CommServer Monitor (this software is used only for reading statistics from the communication server). Please check system logs for the entries associated with application installation – the following entries should be on the “application” bookmark in the  “Event viewer”: <legacyItalic>“New instance of CAS.OpcSvr.Da.NETServer.Server created”</legacyItalic> . It means that CommServer application is correctly installed on a particular computer.
+        </para>
+        <para>
+          Please check also if CommServer is installed in “Add/Remove programs”. Server does not startup itself so all attempts to start the CommServer Monitor will fail with a communication error when the server is not running.
+        </para>
+        <para>
+          The only way to start up the server is to connect to it with any OPC client.  Below you can see an entry from the log (Version and PublicKeyToken can change depending on the actual version number) that means that the service is running correctly:
+        </para>
+        <para>
+          <computerOutputInline>
+            Communication server started [in the method: .ctor]: product name:CAS.CommServer, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3
+          </computerOutputInline>
+        </para>
+        <para>
+          In addition, in the “Task manager”, we can check if the process “CASOpcDaWrapper” is running. If so, it means that the OPC server service is started up.  If we are confident that the server is started up using OPC client, but it nevertheless does not start, this may indicate that required components are missing. In this case, please check if the OPC Core Components and Microsoft Framework 2.0 are installed.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q12.Is it possible to create OPC interface for Firebird database?
+      </title>
+      <content>
+        <para>
+          Usually, CommServer family products have an access to Oracle database. We can create access to any data base at the request of our client.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q13. Are there free demonstration versions of CommServer software?
+      </title>
+      <content>
+        <para>
+          Yes, we deliver one of the following license types:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Academic License (APL)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Demonstration License (DEMO)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Special License (VAR)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Commercial License (End User)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Fixed-term License (TRIAL)
+            </para>
+          </listItem>
+        </list>
+        <para>
+          From above license types only the Commercial license is payable, the other are free. Details can be found in the relevant
+          <externalLink>
+            <linkText>license agreement </linkText>
+            <linkAlternateText>License agreement </linkAlternateText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/LicenseAgreement.aspx</linkUri>
+          </externalLink>
+          and on our website.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q14. During the work of the CommServer application the computer restarts.
+      </title>
+      <content>
+        <para>
+          The “WatchDog” mechanism has been implemented in the software. It secures the application against crashes. In case of the application crash, the program restarts the station. Popular causes of the crashes might be wrong configuration, the computer performance might be insufficient for the needs or there might be other causes.
+        </para>
+        <para>
+          A good example of the custom problem is the situation, when the software finds a loss of one of the communication interfaces. The loss of a built-in computer interface (i.e. COM port, NIC) is rather impossible (unless there is a malfunction of the controller), however the loss of communication with a remote RS port connected via USB or via a device like PortServer is a possible event.
+        </para>
+        <para>
+          More information about restart causes might be found in the “Event log”. A very common cause of the problems is a wrong configuration.
+        </para>
+        <para>
+          If the data in the “Event log” does not give an explanation of the problem, please check the configuration or contact the technical support.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q15. When I try to start up CommServer Monitor, an error message appears.
+      </title>
+      <content>
+        <para>
+          Server does not startup itself so when the server is not running, all attempts to start the CommServer Monitor will fail with a communication error.The only way to start up the server is to connect to it with any OPC client.
+        </para>
+        <para>
+          Below you can see an entry from the log (Version and PublicKeyToken can change depending on the actual version number) that means that the service is running correctly:
+        </para>
+        <para>
+          <computerOutputInline>
+            Communication server started [in the method: .ctor]: product name:CAS.CommServer, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8832ff1a67ea61a3
+          </computerOutputInline>
+        </para>
+        <para>
+          In addition, in the “Task manager”, we can check if the process “CASOpcDaWrapper” is running. If so, it means that the OPC server service is started up.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q16. What might be the cause, that I cannot see the DataProvider (created by me) in the NetworkConfig ?
+      </title>
+      <content>
+        <para>
+          CommServer (whether its configuration editor) finds all plug-ins in the directory in which the application is installed (in default it is: <legacyItalic>"%ProgramFiles%\CAS\CommServer"</legacyItalic>). That’s why it must be checked if the user (on whose account the application is running) has access rights to the folder (recommended access rights are Read/Write) and if he has rights to a particular DLL file with plug-in. It must be also checked if the file containing plug-in has an .dll extension and if the file name contains the word: <legacyItalic>“plugin”</legacyItalic> . If the access rights and the name are correct, you must analyze the log files, in which the application writes all information about activities made during loading of the DataProvider. The default file for the NetworkConfig is: <legacyItalic>"%ProgramFiles%\CAS\CommServer\NetworkConfig_CommServer.log"</legacyItalic>. In this file there should be entries with particular activities, which are made during opening of the DLL file with the DataProvider. For example the following lines show a successful adding of the CAS.CommSvrPlugin_DemoSimulator.dll plug-in:
+        </para>
+        <para>
+          <computerOutputInline>
+            "TraceNet_to_Serial";Verbose;148;"NetworkConfiguration: Trying to find helper interface in file: c:\Program Files\CAS\CommServer\CAS.CommSvrPlugin_DemoSimulator.dll";;;;;"2009-06-18T10:00:22.7080565Z";;
+            "TraceNet_to_Serial";Verbose;158;"NetworkConfiguration: Checking if CAS.Lib.CommonBus.ApplicationLayer.DemoSimulator.DS_DataProviderID implements the helper inter-face";;;;;"2009-06-18T10:00:22.7705585Z";;
+            "TraceNet_to_Serial";Verbose;162;"NetworkConfiguration: Trying to create helper.";;;;;"2009-06-18T10:00:22.8018095Z";;
+            "TraceNet_to_Serial";Verbose;158;"NetworkConfiguration: CAS.Lib.CommonBus.ApplicationLayer.DemoSimulator.DS_DataProviderID has been added to the plugins collection.";;;;;"2009-06-18T10:00:22.8799370Z";;
+            "TraceNet_to_Serial";Verbose;158;"NetworkConfiguration: Checking if CAS.Lib.CommonBus.ApplicationLayer.DemoSimulator.ApplicationLayerPluginHelper implements the helper interface";;;;;"2009-06-18T10:00:22.8799370Z";;
+            "TraceNet_to_Serial";Verbose;158;"NetworkConfiguration: CAS.Lib.CommonBus.ApplicationLayer.DemoSimulator.ApplicationLayerPluginHelper does not implement the helper interface";;;;;"2009-06-18T10:00:22.8799370Z";;
+          </computerOutputInline>
+        </para>
+        <para>
+          If those lines (for created DataProvider) do not appear, there shall be some visible information suggesting what kind of error appeared.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q17. Why, when I start the OPC Viewer, the library with my DataProvider is not loaded and it cannot be debugged? How can I debug my own DataProvider?
+      </title>
+      <content>
+        <para>
+          If we want to debug our own DataProvider, which is used in the running CommServer, the debugger must be connected to the CASOpcDaWrapper.exe process. It is important to understand, that the DataProvider is not loaded by the OPC Viewer (OPC client) , but by the process under which the CommServer is working (CASOpcDaWrapper.exe process). The similar situation is with CommServer Monitor (CAS.CommServerMonitor.exe process)- it also does not load any DataProviders, but only connects to the CommServer and reads diagnostic information from it.
+        </para>
+        <para>
+          The easiest way to debug the DataProvider is to use the XbusMeasure application (it is installed with CommServer and it is available from Start menu, where CommServer family applications are located). A process, which is started up with this application is CAS.DPDiagnostics.exe and debugger can connect to this process. In addition, it is very easy to configure a development environment (especially Visual Studio) to automatically start up debugging the CAS.DPDiagnostics.exe (XbusMeasure) process as an application connected with the DLL file containing the DataProvider. To do this, choose in Visual Studio: <legacyBold> Solution explorer -> DataProvider project -> click the right mouse button -> Properties -> Debug bookmark -> "Start external program" -> "c:\Program Files\CAS\CommServer\CAS.DPDiagnostics.exe"</legacyBold>.
+        </para>
+        <para>
+          XBusMeasure application gives a possibility of performing DataProvider tests and measurement of the exact response times, number of transmission errors etc. It is possible to configure Write or Read, from which address space, the data type, the addresses etc. After successful completion of the test in XbusMeasure it is recommended to start up DataProvider using CommServer.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q18. In XbusMeasure the read / write times using DataProvider are short, but after the CommServer has been started up,  frequent timeouts appear and reads / writes seem to take a long time.
+      </title>
+      <content>
+        <para>
+          The first step is to check if the DataProviders are the same for XbusMeasure and CommServer. If they are the same, you shall carry the following steps:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Check the frequencies for data blocks to be read. Maybe the data is read too seldom.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Check if the channel is not overloaded and check whether or not we want to transmit too much data using too narrow a channel.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Be careful during the redundant connections configuration, i.e. when the station has more than 2 interfaces. In this case it is possible that the interface inactive times will synchronize with segments (interfaces are connected to) inactivity times. This will result in a situation, that the interface will be always active, while its segment being inactive and reads /writes will be made seldom giving an impression that they last a long time. In this case it is recommended to set the interface inactivity times so that they are significantly larger than the scanning (switching) time of the segments.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q19.  What are the dependencies between particular Segment settings in NetworkConfig: PickupConnect, Sampling time, TimeIdleKeppConn ?
+      </title>
+      <content>
+        <para>
+          Below you can see the descriptions of the segment time parameters:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Keep connection time – time in milliseconds telling how long the segment should be in the data transmission mode (default value is 10000 ms).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              KeepConnect – this setting defines, if the segment should be connected when the connection time is over (there may be disconnection); another segment on another channel does not need the connection (default value is true).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              PickupConn – if the value is „true” – the CommServer knows, that none of the remote stations can establish connection (e.g. in case of alarm) (default value is “false”).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Sampling time – time in milliseconds defining the period of time between particular connections of the segments. Basing on this time CommServer builds a queue with priorities, which defines when and which segment belonging to the particular channel shall be connected to. CommServer is guided by the principle of best fit for the specified time, but simultaneously the selection algorithm prevents the situation in which a segment will never be connected.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              TimeIdleKeepConn – time in milliseconds defining how long the segment should be in the data transfer mode when there is no data transfer (default value is 100 ms). In most communication media the recommended value is small.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Time Reconnect – defines time in milliseconds, after which there might be the next attempt to connect to the segment if the previous attempt failed (default value is 60000).
+            </para>
+          </listItem>
+        </list>
+        <para>
+          If one segment in one channel is used for communication it is recommended that default segment settings are used. That way the segment always remains connected , except the situation when a failure occurs (e.g. current TCP connection is broken). In that case, reconnection takes place after 60 seconds.
+        </para>
+        <para>
+          If two segments in one channel are used for communication and there is connection between channels, the settings should be adjusted. In this case particular settings  are determined by specific requirements, however we can always apply to the following guidelines:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              In most cases it is recommended that the segment scan times should be lower (at least several times) than the inactivity times of the interfaces, which belong to the segment.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              In case of communication, when a remote station has two interfaces belonging to two different segments and there is needed the functionality in which this two interfaces quickly react to the malfunction of one of the paths, it seems reasonable to set the following times:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  For the segment: Keep connection time = 100 ms (the connection with the segment should be possibly short); Keep Connect = true (we keep the connection, if another segment does not need to connect) ; Pickup Conn = false (unused); Sampling Time = 1000 ms (we connect to the segments every 1 second to check if the data should be transmitted); TimeIdleKeepConn = 100 ms (when nothing needs to be transmitted using segment - we keep the connection only for 100 ms (short time)); Time Reconnect = 60000 ms (in case of the segment malfunction we connect after 60 seconds).
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  For the interface: InnactTime= 10000 ms (every interface is tested every 10 seconds and switching between interfaces takes place every 10 seconds); InnnactTimeAFailure = 30000 ms (if there is an interface malfunction, we wait at least 30 seconds before reconnection; depending on the malfunction type this time might be longer – counted rather in minutes than seconds (every malfunction will be fixed after a longer time).
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+        <para>
+          It is worth analyzing the default CommServer configuration described
+          <externalLink>
+            <linkText>here</linkText>
+            <linkAlternateText>Sample configuration</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Howitworks/Howto/CommServergettingstarted/CommServersampleconfiguration.aspx </linkUri>
+          </externalLink>.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q20.  I cannot read the data. According to CommServer Monitor I can see that the station configured by me changes its status from Active to Inactive every 2 seconds. What might be the cause ?
+      </title>
+      <content>
+        <para>
+          There may be many causes, the most common are:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              There are many errors in the communication channel (sometimes communication (read) is successful but sometimes it stops due to an error).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Data read from the remote device are configured incorrectly (e.g. one of the readable blocks concerns the resource (e.g. memory space), which does not exist in a given device). In this case, the first read (e.g. read of the registers) might be correct and the next one (e.g. read of the controllers entry) might fail. It means that the station becomes active (the first read is successful) and then the station becomes inactive (the second read fails and there is a disconnection).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              There also might be many other causes, but usually the best idea is to check the “Protocol” bookmark in the CommServer Monitor. For the protocol (DataProvider) chosen (from the list) we should have a possibility of  observing an increment of the „TXFrames” and „Rx data +” counters. Additionally, if the writes to the device are correct, the value of “Tx data+” shall increment. If other counters increment it means that there are communication errors. Type of the error will be shown by the counter which is being incremented.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          If none of the counters changes (e.g. all counters are equal 0), check whether the used segment is connected (bookmark "Segments") and whether the station interfaces (bookmark "Interface") are active. The CommServer logs should be also checked whether there are no event suggestive irregularities.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q21. When using the Modbus protocol, in the documentation of the device from which I want to read the data, I have given two addresses: register address with address above 40001 and an additional offset which is the address – 40001. Which address should be entered in the CommServer configuration ?
+      </title>
+      <content>
+        <para>
+          In the Modbus protocol the address is a position of the element in an address space (e.g. register, coil, etc.). This item is not necessarily consistent with the physical register address. The good example is a Modicon 984 controller where:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Register at reference 0 is register 40001 in the controller
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Coil at reference 1 is coil 1 in the controller
+            </para>
+          </listItem>
+        </list>
+        <para>
+          The above facts are the reason for “double addressing” and  physical address of the controller and possibly offset (e.g. for registers - decreased by the value of 40001) are often given in various documents.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q22. Sometimes, when using DataProvider for Excel, the CommServer stops reading the data and on the CommServer Monitor I can see an increasing number of incomplete frames. Is there a specific restriction on the number of cells, which might be transmitted in a CommServer readable frame?
+      </title>
+      <content>
+        <para>
+          Communication between DataProvider for Excel and Excel application is by means of DDE protocol. It is a text protocol in which data from an Excel sheet is converted into text chains and transmitted. If numbers or texts in the Excel sheet change it may happen that the maximum length of the text box is exceeded, which is recorded by CommServer as an incomplete frame. If that is the case, longer data blocks should be divided into few shorter blocks.
+        </para>
+        <alert>
+          <para>
+            Because the text length representing the contents of the cells (not the number of cells) is limiting, there is no limit for the number of cells in the query. However you must be careful not to read many cells with longer text content using one frame.
+          </para>
+        </alert>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q23. During registration on CommServer portal I did not get an email with a verification code.
+      </title>
+      <content>
+        <para>
+          If during registration you did not get an email with the verification code, please  contact the administrator of the CommServer portal.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q24. Is CommServer compatible with the Modbus protocol? Which transmission media are supported by the application (Serial Bus, Ethernet)?
+      </title>
+      <content>
+        <para>
+          There is now a component (plugin, DataProvider) for both Modbus Master RTU for serial links and for Modbus over TCP / IP or UDP / IP.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q25. Do the CommServer package components enable data exchange with the SQL database?
+      </title>
+      <content>
+        <para>
+          Generally, DataPorter in a standard edition realizes operations of “write to” and “read from” the database. A "reverse" carrying out is also possible, which obtains data from the database to share it using the OPC standard. The best solution is to obtain data using an OPC server and then write it to the data base using one of the server clients.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>
+        Q26. Is it possible to write data to the Oracle database using DataPorter ?
+      </title>
+      <content>
+        <para>
+          Writing the data to the Oracle database is possible using DataPorter in Professional edition. It is also possible to write / read data from any database using ODBC technology.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q27. I´m interested in downloading the OPC Data Access Automation Specification 2.0
+      </title>
+      <content>
+        <para>
+          The OPC Specification is available for download at the OPC Foundation site. You must be the OPC Foundation member to download the specification. In our
+          <externalLink>
+            <linkText>download center</linkText>
+            <linkAlternateText>Specifications</linkAlternateText>
+            <linkUri>http://www.commsvr.com/DownloadCenter/Specifications.aspx</linkUri>
+          </externalLink>
+          you may find links to OPC Foundation sites with specification you are interested in.
+        </para>
+      </content>
+    </section>
+
+
+    <section>
+      <title>
+        Q28. Problem with running CommServer software on machine with Windows Server 2003 SP2 (e.g. the OPC Server address space is empty)
+      </title>
+      <content>
+        <para>
+          This issue is caused by missing configuration file. CommServer OPC server executable (CASOpcDaWrapper.exe) is trying to open: <legacyItalic>“C:\Program Files\CAS\CommServer\CASOpcDaWrapper.config”</legacyItalic> but this file does not exist. The file that exists in the directory is: <legacyBold>“C:\Program Files\CAS\CommServer\CASOpcDaWrapper.exe.config”.</legacyBold>
+        </para>
+        <para>
+          Somehow the system is trying to find .config file (not .exe.config); this situation is different in comparison to the other Windows OS.
+        </para>
+        <para>
+          The solution is to create of a copy of the “CASOpcDaWrapper.exe.config” file and rename the copy “CASOpcDaWrapper.config”.
+        </para>
+        <para>
+          Before reconnection to OPC server make sure that CASOpcDaWrapper.exe is not appear on the task list (in Windows Task Manager). If it is exist please kill the process before reconnection.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q29. We have an OPC Server and we want to connect the Server with a DATABASE Microsoft SQL and ORACLE.
+      </title>
+      <content>
+        <para>
+          DataPorter seems to be a good solution for your problem. It is OPC client software and has ability to store or read data to/from database (via Oracle or MS SQL links or ODBC).
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q30. How can I download your demo versions?
+      </title>
+      <content>
+        <para>
+          You need to create an account in our portal.  All demo version of our products and documentation are available on the download page.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q31. I would like an OPC Client application for around 500 read only tags and 50 read/write tags.
+      </title>
+      <content>
+        <para>
+          There is no difference between read and write tags, all are read/write tags.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q32. I would like a price for one CommCerver to interface an SQL database to a OPC Client application.
+      </title>
+      <content>
+        <para>
+          I understand that you asked about DataPorter, an engine to port data between most popular standards. CommServer is an OPC Server. The price depends on the number of OPC tags you want to use. You can find the prices on our price list – it is available on CommServer website after free registration.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q33. Do you have a tool that will pull data from Rockwell PLC's to an IFS ERP system?
+      </title>
+      <content>
+        <para>
+          DataPorter is a good solution for you. It is an engine that ports data between most popular standards. DataPorter is very flexible and can be used to:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Transport or move data between OPC Servers,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Do some simple data processing (adding, subtracting, scaling, average calculation for selected tags),
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Publish data using Web Services,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Buffer data in first in first out (FIFO) queue protecting important data,
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Read or write from/to databases.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q34.Is there a commercial version of OPC UA Address Space Model Designer with all menu functions available?
+      </title>
+      <content>
+        <para>
+          For now, there is only one, free version which can be used for commercial and non-commercial purposes. We are currently working on new features of the application, which will be systematically added in future software releases.  If you are interested in some functions, please contact us.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q35. How can I get a student / academic license?
+      </title>
+      <content>
+        <para>
+          We conduct an Academic alliance – a special partnership program for universities, research, development and training centers. You can read about this program
+          <externalLink>
+            <linkText>here</linkText>
+            <linkAlternateText>Academic Alliance</linkAlternateText>
+            <linkUri>http://www.commsvr.com/Partnershipprogram/AcademicAlliance.aspx</linkUri>
+          </externalLink>.
+        </para>
+        <para>
+          An academic license can be used for educational purposes only and it is free.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        Q36. How can I get a hardware key, which is necessary to generate the license ?
+      </title>
+      <content>
+        <para>
+          To get the hardware key:
+        </para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Start Network Configuration (CommServer configuration editor)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Choose Help-> About Network Config in the menu
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Change tab to “License”
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Click on the line with installed license in the “Installed licenses for this product” box
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Send us information:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  User name: ???
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  User organization: ???
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  User email:	???
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Hardware key: ???
+                </para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+        <para>
+          In places of ??? please paste correct information.
+        </para>
+        <para>
+          It is important to use Hardware key from the End-User computer.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerTroubleshootingDocument>
+</topic>
