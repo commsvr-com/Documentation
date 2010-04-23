@@ -62,7 +62,7 @@
           </externalLink>.
         </para>
         <para>
-          In addition, we recommend that you read a description of actions that need to be done to create your own DataProvider. You can fin the description
+          In addition, we recommend that you read a description of actions that need to be done to create your own DataProvider. You can find the description
           <externalLink>
             <linkText>here</linkText>
             <linkAlternateText>DataProvider</linkAlternateText>
@@ -104,7 +104,6 @@
       </content>
     </section>
 
-
     <section>
       <title>
         Q5. How does DataProvider connect to the CommServer? Is there any implemented interface or is there a parent class, which realizes communication with CommServer and in which only some functions are implemented?
@@ -123,7 +122,6 @@
         </para>
       </content>
     </section>
-
 
     <section>
       <title>
@@ -177,7 +175,6 @@
       </content>
     </section>
 
-
     <section>
       <title>
         Q9. Does the DataProvider provide a functionality of  transferring the data to the OPC server without previous requesting for this data from the OPC server? In other words, is it possible that our device, without requesting for the data, can send data to the DataProvider and the DataProvider will forward them to the OPC server? If it is possible, how can the DataProvider do this?
@@ -193,7 +190,7 @@
           As for starting of the sniffing process, a simple solution is to run the process at the time of loading the DataProvider to the memory, e.g. in static constructor. It seems, however, that the better solution is to write your own „CommunicationLayer”, which starts the sniffing process on using the „TConnectReqRes ConnectReq(IAddress remoteAddress)” function. This solution takes more software developer’s time to be implemented (more code must be written), but it also allows to perform CommServer connection in the communication layer at the time of connecting to the segment and easy (standard for CommServer) forwarding parameters to the DataProvider (e.g. port number on which the sniffing is being performed).
         </para>
         <para>
-          If communication with the device is missing, the CommServer must be informed accordingly and all OPC tags connected with this device shall have a BAD status. To that end, the sample buffer array built-in RDK DataProvider should be extended by additional data related to quality and the function “AL_ReadData_Result ApplicationLayerMaster.ReadData( IBlockDescription block, int station, out IReadValue data, byte retries )” should be implemented in such a way that AL_ReadData_Result.ALRes_DatTransferErrr is returned for the requests related to damaged device.
+          If communication with the device is missing, the CommServer must be informed accordingly and all OPC tags connected with this device shall have a BAD status. To that end, the sample buffer array built-in RDK DataProvider should be extended by additional data related to quality and the function <legacyItalic>“AL_ReadData_Result ApplicationLayerMaster.ReadData( IBlockDescription block, int station, out IReadValue data, byte retries )”</legacyItalic> should be implemented in such a way that AL_ReadData_Result.ALRes_DatTransferErrr is returned for the requests related to damaged device.
         </para>
       </content>
     </section>
@@ -281,7 +278,13 @@
           </listItem>
         </list>
         <para>
-          From above license types only the Commercial license is payable, the other are free. Details can be found in the relevant
+          From above 
+          <externalLink>
+          <linkText>license types</linkText>
+          <linkAlternateText>License types on CommSvr</linkAlternateText>
+          <linkUri>http://www.commsvr.com/Products/Licenses.aspx</linkUri>
+        </externalLink>
+          only the Commercial license is payable, the other are free. Details can be found in the relevant
           <externalLink>
             <linkText>license agreement </linkText>
             <linkAlternateText>License agreement </linkAlternateText>
@@ -358,7 +361,6 @@
       </content>
     </section>
 
-
     <section>
       <title>
         Q17. Why, when I start the OPC Viewer, the library with my DataProvider is not loaded and it cannot be debugged? How can I debug my own DataProvider?
@@ -397,11 +399,16 @@
           </listItem>
         </list>
         <para>
-          Be careful during the redundant connections configuration, i.e. when the station has more than 2 interfaces. In this case it is possible that the interface inactive times will synchronize with segments (interfaces are connected to) inactivity times. This will result in a situation, that the interface will be always active, while its segment being inactive and reads /writes will be made seldom giving an impression that they last a long time. In this case it is recommended to set the interface inactivity times so that they are significantly larger than the scanning (switching) time of the segments.
-        </para>
+          Be careful during the 
+          <externalLink>
+          <linkText>redundant connections</linkText>
+          <linkAlternateText>Redundancy</linkAlternateText>
+          <linkUri>http://www.commsvr.com/Howitworks/Technologie/Redundancy.aspx</linkUri>
+        </externalLink>
+        configuration, i.e. when the station has more than 2 interfaces. In this case it is possible that the interface inactive times will synchronize with segments (interfaces are connected to) inactivity times. This will result in a situation, that the interface will be always active, while its segment being inactive and reads /writes will be made seldom giving an impression that they last a long time. In this case it is recommended to set the interface inactivity times so that they are significantly larger than the scanning (switching) time of the segments.
+      </para>
       </content>
     </section>
-
 
     <section>
       <title>
@@ -414,32 +421,32 @@
         <list class="bullet">
           <listItem>
             <para>
-              Keep connection time – time in milliseconds telling how long the segment should be in the data transmission mode (default value is 10000 ms).
+              <legacyBold>Keep connection time</legacyBold> – time in milliseconds telling how long the segment should be in the data transmission mode (default value is 10000 ms).
             </para>
           </listItem>
           <listItem>
             <para>
-              KeepConnect – this setting defines, if the segment should be connected when the connection time is over (there may be disconnection); another segment on another channel does not need the connection (default value is true).
+              <legacyBold>KeepConnect</legacyBold> – this setting defines, if the segment should be connected when the connection time is over (there may be disconnection); another segment on another channel does not need the connection (default value is true).
             </para>
           </listItem>
           <listItem>
             <para>
-              PickupConn – if the value is „true” – the CommServer knows, that none of the remote stations can establish connection (e.g. in case of alarm) (default value is “false”).
+              <legacyBold>PickupConn</legacyBold> – if the value is „true” – the CommServer knows, that none of the remote stations can establish connection (e.g. in case of alarm) (default value is “false”).
             </para>
           </listItem>
           <listItem>
             <para>
-              Sampling time – time in milliseconds defining the period of time between particular connections of the segments. Basing on this time CommServer builds a queue with priorities, which defines when and which segment belonging to the particular channel shall be connected to. CommServer is guided by the principle of best fit for the specified time, but simultaneously the selection algorithm prevents the situation in which a segment will never be connected.
+              <legacyBold>Sampling time</legacyBold> – time in milliseconds defining the period of time between particular connections of the segments. Basing on this time CommServer builds a queue with priorities, which defines when and which segment belonging to the particular channel shall be connected to. CommServer is guided by the principle of best fit for the specified time, but simultaneously the selection algorithm prevents the situation in which a segment will never be connected.
             </para>
           </listItem>
           <listItem>
             <para>
-              TimeIdleKeepConn – time in milliseconds defining how long the segment should be in the data transfer mode when there is no data transfer (default value is 100 ms). In most communication media the recommended value is small.
+              <legacyBold>TimeIdleKeepConn</legacyBold> – time in milliseconds defining how long the segment should be in the data transfer mode when there is no data transfer (default value is 100 ms). In most communication media the recommended value is small.
             </para>
           </listItem>
           <listItem>
             <para>
-              Time Reconnect – defines time in milliseconds, after which there might be the next attempt to connect to the segment if the previous attempt failed (default value is 60000).
+              <legacyBold>Time Reconnect</legacyBold> – defines time in milliseconds, after which there might be the next attempt to connect to the segment if the previous attempt failed (default value is 60000).
             </para>
           </listItem>
         </list>
@@ -515,7 +522,6 @@
       </content>
     </section>
 
-
     <section>
       <title>
         Q21. When using the Modbus protocol, in the documentation of the device from which I want to read the data, I have given two addresses: register address with address above 40001 and an additional offset which is the address – 40001. Which address should be entered in the CommServer configuration ?
@@ -548,7 +554,13 @@
       </title>
       <content>
         <para>
-          Communication between DataProvider for Excel and Excel application is by means of DDE protocol. It is a text protocol in which data from an Excel sheet is converted into text chains and transmitted. If numbers or texts in the Excel sheet change it may happen that the maximum length of the text box is exceeded, which is recorded by CommServer as an incomplete frame. If that is the case, longer data blocks should be divided into few shorter blocks.
+          Communication between 
+          <externalLink>
+          <linkText>DataProvider for Excel</linkText>
+          <linkAlternateText>DataProvider for Excel</linkAlternateText>
+          <linkUri>http://www.commsvr.com/Products/OPCServer/ExcelOPCServer.aspx</linkUri>
+        </externalLink>
+           and Excel application is by means of DDE protocol. It is a text protocol in which data from an Excel sheet is converted into text chains and transmitted. If numbers or texts in the Excel sheet change it may happen that the maximum length of the text box is exceeded, which is recorded by CommServer as an incomplete frame. If that is the case, longer data blocks should be divided into few shorter blocks.
         </para>
         <alert>
           <para>
@@ -557,7 +569,6 @@
         </alert>
       </content>
     </section>
-
 
     <section>
       <title>
@@ -576,11 +587,21 @@
       </title>
       <content>
         <para>
-          There is now a component (plugin, DataProvider) for both Modbus Master RTU for serial links and for Modbus over TCP / IP or UDP / IP.
+          There is now a component (plugin, DataProvider) for both 
+          <externalLink>
+          <linkText>Modbus Master RTU</linkText>
+          <linkAlternateText>Modbus Master RTU</linkAlternateText>
+          <linkUri>http://www.commsvr.com/Products/OPCServer/SerwerOPCModbusRS.aspx</linkUri>
+        </externalLink>
+          for serial links and for 
+          <externalLink>
+          <linkText>Modbus over TCP / IP or UDP / IP</linkText>
+          <linkAlternateText>Modbus over IP</linkAlternateText>
+          <linkUri>http://www.commsvr.com/Products/OPCServer/SerwerOPCModbusIP.aspx</linkUri>
+        </externalLink>.
         </para>
       </content>
     </section>
-
 
     <section>
       <title>
@@ -604,7 +625,6 @@
       </content>
     </section>
 
-
     <section>
       <title>
         Q27. I´m interested in downloading the OPC Data Access Automation Specification 2.0
@@ -621,7 +641,6 @@
         </para>
       </content>
     </section>
-
 
     <section>
       <title>
@@ -642,6 +661,7 @@
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q29. We have an OPC Server and we want to connect the Server with a DATABASE Microsoft SQL and ORACLE.
@@ -652,6 +672,7 @@
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q30. How can I download your demo versions?
@@ -662,6 +683,7 @@
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q31. I would like an OPC Client application for around 500 read only tags and 50 read/write tags.
@@ -672,16 +694,24 @@
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q32. I would like a price for one CommCerver to interface an SQL database to a OPC Client application.
       </title>
       <content>
         <para>
-          I understand that you asked about DataPorter, an engine to port data between most popular standards. CommServer is an OPC Server. The price depends on the number of OPC tags you want to use. You can find the prices on our price list – it is available on CommServer website after free registration.
+          I understand that you asked about DataPorter, an engine to port data between most popular standards. CommServer is an OPC Server. The price depends on the number of OPC tags you want to use. You can find the prices on our 
+          <externalLink>
+          <linkText>price list</linkText>
+          <linkAlternateText>Price list</linkAlternateText>
+          <linkUri>http://www.commsvr.com/Products/Pricelist.aspx</linkUri>
+        </externalLink>
+          – it is available on CommServer website after free registration.
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q33. Do you have a tool that will pull data from Rockwell PLC's to an IFS ERP system?
@@ -719,9 +749,10 @@
         </list>
       </content>
     </section>
+    
     <section>
       <title>
-        Q34.Is there a commercial version of OPC UA Address Space Model Designer with all menu functions available?
+        Q34. Is there a commercial version of OPC UA Address Space Model Designer with all menu functions available?
       </title>
       <content>
         <para>
@@ -729,6 +760,7 @@
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q35. How can I get a student / academic license?
@@ -747,6 +779,7 @@
         </para>
       </content>
     </section>
+    
     <section>
       <title>
         Q36. How can I get a hardware key, which is necessary to generate the license ?
@@ -812,7 +845,92 @@
         </para>
       </content>
     </section>
+    
     <relatedTopics>
+      <externalLink>
+        <linkText>Knowledge base</linkText>
+        <linkAlternateText>Knowledge base</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Technologie/Multidataproviders.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Data Provider RDK</linkText>
+        <linkAlternateText>Data Provider RDK</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Tools/DataProviderRDKSpecification.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Data Provider Walkthrough</linkText>
+        <linkAlternateText>DataProvider Walkthrough</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Manuals/PR290203DataProviderRDKWalkthrough.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Article about  OPC client for GIS</linkText>
+        <linkAlternateText>OPC for GIS</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/OPCCasestudies/OPCClientforGIS.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Article about  OPC to SOAP extension</linkText>
+        <linkAlternateText>OPC for GIS</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/OPCCasestudies/OPC2SOAPExtension.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>CommServer license types</linkText>
+        <linkAlternateText>License types on CommSvr</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/Licenses.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>CommServer license agreement </linkText>
+        <linkAlternateText>License agreement </linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/LicenseAgreement.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>CommServer sample configuration</linkText>
+        <linkAlternateText>Sample configuration</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Howitworks/Howto/CommServergettingstarted/CommServersampleconfiguration.aspx </linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Data Provider for Excel</linkText>
+        <linkAlternateText>DataProvider for Excel</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/OPCServer/ExcelOPCServer.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Modbus Master RTU</linkText>
+        <linkAlternateText>Modbus Master RTU</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/OPCServer/SerwerOPCModbusRS.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Modbus over TCP / IP or UDP / IP</linkText>
+        <linkAlternateText>Modbus over IP</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/OPCServer/SerwerOPCModbusIP.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>OPC specifications (for OPC Foundation registered members)</linkText>
+        <linkAlternateText>Specifications</linkAlternateText>
+        <linkUri>http://www.commsvr.com/DownloadCenter/Specifications.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Price list</linkText>
+        <linkAlternateText>Price list</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Products/Pricelist.aspx</linkUri>
+      </externalLink>
+
+      <externalLink>
+        <linkText>Academic Alliance</linkText>
+        <linkAlternateText>Academic Alliance</linkAlternateText>
+        <linkUri>http://www.commsvr.com/Partnershipprogram/AcademicAlliance.aspx</linkUri>
+      </externalLink>
+
     </relatedTopics>
   </developerTroubleshootingDocument>
 </topic>
