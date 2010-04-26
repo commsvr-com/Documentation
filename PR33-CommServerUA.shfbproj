@@ -1,0 +1,116 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8d5c1479-ff24-4bf1-8c7f-9d21d9d4884f}</ProjectGuid>
+    <SHFBSchemaVersion>1.8.0.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>Temp\CommServerUA\Help\</OutputPath>
+    <HtmlHelpName>CommServer UA</HtmlHelpName>
+    <BuildLogFile>Temp\CommServerUA\CommServerUA.log</BuildLogFile>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <ComponentConfigurations>
+      <ComponentConfig id="Cached MSDN URL References" enabled="True" xmlns="">
+        <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
+<cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
+<targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@SDKLinks}" />
+<targets files="reflection.xml" type="{@ProjectLinks}" />
+</component>
+      </ComponentConfig>
+<ComponentConfig id="Code Block Component" enabled="True" xmlns=""><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+<!-- Base path for relative filenames in source attributes
+                 (optional) -->
+<basePath value="{@ProjectFolder}" />
+<!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. -->
+<languageFilter value="true" />
+<!-- Allow missing source files (Optional).  If omitted,
+                 it will generate errors if referenced source files
+                 are missing. -->
+<allowMissingSource value="false" />
+<!-- Remove region markers from imported code blocks.  If omitted,
+                 region markers in imported code blocks are left alone. -->
+<removeRegionMarkers value="false" />
+<!-- Code colorizer options (required).
+                 Attributes:
+                    Language syntax configuration file (required)
+                    XSLT style file (required)
+                    "Copy" image file URL (required)
+                    Default language (optional)
+                    Enable line numbering (optional)
+                    Enable outlining (optional)
+                    Keep XML comment "see" tags within the code (optional)
+                    Tab size override (optional, 0 = Use syntax file setting)
+                    Use language name as default title (optional) -->
+<colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+</component></ComponentConfig>
+<ComponentConfig id="Post-transform Component" enabled="True" xmlns=""><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+<!-- Code colorizer files (required).
+                 Attributes:
+                    Stylesheet file (required)
+                    Script file (required)
+                    "Copy" image file (required) -->
+<colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+<!-- Base output path for the files (required).  This should match
+                 the parent folder of the output path of the HTML files (see
+                 SaveComponent). -->
+<outputPath value="Output\" />
+<!-- Logo image file (optional).  Filename is required. The height,
+                 width, altText, placement, and alignment attributes are
+                 optional. -->
+<logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" />
+</component></ComponentConfig></ComponentConfigurations>
+    <PlugInConfigurations>
+      <PlugInConfig id="Additional Content Only" enabled="True">
+        <configuration />
+      </PlugInConfig>
+<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
+    <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
+    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
+    <FooterText>This documentation is designed to be used with CAS CommServer %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx&amp;quot%3b title=&amp;quot%3bCommServer -multiprotocol, multichannel, redundant communication server – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HelpTitle>CommServer UA - multiprotocol, multichannel, redundant communication server</HelpTitle>
+    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <SdkLinkType>None</SdkLinkType>
+    <WorkingPath>Temp\CommServerUA\Working\</WorkingPath>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="PR33-CommServerUA\Content.maml\" />
+    <Folder Include="PR33-CommServerUA\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\" />
+    <Folder Include="PR32-ModelDesigner\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\CommServerUA\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\Configuration.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\WelcomeToCommServerUA.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Configuration\HowToConfigureCSUA.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\Installing.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\GettingStarted.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="PR33-CommServerUA_ContentLayout.content" />
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

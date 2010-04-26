@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{abf1535f-96c4-45c9-b1fe-57688a69dd26}</ProjectGuid>
+    <ProjectGuid>{eacd46f6-1fca-4898-be08-ba998dec020b}</ProjectGuid>
     <SHFBSchemaVersion>1.8.0.0</SHFBSchemaVersion>
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
          Studio adds them anyway -->
@@ -14,51 +14,32 @@
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <OutputPath>Temp\UAModelDesigner\Help\</OutputPath>
-    <HtmlHelpName>OPC Unified Architecture</HtmlHelpName>
-    <ProjectSummary>
-    </ProjectSummary>
-    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
-    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Internals, Protected, SealedProtected</VisibleItems>
-    <HtmlHelp1xCompilerPath>
-    </HtmlHelp1xCompilerPath>
-    <HtmlHelp2xCompilerPath>
-    </HtmlHelp2xCompilerPath>
-    <SandcastlePath>
-    </SandcastlePath>
-    <WorkingPath>Temp\UAModelDesigner\Working\</WorkingPath>
-    <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
-    <HelpFileFormat>Website</HelpFileFormat>
-    <FrameworkVersion>2.0.50727</FrameworkVersion>
-    <Preliminary>False</Preliminary>
-    <HelpTitle>OPC Unified Architecture - specification applicable to manufacturing software in application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems.</HelpTitle>
-    <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
-    <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
-    <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
-    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b title=&amp;quot%3bOPC Unified Architecture&amp;quot%3b  target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
-    <FooterText>
-    </FooterText>
-    <PresentationStyle>vs2005UA</PresentationStyle>
-    <NamingMethod>MemberName</NamingMethod>
-    <HelpFileVersion>1.0.0.6</HelpFileVersion>
+    <OutputPath>Temp\Help\Help\</OutputPath>
+    <HtmlHelpName>CommServer</HtmlHelpName>
+    <BuildLogFile>Temp\Help\Help.log</BuildLogFile>
     <ComponentConfigurations>
-      <ComponentConfig id="Cached MSDN URL References" enabled="True">
-        <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <cache filename="{@AppDataFolder}Cache\MsdnUrl.cache" />
-          <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@SDKLinks}" />
-          <targets files="reflection.xml" type="{@ProjectLinks}" />
-        </component>
+      <ComponentConfig id="Cached MSDN URL References" enabled="True" xmlns="">
+        <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
+<cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
+<targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@SDKLinks}" />
+<targets files="reflection.xml" type="{@ProjectLinks}" />
+</component>
       </ComponentConfig>
-      <ComponentConfig id="Code Block Component" enabled="True">
-        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Base path for relative filenames in source attributes
+<ComponentConfig id="Code Block Component" enabled="True" xmlns=""><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+<!-- Base path for relative filenames in source attributes
                  (optional) -->
-          <basePath value="{@ProjectFolder}" />
-          <!-- Connect to language filter (optional).  If omitted,
+<basePath value="{@ProjectFolder}" />
+<!-- Connect to language filter (optional).  If omitted,
                  language filtering is enabled by default. -->
-          <languageFilter value="true" />
-          <!-- Code colorizer options (required).
+<languageFilter value="true" />
+<!-- Allow missing source files (Optional).  If omitted,
+                 it will generate errors if referenced source files
+                 are missing. -->
+<allowMissingSource value="false" />
+<!-- Remove region markers from imported code blocks.  If omitted,
+                 region markers in imported code blocks are left alone. -->
+<removeRegionMarkers value="false" />
+<!-- Code colorizer options (required).
                  Attributes:
                     Language syntax configuration file (required)
                     XSLT style file (required)
@@ -69,45 +50,41 @@
                     Keep XML comment "see" tags within the code (optional)
                     Tab size override (optional, 0 = Use syntax file setting)
                     Use language name as default title (optional) -->
-          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
-        </component>
-      </ComponentConfig>
-      <ComponentConfig id="Post-transform Component" enabled="True">
-        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Code colorizer files (required).
+<colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+</component></ComponentConfig>
+<ComponentConfig id="Post-transform Component" enabled="True" xmlns=""><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+<!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
                     "Copy" image file (required) -->
-          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
-          <!-- Base output path for the files (required).  This should match
+<colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+<!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
                  SaveComponent). -->
-          <outputPath value="Output\" />
-          <!-- Logo image file (optional).  Filename is required. The height,
+<outputPath value="Output\" />
+<!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
                  optional. -->
-          <logoFile filename="" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
-        </component>
-      </ComponentConfig>
-    </ComponentConfigurations>
-    <DocumentationSources>
-      <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.dll" />
-      <DocumentationSource sourceFile="PR32-ModelDesigner\Content.dll\ModelForHelp.XML" />
-    </DocumentationSources>
-    <NamespaceSummaries>
-      <NamespaceSummaryItem name="(global)" isDocumented="False" xmlns="" />
-      <NamespaceSummaryItem name="CAS.UA.Model.Designer.Nodes" isDocumented="True" xmlns="">This namespace contains nodes used in the CAS UA Address Space Model Designer.</NamespaceSummaryItem>
-    </NamespaceSummaries>
-    <CppCommentsFixup>False</CppCommentsFixup>
+<logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" />
+</component></ComponentConfig></ComponentConfigurations>
+    <HelpFileFormat>Website</HelpFileFormat>
     <PlugInConfigurations>
-      <PlugInConfig id="Additional Content Only" enabled="True">
+      <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
         <configuration />
       </PlugInConfig>
-      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
-        <configuration />
-      </PlugInConfig>
-    </PlugInConfigurations>
+<PlugInConfig id="HelpTopicsGenerator" enabled="True" xmlns=""><configuration /></PlugInConfig></PlugInConfigurations>
+    <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
+    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
+    <FooterText>This documentation is designed to be used with CAS CommServer %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx&amp;quot%3b title=&amp;quot%3bCommServer -multiprotocol, multichannel, redundant communication server – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HelpTitle>CommServer - multiprotocol, multichannel, redundant communication server</HelpTitle>
+    <NamingMethod>MemberName</NamingMethod>
+    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <SdkLinkType>None</SdkLinkType>
+    <WorkingPath>Temp\Help\Working\</WorkingPath>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -1219,6 +1196,522 @@
       <AlternateText>OPC Connect</AlternateText>
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR21-CommServer\Graphics\commserver_network_small.jpg">
+      <AlternateText>CommServer network</AlternateText>
+      <ImageId>4daebae0-4e1b-463b-bc74-71c98e9f9022</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\redundancy_of_ddevices.jpg">
+      <ImageId>99fe8795-4071-4ed1-a818-85405500f091</ImageId>
+      <AlternateText>Redundancy at the level of communication server</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\redundancy_of_data_transmission_paths.jpg">
+      <AlternateText>Redundancy of data transmission paths</AlternateText>
+      <ImageId>1ea40656-b5fe-44c9-905b-50877c061c07</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\redundancy_of_data_transmission_paths_twostation.jpg">
+      <AlternateText>Redundant paths and plant-floor devices redundancy</AlternateText>
+      <ImageId>ed32192f-9770-44eb-a087-1d80ec9d717f</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\redundancy_of_data_transmission_paths_and_devices.jpg">
+      <AlternateText>Redundancy of data transmission paths and devices : omitting a node</AlternateText>
+      <ImageId>8e7ddf08-512f-47af-86b5-b918d21bd362</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Data_transfer_management.jpg">
+      <AlternateText>Data transfer management</AlternateText>
+      <ImageId>1c201e96-3683-4b7f-9a01-b3ed2852cce2</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\solicited_vs_unsolicited.jpg">
+      <AlternateText>Solicited (left side) versus unsolicited (right side) mode</AlternateText>
+      <ImageId>7dc2b330-964c-4cb9-9c15-767c158a2237</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Adaptive_Sampling_algorithm_valve_states.jpg">
+      <AlternateText>Diagram of valve states</AlternateText>
+      <ImageId>b74f234c-356a-4fb6-a537-a7921f228cf2</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Adaptive_Sampling_algorithm.jpg">
+      <AlternateText>Adaptive  sampling algorithm</AlternateText>
+      <ImageId>bef35982-f690-41e9-90c2-c5f0ee11345d</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Multi_channell.jpg">
+      <AlternateText>Multi-channel solution</AlternateText>
+      <ImageId>2858504f-d651-47ac-b50b-79d58ebf979a</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DP-Ilustration.png">
+      <AlternateText>Multi-data provider architecture</AlternateText>
+      <ImageId>5715a0a7-9962-447a-8d0d-fa94a05c9306</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\setup_welcome_dialog_box.jpg">
+      <AlternateText>Setup Welcome Dialog Box</AlternateText>
+      <ImageId>7508f5ce-3a30-46d5-9115-109dcb8d7ca9</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\user_information_dialog_box.jpg">
+      <AlternateText>User Information Dialog Box</AlternateText>
+      <ImageId>7846481b-f627-4e35-8873-a0d9a624c271</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\installation_dialog_box.jpg">
+      <AlternateText>Installation Dialog Box</AlternateText>
+      <ImageId>3c6ab46f-65d4-4fdf-aa54-16ef6bc47edf</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\confirmation_dialog_box.jpg">
+      <AlternateText>Confirmation Dialog Box</AlternateText>
+      <ImageId>b1588129-87b0-423f-a61e-52be2428283b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\installation_dialog_box_2.jpg">
+      <ImageId>55f4839f-3629-4718-9981-1105983749d3</ImageId>
+      <AlternateText>Installation Dialog Box</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\installation_complete_dialog_box.jpg">
+      <ImageId>32880667-e842-439a-ac42-96e5d26aa25c</ImageId>
+      <AlternateText>Installation Complete Dialog Box</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\schema_of_commserver_components.jpg">
+      <ImageId>6c416684-bda6-4536-9a84-b4040d0041fc</ImageId>
+      <AlternateText>Schema Of CommServer Components</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\application_window.jpg">
+      <AlternateText>Application Window</AlternateText>
+      <ImageId>6ea9e52d-7aa2-4aa0-b13d-59d164ce2678</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\protocol_window.jpg">
+      <ImageId>bff58d37-aaf0-4fa2-92ea-76457752a5e5</ImageId>
+      <AlternateText>Protocol Window</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\segment_window.jpg">
+      <AlternateText>Segment Window</AlternateText>
+      <ImageId>d3de8b7b-4cca-4e42-9b63-fd621ae9b610</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\port_window.jpg">
+      <ImageId>8bf675aa-71cd-4e3d-ad5a-8cb69b19d549</ImageId>
+      <AlternateText>Protocol Window</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\port_window_2.jpg">
+      <AlternateText>Port Window</AlternateText>
+      <ImageId>8c749ec5-cfdc-4924-8c57-23dc4240e959</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\port_window_5.jpg">
+      <AlternateText>Port Window</AlternateText>
+      <ImageId>f2848c74-eee0-47a1-b1a5-77efd5b5c27c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\example_structure.jpg">
+      <AlternateText>Example structure</AlternateText>
+      <ImageId>cceff6ed-6f63-4300-bbea-0bd6be4e621b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\import_menu.jpg">
+      <AlternateText>Impot menu</AlternateText>
+      <ImageId>6336d43d-0f91-467c-b88a-c8dbaa5a943b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\database_structure.jpg">
+      <AlternateText>Database structure</AlternateText>
+      <ImageId>a7f512a7-cf95-4603-8cf3-1cdf6fe768bd</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Logical_relationship.jpg">
+      <ImageId>eafa115c-c561-445b-90a9-c7eff926f694</ImageId>
+      <AlternateText>Logical relationship between groups, data blocks and tags</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\station_tab.jpg">
+      <AlternateText>Station tab</AlternateText>
+      <ImageId>8671e756-1234-428b-828e-cc5c45dd8da9</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\segments_tab.jpg">
+      <ImageId>4f4f6a62-f40a-4fa7-b971-1797da285268</ImageId>
+      <AlternateText>Segments tab</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\interface_tab.jpg">
+      <ImageId>a79152b0-5240-434f-9fb0-cac8ee85f499</ImageId>
+      <AlternateText>Interface tab</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\protocol_tab.jpg">
+      <ImageId>46b2a13f-01d1-4b44-9cfc-bb73088969d2</ImageId>
+      <AlternateText>Protocol tab</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\tray_icon.jpg">
+      <ImageId>36d7eb8a-381a-4a91-8588-e7d1eda43952</ImageId>
+      <AlternateText>Tray icon</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\OPC_Client_server-starting_page.jpg">
+      <AlternateText>OPC Client server-starting page</AlternateText>
+      <ImageId>5ecf9f38-9173-432e-8522-e6669afe6c82</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\starting_the_server.jpg">
+      <AlternateText>Starting the server</AlternateText>
+      <ImageId>1eec0ae8-324d-4152-af70-8b170b175032</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Server_selection_window.jpg">
+      <AlternateText>Server selection window</AlternateText>
+      <ImageId>2e697692-67ba-4995-9ce1-a702b1915c5c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\OPC_Viewer – Items_window.jpg">
+      <AlternateText>OPC Viewer – Items window</AlternateText>
+      <ImageId>98cab6ae-6c1d-43d4-baf8-5cfd5c93d1aa</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\main_features.jpg">
+      <ImageId>d0f25323-8bd3-4508-b9d0-7a3dc3bf3cfb</ImageId>
+      <AlternateText>Main Features</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Operation_parameters.jpg">
+      <AlternateText>Operation Parameters</AlternateText>
+      <ImageId>1f8a07b5-71e7-4d6e-a213-6268b42dcdab</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\protocols.jpg">
+      <ImageId>7a0638b9-5ea9-42a0-a917-9a2ab4f1ed9c</ImageId>
+      <AlternateText>Protocols</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\CAS_Logo.jpg">
+      <ImageId>0dc06d86-3f19-466f-bfb0-96953a878e36</ImageId>
+      <AlternateText>CAS</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r00.jpg">
+      <ImageId>b2b8550a-1573-4022-8273-9c637482f7f9</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r01.jpg">
+      <ImageId>4267893a-55af-42bf-8aff-83611b80ec7e</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r02.jpg">
+      <ImageId>732a698c-f583-42ee-a430-cdac541e7f73</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r03.jpg">
+      <ImageId>604d9579-57e8-44e6-ba74-8c385bdb0ad1</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r04.jpg">
+      <ImageId>5f967210-efc1-454f-bd55-8f6c2c2a03d8</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r05.jpg">
+      <ImageId>477c47e5-dc7d-4045-99f1-50716dd398d3</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r06.jpg">
+      <ImageId>a0d95e51-a8df-4e6d-a00f-84fbe504de93</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r07.jpg">
+      <ImageId>50c8a152-e6ae-4e39-b2ee-8d5411f22bc5</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_config_r08.jpg">
+      <ImageId>e7140130-3dfd-4581-aa10-38c512e4c8e1</ImageId>
+      <AlternateText>DCOM</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r01a.jpg">
+      <ImageId>63819926-f1cd-469d-8d90-1058e1667663</ImageId>
+      <AlternateText>CommServer demo configuration</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r02a.jpg">
+      <AlternateText>The communication diagram</AlternateText>
+      <ImageId>e7f1a1dd-d325-499e-a1ca-9e3e50938bdd</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r03.jpg">
+      <AlternateText>CommServer configuration in NetworkConfig</AlternateText>
+      <ImageId>138ca7c6-6c43-422e-94ca-d18dd1cc6a34</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r04.jpg">
+      <AlternateText>Comparison of those two definitions</AlternateText>
+      <ImageId>d245e7a0-9fa1-411a-af72-792fcc0f1ccb</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\Cmsvr_r05.jpg">
+      <AlternateText>Station definition</AlternateText>
+      <ImageId>3bfe5c04-a22e-4662-8379-14e9b1eb0040</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\system_information.jpg">
+      <AlternateText>System information</AlternateText>
+      <ImageId>bf989d80-4bb6-43bf-b554-44879a6539d1</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\systems_tasks.jpg">
+      <AlternateText>Tasks</AlternateText>
+      <ImageId>d56403ec-e33b-4d5e-82b1-476c08f1096f</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\download.jpg">
+      <AlternateText>OPC Core Components for x64 systems</AlternateText>
+      <ImageId>e289b4b4-0276-43da-b947-c0432903dc2b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\foldersettings.jpg">
+      <AlternateText>CommServer folder settings</AlternateText>
+      <ImageId>a1fa57eb-a2d8-44d8-a864-b6d25ea4a8b5</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\casopcdawrappersettings.jpg">
+      <AlternateText>CASOpcDaWrapper settings</AlternateText>
+      <ImageId>ccd8c4ee-bd10-42bc-9a27-230a4dfa9c72</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\dcomusers.jpg">
+      <AlternateText>Distributed COM Users</AlternateText>
+      <ImageId>c1edc2c2-428f-4a9a-bfb4-b27d1b3f66e4</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\commserver_dcom_settings.jpg">
+      <AlternateText>CommServer DCOM properties</AlternateText>
+      <ImageId>3f3baae9-6a75-4575-9918-fd979ba45fc9</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\installation_license_dialog_box.jpg">
+      <ImageId>0EBAC22E-63AA-42b4-95C9-5F2BE74E1E94</ImageId>
+      <AlternateText>License agreement dialog box</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MBUS_serial_COM_settings.jpg">
+      <ImageId>ea6e16b5-4a0e-4ea4-ba1e-358fcdec1fbb</ImageId>
+      <AlternateText>Settings for PC serial COM port</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MBUS_block_configuration.jpg">
+      <ImageId>2143667f-71d6-4113-a092-cf5be94289f7</ImageId>
+      <AlternateText>Example of block configuration</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPCommunication_interface_settings.jpg">
+      <ImageId>0d419686-c38d-4735-b85c-453932c7eaf9</ImageId>
+      <AlternateText>Communication interface settings</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DataProvider_configuration_window.jpg">
+      <ImageId>E4927F49-2DA6-4559-98AF-10DA069D2A57</ImageId>
+      <AlternateText>DataProvider configuration window</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\blocks_window.jpg">
+      <AlternateText>Blocks window</AlternateText>
+      <ImageId>0FB0E31F-1240-4465-8167-B7571F2BE113</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\tags_window.jpg">
+      <AlternateText>Tags window</AlternateText>
+      <ImageId>77310B92-A1E9-40cd-A593-02D6BC10BA19</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPconnection_settings_to_PLC.jpg">
+      <ImageId>8d2ed1cc-42c1-450d-988a-9def00d790d4</ImageId>
+      <AlternateText>Example of connection settings to PLC</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPexample_connection_to_PLC.jpg">
+      <ImageId>d8c4cd27-7ae8-48b4-9d62-03a6105fee14</ImageId>
+      <AlternateText>Example connection to PLC</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSIPprotocol_settings.jpg">
+      <ImageId>4235c409-c764-4608-a930-6ada4b215fb1</ImageId>
+      <AlternateText>Modbus protocol settings</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DataProvider_Block_Item_settings.jpg">
+      <AlternateText>DataProvider, Block ant Item settings</AlternateText>
+      <ImageId>c3d24785-efda-4c09-97f7-9bb5d2ca398c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSsettingsForPCSerialCOMPort.jpg">
+      <AlternateText>Settings for PC serial COM port</AlternateText>
+      <ImageId>8ea49359-50e2-480b-bf4d-6746c8e89513</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSUDP_TCP.jpg">
+      <ImageId>708a7301-1662-48af-992b-5b7a3d7f77ed</ImageId>
+      <AlternateText>Using UDP/TCP as transport for Modbus RTU telegrams</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSProtocolSettings.jpg">
+      <AlternateText>MODBUS protocol settings</AlternateText>
+      <ImageId>dd6027b3-eefc-4146-bad8-97e4ef54ba95</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSexampleConnectionToPortServerOneTS.jpg">
+      <AlternateText>Example connection to PortServer One TS</AlternateText>
+      <ImageId>029ff583-8ac3-4838-b344-d86f36a62adb</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\port_tab.jpg">
+      <ImageId>91CF9FEC-76EC-4afc-97A9-EDEC8B842875</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_view.jpg">
+      <AlternateText>View menu</AlternateText>
+      <ImageId>5914C7E7-050D-4273-B217-4128907143EF</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_tools.jpg">
+      <AlternateText>Tools menu</AlternateText>
+      <ImageId>FB47A56A-030D-4ac4-A610-3814DC544A98</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_help.jpg">
+      <AlternateText>Help menu</AlternateText>
+      <ImageId>7F427649-1DF7-4e79-A766-D34CE07C0E8E</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\app_menu_file.jpg">
+      <AlternateText>File menu</AlternateText>
+      <ImageId>65F4CAE7-461A-4c08-8129-44369E1F0E64</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\MODBUSRSexampleOfConnectionSettingsToPortServerOneTSFromDIGI.jpg">
+      <AlternateText>Example of connection settings to PortServer One TS from DIGI company</AlternateText>
+      <ImageId>88666bf0-886e-41e0-9545-51cbfb11ca72</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPCommunicationInterfaceSettings.jpg">
+      <ImageId>3f5661ec-69a7-4335-a3b7-9bb5a3a7bc62</ImageId>
+      <AlternateText>Communication interface settings</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPProtocolSpecificParameters.jpg">
+      <AlternateText>Protocol Specific Parameters</AlternateText>
+      <ImageId>ca0d0fab-5bf3-4e2c-a60a-be7d6b80ed7d</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPexampleOfConnectionSettingsToPLCUsingTCP.jpg">
+      <AlternateText>Example of connection settings to PLC  using TCP</AlternateText>
+      <ImageId>66930ae8-9f67-4f2b-ba6b-edd1f25cd3b4</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSIPexampleConnectionToPLC.jpg">
+      <AlternateText>Example connection to PLC</AlternateText>
+      <ImageId>23699d7b-6ca8-49b7-964c-47979a1f2e72</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSCommunicationInterfaceSettings.jpg">
+      <AlternateText>Communication interface settings</AlternateText>
+      <ImageId>67f04b15-90c0-4e31-abb7-dc26dd84529c</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSUDPTCPAsTransportForSBUSRSTelegrams.jpg">
+      <AlternateText>UDP/TCP as transport for SBUS RS telegrams</AlternateText>
+      <ImageId>df293235-4c82-46eb-9192-6d7ca717ee8b</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSprotocolSettings.jpg">
+      <AlternateText>S-Bus protocol settings</AlternateText>
+      <ImageId>4bac5195-1337-4bde-af3f-df0a006281cb</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSexampleOfConnectionSettingsToPortServerOneTSFromDIGI.jpg">
+      <AlternateText>Example of connection settings to PortServer One TS from DIGI company</AlternateText>
+      <ImageId>4ce866eb-6966-429e-9e52-311bf1433a87</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SBUSRSexampleConnectionSettingsToPortServerOne.jpg">
+      <AlternateText>Example connection to PortServer One TS</AlternateText>
+      <ImageId>be225e61-52b3-4ffa-b6d9-268db7a98622</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\OPC_test_r01.jpg">
+      <ImageId>48548d5a-f540-4a89-8ebc-feb46aaa6a5b</ImageId>
+      <AlternateText>Two computers</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r01.jpg">
+      <AlternateText>Component Services</AlternateText>
+      <ImageId>817535bc-ea71-4c4b-94f8-82e2bc7c362d</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r02.jpg">
+      <ImageId>9d92443b-e5cb-4f4e-85fa-048a66b2b401</ImageId>
+      <AlternateText>Computer Default Properties</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r03.jpg">
+      <AlternateText>Computer Properties COM Security</AlternateText>
+      <ImageId>d4fa62fa-cde3-4b6f-b24a-9f579847a171</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r04.jpg">
+      <ImageId>bab3b5f7-17df-4d21-a147-dc4dbae1bc2f</ImageId>
+      <AlternateText>Access Permission</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r05.jpg">
+      <AlternateText>Launch Permission</AlternateText>
+      <ImageId>5901853b-8081-4d7a-90a5-b33a3a76d039</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r06.jpg">
+      <AlternateText>General</AlternateText>
+      <ImageId>5c8d6587-b4f5-4381-b3bb-203886c93a59</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DCOM_XP_r07.jpg">
+      <AlternateText>Folder options</AlternateText>
+      <ImageId>22b4de83-5bf3-4c92-900c-73daeca71112</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r01.jpg">
+      <AlternateText>OPC Viewer - main window</AlternateText>
+      <ImageId>dc967ede-df70-49a0-b426-c655dbc47c4a</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r02.jpg">
+      <AlternateText>OPC Viewer</AlternateText>
+      <ImageId>1158c594-5d33-4dc5-9bc4-3822ae87ba7e</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r03_2PC.jpg">
+      <AlternateText>Select OPC server window</AlternateText>
+      <ImageId>fff67f3e-eb9c-4142-9a05-5faee11fb401</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r04.jpg">
+      <AlternateText>Connecting to server</AlternateText>
+      <ImageId>ac22a17a-9899-4ba6-a134-4adc90ce9304</ImageId>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\GetStart_r05.jpg">
+      <AlternateText>CommServer Monitor</AlternateText>
+      <ImageId>a5371615-7e36-4b6a-a3de-499f50d68fcf</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\OPCConnectionTest.aml" />
+    <None Include="PR21-CommServer\Content.maml\PreparingForTestComputersConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\TestTargetInstructions.aml" />
+    <None Include="PR21-CommServer\Content.maml\HowToTestOPCConnection.anl.aml" />
+    <None Include="PR21-CommServer\Content.maml\SegmentsTab.aml" />
+    <None Include="PR21-CommServer\Content.maml\PortsTab.aml" />
+    <None Include="PR21-CommServer\Content.maml\BLSFiles.aml" />
+    <None Include="PR21-CommServer\Content.maml\SbusRsConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\SbusIpConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\ModbusRsConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\ModbusIpConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\MbusConfiguration.aml" />
+    <None Include="PR21-CommServer\Content.maml\MBUS_configuration.aml" />
+    <None Include="PR21-CommServer\Content.maml\Summary.aml" />
+    <None Include="PR21-CommServer\Content.maml\PostInstallationSetup.aml" />
+    <None Include="PR21-CommServer\Content.maml\Prerequisites.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerOnX64Systems.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExample.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExmaple.aml" />
+    <None Include="PR21-CommServer\Content.maml\DCOMConfigurationExample.aml" />
+    <None Include="PR21-CommServer\Content.maml\examplesandtutorials.aml" />
+    <None Include="PR21-CommServer\Content.maml\Dcom_configuration_example.aml" />
+    <None Include="PR21-CommServer\Content.maml\Protocols.aml" />
+    <None Include="PR21-CommServer\Content.maml\RealTimeProcessSimulation.aml" />
+    <None Include="PR21-CommServer\Content.maml\EnvironmentMonitoring.aml" />
+    <None Include="PR21-CommServer\Content.maml\Protocol-MediumCouple.aml" />
+    <None Include="PR21-CommServer\Content.maml\Requirements.aml" />
+    <None Include="PR21-CommServer\Content.maml\TracingFilters.aml" />
+    <None Include="PR21-CommServer\Content.maml\TracingListeners.aml" />
+    <None Include="PR21-CommServer\Content.maml\TracingSources.aml" />
+    <None Include="PR21-CommServer\Content.maml\TracingSwitches.aml" />
+    <None Include="PR21-CommServer\Content.maml\EnablingTracing.aml" />
+    <None Include="PR21-CommServer\Content.maml\Interfaces.aml" />
+    <None Include="PR21-CommServer\Content.maml\Segments.aml" />
+    <None Include="PR21-CommServer\Content.maml\Stations.aml" />
+    <None Include="PR21-CommServer\Content.maml\AppendixB.aml" />
+    <None Include="PR21-CommServer\Content.maml\AppendixA.aml" />
+    <None Include="PR21-CommServer\Content.maml\Appendix.aml" />
+    <None Include="PR21-CommServer\Content.maml\TroubleShooting.aml" />
+    <None Include="PR21-CommServer\Content.maml\OperationParameters.aml" />
+    <None Include="PR21-CommServer\Content.maml\Usage.aml" />
+    <None Include="PR21-CommServer\Content.maml\MainFeatures.aml" />
+    <None Include="PR21-CommServer\Content.maml\ProgramMainWindow.aml" />
+    <None Include="PR21-CommServer\Content.maml\DataProviderDiagnostic.aml" />
+    <None Include="PR21-CommServer\Content.maml\TracingInCommServer.aml" />
+    <None Include="PR21-CommServer\Content.maml\SystemEventLog.aml" />
+    <None Include="PR21-CommServer\Content.maml\DiagnosticInformation.aml" />
+    <None Include="PR21-CommServer\Content.maml\ProperRunningServerDiagnosticsAndTroubleshooting.aml" />
+    <None Include="PR21-CommServer\Content.maml\DiagnosticsAndTroubleshooting.aml" />
+    <None Include="PR21-CommServer\Content.maml\AnExampleHowToStartTheCommServerUsingAnOPCDA.aml" />
+    <None Include="PR21-CommServer\Content.maml\StartingAndStoppingTheCommServer.aml" />
+    <None Include="PR21-CommServer\Content.maml\ReportUtility.aml" />
+    <None Include="PR21-CommServer\Content.maml\TrayIconCapability.aml" />
+    <None Include="PR21-CommServer\Content.maml\ApplicationMenu.aml" />
+    <None Include="PR21-CommServer\Content.maml\ProtocolTab.aml" />
+    <None Include="PR21-CommServer\Content.maml\StationTab.aml" />
+    <None Include="PR21-CommServer\Content.maml\ApplicationInterface.aml" />
+    <None Include="PR21-CommServer\Content.maml\UsingCommServer.aml" />
+    <None Include="PR21-CommServer\Content.maml\DatabaseStructure.aml" />
+    <None Include="PR21-CommServer\Content.maml\ScanSettings.aml" />
+    <None Include="PR21-CommServer\Content.maml\TagMappings.aml" />
+    <None Include="PR21-CommServer\Content.maml\TagBits.aml" />
+    <None Include="PR21-CommServer\Content.maml\TagBlocks.aml" />
+    <None Include="PR21-CommServer\Content.maml\AdditionalResourcesTools.aml" />
+    <None Include="PR21-CommServer\Content.maml\TheSchemeOfTheExampleStructure.aml" />
+    <None Include="PR21-CommServer\Content.maml\ApplicationWindow.aml" />
+    <None Include="PR21-CommServer\Content.maml\UsingNetworkConfigToConfigureTheNetwork.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerConfigurationFile.aml" />
+    <None Include="PR21-CommServer\Content.maml\Configuration.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerComponents.aml" />
+    <None Include="PR21-CommServer\Content.maml\InstallingCommServer.aml" />
+    <None Include="PR21-CommServer\Content.maml\GettingStarted.aml" />
+    <None Include="PR21-CommServer\Content.maml\RapidDevelopmentKit.aml" />
+    <None Include="PR21-CommServer\Content.maml\Multi-dataProviders.aml" />
+    <None Include="PR21-CommServer\Content.maml\SimultaneousMulti-channelTransmission.aml" />
+    <None Include="PR21-CommServer\Content.maml\AdaptiveSamplingAlgorithm.aml" />
+    <None Include="PR21-CommServer\Content.maml\OptimalTransferAlgorithm.aml" />
+    <None Include="PR21-CommServer\Content.maml\OptimizationOfCommunicationPathsUtilization.aml" />
+    <None Include="PR21-CommServer\Content.maml\Multi-pathsRedundancy.aml" />
+    <None Include="PR21-CommServer\Content.maml\OPCOverview.aml" />
+    <None Include="PR21-CommServer\Content.maml\Introduction.aml" />
+    <None Include="PR21-CommServer\Content.maml\TheoryOfOperation.aml" />
+    <None Include="PR21-CommServer\Content.maml\Overview.aml" />
+    <None Include="PR21-CommServer\Content.maml\WhoShouldUseThisManual.aml" />
+    <None Include="PR21-CommServer\Content.maml\WelcomeToCommServer.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PR21-CommServer\Graphics\" />
+    <Folder Include="PR21-CommServer\Content.maml\" />
+    <Folder Include="PR21-CommServer\" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
