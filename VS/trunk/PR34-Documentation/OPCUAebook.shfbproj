@@ -1,0 +1,1225 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{abf1535f-96c4-45c9-b1fe-57688a69dd26}</ProjectGuid>
+    <SHFBSchemaVersion>1.8.0.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>Temp\UAModelDesigner\Help\</OutputPath>
+    <HtmlHelpName>OPC Unified Architecture</HtmlHelpName>
+    <ProjectSummary>
+    </ProjectSummary>
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
+    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Internals, Protected, SealedProtected</VisibleItems>
+    <HtmlHelp1xCompilerPath>
+    </HtmlHelp1xCompilerPath>
+    <HtmlHelp2xCompilerPath>
+    </HtmlHelp2xCompilerPath>
+    <SandcastlePath>
+    </SandcastlePath>
+    <WorkingPath>Temp\UAModelDesigner\Working\</WorkingPath>
+    <BuildLogFile>Temp\UAModelDesigner\ModelDesignerHelp.log</BuildLogFile>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <FrameworkVersion>2.0.50727</FrameworkVersion>
+    <Preliminary>False</Preliminary>
+    <HelpTitle>OPC Unified Architecture - specification applicable to manufacturing software in application areas such as Field Devices, Control Systems, Manufacturing Execution Systems and Enterprise Resource Planning Systems.</HelpTitle>
+    <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
+    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/UAModelDesigner/Index.aspx&amp;quot%3b title=&amp;quot%3bOPC Unified Architecture&amp;quot%3b  target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <FooterText>
+    </FooterText>
+    <PresentationStyle>vs2005UA</PresentationStyle>
+    <NamingMethod>MemberName</NamingMethod>
+    <HelpFileVersion>1.0.0.6</HelpFileVersion>
+    <ComponentConfigurations>
+      <ComponentConfig id="Cached MSDN URL References" enabled="True">
+        <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <cache filename="{@AppDataFolder}Cache\MsdnUrl.cache" />
+          <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@SDKLinks}" />
+          <targets files="reflection.xml" type="{@ProjectLinks}" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Base path for relative filenames in source attributes
+                 (optional) -->
+          <basePath value="{@ProjectFolder}" />
+          <!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. -->
+          <languageFilter value="true" />
+          <!-- Code colorizer options (required).
+                 Attributes:
+                    Language syntax configuration file (required)
+                    XSLT style file (required)
+                    "Copy" image file URL (required)
+                    Default language (optional)
+                    Enable line numbering (optional)
+                    Enable outlining (optional)
+                    Keep XML comment "see" tags within the code (optional)
+                    Tab size override (optional, 0 = Use syntax file setting)
+                    Use language name as default title (optional) -->
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
+                 Attributes:
+                    Stylesheet file (required)
+                    Script file (required)
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
+                 the parent folder of the output path of the HTML files (see
+                 SaveComponent). -->
+          <outputPath value="Output\" />
+          <!-- Logo image file (optional).  Filename is required. The height,
+                 width, altText, placement, and alignment attributes are
+                 optional. -->
+          <logoFile filename="" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="OPCUAebook\Content.dll\ModelForHelp.dll" />
+      <DocumentationSource sourceFile="OPCUAebook\Content.dll\ModelForHelp.XML" />
+    </DocumentationSources>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="False" xmlns="" />
+      <NamespaceSummaryItem name="CAS.UA.Model.Designer.Nodes" isDocumented="True" xmlns="">This namespace contains nodes used in the CAS UA Address Space Model Designer.</NamespaceSummaryItem>
+    </NamespaceSummaries>
+    <CppCommentsFixup>False</CppCommentsFixup>
+    <PlugInConfigurations>
+      <PlugInConfig id="Additional Content Only" enabled="True">
+        <configuration />
+      </PlugInConfig>
+      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="OPCUAebook\Graphics\sponsors_logos\" />
+    <Folder Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\" />
+    <Folder Include="PR30-OPCViewer\Graphics\ico\" />
+    <Folder Include="PR30-OPCViewer\Graphics\" />
+    <Folder Include="PR30-OPCViewer\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\" />
+    <Folder Include="OPCUAebook\Graphics\AddressSpaceDesigner\" />
+    <Folder Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\" />
+    <Folder Include="OPCUAebook\Graphics\" />
+    <Folder Include="OPCUAebook\Content.maml\" />
+    <Folder Include="OPCUAebook\" />
+    <Folder Include="CommonDocumentation\Content.maml\" />
+    <Folder Include="CommonDocumentation\" />
+    <Folder Include="CommonDocumentation\Graphics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceNodeModel.JPG">
+      <ImageId>60a075c2-fc97-48eb-b11e-ed024c3998f1</ImageId>
+      <AlternateText>AddressSpace Node Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\AddressSpace.png">
+      <ImageId>71d79c66-35a6-4f09-ab24-dd19bb2a5afa</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationAnyAsymmetricReferenceType.JPG">
+      <ImageId>11166436-529f-44fc-9565-7bd9f9263b13</ImageId>
+      <AlternateText>Any asymmetric ReferenceType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationAnyHierarchicalRefenceType.JPG">
+      <ImageId>9426fe93-2279-4851-bbb9-9616188563a9</ImageId>
+      <AlternateText>Any hierarchical RefenceType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationAnySymmetricReferenceType.JPG">
+      <ImageId>988321ae-03a5-4326-9a19-8c2561151835</ImageId>
+      <AlternateText>Any symmetric ReferenceType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Attributes.JPG">
+      <ImageId>02c4cc6a-dca8-4452-ac33-636f6be55614</ImageId>
+      <AlternateText>Attributes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\AuditBehaviourofaServer.JPG">
+      <ImageId>2fc5e084-81a9-4dfa-ac23-998c9ea58dfa</ImageId>
+      <AlternateText>Audit Behaviour of a Server</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\AuditBehaviourofanAggregatingServer.JPG">
+      <ImageId>c101d6e4-495b-4bc3-87ac-1227247d473f</ImageId>
+      <AlternateText>Audit Behaviour of an Aggregating Server</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\BackgroundofOPCUAMetaModel.JPG">
+      <ImageId>081c57f9-eb46-4180-87fc-25c578041ec0</ImageId>
+      <AlternateText>Background of OPC UA Meta Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\BaseNode.JPG">
+      <ImageId>dec12486-c803-4bd3-86ae-c7dda6018cf8</ImageId>
+      <AlternateText>BaseNode</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\BitmaskforWriteMaskandUserWriteMask.JPG">
+      <ImageId>8f34de79-7f01-4610-85ca-fc7ee5e57481</ImageId>
+      <AlternateText>Bit mask for WriteMask and UserWriteMask</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\example-generic_sensor_type.jpg">
+      <ImageId>62e52a01-6272-4641-a602-cdcdcb069c85</ImageId>
+      <AlternateText>Boiler Example Sensor</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\boiler_ua_model.jpg">
+      <ImageId>2b8dcca0-7938-4a8c-9ff5-30df31b2884d</ImageId>
+      <AlternateText>Boiler OPC UA Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\boiler_modeldesigner.jpg">
+      <ImageId>04d3f30a-faa5-4294-b605-e2febca7f8da</ImageId>
+      <AlternateText>Boiler OPC UA Model Designer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\boiler_real.jpg">
+      <ImageId>4388aedd-b93b-457b-b06b-e72bb0edba33</ImageId>
+      <AlternateText>Boiler Real World</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\boiler_modeldesigner_reference_example.jpg">
+      <ImageId>0d8e7feb-8cef-4c82-bfd0-dbd89d61125f</ImageId>
+      <AlternateText>Boiler UA Model Designer reference</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Build.png">
+      <ImageId>e47cac29-9a40-49b6-8341-3337659dc96f</ImageId>
+      <AlternateText>Build</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Built-inDataTypes.JPG">
+      <ImageId>643a54e6-c563-4289-918d-5f3a9225fab5</ImageId>
+      <AlternateText>Built-in Data Types</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ComplexEventReferenceExample.JPG">
+      <ImageId>5a95990c-6bd1-4deb-bf37-748dffdb89d5</ImageId>
+      <AlternateText>Complex Event Reference Example</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\DataType.JPG">
+      <ImageId>fd8616ea-7911-42fe-a98c-925b7e21ba4b</ImageId>
+      <AlternateText>DataType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationDataType.JPG">
+      <ImageId>8e42e24e-65d4-4211-b756-71dbfdc40ee9</ImageId>
+      <AlternateText>DataType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\DataTypeModel.JPG">
+      <ImageId>0d626623-5377-4e04-a1b2-dff033261f68</ImageId>
+      <AlternateText>DataType Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\DataTypesOrganization.JPG">
+      <ImageId>6d7e1708-e55f-48b0-8027-f3a146f51c17</ImageId>
+      <AlternateText>DataTypes Organization</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EventReferenceExample.JPG">
+      <ImageId>7785ca16-b1f0-4fa4-ab11-f34537637870</ImageId>
+      <AlternateText>Event Reference Example</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EventNotifier.JPG">
+      <ImageId>f88c5f55-7f2c-4359-8eb7-daf9b7944a5d</ImageId>
+      <AlternateText>EventNotifier</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleComplexTypeDefinition.JPG">
+      <ImageId>0e5ba657-5b43-4cea-a0ac-3561c6c3cbb3</ImageId>
+      <AlternateText>Example of a Complex TypeDefinition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleofaReferenceconnectingtwoNodes.JPG">
+      <ImageId>81478554-936f-48ab-ab57-f2059af1430e</ImageId>
+      <AlternateText>Example of a Reference connecting two Nodes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleOfaSimpleStateMachine.JPG">
+      <ImageId>ac079556-eb78-44dc-9c34-7330fc715f13</ImageId>
+      <AlternateText>Example of a simple state machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleStateMachineHavingSub-machine.JPG">
+      <ImageId>9db19ad2-d040-4cc9-9fc9-b863ae7a7317</ImageId>
+      <AlternateText>Example of a state machine having a sub-machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleStateMachineTransitionsSub-states.JPG">
+      <ImageId>22ca0c1b-0c93-4b88-9687-e32e4831e1ea</ImageId>
+      <AlternateText>Example of a state machine with transitions from sub-states</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleStateMachineTypeTransitionsSub-states.JPG">
+      <ImageId>2c3ba049-e127-46ca-90f8-2235d469db17</ImageId>
+      <AlternateText>Example of a StateMachineType having Transitions to SubStateMachines</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleStateMachineTypeUsingContainment.JPG">
+      <ImageId>732c556d-13dc-4ce5-8bc7-3c425dfc613e</ImageId>
+      <AlternateText>Example of a StateMachineType using containment</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Example StateMachineTypeUsingInheritance.JPG">
+      <ImageId>8c3b4271-0d98-47e1-9e1d-462527a4261d</ImageId>
+      <AlternateText>Example of a StateMachineType using inheritance</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Example StateMachineTypeaSubStateMachineUsingInheritance.JPG">
+      <ImageId>d71a046e-8526-40fa-8f52-e99c6ca81f81</ImageId>
+      <AlternateText>Example of a StateMachineType with a SubStateMachine using inheritance</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleVariableDefinedByVariableType.JPG">
+      <ImageId>4306e3f9-71cc-402c-ad2a-f483164d2f34</ImageId>
+      <AlternateText>Example of a Variable Defined By a VariableType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleInitialStateSub-machine.JPG">
+      <ImageId>7541e48c-8c6a-4c1a-a1be-e064491d8e10</ImageId>
+      <AlternateText>Example of an initial State in a sub-machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleOfDataTypeModelling.JPG">
+      <ImageId>ce9d9418-21ae-4429-9d37-62cff05bdd95</ImageId>
+      <AlternateText>Example of DataType Modelling</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleofexposingAttributes.JPG">
+      <ImageId>967f4424-e33c-4fa8-8e66-494294803c8d</ImageId>
+      <AlternateText>Example of exposing Attributes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleofexposingPropertiesinline.JPG">
+      <ImageId>6713e451-2012-4f24-9c57-f0aca4de4da9</ImageId>
+      <AlternateText>Example of exposing Properties inline</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExampleofusingaTypeDefinitioninsideaNode.JPG">
+      <ImageId>1d5fd45f-a7ae-4eee-bf58-8fccffaeccd9</ImageId>
+      <AlternateText>Example of using a TypeDefinition inside a Node</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExcerptofDiagnosticInformationoftheServer.JPG">
+      <ImageId>f76f71ba-778b-4605-a738-241d37488fee</ImageId>
+      <AlternateText>Excerpt of Diagnostic Information of the Server</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\FilterHS.png">
+      <ImageId>4e92228a-db69-41ef-b729-09a21fba98c4</ImageId>
+      <AlternateText>Filter</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationHasComponent.JPG">
+      <ImageId>35f29cd6-8f73-4e2b-a9c4-399d8c1d6a40</ImageId>
+      <AlternateText>HasComponent</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationHasEventSource.JPG">
+      <ImageId>f096d99f-3705-49e7-82c7-3420627e0aef</ImageId>
+      <AlternateText>HasEventSource</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationHasProperty.JPG">
+      <ImageId>b5414164-c50e-4397-bd98-1b47cf930a5c</ImageId>
+      <AlternateText>HasProperty</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationHasSubtype.JPG">
+      <ImageId>2af32850-67ec-4245-af82-433646ebda11</ImageId>
+      <AlternateText>HasSubtype</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationHasTypeDefinition.JPG">
+      <ImageId>0c8038ef-a0c0-4e37-9b2e-290dddd50b96</ImageId>
+      <AlternateText>HasTypeDefinition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\HelpGUI.png">
+      <ImageId>df45d4b0-49d4-4635-92e1-e72d9dc198ed</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\integration_supersystem.jpg">
+      <ImageId>8d035d0b-699b-4255-bf40-09462b31d51b</ImageId>
+      <AlternateText>Integration: Centralization instead of integration</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\integration_chaos_small_en.jpg">
+      <ImageId>acf12462-7c94-4624-966b-c89015c46d6d</ImageId>
+      <AlternateText>Integration: Chaos</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\integration_funkcje_small_EN.jpg">
+      <ImageId>8e7f6212-95a9-4b6b-922c-0f049fb0452b</ImageId>
+      <AlternateText>Integration: Hierarchical information architecture</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\integration_commserver_process_observer.jpg">
+      <ImageId>59ccea84-f8ab-438e-ad55-37b9f75395dd</ImageId>
+      <AlternateText>Integration: Novel architecture: Process Observer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\integration_wykres_en.jpg">
+      <ImageId>1243dfbf-bbed-4d6c-a26a-97d348b26cfb</ImageId>
+      <AlternateText>Integration: Top IT Challenges in integration the Plant-Floor and Business Management and Control Layers</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\MainGui.png">
+      <ImageId>f762cfc2-2255-40e1-a143-0f909ad26b62</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationMethod.JPG">
+      <ImageId>234e50c5-4838-458e-b735-90e709d3b7e6</ImageId>
+      <AlternateText>Method</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Method.JPG">
+      <ImageId>34127b20-71f0-4c02-963a-e195eaf3f80d</ImageId>
+      <AlternateText>Method</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Notation1.JPG">
+      <ImageId>9424aa6e-9ed4-48fa-adaa-0fd5047992a4</ImageId>
+      <AlternateText>Notation (I)</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\Notation2.JPG">
+      <ImageId>7003a658-884e-4557-a81b-1696a9de528c</ImageId>
+      <AlternateText>Notation (II)</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationObject.JPG">
+      <ImageId>7d318d9a-7e61-408a-826c-d7326a9a6ba6</ImageId>
+      <AlternateText>Object</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ObjectandComponentsDefinedByObjectType.JPG">
+      <ImageId>6b798f25-4c4a-4d9f-a0f0-214278eefe8d</ImageId>
+      <AlternateText>Object and its Components defined by an ObjectType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ObjectandObjectType.JPG">
+      <ImageId>5c6b2b1d-bf1b-4ca1-99dc-b760b1c541c5</ImageId>
+      <AlternateText>Object and ObjectType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\OPC_UA_Object_Model.jpg">
+      <ImageId>bb392375-2eac-4efd-8e9c-d9222f84dba0</ImageId>
+      <AlternateText>Object Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ObjectsOrganization.JPG">
+      <ImageId>8f836695-fd10-4a8f-8abb-4b9e39dde0da</ImageId>
+      <AlternateText>Objects Organization</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationObjectType.JPG">
+      <ImageId>0e54931d-4ebe-4eca-b5a4-cf99c60b93e5</ImageId>
+      <AlternateText>ObjectType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ObjectTypesOrganization.JPG">
+      <ImageId>df566260-58e0-49c6-834e-13dd89025647</ImageId>
+      <AlternateText>ObjectTypes Organization</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\OPCUAClientArchitecture.JPG">
+      <ImageId>3bb4041e-f01c-406e-9099-8083985587ab</ImageId>
+      <AlternateText>OPC UA Client Architecture</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\OPCUAServerArchitecture.JPG">
+      <ImageId>6590809f-6e2f-4334-bdc1-b7f200adf679</ImageId>
+      <AlternateText>OPC UA Server Architecture</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\OPCUASystemArchitecture.JPG">
+      <ImageId>0ab2ca2d-7cca-4e8f-98f5-643964c5411d</ImageId>
+      <AlternateText>OPC UA System Architecture</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\System_Concept_OPC_UA.jpg">
+      <ImageId>0e34acbe-94b2-4669-b6b0-92be21fd20d5</ImageId>
+      <AlternateText>OPC UA Target Applications</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\OverviewAboutAttributes.JPG">
+      <ImageId>4980d642-59f4-43e8-8a00-b71ee3eb2e52</ImageId>
+      <AlternateText>Overview about Attributes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\PredefinedReferenceTypes.JPG">
+      <ImageId>eaeee5db-a983-4790-9f69-3821a1f5c37f</ImageId>
+      <AlternateText>Predefined ReferenceTypes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ReferenceandReferenceType.JPG">
+      <ImageId>d476d68d-8fc9-45a5-a8b6-ccdbafc516f9</ImageId>
+      <AlternateText>Reference and ReferenceType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ReferenceModel.JPG">
+      <ImageId>55805fe6-1237-4af8-bc9f-3d422812415d</ImageId>
+      <AlternateText>Reference Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationReferenceType.JPG">
+      <ImageId>c03082c7-452a-4ea4-95e2-e53553977398</ImageId>
+      <AlternateText>ReferenceType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ReferenceTypeDefinitions.JPG">
+      <ImageId>f1959f07-5635-44c0-bca0-56b226bb0c89</ImageId>
+      <AlternateText>ReferenceType Definitions</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\SchemeOfInheriting .png">
+      <ImageId>b1b43cd9-97e6-49ef-bc39-ed3b37a0497f</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\SecureChannel.JPG">
+      <ImageId>d1ef2995-498a-4ea8-933e-67932058875d</ImageId>
+      <AlternateText>SecureChannel Service Set</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\StandardAddressSpaceStructure.JPG">
+      <ImageId>c24d9eb2-d190-4e74-9513-5659e02eae25</ImageId>
+      <AlternateText>Standard AddressSpace Structure</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\StandardEventTypeHierarchy.JPG">
+      <ImageId>f6feabcb-2453-4480-903b-6835aef4b21f</ImageId>
+      <AlternateText>Standard EventType Hierarchy</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\StandardReferenceTypeHierarchy.JPG">
+      <ImageId>e2b9736e-a222-43e9-8c6a-6a4f67217c07</ImageId>
+      <AlternateText>Standard ReferenceType Hierarchy</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\SymmetricNon-SymmetricReferences.JPG">
+      <ImageId>f41e21e9-76e4-4e83-a102-b176832c6a79</ImageId>
+      <AlternateText>Symmetric and Non-Symmetric References</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\TheOPCUAStackOverview.JPG">
+      <ImageId>637a31ca-6faa-4b88-a011-50688cc32b13</ImageId>
+      <AlternateText>The OPC UA Stack Overview</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\StateMachineInformationModel.JPG">
+      <ImageId>51fff8cb-44b1-4b3f-a371-c283749e9139</ImageId>
+      <AlternateText>The StateMachine Information Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\UI_main_window.jpg">
+      <ImageId>99cffbe6-7bb5-49bc-945a-631897216048</ImageId>
+      <AlternateText>UI Main window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\UI_model_treeview.jpg">
+      <ImageId>5c188fdf-3428-4e82-b168-703996368734</ImageId>
+      <AlternateText>UI Model Tree View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationVariable.JPG">
+      <ImageId>a6bc227f-c5d2-46f1-a110-148ff63ea9f0</ImageId>
+      <AlternateText>Variable</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\VariableAndVariableType.JPG">
+      <ImageId>97e5ec9a-65c8-4fb2-a41e-5d88afe245a6</ImageId>
+      <AlternateText>Variable and VariableType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\VariablesVariableTypesAndTheirDataTypes.JPG">
+      <ImageId>ea5224a9-7ffa-4a4a-9298-333324526ac0</ImageId>
+      <AlternateText>Variables, VariableTypes and their DataTypes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\VariableTypesOrganization.JPG">
+      <ImageId>91c4690f-a45d-4409-b776-5858b75714f9</ImageId>
+      <AlternateText>VariableTypes Organization</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationVariableType.JPG">
+      <ImageId>8a781806-7663-4a2b-a221-a1c71f34ea95</ImageId>
+      <AlternateText>VaribleType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\GraphicalNotationView.JPG">
+      <ImageId>f9340057-1f38-4dc0-ba3c-8f9c6ebd2a7d</ImageId>
+      <AlternateText>View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\View.JPG">
+      <ImageId>42110791-e191-4af6-9336-355266b0c72c</ImageId>
+      <AlternateText>View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ViewsOrganization.JPG">
+      <ImageId>eb066c85-6b0d-42ce-8e5e-43431b16a64f</ImageId>
+      <AlternateText>Views Organization</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OPCUAebook\Content.maml\About.aml" />
+    <None Include="OPCUAebook\Content.maml\Sponsors_CAS.aml" />
+    <None Include="OPCUAebook\Content.maml\Sponsors.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Objects.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Types.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\NodesClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_Modeling.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_ReferenceModeling.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_ModelTree.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_GraphicalNotation.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionBuild.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionAndProjects.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Using_ASMD.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToConfigureCSUA.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
+    <None Include="OPCUAebook\Content.maml\Configuration.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Installing.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\GettingStarted.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA..aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
+    <None Include="OPCUAebook\Content.maml\LicenseAndDisclaimer.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\MethodDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\DictionaryDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ParametersFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Parameter.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\EncodingsFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\EncodingDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ViewDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\VariableDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\InstanceDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\PropertyDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ReferencesFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Reference.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\NodeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ObjectDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ReferenceTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ObjectTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\StateMachineTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\EventTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\DataTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\VariableTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\TypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\NamespacesFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Namespace.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Children.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ModelDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Menus.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UserInterface.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Overview.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
+    <None Include="OPCUAebook\Content.maml\General References.aml" />
+    <None Include="OPCUAebook\Content.maml\Discovery.aml" />
+    <None Include="OPCUAebook\Content.maml\HistoricalAccess.aml" />
+    <None Include="OPCUAebook\Content.maml\Programs.aml" />
+    <None Include="OPCUAebook\Content.maml\Alarms.aml" />
+    <None Include="OPCUAebook\Content.maml\DataAccess.aml" />
+    <None Include="OPCUAebook\Content.maml\Profiles.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLMessages.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLStructures.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLArrays.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLEnumerations.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLBuilt-inTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XML.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryMessages.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryStructures.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryArrays.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryEnumerations.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryBuilt-inTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinary.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Variant.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\ExtensionObject.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Guid.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Built-inTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Overview.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings.aml" />
+    <None Include="OPCUAebook\Content.maml\Services.aml" />
+    <None Include="OPCUAebook\Content.maml\SecurityModel.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StateMachines.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\Designdecisionswhenmodellingtheserverinformation.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardDataTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ServerObjectanditscontainingObjects.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ObjectsusedtoorganisetheAddressSpacestructure.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardObjectsandtheirVariables.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardVariableTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ObjectTypesusedasEventTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ObjectTypesfortheServerObject.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardObjectTypesAddress_SpaceManagement.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\BaseObjectType.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardObjectTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\Introduction.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\UAInformationModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\GraphicalNotation.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\OPCUAMetaModelUML.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\HowToUseAddressSpaceMode.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardEventTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardDataTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardReferenceTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Definitions.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\TypeModelforObjectTypesandVariableTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\SummaryAttributesNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\VariableType.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ReferenceTypeNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\DataTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ObjectType.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\MethodNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\VariablesNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Objects.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ViewNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\BaseNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Methods.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\EventModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\TypeDefinitionNodes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Variables.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\NodeModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ObjectModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\AddressSpaceConcepts.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\UAAddressSpace.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\SubscriptionServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\MonitoredItemServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\MethodServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\QueryServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\ViewServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\NodeManagementServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\SessionServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\SecureChannelServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\DiscoveryServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\General.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\Servers.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\SystemsClients.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\SystemsOverview.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\ProcessObserver.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\Totalitarian.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\Peer2Peer.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\SystemsIntegration.aml" />
+    <None Include="OPCUAebook\Content.maml\UAOverview.aml" />
+    <None Include="OPCUAebook\Content.maml\Concept.aml" />
+    <None Include="OPCUAebook\Content.maml\OPCUnifiedArchitecture.aml" />
+    <None Include="OPCUAebook\Content.maml\Welcome.aml" />
+    <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
+    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="OPCUAebook\Content.maml\UA_Glossary.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
+    <None Include="OPCUAebook\Content.maml\ASMD_VersionHistory.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CAS.ControlLibrary">
+      <HintPath>OPCUAebook\Content.dll\CAS.ControlLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CAS.RTLibComm">
+      <HintPath>OPCUAebook\Content.dll\CAS.RTLibComm.dll</HintPath>
+    </Reference>
+    <Reference Include="CAS.UA.ModelDesigner">
+      <HintPath>OPCUAebook\Content.dll\CAS.UA.ModelDesigner.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Tokens Include="TokensHelp.tokens" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EncodingIntegersinaBinaryStream.JPG">
+      <AlternateText>Encoding Integers in a Binary Stream</AlternateText>
+      <ImageId>C7C01A18-A2CC-454b-BDD5-CC87F13E7A81</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\SupportedFloatingPointTypes.JPG">
+      <AlternateText>Supported Floating Point Types</AlternateText>
+      <ImageId>D8C89BC7-692B-457b-81FB-0A0C80225FD9</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EncodingFloatingPointsinaBinaryStream.JPG">
+      <AlternateText>Encoding Floating Points in a Binary Stream</AlternateText>
+      <ImageId>6AE206A2-9361-4ead-83F2-B97D5EDC8594</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EncodingStringsinaBinaryStream.JPG">
+      <AlternateText>Encoding Strings in a Binary Stream</AlternateText>
+      <ImageId>E23B55DE-91DF-4e8a-B445-BB3AF487489D</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EncodingGuidsinaBinaryStream.JPG">
+      <AlternateText>Encoding Guids in a Binary Stream</AlternateText>
+      <ImageId>2139D8D3-13BC-4a65-A812-CEC601B68C41</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\EncodingXmlElementsinaBinaryStream.JPG">
+      <ImageId>5D6938AD-9D68-45a8-AC2A-1F4E94FFB6E7</ImageId>
+      <AlternateText>Encoding XmlElements in a Binary Stream</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\NodeIdComponents.JPG">
+      <AlternateText>NodeId Components</AlternateText>
+      <ImageId>BC5B5E73-8A86-4484-87B9-2FA5181263B6</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\NodeIdEncodingValues.JPG">
+      <AlternateText>NodeId Encoding Values</AlternateText>
+      <ImageId>935918F2-FB5F-49e1-96BD-95F9D858601E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\StandardNodeIdBinaryEncoding.JPG">
+      <ImageId>D741494C-6D58-488c-967F-6D6209859AEA</ImageId>
+      <AlternateText>Standard NodeId Binary Encoding</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\StringNodeId.JPG">
+      <AlternateText>A String NodeId</AlternateText>
+      <ImageId>4AB3163D-45B4-4e87-9CE3-C16977A027B2</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\TwoByteNodeIdBinaryEncoding.JPG">
+      <AlternateText>Two Byte NodeId Binary Encoding</AlternateText>
+      <ImageId>2529AB16-7821-4212-92B9-52A1F56419DD</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ATwoByteNodeId.JPG">
+      <AlternateText>A Two Byte NodeId</AlternateText>
+      <ImageId>5693ABAE-BE7E-41be-8269-D2723C40DE8A</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\FourByteNodeIdBinaryEncoding.JPG">
+      <AlternateText>Four Byte NodeId Binary Encoding</AlternateText>
+      <ImageId>618DE0E7-CC48-4cef-A4D5-80F3BEE42271</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\AFourByteNodeId.JPG">
+      <AlternateText>A Four Byte NodeId</AlternateText>
+      <ImageId>87FA3B2B-C9E9-410e-B139-33D5AE852573</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExpandedNodeIdBinaryEncoding.JPG">
+      <ImageId>BA3A9523-F137-439b-BC54-70BA58A2B223</ImageId>
+      <AlternateText>ExpandedNodeId Binary Encoding</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\DiagnosticInfoBinaryEncoding.JPG">
+      <AlternateText>DiagnosticInfo Binary Encoding</AlternateText>
+      <ImageId>57204E0D-6FD7-411a-AF0F-7AFA09317A2E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\QualifiedNameBinaryEncoding.JPG">
+      <AlternateText>QualifiedName Binary Encoding</AlternateText>
+      <ImageId>87CF0259-4139-461d-90C3-0BA514B5D8C3</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\LocalizedTextBinaryEncoding.JPG">
+      <AlternateText>LocalizedText Binary Encoding</AlternateText>
+      <ImageId>FAE3B142-BC6B-4b7c-A0E9-F58A785E5F7B</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ExtensionObjectBinaryEncoding.JPG">
+      <AlternateText>Extension Object Binary Encoding</AlternateText>
+      <ImageId>74DB4F5B-71DB-4fc2-BC08-42CCBD07EB68</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\VariantBinaryEncoding.JPG">
+      <AlternateText>Variant Binary Encoding</AlternateText>
+      <ImageId>00FEF49C-9A99-4324-9B20-C35FCA52A378</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\DataValueBinaryEncoding.JPG">
+      <AlternateText>Data Value Binary Encoding</AlternateText>
+      <ImageId>B43BE252-5F0E-424a-810E-B12664D6D82E</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\SampleOPCUABinaryEncodedStructure.JPG">
+      <AlternateText>Sample OPC UA Binary Encoded Structure</AlternateText>
+      <ImageId>89B9FE4F-CF60-40f0-93E8-E198118E8CD6</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\XMLDataTypeMappingsforIntegers.JPG">
+      <AlternateText>XML Data Type Mappings for Integers</AlternateText>
+      <ImageId>D5AFDF66-CC5B-496a-B5D0-0473C13288B6</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\XMLDataTypeMappingsforFloatingPoints.JPG">
+      <AlternateText>XML Data Type Mappings for Floating Points</AlternateText>
+      <ImageId>BCE6C2BA-6751-4334-AB02-CB54FAFA1470</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ComponentsofNodeId.JPG">
+      <AlternateText>Components of NodeId</AlternateText>
+      <ImageId>03279423-5692-49f7-B8B4-2E232164E3E3</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ComponentsofExpandedNodeId.JPG">
+      <AlternateText>Components of ExpandedNodeId</AlternateText>
+      <ImageId>E1CACAEE-1930-4e84-B0EB-6A035F7C725B</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\ComponentsofEnumeration.JPG">
+      <AlternateText>Components of Enumeration</AlternateText>
+      <ImageId>A28434AB-E4A1-4719-940D-FD4D648E06C2</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings_boilers.jpg">
+      <ImageId>UAModelDesigner_samplesolution_and_processBindings_boilers</ImageId>
+      <AlternateText>Sample solution and process bindings (only boilers)</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_openingsamplesolution-witharrows.jpg">
+      <AlternateText>How to open sample solution</AlternateText>
+      <ImageId>UAModelDesigner_openingsamplesolution-witharrows</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings.jpg">
+      <ImageId>UAModelDesigner_samplesolution_and_processBindings</ImageId>
+      <AlternateText>Sample solution and process bindings</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-SelectEditor_composition.jpg">
+      <AlternateText>Selection of OPC UA Server editor</AlternateText>
+      <ImageId>ASMD-UAServer-SelectEditor_composition</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-editconfiguration_composition.jpg">
+      <ImageId>ASMD-UAServer-editconfiguration_composition</ImageId>
+      <AlternateText>UA Server edit configuration window</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output-composition.jpg">
+      <ImageId>ASMD-sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output-composition</ImageId>
+      <AlternateText>sample-Boilers-Boiler1-InputPipe-FlowTransmitter1-Output</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-openconfiguration_composition.jpg">
+      <ImageId>ASMD-UAServer-openconfiguration_composition</ImageId>
+      <AlternateText>How to open sample configuration</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg">
+      <ImageId>OPCV_create_odic_file</ImageId>
+      <AlternateText>Export address space to dictionary file</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg">
+      <ImageId>OPCV_save_odic_file</ImageId>
+      <AlternateText>Save file containing server address space</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg">
+      <AlternateText>Create new project in the solution</AlternateText>
+      <ImageId>ASMD_new_project</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg">
+      <ImageId>ASMD_select_editor</ImageId>
+      <AlternateText>Select configuration editor</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Import_From_OPC_DA.jpg">
+      <ImageId>ASMD_Import_From_OPC_DA</ImageId>
+      <AlternateText>Import from OPC DA</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Build_imported_model.jpg">
+      <ImageId>ASMD_Build_imported_model</ImageId>
+      <AlternateText>Build imported model</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Save_oses_file.jpg">
+      <ImageId>ASMD_Save_oses_file</ImageId>
+      <AlternateText>Save *.oses file</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg">
+      <ImageId>ASMD_CodeGeneration</ImageId>
+      <AlternateText>Code generation</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg">
+      <ImageId>ASMD_BuildSolution</ImageId>
+      <AlternateText>Building a solution</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
+      <AlternateText>Solution, projects, libraries</AlternateText>
+      <ImageId>ASMD_SolutionProjectsLibraries</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg">
+      <AlternateText>Modeling steps</AlternateText>
+      <ImageId>ASMD_ModelingSteps</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg">
+      <AlternateText>From real-time process to model using XML file</AlternateText>
+      <ImageId>ASMD_FromProcessToModelWithXml</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg">
+      <ImageId>ASMD_FromProcessToModelWithASMD</ImageId>
+      <AlternateText>From real-time process to model using UA Address Space Model Designer</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg">
+      <ImageId>ASMD_FromProcessToModel</ImageId>
+      <AlternateText>From real-time process to model</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg">
+      <ImageId>ASMD_GraphicalNotation</ImageId>
+      <AlternateText>Graphical notation</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.jpg">
+      <AlternateText>Reference modeling</AlternateText>
+      <ImageId>ASMD_ReferenceModeling</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg">
+      <ImageId>ASMD_references</ImageId>
+      <AlternateText>OPC UA Address Space Model Designer references</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg">
+      <AlternateText>NodeClass name</AlternateText>
+      <ImageId>ASMD_NodeClass_name</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg">
+      <AlternateText>UA Address Space Model Designer approach</AlternateText>
+      <ImageId>ASMD_ASMDApproach</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\silver_sponsor.png">
+      <ImageId>FAFA7896-3A62-4ae8-8897-43B4F97BD154</ImageId>
+      <AlternateText>Silver Sponsor</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\gold_sponsor.png">
+      <AlternateText>Gold Sponsor</AlternateText>
+      <ImageId>86B2D446-DB90-4cb3-8BBE-E0A3E818B057</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg">
+      <AlternateText>CAS</AlternateText>
+      <ImageId>88abc54b-5ea4-40d7-a609-ae3949358b5e</ImageId>
+    </Image>
+    <Content Include="YouTube.html" />
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
+      <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
+      <ImageId>ASMD_ProcessBindingsForCommServer.jpg</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_references.jpg">
+      <AlternateText>ASMD References</AlternateText>
+      <ImageId>ASMD_references</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_NodeClass_name.jpg">
+      <AlternateText>ASMD NodeClass</AlternateText>
+      <ImageId>ASMD_NodeClass_name</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect1.JPG">
+      <AlternateText>OPC Viewer connect</AlternateText>
+      <ImageId>4937AE5C-5867-4890-ADA0-225921D1D8C2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_48.png">
+      <AlternateText>OPC Server Add</AlternateText>
+      <ImageId>950E909F-55BC-4635-82BC-71178CF801C1</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect2.JPG">
+      <AlternateText>OPC Viewer – Select Server Window</AlternateText>
+      <ImageId>E299BCFF-DD8A-4633-8EF5-B4F36099DEC2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_disconnect_48.png">
+      <AlternateText>Server OPC disconnect</AlternateText>
+      <ImageId>378C71F3-320F-414b-A00A-3D0C11625984</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect_multiple_servers.JPG">
+      <AlternateText>OPC Viewer – multiple OPC servers</AlternateText>
+      <ImageId>76BFB630-BED6-499e-B8B7-57DF45DE9D61</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_start_48.png">
+      <AlternateText>OPC Start</AlternateText>
+      <ImageId>3CFEE26A-BDC4-4c6c-BA41-037708679A1B</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect3.JPG">
+      <AlternateText>OPC Viewer – Connect</AlternateText>
+      <ImageId>9E1346E3-EB04-47cc-BE97-025C32597D28</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_connect_48.png">
+      <AlternateText>Server OPC connected</AlternateText>
+      <ImageId>66E9A85D-CEE6-46de-AAB1-F3D50F64BD5F</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_connect_server.JPG">
+      <AlternateText>OPC Viewer – successful connection</AlternateText>
+      <ImageId>19E9E97F-0372-47dd-B26F-F6F30B2DB12F</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\serwer_opc_info_48.png">
+      <AlternateText>OPC info</AlternateText>
+      <ImageId>F26B375B-DDE1-4f8a-BC1C-853B0C8A9064</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_server_status.jpg">
+      <AlternateText>OPC Viewer – Server Status</AlternateText>
+      <ImageId>D55DCD75-F011-487b-AE3A-C63B62BDFF15</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription.JPG">
+      <AlternateText>OPC Viewer – creation of subscription</AlternateText>
+      <ImageId>963D4711-BFD5-4830-9413-8BE0949841F2</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription2.JPG">
+      <AlternateText>OPC Viewer – adding tags</AlternateText>
+      <ImageId>3F7CB5AE-96F2-41fb-89E6-8C36E45AAC7E</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\opcviewer_createsubscription3.JPG">
+      <AlternateText>OPC Viewer – added items</AlternateText>
+      <ImageId>5EFB0358-D477-41df-989A-BA0A411259F6</ImageId>
+    </Image>
+    <Image Include="PR30-OPCViewer\Graphics\ico\Network_ConnectTo.png">
+      <AlternateText>OPC Connect</AlternateText>
+      <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="OPCUAebook_ContentLayout.content" />
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

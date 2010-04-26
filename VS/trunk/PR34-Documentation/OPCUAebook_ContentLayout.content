@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="e34055b2-23e0-4f1a-9e00-52d75becaeec" visible="True" title="Welcome to the OPC Unified Architecture e-book" tocTitle="Welcome to the OPC Unified Architecture e-book">
+  <Topic id="e34055b2-23e0-4f1a-9e00-52d75becaeec" visible="True" title="Welcome to the OPC Unified Architecture e-book" tocTitle="Welcome to the OPC Unified Architecture e-book" linkText="Welcome to the OPC Unified Architecture e-book">
     <Topic id="c55db7e8-3f15-4556-b8db-12251d39ad0a" visible="True" title="OPC Unified Architecture Introduction" tocTitle="OPC Unified Architecture Introduction" linkText="OPC Unified Architecture Introduction" />
     <Topic id="3774554f-8d12-4d9a-8532-85d704388d9d" visible="True" title="Concept" tocTitle="Concept">
       <Topic id="d458d900-f4e3-472f-b729-7c759f1c8aa4" visible="True" title="Unified Architecture Overview" tocTitle="Unified Architecture Overview" />

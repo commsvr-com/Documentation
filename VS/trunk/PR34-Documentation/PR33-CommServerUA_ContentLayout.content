@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="8792522c-01ff-49f8-ba2a-e3df7abf6140" visible="True" title="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server" tocTitle="CommServer UA Server" linkText="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server">
+    <Topic id="a31ee2de-dca7-4cfd-bd76-67472753f12b" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="CommServerUAGettingStarted">
+      <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation and First Launch" tocTitle="Instalation" linkText="CommServerUAGettingStartedInstalation" />
+    </Topic>
+    <Topic id="fddc297e-3ac3-4bf2-919e-df25435ad611" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
+      <Topic id="7291baf0-ddef-4b59-9bb2-2bcef48d2e76" visible="True" title="How to configure CommServerUA" tocTitle="How to configure CommServerUA" linkText="How to configure CommServerUA" />
+    </Topic>
+    <Topic id="a49e5b1a-cd9d-4d12-a9cb-3c31e04e2bc0" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
+  </Topic>
+</Topics>
