@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics defaultTopic="f3357669-a041-405d-884b-19f5eafcabed">
+  <Topic id="f3357669-a041-405d-884b-19f5eafcabed" visible="True" title="Address Space Model Designer Tool" tocTitle="OPC UA Address Space Model Designer" linkText="{75F272F7-B26B-49b1-8A65-2AC006DA4AB3}">
+    <Topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" visible="True" title="Overview" tocTitle="Overview" linkText="Overview" />
+    <Topic id="a2d66e41-32df-404d-99bb-f4e495891493" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
+      <Topic id="7e21ba07-c79c-48e0-a034-c4310ee2a5b4" visible="True" title="Sample Solution" tocTitle="Sample Solution" linkText="Sample Solution">
+        <Topic id="b2d1ce6e-b091-49b0-8563-ce0dab8a79da" visible="True" title="How To: Open Sample Solution" tocTitle="How To: Open Sample Solution" linkText="How To: Open Sample Solution" />
+        <Topic id="f9f6641e-0f03-443a-b7b9-8c34aecfdb40" visible="True" title="Boiler Model" tocTitle="Boiler Model" linkText="Boiler Model" />
+        <Topic id="0ba3d783-093d-4394-87ef-aff8a46fff94" visible="True" title="Walkthrough: Process DataBinding" tocTitle="Walkthrough: Process DataBinding" linkText="Walkthrough: Process DataBinding" />
+      </Topic>
+      <Topic id="adf47b46-959f-4bb0-99fd-355c9de4bbe1" visible="True" title="Walkthrough: Create UA Wrapper" tocTitle="Walkthrough: Create UA Wrapper" linkText="Walkthrough: Create UA Wrapper" />
+    </Topic>
+    <Topic id="9423bb38-07a5-470a-99c8-a033b30c4ad8" visible="True" title="Using OPC UA Address Space Model Designer" tocTitle="Using OPC UA Address Space Model Designer" linkText="Using OPC UA Address Space Model Designer">
+      <Topic id="28cdfb00-5b8d-4cf3-93bd-b8cf390fc1c7" visible="True" title="OPC UA Modeling" tocTitle="OPC UA Modeling" linkText="OPC UA Modeling">
+        <Topic id="27bef542-34c2-4ce4-a501-29d483347f53" visible="True" title="OPC UA Graphical Notation " tocTitle="OPC UA Graphical Notation " linkText="OPC UA Graphical Notation " />
+        <Topic id="729ee2c6-0ed4-4130-8e45-d13db54604a7" visible="True" title="Model tree" tocTitle="Model tree" linkText="Model tree" />
+        <Topic id="849ec94e-10ed-4f25-bfdc-6284575b793a" visible="True" title="Reference modeling" tocTitle="Reference modeling" linkText="Reference modeling" />
+      </Topic>
+      <Topic id="50f9146b-15b4-49c9-a12a-ff2f72ef220b" visible="True" title="Managing Solutions, Projects, and Files " tocTitle="Managing Solutions, Projects, and Files " linkText="Managing Solutions, Projects, and Files " />
+      <Topic id="d6957c91-d52c-4d0b-92f1-e9aa87b70450" visible="True" title="How to build a solution" tocTitle="How to build a solution" linkText="How to build a solution" />
+    </Topic>
+    <Topic id="a00c7b09-b053-4e7c-a4c9-423068284d27" visible="False" title="User Interface" tocTitle="User Interface" linkText="User Interface">
+      <Topic id="e7e440ad-68fb-4c4b-bc09-26765163b898" visible="False" title="Menus" tocTitle="Menus" linkText="Menus" />
+    </Topic>
+    <Topic id="8880dab5-b615-4716-aadd-f6adc3ba74d3" visible="True" title="Nodes classes" tocTitle="Nodes classes" linkText="Nodes classes">
+      <Topic id="fb00ec85-b875-4b4c-a457-45691d367490" visible="True" title="Model (Domain)" tocTitle="Model (Domain)" linkText="Model (Domain)" />
+      <Topic id="b35e8d52-ef43-41a3-bead-dee070980880" visible="True" title="Children" tocTitle="Children" linkText="Children" />
+      <Topic id="825c51fd-1649-4681-95c9-19ceb9a4f718" visible="True" title="Namespace" tocTitle="Namespace" linkText="Namespace" />
+      <Topic id="f1cff0ba-a492-4eea-ad99-c4acbcb60808" visible="True" title="Namespaces Folder" tocTitle="Namespaces Folder" linkText="Namespaces Folder" />
+      <Topic id="f8823e82-3f6b-4f3d-b244-772820b3a9b2" visible="True" title="Types" tocTitle="Types" linkText="Types">
+        <Topic id="401602f6-68cf-4f77-81f6-3c6b6a088c6e" visible="True" title="Type" tocTitle="Type" linkText="Type" />
+        <Topic id="83ddb144-04c8-45b5-8067-a44757422ff0" visible="True" title="VariableType" tocTitle="VariableType" linkText="VariableType" />
+        <Topic id="66e5ee05-9fa5-41f7-a735-2abcee7880db" visible="True" title="DataType" tocTitle="DataType" linkText="DataType" />
+        <Topic id="22203f7a-b6ed-458f-ab86-5174ba4757f3" visible="True" title="EventType" tocTitle="EventType" linkText="EventType" />
+        <Topic id="a5703461-ab5e-4a2f-9307-8403e0d8a74e" visible="True" title="StateMachineType" tocTitle="StateMachineType" linkText="StateMachineType" />
+        <Topic id="74b62f4b-91af-4faf-b453-26ae2a212069" visible="True" title="ObjectType" tocTitle="ObjectType" linkText="ObjectType" />
+        <Topic id="2eddb75a-7f03-48bf-9ac9-3505f26e178c" visible="True" title="ReferenceType" tocTitle="ReferenceType" linkText="ReferenceType" />
+      </Topic>
+      <Topic id="35593b68-434e-4481-b356-6be27895a5ec" visible="True" title="Objects" tocTitle="Objects" linkText="Objects">
+        <Topic id="3326223f-4b54-48f6-add4-e8dbf92b4b8a" visible="True" title="Object" tocTitle="Object" linkText="Object" />
+        <Topic id="e07d2ea9-9fbf-4090-9f51-c13bcfd376d3" visible="True" title="Node" tocTitle="Node" linkText="Node" />
+        <Topic id="a53158d1-fa3a-4757-a0c5-d04306548411" visible="True" title="Reference" tocTitle="Reference" linkText="Reference" />
+        <Topic id="5d8e3b3c-cfeb-4007-a54f-64838ce85ce1" visible="True" title="ReferencesFolder" tocTitle="ReferencesFolder" linkText="ReferencesFolder" />
+        <Topic id="35491dad-5010-4746-8a35-04631122f7a2" visible="True" title="Property" tocTitle="Property" linkText="Property" />
+        <Topic id="05d23c43-3193-4f79-a14f-7e072490c209" visible="True" title="Instance" tocTitle="Instance" linkText="Instance" />
+        <Topic id="bdcb7390-4a61-4980-b9c4-b7512b8599ad" visible="True" title="Variable" tocTitle="Variable" linkText="Variable" />
+        <Topic id="54653630-5450-4075-a05b-74a77892722c" visible="True" title="View" tocTitle="View" linkText="View" />
+        <Topic id="71e57e6f-fbfb-4bd3-ab5a-7c0047c3d97c" visible="True" title="Encoding" tocTitle="Encoding" linkText="Encoding" />
+        <Topic id="ac026ef7-e1c1-4bd1-aeab-fa8e59156b02" visible="True" title="EncodingsFolder" tocTitle="EncodingsFolder" linkText="EncodingsFolder" />
+        <Topic id="d9a18287-f02e-48f0-b223-6336e45c52b6" visible="True" title="Parameter" tocTitle="Parameter" linkText="Parameter" />
+        <Topic id="6f47d37f-5bd0-48f9-9436-3cc2ce332f10" visible="True" title="ParametersFolder" tocTitle="ParametersFolder" linkText="ParametersFolder" />
+        <Topic id="3999d25b-08cf-44ae-ab93-3a7c1b948f2b" visible="True" title="Dictionary" tocTitle="Dictionary" linkText="Dictionary" />
+        <Topic id="811f5b81-0070-4870-8a98-4277c3ea877d" visible="True" title="Method" tocTitle="Method" linkText="Method" />
+      </Topic>
+    </Topic>
+    <Topic id="139fef33-0f86-4fe8-8620-51905ec6e36b" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
+  </Topic>
+</Topics>

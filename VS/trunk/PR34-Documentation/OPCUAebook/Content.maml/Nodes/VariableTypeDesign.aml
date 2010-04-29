@@ -3,7 +3,11 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
       <para>
-      VariableTypes are used to provide type definitions for Variables. VariableTypes are defined using the <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /><token>NodeClass</token></para>
+      VariableTypes are used to provide type definitions for Variables. VariableTypes are defined using the <externalLink>
+        <linkText>VariableType</linkText>
+        <linkAlternateText>VariableType</linkAlternateText>
+        <linkUri>http://www.commsvr.com/UAModelDesigner/html/1bc63c28-33da-4c76-b8f6-8df43f0a776f.htm</linkUri>
+      </externalLink> <token>NodeClass</token></para>
       <para>
       The <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /><token>NodeClass</token> inherits the base Attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" /><token>NodeClass</token>. The <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /><token>NodeClass</token> also defines a set of Attributes that describe the default or initial value of its instance Variables. The Value Attribute represents the default value. The <computerOutputInline>DataType</computerOutputInline>, <computerOutputInline>ValueRank</computerOutputInline> and <computerOutputInline>ArrayDimensions</computerOutputInline> attributes provide the capability to describe simple and complex values. The <computerOutputInline>IsAbstract</computerOutputInline> attribute defines if the type can be directly instantiated.
     </para>

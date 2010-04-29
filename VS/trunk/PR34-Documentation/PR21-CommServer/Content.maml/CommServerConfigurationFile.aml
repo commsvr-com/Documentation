@@ -35,15 +35,15 @@
             <para><legacyItalic>configfile</legacyItalic>  – specifies the file, where the communication configuration is saved (default value is “comunicationNetXmlDoc.XML”; see next chapter for more details)</para>
           </listItem>
           <listItem>
-            <para><legacyItalic>MinAvgMax_FrameResponse_management</legacyItalic> – the value indicates the number of frames when frame response statistics are updated (see Błąd! Nie można odnaleźć źródła odsyłacza.) section for more details)</para>
+            <para><legacyItalic>MinAvgMax_FrameResponse_management</legacyItalic> – the value indicates the number of frames when frame response statistics are updated</para>
           </listItem>
           <listItem>
-            <para><legacyItalic>MinAvgMax_CharacterGap_management </legacyItalic> – the value indicates the number of characters (bytes) in a communication channel when Character Gap statistics are updated (see Błąd! Nie można odnaleźć źródła odsyłacza.).
+            <para><legacyItalic>MinAvgMax_CharacterGap_management </legacyItalic> – the value indicates the number of characters (bytes) in a communication channel when Character Gap statistics are updated.
             </para>
           </listItem>
         </list>
         <para>Other parameters such as: “PLCNaN”, “MinAvgMax_Tag_management”, “MinAvgMax_Group_management”, “MinAvgMax_Group_Read_management”, “MinAvgMax_Transition_management”, “WaitForReconnectServerInSec” are internal settings of RTLib and should not be changed.</para>
-        <para>You can also edit this file to add problem tracing to CommServer and run the software in “debug” mode( for details please read chapter: “Błąd! Nie można odnaleźć źródła odsyłacza.”)</para>
+        <para>You can also edit this file to add problem tracing to CommServer and run the software in “debug” mode.</para>
       </content>
     </section>
     <relatedTopics>

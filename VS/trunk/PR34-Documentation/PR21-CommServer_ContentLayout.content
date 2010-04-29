@@ -1,86 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="2dea0752-d490-47e6-8444-ac73e07601fc">
-  <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" title="Welcome to CommServer" tocTitle="Welcome to CommServer" linkText="Welcome to CommServer" />
-  <Topic id="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation">
-    <Topic id="e6da9218-ee79-4a13-8665-5376fe7cf91d" visible="True" title="Introduction" tocTitle="Introduction" linkText="Introduction" />
-    <Topic id="ec8ba7f2-86b3-4005-876b-9479e94d3b9e" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
-    <Topic id="6e3310d3-495b-4d77-9452-6c23a6efe2c4" visible="True" title="Multi-paths redundancy" tocTitle="Multi-paths redundancy" linkText="Multi-paths redundancy" />
-    <Topic id="432a42dd-56d3-40e1-ba4a-a97ac8392f72" visible="True" title="Optimization of communication paths utilization" tocTitle="Optimization of communication paths utilization" linkText="Optimization of communication paths utilization">
-      <Topic id="9a49ee2f-9ab6-4ab2-b918-63cffedf8e3f" visible="True" title="Optimal transfer algorithm" tocTitle="Optimal transfer algorithm" linkText="Optimal transfer algorithm" />
-      <Topic id="5e52ef36-fda2-4cd3-9a26-fdfa1c62d4fc" visible="True" title="Adaptive sampling algorithm" tocTitle="Adaptive sampling algorithm" linkText="Adaptive sampling algorithm" />
+  <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" title="CommServer" tocTitle="CommServer" linkText="CommServer">
+    <Topic id="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation">
+      <Topic id="e6da9218-ee79-4a13-8665-5376fe7cf91d" visible="True" title="Introduction" tocTitle="Introduction" linkText="Introduction" />
+      <Topic id="ec8ba7f2-86b3-4005-876b-9479e94d3b9e" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
+      <Topic id="6e3310d3-495b-4d77-9452-6c23a6efe2c4" visible="True" title="Multi-paths redundancy" tocTitle="Multi-paths redundancy" linkText="Multi-paths redundancy" />
+      <Topic id="432a42dd-56d3-40e1-ba4a-a97ac8392f72" visible="True" title="Optimization of communication paths utilization" tocTitle="Optimization of communication paths utilization" linkText="Optimization of communication paths utilization">
+        <Topic id="9a49ee2f-9ab6-4ab2-b918-63cffedf8e3f" visible="True" title="Optimal transfer algorithm" tocTitle="Optimal transfer algorithm" linkText="Optimal transfer algorithm" />
+        <Topic id="5e52ef36-fda2-4cd3-9a26-fdfa1c62d4fc" visible="True" title="Adaptive sampling algorithm" tocTitle="Adaptive sampling algorithm" linkText="Adaptive sampling algorithm" />
+      </Topic>
+      <Topic id="8c17a710-9ae1-402d-9179-93000c4da09b" visible="True" title="Simultaneous multi-channel transmission" tocTitle="Simultaneous multi-channel transmission" linkText="Simultaneous multi-channel transmission" />
+      <Topic id="c20e9632-40ea-44d9-828d-02d2929a1a97" visible="True" title="Multi-data providers" tocTitle="Multi-data providers" linkText="Multi-data providers">
+        <Topic id="c77f184b-35f0-449d-a7db-fbdc88810b78" visible="True" title="Protocol-Medium Couple" tocTitle="Protocol-Medium Couple" linkText="Protocol-Medium Couple" />
+        <Topic id="c568062a-f162-4c35-818f-1c5954345bff" visible="True" title="Environment monitoring" tocTitle="Environment monitoring" linkText="Environment monitoring" />
+        <Topic id="7244450d-1e29-4d70-a7d8-677ff665fc8c" visible="True" title="Real time process simulation" tocTitle="Real time process simulation" linkText="Real time process simulation" />
+      </Topic>
+      <Topic id="13f68a0a-131d-4449-aad2-6118dc43ac77" visible="True" title="Rapid Development Kit" tocTitle="Rapid Development Kit" linkText="Rapid Development Kit" />
     </Topic>
-    <Topic id="8c17a710-9ae1-402d-9179-93000c4da09b" visible="True" title="Simultaneous multi-channel transmission" tocTitle="Simultaneous multi-channel transmission" linkText="Simultaneous multi-channel transmission" />
-    <Topic id="c20e9632-40ea-44d9-828d-02d2929a1a97" visible="True" title="Multi-data providers" tocTitle="Multi-data providers" linkText="Multi-data providers">
-      <Topic id="c77f184b-35f0-449d-a7db-fbdc88810b78" visible="True" title="Protocol-Medium Couple" tocTitle="Protocol-Medium Couple" linkText="Protocol-Medium Couple" />
-      <Topic id="c568062a-f162-4c35-818f-1c5954345bff" visible="True" title="Environment monitoring" tocTitle="Environment monitoring" linkText="Environment monitoring" />
-      <Topic id="7244450d-1e29-4d70-a7d8-677ff665fc8c" visible="True" title="Real time process simulation" tocTitle="Real time process simulation" linkText="Real time process simulation" />
+    <Topic id="c5186060-4296-4f86-a9d3-7c02b63b767b" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
+      <Topic id="6dd58056-8068-4153-a70f-045af253f5fe" visible="True" title="Installing CommServer" tocTitle="Installing CommServer" linkText="Installing CommServer" />
+      <Topic id="e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6" visible="True" title="CommServer components" tocTitle="CommServer components" linkText="CommServer components" />
     </Topic>
-    <Topic id="13f68a0a-131d-4449-aad2-6118dc43ac77" visible="True" title="Rapid Development Kit" tocTitle="Rapid Development Kit" linkText="Rapid Development Kit" />
-  </Topic>
-  <Topic id="c5186060-4296-4f86-a9d3-7c02b63b767b" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
-    <Topic id="6dd58056-8068-4153-a70f-045af253f5fe" visible="True" title="Installing CommServer" tocTitle="Installing CommServer" linkText="Installing CommServer" />
-    <Topic id="e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6" visible="True" title="CommServer components" tocTitle="CommServer components" linkText="CommServer components" />
-  </Topic>
-  <Topic id="de241950-87e4-40df-ba6c-99579ddc467e" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
-    <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CommServer.exe.config)" tocTitle="CommServer configuration file (CommServer.exe.config)" linkText="CommServer configuration file (CommServer.exe.config)" />
-    <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network">
-      <Topic id="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" visible="True" title="MBUS configuration" tocTitle="MBUS configuration" linkText="MBUS configuration" />
-      <Topic id="a8c2de7c-5c00-4835-9b36-62bddfeb54be" visible="True" title="MODBUS IP configuration" tocTitle="MODBUS IP configuration" linkText="MODBUS IP configuration" />
-      <Topic id="1b9d7777-99cc-4059-a57f-124a4d81b498" visible="True" title="MODBUS RS configuration" tocTitle="MODBUS RS configuration" linkText="MODBUS RS configuration" />
-      <Topic id="08f7c3a4-0f76-4de5-a067-f471e3d84200" visible="True" title="SBUS IP configuration" tocTitle="SBUS IP configuration" linkText="SBUS IP configuration" />
-      <Topic id="fbb931d4-5f2b-4368-a78b-45d713fdc684" visible="True" title="SBUS RS configuration" tocTitle="SBUS RS configuration" linkText="SBUS RS configuration" />
+    <Topic id="de241950-87e4-40df-ba6c-99579ddc467e" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
+      <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CommServer.exe.config)" tocTitle="CommServer configuration file (CommServer.exe.config)" linkText="CommServer configuration file (CommServer.exe.config)" />
+      <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network">
+        <Topic id="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" visible="True" title="MBUS configuration" tocTitle="MBUS configuration" linkText="MBUS configuration" />
+        <Topic id="a8c2de7c-5c00-4835-9b36-62bddfeb54be" visible="True" title="MODBUS IP configuration" tocTitle="MODBUS IP configuration" linkText="MODBUS IP configuration" />
+        <Topic id="1b9d7777-99cc-4059-a57f-124a4d81b498" visible="True" title="MODBUS RS configuration" tocTitle="MODBUS RS configuration" linkText="MODBUS RS configuration" />
+        <Topic id="08f7c3a4-0f76-4de5-a067-f471e3d84200" visible="True" title="SBUS IP configuration" tocTitle="SBUS IP configuration" linkText="SBUS IP configuration" />
+        <Topic id="fbb931d4-5f2b-4368-a78b-45d713fdc684" visible="True" title="SBUS RS configuration" tocTitle="SBUS RS configuration" linkText="SBUS RS configuration" />
+      </Topic>
+      <Topic id="9c5fc843-ce8f-41ad-913c-efa9a731f8ad" visible="True" title="Additional resources/tools" tocTitle="Additional resources/tools" linkText="Additional resources/tools">
+        <Topic id="413a881b-fd8e-494d-9b16-2e2eca1defd7" visible="True" title="Importing tags from Wizcon BLS files" tocTitle="Importing tags from Wizcon BLS files" linkText="Importing tags from Wizcon BLS files" />
+        <Topic id="7cbe14db-8b5b-4649-9730-6c705c409336" visible="True" title="Importing tag blocks" tocTitle="Importing tag blocks" linkText="Importing tag blocks" />
+        <Topic id="6986a621-5020-4ca1-95d1-fe3d35498ede" visible="True" title="Importing tag bits" tocTitle="Importing tag bits" linkText="Importing tag bits" />
+        <Topic id="22578739-db40-44c7-afee-c9f366231e83" visible="True" title="Changing tag mappings" tocTitle="Changing tag mappings" linkText="Changing tag mappings" />
+        <Topic id="c6122815-0cd7-475e-b4c5-052640d07e78" visible="True" title="Importing scan settings" tocTitle="Importing scan settings" linkText="Importing scan settings" />
+      </Topic>
+      <Topic id="da4e8035-a2bf-4a6f-b55d-f22a46af86fd" visible="True" title="Database structure" tocTitle="Database structure" linkText="Database structure" />
     </Topic>
-    <Topic id="9c5fc843-ce8f-41ad-913c-efa9a731f8ad" visible="True" title="Additional resources/tools" tocTitle="Additional resources/tools" linkText="Additional resources/tools">
-      <Topic id="413a881b-fd8e-494d-9b16-2e2eca1defd7" visible="True" title="Importing tags from Wizcon BLS files" tocTitle="Importing tags from Wizcon BLS files" linkText="Importing tags from Wizcon BLS files" />
-      <Topic id="7cbe14db-8b5b-4649-9730-6c705c409336" visible="True" title="Importing tag blocks" tocTitle="Importing tag blocks" linkText="Importing tag blocks" />
-      <Topic id="6986a621-5020-4ca1-95d1-fe3d35498ede" visible="True" title="Importing tag bits" tocTitle="Importing tag bits" linkText="Importing tag bits" />
-      <Topic id="22578739-db40-44c7-afee-c9f366231e83" visible="True" title="Changing tag mappings" tocTitle="Changing tag mappings" linkText="Changing tag mappings" />
-      <Topic id="c6122815-0cd7-475e-b4c5-052640d07e78" visible="True" title="Importing scan settings" tocTitle="Importing scan settings" linkText="Importing scan settings" />
+    <Topic id="5abf8387-8650-46fa-900c-c2ec060d04ae" visible="True" title="Using CommServer" tocTitle="Using CommServer" linkText="Using CommServer">
+      <Topic id="9929cfac-3930-4935-aead-b17d52ebc1c7" visible="True" title="Application interface" tocTitle="Application interface" linkText="Application interface">
+        <Topic id="ba47e94c-29c1-4bff-a6a2-3ed3ea0bae11" visible="True" title="Station tab" tocTitle="Station tab" linkText="Station tab" />
+        <Topic id="25b8289d-c000-47a5-8547-a8c12d912a6d" visible="True" title="Port tab" tocTitle="Port tab" linkText="Port tab" />
+        <Topic id="e8865c12-8b7b-411e-a57e-148a7f9a9357" visible="True" />
+        <Topic id="12707738-b6ab-4d92-97aa-82e511f8cedd" visible="True" title="Protocol tab" tocTitle="Protocol tab" linkText="Protocol tab" />
+        <Topic id="0bffc8cf-63f2-41b9-b61e-d69e56bdf0d0" visible="True" title="Application menu" tocTitle="Application menu" linkText="Application menu" />
+        <Topic id="1e7fb9d2-9945-46ff-85b2-cdd77395e454" visible="True" title="Tray icon capability" tocTitle="Tray icon capability" linkText="Tray icon capability" />
+        <Topic id="1e19fb28-2557-45fd-9363-3bf0c873f9f1" visible="True" title="Report utility" tocTitle="Report utility" linkText="Report utility" />
+      </Topic>
+      <Topic id="02071992-ea5e-44c2-9a48-e0093dfa2914" visible="True" title="Starting and stopping the CommServer" tocTitle="Starting and stopping the CommServer" linkText="Starting and stopping the CommServer" />
+      <Topic id="bbdb0621-a246-4932-b5bf-74957f8e22d9" visible="True" title="An example how to start the CommServer using an OPC DA" tocTitle="An example how to start the CommServer using an OPC DA" linkText="An example how to start the CommServer using an OPC DA" />
     </Topic>
-    <Topic id="da4e8035-a2bf-4a6f-b55d-f22a46af86fd" visible="True" title="Database structure" tocTitle="Database structure" linkText="Database structure" />
-  </Topic>
-  <Topic id="5abf8387-8650-46fa-900c-c2ec060d04ae" visible="True" title="Using CommServer" tocTitle="Using CommServer" linkText="Using CommServer">
-    <Topic id="9929cfac-3930-4935-aead-b17d52ebc1c7" visible="True" title="Application interface" tocTitle="Application interface" linkText="Application interface">
-      <Topic id="ba47e94c-29c1-4bff-a6a2-3ed3ea0bae11" visible="True" title="Station tab" tocTitle="Station tab" linkText="Station tab" />
-      <Topic id="25b8289d-c000-47a5-8547-a8c12d912a6d" visible="True" title="Port tab" tocTitle="Port tab" linkText="Port tab" />
-      <Topic id="e8865c12-8b7b-411e-a57e-148a7f9a9357" visible="True" />
-      <Topic id="12707738-b6ab-4d92-97aa-82e511f8cedd" visible="True" title="Protocol tab" tocTitle="Protocol tab" linkText="Protocol tab" />
-      <Topic id="0bffc8cf-63f2-41b9-b61e-d69e56bdf0d0" visible="True" title="Application menu" tocTitle="Application menu" linkText="Application menu" />
-      <Topic id="1e7fb9d2-9945-46ff-85b2-cdd77395e454" visible="True" title="Tray icon capability" tocTitle="Tray icon capability" linkText="Tray icon capability" />
-      <Topic id="1e19fb28-2557-45fd-9363-3bf0c873f9f1" visible="True" title="Report utility" tocTitle="Report utility" linkText="Report utility" />
+    <Topic id="2104673d-806f-49d6-8359-cf3734f695e5" visible="True" title="Diagnostics and Troubleshooting" tocTitle="Diagnostics and Troubleshooting" linkText="Diagnostics and Troubleshooting">
+      <Topic id="072e8fd8-ad4d-42ea-a1f8-3f0132b02614" visible="True" title="Diagnostic Information" tocTitle="Diagnostic Information" linkText="Diagnostic Information">
+        <Topic id="47256181-0c02-48e0-8654-05603b6f3b16" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" />
+        <Topic id="796a8002-ad5f-4884-af4e-b5ca748e4999" visible="True" title="Tracing in CommServer" tocTitle="Tracing in CommServer" linkText="Tracing in CommServer" />
+        <Topic id="b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5" visible="True" title="Data Provider Diagnostic" tocTitle="Data Provider Diagnostic" linkText="Data Provider Diagnostic" />
+      </Topic>
+      <Topic id="8f3a0ee9-b345-4bd8-b4db-a59be8686e66" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
     </Topic>
-    <Topic id="02071992-ea5e-44c2-9a48-e0093dfa2914" visible="True" title="Starting and stopping the CommServer" tocTitle="Starting and stopping the CommServer" linkText="Starting and stopping the CommServer" />
-    <Topic id="bbdb0621-a246-4932-b5bf-74957f8e22d9" visible="True" title="An example how to start the CommServer using an OPC DA" tocTitle="An example how to start the CommServer using an OPC DA" linkText="An example how to start the CommServer using an OPC DA" />
-  </Topic>
-  <Topic id="2104673d-806f-49d6-8359-cf3734f695e5" visible="True" title="Diagnostics and Troubleshooting" tocTitle="Diagnostics and Troubleshooting" linkText="Diagnostics and Troubleshooting">
-    <Topic id="072e8fd8-ad4d-42ea-a1f8-3f0132b02614" visible="True" title="Diagnostic Information" tocTitle="Diagnostic Information" linkText="Diagnostic Information">
-      <Topic id="47256181-0c02-48e0-8654-05603b6f3b16" visible="True" title="System Event Log" tocTitle="System Event Log" linkText="System Event Log" />
-      <Topic id="796a8002-ad5f-4884-af4e-b5ca748e4999" visible="True" title="Tracing in CommServer" tocTitle="Tracing in CommServer" linkText="Tracing in CommServer" />
-      <Topic id="b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5" visible="True" title="Data Provider Diagnostic" tocTitle="Data Provider Diagnostic" linkText="Data Provider Diagnostic" />
+    <Topic id="8594c004-2493-45a9-846e-3b54a98a5d9a" visible="True" title="Appendix" tocTitle="Appendix" linkText="Appendix">
+      <Topic id="4f52c757-1266-4b00-85be-a77134cb4e98" visible="True" title="Appendix A (example of a report)" tocTitle="Appendix A (example of a report)" linkText="Appendix A (example of a report)">
+        <Topic id="c25a81d5-8f1f-4fac-923f-314749651f1f" visible="True" title="Stations" tocTitle="Stations" linkText="Stations" />
+        <Topic id="5164ca9e-1e51-4480-bc55-7b77f17c354c" visible="True" title="Segments" tocTitle="Segments" linkText="Segments" />
+        <Topic id="ac0000a7-b6fe-4a07-a4b2-bf607389e948" visible="True" title="Interfaces" tocTitle="Interfaces" linkText="Interfaces" />
+        <Topic id="5791047a-0f60-476a-8e5f-7ab45c4cdd21" visible="True" title="Protocols" tocTitle="Protocols" linkText="Protocols" />
+      </Topic>
+      <Topic id="eae686e6-c4c0-4024-9f9b-434886e91661" visible="True" title="Appendix B (Tracing)" tocTitle="Appendix B (Tracing)" linkText="Appendix B (Tracing)" />
     </Topic>
-    <Topic id="8f3a0ee9-b345-4bd8-b4db-a59be8686e66" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
-  </Topic>
-  <Topic id="8594c004-2493-45a9-846e-3b54a98a5d9a" visible="True" title="Appendix" tocTitle="Appendix" linkText="Appendix">
-    <Topic id="4f52c757-1266-4b00-85be-a77134cb4e98" visible="True" title="Appendix A (example of a report)" tocTitle="Appendix A (example of a report)" linkText="Appendix A (example of a report)">
-      <Topic id="c25a81d5-8f1f-4fac-923f-314749651f1f" visible="True" title="Stations" tocTitle="Stations" linkText="Stations" />
-      <Topic id="5164ca9e-1e51-4480-bc55-7b77f17c354c" visible="True" title="Segments" tocTitle="Segments" linkText="Segments" />
-      <Topic id="ac0000a7-b6fe-4a07-a4b2-bf607389e948" visible="True" title="Interfaces" tocTitle="Interfaces" linkText="Interfaces" />
-      <Topic id="5791047a-0f60-476a-8e5f-7ab45c4cdd21" visible="True" title="Protocols" tocTitle="Protocols" linkText="Protocols" />
+    <Topic id="7cebc829-1948-47d6-b093-c1c181d2de7b" visible="True" title="Examples and tutorials" tocTitle="Examples and tutorials" linkText="Examples and tutorials">
+      <Topic id="efdd4d99-ff98-46d8-a37a-33de8f522c1d" visible="True" title="DCOM configuration example" tocTitle="DCOM configuration example" linkText="DCOM configuration example" />
+      <Topic id="1c7b5f72-c925-4500-89a2-80344030eedc" visible="True" title="CommServer configuration example" tocTitle="CommServer configuration example" linkText="CommServer configuration example" />
+      <Topic id="317fcba8-65a2-4039-b87c-21d69b0a725b" visible="True" title="CommServer on x64 systems" tocTitle="CommServer on x64 systems" linkText="CommServer on x64 systems">
+        <Topic id="96e7311a-9d1b-4415-a309-9f910fe917ff" visible="True" title="Prerequisites" tocTitle="Prerequisites" linkText="Prerequisites" />
+        <Topic id="dddffed2-5bc9-4e1b-9c9a-e91b1e547237" visible="True" title="Port installation setup" tocTitle="Port installation setup" linkText="Port installation setup" />
+        <Topic id="c089e219-95a9-4a23-95a0-367a896128c3" visible="True" title="Summary" tocTitle="Summary" linkText="Summary" />
+      </Topic>
     </Topic>
-    <Topic id="eae686e6-c4c0-4024-9f9b-434886e91661" visible="True" title="Appendix B (Tracing)" tocTitle="Appendix B (Tracing)" linkText="Appendix B (Tracing)" />
-  </Topic>
-  <Topic id="7cebc829-1948-47d6-b093-c1c181d2de7b" visible="True" title="Examples and tutorials" tocTitle="Examples and tutorials" linkText="Examples and tutorials">
-    <Topic id="efdd4d99-ff98-46d8-a37a-33de8f522c1d" visible="True" title="DCOM configuration example" tocTitle="DCOM configuration example" linkText="DCOM configuration example" />
-    <Topic id="1c7b5f72-c925-4500-89a2-80344030eedc" visible="True" title="CommServer configuration example" tocTitle="CommServer configuration example" linkText="CommServer configuration example" />
-    <Topic id="317fcba8-65a2-4039-b87c-21d69b0a725b" visible="True" title="CommServer on x64 systems" tocTitle="CommServer on x64 systems" linkText="CommServer on x64 systems">
-      <Topic id="96e7311a-9d1b-4415-a309-9f910fe917ff" visible="True" title="Prerequisites" tocTitle="Prerequisites" linkText="Prerequisites" />
-      <Topic id="dddffed2-5bc9-4e1b-9c9a-e91b1e547237" visible="True" title="Port installation setup" tocTitle="Port installation setup" linkText="Port installation setup" />
-      <Topic id="c089e219-95a9-4a23-95a0-367a896128c3" visible="True" title="Summary" tocTitle="Summary" linkText="Summary" />
+    <Topic id="edfb1894-1b42-4561-a0ca-cd3cf3b37405" visible="True" title="How to test OPC connection" tocTitle="How to test OPC connection" linkText="How to test OPC connection">
+      <Topic id="04834b85-db9d-4c4c-a6f1-58032fa2ba1e" visible="True" title="Test target - introduction" tocTitle="Test target - introduction" linkText="Test target - introduction" />
+      <Topic id="b97056dd-3293-4486-be51-ef7121629f45" visible="True" title="Preparing for test - computers configuration" tocTitle="Preparing for test - computers configuration" linkText="Preparing for test - computers configuration" />
+      <Topic id="bd81e043-6670-4d4a-ba74-e0be1d2822b2" visible="True" title="OPC connection test" tocTitle="OPC connection test" linkText="OPC connection test" />
     </Topic>
-  </Topic>
-  <Topic id="edfb1894-1b42-4561-a0ca-cd3cf3b37405" visible="True" title="How to test OPC connection" tocTitle="How to test OPC connection" linkText="How to test OPC connection">
-    <Topic id="04834b85-db9d-4c4c-a6f1-58032fa2ba1e" visible="True" title="Test target - introduction" tocTitle="Test target - introduction" linkText="Test target - introduction" />
-    <Topic id="b97056dd-3293-4486-be51-ef7121629f45" visible="True" title="Preparing for test - computers configuration" tocTitle="Preparing for test - computers configuration" linkText="Preparing for test - computers configuration" />
-    <Topic id="bd81e043-6670-4d4a-ba74-e0be1d2822b2" visible="True" title="OPC connection test" tocTitle="OPC connection test" linkText="OPC connection test" />
   </Topic>
 </Topics>

@@ -25,13 +25,13 @@
         </mediaLink>
         <list class="bullet">
           <listItem>
-            <para>NetworkConfig is an application that is used for editing the configuration of CommServer. It saves configuration in the XML file (Config XML in the figure above). More details about these components  see chapter <legacyBold>Błąd! Nie można odnaleźć źródła odsyłacza..</legacyBold> </para>
+            <para>NetworkConfig is an application that is used for editing the configuration of CommServer. It saves configuration in the XML file (Config XML in the figure above).</para>
           </listItem>
           <listItem>
             <para>CommServer Engine is the main part of the CommServer package. It consists of a scanner, cache and OPC Server. It has two interfaces: OPC is the main interface that serves the data to all client applications and a diagnostic interface that allows to be attached via CommServer console to provide diagnostic information.</para>
           </listItem>
           <listItem>
-            <para>The last component is CommServer Console (it is called also server HMI (human machine interface))  that is a tool to monitor CommServer (more information see chapter <legacyBold> Błąd! Nie można odnaleźć źródła odsyłacza.</legacyBold>). </para>
+            <para>The last component is CommServer Console (it is called also server HMI (human machine interface))  that is a tool to monitor CommServer. </para>
           </listItem>
         </list>
         <para>The figure above shows also an OPC Client which is not a part of the CommServer package (this could be any OPC client compatible with OPC. Data Access 1.0a, 2.00, 2.05a, 3.0). The server is launched by the client. And it is the only way to launch the CommServer server. When the server is not working, the attempt to launch the console will end by an error message. To find whether CommServer is launched please find “CASOpcDaWrapper” in Windows Task Manager on tab Processes (you can launch Task Manager by giving the command taskmgr in Start menu -> run ). If <legacyBold>‘CASOpcDaWrapper’</legacyBold> process is launched, it means that OPC server service is working.</para>
