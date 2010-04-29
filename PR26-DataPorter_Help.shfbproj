@@ -71,7 +71,7 @@
           <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
                  optional. -->
-          <logoFile filename="\\Hq.cas.com.pl\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
+          <logoFile filename="\\CAS_002\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
         </component>
       </ComponentConfig>
     </ComponentConfigurations>
@@ -79,7 +79,10 @@
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-<PlugInConfig id="HelpTopicsGenerator" enabled="True"><configuration /></PlugInConfig></PlugInConfigurations>
+      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
     <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
@@ -133,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\FAQ.aml" />
+    <None Include="PR26-DataPorter\Content.maml\06b9e959-6bf3-4fc5-a40d-1adee7f34259.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\StartingStoppingandCheckingTheDataPorterStatus.aml" />
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
     <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />

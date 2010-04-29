@@ -529,6 +529,7 @@
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\2ada690c-20a7-45c3-a5ba-c62c2df104b0.aml" />
     <None Include="PR21-CommServer\Content.maml\OPCConnectionTest.aml" />
     <None Include="PR21-CommServer\Content.maml\PreparingForTestComputersConfiguration.aml" />
     <None Include="PR21-CommServer\Content.maml\TestTargetInstructions.aml" />
