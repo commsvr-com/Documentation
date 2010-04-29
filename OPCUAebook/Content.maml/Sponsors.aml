@@ -102,7 +102,12 @@
               </listItem>
               <listItem>
                 <para>
-                  Privilege to add materials to the e-book (including author’s personal and affiliation information), review materials and consult the e-book content.
+                  Privilege of adding materials to the e-book (including author’s personal and affiliation information), reviewing materials and consulting the e-book content.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Privilege of using OPC UA e-book topic references in Sponsor software - every Gold Sponsor will get the list of the OPC UA e-book topics with unique identifiers, which might be used to make references in the software GUI and documentation.
                 </para>
               </listItem>
             </list>

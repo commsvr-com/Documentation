@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="2d5937cb-8f0a-464b-8169-c21baa17a6d4" revisionNumber="1">
+  <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>This topic is a tutorial which tells you how to connect remotely to CommServer UA with ADI model</para>
+    </introduction>
+    <procedure>
+      <title>How to connect remotely to CommServer UA with ADI model?</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>
+              Start OPC Foundation Sample UA Client and paste the following connection string: <legacyBold>opc.tcp://commsvr.com:51234/UA/CAS_UA_Server – [None:None:Binary]</legacyBold> into the text box as it is on the picture below and click "Connect" button
+             </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">OPC Foundation sample client window</caption>
+              <image placement="center" xlink:href = "4653484E-3C60-4bf9-A18D-1E06D11F1403"/>
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+             In "Server Configuration dialog configure the connection as is shown on the example window below:
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2">Server configuration</caption>
+              <image placement="center" xlink:href = "799BD8C4-3008-4a13-9710-4DBEF38FAA79"/>
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              In the "Open Session" dialog click OK button
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 3">Open Session</caption>
+              <image placement="center" xlink:href = "88F2C458-AC90-40f9-9D47-E045A22742EA"/>
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              If the "Accept certificate" dialog appears (example below) - accept the certificate anyway.
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 4">Accept certificate</caption>
+              <image placement="center" xlink:href = "42B7BAD6-F803-46c5-8F27-8721F021779B"/>
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>
+              Now you can browse ADI aware server online
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 5">Working OPC Foundation sample client</caption>
+              <image placement="center" xlink:href = "B02C4534-BF12-422a-825F-6036E6FCC81F"/>
+            </mediaLink>
+          </content>
+        </step>
+      </steps>
+    </procedure>
+    <relatedTopics>
+    </relatedTopics>
+  </developerHowToDocument>
+</topic>
