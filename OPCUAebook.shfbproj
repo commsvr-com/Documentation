@@ -697,6 +697,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="OPCUAebook\Content.maml\About.aml" />
     <None Include="OPCUAebook\Content.maml\Sponsors_CAS.aml" />
     <None Include="OPCUAebook\Content.maml\Sponsors.aml" />
@@ -1140,6 +1141,26 @@
     <Image Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg">
       <AlternateText>CAS</AlternateText>
       <ImageId>88abc54b-5ea4-40d7-a609-ae3949358b5e</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_5.jpg">
+      <ImageId>B02C4534-BF12-422a-825F-6036E6FCC81F</ImageId>
+      <AlternateText>Working client</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_4.jpg">
+      <ImageId>42B7BAD6-F803-46c5-8F27-8721F021779B</ImageId>
+      <AlternateText>Accept certificate</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_3.jpg">
+      <ImageId>88F2C458-AC90-40f9-9D47-E045A22742EA</ImageId>
+      <AlternateText>Open session</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_2.jpg">
+      <ImageId>799BD8C4-3008-4a13-9710-4DBEF38FAA79</ImageId>
+      <AlternateText>Server configuration</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_1.jpg">
+      <ImageId>4653484E-3C60-4bf9-A18D-1E06D11F1403</ImageId>
+      <AlternateText>Sample client</AlternateText>
     </Image>
     <Content Include="YouTube.html" />
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
