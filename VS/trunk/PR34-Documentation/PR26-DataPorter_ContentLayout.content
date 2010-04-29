@@ -95,7 +95,6 @@
             <HelpKeyword index="K" term="Monitor" />
           </HelpKeywords>
         </Topic>
-        <Topic id="f94f793b-868c-470d-b076-d08376cbd433" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
         <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer">
           <HelpKeywords>
             <HelpKeyword index="K" term="Getting Started, OPC Viewer" />
