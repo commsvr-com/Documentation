@@ -112,7 +112,7 @@
     <Topic id="1bf073fd-1de4-4558-8e90-76b4790258bb" visible="True" title="CAS" tocTitle="CAS" linkText="CAS">
       <Topic id="8792522c-01ff-49f8-ba2a-e3df7abf6140" visible="True" title="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server" tocTitle="CommServer UA Server" linkText="CommServerUA: Redundant, Multi-protocol, Multi-channel OPC UA Server">
         <Topic id="a31ee2de-dca7-4cfd-bd76-67472753f12b" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="CommServerUAGettingStarted">
-          <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation and First Launch" tocTitle="Instalation" linkText="CommServerUAGettingStartedInstalation" />
+          <Topic id="855b2ab5-2562-4de8-b0f6-d1142368a7c6" visible="True" title="Instalation and First Launch" tocTitle="Instalation" linkText="CommServerUAGettingStartedInstalation" />
         </Topic>
         <Topic id="fddc297e-3ac3-4bf2-919e-df25435ad611" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
           <Topic id="7291baf0-ddef-4b59-9bb2-2bcef48d2e76" visible="True" title="How to configure CommServerUA" tocTitle="How to configure CommServerUA" linkText="How to configure CommServerUA" />

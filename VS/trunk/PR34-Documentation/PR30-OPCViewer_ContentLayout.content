@@ -1,28 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics defaultTopic="2cf90670-4962-49d1-9b91-663261dd74d7">
-  <Topic id="2cf90670-4962-49d1-9b91-663261dd74d7" visible="True">
-    <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" />
-  </Topic>
-  <Topic id="437d2512-d280-4e30-9e97-db7000765a08" visible="True">
-    <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
-    <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting started" tocTitle="OPC Viewer Getting started" linkText="OPC Viewer Getting started">
-      <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
-      <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Sesion Tree View" tocTitle="Sesion Tree View" linkText="Sesion Tree View" />
+  <Topic id="2cf90670-4962-49d1-9b91-663261dd74d7" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer">
+    <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
+    <Topic id="437d2512-d280-4e30-9e97-db7000765a08" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">
+      <Topic id="efa83c9a-0ca8-45e3-b80f-7b6506409f1f" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
+      <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting started" tocTitle="OPC Viewer Getting started" linkText="OPC Viewer Getting started">
+        <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
+        <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Sesion Tree View" tocTitle="Sesion Tree View" linkText="Sesion Tree View" />
+      </Topic>
+      <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="OPC Viewer Processing Environment" tocTitle="OPC Viewer Processing Environment" linkText="OPC Viewer Processing Environment">
+        <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor" tocTitle="Transaction Editor" linkText="Transaction Editor" />
+      </Topic>
     </Topic>
-    <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="OPC Viewer Processing Environment" tocTitle="OPC Viewer Processing Environment" linkText="OPC Viewer Processing Environment">
-      <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor" tocTitle="Transaction Editor" linkText="Transaction Editor" />
+    <Topic id="3f3eb239-28ae-46ef-b42a-2a3d4c1688d8" visible="True">
+      <Topic id="9ecbc065-4153-4193-86d0-5d264120a69a" visible="True">
+        <Topic id="b91f20e8-d116-4706-86f4-5ebe9586774a" visible="True" />
+        <Topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" visible="True" />
+        <Topic id="662c67b6-580d-4f55-b8f6-20a4fdce79b7" visible="True" />
+        <Topic id="420d5fc2-c2b0-42e4-b944-d0b72e3fa4b2" visible="True" />
+        <Topic id="e8cbd036-5a13-4a3c-b6f1-637561d043fc" visible="True" />
+      </Topic>
     </Topic>
+    <Topic id="615734d2-5b06-4696-87d4-1d579804cede" visible="True" title="Using OPC Viewer" tocTitle="Using OPC Viewer" linkText="Using OPC Viewer" />
+    <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" />
   </Topic>
-  <Topic id="3f3eb239-28ae-46ef-b42a-2a3d4c1688d8" visible="True">
-    <Topic id="9ecbc065-4153-4193-86d0-5d264120a69a" visible="True">
-      <Topic id="b91f20e8-d116-4706-86f4-5ebe9586774a" visible="True" />
-      <Topic id="cd9b99cf-299d-47b0-a8a6-348d38f83e25" visible="True" />
-      <Topic id="662c67b6-580d-4f55-b8f6-20a4fdce79b7" visible="True" />
-      <Topic id="420d5fc2-c2b0-42e4-b944-d0b72e3fa4b2" visible="True" />
-      <Topic id="e8cbd036-5a13-4a3c-b6f1-637561d043fc" visible="True" />
-    </Topic>
-  </Topic>
-  <Topic id="615734d2-5b06-4696-87d4-1d579804cede" visible="True" />
-  <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" />
-  <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" />
 </Topics>
