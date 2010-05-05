@@ -2,7 +2,7 @@
 <topic id="2eddb75a-7f03-48bf-9ac9-3505f26e178c" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <para>References are defined as instances of <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes. <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d" /> nodes are visible in the <token>AS</token>. In contrast, a Reference is an inherent part of a Node and no <link xlink:href="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67">node class</link> is used to represent references.</para>
+      <para>References are defined as instances of <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d">ReferenceType</link> nodes. <link xlink:href="4044403d-3a21-40cc-a508-b2d17a10b62d">ReferenceType</link> nodes are visible in the <token>AS</token>. In contrast, a Reference is an inherent part of a Node and no <link xlink:href="1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67">node class</link> is used to represent references.</para>
     </introduction>
     <relatedTopics>
     </relatedTopics>

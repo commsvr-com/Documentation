@@ -2,7 +2,7 @@
 <topic id="bdcb7390-4a61-4980-b9c4-b7512b8599ad" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      <para>Two types of Variables are defined, Properties and <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link>. Variables are used to represent values which may be simple or complex. Variables are defined by VariableTypes. Variables are always defined as Properties or <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> of other Nodes in the <token>AS</token>. They are never defined by themselves. A <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> is always part of at least one other Node, but may be related to any number of other Nodes.</para>
+      <para>Two types of Variables are defined, Properties and <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link>. Variables are used to represent values which may be simple or complex. Variables are defined by VariableTypes. Variables are always defined as Properties or <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#DataVariable">data variables</link> of other Nodes in the <token>AS</token>. They are never defined by themselves. A <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045">Variable</link> is always part of at least one other Node, but may be related to any number of other Nodes.</para>
     </introduction>
     <relatedTopics>
     </relatedTopics>

@@ -905,29 +905,77 @@
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
     <Content Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg" />
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
+      <AlternateText>UA Address Space Model Designer (solution, projects, library)</AlternateText>
+      <ImageId>480593ec-1ece-495a-ae7f-e9eaa35a6c04</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg">
+      <AlternateText>Attaching of the object to the root folder</AlternateText>
+      <ImageId>d7cc85f5-9937-404a-bbf4-37f8dfc332c8</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.jpg">
+      <AlternateText>Reference modelling</AlternateText>
+      <ImageId>bca95e6d-af8e-4d77-9f84-d4b4c80ee3d7</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg">
+      <AlternateText>NodeClass indicator</AlternateText>
+      <ImageId>dd000636-3049-4672-9411-1e2f1e53c763</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg">
+      <AlternateText>Modeling steps</AlternateText>
+      <ImageId>e48d964e-069c-442c-9abf-12f898edd16d</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg">
+      <AlternateText>Graphical notation</AlternateText>
+      <ImageId>31107f84-8ca6-427f-816b-c6d659c6ed18</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg">
+      <AlternateText>CAS UA Address Space Model Designer</AlternateText>
+      <ImageId>d9963680-9313-449c-8c65-1a0de03ace2e</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg">
+      <AlternateText>CAS UA Address Space Model Designer</AlternateText>
+      <ImageId>475d4891-d765-4ab9-bd11-df2e85338702</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg">
+      <ImageId>184a9787-110d-485d-bf3c-ae808ef5829a</ImageId>
+      <AlternateText>CAS UA Address Space Model Designer</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg">
+      <AlternateText>Code generation</AlternateText>
+      <ImageId>e7c9ef7c-d341-4ca0-b6f5-f9c470b6fe2d</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg">
+      <AlternateText>Building a solution</AlternateText>
+      <ImageId>89f9e8dc-0ffe-4892-8ae4-1600b3ecce18</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg">
+      <AlternateText>UA Address Space Model Designer approach</AlternateText>
+      <ImageId>b6c218c8-1b29-48ce-a03c-52adc2038873</ImageId>
+    </Image>
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings_boilers.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_openingsamplesolution-witharrows.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg" />
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg">
+      <AlternateText>OPC Viewer – Saving the server address space in a dictionary file</AlternateText>
+      <ImageId>7ac2eec8-31ab-4278-82ba-857b1099ad0f</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg">
+      <ImageId>602d51f8-b058-4e04-879b-f6df460fc74a</ImageId>
+      <AlternateText>OPC Viewer – Browse server items</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg">
+      <AlternateText>UA Address Space Model Designer – Select configuration editor</AlternateText>
+      <ImageId>fc7fbc69-47d6-4c32-88ea-f7bb8bac98fc</ImageId>
+    </Image>
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Save_oses_file.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_references.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_NodeClass_name.jpg" />
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg" />
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg">
+      <AlternateText>UA Address Space Model Designer – Create new project in the solution</AlternateText>
+      <ImageId>374e18ec-2cec-451f-aa9b-4ba25dbb0e89</ImageId>
+    </Image>
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Import_From_OPC_DA.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Build_imported_model.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-SelectEditor_composition.jpg" />
@@ -965,7 +1013,10 @@
     <Content Include="OPCUAebook\Graphics\QualifiedNameBinaryEncoding.JPG" />
     <Content Include="OPCUAebook\Graphics\PredefinedReferenceTypes.JPG" />
     <Content Include="OPCUAebook\Graphics\OverviewAboutAttributes.JPG" />
-    <Content Include="OPCUAebook\Graphics\OPC_UA_Object_Model.jpg" />
+    <Image Include="OPCUAebook\Graphics\OPC_UA_Object_Model.jpg">
+      <AlternateText>OPC UA Object Model</AlternateText>
+      <ImageId>bb392375-2eac-4efd-8e9c-d9222f84dba0</ImageId>
+    </Image>
     <Content Include="OPCUAebook\Graphics\OPCUASystemArchitecture.JPG" />
     <Content Include="OPCUAebook\Graphics\OPCUAServerArchitecture.JPG" />
     <Content Include="OPCUAebook\Graphics\OPCUAClientArchitecture.JPG" />
@@ -978,14 +1029,20 @@
     <Content Include="OPCUAebook\Graphics\NodeIdEncodingValues.JPG" />
     <Content Include="OPCUAebook\Graphics\NodeIdComponents.JPG" />
     <Content Include="OPCUAebook\Graphics\Method.JPG" />
-    <Content Include="OPCUAebook\Graphics\MainGui.png" />
+    <Image Include="OPCUAebook\Graphics\MainGui.png">
+      <ImageId>f762cfc2-2255-40e1-a143-0f909ad26b62</ImageId>
+      <AlternateText>Main GUI</AlternateText>
+    </Image>
     <Content Include="OPCUAebook\Graphics\LocalizedTextBinaryEncoding.JPG" />
     <Content Include="OPCUAebook\Graphics\integration_wykres_en.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_supersystem.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_funkcje_small_EN.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_commserver_process_observer.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_chaos_small_en.jpg" />
-    <Content Include="OPCUAebook\Graphics\HelpGUI.png" />
+    <Image Include="OPCUAebook\Graphics\HelpGUI.png">
+      <ImageId>df45d4b0-49d4-4635-92e1-e72d9dc198ed</ImageId>
+      <AlternateText>OPC Unified Architecture eBook</AlternateText>
+    </Image>
     <Content Include="OPCUAebook\Graphics\GraphicalNotationView.JPG" />
     <Content Include="OPCUAebook\Graphics\GraphicalNotationVariableType.JPG" />
     <Content Include="OPCUAebook\Graphics\GraphicalNotationVariable.JPG" />
@@ -1057,7 +1114,10 @@
     <Content Include="OPCUAebook\Graphics\Attributes.JPG" />
     <Content Include="OPCUAebook\Graphics\AFourByteNodeId.JPG" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceNodeModel.JPG" />
-    <Content Include="OPCUAebook\Graphics\AddressSpace.png" />
+    <Image Include="OPCUAebook\Graphics\AddressSpace.png">
+      <ImageId>71d79c66-35a6-4f09-ab24-dd19bb2a5afa</ImageId>
+      <AlternateText>Address Space Concept</AlternateText>
+    </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Image Include="PR26-DataPorter\Graphics\operations\DBAdv.JPG">
       <AlternateText>DBAdv.JPG</AlternateText>
@@ -1953,12 +2013,9 @@
     <None Include="OPCUAebook\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
   </ItemGroup>
   <ItemGroup>
-    <ContentLayout Include="PR30-OPCViewer_ContentLayout.content" />
-  </ItemGroup>
-  <ItemGroup>
+    <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
     <ContentLayout Include="PR33-CommServerUA_ContentLayout.content" />
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
-    <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
     <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
   </ItemGroup>
   <!-- Import the SHFB build targets -->

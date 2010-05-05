@@ -4,7 +4,7 @@
     <introduction>
 
       <para>
-        The <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /> Model is used to define simple and complex data types. Data types are used to describe the structure of the Value Attribute of Variables and their VariableTypes. Therefore each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045" /> and <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f" /> is pointing with its DataType Attribute to a Node of the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23" /><token>NodeClass</token>
+        The <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23">DataType</link> Model is used to define simple and complex data types. Data types are used to describe the structure of the Value Attribute of Variables and their VariableTypes. Therefore each <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045">Variable</link> and <link xlink:href="1bc63c28-33da-4c76-b8f6-8df43f0a776f">VariableType</link> is pointing with its DataType Attribute to a Node of the <link xlink:href="07e07cd6-0589-48e7-89c3-e99176e1cb23">DataType</link> <token>NodeClass</token>
       </para>
     </introduction>
 

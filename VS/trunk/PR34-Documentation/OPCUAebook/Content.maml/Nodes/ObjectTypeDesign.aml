@@ -3,10 +3,10 @@
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
       <para>
-      ObjectTypes provide definitions for Objects. ObjectTypes are defined using the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /><token>NodeClass</token>. The <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /> inherits the base Attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee" />.
+      ObjectTypes provide definitions for Objects. ObjectTypes are defined using the <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf">ObjectType</link> <token>NodeClass</token>. The <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf">ObjectType</link> inherits the base Attributes from the <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee">Base</link>
     </para>
       <para>
-      The <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" /><token>NodeClass</token> uses the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> references to define the data variables, objects, and methods for it.
+      The <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf">ObjectType</link> <token>NodeClass</token> uses the <link xlink:href="57be83ea-0aac-4456-b29a-0b18a8467134#HasComponent">HasComponent</link> references to define the data variables, objects, and methods for it.
     </para>
     </introduction>
     <relatedTopics>
