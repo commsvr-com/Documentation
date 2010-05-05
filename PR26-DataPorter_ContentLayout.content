@@ -40,13 +40,7 @@
         <HelpKeyword index="K" term="Getting Started" />
         <HelpKeyword index="K" term="DataPorter, Getting Started" />
       </HelpKeywords>
-      <Topic id="176fbec7-2274-4b9b-8212-7b7a8a41e32b" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction">
-        <HelpKeywords>
-          <HelpKeyword index="K" term="DataPorter, Instalation" />
-          <HelpKeyword index="K" term="Getting Started, Instalation" />
-          <HelpKeyword index="K" term="Instalation" />
-        </HelpKeywords>
-      </Topic>
+      <Topic id="21ad434f-60d8-4df5-be3c-8e5fa2404d8a" visible="True" title="Instalation Instruction" tocTitle="Instalation Instruction" linkText="Instalation Instruction" />
       <Topic id="69b44a32-2a87-4094-bfde-ed54175ec272" visible="True" title="Starting, stopping and checking the DataPorter status  " tocTitle="Starting, stopping and checking the DataPorter status  " linkText="Starting, stopping and checking the DataPorter status  ">
         <HelpKeywords>
           <HelpKeyword index="K" term="Getting Started, Starting" />
@@ -95,16 +89,7 @@
             <HelpKeyword index="K" term="Monitor" />
           </HelpKeywords>
         </Topic>
-        <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer - Freeware, simple and easy OPC DA Client" tocTitle="OPC Viewer" linkText="OPC Viewer">
-          <HelpKeywords>
-            <HelpKeyword index="K" term="Getting Started, OPC Viewer" />
-            <HelpKeyword index="K" term="DataPorter components, OPC Viewer" />
-            <HelpKeyword index="K" term="OPC DA Client" />
-            <HelpKeyword index="K" term="Client" />
-            <HelpKeyword index="K" term="Configuration tool" />
-            <HelpKeyword index="K" term="Session file" />
-          </HelpKeywords>
-        </Topic>
+        <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
         <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP Extension " tocTitle="OPC2SOAP" linkText="OPC2SOAP">
           <HelpKeywords>
             <HelpKeyword index="K" term="Getting Started, OPC2SOAP" />
@@ -137,92 +122,6 @@
             <HelpKeyword index="K" term="WSDL" />
             <HelpKeyword index="K" term="XML" />
             <HelpKeyword index="K" term="OPC2SOAP" />
-          </HelpKeywords>
-        </Topic>
-      </Topic>
-      <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting Started" tocTitle="OPC Viewer Getting Started" linkText="OPC Viewer Getting Started">
-        <HelpKeywords>
-          <HelpKeyword index="K" term="OPC Viewer" />
-          <HelpKeyword index="K" term="OPC Viewer, Getting Started" />
-          <HelpKeyword index="K" term="OPC Viewer, Main menu" />
-          <HelpKeyword index="K" term="OPC Viewer, Main panel" />
-          <HelpKeyword index="K" term="OPC Viewer, Main tool strip" />
-          <HelpKeyword index="K" term="OPC Viewer, Main window" />
-          <HelpKeyword index="K" term="OPC Viewer, server connect tool strip" />
-          <HelpKeyword index="K" term="OPC Viewer, Server status" />
-          <HelpKeyword index="K" term="OPC Viewer, Tab panel selector" />
-          <HelpKeyword index="K" term="Getting Started, OPC Viewer" />
-          <HelpKeyword index="K" term="Session file" />
-        </HelpKeywords>
-        <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel">
-          <HelpKeywords>
-            <HelpKeyword index="K" term="OPC Viewer, OPC Environment tab" />
-            <HelpKeyword index="K" term="OPC Environment" />
-            <HelpKeyword index="K" term="Environment" />
-            <HelpKeyword index="K" term="OPC Viewer, Processing Environment tab" />
-            <HelpKeyword index="K" term="Processing Environment" />
-            <HelpKeyword index="K" term="Processing" />
-          </HelpKeywords>
-        </Topic>
-        <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Session Tree View" tocTitle="Session Tree View" linkText="Session Tree View">
-          <HelpKeywords>
-            <HelpKeyword index="K" term="OPC Viewer, Items" />
-            <HelpKeyword index="K" term="OPC Viewer, OPC Environment" />
-            <HelpKeyword index="K" term="OPC Viewer, OPC server" />
-            <HelpKeyword index="K" term="OPC Viewer, Session Tree View" />
-            <HelpKeyword index="K" term="Session Tree View" />
-            <HelpKeyword index="K" term="Session" />
-            <HelpKeyword index="K" term="OPC Viewer, Subscription" />
-            <HelpKeyword index="K" term="OPC Environment" />
-            <HelpKeyword index="K" term="OPC server" />
-            <HelpKeyword index="K" term="Subscription" />
-            <HelpKeyword index="K" term="Items" />
-          </HelpKeywords>
-        </Topic>
-      </Topic>
-      <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="Processing Environment in OPC Viewer" tocTitle="Processing Environment in OPC Viewer" linkText="Processing Environment in OPC Viewer">
-        <HelpKeywords>
-          <HelpKeyword index="K" term="Getting Started, Processing Environment" />
-          <HelpKeyword index="K" term="Processing Environment" />
-          <HelpKeyword index="K" term="Environment" />
-          <HelpKeyword index="K" term="Transaction, Configuration" />
-          <HelpKeyword index="K" term="Transaction, Node" />
-          <HelpKeyword index="K" term="Operations, Configuration" />
-          <HelpKeyword index="K" term="Operations, Node" />
-          <HelpKeyword index="K" term="OPC Viewer, Processing Environment" />
-          <HelpKeyword index="K" term="OPC Viewer, Processing Environment Editor Tab" />
-          <HelpKeyword index="K" term="OPC Viewer, Processing Environment in session Tree View" />
-        </HelpKeywords>
-        <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started">
-          <HelpKeywords>
-            <HelpKeyword index="K" term="OPC Viewer, Transaction Editor" />
-            <HelpKeyword index="K" term="Transaction Editor, Example Transaction" />
-            <HelpKeyword index="K" term="Transaction Editor, Main Panel" />
-            <HelpKeyword index="K" term="Transaction Editor, Context Menu" />
-            <HelpKeyword index="K" term="Transaction Editor" />
-            <HelpKeyword index="K" term="Transaction, Editor" />
-            <HelpKeyword index="K" term="Transaction, Configuration" />
-            <HelpKeyword index="K" term="Transaction, Example" />
-            <HelpKeyword index="K" term="Graphical transaction editor" />
-            <HelpKeyword index="K" term="Transaction property grid" />
-            <HelpKeyword index="K" term="Transaction, Operations editor" />
-            <HelpKeyword index="K" term="Transaction, input" />
-            <HelpKeyword index="K" term="Transaction, output" />
-            <HelpKeyword index="K" term="Operation, editor" />
-            <HelpKeyword index="K" term="Operation, input" />
-            <HelpKeyword index="K" term="Operation, output" />
-            <HelpKeyword index="K" term="Operation, Remove" />
-            <HelpKeyword index="K" term="Operation, Add" />
-            <HelpKeyword index="K" term="Transaction, Remove" />
-            <HelpKeyword index="K" term="Transaction, Add" />
-            <HelpKeyword index="K" term="Editor" />
-            <HelpKeyword index="K" term="Context Menu" />
-            <HelpKeyword index="K" term="Shape" />
-            <HelpKeyword index="K" term="Shape, Remove" />
-            <HelpKeyword index="K" term="Shape, Add" />
-            <HelpKeyword index="K" term="Zoom" />
-            <HelpKeyword index="K" term="Reallocate operations" />
-            <HelpKeyword index="K" term="Example Transaction" />
           </HelpKeywords>
         </Topic>
       </Topic>

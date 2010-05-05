@@ -263,7 +263,7 @@
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 8">OPC Viewer – Browse server items</caption>
-                  <image placement="center" xlink:href="OPCV_create_odic_file" />
+                  <image placement="center" xlink:href="602d51f8-b058-4e04-879b-f6df460fc74a" />
                 </mediaLink>
               </content>
             </step>
@@ -274,7 +274,7 @@
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 9">OPC Viewer – Saving the server address space in a dictionary file</caption>
-                  <image placement="center" xlink:href="OPCV_save_odic_file" />
+                  <image placement="center" xlink:href="7ac2eec8-31ab-4278-82ba-857b1099ad0f" />
                 </mediaLink>
               </content>
             </step>
@@ -318,7 +318,7 @@
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 10">UA Address Space Model Designer – Create new project in the solution</caption>
-                  <image placement="center" xlink:href="ASMD_new_project" />
+                  <image placement="center" xlink:href="374e18ec-2cec-451f-aa9b-4ba25dbb0e89" />
                 </mediaLink>
               </content>
             </step>
@@ -338,7 +338,7 @@
                 </para>
                 <mediaLink>
                   <caption placement="after" lead="Figure 11">UA Address Space Model Designer – Select configuration editor</caption>
-                  <image placement="center" xlink:href="ASMD_select_editor" />
+                  <image placement="center" xlink:href="fc7fbc69-47d6-4c32-88ea-f7bb8bac98fc" />
                 </mediaLink>
               </content>
             </step>

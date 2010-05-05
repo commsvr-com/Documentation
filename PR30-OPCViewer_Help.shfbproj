@@ -23,6 +23,7 @@
     </PlugInConfigurations>
     <WorkingPath>Temp\OPCViewer\Working\</WorkingPath>
     <BuildLogFile>Temp\OPCViewer\OPCViewer.log</BuildLogFile>
+    <HelpFileFormat>Website</HelpFileFormat>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -50,6 +51,7 @@
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
     <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="PR30-OPCViewer\Content.maml\992c6fac-33cb-41c8-bc7b-4966f02dc945.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Welcome.aml" />
     <None Include="PR30-OPCViewer\Content.maml\Configuration.aml" />
     <None Include="PR30-OPCViewer\Content.maml\UsingOPCViewer.aml" />

@@ -23,7 +23,7 @@
         </para>
         <mediaLink>
           <caption placement="after" lead="Figure 1">CAS UA Address Space Model Designer</caption>
-          <image placement="center" xlink:href="ASMD_FromProcessToModel" />
+          <image placement="center" xlink:href="184a9787-110d-485d-bf3c-ae808ef5829a" />
         </mediaLink>
         <para>
           Of course, this is a multi-step process. Especially when we are working not only on the server configuration, but also developing the server software. Based on OPC UA specifications and recommendations from the OPC Foundation, the following steps have to be done:
@@ -52,7 +52,7 @@
         </list>
         <mediaLink>
           <caption placement="after" lead="Figure 2">CAS UA Address Space Model Designer</caption>
-          <image placement="center" xlink:href="ASMD_FromProcessToModelWithXml" />
+          <image placement="center" xlink:href="d9963680-9313-449c-8c65-1a0de03ace2e" />
         </mediaLink>
         <para>
           Let’s focus on the XML file and server development. The question is what is happening there.
@@ -97,7 +97,7 @@
         </para>
         <mediaLink>
           <caption placement="after" lead="Figure 3">CAS UA Address Space Model Designer</caption>
-          <image placement="center" xlink:href="ASMD_FromProcessToModelWithASMD" />
+          <image placement="center" xlink:href="475d4891-d765-4ab9-bd11-df2e85338702" />
         </mediaLink>
         <para>
           CAS OPC UA Address Space Model Designer allows us to perform the same modeling steps as the OPC Foundation recommends. But the advantage is that all these steps can be done in a user friendly graphical interface.
@@ -119,7 +119,7 @@
         </list>
         <mediaLink>
           <caption placement="after" lead="Figure 4">Modeling steps</caption>
-          <image placement="center" xlink:href="ASMD_ModelingSteps" />
+          <image placement="center" xlink:href="e48d964e-069c-442c-9abf-12f898edd16d" />
         </mediaLink>
         <para>
           To see an example that shows how to start from real process (it is a boiler in this example) and end with C#, XML and schema files, read <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40">this topic</link>.
