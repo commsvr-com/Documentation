@@ -904,6 +904,26 @@
       <AlternateText>OPC Connect</AlternateText>
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_1.jpg">
+      <AlternateText>OPC Foundation sample client window</AlternateText>
+      <ImageId>4653484E-3C60-4bf9-A18D-1E06D11F1403</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_5.jpg">
+      <AlternateText>Working OPC Foundation sample client</AlternateText>
+      <ImageId>B02C4534-BF12-422a-825F-6036E6FCC81F</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_4.jpg">
+      <AlternateText>Accept certificate</AlternateText>
+      <ImageId>42B7BAD6-F803-46c5-8F27-8721F021779B</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_3.jpg">
+      <AlternateText>Open Session</AlternateText>
+      <ImageId>88F2C458-AC90-40f9-9D47-E045A22742EA</ImageId>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_2.jpg">
+      <AlternateText>Server configuration</AlternateText>
+      <ImageId>799BD8C4-3008-4a13-9710-4DBEF38FAA79</ImageId>
+    </Image>
     <Content Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg" />
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
       <AlternateText>UA Address Space Model Designer (solution, projects, library)</AlternateText>
@@ -1682,6 +1702,7 @@
     <Folder Include="OPCUAebook\Content.maml\CommServerUA\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\text-base\cas_logo_big.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\prop-base\cas_logo_big.jpg.svn-base" />
