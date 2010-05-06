@@ -4,7 +4,7 @@
     <introduction>
 
       <para>
-        Methods are "lightweight" functions, whose scope is bounded by an owning Object, similar to the methods of a class in object-oriented programming or an owning <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf" />, similar to static methods of a class. Methods are invoked by a client, proceed to completion on the server and return the result to the client. The lifetime of the Method's invocation instance begins when the client calls the Method and ends when the result is returned.
+        Methods are "lightweight" functions, whose scope is bounded by an owning Object, similar to the methods of a class in object-oriented programming or an owning <link xlink:href="9d541e15-812b-4dce-9b4c-7b0d66e74daf">ObjectType</link>, similar to static methods of a class. Methods are invoked by a client, proceed to completion on the server and return the result to the client. The lifetime of the Method's invocation instance begins when the client calls the Method and ends when the result is returned.
       </para>
       <para>
         While Methods may affect the state of the owning Object, they have no explicit state of their own. In this sense, they are stateless. Methods can have a varying number of input arguments and return resultant arguments. Each Method is described by a Node of the Method <token>NodeClass</token>. This Node contains the metadata that identifies the Method's arguments and describes its behaviour.

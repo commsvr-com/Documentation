@@ -125,6 +125,13 @@
           </HelpKeywords>
         </Topic>
       </Topic>
+      <Topic id="1f94da82-7fee-46c6-9832-6e643a0caa59" visible="True" title="OPC Viewer Getting Started" tocTitle="OPC Viewer Getting Started" linkText="OPC Viewer Getting Started">
+        <Topic id="0c57f4f0-9cff-45b7-9375-bee3e9c98b50" visible="True" title="Main Panel" tocTitle="Main Panel" linkText="Main Panel" />
+        <Topic id="c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9" visible="True" title="Session Tree View" tocTitle="Session Tree View" linkText="Session Tree View" />
+      </Topic>
+      <Topic id="470275f3-3420-43f8-bdd4-de1c00c66593" visible="True" title="Processing Environment in OPC Viewer" tocTitle="Processing Environment in OPC Viewer" linkText="Processing Environment in OPC Viewer">
+        <Topic id="69b396de-0b04-4c94-9910-78062d830054" visible="True" title="Transaction Editor Getting Started" tocTitle="Transaction Editor Getting Started" linkText="Transaction Editor Getting Started" />
+      </Topic>
       <Topic id="b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca" visible="True" title="DataPorter example configuration" tocTitle="DataPorter example configuration" linkText="DataPorter example configuration">
         <HelpKeywords>
           <HelpKeyword index="K" term="Getting Started, Example Configuration" />
