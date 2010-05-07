@@ -697,6 +697,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="OPCUAebook\Content.maml\ReadMore.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="OPCUAebook\Content.maml\About.aml" />
     <None Include="OPCUAebook\Content.maml\Sponsors_CAS.aml" />

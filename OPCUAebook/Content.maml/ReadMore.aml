@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a8587f8f-c204-44f8-8b1b-3cc70ae76e9a" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Books">
+      <title>Books</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Mahnke, Wolfgang, Leitner, Stefan-Helmut, Damm, Matthias:  OPC Unified Architecture</linkText>
+                <linkAlternateText>Mahnke, Wolfgang, Leitner, Stefan-Helmut, Damm, Matthias:  OPC Unified Architecture</linkAlternateText>
+                <linkUri>http://www.springer.com/computer/information+systems+and+applications/book/978-3-540-68898-3</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Lange, J. ; Iwanitz, F. ; Burke, T.: OPC - Von Data Access bis Unified Architecture (in German)</linkText>
+                <linkAlternateText>Lange, J. ; Iwanitz, F. ; Burke, T.: OPC - Von Data Access bis Unified Architecture (in German)</linkAlternateText>
+                <linkUri>http://www.vde-verlag.de/buecher/483217/opc.html</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Martin Hollender:  Collaborative Process Automation Systems</linkText>
+                <linkAlternateText>Martin Hollender:  Collaborative Process Automation Systems</linkAlternateText>
+                <linkUri>http://www.isa.org/Template.cfm?Section=Books3/&amp;template=/Ecommerce/ProductDisplay.cfm&amp;ProductID=10754</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="2009">
+      <title>2009</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Postol, M, Janisz, V, Lafond, C, Luth, J: “Implementation of the OPC UA Information Model for Analyzers”, OPC Foundation, OPC Foundation, 2009</linkText>
+                <linkAlternateText>Postol, M, Janisz, V, Lafond, C, Luth, J: “Implementation of the OPC UA Information Model for Analyzers”, OPC Foundation, OPC Foundation, 2009</linkAlternateText>
+                <linkUri>http://www.opcfoundation.org/DownloadFile.aspx?CM=3&amp;RI=630&amp;CU=4 </linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>M Stopper, B Katalinic: Service-oriented Architecture Design Aspects of OPC UA for Industrial Applications, Proceedings of the International MultiConference of Engineers and Computer Scientists 2009 Vol II</linkText>
+                <linkAlternateText>M Stopper, B Katalinic: Service-oriented Architecture Design Aspects of OPC UA for Industrial Applications, Proceedings of the International MultiConference of Engineers and Computer Scientists 2009 Vol II</linkAlternateText>
+                <linkUri>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.148.5549&amp;rep=rep1&amp;type=pdf</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Vu Van Tan, Dae-Seung Yoo,  Myeong-Jae Yi:  Device Integration Approach to OPC UA-Based Process Automation Systems with FDT/DTM and EDDL,  Lecture Notes in Computer Science, Emerging Intelligent Computing Technology and Applications. With Aspects of Artificial Intelligence, 2009.</linkText>
+                <linkAlternateText>Vu Van Tan, Dae-Seung Yoo,  Myeong-Jae Yi:  Device Integration Approach to OPC UA-Based Process Automation Systems with FDT/DTM and EDDL,  Lecture Notes in Computer Science, Emerging Intelligent Computing Technology and Applications. With Aspects of Artificial Intelligence, 2009.</linkAlternateText>
+                <linkUri>http://www.springerlink.com/content/028m2g4081j573l5/</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Vu Van Tan, , Dae-Seung Yoo, Myeong-Jae Yi:  A SOA-Based Framework for Building Monitoring and Control Software Systems , 5th International Conference on Intelligent Computing, ICIC 2009</linkText>
+                <linkAlternateText>Vu Van Tan, , Dae-Seung Yoo, Myeong-Jae Yi:  A SOA-Based Framework for Building Monitoring and Control Software Systems , 5th International Conference on Intelligent Computing, ICIC 2009</linkAlternateText>
+                <linkUri>http://www.springerlink.com/content/88287851gq263434/?p=804db92c7cd446f2818280f9e79fc4fa&amp;pi=22</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Mahnke, Wolfgang; Leitner, Stefan-Helmut OPC Unified Architecture - The future standard for communication and information modeling in automation,  ABB Review 3/2009, page 56-61 </linkText>
+                <linkAlternateText>Mahnke, Wolfgang; Leitner, Stefan-Helmut OPC Unified Architecture - The future standard for communication and information modeling in automation,  ABB Review 3/2009, page 56-61 </linkAlternateText>
+                <linkUri>http://www.abb.com/abbreview</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>An ICONICS White Paper: OPC-UA Defined and How It Impacts Automation</linkText>
+                <linkAlternateText>An ICONICS White Paper: OPC-UA Defined and How It Impacts Automation</linkAlternateText>
+                <linkUri>http://www.isa.org/FileStore/Intech/WhitePaper/OPC-UA%20Defined.pdf</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Schleipen, M.; Sauer, O.: Use of dynamic product and process information in a production monitoring and control system by means of CAEX and OPC UA, Proceedings of 3rd International Conference on Changeable, Agile, Reconfigurable and Virtual Production, S. 662-671, 2009.</linkText>
+                <linkAlternateText>Schleipen, M.; Sauer, O.: Use of dynamic product and process information in a production monitoring and control system by means of CAEX and OPC UA, Proceedings of 3rd International Conference on Changeable, Agile, Reconfigurable and Virtual Production, S. 662-671, 2009.</linkAlternateText>
+                <linkUri>http://www.ies.uni-karlsruhe.de/ies/de/publ/html/publ_2009_schleipen_carv.html</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Post, O., Seppälä, J., Koivisto, H. :  The performance of OPC-UA security model at field device level, ICINCO 2009 - 6th International Conference on Informatics in Control, Automation and Robotics; Milan; 2 July 2009 through 5 July 2009</linkText>
+                <linkAlternateText>Post, O., Seppälä, J., Koivisto, H. :  The performance of OPC-UA security model at field device level, ICINCO 2009 - 6th International Conference on Informatics in Control, Automation and Robotics; Milan; 2 July 2009 through 5 July 2009</linkAlternateText>
+                <linkUri>http://www.icinco.org/Abstracts/2009/ICINCO_2009_Abstracts.htm</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="2008">
+      <title>2008</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>M. Postol, Large scale distributed process and business management integration; 14th International Congress of Cybernetics and Systems of World Organization of Systems and Cybernetics, Wroclaw (2008), pp. 632-642, ISBN 978-83-7493-400-8 </linkText>
+                <linkAlternateText>M. Postol, Large scale distributed process and business management integration; 14th International Congress of Cybernetics and Systems of World Organization of Systems and Cybernetics, Wroclaw (2008), pp. 632-642, ISBN 978-83-7493-400-8 </linkAlternateText>
+                <linkUri>http://www.commsvr.com/DownloadCenter/Publications/LargeScaleIntegration.aspx</linkUri>
+              </externalLink> (free registration required)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Schleipen, M.: OPC UA supporting the automated engineering of production monitoring and control systems, 13th IEEE International Conference on Emerging Technologies and Factory Automation 2008. ETFA 2008.</linkText>
+                <linkAlternateText>Schleipen, M.: OPC UA supporting the automated engineering of production monitoring and control systems, 13th IEEE International Conference on Emerging Technologies and Factory Automation 2008. ETFA 2008.</linkAlternateText>
+                <linkUri>http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&amp;arnumber=4638464&amp;queryText%3DOPC+UA%26openedRefinements%3D*%26searchField%3DSearch+All</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Grossmann, D.; Bender, K.; Danzer, B.: OPC UA based Field Device Integration , SICE Annual Conference, 2008  </linkText>
+                <linkAlternateText>Grossmann, D.; Bender, K.; Danzer, B.: OPC UA based Field Device Integration , SICE Annual Conference, 2008  </linkAlternateText>
+                <linkUri>http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&amp;arnumber=4654789&amp;queryText%3DOPC+UA%26openedRefinements%3D*%26searchField%3DSearch+All</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Tom Hannelius, Mikko Salmenperä, Seppo Kuikka: Roadmap to adopting OPC UA, 6th IEEE International Conference on Industrial Informatics, 2008. INDIN 2008.</linkText>
+                <linkAlternateText>Tom Hannelius, Mikko Salmenperä, Seppo Kuikka: Roadmap to adopting OPC UA, 6th IEEE International Conference on Industrial Informatics, 2008. INDIN 2008.</linkAlternateText>
+                <linkUri>http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&amp;arnumber=4618203&amp;queryText%3DOPC+UA%26openedRefinements%3D*%26searchField%3DSearch+All </linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Renjie Huang; Feng Liu: Research on OPC UA based on electronic device description , 3rd IEEE Conference on Industrial Electronics and Applications, 2008. ICIEA 2008. </linkText>
+                <linkAlternateText>Renjie Huang; Feng Liu: Research on OPC UA based on electronic device description , 3rd IEEE Conference on Industrial Electronics and Applications, 2008. ICIEA 2008. </linkAlternateText>
+                <linkUri>http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&amp;arnumber=4582901&amp;queryText%3DOPC+UA%26openedRefinements%3D*%26searchField%3DSearch+All</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Braune, A.; Hennig, S.; Hegler, S.: Evaluation of OPC UA secure communication in web browser applications , 6th IEEE International Conference on Industrial Informatics, 2008. INDIN 2008.</linkText>
+                <linkAlternateText>Braune, A.; Hennig, S.; Hegler, S.: Evaluation of OPC UA secure communication in web browser applications , 6th IEEE International Conference on Industrial Informatics, 2008. INDIN 2008.</linkAlternateText>
+                <linkUri>http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&amp;arnumber=4618370&amp;queryText%3DOPC+UA%26openedRefinements%3D*%26searchField%3DSearch+All</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="2007">
+      <title>2007</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Türk Kiziltoprak, René Schumann, Axel Hahn, Jan Behrens: Distributed Process Control by Smart Containers, First International Conference on Dynamics in Logistics, LDIC 2007, 2007</linkText>
+                <linkAlternateText>Türk Kiziltoprak, René Schumann, Axel Hahn, Jan Behrens: Distributed Process Control by Smart Containers, First International Conference on Dynamics in Logistics, LDIC 2007, 2007</linkAlternateText>
+                <linkUri>http://www.springerlink.com/content/v0u4w24926361450/?p=78208da06f514810845beb65713080a3&amp;pi=19</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Stefan-Helmut Leitner, Wolfgang Mahnke: OPC UA SECURITY,  ISA EXPO 2007: TECHNICAL CONFERENCE, SECURITY, 2007</linkText>
+                <linkAlternateText>Stefan-Helmut Leitner, Wolfgang Mahnke: OPC UA SECURITY,  ISA EXPO 2007: TECHNICAL CONFERENCE, SECURITY, 2007</linkAlternateText>
+                <linkUri>http://www.isa.org/Template.cfm?Section=Technical_Paper_Collections&amp;Template=/Ecommerce/ProductDisplay.cfm&amp;ProductID=9393</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="2006">
+      <title>2006</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Hadlich, T.; Providing device integration with OPC UA,  IEEE International Conference on Industrial Informatics, 2006</linkText>
+                <linkAlternateText>Hadlich, T.; Providing device integration with OPC UA,  IEEE International Conference on Industrial Informatics, 2006</linkAlternateText>
+                <linkUri>http://ieeexplore.ieee.org/search/freesrchabstract.jsp?tp=&amp;arnumber=4053398&amp;queryText%3DOPC+UA%26openedRefinements%3D*%26searchField%3DSearch+All</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Leitner, Stefan-Helmut; Mahnke, Wolfgang OPC UA – Service-oriented Architecture for Industrial Applications, 11/2006 Softwaretechnik-Trends (ISSN 0720-8928)</linkText>
+                <linkAlternateText>Leitner, Stefan-Helmut; Mahnke, Wolfgang OPC UA – Service-oriented Architecture for Industrial Applications, 11/2006 Softwaretechnik-Trends (ISSN 0720-8928)</linkAlternateText>
+                <linkUri>http://pi.informatik.uni-siegen.de/stt/26_4/01_Fachgruppenberichte/ORA2006/07_leitner-final.pdf</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="Other">
+      <title>Other</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Tom Hannelius, Mickey Shroff, Pasi Tuominen:  Embedding OPC Unified Architecture</linkText>
+                <linkAlternateText>Tom Hannelius, Mickey Shroff, Pasi Tuominen:  Embedding OPC Unified Architecture</linkAlternateText>
+                <linkUri>http://www.wapice.com/wapice_cms/files/HanneliusSchroffTuominen_%20Embedding_OPCUA.pdf</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
