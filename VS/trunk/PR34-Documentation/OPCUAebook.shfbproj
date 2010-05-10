@@ -718,7 +718,6 @@
     <None Include="OPCUAebook\Content.maml\Configuration.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Installing.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\GettingStarted.aml" />
-    <None Include="OPCUAebook\Content.maml\CommServerUA..aml" />
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
