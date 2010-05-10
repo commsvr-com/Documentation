@@ -77,7 +77,7 @@
         <para>If the connection does not cause an error appearing on the computer screen, you may deem CommServer to be installed correctly. To prove it conclusively, you may start the CommServer Monitor. Select: <legacyItalic>Start Menu -> All Programs -> CAS-> CommServer-> Server Monitor</legacyItalic>. Having been started, the application should show a window similar to:</para>
         <mediaLink>
           <caption placement="after" lead="Figure 5">CommServer Monitor</caption>
-          <image placement="center" xlink:href = "a5371615-7e36-4b6a-a3de-499f50d68fcf"/>
+          <image placement="center" xlink:href = "8671e756-1234-428b-828e-cc5c45dd8da9"/>
         </mediaLink>
         <alert>
           <para>any attempt to start the CommServer Monitor without CommServer running (no client is connected thereto and the CAS.OpcDaWrapper process is missing on the task list) will end with a message informing about a problem with access to data in CommServer. It is a normal situation, as the CommServer Monitor requires a running CommServer to be able to display data from it.</para>

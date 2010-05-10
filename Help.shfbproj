@@ -2024,7 +2024,6 @@
     <None Include="OPCUAebook\Graphics\.svn\entries" />
     <None Include="OPCUAebook\Graphics\.svn\dir-prop-base" />
     <None Include="OPCUAebook\Graphics\Desktop.ini" />
-    <None Include="PR33-CommServerUA\Content.maml\108fd116-8186-4150-96b4-9b15ea9fe346.aml" />
     <None Include="OPCUAebook\Content.maml\Configuration.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA.aml" />
     <None Include="PR33-CommServerUA\Content.maml\WelcomeToCommServerUA.aml" />
