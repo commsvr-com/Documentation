@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\FAQ.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
     <None Include="PR26-DataPorter\Content.maml\06b9e959-6bf3-4fc5-a40d-1adee7f34259.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\StartingStoppingandCheckingTheDataPorterStatus.aml" />
     <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
