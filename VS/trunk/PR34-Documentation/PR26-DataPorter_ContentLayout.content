@@ -89,7 +89,7 @@
             <HelpKeyword index="K" term="Monitor" />
           </HelpKeywords>
         </Topic>
-        <Topic id="44ac9231-bca2-4fdd-9586-04c722e51e2b" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
+        <Topic id="f94f793b-868c-470d-b076-d08376cbd433" visible="True" title="OPC Viewer" tocTitle="OPC Viewer" linkText="OPC Viewer" />
         <Topic id="43c8f91f-83b4-4715-b716-2575b08ec224" visible="True" title="OPC2SOAP Extension " tocTitle="OPC2SOAP" linkText="OPC2SOAP">
           <HelpKeywords>
             <HelpKeyword index="K" term="Getting Started, OPC2SOAP" />
