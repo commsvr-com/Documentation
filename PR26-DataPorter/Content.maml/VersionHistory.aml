@@ -15,6 +15,26 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_2_00_04">
+      <title>Version 2.00.04</title>
+      <content>
+        <para>
+          Thursday, May 13, 2010
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Buffered queues are fixed
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some log messages and descriptions of paramteres are improved or fixed
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_2_00_02">
       <title>Version 2.00.02</title>
       <content>
