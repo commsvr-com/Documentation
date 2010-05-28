@@ -15,6 +15,26 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_2_00_06">
+      <title>Version 2.00.06</title>
+      <content>
+        <para>
+          Thursday, May 31, 2010
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Saving data in the database is fixed 
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Displaying graphic blocks in transactions configuration is fixed
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_2_00_04">
       <title>Version 2.00.04</title>
       <content>
