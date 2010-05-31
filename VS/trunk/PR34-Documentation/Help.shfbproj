@@ -90,7 +90,7 @@
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>CommServer - multiprotocol, multichannel, redundant communication server</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
-    <PresentationStyle>vs2005AdWordsOPCHelp</PresentationStyle>
+    <PresentationStyle>vs2005OPCHelp</PresentationStyle>
     <SdkLinkType>None</SdkLinkType>
     <WorkingPath>Temp\Help\Working\</WorkingPath>
   </PropertyGroup>
