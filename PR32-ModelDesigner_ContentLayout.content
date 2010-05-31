@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Topics defaultTopic="f3357669-a041-405d-884b-19f5eafcabed">
+<Topics>
   <Topic id="f3357669-a041-405d-884b-19f5eafcabed" visible="True" title="Address Space Model Designer Tool" tocTitle="OPC UA Address Space Model Designer" linkText="{75F272F7-B26B-49b1-8A65-2AC006DA4AB3}">
     <Topic id="b322d93f-41ba-43f4-b17d-e402af6c9cf0" visible="True" title="Overview" tocTitle="Overview" linkText="Overview" />
     <Topic id="a2d66e41-32df-404d-99bb-f4e495891493" visible="True" title="Getting Started" tocTitle="Getting Started" linkText="Getting Started">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Topics defaultTopic="2dea0752-d490-47e6-8444-ac73e07601fc">
+<Topics>
   <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" title="CommServer" tocTitle="CommServer" linkText="CommServer">
     <Topic id="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation">
       <Topic id="e6da9218-ee79-4a13-8665-5376fe7cf91d" visible="True" title="Introduction" tocTitle="Introduction" linkText="Introduction" />
