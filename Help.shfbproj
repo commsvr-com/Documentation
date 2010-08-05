@@ -15,7 +15,7 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <OutputPath>C:\inetpub\wwwroot\Help\</OutputPath>
-    <HtmlHelpName>CommServer</HtmlHelpName>
+    <HtmlHelpName>CommServerOPCHelp</HtmlHelpName>
     <BuildLogFile>Temp\Help\Help.log</BuildLogFile>
     <ComponentConfigurations>
       <ComponentConfig id="Cached MSDN URL References" enabled="False">
@@ -73,7 +73,7 @@
         </component>
       </ComponentConfig>
     </ComponentConfigurations>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>Help1xAnd2xAndWebsite</HelpFileFormat>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
         <configuration />
