@@ -15,6 +15,31 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_2_00_08">
+      <title>Version 2.00.08</title>
+      <content>
+        <para>
+          Thursday, August 05, 2010
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Graphical transaction configuration tool is fixed (issue with OPC items that disappear in operation configuration)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              New, extended help file is added
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Some improvements and bug fixes
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_2_00_06">
       <title>Version 2.00.06</title>
       <content>
