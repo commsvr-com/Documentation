@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f2fe87df-c076-44a0-9d74-397fde099bc1" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Required introduction</para>
+    </introduction>
+    <section address="HowToChangeModelCompilerTool">
+      <title>How to change model compiler tool</title>
+      <content>
+        <procedure>
+          <title>Changing of the model compiler tool</title>
+          <steps class="ordered">
+            <step>
+              <content>
+                <para>Open menu Tools from the toolstrip and choose Options.</para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Set proper command line compiler tools parameters (if needed) or leave blank.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Set path to the compiler tool executable. 
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Click OK button to apply settings.
+                </para>
+              </content>
+            </step>
+            <step>
+              <content>
+                <para>
+                  Restart OPC UA Address Space Model Designer
+                </para>
+              </content>
+            </step>
+          </steps>
+        </procedure>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">OPC UA Address Space Model Designer configuration window</caption>
+          <image placement="center" xlink:href = "ASMD_model_compiler_change_with_description"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

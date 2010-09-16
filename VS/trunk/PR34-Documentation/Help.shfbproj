@@ -924,6 +924,9 @@
       <AlternateText>Server configuration</AlternateText>
       <ImageId>799BD8C4-3008-4a13-9710-4DBEF38FAA79</ImageId>
     </Image>
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg">
+      <ImageId>ASMD_model_compiler_change_with_description</ImageId>
+    </Image>
     <Content Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg" />
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
       <AlternateText>UA Address Space Model Designer (solution, projects, library)</AlternateText>
@@ -1702,6 +1705,7 @@
     <Folder Include="OPCUAebook\Content.maml\CommServerUA\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\text-base\cas_logo_big.jpg.svn-base" />
