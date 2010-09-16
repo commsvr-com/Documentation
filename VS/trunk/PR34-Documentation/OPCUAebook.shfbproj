@@ -1041,7 +1041,7 @@
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-SelectEditor_composition.jpg">
       <AlternateText>Selection of OPC UA Server editor</AlternateText>
-      <ImageId>ASMD-UAServer-SelectEditor_composition</ImageId>
+      <ImageId>fc7fbc69-47d6-4c32-88ea-f7bb8bac98fc</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-editconfiguration_composition.jpg">
       <ImageId>ASMD-UAServer-editconfiguration_composition</ImageId>
@@ -1056,16 +1056,16 @@
       <AlternateText>How to open sample configuration</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg">
-      <ImageId>OPCV_create_odic_file</ImageId>
+      <ImageId>602d51f8-b058-4e04-879b-f6df460fc74a</ImageId>
       <AlternateText>Export address space to dictionary file</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg">
-      <ImageId>OPCV_save_odic_file</ImageId>
+      <ImageId>7ac2eec8-31ab-4278-82ba-857b1099ad0f</ImageId>
       <AlternateText>Save file containing server address space</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg">
       <AlternateText>Create new project in the solution</AlternateText>
-      <ImageId>ASMD_new_project</ImageId>
+      <ImageId>374e18ec-2cec-451f-aa9b-4ba25dbb0e89</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg">
       <ImageId>ASMD_select_editor</ImageId>
@@ -1084,52 +1084,52 @@
       <AlternateText>Save *.oses file</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg">
-      <ImageId>ASMD_CodeGeneration</ImageId>
+      <ImageId>e7c9ef7c-d341-4ca0-b6f5-f9c470b6fe2d</ImageId>
       <AlternateText>Code generation</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg">
-      <ImageId>ASMD_BuildSolution</ImageId>
+      <ImageId>89f9e8dc-0ffe-4892-8ae4-1600b3ecce18</ImageId>
       <AlternateText>Building a solution</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
       <AlternateText>Solution, projects, libraries</AlternateText>
-      <ImageId>ASMD_SolutionProjectsLibraries</ImageId>
+      <ImageId>480593ec-1ece-495a-ae7f-e9eaa35a6c04</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg">
       <AlternateText>Modeling steps</AlternateText>
-      <ImageId>ASMD_ModelingSteps</ImageId>
+      <ImageId>e48d964e-069c-442c-9abf-12f898edd16d</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg">
       <AlternateText>From real-time process to model using XML file</AlternateText>
-      <ImageId>ASMD_FromProcessToModelWithXml</ImageId>
+      <ImageId>d9963680-9313-449c-8c65-1a0de03ace2e</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg">
-      <ImageId>ASMD_FromProcessToModelWithASMD</ImageId>
+      <ImageId>475d4891-d765-4ab9-bd11-df2e85338702</ImageId>
       <AlternateText>From real-time process to model using UA Address Space Model Designer</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg">
-      <ImageId>ASMD_FromProcessToModel</ImageId>
+      <ImageId>184a9787-110d-485d-bf3c-ae808ef5829a</ImageId>
       <AlternateText>From real-time process to model</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg">
-      <ImageId>ASMD_GraphicalNotation</ImageId>
+      <ImageId>31107f84-8ca6-427f-816b-c6d659c6ed18</ImageId>
       <AlternateText>Graphical notation</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.jpg">
       <AlternateText>Reference modeling</AlternateText>
-      <ImageId>ASMD_ReferenceModeling</ImageId>
+      <ImageId>bca95e6d-af8e-4d77-9f84-d4b4c80ee3d7</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg">
-      <ImageId>ASMD_references</ImageId>
+      <ImageId>d7cc85f5-9937-404a-bbf4-37f8dfc332c8</ImageId>
       <AlternateText>OPC UA Address Space Model Designer references</AlternateText>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg">
       <AlternateText>NodeClass name</AlternateText>
-      <ImageId>ASMD_NodeClass_name</ImageId>
+      <ImageId>dd000636-3049-4672-9411-1e2f1e53c763</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg">
       <AlternateText>UA Address Space Model Designer approach</AlternateText>
-      <ImageId>ASMD_ASMDApproach</ImageId>
+      <ImageId>b6c218c8-1b29-48ce-a03c-52adc2038873</ImageId>
     </Image>
     <Image Include="OPCUAebook\Graphics\silver_sponsor.png">
       <ImageId>FAFA7896-3A62-4ae8-8897-43B4F97BD154</ImageId>
@@ -1163,7 +1163,9 @@
       <ImageId>4653484E-3C60-4bf9-A18D-1E06D11F1403</ImageId>
       <AlternateText>Sample client</AlternateText>
     </Image>
-    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg" />
+    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg">
+      <ImageId>8CCA934A-9696-4eff-B646-AFE71FA04BCE</ImageId>
+    </Image>
     <Content Include="YouTube.html" />
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
