@@ -697,6 +697,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
     <None Include="OPCUAebook\Content.maml\ReadMore.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="OPCUAebook\Content.maml\About.aml" />
@@ -1162,6 +1163,7 @@
       <ImageId>4653484E-3C60-4bf9-A18D-1E06D11F1403</ImageId>
       <AlternateText>Sample client</AlternateText>
     </Image>
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg" />
     <Content Include="YouTube.html" />
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg">
       <AlternateText>ASMD_ProcessBindingsForCommServer.jpg</AlternateText>
