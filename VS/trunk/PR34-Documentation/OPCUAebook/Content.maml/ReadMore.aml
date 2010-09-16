@@ -10,6 +10,15 @@
           <listItem>
             <para>
               <externalLink>
+                <linkText>Jürgen Lange, Frank Iwanitz, Thomas J. Burke: OPC - From Data Access to Unified Architecture</linkText>
+                <linkAlternateText>Jürgen Lange, Frank Iwanitz, Thomas J. Burke: OPC - From Data Access to Unified Architecture</linkAlternateText>
+                <linkUri>http://www.softing.com/home/en/industrial-automation/products/opc/literature.php?navanchor=3010179</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <externalLink>
                 <linkText>Mahnke, Wolfgang, Leitner, Stefan-Helmut, Damm, Matthias:  OPC Unified Architecture</linkText>
                 <linkAlternateText>Mahnke, Wolfgang, Leitner, Stefan-Helmut, Damm, Matthias:  OPC Unified Architecture</linkAlternateText>
                 <linkUri>http://www.springer.com/computer/information+systems+and+applications/book/978-3-540-68898-3</linkUri>

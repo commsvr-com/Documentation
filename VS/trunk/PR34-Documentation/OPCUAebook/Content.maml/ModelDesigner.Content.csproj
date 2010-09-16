@@ -138,6 +138,7 @@
     <None Include="Overview.aml" />
     <None Include="Profiles.aml" />
     <None Include="Programs.aml" />
+    <None Include="ReadMore.aml" />
     <None Include="SecurityModel.aml" />
     <None Include="Services.aml" />
     <None Include="ServiceSets\DiscoveryServiceSet.aml" />
