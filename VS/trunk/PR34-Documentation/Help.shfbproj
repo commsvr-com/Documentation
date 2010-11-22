@@ -73,7 +73,7 @@
         </component>
       </ComponentConfig>
     </ComponentConfigurations>
-    <HelpFileFormat>Help1xAnd2xAndWebsite</HelpFileFormat>
+    <HelpFileFormat>Website</HelpFileFormat>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
         <configuration />
@@ -927,6 +927,26 @@
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg">
       <ImageId>8CCA934A-9696-4eff-B646-AFE71FA04BCE</ImageId>
     </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_1.jpg">
+      <ImageId>67286d24-ecaf-4cde-a4e5-c858978f88e6</ImageId>
+      <AlternateText>Choose Help-&gt; About in the menu</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_2.jpg">
+      <AlternateText>Change tab to "License"</AlternateText>
+      <ImageId>ac7be165-730a-4972-8c56-aad1b6d5a383</ImageId>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_3.jpg">
+      <AlternateText>Click on the line with installed license</AlternateText>
+      <ImageId>d69b7d16-6f2b-4696-8f70-5fceb0910889</ImageId>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_4.jpg">
+      <ImageId>0a01397a-1199-43e4-9a15-7beca3ca0879</ImageId>
+      <AlternateText>paste correct information</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_5.jpg">
+      <ImageId>d56fe7a7-800e-4756-8d8d-63044738d06c</ImageId>
+      <AlternateText>click on “Request for license” button</AlternateText>
+    </Image>
     <Content Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg" />
     <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
       <AlternateText>UA Address Space Model Designer (solution, projects, library)</AlternateText>
@@ -1705,6 +1725,8 @@
     <Folder Include="OPCUAebook\Content.maml\CommServerUA\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
+    <None Include="OPCUAebook\Content.maml\License_acquisition.aml" />
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
