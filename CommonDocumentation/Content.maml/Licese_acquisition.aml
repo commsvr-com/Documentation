@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="5660ca9b-bf2c-4a80-b402-6794438ff5c1" revisionNumber="1">
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="How_can_I_get_a_hardware_key">
+            <title>
+                How can I get a hardware key, which is necessary to generate the license ?
+            </title>
+            <content>
+                <para>To get the hardware key:</para>
+                <list class="bullet">
+                    <listItem>
+                        <para>Start CAS OPC Viewer</para>
+                    </listItem>
+                    <listItem>
+                        <para>Choose Help-> About in the menu</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 1">Choose Help-> About in the menu</caption>
+                            <image placement="center" xlink:href = "67286d24-ecaf-4cde-a4e5-c858978f88e6"/>
+                        </mediaLink>
+                    </listItem>
+                    <listItem>
+                        <para>Change tab to “License”</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 2">Change tab to "License"</caption>
+                            <image placement="center" xlink:href = "ac7be165-730a-4972-8c56-aad1b6d5a383"/>
+                        </mediaLink>
+                    </listItem>
+                    <listItem>
+                        <para>Click on the line with installed license in the “Installed licenses for this product” box</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 3">Click on the line with installed license</caption>
+                            <image placement="center" xlink:href = "d69b7d16-6f2b-4696-8f70-5fceb0910889"/>
+                        </mediaLink>
+                        <para>Send us information:</para>
+                        <list class="bullet">
+                            <listItem>
+                                <para>User name: ???</para>
+                            </listItem>
+                            <listItem>
+                                <para>User organization: ???</para>
+                            </listItem>
+                            <listItem>
+                                <para>User email: ???</para>
+                            </listItem>
+                            <listItem>
+                                <para>Hardware key: ???</para>
+                            </listItem>
+                        </list>
+                        <para>In places of ??? please paste correct information...</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 4">paste correct information</caption>
+                            <image placement="center" xlink:href = "0a01397a-1199-43e4-9a15-7beca3ca0879"/>
+                        </mediaLink>
+                        <para>...or simply click on “Request for license” button</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 5">click on “Request for license” button</caption>
+                            <image placement="center" xlink:href = "d56fe7a7-800e-4756-8d8d-63044738d06c"/>
+                        </mediaLink>
+                    </listItem>
+                </list>
+                <para><legacyBold>It is important to use Hardware key from the End-User computer.</legacyBold></para>
+            </content>
+        </section>
+        <section address="Licensing">
+            <title>Licensing</title>
+            <content>
+                <para>
+                    <legacyBold>Step 1. Download DEMO software</legacyBold>
+                </para>
+                <para>Download DEMO software available on website. The DEMO version is available to all. If you are a registered user you have access to the TRIAL version (Step 3).</para>
+                <para>
+                    <legacyBold>Step 2. Install software</legacyBold>
+                </para>
+                <para>If you are interested in testing with more functional available freeware … go to the next step.</para>
+                <para>
+                    <legacyBold>
+                        Step 3. Download the TRIAL license
+                    </legacyBold>
+                </para>
+                <para>The 14-day TRIAL license is available to registered users only. Register with our service to download it. If you need a longer TRIAL, register and apply for a longer individual license to be received via e-mail.</para>
+                <para>
+                    <legacyBold>Step 4. Install the license</legacyBold>
+                </para>
+                <para>After starting the NetworkConfig software, you can install the downloaded TRIAL license in your target application in order to define required parameters.</para>
+                <para>
+                    <legacyBold>Step 5. Order the end-user license</legacyBold>
+                </para>
+                <para>After having paid for the end-user license you will receive an individual end-user license certificate.</para>
+                <para>
+                    <legacyBold>Step 7. Install the end-user license</legacyBold>
+                </para>
+                <para>After starting the NetoworkConfig software you can install the received end-user license in your target application following the procedure for TRIAL.</para>
+                <para>
+                    <legacyBold>NOTE: The end-user license is related to a certain installation. It means that in case of software reinstalling your current certificate will become invalid. In that case you will receive a new license certificate free of charge, with the same terms and conditions as per your original license. In the temporary period of reinstallation you can use the TRIAL license, following the above procedure starting from step 3 (without step 6).</legacyBold>
+                </para>
+            </content>
+        </section>
+        <section address="Licese_Types">
+            <title>Licese Types</title>
+            <content>
+                <list class="bullet">
+                    <listItem>
+                        <para>
+                            <legacyBold>Commercial license (End User)</legacyBold> – a payable license for an end user with defined parameters (max number of variables, term, runtime, functional constraints etc.) e.g. CS-SE-843, one PC workstation for CommServer Standard version without the term of use and runtime limitation, limited up to 843 process data variables (OPC tags). Commercial license is site constrained – it means that the license certificate is issued for a particular installation instance. It means that after reinstallation of software is necessary, it is impossible to apply the previous license certificate. In that case, the user receives a new license certificate free of charge with the same limits as the purchased license.
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>
+                            <legacyBold>Academic license (APL)</legacyBold> – a free of charge license for universities, colleges, academies, research centers and science institutes. The license has only a runtime limit.
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>
+                            <legacyBold>DEMO license</legacyBold> – a free of charge testing license for unregistered users. The license has all types of limits (max 50 tags, it expires after 14 days, and allows to keep software running for 2 hours).
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>
+                            <legacyBold>TRAIL license</legacyBold> – a temporary full access license for registered users and customers for testing, implementing and reinstalling. The license has only a term limit.
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>
+                            <legacyBold>Special license (VAR)</legacyBold> – an engineering license for integrators and vendors of the automation hardware and software. It has similar limits as the academic license (APL). It is issued for members of the partnership program. To obtain this license, an appropriate agreement has to be signed.
+                        </para>
+                    </listItem>
+                </list>
+            </content>
+        </section>
+
+        <relatedTopics>
+        </relatedTopics>
+    </developerConceptualDocument>
+</topic>
