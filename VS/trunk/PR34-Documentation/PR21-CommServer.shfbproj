@@ -53,54 +53,22 @@
           </helpOutput>
         </component>
       </ComponentConfig>
-      <ComponentConfig id="Code Block Component" enabled="True">
-        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Base path for relative filenames in source attributes
-                 (optional) -->
-          <basePath value="{@ProjectFolder}" />
-          <!-- Connect to language filter (optional).  If omitted,
-                 language filtering is enabled by default. -->
-          <languageFilter value="true" />
-          <!-- Allow missing source files (Optional).  If omitted,
-                 it will generate errors if referenced source files
-                 are missing. -->
-          <allowMissingSource value="false" />
-          <!-- Remove region markers from imported code blocks.  If omitted,
-                 region markers in imported code blocks are left alone. -->
-          <removeRegionMarkers value="false" />
-          <!-- Code colorizer options (required).
-                 Attributes:
-                    Language syntax configuration file (required)
-                    XSLT style file (required)
-                    "Copy" image file URL (required)
-                    Default language (optional)
-                    Enable line numbering (optional)
-                    Enable outlining (optional)
-                    Keep XML comment "see" tags within the code (optional)
-                    Tab size override (optional, 0 = Use syntax file setting)
-                    Use language name as default title (optional) -->
-          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
-        </component>
-      </ComponentConfig>
-      <ComponentConfig id="Post-transform Component" enabled="True">
-        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Code colorizer files (required).
+<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+  <basePath value="{@ProjectFolder}" />
+  <languageFilter value="true" />
+  <allowMissingSource value="false" />
+  <removeRegionMarkers value="false" />
+  <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+</component></ComponentConfig>
+<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) -->
-          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
-          <!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). -->
-          <outputPath value="Output\" />
-          <!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). --><outputPaths>{@HelpFormatOutputPaths}</outputPaths><!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. -->
-          <logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" />
-        </component>
-      </ComponentConfig>
-    </ComponentConfigurations>
+                 optional. --><logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
         <configuration />
