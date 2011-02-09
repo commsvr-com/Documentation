@@ -19,11 +19,11 @@
     <BuildLogFile>\Temp\ModelDesigner\ModelDesigner.log</BuildLogFile>
     <HelpFileFormat>Website</HelpFileFormat>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2011, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS CommServer %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx&amp;quot%3b title=&amp;quot%3bCommServer -multiprotocol, multichannel, redundant communication server – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/tabid/55/language/en-US/Default.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>OPC UA Address Space Model Designer</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <ComponentConfigurations>
@@ -51,22 +51,34 @@
           </helpOutput>
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-  <basePath value="{@ProjectFolder}" />
-  <languageFilter value="true" />
-  <allowMissingSource value="false" />
-  <removeRegionMarkers value="false" />
-  <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
-</component></ComponentConfig>
-<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <basePath value="{@ProjectFolder}" />
+          <languageFilter value="true" />
+          <allowMissingSource value="false" />
+          <removeRegionMarkers value="false" />
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). --><outputPaths>{@HelpFormatOutputPaths}</outputPaths><!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). -->
+          <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+          <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. -->
+          <logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
         <configuration />
@@ -75,7 +87,8 @@
         <configuration />
       </PlugInConfig>
     </PlugInConfigurations>
-    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <PresentationStyle>vs2005-Produkty</PresentationStyle>
+    <VisibleItems>InheritedMembers, InheritedFrameworkMembers, Protected, SealedProtected</VisibleItems>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -87,6 +100,102 @@
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDVersionHistory.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\ASMDHowToChangeAFontSize.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\ASMDHowToChangeModelCompilerTool.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDCustomization.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDWalkthroughCreateUaWrapper.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDWalkthroughProcessDataPinding.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDDataBindingProperties.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\MenuUaServer\ASMDUaServerConfiguration.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDMenuUaServer.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDDataBinding.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\ASMDModelCompiler.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\ASMDWhereToFindAResultOfBuildProcess.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\ASMDHowToBuildTheSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDModelBuild.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\CustomEditors\ASMDStateMachineEditor.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDCustomEditors.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDReferenceModeling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDNamespace.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDMethod.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDDictionary.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParametersFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncodingsFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncodingFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncoding.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDView.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDVariable.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDInstance.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDProperty.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDReferenceFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDReference.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDNode.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDObject.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDObjects.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDReferenceType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDObjectType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDStateMachineType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDEventType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDDataType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDVariableType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDTypes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDNamespacesFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDChildren.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDModelDomain.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDModelNodes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDFiltering.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDSearchToolbar.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDNavigateToolbar.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDModelTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDOpcUaGraphicalNotation.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDProcessDataAndMetadata.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDReferences.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDAttributes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDAddressSpaceModeling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ObjectsManagement\ASMDObjectsManagement.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDAddressSpaceImplementation.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDConcept.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDInformationModel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDOpcUaModeling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\ASMDMaml.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\ASMDWordDocx.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDModelExport.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelImport\ASMDOpcDaAddressSpace.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDModelImport.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDAddingAProject.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDProjectProperties.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDSolutionOpen.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDSolutionProperties.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDManagingSolutionsProjectsAndFiles.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDNodeClassIndicator.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDOutputWindow.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDHelpPanel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDPropertyPanels.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDModel3dView.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDBrowseViewTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDModelTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuHelp.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuTools.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuUaServer.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMemuView.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuEdit.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuFile.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDUserInterface.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDUsingOpcUaAddressSpaceModelDesigner.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\SampleSolution\ASMDBoilerModel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\SampleSolution\ASMDHowToOpenSampleSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDSampleSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDIntroductionToUserInterface.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDIntroductionToUseInterface.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDInstallationAndFirstLaunch.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDIntroduction.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASDMGettingStarted.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerStandardAndProfessionalComparison.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerProfessional.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerStandard.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerHelpContent.aml" />
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
     <None Include="OPCUAebook\Content.maml\ASMD_VersionHistory.aml" />
     <None Include="OPCUAebook\Content.maml\Nodes\MethodDesign.aml" />
@@ -137,6 +246,27 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\MenuUaServer\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\CustomEditors\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ObjectsManagement\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelImport\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\GettingStarted\SampleSolution\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\GettingStarted\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\" />
+    <Folder Include="PR32-ModelDesigner\" />
     <Folder Include="OPCUAebook\Content.maml\Nodes\" />
     <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\" />
     <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\" />
