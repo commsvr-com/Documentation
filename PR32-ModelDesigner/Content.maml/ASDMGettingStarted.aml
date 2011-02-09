@@ -1,46 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="50ac09d2-901f-4702-a09d-b6ec69e8343f" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
+      <section address="Introduction">
+          <title>Introduction</title>
+          <content>
+              <para>This section describes the following steps that must be done in order to start working with OPC UA Address Space Model Designer:</para>
+              <list class="bullet">
+                  <listItem>
+                      <para>Introduction to OPC UA Address Space Model Designer</para>
+                  </listItem>
+                  <listItem>
+                      <para>Software installation and first launch</para>
+                  </listItem>
+                  <listItem>
+                      <para>Introduction to user interface</para>
+                  </listItem>
+                  <listItem>
+                      <para>Information about sample solution, that is added to OPC UA Address Space Model Designer</para>
+                  </listItem>
+              </list>
+          </content>
+      </section>
     <relatedTopics>
       <!-- One or more of the following:
            - A local link

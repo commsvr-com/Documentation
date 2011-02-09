@@ -1,48 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="6d606dbc-d7f8-423b-b862-a99e1db2b36b" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
-    <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
-    </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
-    <relatedTopics>
-      <!-- One or more of the following:
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="Introduction">
+            <title>Introduction</title>
+            <content>
+                <para>OPC Unified Architecture (UA) is the next generation of OPC. One of its biggest improvements is a powerful Address Space and Information Model. To make the designing of the OPC UA Address Space Model easier, CAS introduces an Address Space Model Designer that is a powerful tool, which allows creating, displaying and editing of the OPC UA models that are compliant with the OPC UA Address Space standard.</para>
+            </content>
+        </section>
+        <section address="IntroductionToOpcUaASMD">
+            <title>Introduction to OPC UA Address Space Model Designer</title>
+            <content>
+                <para>There is no doubt that information technology and process control engineering have to be integrated to benefit from macro optimization and synergy effect. The only question is how to do this. </para>
+                <para>Industrial process management requires information of two types: process data and metadata. Metadata is a favorite keyword of the IT community because it sounds more seriously than "data describing data". The same way as process data represents the process physical state, metadata describes the process itself and in OPC UA both are represented by the Address Space. </para>
+                <para>The Address Space is intended to support integration by building common discipline, i.e. semantics (a knowledge base) and vocabulary - finally a language good enough to convey information up and down between levels of competence. If the parties want to speak only, they do not need to know languages they use. It makes difference if we are going to talk to each other and then we say that we are making the communicating parties interoperable. In other words, it is not enough to hear (transfer data), we have to understand (interpret it). Without mutual understanding the voice is only an unpleasant noise. Unfortunately, talking about the same we can use two different languages: colloquial and formal ones. An expert will say that the colloquial language is ambiguous and cannot be used to convey more important information, and therefore should be avoided – I agree. Beginners probably will complain that a very precise and knowledgeable incomprehensible sentence is only bullshit – I agree too.  Therefore we need to find something in the middle or use both approaches simultaneously.</para>
+                <para>The Address Space is a language, because it provides alphabet, syntax and semantic. The language is specific, because it is to be used to describe a real-time process. It is also computer centric, because it allows systems used to control industrial processes to exchange information. Unfortunately, building completely unmanned systems is still science-fiction today. In spite of effort spent on teaching machines our native language, we are unable yet to have a chat with them. Therefore learning the Address Space now seems to be an inevitable process. It is inevitable, but a question arises for whom. Because it is to be used for systems integration, the process involves plant people working at one level (responsible for process control) and corporate people working at another level (responsible for process management). Additionally, both communities are waiting for software tools developed by IT vendors that expand the population speaking the Address Space native language. The good news is that it is not a spoken language, only writing ability is expected. </para>
+                <para>The last but not least question we have to address is if we really need a new dedicated language to read for example a drum temperature – although it is just a simple number. Of course the answer is no. But if at the same time we need to know that the process consists of two drums connected by a pipe and the temperature of the first one is closely coupled with the temperature of the other one, the answer becomes not so obvious. Recognizing also the fact that we have to deal with two kinds of information: </para>
+                <list class="bullet">
+                    <listItem>
+                        <para>Static, e.g. nominal temperature and permanent connection </para>
+                    </listItem>
+                    <listItem>
+                        <para>Dynamic, e.g. current temperature and configuration of valves, drums </para>
+                    </listItem>
+                </list>
+                <para>It becomes clear that the Address Space concept has no competitors now and, therefore, we have no options in this respect and the only subject for further discussion is how to learn it. The bad news is that using Address Space terminology the same information can be expressed by an almost unlimited number of means. Additionally, as usual when learning languages including the native one, the process is continuous and we can only talk about improving the language knowledge, because designing a model for a real-time process we must apply the best practice together with the syntax and semantic. In other words, to be able to write not only a simple email but also a popular novel we have to couple the learning with training processes. </para>
+                <para>The main challenge of the project OPC UA Address Space Model Designer is to bring together: learning, training and designing. To meet our objectives, we have just released: </para>
+                <list class="bullet">
+                    <listItem>
+                        <para>Documentation as a help collection containing linked topics recommended as a starting point to understand, design, develop and implement the Unified Architecture Address Space</para>
+                    </listItem>
+                    <listItem>
+                        <para>OPC UA Address Space Model Designer that is a user-friendly tool supporting all aspects of the Address Space model designing process</para>
+                    </listItem>
+                    <listItem>
+                        <para>Documentation containing information about the OPC UA Address Space Model Designer tool </para>
+                    </listItem>
+                </list>
+                <para>To make this tool as useful as possible, the definition of the created Address Space can be saved to the XML file compatible with the schema used by the UA Software Development Kit released by the OPC Foundation. </para>
+                <para>Using the proposed approach you can learn how to develop, design a model, save it as XML and explore the created Address Space in the Unified Architecture environment in a couple of hours.</para>
+            </content>
+        </section>
+        <relatedTopics>
+            <!-- One or more of the following:
            - A local link
            - An external link
            - A code entity reference
@@ -77,6 +78,6 @@
       <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
       <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
       -->
-    </relatedTopics>
-  </developerConceptualDocument>
+        </relatedTopics>
+    </developerConceptualDocument>
 </topic>

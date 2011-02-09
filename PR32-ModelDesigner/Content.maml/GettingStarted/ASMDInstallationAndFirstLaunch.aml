@@ -1,46 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="2385d804-cf67-4010-93fc-570198875409" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Introduction">
+      <title>Introduction</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>This topic describes the process of download, installation and first launch of the OPC UA Address Space Model Designer.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+      <section address="Download">
+          <title>Download</title>
+          <content>
+              <para>OPC UA Address Space Model Designer can be downloaded from CommServer Vortal. To download OPC UA Address Space Model Designer, it is essential to do the following steps:</para>
+              <list class="ordered">
+                  <listItem>
+                      <para>Register at CommServer Vortal using <externalLink>
+                          <linkText>this website</linkText>
+                          <linkAlternateText>this website</linkAlternateText>
+                          <linkUri>http://www.commsvr.com/Home/tabid/75/ctl/Register/Default.aspx</linkUri>
+                      </externalLink>
+                  </para>
+                  </listItem>
+                  <listItem>
+                      <para>Log in on CommServer Vortal using <externalLink>
+                          <linkText>log-in website</linkText>
+                          <linkAlternateText>log-in website</linkAlternateText>
+                          <linkUri>http://www.commsvr.com/Home/tabid/75/ctl/Login/Default.aspx</linkUri>
+                      </externalLink>
+                  </para>
+                  </listItem>
+                  <listItem>
+                      <para>Download OPC UA Address Space Model Designer from the <externalLink>
+                          <linkText>download website</linkText>
+                          <linkAlternateText>download website</linkAlternateText>
+                          <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner/tabid/329/language/pl-PL/Default.aspx</linkUri>
+                      </externalLink>
+                  </para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 1">OPC UA Address Space Model Designer Download Website</caption>
+                          <image placement="center" xlink:href = "819e6324-273a-4b63-aa76-b9d2fd3bb0ab"/>
+                      </mediaLink>
+                  </listItem>
+                  
+              </list>
+          </content>
+      </section>
     <relatedTopics>
       <!-- One or more of the following:
            - A local link
