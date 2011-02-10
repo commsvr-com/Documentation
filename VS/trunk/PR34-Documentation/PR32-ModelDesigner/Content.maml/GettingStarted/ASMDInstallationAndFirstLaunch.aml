@@ -1,87 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="2385d804-cf67-4010-93fc-570198875409" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <introduction>
-    </introduction>
-    <section address="Introduction">
-      <title>Introduction</title>
-      <content>
-        <para>This topic describes the process of download, installation and first launch of the OPC UA Address Space Model Designer.</para>
-      </content>
-    </section>
-      <section address="Download">
-          <title>Download</title>
-          <content>
-              <para>OPC UA Address Space Model Designer can be downloaded from CommServer Vortal. To download OPC UA Address Space Model Designer, it is essential to do the following steps:</para>
-              <list class="ordered">
-                  <listItem>
-                      <para>Register at CommServer Vortal using <externalLink>
-                          <linkText>this website</linkText>
-                          <linkAlternateText>this website</linkAlternateText>
-                          <linkUri>http://www.commsvr.com/Home/tabid/75/ctl/Register/Default.aspx</linkUri>
-                      </externalLink>
-                  </para>
-                  </listItem>
-                  <listItem>
-                      <para>Log in on CommServer Vortal using <externalLink>
-                          <linkText>log-in website</linkText>
-                          <linkAlternateText>log-in website</linkAlternateText>
-                          <linkUri>http://www.commsvr.com/Home/tabid/75/ctl/Login/Default.aspx</linkUri>
-                      </externalLink>
-                  </para>
-                  </listItem>
-                  <listItem>
-                      <para>Download OPC UA Address Space Model Designer from the <externalLink>
-                          <linkText>download website</linkText>
-                          <linkAlternateText>download website</linkAlternateText>
-                          <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner/tabid/329/language/pl-PL/Default.aspx</linkUri>
-                      </externalLink>
-                  </para>
-                      <mediaLink>
-                          <caption placement="after" lead="Figure 1">OPC UA Address Space Model Designer Download Website</caption>
-                          <image placement="center" xlink:href = "819e6324-273a-4b63-aa76-b9d2fd3bb0ab"/>
-                      </mediaLink>
-                  </listItem>
-                  
-              </list>
-          </content>
-      </section>
-    <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="Introduction">
+            <title>Introduction</title>
+            <content>
+                <para>This topic describes the process of download, installation and first launch of the OPC UA Address Space Model Designer.</para>
+            </content>
+        </section>
+        <section address="Download">
+            <title>Download</title>
+            <content>
+                <para>OPC UA Address Space Model Designer can be downloaded from CommServer Vortal. To download OPC UA Address Space Model Designer, it is essential to do the following steps:</para>
+                <list class="ordered">
+                    <listItem>
+                        <para>
+                            Register at CommServer Vortal using <externalLink>
+                                <linkText>this website</linkText>
+                                <linkAlternateText>this website</linkAlternateText>
+                                <linkUri>http://www.commsvr.com/Home/tabid/75/ctl/Register/Default.aspx</linkUri>
+                            </externalLink>
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>
+                            Log in on CommServer Vortal using <externalLink>
+                                <linkText>log-in website</linkText>
+                                <linkAlternateText>log-in website</linkAlternateText>
+                                <linkUri>http://www.commsvr.com/Home/tabid/75/ctl/Login/Default.aspx</linkUri>
+                            </externalLink>
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>
+                            Download OPC UA Address Space Model Designer from the <externalLink>
+                                <linkText>download website</linkText>
+                                <linkAlternateText>download website</linkAlternateText>
+                                <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner/tabid/329/language/pl-PL/Default.aspx</linkUri>
+                            </externalLink>
+                        </para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 1">OPC UA Address Space Model Designer Download Website</caption>
+                            <image placement="center" xlink:href = "819e6324-273a-4b63-aa76-b9d2fd3bb0ab"/>
+                        </mediaLink>
+                    </listItem>
+                </list>
+            </content>
+        </section>
+        <section address="InstallationAndFirstLaunch">
+            <title>Installation and first launch</title>
+            <content>
+                <para>
+                    The setup application uses the Microsoft ClickOnce technology. Description of that technology can be found under this link on MSDN.
+                </para>
+                <alert>Sometimes firewalls cause problems with the ClickOnce technology, because ClickOnce tries to download an applica-tion update implicitly.</alert>
+                <para>To install OPC UA Address Space Model Designer, please do the following steps:</para>
+                <list class="ordered">
+                    <listItem>
+                        <para>If the application was downloaded using Internet Explorer, the installation process will start automatically. If another web browser is used, run the downloaded file setup.exe.</para>
+                    </listItem>
+                    <listItem>
+                        <para>Follow the instructions on the screen.</para>
+                    </listItem>
+                    <listItem>
+                        <para>After the installation process, the OPC UA Address Space Model Designer will start automatically. </para>
+                    </listItem>
+                </list>
+            </content>
+        </section>
+        <relatedTopics>
 
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
+            <link xlink:href="6d606dbc-d7f8-423b-b862-a99e1db2b36b" />
+            <link xlink:href="df286eaa-c7eb-4dfd-9c94-435047a6d207" />
+            <link xlink:href="22b73887-6243-4257-b225-41de9657751c" />
 
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
-    </relatedTopics>
-  </developerConceptualDocument>
+        </relatedTopics>
+    </developerConceptualDocument>
 </topic>
