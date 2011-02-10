@@ -51,16 +51,34 @@
           </helpOutput>
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><basePath value="{@ProjectFolder}" /><languageFilter value="true" /><allowMissingSource value="false" /><removeRegionMarkers value="false" /><colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" /></component></ComponentConfig>
-<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <basePath value="{@ProjectFolder}" />
+          <languageFilter value="true" />
+          <allowMissingSource value="false" />
+          <removeRegionMarkers value="false" />
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). --><outputPaths>{@HelpFormatOutputPaths}</outputPaths><!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). -->
+          <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+          <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="\\CAS_002\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. -->
+          <logoFile filename="\\CAS_002\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True" xmlns="">
         <configuration />
@@ -283,6 +301,12 @@
     <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\OPCUAAddressSpaceModelDesignerDownloadWebsite.jpg">
       <ImageId>819e6324-273a-4b63-aa76-b9d2fd3bb0ab</ImageId>
       <AlternateText>OPC UA Address Space Model Designer Download Website</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\OPCUAAddressSpaceModelDesignerMainUserInterface.jpg">
+      <ImageId>bf0ac4f8-c31c-4781-b8a8-5415c564ce97</ImageId>
+      <AlternateText>OPCUAAddress Space Model Designer Main User Interface</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
