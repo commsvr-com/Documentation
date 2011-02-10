@@ -309,6 +309,42 @@
       <AlternateText>OPCUAAddress Space Model Designer Main User Interface</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\ASMDToOpenTheSampleSolution.jpg">
+      <AlternateText>ASMDTo Open The Sample Solution</AlternateText>
+      <ImageId>6f5f133d-4da2-4e25-b28c-3009072531f7</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\ASMDBoilerModel.jpg">
+      <ImageId>35ee7798-db16-48d1-8bfd-37a8f9ffe76d</ImageId>
+      <AlternateText>Boiler Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\ASMDBoilerModelDiagram.jpg">
+      <ImageId>421bc850-7396-46fd-9e4f-73c67197f893</ImageId>
+      <AlternateText>Boiler Model Diagram</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\BoilerModelInOPCUAAddressSpaceModelDesigner.jpg">
+      <ImageId>adf1e800-4e40-4c90-8937-fe20ec7bd8a2</ImageId>
+      <AlternateText>Boiler model in OPC UA Address Space Model Designer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\Reference.jpg">
+      <ImageId>0c1f2895-a03e-4853-b0ea-fdbd017803ea</ImageId>
+      <AlternateText>Reference</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\Custom Controller Type.jpg">
+      <ImageId>e182a2d4-0b83-4e58-b262-1ae3568d91bc</ImageId>
+      <AlternateText>CustomControllerType</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

@@ -1,96 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="22b73887-6243-4257-b225-41de9657751c" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <introduction>
-    </introduction>
-    <section address="Introduction">
-      <title>Introduction</title>
-      <content>
-        <para>This section contains information about the OPC UA Address Space Model Designer sample solution that illustrates the structure and techniques used for designing models and defining bindings between model nodes and real-time process data.</para>
-      </content>
-    </section>
-      <section address="LocatingSampleFiles">
-          <title>Locating Sample Files</title>
-          <content>
-              <para>By default, the sample solution is installed with software. This solution contains a project of a boiler model. This model is described in the BoilerModel topic.</para>
-              <para>The default location for the sample solution is the following directory:</para>
-              <para>"%USERPROFILE%\My Documents\UAAddressSpaceModelDesigner\Sample"</para>
-              <para>
-                  "%USERPROFILE%" variable represents the location of the profile for the current user. The default location of the "%USERPROFILE%" is C:\Documents and Settings<![CDATA[\<username>]]>.</para>
-              <alert>this directory name is different in other than English versions of MS Windows and if the user moves his/her “My Document” directory to other than default location.</alert>
-              <para>The files of the sample solution are listed in the following table.</para>
-              <table>
-                  <tableHeader>
-                      <row>
-                          <entry>
-                              <para>File</para>
-                          </entry>
-                          <entry>
-                              <para>Content</para></entry>
-                      </row>
-                  </tableHeader>
-                  <row>
-                      <entry>
-                          <para>BoilerExampleSolution.uamdsl</para>
-                      </entry>
-                      <entry>
-                          <para>OPC UA Address Space Model Designer solution. This file contains the configuration of the sample solution and references to other files that are used in this solution (e.g. projects, plug-ins etc.).</para>
-                      </entry>
-                  </row>
-                  <row>
-                      <entry>
-                          <para>CAS.UA.Server.ServerConfiguration.dll</para>
-                      </entry>
-                      <entry>
-                          <para>A sample Plug-in file for CommServer UA that can be used to edit the configuration file and define process data bindings.</para>
-                      </entry>
-                  </row>
-                  <row>
-                      <entry>
-                          <para>DemoConfiguration/BoilerExample.csv</para>
-                      </entry>
-                      <entry>
-                          <para>A CSV file that contains Node Identifiers.</para>
-                      </entry>
-                  </row>
-                  <row>
-                      <entry>
-                          <para>DemoConfiguration/BoilerExample.xml</para>
-                      </entry>
-                      <entry>
-                          <para>An XML file that contains the model.</para>
-                      </entry>
-                  </row>
-                  <row>
-                      <entry>
-                          <para>DemoConfiguration/CAS.UAServer.DemoConfiguration.uasconfig</para>
-                      </entry>
-                      <entry>
-                          <para>A sample configuration file of CommServer UA. This file is created and edited by CAS.UA.Server.ServerConfiguration.dll - configuration editor.</para>
-                      </entry>
-                  </row>
-                  <row>
-                      <entry>
-                          <para>DemoConfiguration/DefaultConfig.xml</para>
-                      </entry>
-                      <entry>
-                          <para>A sample CommServer configuration file. It can be edited by the Network Configuration application (part of CommServer package).</para>
-                      </entry>
-                  </row>
-                  <row>
-                      <entry>
-                          <para>DemoConfiguration/DemoConfiguration.oses</para>
-                      </entry>
-                      <entry>
-                          <para>A sample OPC DA client configuration (compatible with OPC Viewer and DataPorter products).</para>
-                      </entry>
-                  </row>
-              </table>
-          </content>
-      </section>
-    <relatedTopics>
-        <link xlink:href="70144915-72b9-4b52-bed2-5d14b6e1929d" />
-        <link xlink:href="07da60d4-d213-4a4a-b498-6bd68c6885b9" />
-    </relatedTopics>
-  </developerConceptualDocument>
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="Introduction">
+            <title>Introduction</title>
+            <content>
+                <para>This section contains information about the OPC UA Address Space Model Designer sample solution that illustrates the structure and techniques used for designing models and defining bindings between model nodes and real-time process data.</para>
+            </content>
+        </section>
+        <section address="LocatingSampleFiles">
+            <title>Locating Sample Files</title>
+            <content>
+                <para>
+                    By default, the sample solution is installed with software. This solution contains a project of a boiler model. This model is described in the <link xlink:href="e6a0a08f-6abc-46c4-8fad-10e586fbac71">Boiler Model</link> topic.
+                </para>
+                <para>The default location for the sample solution is the following directory:</para>
+                <para>"%USERPROFILE%\My Documents\UAAddressSpaceModelDesigner\Sample"</para>
+                <para>
+                    "%USERPROFILE%" variable represents the location of the profile for the current user. The default location of the "%USERPROFILE%" is C:\Documents and Settings<![CDATA[\<username>]]>.
+                </para>
+                <alert>this directory name is different in other than English versions of MS Windows and if the user moves his/her “My Document” directory to other than default location.</alert>
+                <para>The files of the sample solution are listed in the following table.</para>
+                <table>
+                    <tableHeader>
+                        <row>
+                            <entry>
+                                <para>File</para>
+                            </entry>
+                            <entry>
+                                <para>Content</para>
+                            </entry>
+                        </row>
+                    </tableHeader>
+                    <row>
+                        <entry>
+                            <para>BoilerExampleSolution.uamdsl</para>
+                        </entry>
+                        <entry>
+                            <para>OPC UA Address Space Model Designer solution. This file contains the configuration of the sample solution and references to other files that are used in this solution (e.g. projects, plug-ins etc.).</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>CAS.UA.Server.ServerConfiguration.dll</para>
+                        </entry>
+                        <entry>
+                            <para>A sample Plug-in file for CommServer UA that can be used to edit the configuration file and define process data bindings.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>DemoConfiguration/BoilerExample.csv</para>
+                        </entry>
+                        <entry>
+                            <para>A CSV file that contains Node Identifiers.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>DemoConfiguration/BoilerExample.xml</para>
+                        </entry>
+                        <entry>
+                            <para>An XML file that contains the model.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>DemoConfiguration/CAS.UAServer.DemoConfiguration.uasconfig</para>
+                        </entry>
+                        <entry>
+                            <para>A sample configuration file of CommServer UA. This file is created and edited by CAS.UA.Server.ServerConfiguration.dll - configuration editor.</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>DemoConfiguration/DefaultConfig.xml</para>
+                        </entry>
+                        <entry>
+                            <para>A sample CommServer configuration file. It can be edited by the Network Configuration application (part of CommServer package).</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>DemoConfiguration/DemoConfiguration.oses</para>
+                        </entry>
+                        <entry>
+                            <para>A sample OPC DA client configuration (compatible with OPC Viewer and DataPorter products).</para>
+                        </entry>
+                    </row>
+                </table>
+            </content>
+        </section>
+        <relatedTopics>
+            <link xlink:href="70144915-72b9-4b52-bed2-5d14b6e1929d" />
+            <link xlink:href="07da60d4-d213-4a4a-b498-6bd68c6885b9" />
+        </relatedTopics>
+    </developerConceptualDocument>
 </topic>

@@ -1,82 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="e6a0a08f-6abc-46c4-8fad-10e586fbac71" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
-    <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
-    </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
-    <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="Introduction">
+            <title>Introduction</title>
+            <content>
+                <para>
+                    This topic contains the following sections:
+                </para>
+                <para> Real-time Process</para>
+                <para>OPC UA Model</para>
+                <para>OPC UA Model Designer</para>
+                <para> Related Topics</para>
+                <para>Publication of process real-time data and metadata in the Unified Architecture Address Space requires a prior model de-sign. OPC UA Address Space Model Designer software is intended to help developers and engineers to design OPC Uni-fied Architecture models. The whole configuration can be prepared using a user-friendly Windows-based GUI. All nodes are presented on a tree and can be edited in the property window. This section contains an example that shows how to start from the real-time process and finish the design with a model in OPC UA Address Space Model Designer.</para>
+            </content>
+        </section>
+        <section address="RealTimeProcess">
+            <title>Real-time Process</title>
+            <content>
+                <para>This example considers a real process in a boiler producing steam from water. The system (boiler) consists of: </para>
+                <list class="bullet">
+                    <listItem>
+                        <para>input and output pipes </para>
+                    </listItem>
+                    <listItem>
+                        <para>boiler drum </para>
+                    </listItem>
+                    <listItem>
+                        <para>control module </para>
+                    </listItem>
+                    <listItem>
+                        <para>sensors </para>
+                    </listItem>
+                </list>
+                <para>The boiler is shown in the figure below</para>
+                <mediaLink>
+                    <caption placement="after" lead="Figure 1">Boiler Model</caption>
+                    <image placement="center" xlink:href = "35ee7798-db16-48d1-8bfd-37a8f9ffe76d"/>
+                </mediaLink>
+            </content>
+        </section>
+        <section address="OPCUAModel">
+            <title>OPC UA Model</title>
+            <content>
+                <para>The first step is to prepare an OPC UA Address Space model diagram. A sample diagram that describes the a/m boiler is shown below.</para>
+                <mediaLink>
+                    <caption placement="after" lead="Figure 2">Boiler Model Diagram</caption>
+                    <image placement="center" xlink:href = "421bc850-7396-46fd-9e4f-73c67197f893"/>
+                </mediaLink>
+            </content>
+        </section>
+        <section address="BoilerModelInOPCUAAddressSpaceModelDesigner">
+            <title>Boiler model in OPC UA Address Space Model Designer</title>
+            <content>
+                <para>Now we can port the design prepared in the previous step to the UA Model Designer. A sample design is shown below.</para>
+                <mediaLink>
+                    <caption placement="after" lead="Figure 3">Boiler model in OPC UA Address Space Model Designer</caption>
+                    <image placement="center" xlink:href = "adf1e800-4e40-4c90-8937-fe20ec7bd8a2"/>
+                </mediaLink>
+                <list class="ordered">
+                    <listItem>
+                        <para>Namespaces – this model uses the standard OPC Unified Architecture namespace (OpcUa : http://opcfoundation.org/UA/) and defines an own namespace Sample (http://cas.eu/UA/Demo/). </para>
+                    </listItem>
+                    <listItem>
+                        <para>References – this model defines three references. FlowTo and HotFlowTo are used to describe the flow of water and steam. SignalTo references are used to describe the flow of the signals in the boiler. An example of reference usage is shown in the figure below</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 4">Reference</caption>
+                            <image placement="center" xlink:href = "0c1f2895-a03e-4853-b0ea-fdbd017803ea"/>
+                        </mediaLink>
+                    </listItem>
+                    <listItem>
+                        <para>Types definitions – those are definitions of types used in the model. Each important object in the system being designed should have a type definition. Such a type definition includes information about what the type instance should provide (e.g. variables, properties, methods). This model defines many types for sensors, controllers, valves, etc. A sample Custom Controller Type definition is shown below. It contains properties with information about controller inputs, description of the controller and  controlling process.</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 5">CustomControllerType</caption>
+                            <image placement="center" xlink:href = "e182a2d4-0b83-4e58-b262-1ae3568d91bc"/>
+                        </mediaLink>
+                    </listItem>
+                    <listItem>
+                        <para>Boiler type – this is the type definition for Boiler (similar to definitions in item 3). This type includes all necessary objects in the system (e.g. input pipe, output pipe, drum, etc.).</para>
+                    </listItem>
+                    <listItem>
+                        <para>Method definition – this model defines one method that is used to start simulation of the data in an instance of the type (BoilerType in this case).</para>
+                    </listItem>
+                    <listItem>
+                        <para>Boiler – this is an instance of the boiler type; this node represents the real boiler (Boiler1).</para>
+                    </listItem>
+                </list>
+            </content>
+        </section>
+        <relatedTopics>
 
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
+      <link xlink:href="70144915-72b9-4b52-bed2-5d14b6e1929d" />
 
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
-    </relatedTopics>
-  </developerConceptualDocument>
+        </relatedTopics>
+    </developerConceptualDocument>
 </topic>
