@@ -1,82 +1,127 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="4bfa3bf3-e287-4aca-8e4c-cce2c241cfe5" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="MenuView">
+      <title>Menu View</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">UA Address Space Model Designer – Menu View</caption>
+              <image placement="center" xlink:href = "9600a8c6-e40a-42c5-aa56-95efa2508649"/>
+          </mediaLink>
+          <list class="ordered">
+              <listItem>
+                  <para>
+                      <legacyBold>Visualization</legacyBold>
+                  </para>
+                  <list>
+                      <listItem>
+                          <para>Model – Disables/Enables displaying of the model in the standard tree view (this is a default view).</para>
+                      </listItem>
+                      <listItem>
+                          <para>Browse View - Disables/Enables displaying of the browse view.</para>
+                      </listItem>
+                      <listItem>
+                          <para>Model 3D - Disables/Enables displaying of the model in the 3D view</para>
+                      </listItem>
+                 </list>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 2">UA Address Space Model Designer – Menu View - Visualization</caption>
+                      <image placement="center" xlink:href = "a11a6100-07f5-4ce3-91d7-b48a06873f71"/>
+                  </mediaLink>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Toolbars</legacyBold>
+                  </para>
+                  <list class="bullet">
+                      <listItem>
+                          <para>Main Menu</para>
+                      </listItem>
+                      <listItem>
+                          <para>Status</para>
+                      </listItem>
+                  </list>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 3">UA Address Space Model Designer – Menu View – Toolbars</caption>
+                      <image placement="center" xlink:href = "1a2baf55-8968-4d51-b987-f672e01f7e03"/>
+                  </mediaLink>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Windows</legacyBold>
+                  </para>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Filters</legacyBold>
+                  </para>
+                  <list class="bullet">
+                      <listItem>
+                          <para>Node Class - Filters the current view to display only nodes from a particular node class</para>
+                      </listItem>
+                      <listItem>
+                          <para>Name - Filters the current view to display only nodes with the names matching the name pattern</para>
+                      </listItem>
+                      <listItem>
+                          <para>All References - Filters the current view to display only nodes which are referenced to the current node</para>
+                      </listItem>
+                      <listItem>
+                          <para>Others - Other filtering possibilities</para>
+                      </listItem>
+                  </list>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 4">UA Address Space Model Designer – Menu View – Filters</caption>
+                      <image placement="center" xlink:href = "56cf8b83-f428-46b8-bd91-768957744bb7"/>
+                  </mediaLink>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Sort The Tree</legacyBold>
+                  </para>
+                  <list class="bullet">
+                      <listItem>
+                          <para>Alphabetically - Sorts the current tree view alphabetically</para>
+                      </listItem>
+                      <listItem>
+                          <para>Node Class - Sorts the current tree view based on the node class type</para>
+                      </listItem>
+                  </list>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 5">UA Address Space Model Designer – Menu View – Sort The Tree</caption>
+                      <image placement="center" xlink:href = "9b040cd8-402a-475d-aecb-03d871c9fbea"/>
+                  </mediaLink>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Coupled Nodes</legacyBold> - Turns on/off the coupled nodes on the tree
+                  </para>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Synchronize Tree</legacyBold> - Synchronizes the tree view with the property grid
+                  </para>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Collapse All Nodes</legacyBold> - Collapses all nodes on the tree
+                  </para>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Navigate Backward</legacyBold> - Navigates to the previous selected node
+                  </para>
+              </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Navigate Forward</legacyBold> - Navigates to the next selected node
+                  </para>
+              </listItem>
+          </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
