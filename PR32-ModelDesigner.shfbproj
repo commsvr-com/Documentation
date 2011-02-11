@@ -100,6 +100,11 @@
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\props\MenuFile.jpg.svn-work" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\entries" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\dir-props" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\entries" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\dir-props" />
     <None Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\entries" />
     <None Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\dir-props" />
     <None Include="PR32-ModelDesigner\Graphics\.svn\entries" />
@@ -250,6 +255,24 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\" />
     <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\text-base\" />
     <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\props\" />
     <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\prop-base\" />
@@ -343,6 +366,48 @@
     <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\Custom Controller Type.jpg">
       <ImageId>e182a2d4-0b83-4e58-b262-1ae3568d91bc</ImageId>
       <AlternateText>CustomControllerType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuFile.jpg">
+      <ImageId>c5f9b590-6a3f-4e8d-af54-c1d31ee0cc24</ImageId>
+      <AlternateText>Menu File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuFileExport.jpg">
+      <ImageId>43337c00-a0d6-447b-98f6-976fdd74d3e8</ImageId>
+      <AlternateText>Menu File Export</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEdit.jpg">
+      <ImageId>bb318f7b-f9b1-4c6b-9780-f9fccc3f2925</ImageId>
+      <AlternateText>Menu Edit</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditFindAndReplace.jpg">
+      <ImageId>9fc33f2a-2abe-4b44-b4cb-34b3e5582643</ImageId>
+      <AlternateText>Menu Edit Find And Replace</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditNotes.jpg">
+      <ImageId>d9b36326-1f0c-492c-9b48-080c710804f6</ImageId>
+      <AlternateText>Menu Edit Notes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditBookmarks.jpg">
+      <ImageId>b3b1659d-bab3-43e2-b997-aca58eb8e53a</ImageId>
+      <AlternateText>Menu Edit Bookmarks</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditCreate.jpg">
+      <ImageId>8fabf637-9d48-4316-a397-8ce658a83630</ImageId>
+      <AlternateText>Menu Edit Create</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
