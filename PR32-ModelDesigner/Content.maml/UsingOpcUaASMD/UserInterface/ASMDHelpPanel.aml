@@ -1,82 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="81415f76-0133-43ce-9892-28754764b30c" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="HelpPanel">
+      <title>Help panel</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Address Space Model Designer is not only an editor; it is also an intelligent book. It contains much useful information about UA specifications, address space concept, information model and development of the OPC Unified Architecture models. What is more, a smart content positioning system of the help window can follow object selections in the GUI. </para>
+          <para>To use function of the smart content positioning system, do the following steps (see also Figure 1):</para>
+          <list class="ordered">
+              <listItem>
+                  <para>Select a node on the tree (Pt 1) - information about the node class will appear in the node class indicator (Pt 2).</para>
+              </listItem>
+              <listItem>
+                  <para>Click on the Help panel (Pt 3).</para>
+              </listItem>
+              <listItem>
+                  <para>The help content panel will open with information about this node class (Pt 4). </para>
+              </listItem>
+          </list>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">Help Panel</caption>
+              <image placement="center" xlink:href = "9ab82f4d-278e-4d65-b729-fdb119243f8b"/>
+          </mediaLink>
+          <para>Thanks to the intelligent book idea, this tool is very useful not only for OPC Unified Architecture professionals, but also for the beginners who want to learn about the OPC Unified Architecture address space concept. </para>
+          <para>The content of the book is available online, so it can be continuously improved to follow the specification development progress. </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="49bd66e4-7ef0-4ed9-8c66-a33324d5b8ac" />
+        <link xlink:href="16e461cc-4255-42c4-a672-78c0ab61b7ed" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
