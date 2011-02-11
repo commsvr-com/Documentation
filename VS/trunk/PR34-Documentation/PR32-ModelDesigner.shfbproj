@@ -470,6 +470,42 @@
       <AlternateText>Model Tree</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\BrowseViewTree.jpg">
+      <ImageId>15658c30-22d3-4dc6-986c-50e663c555f5</ImageId>
+      <AlternateText>Browse View Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\Model3dView.jpg">
+      <ImageId>7c9c1624-6c30-4079-9081-e322174b78dc</ImageId>
+      <AlternateText>Model 3d View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\PropertyPanels.jpg">
+      <ImageId>d4e244e5-4c2b-4760-ba80-d182ba18fe46</ImageId>
+      <AlternateText>Property Panels</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\HelpPanel.jpg">
+      <ImageId>9ab82f4d-278e-4d65-b729-fdb119243f8b</ImageId>
+      <AlternateText>Help Panel</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\OutputWindow.jpg">
+      <ImageId>512377e4-4c96-468d-bbe0-74a17b1ae114</ImageId>
+      <AlternateText>Output Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\NodeClassIndicator.jpg">
+      <ImageId>d8e0f44b-10ca-4f6f-8dfa-0004fdde7517</ImageId>
+      <AlternateText>Node Class Indicator</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

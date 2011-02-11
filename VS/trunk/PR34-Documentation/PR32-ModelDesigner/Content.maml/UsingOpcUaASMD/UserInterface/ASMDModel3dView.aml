@@ -1,82 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="105a8554-0815-47ef-a6ef-c139fec8cd08" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
-    <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
-    </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
-      <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
-      </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
-    </section>
-    <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
-    </relatedTopics>
-  </developerConceptualDocument>
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="Model3DView">
+            <title>Model 3D view</title>
+            <content>
+                <para>OPC UA Address Space Model Designer provides many views of the model. One of them is a 3D view (Figure 1). It is a three-dimensional tree view representation of the nearest environment of the node selected in the classic model view. To use the 3D view, the node in the Model view must be selected.</para>
+                <mediaLink>
+                    <caption placement="after" lead="Figure">Model 3d View</caption>
+                    <image placement="center" xlink:href = "7c9c1624-6c30-4079-9081-e322174b78dc"/>
+                </mediaLink>
+                <para>Model view elements:</para>
+                <list class="ordered">
+                    <listItem>
+                        <para>
+                            Visualization panel - visualization of the three dimensional tree view representing the nearest environment of the node, selected in the Model view.
+                        </para>
+                    </listItem>
+                    <listItem>
+                        <para>3D control panel - contains configuration parameters of 3D visualization: camera location. rotation etc.</para>
+                    </listItem>
+                    <listItem>
+                        <para>Visibility panel - enables/ disables lines, labels 2D/3D and triangle structures on the visualization panel.</para>
+                    </listItem>
+                    <listItem>
+                        <para>Axes scroll bars - sets the position of the 3D model in space (on X/Y/Z axes). </para>
+                    </listItem>
+                    <listItem>
+                        <para>Property panel - properties of the selected node.</para>
+                    </listItem>
+                </list>
+            </content>
+        </section>
+        <relatedTopics>
+            <link xlink:href="853241bd-1da3-4f47-bc57-9ee61c833dfd" />
+        </relatedTopics>
+    </developerConceptualDocument>
 </topic>
