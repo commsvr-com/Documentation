@@ -410,6 +410,54 @@
       <AlternateText>Menu Edit Create</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuView.jpg">
+      <ImageId>9600a8c6-e40a-42c5-aa56-95efa2508649</ImageId>
+      <AlternateText>Menu View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewVisualisation.jpg">
+      <ImageId>a11a6100-07f5-4ce3-91d7-b48a06873f71</ImageId>
+      <AlternateText>Menu View Visualisation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewToolbars.jpg">
+      <ImageId>1a2baf55-8968-4d51-b987-f672e01f7e03</ImageId>
+      <AlternateText>Menu View Toolbars</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewFilters.jpg">
+      <ImageId>56cf8b83-f428-46b8-bd91-768957744bb7</ImageId>
+      <AlternateText>Menu View Filters</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewSortTheTree.jpg">
+      <ImageId>9b040cd8-402a-475d-aecb-03d871c9fbea</ImageId>
+      <AlternateText>Menu View Sort The Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuUaServer.jpg">
+      <ImageId>2836ad8c-c3e3-451c-85d0-e36e1bc25c9c</ImageId>
+      <AlternateText>Menu Ua Server</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuTools.jpg">
+      <ImageId>cc06c9f9-75c4-42a1-b40b-34aee4ddbef9</ImageId>
+      <AlternateText>Menu Tools</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuToolsBuildVerify.jpg">
+      <ImageId>5d10b61d-f2d8-4623-9b83-a9e1fc82effe</ImageId>
+      <AlternateText>Menu Tools Build Verify</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>

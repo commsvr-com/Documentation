@@ -61,6 +61,11 @@
               </listItem>
               <listItem>
                   <para>
+                      <legacyBold>Go To ...</legacyBold> - Go to nodes coupled with the selected node.
+                  </para>
+              </listItem>
+              <listItem>
+                  <para>
                       <legacyBold>Notes</legacyBold>
                   </para>
                   <list class="bullet">
