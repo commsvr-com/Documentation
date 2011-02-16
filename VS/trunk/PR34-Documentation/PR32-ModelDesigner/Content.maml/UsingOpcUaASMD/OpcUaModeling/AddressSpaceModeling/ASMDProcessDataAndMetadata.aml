@@ -1,82 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="12cbf21e-4432-4db0-9514-3e720350af96" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="ProcessDataAndMetadata">
+      <title>Process data and metadata</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>The OPC Unified Architecture (UA) is a standard that allows servers to provide real-time process data, environment metadata and even non-process data to clients, in a unique and platform-independent way. To meet this objective, each server instantiates and maintains an Address Space that is a collection of information to be exposed to clients.</para>
+          <para>Node classes are the main building blocks that allow the server to couple the exposed Address Space with the current state and behaviour of the underlying process. Therefore, to maintain this coupling, there must be established a connection to physical plant floor devices used to transfer real-time process data.  </para>
+          <para>The methods of Nodes binding with real-time process data are vendor specific. Nodes management functionality on the client part is standardized by the OPC UA Service Model as a set of services. Access to the values representing the current process state is provided by the Read/Write functions. The client can also be informed about changes of the process state us-ing "data change" notifications. Invoke and event notification functionalities allow clients to use the <legacyItalic>Methods</legacyItalic>.</para>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">Typical UA archetype</caption>
+              <image placement="center" xlink:href = "d3e38f12-f87a-46f5-9888-f08c308f8633"/>
+          </mediaLink>
+          <para>To implement the functionality presented above, we need to use three coupled function classes (Figure 1):</para>
+          <list class="bullet">
+              <listItem>
+                  <para>UA Services</para>
+              </listItem>
+              <listItem>
+                  <para>Nodes Management</para>
+              </listItem>
+              <listItem>
+                  <para>Process Link</para>
+              </listItem>
+          </list>
+          <para>The diagram in Figure 1 shows the dependencies and associations between the function classes mentioned above. In this architecture, the Process Link is responsible for transferring real-time process data up and down. The Nodes Management function class couples the real-time process data with appropriate Nodes instances representing process metadata and pro-vides a homogenous picture created this way to UA Services that finally expose it to all connected clients.</para>
+          <para>Depending on the UA server implementation, the Information Model representation and support for the modelling proc-ess varies.  OPC UA Address Space Model Designer is a software tool that is intended to help architects, engineers and devel-opers accomplish Process Model preparation.  This tool supports all aspects of the model designing process including edition, visualization and, finally, generation of files allowing the server to expose provided real-time process metadata.</para>
+          <para>The OPC UA Address Space Model Designer implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects. Any project includes source files containing the model representation and related metadata such as namespace, properties and references to other projects. As projects are built, output files are produced to be used by the UA Server to expose the designed Address Space.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="8c3d069f-ae57-4e81-aae9-3fb9bfbe441e" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

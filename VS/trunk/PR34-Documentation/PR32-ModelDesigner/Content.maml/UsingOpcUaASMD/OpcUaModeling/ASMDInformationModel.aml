@@ -1,82 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="44047fc0-68d9-4a40-a46c-838e3d6f57d6" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="InformationModel">
+      <title>Information model</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>The primary objective of the OPC UA server is to expose information that can be used by clients to manage an underlying real-time process and the entire enterprise as a large whole with the main challenge of integrating systems and management resources into one homogenous environment. Information describes the state and behavior of the process and the server must be able to transfer it in both directions. The main challenge of the OPC UA information model is to support this transfer in a unique and transparent means in spite of the process complexity and roles of clients in the enterprise management hierarchy. </para>
+          <para>Information is an abstract knowledge; therefore it cannot be directly processed by physical machines. To make information capable of being processed, it must be represented as a set of words (terminals) first. To be transferable on the wire, the terminals must be a stream of bits and since the representation should be human readable, the terminals are usually strings. All allowed terminals make up a vocabulary. To define the relationship between information and representation on the one-to-one basis, we need syntax and semantics. Syntax defines rules of the vocabulary usage, and semantics maps valid terminals concatenations (sentences) to the associated piece of information.</para>
+          <para>An information model for OPC Unified Architecture is such a collection of vocabulary, syntax and semantics.  This collection plays a role similar to high level programming languages that describe data structures and an algorithm to be executed by the processor. One of the fundamental differences is that a program has a static nature, i.e. it does not change after having been compiled. </para>
+          <para>The information model is abstract, which could be surprising, because we know from the above that it is to be used to replace something abstract (information) by a representation that can be processed (terminals concatenation). To strictly follow this requirement, the vocabulary should be binary, but it would make the representation unreadable to a human. To overcome this issue, the information model is based on the alphanumeric alphabet and is associated with mapping rules defining the relationship between the representations. It must be stressed here that the human and computer centric representations are governed by the same semantics.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="bce14a86-6885-4e62-abb4-0381a3b48df7" />
+        <link xlink:href="9e253cad-7b24-425f-950a-0e21a1176342" />
+        <link xlink:href="8c3d069f-ae57-4e81-aae9-3fb9bfbe441e" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

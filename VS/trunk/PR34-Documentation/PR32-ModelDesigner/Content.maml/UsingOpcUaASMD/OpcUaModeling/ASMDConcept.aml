@@ -1,82 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="9e253cad-7b24-425f-950a-0e21a1176342" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="WhatIsThePurposeOfModeling">
+      <title>What is the purpose of modeling?</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>One of the biggest improvements in the OPC Unified Architecture is a powerful Address Space and Information Model. OPC UA allows for the presentation of a real-time process and underlying infrastructure as a consistent information model built up with nodes. The process model is represented by nodes, attributes and their mutual relationships. Therefore, this powerful concept allows us to present in UA not only raw process data, but also complete information about the process state and process environment. The flexibility of UA ensures that there is no existing or future system that is too complicated to be exposed via UA. But questions arise “How to model the process to make it available via UA? How to prepare a server address space based on the process?”</para>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">How to model the process</caption>
+              <image placement="center" xlink:href = "e557b51d-a230-4054-912f-81e0bb7429b2"/>
+          </mediaLink>
+          <para>Of course, this is a multi-step process. Especially when we are working not only on the server configuration, but also developing the server software. Based on OPC UA specifications and recommendations from the OPC Foundation, the following steps have to be done:</para>
+          <list class="bullet">
+              <listItem>
+                  <para>Preparation of a logical model based on the real environment</para>
+              </listItem>
+              <listItem>
+                  <para>Preparation of a model basing on the OPC UA notation</para>
+              </listItem>
+              <listItem>
+                  <para>Preparation of an XML file that describes the model</para>
+              </listItem>
+              <listItem>
+                  <para>Development of an OPC UA server</para>
+              </listItem>
+          </list>
+          <mediaLink>
+              <caption placement="after" lead="Figure 2">How to model the process</caption>
+              <image placement="center" xlink:href = "9767965c-d358-4f8e-b7a3-9f35d4be1325"/>
+          </mediaLink>
+          <para>Let’s focus on the XML file and server development. The question is what is happening there.</para>
+          <para>Based on the model OPC Foundation's UA SDK, the SDK Model Compiler is generating the following files that are required for OPC UA server implementation:</para>
+          <list class="bullet">
+              <listItem>
+                  <para>Model implementation in C# language</para>
+              </listItem>
+              <listItem>
+                  <para>XML and binary initialization files</para>
+              </listItem>
+              <listItem>
+                  <para>XML and binary schemas</para>
+              </listItem>
+              <listItem>
+                  <para>Read more about it in the topic: “How to build a solution”</para>
+              </listItem>
+          </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+      <section address=" HowToCreateTheModel">
+          <title>How to create the model?</title>
+          <content>
+              <para>Now an important question arises: "How to create the model in the XML file?" Of course writing such an XML document using one of the common XML editors is a very hard and error prone task, but CAS UA Address Space Model Designer seems to be a solution.</para>
+              <para>Let’s focus on the modeling task using OPC UA Address Space Model Designer.</para>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 3">OPC UA Address Space Model Designer</caption>
+                  <image placement="center" xlink:href = "1067bff6-e13f-4d2c-9416-d9058eed5242"/>
+              </mediaLink>
+              <para>OPC UA Address Space Model Designer allows us to perform the same modeling steps as recommended by the OPC Foundation. But the advantage is that all these steps can be done in a user friendly graphical interface.</para>
+              <para>The output could be:</para>
+              <list class="bullet">
+                  <listItem>
+                      <para>Model in XML file </para>
+                  </listItem>
+                  <listItem>
+                      <para>C# classes, schemas and other files required directly for server development</para>
+                  </listItem>
+              </list>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 4">OPC UA Address Space Model Designer - usage</caption>
+                  <image placement="center" xlink:href = "2d8c647b-ba5a-4cac-94c3-3dcc3fdcdf59"/>
+              </mediaLink>
+              <para>To see an example that shows how to start from a real process (it is a boiler in this example) and end with C#, XML and sche-ma files, read the topic Boiler model.</para>
+          </content>
+      </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="50ac09d2-901f-4702-a09d-b6ec69e8343f" />
+        <link xlink:href="e6a0a08f-6abc-46c4-8fad-10e586fbac71" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

@@ -1,82 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="bce14a86-6885-4e62-abb4-0381a3b48df7" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Implementation">
+      <title>Implementation</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Anyway, in the generic and hard-coded implementations, model designing is a common starting point that results in providing the Process Model in an appropriate format. Model designing is a process aimed at defining a set of Nodes and their associations and, next, creating this Process Model representation in a format appropriate for the implementation of the Nodes Management function class. </para>
+          <para>If the model is to have a broader scope than a single application, an intermediate step is necessary. At this step, the model should be represented in a widely accepted format, independent of the programming language (implementation). To provide hard-coded Process Model representation, an additional code generation step is necessary in this scenario. </para>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">Designing process</caption>
+              <image placement="center" xlink:href = "e73f1364-a7c5-4ff8-9143-ecd4215b3121"/>
+          </mediaLink>
+          <para>Figure 1 shows a diagram where three functional classes are responsible for the whole address space creation and manage-ment process as a sequence of the following steps:</para>
+          <list class="ordered">
+              <listItem>
+                  <para>Model designing </para>
+              </listItem>
+              <listItem>
+                  <para>Code generation</para>
+              </listItem>
+              <listItem>
+                  <para>Nodes management</para>
+              </listItem>
+          </list>
+          <para>In this process, the Model Designer depends on the informal model idea of the Real-time Process. The outcome of this step is a Formal Model representation created according to the language (Model Language). Code Generation depends on the model representation (Formal Model) and generates the code (Process Model) according to the selected language and object management implementation (Implementation Language). Finally, Nodes Management depends on the model representation (Process Model) in the selected language and is responsible for utilization of functionality and declarations provided by the model to expose the process-dependent address space. The Process Link is also associated with the Real-time Process to provide access to plant floor data.  </para>
+          <para>With the exception of modeling, this multi-step process can be automated and completely hidden from the process architects and designers except modification of the Process Model that must provide process data bindings.</para>
+          <para>The designing step depends on the process idea and this inevitably involves our imagination. To support our imagination and make the process more intuitive, the subject under design should be visualized. In the above implementation scenario, the main challenge that has to be faced up by developers is how to establish bindings of real-time data and process metadata without programming. It requires configuration in context of the model. To make the process more productive, management of the model should offer a set of helpful functions in this respect. </para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="1f31ce47-e3ac-45db-a7a6-1aa869816c48" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
