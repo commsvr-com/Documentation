@@ -257,6 +257,7 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\text-base\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\props\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\prop-base\" />
@@ -587,6 +588,72 @@
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\InterpretedModelInMAML.jpg">
       <ImageId>e07bc112-c9dd-4a1e-bc9f-859202094cc9</ImageId>
       <AlternateText>Interpreted Model InMAML</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\HowToModelTheProcess.jpg">
+      <ImageId>e557b51d-a230-4054-912f-81e0bb7429b2</ImageId>
+      <AlternateText>How To Model The Process</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\HowToModelTheProcess_2.jpg">
+      <ImageId>9767965c-d358-4f8e-b7a3-9f35d4be1325</ImageId>
+      <AlternateText>How To Model The Process 2</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\OPCUAAddressSpaceModelDesigner.jpg">
+      <ImageId>1067bff6-e13f-4d2c-9416-d9058eed5242</ImageId>
+      <AlternateText>OPCUAAddress Space Model Designer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\OPCUAAddressSpaceModelDesignerUsage.jpg">
+      <ImageId>2d8c647b-ba5a-4cac-94c3-3dcc3fdcdf59</ImageId>
+      <AlternateText>OPCUAAddress Space Model Designer Usage</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\DesigningProcess.jpg">
+      <ImageId>e73f1364-a7c5-4ff8-9143-ecd4215b3121</ImageId>
+      <AlternateText>Designing Process</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ObjectTypesAndObjectInstances.jpg">
+      <ImageId>6e29de74-87f5-4101-83a5-ac67ed7fbea9</ImageId>
+      <AlternateText>Object Types And Object Instances</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\AddressSpaceCreationProcess.jpg">
+      <ImageId>3182a8ac-f82d-4abb-81dc-3e8d4240ab86</ImageId>
+      <AlternateText>Address Space Creation Process</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\StandardReferenceTypeHierarchy.jpg">
+      <ImageId>19a8baf5-69c4-4c2f-a3ae-bf4c25f009a2</ImageId>
+      <AlternateText>Standard Reference Type Hierarchy</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\HasComponentUsageScope.jpg">
+      <ImageId>ab9e76e2-b8b3-4dc6-b50a-e5bce2169c87</ImageId>
+      <AlternateText>Has Component Usage Scope</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ServerTypeDefinition.jpg">
+      <ImageId>378665f7-86bf-461a-a264-5d1b63d47c9c</ImageId>
+      <AlternateText>Server Type Definition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\TypicalUAArchetype.jpg">
+      <ImageId>d3e38f12-f87a-46f5-9888-f08c308f8633</ImageId>
+      <AlternateText>TypicalUAArchetype</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
