@@ -1,82 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="8b547f19-9e0a-4096-8716-a4045fbb9799" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="ImportfromOPDA">
+      <title>Import from OPC DA</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>From the very beginning, the OPC Foundation pursued a migration strategy in the form of OPC UA Wrappers. OPC UA Wrapper is a kind of a shell around an existing DCOM OPC product, permitting communication with future OPC UA products. UA Wrappers allow DCOM OPC clients to access OPC UA servers, and OPC UA clients to work with DCOM OPC servers. </para>
+          <para>OPC UA Address Space Model Designer supports the migration process and bridging applications as it offers Address Space import capabilities from any OPC DA server. The main advantage of this approach is that the obtained model can be freely modified to meet vendor or process needs. OPC UA Address Space Model Designer can create a fully functional OPC UA Information Model from existing OPC DA server Address Space and, in the next step, automatically bind the nodes from the imported OPC UA Address Space to process data sources. At run time, the Information Model and process data bindings are to be utilized to manage data transfer. </para>
+          <para>Import of the OPC DA Address Space is a simple way (no programming skills are required) of creating OPC UA server wrapper, which can work as a regular OPC UA server. More information about creating of the OPC UA wrapper can be found in <link xlink:href="ab23d48a-2241-4e60-a65f-a327b8c30a7d"  />.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="ab23d48a-2241-4e60-a65f-a327b8c30a7d"  />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

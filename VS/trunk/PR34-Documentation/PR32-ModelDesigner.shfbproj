@@ -100,6 +100,8 @@
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\entries" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\dir-props" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\props\MenuFile.jpg.svn-work" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\entries" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\dir-props" />
@@ -255,6 +257,15 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\text-base\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\props\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\prop-base\" />
@@ -504,6 +515,78 @@
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\NodeClassIndicator.jpg">
       <ImageId>d8e0f44b-10ca-4f6f-8dfa-0004fdde7517</ImageId>
       <AlternateText>Node Class Indicator</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\SolutionProjectsLibrary.jpg">
+      <ImageId>1df33362-fed8-47d6-b06e-91d91b90696b</ImageId>
+      <AlternateText>Solution Projects Library</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\SolutionProperties.jpg">
+      <ImageId>e205b654-d4d0-43f3-a06f-8d314f836ed4</ImageId>
+      <AlternateText>Solution Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\OpeningOfTheSolutionFromTheMenuBar.jpg">
+      <ImageId>188c4c7f-5ee8-4412-ac1a-a3705f1dfd8c</ImageId>
+      <AlternateText>Opening Of The Solution From The Menu Bar</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\OpeningOfTheSolutionFromTheTree.jpg">
+      <ImageId>30842282-72bc-45d3-afbc-b5f5e8aa441b</ImageId>
+      <AlternateText>Opening Of The Solution From The Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ProjectProperties.jpg">
+      <ImageId>8f9e1d60-09ec-4213-a553-ea2cde3d75d6</ImageId>
+      <AlternateText>Project Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\OpeningOfAProject.jpg">
+      <ImageId>d6b8754a-ce9f-430a-a853-32135c5d1430</ImageId>
+      <AlternateText>Opening OfAProject</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ExportToMicrosoftWordFormatMenu.jpg">
+      <ImageId>eb70f398-99f4-44da-b302-f4981b771530</ImageId>
+      <AlternateText>Export To Microsoft Word Format Menu</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ExportSuccessful.jpg">
+      <ImageId>2202712d-fceb-4c91-99aa-5bbb26fa1da0</ImageId>
+      <AlternateText>Export Successful</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ModelExportedToMicrosoftWord2007FileFormat.jpg">
+      <ImageId>519c30c9-1790-47f2-b25d-af4c7cf3d947</ImageId>
+      <AlternateText>Model Exported To Microsoft Word 2007 File Format</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ExportToMAMLFormatMenu.jpg">
+      <ImageId>66b8fca7-7f2e-4316-8332-24c84ebe3744</ImageId>
+      <AlternateText>Export ToMAMLFormat Menu</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ModelExportedToMAMLFileFormat.jpg">
+      <ImageId>2d1c51b4-3cb1-4604-89fa-040d5eea24e5</ImageId>
+      <AlternateText>Model Exported ToMAMLFile Format</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\InterpretedModelInMAML.jpg">
+      <ImageId>e07bc112-c9dd-4a1e-bc9f-859202094cc9</ImageId>
+      <AlternateText>Interpreted Model InMAML</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
