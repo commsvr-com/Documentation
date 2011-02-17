@@ -1,82 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="3c6137f0-3e93-42c3-8e6f-7ed1606d21e9" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Object">
+      <title>Object</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Objects are used to represent systems, system components, real-world objects and software objects. </para>
+          <para>The primary objective of the OPC Unified Architecture Address Space is to provide a standard way for servers to represent Objects to clients. The OPC Unified Architecture Object Model has been designed to meet this objective. It defines Objects in terms of Variables and Methods. It also allows relationships to other Objects to be expressed. Figure 1 illustrates the model.</para>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">OPC UA Object Model</caption>
+              <image placement="center" xlink:href = "9f0977a3-2ce1-475c-956f-50e707302418"/>
+          </mediaLink>
+          <para>Objects and their components are represented in the Address Space as a set of Nodes described by Attributes and interconnected by References.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+      <section address="ObjectPropertyGridDescription">
+          <title>Object property grid description</title>
+          <content>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 2">Object property grid</caption>
+                  <image placement="center" xlink:href = "a08c11a1-4b37-471a-8110-61fb6c6fe27a"/>
+              </mediaLink>
+              <para>Object properties:</para>
+              <list class="ordered">
+                  <listItem>
+                      <para>Max Cardinality - this attribute indicates the maximum number of possibly existing instances of this element.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Min Cardinality - this attribute indicates the minimum number of possibly existing instances of this element. If the element has minimal cardinality greater than 0, it is possible to check that it exists in the instantiated nodes.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Modeling Rule - dependent on the value of these properties specified for the components of a type they are used to create appropriate instances while the parent type is instantiated in the address space. The default value is Mandatory. In this case the component is always created with the values of the attributes derived from the inheritance chain. If the value is None it indicates that this node only belongs to the type and is not used to create an instance while the parent type is instantiated. If the node is not a type component the value of this property is ignored.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Preserve Default Attributes - a value indicating whether to preserve default attributes.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Type Definition - the type of this instance pointed out by the HasTypeDefinition reference.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Default value – the default value of the Type Definition.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Is Empty - indicates if the Type Definition is empty.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Name – the name of the TypeDefinition.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Namespace – a namespace that qualifies the name of the TypeDefinition.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Browse Name - a name used in the information model.  The validator will create the BrowseName automatically from the SymbolicName. The BrowseName is qualified by the namespace used for the SymbolicName. </para>
+                  </listItem>
+                  <listItem>
+                      <para>Description - optionally a vendor specific description is provided. The validator automatically creates a generic Description from the BrowseName and NodeClass. </para>
+                  </listItem>
+                  <listItem>
+                      <para>Key – an optional key that can be used to look up the Description for other locales in a resource DB.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Value – the value of the Description attribute for the Node.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Display Name – a human readable name for the Node. The validator automatically creates the DisplayName from the BrowseName.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Key – an optional key that can be used to look up the display name for other locales in a resource DB.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Value – the value of the Display Name.</para>
+                  </listItem>
+                  <listItem>
+                      <para>IsDeclaration - this flag indicates that the Node is defined elsewhere and no code will be generated. Nodes that are declarations do not need to be completely defined. They only need to have the information required to generate code for nodes that reference it (e.g. the BaseType).</para>
+                  </listItem>
+                  <listItem>
+                      <para>StringId - an alternate unique identifier for the node. It is used instead of the NumericId if it is specified in the CSV input file.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Symbolic Name  - identifies the Node within the ModelDesign or within the containing Node. The SymbolicName should always be specified. It is used to create the BrowseName and SymbolicId if they are not specified.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Is Empty - indicates whether the Symbolic Name is empty.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Name – a name, which is a part of the Symbolic Name.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Namespace – a namespace which qualifies the Name from the Symbolic Name.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Write access - a bit mask that indicates, which attributes are writeable. Optionally the WriteMask Attribute can be provided. If the WriteMask Attribute is provided, it shall set all Attributes to not writeable that are not said to be vendor-specific. For example, the Description Attribute may be set to writeable since a Server may provide a server-specific description for the Node. The NodeId shall not be writeable, because it is defined for each Node in specification.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Supports events - a value indicating whether the Object class node supports events.</para>
+                  </listItem>
+              </list>
+          </content>
+      </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
