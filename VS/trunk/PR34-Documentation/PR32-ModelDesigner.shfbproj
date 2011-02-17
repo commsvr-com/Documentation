@@ -656,6 +656,96 @@
       <AlternateText>TypicalUAArchetype</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\GraphicalNotation.jpg">
+      <ImageId>ac5f587a-29f3-4c6a-a2d5-b1c1984290c7</ImageId>
+      <AlternateText>Graphical Notation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerApproach.jpg">
+      <ImageId>e313dac5-cfab-442e-b367-4697922021a7</ImageId>
+      <AlternateText>UAAddress Space Model Designer Approach</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerNavigate.jpg">
+      <ImageId>f7242263-3b99-4277-b673-8d12b363bdb3</ImageId>
+      <AlternateText>UAAddress Space Model Designer Navigate</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerSearch.jpg">
+      <ImageId>ff19a50b-104a-4278-a6ab-4e311d2478c4</ImageId>
+      <AlternateText>UAAddress Space Model Designer Search</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerFiltering.jpg">
+      <ImageId>2d09bea7-ac7d-4ec9-8faf-5e182ca68049</ImageId>
+      <AlternateText>UAAddress Space Model Designer Filtering</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ModelDomainPropertyGrid.jpg">
+      <ImageId>44db7874-0765-4555-b701-9cd41b50cfea</ImageId>
+      <AlternateText>Model Domain Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\NamespacePropertyGrid.jpg">
+      <ImageId>d2ac01be-9832-461e-a798-9c254880603e</ImageId>
+      <AlternateText>Namespace Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\VariableTypePropertyGrid.jpg">
+      <ImageId>027ec10c-d22f-492e-9abe-a39068eaee87</ImageId>
+      <AlternateText>Variable Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\DataTypePropertyGrid.jpg">
+      <ImageId>4b2d01eb-a1d9-43c2-9e07-de25d30dd887</ImageId>
+      <AlternateText>Data Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ExampleOfASimpleStateMachine.jpg">
+      <ImageId>fd9c1384-58bb-4097-a8ac-78f2db516785</ImageId>
+      <AlternateText>Example OfASimple State Machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\RepresentationOfAnExampleStateMachine.jpg">
+      <ImageId>a86d9d58-4b82-43cd-a099-47cd1078511b</ImageId>
+      <AlternateText>Representation Of An Example State Machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ObjectTypePropertyGrid.jpg">
+      <ImageId>33aa0547-37ad-4f26-a7da-2afd07e2be1d</ImageId>
+      <AlternateText>Object Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ReferenceTypePropertyGrid.jpg">
+      <ImageId>78e6f503-0de1-4036-880b-bc66de3beaab</ImageId>
+      <AlternateText>Reference Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\OPCUAObjectModel.jpg">
+      <ImageId>9f0977a3-2ce1-475c-956f-50e707302418</ImageId>
+      <AlternateText>OPCUAObject Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ObjectPropertyGrid.jpg">
+      <ImageId>a08c11a1-4b37-471a-8110-61fb6c6fe27a</ImageId>
+      <AlternateText>Object Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>
