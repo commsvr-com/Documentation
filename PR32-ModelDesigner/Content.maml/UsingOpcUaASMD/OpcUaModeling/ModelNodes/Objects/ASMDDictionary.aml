@@ -21,121 +21,123 @@
               <para>Dictionary properties:</para>
               <list class="ordered">
                   <listItem>
-                      <para>1.	Encoding Name – the qualified name of the encoding.</para>
+                      <para>Encoding Name – the qualified name of the encoding.</para>
                   </listItem>
                   <listItem>
-                      <para>2.	Is Empty - indicates if the Encoding name is empty.</para>
+                      <para>Is Empty - indicates if the Encoding name is empty.</para>
                   </listItem>
                   <listItem>
-                      <para>3.	Name – the name of the Encoding.</para>
+                      <para>Name – the name of the Encoding.</para>
                   </listItem>
                   <listItem>
-                      <para>4.	Namespace – a namespace that qualifies the name of the Encoding.</para>
+                      <para>Namespace – a namespace that qualifies the name of the Encoding.</para>
                   </listItem>
                   <listItem>
-                      <para>5.	Max Cardinality - this attribute indicates the maximum number of possibly existing instances of this element.</para>
+                      <para>Max Cardinality - this attribute indicates the maximum number of possibly existing instances of this element.</para>
                   </listItem>
                   <listItem>
-                      <para>6.	Min Cardinality - this attribute indicates the minimum number of possibly existing instances of this element. If the element has minimal cardinality greater than 0, it is possible to check that it exists in the instantiated nodes.</para>
+                      <para>Min Cardinality - this attribute indicates the minimum number of possibly existing instances of this element. If the element has minimal cardinality greater than 0, it is possible to check that it exists in the instantiated nodes.</para>
                   </listItem>
                   <listItem>
-                      <para>7.	Modeling Rule - dependent on the value of these properties specified for the components of a type they are used to create appropriate instances while the parent type is instantiated in the address space. The default value is Mandatory. In this case the component is always created with the values of the attributes derived from the inheritance chain. If the value is None it indicates that this node only belongs to the type and is not used to create an instance while the parent type is instantiated. If the node is not a type component the value of this property is ignored.</para>
+                      <para>Modeling Rule - dependent on the value of these properties specified for the components of a type they are used to create appropriate instances while the parent type is instantiated in the address space. The default value is Mandatory. In this case the component is always created with the values of the attributes derived from the inheritance chain. If the value is None it indicates that this node only belongs to the type and is not used to create an instance while the parent type is instantiated. If the node is not a type component the value of this property is ignored.</para>
                   </listItem>
                   <listItem>
-                      <para>8.	Preserve Default Attributes - a value indicating whether to preserve default attributes.</para>
+                      <para>Preserve Default Attributes - a value indicating whether to preserve default attributes.</para>
                   </listItem>
                   <listItem>
-                      <para>9.	Type Definition - the type of this instance pointed out by the HasTypeDefinition reference.</para>
+                      <para>Type Definition - the type of this instance pointed out by the HasTypeDefinition reference.</para>
                   </listItem>
                   <listItem>
-                      <para>10.	Default value – the default value of the Type Definition.</para>
+                      <para>Default value – the default value of the Type Definition.</para>
                   </listItem>
                   <listItem>
-                      <para>11.	Is Empty - indicates if the Type Definition is empty.</para>
+                      <para>Is Empty - indicates if the Type Definition is empty.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Name – the name of the TypeDefinition.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Namespace – a namespace that qualifies the name of the TypeDefinition.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Browse Name - a name used in the information model.  The validator will create the BrowseName automatically from the SymbolicName. The BrowseName is qualified by the namespace used for the SymbolicName. </para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Description – optionally, a vendor specific description is provided. The validator automatically creates a generic Description from the BrowseName and NodeClass. </para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Key – an optional key that can be used to look up the Description for other locales in a resource DB.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Value – the value of the Description attribute for the Node.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Display Name – a human readable name for the Node. The validator automatically creates the DisplayName from the BrowseName.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Key – an optional key that can be used to look up the display name for other locales in a resource DB.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Value – the value of the Display Name.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>IsDeclaration - this flag indicates that the Node is defined elsewhere and no code will be generated. Nodes that are declarations do not need to be completely defined. They only need to have the information required to generate code for nodes that reference it (e.g. the BaseType).</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>StringId - an alternate unique identifier for the node. It is used instead of the NumericId if it is specified in the CSV input file.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Symbolic Name  - identifies the Node within the ModelDesign or within the containing Node. The SymbolicName should always be specified. It is used to create the BrowseName and SymbolicId if they are not specified.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Is Empty - indicates whether the Symbolic Name is empty.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Name – a name, which is a part of the Symbolic Name.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Namespace – a namespace, which qualifies the Name from the Symbolic Name.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Write access - a bit mask that indicates, which attributes are writeable. Optionally the WriteMask Attribute can be provided. If the WriteMask Attribute is provided, it shall set all Attributes to not writeable that are not said to be vendor-specific. For example, the Description Attribute may be set to writeable since a Server may provide a server-specific description for the Node. The NodeId shall not be writeable, because it is defined for each Node in specification.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Access Level - this property defines the value of the AccessLevel attribute of the Dictionary node class. The access level for variables used for type definitions is vendor-specific, for all other variables defined in the specification the access level shall allow a current read; other settings are vendor specific.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>
+                          Array Dimensions - if the Value Rank does not identify an array of a specific dimension (i.e. ValueRank <![CDATA[<=]]> 0) the Array Dimensions attribute can either be set to null or the attribute is missing. This behaviour is vendor-specific. If the Value Rank attribute specifies an array of a specific dimension (i.e. ValueRank > 0) then the Array Dimensions attribute shall be specified in the table defining the Dictionary.
+                      </para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Data Type - the type of the data.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Is Empty - indicates if the DataType is empty.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Name - DataType name.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Namespace – a namespace that qualifies the DataType name.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Default value – the default value of the property</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Selected type – the type of the Default value.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Value – the value of the type.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Historizing - this attribute indicates whether the Server is actively collecting data for the history of the Dictionary. This differs from the AccessLevel Attribute which identifies if the Dictionary has any historical data. A value of TRUE indicates that the Server is actively collecting data. A value of FALSE indicates the Server is not actively collecting data.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Minimum Sampling Interval - optionally, a vendor-specific minimum sampling interval is provided. It indicates how “current” the Value of the Dictionary will be kept. It specifies (in milliseconds) how fast the server can reasonably sample the value for changes. A MinimumSamplingInterval of 0 indicates that the server is to monitor the item continuously. A MinimumSamplingInterval of -1 means indeterminate.</para>
                   </listItem>
                   <listItem>
-                      <para></para>
+                      <para>Value Rank - this Attribute indicates whether the Value Attribute of the Dictionary is an array and how many dimensions the array has. It may have the following values: n>1 - the Value is an array with the specified number of dimensions; OneDimension (1)- the value is an array with one dimension; OneOrMoreDimensions (0) - the value is an array with one or more dimensions. Scalar (-1)- the value is not an array; Any (-2)- the value can be a scalar or an array with any number of dimensions; ScalarOrOneDimension (-3)- the value can be a scalar or a one dimensional array.</para>
                   </listItem>
               </list>
           </content>
