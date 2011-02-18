@@ -84,6 +84,7 @@
             <Topic id="8b9a8e27-5e10-4422-89fa-cb80dd9f8395" visible="True" title="View" tocTitle="View" linkText="View" />
             <Topic id="f92834d1-163c-4085-be20-7fe85ea6563d" visible="True" title="Encoding" tocTitle="Encoding" linkText="Encoding" />
             <Topic id="a798c27c-01cf-42bf-8ea3-9293f639d855" visible="True" title="EncodingsFolder" tocTitle="EncodingsFolder" linkText="EncodingsFolder" />
+            <Topic id="08e6bf29-acd4-46d2-983a-4cc05b80ad3b" visible="True" title="Parameter" tocTitle="Parameter" linkText="Parameter" />
             <Topic id="9b61aec6-cc16-4aa9-83d1-54f32faeb2d1" visible="True" title="ParametersFolder" tocTitle="ParametersFolder" linkText="ParametersFolder" />
             <Topic id="2caa06b7-6ba3-4524-89ad-6c1df7833729" visible="True" title="Dictionary" tocTitle="Dictionary" linkText="Dictionary" />
             <Topic id="c0e1d642-b38f-4159-8455-d8181f37d804" visible="True" title="Method" tocTitle="Method" linkText="Method" />

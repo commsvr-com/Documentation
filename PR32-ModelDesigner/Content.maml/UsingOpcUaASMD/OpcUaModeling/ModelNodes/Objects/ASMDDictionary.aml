@@ -1,82 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="2caa06b7-6ba3-4524-89ad-6c1df7833729" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Dictionary">
+      <title>Dictionary</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+          <para>A data type dictionary is an entity that contains a set of type descriptions, such as an XML schema. Data type dictionaries are defined as Variables of the VariableType DataTypeDictionaryType.</para>
+          <para>The data type dictionary describes a set of DataTypes in sufficient detail to allow clients to parse/interpret Variable Values that they receive and to construct Values that they send. The data type dictionary is represented as a Variable of type DataTypeDictionaryType in the Address Space; the description about the DataTypes is contained in its Value Attribute. All containing DataTypes exposed in the Address Space are represented as Variables of type Standard Variable Types. The Value of one of these Variables identifies the description of a DataType in the Value Attribute of the data type dictionary.</para>
+          <para>The DataType of a data type dictionary Variable is always a ByteString. The format and conventions for defining DataTypes in this ByteString are defined by DataTypeSystems. DataTypeSystems are identified by NodeIds. They are represented in the Address Space as Objects of the ObjectTypeDataTypeSystemType. Each Variable representing a data type dictionary references a DataTypeSystem Object to identify their DataTypeSystem.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+      <section address="DictionaryPropertyGridDescription">
+          <title>Dictionary property grid description</title>
+          <content>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 1">Dictionary property grid</caption>
+                  <image placement="center" xlink:href = "63e6de25-f03d-4897-9624-f4d33a4f4f4b"/>
+              </mediaLink>
+              <para>Dictionary properties:</para>
+              <list class="ordered">
+                  <listItem>
+                      <para>1.	Encoding Name – the qualified name of the encoding.</para>
+                  </listItem>
+                  <listItem>
+                      <para>2.	Is Empty - indicates if the Encoding name is empty.</para>
+                  </listItem>
+                  <listItem>
+                      <para>3.	Name – the name of the Encoding.</para>
+                  </listItem>
+                  <listItem>
+                      <para>4.	Namespace – a namespace that qualifies the name of the Encoding.</para>
+                  </listItem>
+                  <listItem>
+                      <para>5.	Max Cardinality - this attribute indicates the maximum number of possibly existing instances of this element.</para>
+                  </listItem>
+                  <listItem>
+                      <para>6.	Min Cardinality - this attribute indicates the minimum number of possibly existing instances of this element. If the element has minimal cardinality greater than 0, it is possible to check that it exists in the instantiated nodes.</para>
+                  </listItem>
+                  <listItem>
+                      <para>7.	Modeling Rule - dependent on the value of these properties specified for the components of a type they are used to create appropriate instances while the parent type is instantiated in the address space. The default value is Mandatory. In this case the component is always created with the values of the attributes derived from the inheritance chain. If the value is None it indicates that this node only belongs to the type and is not used to create an instance while the parent type is instantiated. If the node is not a type component the value of this property is ignored.</para>
+                  </listItem>
+                  <listItem>
+                      <para>8.	Preserve Default Attributes - a value indicating whether to preserve default attributes.</para>
+                  </listItem>
+                  <listItem>
+                      <para>9.	Type Definition - the type of this instance pointed out by the HasTypeDefinition reference.</para>
+                  </listItem>
+                  <listItem>
+                      <para>10.	Default value – the default value of the Type Definition.</para>
+                  </listItem>
+                  <listItem>
+                      <para>11.	Is Empty - indicates if the Type Definition is empty.</para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+                  <listItem>
+                      <para></para>
+                  </listItem>
+              </list>
+          </content>
+      </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
