@@ -1,82 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="deeeaaba-395a-4d8c-bdcc-6fd08460d8b3" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="StateMachineEditor">
+      <title>State machine editor</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>A state machine editor is a graphic editor which helps with the edition of State machines. To use this editor:</para>
+          <list class="ordered">
+              <listItem>
+                  <para>1) Select a node that represents a state machine (Pt 1) from the tree</para>
+                  <alert>
+                      <para>State machine type must be a finite state machine (Pt 2) and it must have children (transitions and states). If the node does not comply with those provisions, then a relevant message will appear.</para>
+                  </alert>
+              </listItem>
+              <listItem>
+                  <para>Open State machine editor (Tools -> Custom editors -> State machines) (Pt 3). If the node that is a state machine is ReadOnly, the transitions in the state machine will be opened in the read only mode after opening of the State Machine dialog.</para>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 1">State machine editor</caption>
+                      <image placement="center" xlink:href = "e41ef2d1-d0e4-451e-971b-fbd055ceb4cd"/>
+                  </mediaLink>
+              </listItem>
+              <listItem>
+                  <para>The state machine editor lets the user add a new transition to the state machine or modify / delete the existing one. </para>
+              </listItem>
+              <listItem>
+                  <para>To add a transition to the state machine, the button that represents an empty transition (Pt 4) must be clicked and the "Add new transition" dialog will appear (figure 2). FromState and ToState properties are set, and HasCause can be set.</para>
+                  <alert>
+                      <para>At present only one HasCause can be set for the Transition.</para>
+                  </alert>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 2">Adding a new transition</caption>
+                      <image placement="center" xlink:href = "e6ab3522-143c-4f10-8900-8f32d4c546f6"/>
+                  </mediaLink>
+              </listItem>
+              <listItem>
+                  <para>To modify the transition, the button that represents the existing transition (Pt 5) must be clicked and the "Transition data" dialog will appear (Figure 3). FromState and ToState properties are set, and HasCause can be set manually (Pt 7).  The changes in the transition can be applied by clicking on the OK button (Pt 8) or the transition can be deleted by clicking on the "Delete" button (Pt 9).</para>
+                  <mediaLink>
+                      <caption placement="after" lead="Figure 3">Modifying existing transition</caption>
+                      <image placement="center" xlink:href = "220d08a8-484d-4d53-ae46-ddd569204b81"/>
+                  </mediaLink>
+              </listItem>
+          </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+        <link xlink:href="db4c065d-d247-4638-99af-ed7214e96125" />
+        <link xlink:href="06bceb63-a3ba-46c9-bb3b-5d3daa594fad" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

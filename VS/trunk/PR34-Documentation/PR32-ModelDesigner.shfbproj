@@ -795,6 +795,36 @@
       <AlternateText>Method Property Grid</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ReferenceModeling.jpg">
+      <ImageId>e7ca624a-0efa-4838-b83a-53626c60c782</ImageId>
+      <AlternateText>Reference Modeling</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\AttachingOfTheObjectToTheRootFolder.jpg">
+      <ImageId>434098a0-faf2-4da1-92af-b51342cf1579</ImageId>
+      <AlternateText>Attaching Of The Object To The Root Folder</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\StateMachineEditor.jpg">
+      <ImageId>e41ef2d1-d0e4-451e-971b-fbd055ceb4cd</ImageId>
+      <AlternateText>State Machine Editor</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\AddingANewTransition.jpg">
+      <ImageId>e6ab3522-143c-4f10-8900-8f32d4c546f6</ImageId>
+      <AlternateText>AddingANew Transition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ModifyingExistingTransition.jpg">
+      <ImageId>220d08a8-484d-4d53-ae46-ddd569204b81</ImageId>
+      <AlternateText>Modifying Existing Transition</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>
