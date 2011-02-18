@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="08e6bf29-acd4-46d2-983a-4cc05b80ad3b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Parameter">
+      <title>Parameter</title>
+      <content>
+        <para>Parameters folder - this node is a folder that contains parameters definitions that are used as input parameters or output parameters for the Method defined in the parent node.</para>
+      </content>
+    </section>
+      <section address="ParameterPropertyGridDescription">
+          <title>Parameter property grid description</title>
+          <content>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 1">Parameter property grid</caption>
+                  <image placement="center" xlink:href = "f3520766-0597-4933-91c1-6d161e609577"/>
+              </mediaLink>
+              <para>Parameter properties:</para>
+              <list class="ordered">
+                  <listItem>
+                      <para>Data Type - the type of the data.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Is Empty - indicates if the data type is empty.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Name – the name of the Data Type.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Namespace – a namespace that qualifies the name of the DataType.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Description - the localised description of the Parameter.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Key – a key, which is used for the localisation of the description.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Value – the value of the Description.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Identifier – a numeric identifier of the Parameter.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Name – the name of the Parameter.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Value Rank - this Attribute indicates whether the Value Attribute of the Parameter is an array and how many dimensions the array has. It may have the following values: n>1 - the Value is an array with the specified number of dimensions; OneDimension (1)- the value is an array with one dimension; OneOrMoreDimensions (0) - the value is an array with one or more dimensions. Scalar (-1)- the value is not an array; Any (-2)- the value can be a scalar or an array with any number of dimensions; ScalarOrOneDimension (-3)- the value can be a scalar or a one dimensional array.</para>
+                  </listItem>
+              </list>
+          </content>
+      </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

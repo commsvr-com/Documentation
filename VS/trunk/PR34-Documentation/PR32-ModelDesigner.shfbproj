@@ -100,6 +100,7 @@
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParameter.aml" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\entries" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\dir-props" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\props\MenuFile.jpg.svn-work" />
@@ -756,6 +757,36 @@
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\PropertyPropertyGrid.jpg">
       <ImageId>51328d5d-c835-4d22-9a70-1fa2959fcbe3</ImageId>
       <AlternateText>Property Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\VariablePropertyGrid.jpg">
+      <ImageId>d279a432-12f0-4a09-8492-032c327505dc</ImageId>
+      <AlternateText>Variable Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ViewPropertyGrid.jpg">
+      <ImageId>212b36cb-a402-448f-bd68-788df2bcfbe9</ImageId>
+      <AlternateText>View Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\EncodingPropertyGrid.jpg">
+      <ImageId>0a383baf-bac4-42e0-8b9b-1c724c1829e7</ImageId>
+      <AlternateText>Encoding Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ParameterPropertyGrid.jpg">
+      <ImageId>f3520766-0597-4933-91c1-6d161e609577</ImageId>
+      <AlternateText>Parameter Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\DictionaryPropertyGrid.jpg">
+      <ImageId>63e6de25-f03d-4897-9624-f4d33a4f4f4b</ImageId>
+      <AlternateText>Dictionary Property Grid</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
