@@ -1,82 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="ccefb546-a8cb-4275-9286-c623b04191c3" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="UAServerConfiguration">
+      <title>UA Server configuration</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Below – a description of a property grid with OPC UA server configuration:</para>
+          <mediaLink>
+              <caption placement="after" lead="Figure 1">UA server configuration properties</caption>
+              <image placement="center" xlink:href = "e007fedf-c1dd-4956-88b9-ce04a29760c0"/>
+          </mediaLink>
+          <para>Description of the server configuration properties:</para>
+          <list class="ordered">
+              <listItem>
+                  <para>Vendor specific extension of the default UA configuration. For CommServer UA this extension is called "CAS extension". This extension contains the configuration of server specific functions.</para>
+              </listItem>
+              <listItem>
+                  <para>Configuration properties of the CommServer engine.</para>
+              </listItem>
+              <listItem><para>Location of the CommServer engine configuration file (the default name is DefaultConfig.xml).</para>
+          </listItem>
+              <listItem>
+                  <para>Status of the CommServer engine configuration file (e.g. Opened).</para>
+              </listItem>
+              <listItem>
+                  <para>Configuration properties of namespaces, *.uanodes and *.csv files containing the configuration of the nodes.</para>
+              </listItem>
+              <listItem>
+                  <para>Configuration of the data bindings for particular nodes. </para>
+              </listItem>
+              <listItem>
+                  <para>Configuration properties of the OPC DA Client data source.</para>
+              </listItem>
+              <listItem>
+                  <para>Location of the OPC DA Client data source configuration file (OPC Viewer session file, default name for the SampleSolution is DemoConfiguration.oses).</para>
+              </listItem>
+              <listItem>
+                  <para>Status of the OPC DA Client data source configuration file (e.g. Opened).</para>
+              </listItem>
+              <listItem>
+                  <para>Configuration properties of the Simulator data source (random data generator).</para>
+              </listItem>
+              <listItem>
+                  <para>Descriptive name for the application (not necessarily unique).</para>
+              </listItem>
+              <listItem>
+                  <para>Type of the application. It might be Server, Client, ClientAndServer or DiscoveryServer.</para>
+              </listItem>
+              <listItem>
+                  <para>Unique identifier for the application instance.</para>
+              </listItem>
+              <listItem>
+                  <para>Mechanis, that validates the certificate.</para>
+              </listItem>
+              <listItem>
+                  <para>Additional configuration for client applications.</para>
+              </listItem>
+              <listItem>
+                  <para>Disabling / enabling of a high resolution clock.</para>
+              </listItem>
+              <listItem>
+                  <para>Additional configuration for discovery servers applications.</para>
+              </listItem>
+              <listItem>
+                  <para>Bucket to store additional application specific configuration data.</para>
+              </listItem>
+              <listItem>
+                  <para>ServiceMessageContext mechanism</para>
+              </listItem>
+              <listItem>
+                  <para>Unique identifier for the product.</para>
+              </listItem>
+              <listItem>
+                  <para>Security configuration for the application.</para>
+              </listItem>
+              <listItem>
+                  <para>Additional configuration for server applications.</para>
+              </listItem>
+              <listItem>
+                  <para>Path to the file that contains this configuration.</para>
+              </listItem>
+              <listItem>
+                  <para>Configuration of the trace and information about the log file.</para>
+              </listItem>
+              <listItem>
+                  <para>Collection that contains the transport configuration for the application.</para>
+              </listItem>
+              <listItem>
+                  <para>Quotas that are used at the transport layer.</para>
+              </listItem>
+              <listItem>
+                  <para>Indication whether the native stack should be used.</para>
+              </listItem>
+          </list>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

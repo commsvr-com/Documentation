@@ -1,82 +1,171 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="07da60d4-d213-4a4a-b498-6bd68c6885b9" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Introduction">
+      <title>Introduction</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>In this walkthrough you will select a dedicated UA server configuration editor and add/modify real-time process data-bindings of the selected model nodes.</para>
+          <para>By default, the Address Space Model Designer is installed with a sample solution. This solution contains a project with the model of a boiler. This model is described in the Boiler Model topic. </para>
+          <para>Architecture of the Address Space Model Designer allows vendors of the UA servers to develop plug-ins providing a configuration editor. The editor is used to modify the general settings and define model nodes data-bindings with the real-time process.</para>
+          <alert>
+              <para>The dialog boxes and menu commands you see might differ from those described depending on your active settings or edition. To change your settings, choose Options on the Tools menu. For more information, see Getting Started.</para>
+          </alert>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+      <section address="SelectionOfUAServerConfigurationEditor">
+          <title>Selection of UA Server Configuration Editor</title>
+          <content>
+              <para>After starting of the OPC UA Address Space Model Designer:</para>
+              <list class="ordered">
+                  <listItem>
+                      <para>Open the solution if not opened yet (for more details see: How To: Open Sample Solution)</para>
+                  </listItem>
+                  <listItem>
+                      <para>Select "Select Editor ..." in the UA Server menu (see Pt 2 in the figure below). The dialog Open Configuration Editor is then displayed. </para>
+                  </listItem>
+                  <listItem>
+                      <para>Using the Open Configuration Editor dialog box open the vendor specific plug-in providing the server configuration functionality (see Pts 3 in the figure below), i.e. implementing necessary interfaces. The default location of the configuration plug-in for CommServer UA is installed with the sample solution.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Confirm using the Open button (Pt 4 in the figure below).</para>
+                  </listItem>
+              </list>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 1">Opening of the configuration plug-in</caption>
+                  <image placement="center" xlink:href = "ba0490d6-7b16-4c41-bc0e-026762c1cc92"/>
+              </mediaLink>
+              <para>Alternatively, you can select the UA server configuration editor using the solution properties, as in the figure below:</para>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 2">Opening of the configuration plug-in using solution properties</caption>
+                  <image placement="center" xlink:href = "7a51b1c7-1f59-48a3-be7a-8614b7d373a8"/>
+              </mediaLink>
+              <para>In the sample solution, a configuration file for the editor is pre-selected. The configuration file contains general server settings and information how to bind the address space nodes with the underlying real-time process. To change the configuration file follow the procedure below.</para>
+          </content>
+      </section>
+      <section address="SelectionOfTheUAServerConfigurationFile">
+          <title>Selection of the UA Server configuration file</title>
+          <content>
+              <list class="ordered">
+                  <listItem>
+                      <para>Select the configuration editor if not selected yet (the section above).</para>
+                  </listItem>
+                  <listItem>
+                      <para>Using the UA Server configuration file dialog box that appears, open the server specific configuration file providing the setting needed to setup the server at startup and runtime (the figure below).</para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 3">Select configuration file</caption>
+                          <image placement="center" xlink:href = "f0f4806c-5325-4642-be28-3024a3e423d4"/>
+                      </mediaLink>
+                  </listItem>
+                  <listItem>
+                      <para>After selecting the configuration file and selecting Open button (Pt 2 in the figure above) settings can be edited using an editor provided by the plug-in assembly. </para>
+                  </listItem>
+                  <listItem>
+                      <para>If the Cancel button is clicked the information dialog as below appears:</para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 4">Information when no configuration file is selected </caption>
+                          <image placement="center" xlink:href = "bc499bb3-5ccb-46e0-93c4-dbfa3f818040"/>
+                      </mediaLink>
+                  </listItem>
+                  <listItem>
+                      <para>Next, the "Select folder dialog" appears. In this window, select the folder where the default configuration will be saved.</para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 5">Selection of the folder, where the default configuration will be located</caption>
+                          <image placement="center" xlink:href = "025a198b-f415-4adf-a881-88503dd82710"/>
+                      </mediaLink>
+                  </listItem>
+                  <listItem>
+                      <para>If the folder is selected and the OK button is clicked, the default configuration will be created in this folder, otherwise (if the Cancel button is selected) the information dialog will appear:</para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 6">Information when no folder is selected</caption>
+                          <image placement="center" xlink:href = "95b4296e-f192-4cc7-adfc-ef4b298566c8"/>
+                      </mediaLink>
+                  </listItem>
+              </list>
+          </content>
+      </section>
+      <section address="EditionOftheUAServerConfigurationSettings">
+          <title>Edition of the UA Server Configuration Settings</title>
+          <content>
+              <list class="ordered">
+                  <listItem>
+                      <para>Select the configuration editor and configuration file if not selected yet (as described above).</para>
+                  </listItem>
+                  <listItem>
+                      <para>Select Configuration/Edit … in the UA Server menu. The editor dialog is then displayed as below.</para>
+                  </listItem>
+              </list>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 7">Edition of the configuration file</caption>
+                  <image placement="center" xlink:href = "1bc04f4c-ef84-46c2-96ce-846e52112104"/>
+              </mediaLink>
+              <para>Alternatively, you can select the UA server configuration editor using the solution properties.</para>
+              <para>One of the most common scenarios for UA server deployment is to set process data-bindings. To set and edit the process data-bindings you can use:</para>
+              <list class="ordered">
+                  <listItem>
+                      <para>UA Server in the main menu. </para>
+                  </listItem>
+                  <listItem>
+                      <para>Context menu for the selected node.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Property grid for the selected node.</para>
+                  </listItem>
+              </list>
+              <alert>
+                  <para>In the described procedure, the UA Server entry is used.</para>
+              </alert>
+              <alert>
+                  <para>The dialog boxes and menu commands you see might differ depending on the server configuration editor used.</para>
+              </alert>
+              <para>In the example below there are preconfigured data-bindings for some nodes. E.g. the Boilers node contains two data sources configured. This means that the UA server will use the configured data-sources as sources of values for all boilers. The meaning of the data-bindings for the objects is vendor specific.</para>
+          </content>
+      </section>
+      <section address="SettingOfTheModelNodeToBindToTheProcessData">
+          <title>Setting of the Model Node to Bind to the Process Data</title>
+          <content>
+              <list class="ordered">
+                  <listItem>
+                      <para>Browse to the Boilers | Boiler1 | InputPipe | FlowTransmitter1 | Output variable (see Pt 1 in the figure below). </para>
+                  </listItem>
+                  <listItem>
+                      <para>Select Output: process bindings | Edit …. in the UA Server menu (see Pt 2 in the figure below). The dialog provided by the selected configuration editor plug-in is then displayed. </para>
+                  </listItem>
+                  <listItem>
+                      <para>The dialog provided by the CAS CommServer UA™ configuration editor displays two properties groups:</para>
+                      <list class="bullet">
+                          <listItem>
+                              <para>Model</para>
+                          </listItem>
+                          <listItem>
+                              <para>Redundant Data Sources </para>
+                          </listItem>
+                          <listItem>
+                              <para>Properties from the Model group are read only and present a description of the node </para>
+                          </listItem>
+                      </list>
+                  </listItem>
+                  <listItem>
+                      <para>To define new and edit the existing process data-sources click the (…) button (see Pt 3 in the figure below) on the right side of the (DataSources) property located in the Redundant Data Sources group. The dialog DataSourceConfiguration Collection Editor is then displayed. </para>
+                  </listItem>
+                  <listItem>
+                      <para>Use this dialog to create new and edit the existing data-bindings. In a drop-down list (Pt 4) different DataSources can be found (including CommServer, OPCViewer, Simulator or other, vendor specific). After choosing CommServer as DataSource, there appears the dialog, where CommServer configuration file (default is DefaultConfig.xml) should be selected, and after choosing OPCViewer as DataSource - the dialog, where OPCViewer session file (default is DemoConfiguration.oses) should be selected.</para>
+                  </listItem>
+                  <listItem>
+                      <para>After clicking on the (...) button (Pt 5) the dialog with CommServer tags or OPC Viewer nodes appears.</para>
+                  </listItem>
+                  <listItem>
+                      <para>Select a proper tag from the list (Pt 6 - an example of CommServer tags) and confirm with OK button (Pt 7). </para>
+                  </listItem>
+              </list>
+              <mediaLink>
+                  <caption placement="after" lead="Figure 8">Setting of the Model Node to Bind to the Process Data</caption>
+                  <image placement="center" xlink:href = "c49e91b0-3a51-4f94-9a3e-df2fbce856cf"/>
+              </mediaLink>
+          </content>
+      </section> 
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
