@@ -1,82 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="ab23d48a-2241-4e60-a65f-a327b8c30a7d" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Introduction">
+      <title>Introduction</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Configuration of the CommServer UA to wrap OPC DA server is a straightforward process, which can be done in 5 steps: </para>
+          <list class="ordered">
+              <listItem>
+                  <para>Connect to OPC server using OPC Viewer.</para>
+              </listItem>
+              <listItem>
+                  <para>Create online subscription in OPC Viewer. </para>
+              </listItem>
+              <listItem>
+                  <para>Export address space to a dictionary file using OPC Viewer. </para>
+              </listItem>
+              <listItem>
+                  <para>Create new project in UA Address Space Model Designer and choose configuration plugin. </para>
+              </listItem>
+              <listItem>
+                  <para>Import OPC DA address space and build the model. </para>
+              </listItem>
+          </list>
+          <alert>
+              <para>OPC Viewer is a free software tool that is very useful for developers, testers, integrators, and other users of the OPC. OPC Viewer has the functionality of saving the current configuration in a file called session. UA Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process. </para>
+          </alert>
+          <alert>
+              <para>Both OPC Viewer and UA Address Space Model Designer are included in:</para>
+              <list class="bullet">
+                  <listItem>
+                      <para>CommServerUA package which can be downloaded from <link xlink:href="http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx">here</link>. </para>
+                  </listItem>
+                  <listItem>
+                      <para>UA Address Space Model Designer package which can be downloaded from <link xlink:href="http://www.commsvr.com/Products/OPCUA/UAModelDesigner/tabid/321/language/en-US/Default.aspx">here</link>. </para>
+                  </listItem>
+              </list>
+              <para>In this walkthrough, the CommServerUA package is used.</para>
+          </alert>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+      <section address="Prerequisites">
+          <title>Prerequisites</title>
+          <content>
+              <list class="bullet">
+                  <listItem>
+                      <para>CommServer is installed (CommServer can be downloaded from <link xlink:href="http://www.commsvr.com/Howitworks/Howto/CommServergettingstarted/CommServersampleconfiguration/tabid/319/Default.aspx">here</link>) </para>
+                  </listItem>
+                  <listItem>
+                      <para>CommServerUA is installed (CommServerUA can be downloaded from <link xlink:href="http://www.commsvr.com/DownloadCenter/ProductSoftware/CommServerUA.aspx">here</link>)</para>
+                  </listItem>
+              </list>
+              <alert>
+                  <para>Before installation of the CommServerUA make sure that the following software is installed on your computer:</para>
+                  <list class="bullet">
+                      <listItem>
+                          <para>Microsoft .NET Framework 3.5 Redistributables</para>
+                      </listItem>
+                      <listItem>
+                          <para>OPC Core Components</para>
+                      </listItem>
+                      <listItem>
+                          <para>Windows 2000/Windows XP/Windows Vista/Windows 7</para>
+                      </listItem>
+                  </list>
+              </alert>
+          </content>
+      </section>
+      <section address="ConnectToOPCServerUsingOPCViewer">
+          <title>1. Connect to OPC server using OPC Viewer</title>
+          <content>
+              <list class="ordered">
+                  <listItem>
+                      <para>To start OPC Viewer, select: </para>
+                      <para>Start Menu -> All Programs -> CAS -> CommServerUA -> OPC Viewer (OPC DA Classic Client) </para>
+                      <para>The main window appears. </para>
+                  </listItem>
+                  <listItem>
+                      <para>To connect to OPC Server, click “Browse network” icon   in the menu. The Select Server window appears (Figure 1); select OPC Server from a local or remote computer (e.g. CAS.CommServer.OPC.Da.Server): </para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 1">OPC Viewer – Select Server window</caption>
+                          <image placement="center" xlink:href = "96e05217-6d99-431c-af5b-c5ab1f546488"/>
+                      </mediaLink>
+                      <para>Select the computer and check what servers are available (to check available servers click on “+” next to the computer name).</para>
+                      <alert>
+                          <para>Remember to configure DCOM properly before connecting to the other computer. </para>
+                      </alert>
+                      <para>You can add a multiple OPC server to the configuration. It can be also the same OPC server or any other OPC server.</para>
+                      <mediaLink>
+                          <caption placement="after" lead="Figure 2">OPC Viewer – multiple OPC servers</caption>
+                          <image placement="center" xlink:href = "f059bdb2-0ce1-4b13-8cef-16694b5517c5"/>
+                      </mediaLink>
+                  </listItem>
+                  <listItem>
+                      <para>Click the right mouse button on the added server and select “Connect” from the context menu or click “Connect to Server” icon on the toolbar.  </para>
+                  </listItem>
+              </list>
+          </content>
+      </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

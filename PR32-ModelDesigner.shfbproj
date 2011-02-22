@@ -100,6 +100,9 @@
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\props\MenuUAServer.jpg.svn-work" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\entries" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\dir-props" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParameter.aml" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\entries" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\dir-props" />
@@ -258,6 +261,16 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\text-base\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\props\" />
@@ -823,6 +836,120 @@
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ModifyingExistingTransition.jpg">
       <ImageId>220d08a8-484d-4d53-ae46-ddd569204b81</ImageId>
       <AlternateText>Modifying Existing Transition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\CodeGeneration.jpg">
+      <ImageId>046cdbdb-47ba-4bd1-ae64-1b34e4b9c0dd</ImageId>
+      <AlternateText>Code Generation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\BuildingSolution.jpg">
+      <ImageId>02a2b5d0-6725-4ac5-ba17-87f301c89063</ImageId>
+      <AlternateText>Building Solution</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\OutputWindow.jpg">
+      <ImageId>2b999283-8777-400b-9a50-9cb5399888b5</ImageId>
+      <AlternateText>Output Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\OutputProperties.jpg">
+      <ImageId>cc5b9b22-8cad-4f51-9fdb-0d356739fd01</ImageId>
+      <AlternateText>Output Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\Files.jpg">
+      <ImageId>939b26f5-4309-4b24-94fb-4e5935a3877c</ImageId>
+      <AlternateText>Files</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\MenuUAServer.jpg">
+      <ImageId>6a0ab849-fcbc-4e08-b18b-5073d84c6b1d</ImageId>
+      <AlternateText>MenuUAServer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\UAServerConfigurationProperties.jpg">
+      <ImageId>e007fedf-c1dd-4956-88b9-ce04a29760c0</ImageId>
+      <AlternateText>UAServer Configuration Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SampleDataBindingPanelAndDataSourceConfigurationWindow.jpg">
+      <ImageId>19af054c-5f28-42d7-9d9c-3d901d68558a</ImageId>
+      <AlternateText>Sample Data Binding Panel And Data Source Configuration Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OpeningOfTheConfigurationPlugin.jpg">
+      <ImageId>ba0490d6-7b16-4c41-bc0e-026762c1cc92</ImageId>
+      <AlternateText>Opening Of The Configuration Plugin</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OpeningOfTheConfigurationPluginUsingSolutionProperties.jpg">
+      <ImageId>7a51b1c7-1f59-48a3-be7a-8614b7d373a8</ImageId>
+      <AlternateText>Opening Of The Configuration Plugin Using Solution Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SelectConfigurationFile.jpg">
+      <ImageId>f0f4806c-5325-4642-be28-3024a3e423d4</ImageId>
+      <AlternateText>Select Configuration File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\InformationWhenNoConfigurationFileIsSelected.jpg">
+      <ImageId>bc499bb3-5ccb-46e0-93c4-dbfa3f818040</ImageId>
+      <AlternateText>Information When No Configuration File Is Selected</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SelectionOfTheFolderWhereTheDefaultConfigurationWillBeLocated.jpg">
+      <ImageId>025a198b-f415-4adf-a881-88503dd82710</ImageId>
+      <AlternateText>Selection Of The Folder Where The Default Configuration Will Be Located</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\InformationWhenNoFolderIsSelected.jpg">
+      <ImageId>95b4296e-f192-4cc7-adfc-ef4b298566c8</ImageId>
+      <AlternateText>Information When No Folder Is Selected</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\EditionOfTheConfigurationFile.jpg">
+      <ImageId>1bc04f4c-ef84-46c2-96ce-846e52112104</ImageId>
+      <AlternateText>Edition Of The Configuration File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SettingOfTheModel.jpg">
+      <ImageId>c49e91b0-3a51-4f94-9a3e-df2fbce856cf</ImageId>
+      <AlternateText>Setting Of The Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerSelectServerWindow.jpg">
+      <ImageId>96e05217-6d99-431c-af5b-c5ab1f546488</ImageId>
+      <AlternateText>OPCViewer Select Server Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerMultipleOPCServers.jpg">
+      <ImageId>f059bdb2-0ce1-4b13-8cef-16694b5517c5</ImageId>
+      <AlternateText>OPCViewer MultipleOPCServers</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerConnect.jpg">
+      <ImageId>88cac1cf-4e3b-47aa-8392-f0c3e80e694c</ImageId>
+      <AlternateText>OPCViewer Connect</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
