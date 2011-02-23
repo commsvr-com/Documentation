@@ -952,6 +952,90 @@
       <AlternateText>OPCViewer Connect</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\BrowseNetworkIcon.jpg">
+      <ImageId>5fbc4920-1b79-410c-8330-ebfb43eaf4a0</ImageId>
+      <AlternateText>Browse Network Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCServerNotConnectedIcon.jpg">
+      <ImageId>004916d4-c8f9-4e2b-8c52-b0c43d19662c</ImageId>
+      <AlternateText>OPCServer Not Connected Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ConnectToServerIcon.jpg">
+      <ImageId>36e788c0-2a64-4bf5-a833-779e028d33c3</ImageId>
+      <AlternateText>Connect To Server Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SuccessfulConnectionToTheOPCServerIcon.jpg">
+      <ImageId>33935e66-62ec-43c3-bbd8-942ff49d73ca</ImageId>
+      <AlternateText>Successful Connection To TheOPCServer Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerSuccessfulConnection.jpg">
+      <ImageId>66796e9c-6395-427a-8e37-20a84aa1a820</ImageId>
+      <AlternateText>OPCViewer Successful Connection</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ViewStatusIcon.jpg">
+      <ImageId>f2feaaba-6019-42c1-bb0d-ec85ab50666a</ImageId>
+      <AlternateText>View Status Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerServerStatus.jpg">
+      <ImageId>ea112f58-106e-47a0-9cbd-370147436e57</ImageId>
+      <AlternateText>OPCViewer Server Status</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerAddingTags.jpg">
+      <ImageId>d6f12883-8a2e-4871-87bf-0a70a1f541a2</ImageId>
+      <AlternateText>OPCViewer Adding Tags</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerAddedItems.jpg">
+      <ImageId>f548d45a-e1c0-487e-a55f-3d73017de38f</ImageId>
+      <AlternateText>OPCViewer Added Items</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerBrowseServerItems.jpg">
+      <ImageId>a98d9c60-49ba-4272-a6a2-5631173e256a</ImageId>
+      <AlternateText>OPCViewer Browse Server Items</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerSavingTheServerAddressSpaceInADictionaryFile.jpg">
+      <ImageId>d4ad8587-e4b0-4936-8fbf-850951dafe02</ImageId>
+      <AlternateText>OPCViewer Saving The Server Address Space InADictionary File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\UAAddressSpaceModelDesignerCreateNewProjectInTheSolution.jpg">
+      <ImageId>66c93fc3-9129-4ba0-88e7-3a2fc6269d99</ImageId>
+      <AlternateText>UAAddress Space Model Designer Create New Project In The Solution</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\UAAddressSpaceModelDesignerSelectConfigurationEditor.jpg">
+      <ImageId>57701c11-58d9-4296-b692-4e832635d896</ImageId>
+      <AlternateText>UAAddress Space Model Designer Select Configuration Editor</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ImportFromOPCDA.jpg">
+      <ImageId>d826bbe5-b2e2-4bfc-a2d8-9a416d3ad5cd</ImageId>
+      <AlternateText>Import FromOPCDA</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>
