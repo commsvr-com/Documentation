@@ -100,6 +100,8 @@
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\entries" />
+    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\dir-props" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\props\MenuUAServer.jpg.svn-work" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\entries" />
     <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\dir-props" />
@@ -261,6 +263,15 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\text-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\props\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\prop-base\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\text-base\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\props\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\prop-base\" />
@@ -1034,6 +1045,24 @@
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ImportFromOPCDA.jpg">
       <ImageId>d826bbe5-b2e2-4bfc-a2d8-9a416d3ad5cd</ImageId>
       <AlternateText>Import FromOPCDA</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\OpeningOfTheOptions.jpg">
+      <ImageId>36047558-82bc-4e9e-9a1c-c28b5402e0be</ImageId>
+      <AlternateText>Opening Of The Options</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\ModelCompilerToolConfiguration.jpg">
+      <ImageId>a7dc69de-1b6d-4baa-b3bd-56de1434b6c8</ImageId>
+      <AlternateText>Model Compiler Tool Configuration</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\FontSizeInTheOptionsWindow.jpg">
+      <ImageId>f677bdee-514f-41d3-95f0-ffbc6ca98a72</ImageId>
+      <AlternateText>Font Size In The Options Window</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
