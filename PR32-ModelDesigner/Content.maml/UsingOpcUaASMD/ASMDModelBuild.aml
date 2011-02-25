@@ -29,7 +29,7 @@
       <section address="PurposeOfBuildingTheSolution">
           <title>Purpose of building the solution</title>
           <content>
-              <para>The figure below shows the OPC Foundation's UA SDK approach to server implementation and modeling. SDK as-sumes that the model is in an XML file. Based on that file, the SDK Model Compiler generates the following files: </para>
+              <para>The figure below shows the OPC Foundation's UA SDK approach to server implementation and modeling. SDK assumes that the model is in an XML file. Based on that file, the SDK Model Compiler generates the following files: </para>
               <list class="bullet">
                   <listItem>
                       <para>Model implementation and all necessary declarations in C# language. We can add this code file to the server source code to easily build a server based on the model.</para>

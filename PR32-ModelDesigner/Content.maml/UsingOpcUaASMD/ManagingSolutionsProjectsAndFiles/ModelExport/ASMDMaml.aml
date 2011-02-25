@@ -1,56 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="e734f213-6209-47f7-a55a-d07726552653" revisionNumber="1">
-  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <introduction>
-    </introduction>
-    <section address="Introduction">
-      <title>Introduction</title>
-      <content>
-        <para>This topic describes exporting of the model to the MAML document (.aml file). MAML (Microsoft Assistance Markup Language) is an XML-based markup language developed by the Microsoft User Assistance Platform team to provide user assistance ("online help") for the Microsoft Windows operating system. To create MSDN-style documentation in MAML, the Sandcastle and Sandcastle Help File Builder software is useful.</para>
-      </content>
-    </section>
-      <section address="ExportToMAMLFile">
-          <title>Export to MAML file</title>
-          <content>
-              <para>Model export works for one level on the tree nodes. To export the model to the MAML file: </para>
-              <list class="ordered">
-                  <listItem>
-                      <para>Select a node on the tree view, that you want to export to .aml.</para>
-                  </listItem>
-                  <listItem>
-                      <para>Click on "Export -> To MAML" from the main menu, as below:</para>
-                      <mediaLink>
-                          <caption placement="after" lead="Figure 1">Export to MAML format menu</caption>
-                          <image placement="center" xlink:href = "66b8fca7-7f2e-4316-8332-24c84ebe3744"/>
-                      </mediaLink>
-                  </listItem>
-                  <listItem>
-                      <para>After clicking on the "To MAML" item the save file browse dialog will appear. In this dialog, choose the name and location of the .aml file.</para>
-                  </listItem>
-                  <listItem>
-                      <para>If the export is successful the information as below will appear:</para>
-                      <mediaLink>
-                          <caption placement="after" lead="Figure 2">Export successful</caption>
-                          <image placement="center" xlink:href = "2202712d-fceb-4c91-99aa-5bbb26fa1da0"/>
-                      </mediaLink>
-                  </listItem>
-                  <listItem>
-                      <para>After clicking on the OK button, the exported file will be opened using the default editor. The MAML exported file looks as follows: </para>
-                      <mediaLink>
-                          <caption placement="after" lead="Figure 3">Model exported to MAML file format (.aml)</caption>
-                          <image placement="center" xlink:href = "2d1c51b4-3cb1-4604-89fa-040d5eea24e5"/>
-                      </mediaLink>
-                  </listItem>
-              </list>
-              <para>The interpreted MAML file on the website looks as follows:</para>
-              <mediaLink>
-                  <caption placement="after" lead="Figure 4">Interpreted model in MAML</caption>
-                  <image placement="center" xlink:href = "e07bc112-c9dd-4a1e-bc9f-859202094cc9"/>
-              </mediaLink>
-          </content>
-      </section>
-    <relatedTopics>
-        <link xlink:href="1161ba56-9c59-44ae-abdf-0a520cf84c57" />
-    </relatedTopics>
-  </developerConceptualDocument>
+    <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <introduction>
+        </introduction>
+        <section address="Introduction">
+            <title>Introduction</title>
+            <content>
+                <para>
+                    This topic describes exporting of the model to the MAML document (.aml file). MAML (Microsoft Assistance Markup Language) is an XML-based markup language developed by the Microsoft User Assistance Platform team to provide user assistance ("online help") for the Microsoft Windows operating system. To create MSDN-style documentation in MAML, the <externalLink>
+                        <linkText>Sandcastle</linkText>
+                        <linkAlternateText>Sandcastle</linkAlternateText>
+                        <linkUri>http://sandcastle.codeplex.com/</linkUri>
+                    </externalLink> and <externalLink>
+                        <linkText>Sandcastle Help File Builder</linkText>
+                        <linkAlternateText>Sandcastle Help File Builder</linkAlternateText>
+                        <linkUri>http://shfb.codeplex.com/</linkUri>
+                    </externalLink> software is useful.
+                </para>
+            </content>
+        </section>
+        <section address="ExportToMAMLFile">
+            <title>Export to MAML file</title>
+            <content>
+                <para>Model export works for one level on the tree nodes. To export the model to the MAML file: </para>
+                <list class="ordered">
+                    <listItem>
+                        <para>Select a node on the tree view, that you want to export to .aml.</para>
+                    </listItem>
+                    <listItem>
+                        <para>Click on "Export -> To MAML" from the main menu, as below:</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 1">Export to MAML format menu</caption>
+                            <image placement="center" xlink:href = "66b8fca7-7f2e-4316-8332-24c84ebe3744"/>
+                        </mediaLink>
+                    </listItem>
+                    <listItem>
+                        <para>After clicking on the "To MAML" item the save file browse dialog will appear. In this dialog, choose the name and location of the .aml file.</para>
+                    </listItem>
+                    <listItem>
+                        <para>If the export is successful the information as below will appear:</para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 2">Export successful</caption>
+                            <image placement="center" xlink:href = "2202712d-fceb-4c91-99aa-5bbb26fa1da0"/>
+                        </mediaLink>
+                    </listItem>
+                    <listItem>
+                        <para>After clicking on the OK button, the exported file will be opened using the default editor. The MAML exported file looks as follows: </para>
+                        <mediaLink>
+                            <caption placement="after" lead="Figure 3">Model exported to MAML file format (.aml)</caption>
+                            <image placement="center" xlink:href = "2d1c51b4-3cb1-4604-89fa-040d5eea24e5"/>
+                        </mediaLink>
+                    </listItem>
+                </list>
+                <para>The interpreted MAML file on the website looks as follows:</para>
+                <mediaLink>
+                    <caption placement="after" lead="Figure 4">Interpreted model in MAML</caption>
+                    <image placement="center" xlink:href = "e07bc112-c9dd-4a1e-bc9f-859202094cc9"/>
+                </mediaLink>
+            </content>
+        </section>
+        <relatedTopics>
+            <link xlink:href="1161ba56-9c59-44ae-abdf-0a520cf84c57" />
+        </relatedTopics>
+    </developerConceptualDocument>
 </topic>

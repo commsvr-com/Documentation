@@ -11,7 +11,7 @@
               <caption placement="after" lead="Figure 1">Object types and object instances</caption>
               <image placement="center" xlink:href = "6e29de74-87f5-4101-83a5-ac67ed7fbea9"/>
           </mediaLink>
-          <para>The OPC UA object model allows servers to provide type definitions for objects and their components. Type definitions may be abstract, and may be inherited by new types to reflect polymorphism. They may also be common or they may be sys-tem-specific. Object types may be defined by standardization organizations, vendors or end-users. Each type must have a globally unique identifier that can be used to provide description of the information meaning from a defining body or organi-zation. Using of the type definitions to describe information exposed by the server allows:</para>
+          <para>The OPC UA object model allows servers to provide type definitions for objects and their components. Type definitions may be abstract, and may be inherited by new types to reflect polymorphism. They may also be common or they may be system-specific. Object types may be defined by standardization organizations, vendors or end-users. Each type must have a globally unique identifier that can be used to provide description of the information meaning from a defining body or organization. Using of the type definitions to describe information exposed by the server allows:</para>
           <list class="bullet">
               <listItem>
                   <para>Development against type definition</para>

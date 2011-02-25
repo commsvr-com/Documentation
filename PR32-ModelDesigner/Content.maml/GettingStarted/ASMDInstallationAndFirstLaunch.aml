@@ -52,7 +52,11 @@
             <title>Installation and first launch</title>
             <content>
                 <para>
-                    The setup application uses the Microsoft ClickOnce technology. Description of that technology can be found under this link on MSDN.
+                    The setup application uses the Microsoft ClickOnce technology. Description of that technology can be found under <externalLink>
+                    <linkText>this link</linkText>
+                    <linkAlternateText>this link</linkAlternateText>
+                    <linkUri>http://msdn.microsoft.com/en-us/library/t71a733d(v=vs.80).aspx</linkUri>
+                </externalLink> on MSDN.
                 </para>
                 <alert>Sometimes firewalls cause problems with the ClickOnce technology, because ClickOnce tries to download an applica-tion update implicitly.</alert>
                 <para>To install OPC UA Address Space Model Designer, please do the following steps:</para>
