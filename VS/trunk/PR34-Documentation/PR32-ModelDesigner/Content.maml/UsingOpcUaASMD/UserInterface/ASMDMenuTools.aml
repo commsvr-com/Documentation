@@ -47,17 +47,17 @@
               </listItem>
               <listItem>
                   <para>
-                      <legacyBold>OPC Viewer - Starts the OPC Viewer</legacyBold>
+                      <legacyBold>OPC Viewer</legacyBold> - Starts the OPC Viewer
                   </para>
               </listItem>
               <listItem>
                   <para>
-                      <legacyBold>Customize - Customizes the user interface</legacyBold>
+                      <legacyBold>Customize</legacyBold> - Customizes the user interface
                   </para>
               </listItem>
               <listItem>
                   <para>
-                      <legacyBold>Options - Application configuration</legacyBold>
+                      <legacyBold>Options</legacyBold> - Application configuration
                   </para>
               </listItem>
           </list>

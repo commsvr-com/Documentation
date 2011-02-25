@@ -71,7 +71,7 @@
                   <caption placement="after" lead="Figure 4">OPC UA Address Space Model Designer - usage</caption>
                   <image placement="center" xlink:href = "2d8c647b-ba5a-4cac-94c3-3dcc3fdcdf59"/>
               </mediaLink>
-              <para>To see an example that shows how to start from a real process (it is a boiler in this example) and end with C#, XML and sche-ma files, read the topic Boiler model.</para>
+              <para>To see an example that shows how to start from a real process (it is a boiler in this example) and end with C#, XML and schema files, read the topic Boiler model.</para>
           </content>
       </section>
     <relatedTopics>
