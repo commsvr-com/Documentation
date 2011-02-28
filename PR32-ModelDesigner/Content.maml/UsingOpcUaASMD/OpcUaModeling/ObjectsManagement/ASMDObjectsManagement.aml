@@ -6,7 +6,7 @@
     <section address="ObjectsManagement">
       <title>Objects management</title>
       <content>
-        <para>To make systems interoperable, the data transfer mechanism must be associated with a consistent information repre-sentation model. OPC UA uses an object as a fundamental notion to represent data and activity of an underlying system. The objects are placeholders of variables, events and methods and are interconnected by references (Figure 1). This concept is similar to well-known object oriented programming (OOP) that is a programming paradigm using "objects" – data structures consisting of fields, events and methods – and their interactions to design computer programs. The OPC UA Information Model provides features such as data abstraction, encapsulation, polymorphism, and inheritance. </para>
+        <para>To make systems interoperable, the data transfer mechanism must be associated with a consistent information representation model. OPC UA uses an object as a fundamental notion to represent data and activity of an underlying system. The objects are placeholders of variables, events and methods and are interconnected by references (Figure 1). This concept is similar to well-known object oriented programming (OOP) that is a programming paradigm using "objects" – data structures consisting of fields, events and methods – and their interactions to design computer programs. The OPC UA Information Model provides features such as data abstraction, encapsulation, polymorphism, and inheritance. </para>
           <mediaLink>
               <caption placement="after" lead="Figure 1">Object types and object instances</caption>
               <image placement="center" xlink:href = "6e29de74-87f5-4101-83a5-ac67ed7fbea9"/>
