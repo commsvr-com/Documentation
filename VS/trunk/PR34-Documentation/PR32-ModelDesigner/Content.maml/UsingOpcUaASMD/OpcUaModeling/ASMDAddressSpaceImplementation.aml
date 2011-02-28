@@ -12,7 +12,7 @@
               <caption placement="after" lead="Figure 1">Designing process</caption>
               <image placement="center" xlink:href = "e73f1364-a7c5-4ff8-9143-ecd4215b3121"/>
           </mediaLink>
-          <para>Figure 1 shows a diagram where three functional classes are responsible for the whole address space creation and manage-ment process as a sequence of the following steps:</para>
+          <para>Figure 1 shows a diagram where three functional classes are responsible for the whole address space creation and management process as a sequence of the following steps:</para>
           <list class="ordered">
               <listItem>
                   <para>Model designing </para>
