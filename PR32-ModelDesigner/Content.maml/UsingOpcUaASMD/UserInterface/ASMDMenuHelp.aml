@@ -56,6 +56,11 @@
                       <legacyBold>Open logs containing folder</legacyBold> - Open folder with  OPC UA Address Space Model Designer  logs.
                   </para>
               </listItem>
+              <listItem>
+                  <para>
+                      <legacyBold>Enter the unlock code</legacyBold> - Open the window, where the software unlock code should be entered.
+                  </para>
+              </listItem>
           </list>
       </content>
     </section>
