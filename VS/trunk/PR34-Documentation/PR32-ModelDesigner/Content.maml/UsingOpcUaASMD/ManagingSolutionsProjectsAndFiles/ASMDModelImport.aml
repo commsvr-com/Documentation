@@ -6,7 +6,9 @@
     <section address="ModelImport">
       <title>Model import</title>
       <content>
-        <para>Import of the model is the easiest way of creating an OPC UA Address Space from the existing model, OPC DA server address space or another source. At present OPC UA Address Space Model Designer supports import from OPC DA server address space. More information about this process can be found in the topic describing the DA import and in the description of creating UA Wrapper.</para>
+        <para>
+          Import of the model is the easiest way of creating an OPC UA Address Space from the existing model, OPC DA server address space or another source. At present OPC UA Address Space Model Designer supports import from OPC DA server address space. More information about this process can be found in the topic describing the DA import and in <link xlink:href="ab23d48a-2241-4e60-a65f-a327b8c30a7d" />.
+        </para>
       </content>
     </section>
     <relatedTopics>
