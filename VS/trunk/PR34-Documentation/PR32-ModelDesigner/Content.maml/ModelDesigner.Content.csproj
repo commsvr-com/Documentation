@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EC2E992-920F-42C5-89F2-456B06BAED36}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModelDesigner.Content</RootNamespace>
+    <AssemblyName>ModelDesigner.Content</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="ASDMGettingStarted.aml" />
+    <None Include="ASMDOpcUaAddressSpaceModelDesignerHelpContent.aml" />
+    <None Include="ASMDOpcUaAddressSpaceModelDesignerProfessional.aml" />
+    <None Include="ASMDOpcUaAddressSpaceModelDesignerStandard.aml" />
+    <None Include="ASMDOpcUaAddressSpaceModelDesignerStandardAndProfessionalComparison.aml" />
+    <None Include="ASMDUsingOpcUaAddressSpaceModelDesigner.aml" />
+    <None Include="ASMDVersionHistory.aml" />
+    <None Include="GettingStarted\ASMDInstallationAndFirstLaunch.aml" />
+    <None Include="GettingStarted\ASMDIntroduction.aml" />
+    <None Include="GettingStarted\ASMDIntroductionToUserInterface.aml" />
+    <None Include="GettingStarted\ASMDSampleSolution.aml" />
+    <None Include="GettingStarted\SampleSolution\ASMDBoilerModel.aml" />
+    <None Include="GettingStarted\SampleSolution\ASMDHowToOpenSampleSolution.aml" />
+    <None Include="UsingOpcUaASMD\ASMDCustomization.aml" />
+    <None Include="UsingOpcUaASMD\ASMDDataBinding.aml" />
+    <None Include="UsingOpcUaASMD\ASMDManagingSolutionsProjectsAndFiles.aml" />
+    <None Include="UsingOpcUaASMD\ASMDModelBuild.aml" />
+    <None Include="UsingOpcUaASMD\ASMDOpcUaModeling.aml" />
+    <None Include="UsingOpcUaASMD\ASMDUserInterface.aml" />
+    <None Include="UsingOpcUaASMD\Customization\ASMDHowToChangeAFontSize.aml" />
+    <None Include="UsingOpcUaASMD\Customization\ASMDHowToChangeModelCompilerTool.aml" />
+    <None Include="UsingOpcUaASMD\DataBindings\ASMDDataBindingProperties.aml" />
+    <None Include="UsingOpcUaASMD\DataBindings\ASMDMenuUaServer.aml" />
+    <None Include="UsingOpcUaASMD\DataBindings\ASMDWalkthroughCreateUaWrapper.aml" />
+    <None Include="UsingOpcUaASMD\DataBindings\ASMDWalkthroughProcessDataPinding.aml" />
+    <None Include="UsingOpcUaASMD\DataBindings\MenuUaServer\ASMDUaServerConfiguration.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDAddingAProject.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDModelExport.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDModelImport.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDProjectProperties.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDSolutionOpen.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDSolutionProperties.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\ASMDMaml.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\ASMDWordDocx.aml" />
+    <None Include="UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelImport\ASMDOpcDaAddressSpace.aml" />
+    <None Include="UsingOpcUaASMD\ModelBuild\ASMDHowToBuildTheSolution.aml" />
+    <None Include="UsingOpcUaASMD\ModelBuild\ASMDModelCompiler.aml" />
+    <None Include="UsingOpcUaASMD\ModelBuild\ASMDWhereToFindAResultOfBuildProcess.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDAttributes.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDProcessDataAndMetadata.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDReferences.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDAddressSpaceImplementation.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDAddressSpaceModeling.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDConcept.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDCustomEditors.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDInformationModel.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDModelNodes.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDModelTree.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDOpcUaGraphicalNotation.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ASMDReferenceModeling.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\CustomEditors\ASMDStateMachineEditor.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDChildren.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDModelDomain.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDNamespace.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDNamespacesFolder.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDObjects.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDTypes.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDDictionary.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncoding.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncodingsFolder.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDInstance.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDMethod.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDNode.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDObject.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParameter.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParametersFolder.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDProperty.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDReference.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDReferenceFolder.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDVariable.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDView.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDDataType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDEventType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDObjectType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDReferenceType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDStateMachineType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDVariableType.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDFiltering.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDNavigateToolbar.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDSearchToolbar.aml" />
+    <None Include="UsingOpcUaASMD\OpcUaModeling\ObjectsManagement\ASMDObjectsManagement.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDBrowseViewTree.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDHelpPanel.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDMemuView.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDMenuEdit.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDMenuFile.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDMenuHelp.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDMenuTools.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDMenuUaServer.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDModel3dView.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDModelTree.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDNodeClassIndicator.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDOutputWindow.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDPropertyPanels.aml" />
+  </ItemGroup>
+</Project>
