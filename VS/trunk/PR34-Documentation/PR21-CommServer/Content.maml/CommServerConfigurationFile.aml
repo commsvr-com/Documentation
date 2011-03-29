@@ -4,7 +4,7 @@
     <introduction>
     </introduction>
     <section address="CSConfigurationFile">
-      <title>CommServer configuration file (CommServer.exe.config)</title>
+      <title>CommServer configuration file (CASOpcDaWrapper.exe.config)</title>
       <content>
         <para>CASOpcDaWrapper.exe.config is the main configuration file of CommServer; please find this file in your CommServer directory. Default location is: </para>
         <para>c:\Program Files\CAS\CommServer\CASOpcDaWrapper.exe.config </para>
@@ -32,7 +32,7 @@
         <para>The following parameters must be set:</para>
         <list class="bullet">
           <listItem>
-            <para><legacyItalic>configfile</legacyItalic>  – specifies the file, where the communication configuration is saved (default value is “comunicationNetXmlDoc.XML”; see next chapter for more details)</para>
+            <para><legacyItalic>configfile</legacyItalic>  – specifies the file, where the communication configuration is saved (default value is “DefaultConfig.xml”; see next chapter for more details)</para>
           </listItem>
           <listItem>
             <para><legacyItalic>MinAvgMax_FrameResponse_management</legacyItalic> – the value indicates the number of frames when frame response statistics are updated</para>
@@ -44,6 +44,15 @@
         </list>
         <para>Other parameters such as: “PLCNaN”, “MinAvgMax_Tag_management”, “MinAvgMax_Group_management”, “MinAvgMax_Group_Read_management”, “MinAvgMax_Transition_management”, “WaitForReconnectServerInSec” are internal settings of RTLib and should not be changed.</para>
         <para>You can also edit this file to add problem tracing to CommServer and run the software in “debug” mode.</para>
+        <alert>
+          <para>
+            <legacyBold>On Windows Server 2003 or 2008 the problem with running CommServer may appear (e.g. the OPC Server address space is empty)</legacyBold>
+          </para>
+          <para>This issue is caused by missing configuration file. CommServer OPC server executable (CASOpcDaWrapper.exe) is trying to open: “C:\Program Files\CAS\CommServer\CASOpcDaWrapper.config” but this file does not exist. The file that exists in the directory is: “<legacyBold>C:\Program Files\CAS\CommServer\CASOpcDaWrapper.exe.config </legacyBold>”.</para>
+          <para>Somehow the system is trying to find .config file (not .exe.config); this situation is different in comparison to the other Windows OS. </para>
+          <para>The solution is to create of a copy of the “CASOpcDaWrapper.exe.config” file and rename the copy “CASOpcDaWrapper.config”.</para>
+          <para>Before reconnection to OPC server make sure that CASOpcDaWrapper.exe is not appear on the task list (in Windows Task Manager). If it is exist please kill the process before reconnection.</para>
+        </alert>
       </content>
     </section>
     <relatedTopics>
