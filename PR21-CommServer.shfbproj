@@ -18,11 +18,11 @@
     <HtmlHelpName>CommServer</HtmlHelpName>
     <HelpFileFormat>Website</HelpFileFormat>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2011, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS CommServer %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx&amp;quot%3b title=&amp;quot%3bCommServer -multiprotocol, multichannel, redundant communication server – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/OPC/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>CommServer - multiprotocol, multichannel, redundant communication server</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <PresentationStyle>vs2005-Produkty</PresentationStyle>

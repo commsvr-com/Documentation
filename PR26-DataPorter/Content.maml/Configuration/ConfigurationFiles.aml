@@ -29,11 +29,14 @@
         <para>
           DataPorter™ stores the configuration as an XML file. The default DataPorter configuration file is DemoConfiguration.oses. Default location of this file is:
         </para>
-        <para>
-          <legacyBold>
-            "c:\Program Files\CAS\DataPorter\DemoConfiguration.oses"
-          </legacyBold>
-        </para>
+        <list class="bullet">
+          <listItem>
+            <para>Windows 2000/XP/2003: c:\Documents and Settings\All Users\Application Data\CAS\CAS.DataPorter\DemoConfiguration.oses</para>
+          </listItem>
+          <listItem>
+            <para>Windows Vista, 2008, 7: C:\ProgramData\CAS\CAS.DataPorter\DemoConfiguration.oses</para>
+          </listIteM>
+        </list>
         <para>
           You can edit any configuration file using the OPC Viewer tool.
         </para>

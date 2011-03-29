@@ -22,7 +22,7 @@
       <Topic id="e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6" visible="True" title="CommServer components" tocTitle="CommServer components" linkText="CommServer components" />
     </Topic>
     <Topic id="de241950-87e4-40df-ba6c-99579ddc467e" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
-      <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CommServer.exe.config)" tocTitle="CommServer configuration file (CommServer.exe.config)" linkText="CommServer configuration file (CommServer.exe.config)" />
+      <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CASOpcDaWrapper.exe.config)" tocTitle="CommServer configuration file (CASOpcDaWrapper.exe.config)" linkText="CommServer configuration file (CASOpcDaWrapper.exe.config)" />
       <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network">
         <Topic id="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" visible="True" title="MBUS configuration" tocTitle="MBUS configuration" linkText="MBUS configuration" />
         <Topic id="a8c2de7c-5c00-4835-9b36-62bddfeb54be" visible="True" title="MODBUS IP configuration" tocTitle="MODBUS IP configuration" linkText="MODBUS IP configuration" />
