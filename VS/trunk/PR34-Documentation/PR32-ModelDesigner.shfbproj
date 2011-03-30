@@ -14,7 +14,7 @@
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <OutputPath>.\Help\</OutputPath>
+    <OutputPath>D:\CAS\help\</OutputPath>
     <HtmlHelpName>OPC UA Address Space Model Designer</HtmlHelpName>
     <BuildLogFile>\Temp\ModelDesigner\ModelDesigner.log</BuildLogFile>
     <HelpFileFormat>Website</HelpFileFormat>
@@ -1063,6 +1063,24 @@
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\FontSizeInTheOptionsWindow.jpg">
       <ImageId>f677bdee-514f-41d3-95f0-ffbc6ca98a72</ImageId>
       <AlternateText>Font Size In The Options Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceConcept.jpg">
+      <ImageId>7e8ea45a-33fd-49c7-bfce-ab22797b8343</ImageId>
+      <AlternateText>Address Space Concept</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\MainGUI.jpg">
+      <ImageId>99527b72-2d59-4c6a-bb58-354b39593f4b</ImageId>
+      <AlternateText>Main GUI</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UnifiedArchitectureEbook.jpg">
+      <ImageId>97999847-3e25-4627-8af2-cf5cd912e158</ImageId>
+      <AlternateText>Unified Architecture Ebook</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
