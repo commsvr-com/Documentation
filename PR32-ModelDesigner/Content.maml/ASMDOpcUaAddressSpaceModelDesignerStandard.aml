@@ -1,82 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="13133136-fee6-41f6-b1b8-92bd6e44bb82" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="Introduction">
+      <title>Introduction</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>Address Space Model Designer is a user-friendly tool supporting all aspects of the model designing process.</para>
+        <para>This topic contains the following sections.</para>
+        <list class="bullet">
+          <listItem>
+            <para>UA Address Space Model Design tool</para>
+          </listItem>
+          <listItem>
+            <para>Tightly coupled smart e-book on Unified Architecture</para>
+          </listItem>
+          <listItem>
+            <para>OPC UA Software Development Kit.</para>
+          </listItem>
+          <listItem>
+            <para>Features</para>
+          </listItem>
+        </list>
+        <para>Using the Address Space Model Designer has the following advantages: easy addition and deletion of nodes from the model structure, definition of nodes relationship and types, nodes filtering, helpful search and find utility, type declaration, etc.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
+    </section>
+    <section address="UAAddressSpaceModelDesignTool">
+      <title>UA Address Space Model Design tool</title>
+      <content>
+        <para>OPC Unified Architecture (UA) is the next generation of OPC. One of the most important improvements offered by the OPC UA is a powerful Address Space exposed by the server to reflect the Information Model (OPC UA IM) of the underling process. The process information model is represented by nodes, attributes and their mutual relationships. Therefore, this powerful concept allows us to present in UA not only raw process data, but also complete information about the process state and process environment. The flexibility of OPC UA IM ensures that there is no existing or future system that is too complicated to be exposed via UA. Of course, such flexibility leads to complications during configuration, that’s why <legacyBold>OPC UA Address Space Model Designer (OPC UA ASMD)</legacyBold> has been born.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Address Space Concept</caption>
+          <image placement="center" xlink:href = "7e8ea45a-33fd-49c7-bfce-ab22797b8343"/>
+        </mediaLink>
+      </content>
+    </section>
+    <section address="UAAddressSpaceModelDesignerStandard">
+      <title>UA Address Space Model Designer Standard</title>
+      <content>
+        <para>Publication of process real-time and metadata as the consistent OPC Unified Architecture Address Space requires a prior model design. Address Space Model Designer Standard is software intended to help developers and engineers to design OPC Unified Architecture Information Models. The whole configuration can be prepared using a user-friendly Windows-based GUI. All nodes are presented on a tree and can be edited in the property window. </para>
+        <para>UA Model Designer Standard supports all aspects of the model designing process, e.g. : easy nodes management in the model structure, definition of nodes relationship and types, nodes filtering, helpful search and find utility, type declaration, etc. Using the Address Space Model Designer Standard <legacyBold>has the following advantages:</legacyBold>
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>Easy addition and deletion of nodes from the model structure</para>
+          </listItem>
+          <listItem>
+            <para>Definition of nodes relationship and types</para>
+          </listItem>
+          <listItem>
+            <para>Modes filtering</para>
+          </listItem>
+          <listItem>
+            <para>Helpful search and find utility</para>
+          </listItem>
+          <listItem>
+            <para>Type declaration</para>
+          </listItem>
+          <listItem>and more...</listItem>
+        </list>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Main GUI</caption>
+          <image placement="center" xlink:href = "99527b72-2d59-4c6a-bb58-354b39593f4b"/>
+        </mediaLink>
+      </content>
+    </section>
+    <section address="BuildSupport">
+      <title>Build support</title>
+      <content>
+        <para>Building, debugging, and testing are key activities for developing and finishing robust UA applications. The tools provided with the ASMD Standard enables you to identify and resolve errors efficiently, and test your model in a variety of ways without the necessity of postponing it up to the UA server development. It, therefore, makes the model designing process completely independent of software development and to be successfully accomplished by real-time process information architects. This tool can be used independently of any UA application development environment, but - to utilize the model - it must be used for instantiating the content of the Address Space by a UA server. The main aim of the ASMD Standard is to achieve this goal without any programming skills.</para>
+      </content>
+    </section>
+    <section address="TightlyCoupledSmartEbookOnUnifiedArchitecture">
+      <title>Tightly coupled smart e-book on Unified Architecture</title>
+      <content>
+        <para>
+          <legacyBold>OPC UA Address Space Model Designer Standard</legacyBold> is also a smart e-book. It contains useful information about UA specifications, address space concept, information model and development of the OPC UA Information Models. A smart content positioning system of the help window can follow object selections in the GUI. The content of the book is available online so it is continuously improved to follow the specification development progress. Moreover, the application takes advantage of automatic update functionality. Both those features guarantee that your development environment is always up to date. </para>
+        <para>Thanks to the e-book idea, this tool is very useful not only for OPC UA professionals, but also for the beginners who want to learn about the OPC UA address space concept.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Unified Architecture Ebook</caption>
+          <image placement="center" xlink:href = "97999847-3e25-4627-8af2-cf5cd912e158"/>
+        </mediaLink>
+      </content>
+    </section>
+    <section address="OPCFoundationsOPCUASoftwareDevelopmentKitSupport">
+      <title>OPC Foundation’s OPC UA Software Development Kit support</title>
+      <content>
+        <para>OPC Foundation has already released the UA Software Development Kit that is a collection of libraries, applications and source code that allow developers to build UA applications. Any developer who wants to create an OPC UA server of his own has to accomplish many tasks, but one of the most important is the preparation of a model. This could be a hard task; OPC Foundation UA SDK does not include any tool, which helps prepare such a model. The model must be made from scratch by editing the xml file. Thanks to the <legacyBold>OPC UA Address Space Model Designer Standard</legacyBold>, fully compliant with this SDK, the preparation of the xml file that defines the model is much easier.</para>
+      </content>
+    </section>
+    <section address="Features">
+      <title>Features</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>Creation, visualization and edition of the OPC UA Information Model that is compatible with the OPC Unified Archi-tecture Address Space concept.</para>
+          </listItem>
+          <listItem>
+            <para>The comprehensive smart e-book, the content of which is available online so it is continuously improved and always up to date</para>
+          </listItem>
+          <listItem>
+            <para>The content smart positioning system allows providing context sensitive help.</para>
+          </listItem>
+          <listItem>
+            <para>No XML file editing is required.</para>
+          </listItem>
+          <listItem>
+            <para>No programming skills are required.</para>
+          </listItem>
+          <listItem>
+            <para>Created for developers and engineers, for professionals and beginners.</para>
+          </listItem>
+        </list>
+      </content>
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+      <link xlink:href="29a68551-4e16-4898-a2b9-b6a66f4f115b" />
+      <link xlink:href="9c0941c9-514c-472d-bd3b-a2566410b952" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
