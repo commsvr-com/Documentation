@@ -28,7 +28,9 @@
     <section address="UAAddressSpaceModelDesignTool">
       <title>UA Address Space Model Design tool</title>
       <content>
-        <para>OPC Unified Architecture (UA) is the next generation of OPC. One of the most important improvements offered by the OPC UA is a powerful Address Space exposed by the server to reflect the Information Model (OPC UA IM) of the underling process. The process information model is represented by nodes, attributes and their mutual relationships. Therefore, this powerful concept allows us to present in UA not only raw process data, but also complete information about the process state and process environment. The flexibility of OPC UA IM ensures that there is no existing or future system that is too complicated to be exposed via UA. Of course, such flexibility leads to complications during configuration, that’s why <legacyBold>OPC UA Address Space Model Designer (OPC UA ASMD)</legacyBold> has been born.</para>
+        <para>
+          OPC Unified Architecture (UA) is the next generation of OPC. One of the most important improvements offered by the OPC UA is a powerful Address Space exposed by the server to reflect the Information Model (OPC UA IM) of the underling process. The process information model is represented by nodes, attributes and their mutual relationships. Therefore, this powerful concept allows us to present in UA not only raw process data, but also complete information about the process state and process environment. The flexibility of OPC UA IM ensures that there is no existing or future system that is too complicated to be exposed via UA. Of course, such flexibility leads to complications during configuration, that’s why <legacyBold>OPC UA Address Space Model Designer (OPC UA ASMD)</legacyBold> has been born.
+        </para>
         <mediaLink>
           <caption placement="after" lead="Figure 1">Address Space Concept</caption>
           <image placement="center" xlink:href = "7e8ea45a-33fd-49c7-bfce-ab22797b8343"/>
@@ -39,8 +41,9 @@
       <title>UA Address Space Model Designer Standard</title>
       <content>
         <para>Publication of process real-time and metadata as the consistent OPC Unified Architecture Address Space requires a prior model design. Address Space Model Designer Standard is software intended to help developers and engineers to design OPC Unified Architecture Information Models. The whole configuration can be prepared using a user-friendly Windows-based GUI. All nodes are presented on a tree and can be edited in the property window. </para>
-        <para>UA Model Designer Standard supports all aspects of the model designing process, e.g. : easy nodes management in the model structure, definition of nodes relationship and types, nodes filtering, helpful search and find utility, type declaration, etc. Using the Address Space Model Designer Standard <legacyBold>has the following advantages:</legacyBold>
-      </para>
+        <para>
+          UA Model Designer Standard supports all aspects of the model designing process, e.g. : easy nodes management in the model structure, definition of nodes relationship and types, nodes filtering, helpful search and find utility, type declaration, etc. Using the Address Space Model Designer Standard <legacyBold>has the following advantages:</legacyBold>
+        </para>
         <list class="bullet">
           <listItem>
             <para>Easy addition and deletion of nodes from the model structure</para>
@@ -75,7 +78,8 @@
       <title>Tightly coupled smart e-book on Unified Architecture</title>
       <content>
         <para>
-          <legacyBold>OPC UA Address Space Model Designer Standard</legacyBold> is also a smart e-book. It contains useful information about UA specifications, address space concept, information model and development of the OPC UA Information Models. A smart content positioning system of the help window can follow object selections in the GUI. The content of the book is available online so it is continuously improved to follow the specification development progress. Moreover, the application takes advantage of automatic update functionality. Both those features guarantee that your development environment is always up to date. </para>
+          <legacyBold>OPC UA Address Space Model Designer Standard</legacyBold> is also a smart e-book. It contains useful information about UA specifications, address space concept, information model and development of the OPC UA Information Models. A smart content positioning system of the help window can follow object selections in the GUI. The content of the book is available online so it is continuously improved to follow the specification development progress. Moreover, the application takes advantage of automatic update functionality. Both those features guarantee that your development environment is always up to date.
+        </para>
         <para>Thanks to the e-book idea, this tool is very useful not only for OPC UA professionals, but also for the beginners who want to learn about the OPC UA address space concept.</para>
         <mediaLink>
           <caption placement="after" lead="Figure 3">Unified Architecture Ebook</caption>
@@ -86,7 +90,9 @@
     <section address="OPCFoundationsOPCUASoftwareDevelopmentKitSupport">
       <title>OPC Foundation’s OPC UA Software Development Kit support</title>
       <content>
-        <para>OPC Foundation has already released the UA Software Development Kit that is a collection of libraries, applications and source code that allow developers to build UA applications. Any developer who wants to create an OPC UA server of his own has to accomplish many tasks, but one of the most important is the preparation of a model. This could be a hard task; OPC Foundation UA SDK does not include any tool, which helps prepare such a model. The model must be made from scratch by editing the xml file. Thanks to the <legacyBold>OPC UA Address Space Model Designer Standard</legacyBold>, fully compliant with this SDK, the preparation of the xml file that defines the model is much easier.</para>
+        <para>
+          OPC Foundation has already released the UA Software Development Kit that is a collection of libraries, applications and source code that allow developers to build UA applications. Any developer who wants to create an OPC UA server of his own has to accomplish many tasks, but one of the most important is the preparation of a model. This could be a hard task; OPC Foundation UA SDK does not include any tool, which helps prepare such a model. The model must be made from scratch by editing the xml file. Thanks to the <legacyBold>OPC UA Address Space Model Designer Standard</legacyBold>, fully compliant with this SDK, the preparation of the xml file that defines the model is much easier.
+        </para>
       </content>
     </section>
     <section address="Features">

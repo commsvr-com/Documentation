@@ -1,82 +1,223 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="9c0941c9-514c-472d-bd3b-a2566410b952" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="WhyDoYouNeedAProfessionalEdition">
+      <title>WHY DO YOU NEED A PROFESSIONAL EDITION?</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>OPC UA Address Space Model Designer is available in two editions: Professional and Standard.</para>
+        <para>The Standard Edition contains basic modeling functions allowing a designer to create and edit the OPC Unified Architecture Information Models and easily publish them as the OPC UA Address Space. It is also integrated with the OPC UA online e-book.</para>
+        <para>The Professional edition additionally contains a variety of advanced features supporting Information Model and Address Space visualizations, documentation, import/export functions, the configuration of any OPC UA server and binding of the model nodes with process data. Its functionality may be easily expanded by adding a custom OPC UA server editor to manage model nodes process data bindings.</para>
+        <para>For the Professional editions, we have very powerful functions on our road map that will greatly improve and simplify the design process, including but not limited to: XML schema / UML import and export, Visio™ and Enterprise Architecture™ integration. Our work will also focused on the improvement of the user interface to make it intuitive.</para>
+        <para>Below there is a table with a comparison of OPC UA Address Space Model Designer editions.</para>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>
+                <para>Feature</para>
+              </entry>
+              <entry>
+                <para>Professional</para>
+              </entry>
+              <entry>
+                <para>Standard</para>
+              </entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>
+              <para>Modeling</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Solution / project management</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Model navigation and filtering</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Integration with OPC UA e-book</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Model view 2D</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Solution and project build</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Model view 3D</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Browse view (server view 2D)</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>UA Server Configuration</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Import / export</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Custom Editors</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Printing</para>
+            </entry>
+            <entry>
+              <para>soon</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Fast access to recent projects and solutions</para>
+            </entry>
+            <entry>
+              <para>soon</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Edition (advanced: Search and Replace/ Undo / Redo / Notes / Bookmarks)</para>
+            </entry>
+            <entry>
+              <para>soon</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Advance Model navigation and filtering</para>
+            </entry>
+            <entry>
+              <para>soon</para>
+            </entry>
+            <entry>
+              <para>-</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Maintenance</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Startup technical support</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+            <entry>
+              <para>+</para>
+            </entry>
+          </row>
+        </table>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
+      <link xlink:href="13133136-fee6-41f6-b1b8-92bd6e44bb82" />
+      <link xlink:href="29a68551-4e16-4898-a2b9-b6a66f4f115b" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
