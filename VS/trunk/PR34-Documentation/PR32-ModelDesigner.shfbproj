@@ -1083,6 +1083,18 @@
       <AlternateText>Unified Architecture Ebook</AlternateText>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\Visualizations.jpg">
+      <ImageId>57144101-374c-40b6-a11d-2c543cda29e7</ImageId>
+      <AlternateText>Visualizations</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ExportedModelDocumentation.jpg">
+      <ImageId>8a8c53a8-15e9-4440-9f33-db810eedfccd</ImageId>
+      <AlternateText>Exported Model Documentation</AlternateText>
+    </Image>
+  </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>
