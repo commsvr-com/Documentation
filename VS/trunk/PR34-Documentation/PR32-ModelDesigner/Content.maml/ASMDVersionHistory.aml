@@ -1,82 +1,459 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <topic id="ada1af70-e1ba-49df-8d0a-8ddc87a0f287" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-      <para>Required introduction</para>
     </introduction>
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="VersionHistory">
+      <title>Version History</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <alert>
+          <para>
+            Download latest version of <externalLink>
+              <linkText>OPC UA Address Space Model Designer</linkText>
+              <linkUri>http://www.commsvr.com/DownloadCenter/ProductSoftware/UAModelDesigner.aspx</linkUri>
+            </externalLink>
+          </para>
+          <para>
+            See also the movie <externalLink>
+              <linkText>"Introduction to OPC UA Address Space modeling using CAS Address Space Model Designer”</linkText>
+              <linkUri>http://www.youtube.com/watch?v=pYOQA4atlRI</linkUri>
+            </externalLink>
+          </para>
+        </alert>
+        <autoOutline />
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
+        <section address="REL_2_10_10">
+          <title>Version 2.10.10</title>
+          <content>
+            <para>
+              Friday, January 15, 2010
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Synchronization with OPC Foundation SDK 1.01.308.0
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some minor bugfixes and improvements.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_2_10_00">
+          <title>Version 2.10.00</title>
+          <content>
+            <para>
+              Friday, October 30, 2009
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Tested (as a component of CommServer UA) for Compliance and Interoperability at OPC Interoperability Workshop (2009) in Nuremberg, Germany.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  After choosing of the UA Server configuration plugin, the existing configuration file can be chosen
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Value of the DefaultValue property is now editable using a complex XML editor. OPC UA Address Space Model Designer supports now the Range and EUTypes properties
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Added OPC Core Components as prerequisites for installation. If they have not been installed on a user’s computer previously, they are installed with OPC UA Address Space Model Designer
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Application settings can now be reset to built-in, default values using the new Reset button in the Options window
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Popular namespaces for OPC UA Types, XML Schema and XML Schema-instance are added to each model file automatically
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Synchronization with OPC Foundation SDK 1.01.305.0
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  OPC Viewer rel. 3.00.02 is a component of the OPC UA Address Space Model Designer 2.10.00
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Small improvements and bug fixes
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.11.10">
+          <title>Version 1.11.10</title>
+          <content>
+            <para>
+              Wednesday, September 16, 2009
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  Code generator (compiler from SDK) settings and path can be configured.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The editor of data bindings, which allow us to configure the server and the bindings between instance nodes in the model and the actual real-time process data sources, has been moved to a separate pane.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Synchronization with OPC Foundation SDK 1.01.301.0.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Small changes to sample configuration.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some minor bugfixes and improvements.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.11.00">
+          <title>Version 1.11.00</title>
+          <content>
+            <para>
+              Monday, Jun 29, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Possibility of creating the configuration for the OPC UA server is added. This feature is the first step to the "Interoperability without programming" concept. It is possible to create plug-ins for UA Address Space Model Designer, which allow us to configure the server and the bindings between instance nodes in the model and the actual real-time process data sources. Configuration of this functionality (i.e. choosing sources) is available in the "UA Server" menu. A sample plug-in is installed in "My documents\UAAddressSpaceModelDesigner\Sample ". Bindings can be configured inside the instance nodes configuration (objects, variables, properties) as a "Process Bindings" property. What is more, for each instance node many data sources can be configured, so redundancy is available. Currently, an OPC DA client is available as the data source, so any OPC server can be a source of data.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Synchronization with OPC Foundation SDK 1.00.238.1 Stable.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Export of the model to the documentation format file (in the MAML language, based on XML) is added. Now it is possible to export the model to the MAML file and use it in the documentation creation process. To use the "Export" function, select the node, which represents the project, and then choose "To MAML" option from the "File -> Export" menu.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  A visual editor of the state machines is available. Now it is possible to easily add new transitions, delete transitions or change causes of the transitions in the particular state machine using graphical editor.  The editor can be started after selecting a node, which represents the state machine, and selecting "State Machine Editor" from the "Tools -> Custom Editor" menu.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  OPC Viewer is integrated with the UA Address Space Model Designer. It can be started in the Tools menu and used as an OPC DA client configuration tool.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The example boiler model is improved.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some minor bugfixes and improvements.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.10.90">
+          <title>Version 1.10.90</title>
+          <content>
+            <para>
+              Monday, May 15, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Application main menu includes entries to the planned functionality and allows the user to send comments and requests to OPC UA AS Model Designer development team. Intentionally it is a survey that allows us to harmonize the development priorities with your needs.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Model build is done silently in background (none command window appears) - the whole output from build process is available in a new Output panel
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The spelling of the directory that contains sample solution is fixed ("My Douments\UAAddessSpaceModelDesigner\Sample" is changed to "My Douments\UAAddressSpaceModelDesigner\Sample")
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Version history is available online
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Synchronization with OPC Fundation SDK 1.00.233.2
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some minor bugfixes and improvements.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.10.80">
+          <title>Version 1.10.80</title>
+          <content>
+            <para>
+              Thursday, May 07, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Explorer-style navigation functionality is added. Now it is possible to use navigation arrows located on the toolbar to view previously visited nodes.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  GoTo DataType functionality is added to the context menu of the node. It gives the possibility of navigating to DataType coupled with the selected node.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Coupled Nodes functionality is added. Now, nodes coupled with the selected node (i.e. base types, targets etc. ) appear on the tree. This functionality can by switched on/off in Tools menu.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Sample model solution is installed automatically in "My Documents\UAAddressSpaceModelDesigner\Sample" folder.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Toolbars are now more functional. They can be moved to any side of the application window.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Configuration is moved under Tools menu.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Intelligent book synchronization can be switched on/off in Help menu.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some minor bugfixes and improvements.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.10.71">
+          <title>Version 1.10.71</title>
+          <content>
+            <para>
+              Friday, April 24, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Node Copy/Cut/Paste functionality is added in node context menu. Now it is possible to copy (cut) node and then paste it into another appropriate node. Copied node is stored as XML text in system clipboard, so it can be pasted to any text editor (this XML is compatible with OPC Foundation UA SDK model definition).
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Build functionality is added. Now the model can be built (C# classes are generated from the model) directly from the CAS UA Address Space Model Designer. Try Build option from the Tools menu. What is more , output directory and CSV filename can be configured in properties of each Project (model).
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Message which appears when the user tries to load the model as solution is changed. Now it is more informative.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some minor bugfixes.
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Framework 2.0 and Framework 3.0 required.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.10.50">
+          <title>Version 1.10.50</title>
+          <content>
+            <para>
+              Wednesday, March 25, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Filtering is improved (filtered nodes are hidden instead of marking with another color; when defining the filter, node classes (according to OPC UA specification) can be selected to hide and unhide particular nodes)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Naming convention for namespace prefixes in the XML output document is changed
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Many improvements and bugfixes to the internal application engine.
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.10.40">
+          <title>Version 1.10.40</title>
+          <content>
+            <para>
+              Wednesday, March 11, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Built-in types are based on OPC Foundation UA and are read-only now;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Namespace references based on file paths are added;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The main window displays the name of the solution file in the title bar;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Warning about unsaved changes is displayed when the user wants to clear, open or exit;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The issue with namespaces for method parameters is fixed;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The issue with allTopics.xml file is fixed;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Help content changes only if Help Tab is active;
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  The selected node on the Model tree is always marked;
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="REL_1.10.00">
+          <title>Version 1.10.00</title>
+          <content>
+            <para>
+              Friday, February 06, 2009
+            </para>
+            <para>
+              The main changes and new functionalities are listed below:
+            </para>
+            <list class ="bullet">
+              <listItem>
+                <para>
+                  Model search functionality is added
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Built-in models: Standard Types, Built-In Types, Data Types are replaced by model: UA Defined Types
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  White characters (like spaces) are removed from names automatically
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some of the unused properties (e.g. Declaration, Description, etc.) are removed
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  XML namespaces are added to the header of the output model file (now, namespaces are defined once at the beginning of the file)
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  Some small improvements and bug fixes
+                </para>
+              </listItem>
+            </list>
+          </content>
+        </section>
+        <section address="announcement_release">
+          <title>Announcement release</title>
+          <content>
+            <para>
+              Monday, December 08, 2008
+            </para>
+            <para>
+              OPC Unified Architecture (UA) is the next generation of OPC; one of its biggest improvements is a powerful Address Space and Information Model.
+            </para>
+            <para>
+              To make the designing of the OPC UA Address Space Model easier, CAS introduces an UA Model Designer, that is a powerful tool, which allows creating, displaying and editing OPC UA models compatible with the OPC Unified Architecture address space concept. What is more, it provides a comprehensive intelligent ebook with smart positioning system providing a context-sensitive help. The tool is created for developers and engineers, for professionals and beginners.
+            </para>
+          </content>
+        </section>
     <relatedTopics>
-      <!-- One or more of the following:
-           - A local link
-           - An external link
-           - A code entity reference
-
-      <link xlink:href="Other Topic's ID"/>
-      <link xlink:href="Other Topic's ID">Link inner text</link>
-
-      <externalLink>
-          <linkText>Link text</linkText>
-          <linkAlternateText>Optional alternate link text</linkAlternateText>
-          <linkUri>URI</linkUri>
-      </externalLink>
-
-      <codeEntityReference>API member ID</codeEntityReference>
-
-      Examples:
-
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
-      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
-
-      <externalLink>
-          <linkText>SHFB on CodePlex</linkText>
-          <linkAlternateText>Go to CodePlex</linkAlternateText>
-          <linkUri>http://shfb.codeplex.com</linkUri>
-      </externalLink>
-
-      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
-      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
-      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
-      -->
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
