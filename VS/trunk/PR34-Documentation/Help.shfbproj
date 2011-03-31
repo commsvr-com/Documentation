@@ -14,7 +14,7 @@
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <OutputPath>C:\inetpub\wwwroot\Help\</OutputPath>
+    <OutputPath>D:\CAS\help\</OutputPath>
     <HtmlHelpName>CommServerOPCHelp</HtmlHelpName>
     <BuildLogFile>Temp\Help\Help.log</BuildLogFile>
     <ComponentConfigurations>
@@ -25,22 +25,34 @@
           <targets files="reflection.xml" type="{@ProjectLinks}" />
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-  <basePath value="{@ProjectFolder}" />
-  <languageFilter value="true" />
-  <allowMissingSource value="false" />
-  <removeRegionMarkers value="false" />
-  <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
-</component></ComponentConfig>
-<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <basePath value="{@ProjectFolder}" />
+          <languageFilter value="true" />
+          <allowMissingSource value="false" />
+          <removeRegionMarkers value="false" />
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output path for the files (required).  This should match
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
                  the parent folder of the output path of the HTML files (see
-                 SaveComponent). --><outputPaths>{@HelpFormatOutputPaths}</outputPaths><!-- Logo image file (optional).  Filename is required. The height,
+                 SaveComponent). -->
+          <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+          <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="\\CAS_002\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. -->
+          <logoFile filename="\\CAS_002\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <HelpFileFormat>Website</HelpFileFormat>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
@@ -51,16 +63,17 @@
       </PlugInConfig>
     </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2011, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS CommServer %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx&amp;quot%3b title=&amp;quot%3bCommServer -multiprotocol, multichannel, redundant communication server – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/tabid/55/language/en-US/Default.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>CommServer - multiprotocol, multichannel, redundant communication server</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
-    <PresentationStyle>vs2005OPCHelp</PresentationStyle>
+    <PresentationStyle>vs2005-Produkty</PresentationStyle>
     <SdkLinkType>None</SdkLinkType>
     <WorkingPath>Temp\Help\Working\</WorkingPath>
+    <IndentHtml>True</IndentHtml>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -872,29 +885,6 @@
       <AlternateText>OPC Connect</AlternateText>
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
     </Image>
-    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_1.jpg">
-      <AlternateText>OPC Foundation sample client window</AlternateText>
-      <ImageId>4653484E-3C60-4bf9-A18D-1E06D11F1403</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_5.jpg">
-      <AlternateText>Working OPC Foundation sample client</AlternateText>
-      <ImageId>B02C4534-BF12-422a-825F-6036E6FCC81F</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_4.jpg">
-      <AlternateText>Accept certificate</AlternateText>
-      <ImageId>42B7BAD6-F803-46c5-8F27-8721F021779B</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_3.jpg">
-      <AlternateText>Open Session</AlternateText>
-      <ImageId>88F2C458-AC90-40f9-9D47-E045A22742EA</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_2.jpg">
-      <AlternateText>Server configuration</AlternateText>
-      <ImageId>799BD8C4-3008-4a13-9710-4DBEF38FAA79</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg">
-      <ImageId>8CCA934A-9696-4eff-B646-AFE71FA04BCE</ImageId>
-    </Image>
     <Image Include="CommonDocumentation\Graphics\hardware_key_1.jpg">
       <ImageId>67286d24-ecaf-4cde-a4e5-c858978f88e6</ImageId>
       <AlternateText>Choose Help-&gt; About in the menu</AlternateText>
@@ -916,78 +906,31 @@
       <AlternateText>click on “Request for license” button</AlternateText>
     </Image>
     <Content Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg" />
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg">
-      <AlternateText>UA Address Space Model Designer (solution, projects, library)</AlternateText>
-      <ImageId>480593ec-1ece-495a-ae7f-e9eaa35a6c04</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg">
-      <AlternateText>Attaching of the object to the root folder</AlternateText>
-      <ImageId>d7cc85f5-9937-404a-bbf4-37f8dfc332c8</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.jpg">
-      <AlternateText>Reference modelling</AlternateText>
-      <ImageId>bca95e6d-af8e-4d77-9f84-d4b4c80ee3d7</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg">
-      <AlternateText>NodeClass indicator</AlternateText>
-      <ImageId>dd000636-3049-4672-9411-1e2f1e53c763</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg">
-      <AlternateText>Modeling steps</AlternateText>
-      <ImageId>e48d964e-069c-442c-9abf-12f898edd16d</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg">
-      <AlternateText>Graphical notation</AlternateText>
-      <ImageId>31107f84-8ca6-427f-816b-c6d659c6ed18</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg">
-      <AlternateText>CAS UA Address Space Model Designer</AlternateText>
-      <ImageId>d9963680-9313-449c-8c65-1a0de03ace2e</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg">
-      <AlternateText>CAS UA Address Space Model Designer</AlternateText>
-      <ImageId>475d4891-d765-4ab9-bd11-df2e85338702</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg">
-      <ImageId>184a9787-110d-485d-bf3c-ae808ef5829a</ImageId>
-      <AlternateText>CAS UA Address Space Model Designer</AlternateText>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg">
-      <AlternateText>Code generation</AlternateText>
-      <ImageId>e7c9ef7c-d341-4ca0-b6f5-f9c470b6fe2d</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg">
-      <AlternateText>Building a solution</AlternateText>
-      <ImageId>89f9e8dc-0ffe-4892-8ae4-1600b3ecce18</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg">
-      <AlternateText>UA Address Space Model Designer approach</AlternateText>
-      <ImageId>b6c218c8-1b29-48ce-a03c-52adc2038873</ImageId>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ReferenceModeling.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_NodeClass_name.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ModelingSteps.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_GraphicalNotation.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithXml.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModelWithASMD.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_FromProcessToModel.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_CodeGeneration.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_BuildSolution.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_ASMDApproach.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings_boilers.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_samplesolution_and_processBindings.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\UAModelDesigner_openingsamplesolution-witharrows.jpg" />
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg">
-      <AlternateText>OPC Viewer – Saving the server address space in a dictionary file</AlternateText>
-      <ImageId>7ac2eec8-31ab-4278-82ba-857b1099ad0f</ImageId>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg">
-      <ImageId>602d51f8-b058-4e04-879b-f6df460fc74a</ImageId>
-      <AlternateText>OPC Viewer – Browse server items</AlternateText>
-    </Image>
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg">
-      <AlternateText>UA Address Space Model Designer – Select configuration editor</AlternateText>
-      <ImageId>fc7fbc69-47d6-4c32-88ea-f7bb8bac98fc</ImageId>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_save_odic_file.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\OPCV_create_odic_file.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_select_editor.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Save_oses_file.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_references.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_ProcessBindingsForCommServer.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_NodeClass_name.jpg" />
-    <Image Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg">
-      <AlternateText>UA Address Space Model Designer – Create new project in the solution</AlternateText>
-      <ImageId>374e18ec-2cec-451f-aa9b-4ba25dbb0e89</ImageId>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_new_project.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Import_From_OPC_DA.jpg" />
+    <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_compiler_change_with_description.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD_Build_imported_model.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-SelectEditor_composition.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\ASMD-UAServer-openconfiguration_composition.jpg" />
@@ -1024,10 +967,7 @@
     <Content Include="OPCUAebook\Graphics\QualifiedNameBinaryEncoding.JPG" />
     <Content Include="OPCUAebook\Graphics\PredefinedReferenceTypes.JPG" />
     <Content Include="OPCUAebook\Graphics\OverviewAboutAttributes.JPG" />
-    <Image Include="OPCUAebook\Graphics\OPC_UA_Object_Model.jpg">
-      <AlternateText>OPC UA Object Model</AlternateText>
-      <ImageId>bb392375-2eac-4efd-8e9c-d9222f84dba0</ImageId>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\OPC_UA_Object_Model.jpg" />
     <Content Include="OPCUAebook\Graphics\OPCUASystemArchitecture.JPG" />
     <Content Include="OPCUAebook\Graphics\OPCUAServerArchitecture.JPG" />
     <Content Include="OPCUAebook\Graphics\OPCUAClientArchitecture.JPG" />
@@ -1040,20 +980,14 @@
     <Content Include="OPCUAebook\Graphics\NodeIdEncodingValues.JPG" />
     <Content Include="OPCUAebook\Graphics\NodeIdComponents.JPG" />
     <Content Include="OPCUAebook\Graphics\Method.JPG" />
-    <Image Include="OPCUAebook\Graphics\MainGui.png">
-      <ImageId>f762cfc2-2255-40e1-a143-0f909ad26b62</ImageId>
-      <AlternateText>Main GUI</AlternateText>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\MainGui.png" />
     <Content Include="OPCUAebook\Graphics\LocalizedTextBinaryEncoding.JPG" />
     <Content Include="OPCUAebook\Graphics\integration_wykres_en.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_supersystem.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_funkcje_small_EN.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_commserver_process_observer.jpg" />
     <Content Include="OPCUAebook\Graphics\integration_chaos_small_en.jpg" />
-    <Image Include="OPCUAebook\Graphics\HelpGUI.png">
-      <ImageId>df45d4b0-49d4-4635-92e1-e72d9dc198ed</ImageId>
-      <AlternateText>OPC Unified Architecture eBook</AlternateText>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\HelpGUI.png" />
     <Content Include="OPCUAebook\Graphics\GraphicalNotationView.JPG" />
     <Content Include="OPCUAebook\Graphics\GraphicalNotationVariableType.JPG" />
     <Content Include="OPCUAebook\Graphics\GraphicalNotationVariable.JPG" />
@@ -1104,6 +1038,26 @@
     <Content Include="OPCUAebook\Graphics\DataTypesOrganization.JPG" />
     <Content Include="OPCUAebook\Graphics\DataTypeModel.JPG" />
     <Content Include="OPCUAebook\Graphics\DataType.JPG" />
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_5.jpg">
+      <ImageId>B02C4534-BF12-422a-825F-6036E6FCC81F</ImageId>
+      <AlternateText>Working OPC Foundation sample client</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_4.jpg">
+      <ImageId>42B7BAD6-F803-46c5-8F27-8721F021779B</ImageId>
+      <AlternateText>Accept certificate</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_3.jpg">
+      <ImageId>88F2C458-AC90-40f9-9D47-E045A22742EA</ImageId>
+      <AlternateText>Open Session</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_2.jpg">
+      <ImageId>799BD8C4-3008-4a13-9710-4DBEF38FAA79</ImageId>
+      <AlternateText>OPC Foundation sample client window</AlternateText>
+    </Image>
+    <Image Include="OPCUAebook\Graphics\CSUA_remote_access_1.jpg">
+      <ImageId>4653484E-3C60-4bf9-A18D-1E06D11F1403</ImageId>
+      <AlternateText>OPC Foundation sample client window</AlternateText>
+    </Image>
     <Content Include="OPCUAebook\Graphics\ComponentsofNodeId.JPG" />
     <Content Include="OPCUAebook\Graphics\ComponentsofExpandedNodeId.JPG" />
     <Content Include="OPCUAebook\Graphics\ComponentsofEnumeration.JPG" />
@@ -1125,10 +1079,7 @@
     <Content Include="OPCUAebook\Graphics\Attributes.JPG" />
     <Content Include="OPCUAebook\Graphics\AFourByteNodeId.JPG" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceNodeModel.JPG" />
-    <Image Include="OPCUAebook\Graphics\AddressSpace.png">
-      <ImageId>71d79c66-35a6-4f09-ab24-dd19bb2a5afa</ImageId>
-      <AlternateText>Address Space Concept</AlternateText>
-    </Image>
+    <Content Include="OPCUAebook\Graphics\AddressSpace.png" />
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Image Include="PR26-DataPorter\Graphics\operations\DBAdv.JPG">
       <AlternateText>DBAdv.JPG</AlternateText>
@@ -1584,64 +1535,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="OPCUAebook\Content.maml\ASMD_VersionHistory.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\MethodDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\DictionaryDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ParametersFolder.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\Parameter.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\EncodingsFolder.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\EncodingDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ViewDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\VariableDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\InstanceDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\PropertyDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ReferencesFolder.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\Reference.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\NodeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ObjectDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\Objects.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ReferenceTypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ObjectTypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\StateMachineTypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\EventTypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\DataTypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\VariableTypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\TypeDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\Types.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\NamespacesFolder.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\Namespace.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\Children.aml" />
-    <None Include="OPCUAebook\Content.maml\Nodes\ModelDesign.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\NodesClasses.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Menus.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UserInterface.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionBuild.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionAndProjects.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_ReferenceModeling.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_ModelTree.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_GraphicalNotation.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_Modeling.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Using_ASMD.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Overview.aml" />
-    <None Include="OPCUAebook\Content.maml\Overview.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OPCUAebook\Content.maml\Nodes\" />
-    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\" />
-    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\" />
-    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\" />
-    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\" />
-    <Folder Include="OPCUAebook\Content.maml\" />
-    <Folder Include="OPCUAebook\" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="OPCUAebook\Graphics\sponsors_logos\.svn\tmp\text-base\" />
     <Folder Include="OPCUAebook\Graphics\sponsors_logos\.svn\tmp\props\" />
     <Folder Include="OPCUAebook\Graphics\sponsors_logos\.svn\tmp\prop-base\" />
@@ -1687,17 +1580,192 @@
     <Folder Include="OPCUAebook\Graphics\.svn\prop-base\" />
     <Folder Include="OPCUAebook\Graphics\.svn\" />
     <Folder Include="OPCUAebook\Graphics\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\UAAddressSpace\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\SystemConcept\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\ServiceSets\" />
+    <Folder Include="OPCUAebook\Content.maml\obj\Debug\TempPE\" />
+    <Folder Include="OPCUAebook\Content.maml\obj\Debug\" />
+    <Folder Include="OPCUAebook\Content.maml\obj\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\Nodes\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\Mappings\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\InformationModel\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\CommServerUA\" />
+    <Folder Include="OPCUAebook\Content.maml\bin\Debug\" />
+    <Folder Include="OPCUAebook\Content.maml\bin\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\AddressSpaceDesigner\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.maml\.svn\" />
+    <Folder Include="OPCUAebook\Content.maml\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\tmp\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\text-base\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\props\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\Content.dll\.svn\" />
+    <Folder Include="OPCUAebook\Content.dll\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\tmp\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\text-base\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\props\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\.svn\" />
+    <Folder Include="OPCUAebook\AdditionalDocuments\" />
+    <Folder Include="OPCUAebook\.svn\tmp\text-base\" />
+    <Folder Include="OPCUAebook\.svn\tmp\props\" />
+    <Folder Include="OPCUAebook\.svn\tmp\prop-base\" />
+    <Folder Include="OPCUAebook\.svn\tmp\" />
+    <Folder Include="OPCUAebook\.svn\text-base\" />
+    <Folder Include="OPCUAebook\.svn\props\" />
+    <Folder Include="OPCUAebook\.svn\prop-base\" />
+    <Folder Include="OPCUAebook\.svn\" />
+    <Folder Include="OPCUAebook\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\" />
+    <Folder Include="PR32-ModelDesigner\Graphics\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ObjectsManagement\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\CustomEditors\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelImport\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\MenuUaServer\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\GettingStarted\SampleSolution\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\GettingStarted\" />
+    <Folder Include="PR32-ModelDesigner\Content.maml\" />
+    <Folder Include="PR32-ModelDesigner\AdditionalDocuments\" />
+    <Folder Include="PR32-ModelDesigner\" />
     <Folder Include="PR33-CommServerUA\Content.maml\" />
     <Folder Include="PR33-CommServerUA\" />
-    <Folder Include="OPCUAebook\Content.maml\CommServerUA\Configuration\" />
-    <Folder Include="OPCUAebook\Content.maml\CommServerUA\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
-    <None Include="OPCUAebook\Content.maml\License_acquisition.aml" />
-    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
-    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
-    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
+    <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\text-base\cas_logo_big.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\prop-base\cas_logo_big.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\entries" />
@@ -1740,6 +1808,7 @@
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD_NodeClass_name.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD_new_project.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD_Import_From_OPC_DA.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD_compiler_change_with_description.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD_Build_imported_model.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD-UAServer-SelectEditor_composition.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\text-base\ASMD-UAServer-openconfiguration_composition.jpg.svn-base" />
@@ -1757,6 +1826,7 @@
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD_NodeClass_name.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD_new_project.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD_Import_From_OPC_DA.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD_compiler_change_with_description.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD_Build_imported_model.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD-UAServer-SelectEditor_composition.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\AddressSpaceDesigner\GettingStarted\.svn\prop-base\ASMD-UAServer-openconfiguration_composition.jpg.svn-base" />
@@ -1869,6 +1939,11 @@
     <None Include="OPCUAebook\Graphics\.svn\text-base\DataTypesOrganization.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\text-base\DataTypeModel.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\text-base\DataType.JPG.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\text-base\CSUA_remote_access_5.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\text-base\CSUA_remote_access_4.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\text-base\CSUA_remote_access_3.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\text-base\CSUA_remote_access_2.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\text-base\CSUA_remote_access_1.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\text-base\ComponentsofNodeId.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\text-base\ComponentsofExpandedNodeId.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\text-base\ComponentsofEnumeration.JPG.svn-base" />
@@ -1993,6 +2068,11 @@
     <None Include="OPCUAebook\Graphics\.svn\prop-base\DataTypesOrganization.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\prop-base\DataTypeModel.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\prop-base\DataType.JPG.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\prop-base\CSUA_remote_access_5.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\prop-base\CSUA_remote_access_4.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\prop-base\CSUA_remote_access_3.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\prop-base\CSUA_remote_access_2.jpg.svn-base" />
+    <None Include="OPCUAebook\Graphics\.svn\prop-base\CSUA_remote_access_1.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\prop-base\ComponentsofNodeId.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\prop-base\ComponentsofExpandedNodeId.JPG.svn-base" />
     <None Include="OPCUAebook\Graphics\.svn\prop-base\ComponentsofEnumeration.JPG.svn-base" />
@@ -2018,19 +2098,1251 @@
     <None Include="OPCUAebook\Graphics\.svn\entries" />
     <None Include="OPCUAebook\Graphics\.svn\dir-prop-base" />
     <None Include="OPCUAebook\Graphics\Desktop.ini" />
-    <None Include="OPCUAebook\Content.maml\Configuration.aml" />
-    <None Include="OPCUAebook\Content.maml\CommServerUA.aml" />
-    <None Include="PR33-CommServerUA\Content.maml\WelcomeToCommServerUA.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\ViewNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\VariableType.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\VariablesNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\Variables.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\UAAddressSpace.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\TypeModelforObjectTypesandVariableTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\TypeDefinitionNodes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\SummaryAttributesNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\StandardReferenceTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\StandardNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\StandardEventTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\StandardDataTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\ReferenceTypeNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\OPCUAMetaModelUML.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\ObjectType.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\Objects.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\ObjectModel.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\NodeModel.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\Methods.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\MethodNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\HowToUseAddressSpaceMode.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\GraphicalNotation.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\EventModel.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\Definitions.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\DataTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\BaseNodeClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\text-base\AddressSpaceConcepts.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ViewNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\VariableType.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\VariablesNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Variables.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\UAAddressSpace.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\TypeModelforObjectTypesandVariableTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\TypeDefinitionNodes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\SummaryAttributesNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardReferenceTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardEventTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\StandardDataTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ReferenceTypeNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\OPCUAMetaModelUML.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ObjectType.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Objects.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\ObjectModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\NodeModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Methods.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\MethodNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\HowToUseAddressSpaceMode.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\GraphicalNotation.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\EventModel.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\Definitions.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\DataTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\BaseNodeClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\UAAddressSpace\AddressSpaceConcepts.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\Totalitarian.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\SystemsOverview.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\SystemsIntegration.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\SystemsClients.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\Servers.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\ProcessObserver.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\text-base\Peer2Peer.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\Totalitarian.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\SystemsOverview.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\SystemsIntegration.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\SystemsClients.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\Servers.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\ProcessObserver.aml" />
+    <None Include="OPCUAebook\Content.maml\SystemConcept\Peer2Peer.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\ViewServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\SubscriptionServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\SessionServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\SecureChannelServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\QueryServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\NodeManagementServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\MonitoredItemServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\MethodServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\General.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\text-base\DiscoveryServiceSet.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\ViewServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\SubscriptionServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\SessionServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\SecureChannelServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\QueryServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\NodeManagementServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\MonitoredItemServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\MethodServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\General.aml" />
+    <None Include="OPCUAebook\Content.maml\ServiceSets\DiscoveryServiceSet.aml" />
+    <None Include="OPCUAebook\Content.maml\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ViewDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\VariableTypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\VariableDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\Types.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\TypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\StateMachineTypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ReferenceTypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ReferencesFolder.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\Reference.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\PropertyDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ParametersFolder.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\Parameter.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ObjectTypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\Objects.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ObjectDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\NodeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\NamespacesFolder.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\Namespace.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\ModelDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\MethodDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\InstanceDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\EventTypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\EncodingsFolder.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\EncodingDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\DictionaryDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\DataTypeDesign.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\text-base\Children.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\Nodes\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ViewDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\VariableTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\VariableDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Types.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\TypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\StateMachineTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ReferenceTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ReferencesFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Reference.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\PropertyDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ParametersFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Parameter.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ObjectTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Objects.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ObjectDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\NodeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\NamespacesFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Namespace.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\ModelDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\MethodDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\InstanceDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\EventTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\EncodingsFolder.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\EncodingDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\DictionaryDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\DataTypeDesign.aml" />
+    <None Include="OPCUAebook\Content.maml\Nodes\Children.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\XMLStructures.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\XMLMessages.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\XMLEnumerations.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\XMLBuilt-inTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\XMLArrays.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\XML.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\Variant.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\Overview.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\OPCUABinaryStructures.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\OPCUABinaryMessages.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\OPCUABinaryEnumerations.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\OPCUABinaryBuilt-inTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\OPCUABinaryArrays.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\OPCUABinary.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\Guid.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\ExtensionObject.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\text-base\Built-inTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\Mappings\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLStructures.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLMessages.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLEnumerations.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLBuilt-inTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XMLArrays.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\XML.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Variant.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Overview.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryStructures.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryMessages.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryEnumerations.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryBuilt-inTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinaryArrays.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\OPCUABinary.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Guid.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\ExtensionObject.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings\Built-inTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\UAInformationModel.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\StateMachines.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\StandardVariableTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\StandardObjectTypesAddress_SpaceManagement.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\StandardObjectTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\StandardObjectsandtheirVariables.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\StandardDataTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\ServerObjectanditscontainingObjects.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\ObjectTypesusedasEventTypes.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\ObjectTypesfortheServerObject.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\ObjectsusedtoorganisetheAddressSpacestructure.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\Introduction.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\Designdecisionswhenmodellingtheserverinformation.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\text-base\BaseObjectType.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\UAInformationModel.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StateMachines.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardVariableTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardObjectTypesAddress_SpaceManagement.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardObjectTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardObjectsandtheirVariables.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\StandardDataTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ServerObjectanditscontainingObjects.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ObjectTypesusedasEventTypes.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ObjectTypesfortheServerObject.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\ObjectsusedtoorganisetheAddressSpacestructure.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\Introduction.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\Designdecisionswhenmodellingtheserverinformation.aml" />
+    <None Include="OPCUAebook\Content.maml\InformationModel\BaseObjectType.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\text-base\HowToConfigureCSUA.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\text-base\HowToAccessRemotely.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\.svn\dir-prop-base" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToConfigureCSUA.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\.svn\text-base\Installing.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\.svn\text-base\GettingStarted.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\.svn\text-base\CommServerUA_Version_History.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA\.svn\dir-prop-base" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Installing.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\GettingStarted.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\text-base\ASMD_ReferenceModeling.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\text-base\ASMD_Modeling_ModelTree.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\text-base\ASMD_Modeling_GraphicalNotation.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_ReferenceModeling.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_ModelTree.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\Modeling\ASMD_Modeling_GraphicalNotation.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\text-base\ASMD_SolutionBuild.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\text-base\ASMD_SolutionAndProjects.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\text-base\ASMD_Modeling.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionBuild.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_SolutionAndProjects.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UsingASMD\ASMD_Modeling.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\SampleSolution.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\ProcessDataBindingWalkthrough.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\HowToOpenSampleSolution.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\HowToCreateUaWrapper.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\HowToChangeModelCompilerTool.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\text-base\BoilerModel.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\Using_ASMD.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\UserInterface.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\Overview.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\NodesClasses.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\Menus.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\text-base\GettingStarted.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Using_ASMD.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\UserInterface.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Overview.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\NodesClasses.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\Menus.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner\GettingStarted.aml" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Welcome.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\UserInterface.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\UA_Glossary.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\UAOverview.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Sponsors_CAS.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Sponsors.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Services.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\SecurityModel.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\ReadMore.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Programs.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Profiles.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Overview.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\OPCUnifiedArchitecture.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\OPCUAebook.Content.csproj.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Menus.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Mappings.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\LicenseAndDisclaimer.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\HistoricalAccess.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\GettingStarted.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\General References.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Discovery.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\DataAccess.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Configuration.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Concept.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\CommServerUA.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\ASMD_VersionHistory.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\Alarms.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\AddressSpaceDesigner.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\text-base\About.aml.svn-base" />
+    <None Include="OPCUAebook\Content.maml\.svn\entries" />
+    <None Include="OPCUAebook\Content.maml\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.maml\Welcome.aml" />
+    <None Include="OPCUAebook\Content.maml\UserInterface.aml" />
+    <None Include="OPCUAebook\Content.maml\UA_Glossary.aml" />
+    <None Include="OPCUAebook\Content.maml\UAOverview.aml" />
+    <None Include="OPCUAebook\Content.maml\Sponsors_CAS.aml" />
+    <None Include="OPCUAebook\Content.maml\Sponsors.aml" />
+    <None Include="OPCUAebook\Content.maml\Services.aml" />
+    <None Include="OPCUAebook\Content.maml\SecurityModel.aml" />
+    <None Include="OPCUAebook\Content.maml\ReadMore.aml" />
+    <None Include="OPCUAebook\Content.maml\Programs.aml" />
+    <None Include="OPCUAebook\Content.maml\Profiles.aml" />
+    <None Include="OPCUAebook\Content.maml\Overview.aml" />
+    <None Include="OPCUAebook\Content.maml\OPCUnifiedArchitecture.aml" />
+    <None Include="OPCUAebook\Content.maml\OPCUAebook.Content.csproj" />
+    <None Include="OPCUAebook\Content.maml\Menus.aml" />
+    <None Include="OPCUAebook\Content.maml\Mappings.aml" />
+    <None Include="OPCUAebook\Content.maml\LicenseAndDisclaimer.aml" />
+    <None Include="OPCUAebook\Content.maml\HistoricalAccess.aml" />
+    <None Include="OPCUAebook\Content.maml\GettingStarted.aml" />
+    <None Include="OPCUAebook\Content.maml\General References.aml" />
+    <None Include="OPCUAebook\Content.maml\Discovery.aml" />
+    <None Include="OPCUAebook\Content.maml\DataAccess.aml" />
+    <None Include="OPCUAebook\Content.maml\Configuration.aml" />
+    <None Include="OPCUAebook\Content.maml\Concept.aml" />
+    <None Include="OPCUAebook\Content.maml\CommServerUA.aml" />
+    <None Include="OPCUAebook\Content.maml\ASMD_VersionHistory.aml" />
+    <None Include="OPCUAebook\Content.maml\Alarms.aml" />
+    <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
+    <None Include="OPCUAebook\Content.maml\About.aml" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\ModelForHelp.XML.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\ModelForHelp.dll.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\CAS.UA.ModelDesigner.exe.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\CAS.RTLibComm.xml.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\CAS.RTLibComm.dll.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\CAS.ControlLibrary.xml.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\text-base\CAS.ControlLibrary.dll.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\prop-base\ModelForHelp.dll.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\prop-base\CAS.UA.ModelDesigner.exe.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\prop-base\CAS.RTLibComm.dll.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\prop-base\CAS.ControlLibrary.dll.svn-base" />
+    <None Include="OPCUAebook\Content.dll\.svn\entries" />
+    <None Include="OPCUAebook\Content.dll\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\Content.dll\ModelForHelp.XML" />
+    <None Include="OPCUAebook\Content.dll\ModelForHelp.dll" />
+    <None Include="OPCUAebook\Content.dll\CAS.UA.ModelDesigner.exe" />
+    <None Include="OPCUAebook\Content.dll\CAS.RTLibComm.xml" />
+    <None Include="OPCUAebook\Content.dll\CAS.RTLibComm.dll" />
+    <None Include="OPCUAebook\Content.dll\CAS.ControlLibrary.xml" />
+    <None Include="OPCUAebook\Content.dll\CAS.ControlLibrary.dll" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\UnifiedArchitectureAddressSpace .url.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\UML_ASModelDesigner.vsd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\OPCUA_Specyfications_RC1_01.lnk.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\ModelDesignerHelp.url.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\CommServerModel.xml.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\CommServerModel.csv.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\build_CommServerModel.cmd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\build_BoilerExample.cmd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\build_ADI_Model.cmd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\BoilerExample.xml.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\BoilerExample.csv.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\ADISolution.uamdsl.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\ADIMOdel.xml.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\text-base\ADIModel.csv.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\prop-base\UML_ASModelDesigner.vsd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\prop-base\OPCUA_Specyfications_RC1_01.lnk.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\prop-base\build_CommServerModel.cmd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\prop-base\build_BoilerExample.cmd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\prop-base\build_ADI_Model.cmd.svn-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\entries" />
+    <None Include="OPCUAebook\AdditionalDocuments\.svn\dir-prop-base" />
+    <None Include="OPCUAebook\AdditionalDocuments\UnifiedArchitectureAddressSpace .url" />
+    <None Include="OPCUAebook\AdditionalDocuments\UML_ASModelDesigner.vsd" />
+    <None Include="OPCUAebook\AdditionalDocuments\OPCUA_Specyfications_RC1_01.lnk" />
+    <None Include="OPCUAebook\AdditionalDocuments\ModelDesignerHelp.url" />
+    <None Include="OPCUAebook\AdditionalDocuments\CommServerModel.xml" />
+    <None Include="OPCUAebook\AdditionalDocuments\CommServerModel.csv" />
+    <None Include="OPCUAebook\AdditionalDocuments\build_CommServerModel.cmd" />
+    <None Include="OPCUAebook\AdditionalDocuments\build_BoilerExample.cmd" />
+    <None Include="OPCUAebook\AdditionalDocuments\build_ADI_Model.cmd" />
+    <None Include="OPCUAebook\AdditionalDocuments\BoilerExample.xml" />
+    <None Include="OPCUAebook\AdditionalDocuments\BoilerExample.csv" />
+    <None Include="OPCUAebook\AdditionalDocuments\ADISolution.uamdsl" />
+    <None Include="OPCUAebook\AdditionalDocuments\ADIMOdel.xml" />
+    <None Include="OPCUAebook\AdditionalDocuments\ADIModel.csv" />
+    <None Include="OPCUAebook\.svn\entries" />
+    <None Include="OPCUAebook\.svn\dir-prop-base" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDPropertyPanels.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDOutputWindow.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDNodeClassIndicator.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDModelTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDModel3dView.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuUaServer.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuTools.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuHelp.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuFile.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuEdit.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMemuView.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDHelpPanel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDBrowseViewTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ObjectsManagement\ASMDObjectsManagement.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDSearchToolbar.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDNavigateToolbar.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDFiltering.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDVariableType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDStateMachineType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDReferenceType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDObjectType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDEventType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Types\ASMDDataType.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDView.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDVariable.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDReferenceFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDReference.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDProperty.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParametersFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParameter.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDObject.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDNode.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDMethod.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDInstance.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncodingsFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDEncoding.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDDictionary.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDTypes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDObjects.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDNamespacesFolder.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDNamespace.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDModelDomain.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\ASMDChildren.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\CustomEditors\ASMDStateMachineEditor.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDReferences.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDProcessDataAndMetadata.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ASMDAttributes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDReferenceModeling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDOpcUaGraphicalNotation.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDModelTree.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDModelNodes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDInformationModel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDCustomEditors.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDConcept.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDAddressSpaceModeling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ASMDAddressSpaceImplementation.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\ASMDWhereToFindAResultOfBuildProcess.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\ASMDModelCompiler.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ModelBuild\ASMDHowToBuildTheSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelImport\ASMDOpcDaAddressSpace.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\ASMDWordDocx.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ModelExport\ASMDMaml.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDSolutionProperties.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDSolutionOpen.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDProjectProperties.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDModelImport.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDModelExport.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ManagingSolutionsProjectsAndFiles\ASMDAddingAProject.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\MenuUaServer\ASMDUaServerConfiguration.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDWalkthroughProcessDataPinding.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDWalkthroughCreateUaWrapper.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDMenuUaServer.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\ASMDDataBindingProperties.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\ASMDHowToChangeModelCompilerTool.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\ASMDHowToChangeAFontSize.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDUserInterface.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDOpcUaModeling.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDModelBuild.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDManagingSolutionsProjectsAndFiles.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDDataBinding.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\ASMDCustomization.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\SampleSolution\ASMDHowToOpenSampleSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\SampleSolution\ASMDBoilerModel.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDSampleSolution.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDIntroductionToUserInterface.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDIntroduction.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\GettingStarted\ASMDInstallationAndFirstLaunch.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ModelDesigner.Content.csproj" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDVersionHistory.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDUsingOpcUaAddressSpaceModelDesigner.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerStandardAndProfessionalComparison.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerStandard.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerProfessional.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASMDOpcUaAddressSpaceModelDesignerHelpContent.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\ASDMGettingStarted.aml" />
+    <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\WelcomeToCommServerUA.aml" />
   </ItemGroup>
   <ItemGroup>
-    <ContentLayout Include="PR26-DataPorter_ContentLayout.content" />
-    <ContentLayout Include="PR33-CommServerUA_ContentLayout.content" />
-    <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
-    <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\OPCUAAddressSpaceModelDesignerDownloadWebsite.jpg">
+      <ImageId>819e6324-273a-4b63-aa76-b9d2fd3bb0ab</ImageId>
+      <AlternateText>OPC UA Address Space Model Designer Download Website</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\OPCUAAddressSpaceModelDesignerMainUserInterface.jpg">
+      <ImageId>bf0ac4f8-c31c-4781-b8a8-5415c564ce97</ImageId>
+      <AlternateText>OPCUAAddress Space Model Designer Main User Interface</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\ASMDToOpenTheSampleSolution.jpg">
+      <AlternateText>ASMDTo Open The Sample Solution</AlternateText>
+      <ImageId>6f5f133d-4da2-4e25-b28c-3009072531f7</ImageId>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\ASMDBoilerModel.jpg">
+      <ImageId>35ee7798-db16-48d1-8bfd-37a8f9ffe76d</ImageId>
+      <AlternateText>Boiler Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\ASMDBoilerModelDiagram.jpg">
+      <ImageId>421bc850-7396-46fd-9e4f-73c67197f893</ImageId>
+      <AlternateText>Boiler Model Diagram</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\BoilerModelInOPCUAAddressSpaceModelDesigner.jpg">
+      <ImageId>adf1e800-4e40-4c90-8937-fe20ec7bd8a2</ImageId>
+      <AlternateText>Boiler model in OPC UA Address Space Model Designer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\Reference.jpg">
+      <ImageId>0c1f2895-a03e-4853-b0ea-fdbd017803ea</ImageId>
+      <AlternateText>Reference</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\GettingStarted\Custom Controller Type.jpg">
+      <ImageId>e182a2d4-0b83-4e58-b262-1ae3568d91bc</ImageId>
+      <AlternateText>CustomControllerType</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuFile.jpg">
+      <ImageId>c5f9b590-6a3f-4e8d-af54-c1d31ee0cc24</ImageId>
+      <AlternateText>Menu File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuFileExport.jpg">
+      <ImageId>43337c00-a0d6-447b-98f6-976fdd74d3e8</ImageId>
+      <AlternateText>Menu File Export</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEdit.jpg">
+      <ImageId>bb318f7b-f9b1-4c6b-9780-f9fccc3f2925</ImageId>
+      <AlternateText>Menu Edit</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditFindAndReplace.jpg">
+      <ImageId>9fc33f2a-2abe-4b44-b4cb-34b3e5582643</ImageId>
+      <AlternateText>Menu Edit Find And Replace</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditNotes.jpg">
+      <ImageId>d9b36326-1f0c-492c-9b48-080c710804f6</ImageId>
+      <AlternateText>Menu Edit Notes</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditBookmarks.jpg">
+      <ImageId>b3b1659d-bab3-43e2-b997-aca58eb8e53a</ImageId>
+      <AlternateText>Menu Edit Bookmarks</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuEditCreate.jpg">
+      <ImageId>8fabf637-9d48-4316-a397-8ce658a83630</ImageId>
+      <AlternateText>Menu Edit Create</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuView.jpg">
+      <ImageId>9600a8c6-e40a-42c5-aa56-95efa2508649</ImageId>
+      <AlternateText>Menu View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewVisualisation.jpg">
+      <ImageId>a11a6100-07f5-4ce3-91d7-b48a06873f71</ImageId>
+      <AlternateText>Menu View Visualisation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewToolbars.jpg">
+      <ImageId>1a2baf55-8968-4d51-b987-f672e01f7e03</ImageId>
+      <AlternateText>Menu View Toolbars</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewFilters.jpg">
+      <ImageId>56cf8b83-f428-46b8-bd91-768957744bb7</ImageId>
+      <AlternateText>Menu View Filters</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuViewSortTheTree.jpg">
+      <ImageId>9b040cd8-402a-475d-aecb-03d871c9fbea</ImageId>
+      <AlternateText>Menu View Sort The Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuUaServer.jpg">
+      <ImageId>2836ad8c-c3e3-451c-85d0-e36e1bc25c9c</ImageId>
+      <AlternateText>Menu Ua Server</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuTools.jpg">
+      <ImageId>cc06c9f9-75c4-42a1-b40b-34aee4ddbef9</ImageId>
+      <AlternateText>Menu Tools</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuToolsBuildVerify.jpg">
+      <ImageId>5d10b61d-f2d8-4623-9b83-a9e1fc82effe</ImageId>
+      <AlternateText>Menu Tools Build Verify</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\MenuHelp.jpg">
+      <ImageId>9764801d-ec4e-4bb9-b04e-3af0cd8a8226</ImageId>
+      <AlternateText>Menu Help</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\ModelTree.jpg">
+      <ImageId>0942e0e4-cb76-4611-b7a6-aaf69c114105</ImageId>
+      <AlternateText>Model Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\BrowseViewTree.jpg">
+      <ImageId>15658c30-22d3-4dc6-986c-50e663c555f5</ImageId>
+      <AlternateText>Browse View Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\Model3dView.jpg">
+      <ImageId>7c9c1624-6c30-4079-9081-e322174b78dc</ImageId>
+      <AlternateText>Model 3d View</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\PropertyPanels.jpg">
+      <ImageId>d4e244e5-4c2b-4760-ba80-d182ba18fe46</ImageId>
+      <AlternateText>Property Panels</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\HelpPanel.jpg">
+      <ImageId>9ab82f4d-278e-4d65-b729-fdb119243f8b</ImageId>
+      <AlternateText>Help Panel</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\OutputWindow.jpg">
+      <ImageId>512377e4-4c96-468d-bbe0-74a17b1ae114</ImageId>
+      <AlternateText>Output Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\NodeClassIndicator.jpg">
+      <ImageId>d8e0f44b-10ca-4f6f-8dfa-0004fdde7517</ImageId>
+      <AlternateText>Node Class Indicator</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\SolutionProjectsLibrary.jpg">
+      <ImageId>1df33362-fed8-47d6-b06e-91d91b90696b</ImageId>
+      <AlternateText>Solution Projects Library</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\SolutionProperties.jpg">
+      <ImageId>e205b654-d4d0-43f3-a06f-8d314f836ed4</ImageId>
+      <AlternateText>Solution Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\OpeningOfTheSolutionFromTheMenuBar.jpg">
+      <ImageId>188c4c7f-5ee8-4412-ac1a-a3705f1dfd8c</ImageId>
+      <AlternateText>Opening Of The Solution From The Menu Bar</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\OpeningOfTheSolutionFromTheTree.jpg">
+      <ImageId>30842282-72bc-45d3-afbc-b5f5e8aa441b</ImageId>
+      <AlternateText>Opening Of The Solution From The Tree</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ProjectProperties.jpg">
+      <ImageId>8f9e1d60-09ec-4213-a553-ea2cde3d75d6</ImageId>
+      <AlternateText>Project Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\OpeningOfAProject.jpg">
+      <ImageId>d6b8754a-ce9f-430a-a853-32135c5d1430</ImageId>
+      <AlternateText>Opening OfAProject</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ExportToMicrosoftWordFormatMenu.jpg">
+      <ImageId>eb70f398-99f4-44da-b302-f4981b771530</ImageId>
+      <AlternateText>Export To Microsoft Word Format Menu</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ExportSuccessful.jpg">
+      <ImageId>2202712d-fceb-4c91-99aa-5bbb26fa1da0</ImageId>
+      <AlternateText>Export Successful</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ModelExportedToMicrosoftWord2007FileFormat.jpg">
+      <ImageId>519c30c9-1790-47f2-b25d-af4c7cf3d947</ImageId>
+      <AlternateText>Model Exported To Microsoft Word 2007 File Format</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ExportToMAMLFormatMenu.jpg">
+      <ImageId>66b8fca7-7f2e-4316-8332-24c84ebe3744</ImageId>
+      <AlternateText>Export ToMAMLFormat Menu</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\ModelExportedToMAMLFileFormat.jpg">
+      <ImageId>2d1c51b4-3cb1-4604-89fa-040d5eea24e5</ImageId>
+      <AlternateText>Model Exported ToMAMLFile Format</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\InterpretedModelInMAML.jpg">
+      <ImageId>e07bc112-c9dd-4a1e-bc9f-859202094cc9</ImageId>
+      <AlternateText>Interpreted Model InMAML</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\HowToModelTheProcess.jpg">
+      <ImageId>e557b51d-a230-4054-912f-81e0bb7429b2</ImageId>
+      <AlternateText>How To Model The Process</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\HowToModelTheProcess_2.jpg">
+      <ImageId>9767965c-d358-4f8e-b7a3-9f35d4be1325</ImageId>
+      <AlternateText>How To Model The Process 2</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\OPCUAAddressSpaceModelDesigner.jpg">
+      <ImageId>1067bff6-e13f-4d2c-9416-d9058eed5242</ImageId>
+      <AlternateText>OPCUAAddress Space Model Designer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\OPCUAAddressSpaceModelDesignerUsage.jpg">
+      <ImageId>2d8c647b-ba5a-4cac-94c3-3dcc3fdcdf59</ImageId>
+      <AlternateText>OPCUAAddress Space Model Designer Usage</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\DesigningProcess.jpg">
+      <ImageId>e73f1364-a7c5-4ff8-9143-ecd4215b3121</ImageId>
+      <AlternateText>Designing Process</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ObjectTypesAndObjectInstances.jpg">
+      <ImageId>6e29de74-87f5-4101-83a5-ac67ed7fbea9</ImageId>
+      <AlternateText>Object Types And Object Instances</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\AddressSpaceCreationProcess.jpg">
+      <ImageId>3182a8ac-f82d-4abb-81dc-3e8d4240ab86</ImageId>
+      <AlternateText>Address Space Creation Process</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\StandardReferenceTypeHierarchy.jpg">
+      <ImageId>19a8baf5-69c4-4c2f-a3ae-bf4c25f009a2</ImageId>
+      <AlternateText>Standard Reference Type Hierarchy</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\HasComponentUsageScope.jpg">
+      <ImageId>ab9e76e2-b8b3-4dc6-b50a-e5bce2169c87</ImageId>
+      <AlternateText>Has Component Usage Scope</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ServerTypeDefinition.jpg">
+      <ImageId>378665f7-86bf-461a-a264-5d1b63d47c9c</ImageId>
+      <AlternateText>Server Type Definition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\TypicalUAArchetype.jpg">
+      <ImageId>d3e38f12-f87a-46f5-9888-f08c308f8633</ImageId>
+      <AlternateText>TypicalUAArchetype</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\GraphicalNotation.jpg">
+      <ImageId>ac5f587a-29f3-4c6a-a2d5-b1c1984290c7</ImageId>
+      <AlternateText>Graphical Notation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerApproach.jpg">
+      <ImageId>e313dac5-cfab-442e-b367-4697922021a7</ImageId>
+      <AlternateText>UAAddress Space Model Designer Approach</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerNavigate.jpg">
+      <ImageId>f7242263-3b99-4277-b673-8d12b363bdb3</ImageId>
+      <AlternateText>UAAddress Space Model Designer Navigate</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerSearch.jpg">
+      <ImageId>ff19a50b-104a-4278-a6ab-4e311d2478c4</ImageId>
+      <AlternateText>UAAddress Space Model Designer Search</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\UAAddressSpaceModelDesignerFiltering.jpg">
+      <ImageId>2d09bea7-ac7d-4ec9-8faf-5e182ca68049</ImageId>
+      <AlternateText>UAAddress Space Model Designer Filtering</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ModelDomainPropertyGrid.jpg">
+      <ImageId>44db7874-0765-4555-b701-9cd41b50cfea</ImageId>
+      <AlternateText>Model Domain Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\NamespacePropertyGrid.jpg">
+      <ImageId>d2ac01be-9832-461e-a798-9c254880603e</ImageId>
+      <AlternateText>Namespace Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\VariableTypePropertyGrid.jpg">
+      <ImageId>027ec10c-d22f-492e-9abe-a39068eaee87</ImageId>
+      <AlternateText>Variable Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\DataTypePropertyGrid.jpg">
+      <ImageId>4b2d01eb-a1d9-43c2-9e07-de25d30dd887</ImageId>
+      <AlternateText>Data Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ExampleOfASimpleStateMachine.jpg">
+      <ImageId>fd9c1384-58bb-4097-a8ac-78f2db516785</ImageId>
+      <AlternateText>Example OfASimple State Machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\RepresentationOfAnExampleStateMachine.jpg">
+      <ImageId>a86d9d58-4b82-43cd-a099-47cd1078511b</ImageId>
+      <AlternateText>Representation Of An Example State Machine</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ObjectTypePropertyGrid.jpg">
+      <ImageId>33aa0547-37ad-4f26-a7da-2afd07e2be1d</ImageId>
+      <AlternateText>Object Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ReferenceTypePropertyGrid.jpg">
+      <ImageId>78e6f503-0de1-4036-880b-bc66de3beaab</ImageId>
+      <AlternateText>Reference Type Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\OPCUAObjectModel.jpg">
+      <ImageId>9f0977a3-2ce1-475c-956f-50e707302418</ImageId>
+      <AlternateText>OPCUAObject Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ObjectPropertyGrid.jpg">
+      <ImageId>a08c11a1-4b37-471a-8110-61fb6c6fe27a</ImageId>
+      <AlternateText>Object Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ReferencePropertyGrid.jpg">
+      <ImageId>47965150-9f60-4575-b94e-0e90ac412ab5</ImageId>
+      <AlternateText>Reference Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\PropertyPropertyGrid.jpg">
+      <ImageId>51328d5d-c835-4d22-9a70-1fa2959fcbe3</ImageId>
+      <AlternateText>Property Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\VariablePropertyGrid.jpg">
+      <ImageId>d279a432-12f0-4a09-8492-032c327505dc</ImageId>
+      <AlternateText>Variable Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ViewPropertyGrid.jpg">
+      <ImageId>212b36cb-a402-448f-bd68-788df2bcfbe9</ImageId>
+      <AlternateText>View Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\EncodingPropertyGrid.jpg">
+      <ImageId>0a383baf-bac4-42e0-8b9b-1c724c1829e7</ImageId>
+      <AlternateText>Encoding Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ParameterPropertyGrid.jpg">
+      <ImageId>f3520766-0597-4933-91c1-6d161e609577</ImageId>
+      <AlternateText>Parameter Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\DictionaryPropertyGrid.jpg">
+      <ImageId>63e6de25-f03d-4897-9624-f4d33a4f4f4b</ImageId>
+      <AlternateText>Dictionary Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\MethodPropertyGrid.jpg">
+      <ImageId>ba70c9db-96be-41c8-a639-bcbd26935b52</ImageId>
+      <AlternateText>Method Property Grid</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ReferenceModeling.jpg">
+      <ImageId>e7ca624a-0efa-4838-b83a-53626c60c782</ImageId>
+      <AlternateText>Reference Modeling</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\AttachingOfTheObjectToTheRootFolder.jpg">
+      <ImageId>434098a0-faf2-4da1-92af-b51342cf1579</ImageId>
+      <AlternateText>Attaching Of The Object To The Root Folder</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\StateMachineEditor.jpg">
+      <ImageId>e41ef2d1-d0e4-451e-971b-fbd055ceb4cd</ImageId>
+      <AlternateText>State Machine Editor</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\AddingANewTransition.jpg">
+      <ImageId>e6ab3522-143c-4f10-8900-8f32d4c546f6</ImageId>
+      <AlternateText>AddingANew Transition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\ModifyingExistingTransition.jpg">
+      <ImageId>220d08a8-484d-4d53-ae46-ddd569204b81</ImageId>
+      <AlternateText>Modifying Existing Transition</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\CodeGeneration.jpg">
+      <ImageId>046cdbdb-47ba-4bd1-ae64-1b34e4b9c0dd</ImageId>
+      <AlternateText>Code Generation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\BuildingSolution.jpg">
+      <ImageId>02a2b5d0-6725-4ac5-ba17-87f301c89063</ImageId>
+      <AlternateText>Building Solution</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\OutputWindow.jpg">
+      <ImageId>2b999283-8777-400b-9a50-9cb5399888b5</ImageId>
+      <AlternateText>Output Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\OutputProperties.jpg">
+      <ImageId>cc5b9b22-8cad-4f51-9fdb-0d356739fd01</ImageId>
+      <AlternateText>Output Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\Files.jpg">
+      <ImageId>939b26f5-4309-4b24-94fb-4e5935a3877c</ImageId>
+      <AlternateText>Files</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\MenuUAServer.jpg">
+      <ImageId>6a0ab849-fcbc-4e08-b18b-5073d84c6b1d</ImageId>
+      <AlternateText>MenuUAServer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\UAServerConfigurationProperties.jpg">
+      <ImageId>e007fedf-c1dd-4956-88b9-ce04a29760c0</ImageId>
+      <AlternateText>UAServer Configuration Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SampleDataBindingPanelAndDataSourceConfigurationWindow.jpg">
+      <ImageId>19af054c-5f28-42d7-9d9c-3d901d68558a</ImageId>
+      <AlternateText>Sample Data Binding Panel And Data Source Configuration Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OpeningOfTheConfigurationPlugin.jpg">
+      <ImageId>ba0490d6-7b16-4c41-bc0e-026762c1cc92</ImageId>
+      <AlternateText>Opening Of The Configuration Plugin</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OpeningOfTheConfigurationPluginUsingSolutionProperties.jpg">
+      <ImageId>7a51b1c7-1f59-48a3-be7a-8614b7d373a8</ImageId>
+      <AlternateText>Opening Of The Configuration Plugin Using Solution Properties</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SelectConfigurationFile.jpg">
+      <ImageId>f0f4806c-5325-4642-be28-3024a3e423d4</ImageId>
+      <AlternateText>Select Configuration File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\InformationWhenNoConfigurationFileIsSelected.jpg">
+      <ImageId>bc499bb3-5ccb-46e0-93c4-dbfa3f818040</ImageId>
+      <AlternateText>Information When No Configuration File Is Selected</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SelectionOfTheFolderWhereTheDefaultConfigurationWillBeLocated.jpg">
+      <ImageId>025a198b-f415-4adf-a881-88503dd82710</ImageId>
+      <AlternateText>Selection Of The Folder Where The Default Configuration Will Be Located</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\InformationWhenNoFolderIsSelected.jpg">
+      <ImageId>95b4296e-f192-4cc7-adfc-ef4b298566c8</ImageId>
+      <AlternateText>Information When No Folder Is Selected</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\EditionOfTheConfigurationFile.jpg">
+      <ImageId>1bc04f4c-ef84-46c2-96ce-846e52112104</ImageId>
+      <AlternateText>Edition Of The Configuration File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SettingOfTheModel.jpg">
+      <ImageId>c49e91b0-3a51-4f94-9a3e-df2fbce856cf</ImageId>
+      <AlternateText>Setting Of The Model</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerSelectServerWindow.jpg">
+      <ImageId>96e05217-6d99-431c-af5b-c5ab1f546488</ImageId>
+      <AlternateText>OPCViewer Select Server Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerMultipleOPCServers.jpg">
+      <ImageId>f059bdb2-0ce1-4b13-8cef-16694b5517c5</ImageId>
+      <AlternateText>OPCViewer MultipleOPCServers</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerConnect.jpg">
+      <ImageId>88cac1cf-4e3b-47aa-8392-f0c3e80e694c</ImageId>
+      <AlternateText>OPCViewer Connect</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\BrowseNetworkIcon.jpg">
+      <ImageId>5fbc4920-1b79-410c-8330-ebfb43eaf4a0</ImageId>
+      <AlternateText>Browse Network Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCServerNotConnectedIcon.jpg">
+      <ImageId>004916d4-c8f9-4e2b-8c52-b0c43d19662c</ImageId>
+      <AlternateText>OPCServer Not Connected Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ConnectToServerIcon.jpg">
+      <ImageId>36e788c0-2a64-4bf5-a833-779e028d33c3</ImageId>
+      <AlternateText>Connect To Server Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\SuccessfulConnectionToTheOPCServerIcon.jpg">
+      <ImageId>33935e66-62ec-43c3-bbd8-942ff49d73ca</ImageId>
+      <AlternateText>Successful Connection To TheOPCServer Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerSuccessfulConnection.jpg">
+      <ImageId>66796e9c-6395-427a-8e37-20a84aa1a820</ImageId>
+      <AlternateText>OPCViewer Successful Connection</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ViewStatusIcon.jpg">
+      <ImageId>f2feaaba-6019-42c1-bb0d-ec85ab50666a</ImageId>
+      <AlternateText>View Status Icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerServerStatus.jpg">
+      <ImageId>ea112f58-106e-47a0-9cbd-370147436e57</ImageId>
+      <AlternateText>OPCViewer Server Status</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerAddingTags.jpg">
+      <ImageId>d6f12883-8a2e-4871-87bf-0a70a1f541a2</ImageId>
+      <AlternateText>OPCViewer Adding Tags</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerAddedItems.jpg">
+      <ImageId>f548d45a-e1c0-487e-a55f-3d73017de38f</ImageId>
+      <AlternateText>OPCViewer Added Items</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerBrowseServerItems.jpg">
+      <ImageId>a98d9c60-49ba-4272-a6a2-5631173e256a</ImageId>
+      <AlternateText>OPCViewer Browse Server Items</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\OPCViewerSavingTheServerAddressSpaceInADictionaryFile.jpg">
+      <ImageId>d4ad8587-e4b0-4936-8fbf-850951dafe02</ImageId>
+      <AlternateText>OPCViewer Saving The Server Address Space InADictionary File</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\UAAddressSpaceModelDesignerCreateNewProjectInTheSolution.jpg">
+      <ImageId>66c93fc3-9129-4ba0-88e7-3a2fc6269d99</ImageId>
+      <AlternateText>UAAddress Space Model Designer Create New Project In The Solution</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\UAAddressSpaceModelDesignerSelectConfigurationEditor.jpg">
+      <ImageId>57701c11-58d9-4296-b692-4e832635d896</ImageId>
+      <AlternateText>UAAddress Space Model Designer Select Configuration Editor</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\ImportFromOPCDA.jpg">
+      <ImageId>d826bbe5-b2e2-4bfc-a2d8-9a416d3ad5cd</ImageId>
+      <AlternateText>Import FromOPCDA</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\OpeningOfTheOptions.jpg">
+      <ImageId>36047558-82bc-4e9e-9a1c-c28b5402e0be</ImageId>
+      <AlternateText>Opening Of The Options</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\ModelCompilerToolConfiguration.jpg">
+      <ImageId>a7dc69de-1b6d-4baa-b3bd-56de1434b6c8</ImageId>
+      <AlternateText>Model Compiler Tool Configuration</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\FontSizeInTheOptionsWindow.jpg">
+      <ImageId>f677bdee-514f-41d3-95f0-ffbc6ca98a72</ImageId>
+      <AlternateText>Font Size In The Options Window</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\AddressSpaceConcept.jpg">
+      <ImageId>7e8ea45a-33fd-49c7-bfce-ab22797b8343</ImageId>
+      <AlternateText>Address Space Concept</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\MainGUI.jpg">
+      <ImageId>99527b72-2d59-4c6a-bb58-354b39593f4b</ImageId>
+      <AlternateText>Main GUI</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UnifiedArchitectureEbook.jpg">
+      <ImageId>97999847-3e25-4627-8af2-cf5cd912e158</ImageId>
+      <AlternateText>Unified Architecture Ebook</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\Visualizations.jpg">
+      <ImageId>57144101-374c-40b6-a11d-2c543cda29e7</ImageId>
+      <AlternateText>Visualizations</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\ExportedModelDocumentation.jpg">
+      <ImageId>8a8c53a8-15e9-4440-9f33-db810eedfccd</ImageId>
+      <AlternateText>Exported Model Documentation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
+      <SortOrder>5</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content">
+      <SortOrder>3</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="PR26-DataPorter_ContentLayout.content">
+      <SortOrder>2</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="PR33-CommServerUA_ContentLayout.content">
+      <SortOrder>4</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="PR21-CommServer_ContentLayout.content">
+      <SortOrder>1</SortOrder>
+    </ContentLayout>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />

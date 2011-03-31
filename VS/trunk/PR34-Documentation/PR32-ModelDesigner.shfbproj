@@ -97,26 +97,16 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
-    <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content" />
+    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
+      <SortOrder>2</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content">
+      <SortOrder>1</SortOrder>
+    </ContentLayout>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\dir-props" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\props\MenuUAServer.jpg.svn-work" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\dir-props" />
+    <None Include="PR32-ModelDesigner\Content.maml\76d71a41-245b-4e69-ac04-f305d6c7ff7e.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParameter.aml" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\dir-props" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\props\MenuFile.jpg.svn-work" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\dir-props" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\dir-props" />
-    <None Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\dir-props" />
-    <None Include="PR32-ModelDesigner\Graphics\.svn\entries" />
-    <None Include="PR32-ModelDesigner\Graphics\.svn\dir-prop-base" />
     <None Include="PR32-ModelDesigner\Content.maml\ASMDVersionHistory.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\ASMDHowToChangeAFontSize.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\ASMDHowToChangeModelCompilerTool.aml" />
@@ -263,70 +253,14 @@
     <None Include="OPCUAebook\Content.maml\AddressSpaceDesigner.aml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\Customization\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\DataBinding\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\BodelBuild\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\ManagingSolutionsProjectsAndFiles\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\UsingASMD\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\GettingStarted\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\tmp\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\tmp\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\tmp\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\tmp\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\text-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\props\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\prop-base\" />
-    <Folder Include="PR32-ModelDesigner\Graphics\.svn\" />
     <Folder Include="PR32-ModelDesigner\Graphics\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\Customization\" />
     <Folder Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\DataBindings\MenuUaServer\" />

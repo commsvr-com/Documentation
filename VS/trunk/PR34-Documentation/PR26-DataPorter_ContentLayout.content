@@ -816,17 +816,5 @@
         <HelpKeyword index="K" term="Version History" />
       </HelpKeywords>
     </Topic>
-    <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contacts" tocTitle="Contacts" linkText="Contacts">
-      <HelpKeywords>
-        <HelpKeyword index="K" term="Contact" />
-        <HelpKeyword index="K" term="Support" />
-      </HelpKeywords>
-    </Topic>
-    <Topic id="b42a5ab7-d614-405e-8d96-b856949f9c43" visible="True" title="License" tocTitle="License" linkText="License" />
-    <Topic id="63a147a5-d6d9-44a2-90b5-58ad56ff0e37" visible="True" title="Glossary" tocTitle="Glossary" linkText="Glossary">
-      <HelpKeywords>
-        <HelpKeyword index="K" term="Glossary" />
-      </HelpKeywords>
-    </Topic>
   </Topic>
 </Topics>

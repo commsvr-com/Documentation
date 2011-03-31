@@ -35,7 +35,7 @@
           </listItem>
           <listItem>
             <para>Windows Vista, 2008, 7: C:\ProgramData\CAS\CAS.DataPorter\DemoConfiguration.oses</para>
-          </listIteM>
+          </listItem>
         </list>
         <para>
           You can edit any configuration file using the OPC Viewer tool.
