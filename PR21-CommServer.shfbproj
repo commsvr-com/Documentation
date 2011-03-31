@@ -523,9 +523,15 @@
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
-    <ContentLayout Include="PR21-CommServer_ContentLayout.content" />
+    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
+      <SortOrder>2</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="PR21-CommServer_ContentLayout.content">
+      <SortOrder>1</SortOrder>
+    </ContentLayout>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
     <None Include="PR21-CommServer\Content.maml\2ada690c-20a7-45c3-a5ba-c62c2df104b0.aml" />
     <None Include="PR21-CommServer\Content.maml\OPCConnectionTest.aml" />
     <None Include="PR21-CommServer\Content.maml\PreparingForTestComputersConfiguration.aml" />
@@ -614,6 +620,8 @@
     <None Include="PR21-CommServer\Content.maml\WelcomeToCommServer.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CommonDocumentation\" />
+    <Folder Include="CommonDocumentation\Content.maml\" />
     <Folder Include="PR21-CommServer\Graphics\" />
     <Folder Include="PR21-CommServer\Content.maml\" />
     <Folder Include="PR21-CommServer\" />

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8517a779-4c4f-46c1-835b-dbad00a344fa" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="ApplicationConfigurationLocation">
+      <title>Application configuration location</title>
+      <content>
+        <para>Before CommServer version 4.00.20, DataPorter version 2.00.10, CommServer UA version 1.00.30 the default location of the configuration files and log files was application executables directory (by default: “%PROGRAMFILES%\CAS\[ProductName]\” ,where %ProgramFiles% is usually “C:\Program Files” and [ProductName] is the product name)</para>
+        <para>
+          <legacyBold>Starting from CommServer version 4.00.20, DataPorter version 2.00.10, CommServer UA version 1.00.30 the default location of the configuration files and log files is changed. Now these data is stored inside Windows “application data” directory.</legacyBold>
+        </para>
+        <para>Now, the default directory is:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Windows 2000/XP/2003: %ALLUSERSPROFILE%\Application Data\CAS\[ProductName]\</para>
+          </listItem>
+          <listItem>
+            <para>Windows Vista, 2008, 7: %ALLUSERSPROFILE%\CAS\[ProductName]\</para>
+          </listItem>
+        </list>
+        <para>Where:</para>
+        <list class="bullet">
+          <listItem>
+            <para>%ALLUSERSPROFILE% is standard Windows environmental variable that points to:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Windows 2000/XP/2003: C:\Documents and Settings\All Users</para>
+              </listItem>
+              <listItem>
+                <para>Windows Vista, 2008, 7: C:\ProgramData</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>[ProductName] is the product name followed by “CAS.”, e.g.:</para>
+            <list class="bullet">
+              <listItem>
+                <para>CAS.CommServer</para>
+              </listItem>
+              <listItem>
+                <para>CAS.CommServerUA</para>
+              </listItem>
+              <listItem>
+                <para>CAS.DataPorter</para>
+              </listItem>
+              <listItem>
+                <para>CAS.OPC.UA.Viewer</para>
+              </listItem>
+              <listItem>
+                <para>CAS.OPCViewer</para>
+              </listItem>
+              <listItem>
+                <para>CAS.UA.ModelDesigner</para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+        <alert>
+          <para>The changes below are valid for configuration and log files like „..xml”, “.oses”, “.odic”, “.csv”, “.vcnfg”, “.uasconfig”, “uanodes”, “.uamdsl”, “.log”, “.txt”. As far as “.exe.onfig” or “.config” files are concerned, those remain where application executables are installed (by default %ProgramFiles%=C:\Program Files).</para>
+        </alert>
+        <alert>
+          <para>The %ALLUSERSPROFILE% may be hidden in some Windows operating system, to make it visible: In the Windows Explorer window select menu Tools -> Folder Options -> View tab -> check “Show hidden files and folder” property.</para>
+        </alert>
+        <para>There are the following default configuration directories and files:</para>
+        <list class="bullet">
+          <listItem>
+            <para>CommServer:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Windows 2000/XP/2003: directory c:\Documents and Settings\All Users\Application Data\CAS\CAS.CommServer\ and file DefaultConfig.xml inside;</para>
+              </listItem>
+              <listItem>
+                <para>Windows Vista, 2008, 7: directory C:\ProgramData\CAS\CAS.CommServer\ and file DefaultConfig.xml inside;</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>CommServerUA:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Windows 2000/XP/2003: directory c:\Documents and Settings\All Users\Application Data\CAS\CAS.CommServerUA\ and file DemoConfiguration\CAS.UAServer.DemoConfiguration.uasconfig inside;</para>
+              </listItem>
+              <listItem>
+                <para>Windows Vista, 2008, 7: directory C:\ProgramData\CAS\CAS.CommServerUA\ and file DemoConfiguration\CAS.UAServer.DemoConfiguration.uasconfig inside;</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>DataPorter:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Windows 2000/XP/2003: directory c:\Documents and Settings\All Users\Application Data\CAS\CAS.DataPorter\ and file DemoConfiguration.oses inside;</para>
+              </listItem>
+              <listItem>
+                <para>Windows Vista, 2008, 7: directory C:\ProgramData\CAS\CAS. DataPorter\ and file DemoConfiguration.oses inside.</para>
+              </listItem>
+            </list>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

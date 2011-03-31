@@ -3,7 +3,7 @@
   <developerHowToDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
       <para>
-        By default  CAS CommServer UA™  is installed with the default configuration (read <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/> to find more information about it). This short tutorial shows how to change the default configuration to the custom one. This short tutorial shows how to upload custom user configuration to the CommServerUA.
+        By default  CAS CommServer UA™  is installed with the default configuration. This short tutorial shows how to change the default configuration to the custom one. This short tutorial shows how to upload custom user configuration to the CommServerUA.
       </para>
     </introduction>
     <section>
@@ -13,8 +13,16 @@
       <content>
         <alert>
           <para>
-            Default CommServer UA application path is:  <legacyBold>%ProgramFiles%\CAS\CommServerUA</legacyBold>.
+            Default CommServer UA application path is:
           </para>
+          <list class="bullet">
+            <listItem>
+              <para>Windows 2000/XP/2003: directory c:\Documents and Settings\All Users\Application Data\CAS\CAS.CommServerUA\ and file DemoConfiguration\CAS.UAServer.DemoConfiguration.uasconfig inside;</para>
+            </listItem>
+            <listItem>
+              <para>Windows Vista, 2008, 7: directory C:\ProgramData\CAS\CAS.CommServerUA\ and file DemoConfiguration\CAS.UAServer.DemoConfiguration.uasconfig inside;</para>
+            </listItem>
+          </list>
         </alert>
         <para>
           Perform the following steps to change the default CommServer UA configuration to the new one, prepared as a solution in CAS OPC UA Address  Space Model Designer:
@@ -85,7 +93,7 @@
       </content>
     </section>
     <relatedTopics>
-      <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40"/>
+      
     </relatedTopics>
   </developerHowToDocument>
 </topic>
