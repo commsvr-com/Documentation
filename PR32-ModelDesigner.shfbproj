@@ -14,7 +14,7 @@
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <OutputPath>D:\CAS\help\</OutputPath>
+    <OutputPath>Temp\ModelDesigner\Help\</OutputPath>
     <HtmlHelpName>OPC UA Address Space Model Designer</HtmlHelpName>
     <BuildLogFile>\Temp\ModelDesigner\ModelDesigner.log</BuildLogFile>
     <HelpFileFormat>Website</HelpFileFormat>

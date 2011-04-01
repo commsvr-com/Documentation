@@ -14,7 +14,7 @@
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <OutputPath>D:\CAS\help\</OutputPath>
+    <OutputPath>Temp\Help\</OutputPath>
     <HtmlHelpName>CommServerOPCHelp</HtmlHelpName>
     <BuildLogFile>Temp\Help\Help.log</BuildLogFile>
     <ComponentConfigurations>
@@ -1766,6 +1766,7 @@
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
     <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
+    <None Include="PR21-CommServer\Content.maml\VersionHistory.aml" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\text-base\cas_logo_big.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\prop-base\cas_logo_big.jpg.svn-base" />
     <None Include="OPCUAebook\Graphics\sponsors_logos\.svn\entries" />
