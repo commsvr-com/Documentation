@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="11dd3c5f-8fca-441e-aae0-5391ec4388ac" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="VersionHistory">
+      <title>Version History</title>
+      <content>
+        <para>The topics in this section describe the various changes made to the CommServer over the life of the project. </para>
+        <alert>
+          <para>
+            Download the latest version of <externalLink>
+              <linkText>CommServer</linkText>
+              <linkAlternateText>CommServer</linkAlternateText>
+              <linkUri>http://www.commsvr.com/tabid/200/Default.aspx</linkUri>
+            </externalLink>
+          </para>
+        </alert>
+      </content>
+    </section>
+    <section address="CommServer40020">
+      <title>Version 4.00.20</title>
+      <content>
+        <para>Monday, April 4, 2011:</para>
+        <list class="bullet">
+          <listItem>
+            <para>CommServer report contains more information in a better, user-friendly format</para>
+          </listItem>
+          <listItem>
+            <para>Communication using UDP and TCP is improved</para>
+          </listItem>
+          <listItem>
+            <para>Error in Modbus protocol while channel is suddenly disconnected is resolved</para>
+          </listItem>
+          <listItem>
+            <para>Network Configuration tool user interface is improved (e.g. new navigation tools)</para>
+          </listItem>
+          <listItem>
+            <para>Some issues related to "Clean configuration", "Save As" and current configuration file management in Network Configuration tool are fixed</para>
+          </listItem>
+          <listItem>
+            <para>Improved licensing management</para>
+          </listItem>
+          <listItem>
+            <para>Improved support for Windows Vista, 7 and 2008</para>
+          </listItem>
+          <listItem>
+            <para>New location (based on ALLUSERSPROFILE) of configuration and log files (see product manual for details)</para>
+          </listItem>
+          <listItem>
+            <para>New version of OPC Viewer 3.10.00 is included</para>
+          </listItem>
+          <listItem>
+            <para>Small bugfixes and improvements</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
