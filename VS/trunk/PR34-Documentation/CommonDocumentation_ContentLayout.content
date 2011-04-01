@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="8517a779-4c4f-46c1-835b-dbad00a344fa" visible="True" title="Application Configuration Location" tocTitle="Application Configuration Location" linkText="Application Configuration Location" />
+  <Topic id="8517a779-4c4f-46c1-835b-dbad00a344fa" visible="True" title="Applications Configuration Location" tocTitle="Applications Configuration Location" linkText="Applications Configuration Location" />
   <Topic id="2095ee10-ea30-42e1-8ea1-cd20af0d0419" visible="True" title="Contact" tocTitle="Contact" linkText="Contact" />
   <Topic id="b42a5ab7-d614-405e-8d96-b856949f9c43" visible="True" title="License" tocTitle="License" linkText="License">
     <Topic id="5660ca9b-bf2c-4a80-b402-6794438ff5c1" visible="True" title="License acquisition" tocTitle="License acquisition" linkText="License acquisition" />
