@@ -15,6 +15,35 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_2_00_10">
+      <title>Version 2.00.10</title>
+      <content>
+        <para>Monday, April 4, 2011</para>
+        <list class="bullet">
+          <listItem>
+            <para>Some improvements to the user interface</para>
+          </listItem>
+          <listItem>
+            <para>Improved licensing management</para>
+          </listItem>
+          <listItem>
+            <para>Improved support for Windows Vista, 7 and 2008</para>
+          </listItem>
+          <listItem>
+            <para>New location (based on ALLUSERSPROFILE) of configuration and log files (see product manual for details</para>
+          </listItem>
+          <listItem>
+            <para>New version of OPC Viewer 3.10.00 is included</para>
+          </listItem>
+          <listItem>
+            <para>Support of x64 operating systems(DataPorter works as 32-bit application on x64 OS)</para>
+          </listItem>
+          <listItem>
+            <para>Small bugfixes and improvements</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_2_00_08">
       <title>Version 2.00.08</title>
       <content>

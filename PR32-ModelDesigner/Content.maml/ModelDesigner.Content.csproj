@@ -50,7 +50,9 @@
     <None Include="ASMDOpcUaAddressSpaceModelDesignerStandard.aml" />
     <None Include="ASMDOpcUaAddressSpaceModelDesignerStandardAndProfessionalComparison.aml" />
     <None Include="ASMDUsingOpcUaAddressSpaceModelDesigner.aml" />
-    <None Include="ASMDVersionHistory.aml" />
+    <None Include="ASMDVersionHistory.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="GettingStarted\ASMDInstallationAndFirstLaunch.aml" />
     <None Include="GettingStarted\ASMDIntroduction.aml" />
     <None Include="GettingStarted\ASMDIntroductionToUserInterface.aml" />
