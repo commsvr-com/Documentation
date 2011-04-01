@@ -24,7 +24,8 @@
             <para>CommServer UA and CommServer UA Wrapper work in 64-bit environment as 32-bit applications</para>
           </listItem>
           <listItem>
-            <para>CommServer UA software package is enhanced with a fully functional, OPC UA demo client - OPC UA Viewer. Using this client it is possible to connect to any OPC UA server using different types of security, browse address space, read/write from/to data and much, much more (see: <externalLink>
+            <para>
+              CommServer UA software package is enhanced with a fully functional, OPC UA demo client - OPC UA Viewer. Using this client it is possible to connect to any OPC UA server using different types of security, browse address space, read/write from/to data and much, much more (see: <externalLink>
               <linkText>OPC Viewer website</linkText>
               <linkAlternateText>OPC Viewer website</linkAlternateText>
               <linkUri>http://www.commsvr.com/Products/OPCUA/OPCUAViewer.aspx</linkUri>
@@ -44,6 +45,12 @@
           </listItem>
           <listItem>
             <para>New location (based on ALLUSERSPROFILE) of configuration and log files (see product manual for details)</para>
+          </listItem>
+          <listItem>
+            <para>Improved licensing management.</para>
+          </listItem>
+          <listItem>
+            <para>Improved support for Windows Vista, 7 and 2008</para>
           </listItem>
           <listItem>
             <para>New version OPC UA Viewer 1.00.10 is included</para>
