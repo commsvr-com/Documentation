@@ -15,6 +15,45 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_1_00_30">
+      <title>Version 1.00.30</title>
+      <content>
+        <para>Monday, April 4, 2011</para>
+        <list class="bullet">
+          <listItem>
+            <para>CommServer UA and CommServer UA Wrapper work in 64-bit environment as 32-bit applications</para>
+          </listItem>
+          <listItem>
+            <para>CommServer UA software package is enhanced with a fully functional, OPC UA demo client - OPC UA Viewer. Using this client it is possible to connect to any OPC UA server using different types of security, browse address space, read/write from/to data and much, much more (see: <externalLink>
+              <linkText>OPC Viewer website</linkText>
+              <linkAlternateText>OPC Viewer website</linkAlternateText>
+              <linkUri>http://www.commsvr.com/Products/OPCUA/OPCUAViewer.aspx</linkUri>
+            </externalLink>) </para>
+          </listItem>
+          <listItem>
+            <para>Installation procedure has been improved. Now  the operating system components (including configuration of HTTP channels, firewall, certificates access, etc.) are configured automatically</para>
+          </listItem>
+          <listItem>
+            <para>Some improvements to the user interface</para>
+          </listItem>
+          <listItem>
+            <para>Certificates support has been improved to provide higher level of security during the client - server communication</para>
+          </listItem>
+          <listItem>
+            <para>Synchronization with OPC Foundation SDK 1.01.326.0</para>
+          </listItem>
+          <listItem>
+            <para>New location (based on ALLUSERSPROFILE) of configuration and log files (see product manual for details)</para>
+          </listItem>
+          <listItem>
+            <para>New version OPC UA Viewer 1.00.10 is included</para>
+          </listItem>
+          <listItem>
+            <para>Some minor bug fixes and improvements</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="REL_1_00_20">
       <title>Version 1.00.20</title>
       <content>
