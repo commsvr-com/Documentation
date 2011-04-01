@@ -134,6 +134,7 @@
     <None Include="TroubleShooting.aml" />
     <None Include="UsingCommServer.aml" />
     <None Include="UsingNetworkConfigToConfigureTheNetwork.aml" />
+    <None Include="VersionHistory.aml" />
     <None Include="WelcomeToCommServer.aml" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
