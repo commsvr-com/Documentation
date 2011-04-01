@@ -53,7 +53,7 @@
         </component>
       </ComponentConfig>
     </ComponentConfigurations>
-    <HelpFileFormat>Website</HelpFileFormat>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
@@ -70,7 +70,7 @@
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/tabid/55/language/en-US/Default.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>CommServer - multiprotocol, multichannel, redundant communication server</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
-    <PresentationStyle>vs2005-Produkty</PresentationStyle>
+    <PresentationStyle>hana</PresentationStyle>
     <SdkLinkType>None</SdkLinkType>
     <WorkingPath>Temp\Help\Working\</WorkingPath>
     <IndentHtml>True</IndentHtml>
