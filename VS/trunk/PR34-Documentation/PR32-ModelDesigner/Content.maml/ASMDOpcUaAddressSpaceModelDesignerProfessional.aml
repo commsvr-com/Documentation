@@ -65,27 +65,16 @@
         </mediaLink>
       </content>
     </section>
-    <section address="CustomBuiltTool">
-      <title>Custom built tool</title>
+    <section address="CustomBuildTool">
+      <title>Custom build tool</title>
       <content>
         <para>The OPC UA Address Space Model Designer Professional supports the custom built tool that may be used during the Information Model building (compiling) process. The default building tool that is delivered with ASMD is an OPC UA Foundation model compiler, however the user can develop and plug-in custom compiling tool.</para>
       </content>
     </section>
-    <section address="OPCUAServerConfiguration">
-      <title>OPC UA server configuration</title>
+    <section address="Award">
+      <title>Award</title>
       <content>
-        <para>OPC UA Address Space Model Designer Standard allows users to create the configuration for any OPC UA server. The editor is used to modify the general settings and define model nodes data-bindings with the real-time process. Advantages of this solution:</para>
-        <list class="bullet">
-          <listItem>
-            <para>Simple configuration</para>
-          </listItem>
-          <listItem>
-            <para>No programming skills are required</para>
-          </listItem>
-          <listItem>
-            <para>An easier way to move your old OPC server to the Unified Architecture world</para>
-          </listItem>
-        </list>
+        <para>The OPC UA Address Space Model Designer is the winner in the “User interfaces” category of the “2009 Product of the Year” competition of Control Engineering Poland magazine. Our product has been praised by experienced industrial automation experts for innovation, user-friendliness, ease of use and possibilities of practical application.</para>
       </content>
     </section>
     <section address="CustomEditors">

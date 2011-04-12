@@ -67,7 +67,9 @@
     <None Include="Alarms.aml" />
     <None Include="ASMD_VersionHistory.aml" />
     <None Include="CommServerUA.aml" />
-    <None Include="CommServerUA\CommServerUA_Version_History.aml" />
+    <None Include="CommServerUA\CommServerUA_Version_History.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="CommServerUA\Configuration\HowToConfigureCSUA.aml" />
     <None Include="CommServerUA\GettingStarted.aml">
       <SubType>Designer</SubType>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" title="CommServer" tocTitle="CommServer" linkText="CommServer">
+  <Topic id="2dea0752-d490-47e6-8444-ac73e07601fc" visible="True" isDefault="true" title="CommServer" tocTitle="CommServer" linkText="CommServer">
     <Topic id="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" visible="True" title="Theory of operation" tocTitle="Theory of operation" linkText="Theory of operation">
       <Topic id="e6da9218-ee79-4a13-8665-5376fe7cf91d" visible="True" title="Introduction" tocTitle="Introduction" linkText="Introduction" />
       <Topic id="ec8ba7f2-86b3-4005-876b-9479e94d3b9e" visible="True" title="OPC Overview" tocTitle="OPC Overview" linkText="OPC Overview" />
