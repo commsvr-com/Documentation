@@ -53,7 +53,7 @@
         </component>
       </ComponentConfig>
     </ComponentConfigurations>
-    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <HelpFileFormat>Website</HelpFileFormat>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
@@ -70,7 +70,7 @@
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/tabid/55/language/en-US/Default.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>CommServer - multiprotocol, multichannel, redundant communication server</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
-    <PresentationStyle>hana</PresentationStyle>
+    <PresentationStyle>vs2005-Produkty</PresentationStyle>
     <SdkLinkType>None</SdkLinkType>
     <WorkingPath>Temp\Help\Working\</WorkingPath>
     <IndentHtml>True</IndentHtml>
@@ -3330,6 +3330,9 @@
   </ItemGroup>
   <ItemGroup>
     <ContentLayout Include="CommonDocumentation_ContentLayout.content">
+      <SortOrder>6</SortOrder>
+    </ContentLayout>
+    <ContentLayout Include="Tools_ContentLayout.content">
       <SortOrder>5</SortOrder>
     </ContentLayout>
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content">
@@ -3344,6 +3347,34 @@
     <ContentLayout Include="PR21-CommServer_ContentLayout.content">
       <SortOrder>1</SortOrder>
     </ContentLayout>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tools\Content.maml\OPCUAViewer\VersionHistory.aml" />
+    <None Include="Tools\Content.maml\OPCUAViewer\OPCUAViewer.aml" />
+    <None Include="Tools\Content.maml\OPCViewer\VersionHistory.aml" />
+    <None Include="Tools\Content.maml\OPCViewer\OPCViewer.aml" />
+    <None Include="Tools\Content.maml\Tools.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tools\Graphics\OPCViewer\" />
+    <Folder Include="Tools\Graphics\OPCUAViewer\" />
+    <Folder Include="Tools\Graphics\" />
+    <Folder Include="Tools\Content.maml\OPCUAViewer\" />
+    <Folder Include="Tools\Content.maml\OPCViewer\" />
+    <Folder Include="Tools\Content.maml\" />
+    <Folder Include="Tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Tools\Graphics\OPCViewer\OPCViewer.jpg">
+      <ImageId>5154f500-0d1b-4e48-a5bd-11ca5d646ff6</ImageId>
+      <AlternateText>OPC Viewer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Tools\Graphics\OPCUAViewer\OPCUAViewer.jpg">
+      <ImageId>69aba819-d44b-404b-b5d4-7f079faed9cd</ImageId>
+      <AlternateText>OPC UA Viewer</AlternateText>
+    </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
