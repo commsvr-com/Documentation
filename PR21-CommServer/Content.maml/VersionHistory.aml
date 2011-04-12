@@ -18,7 +18,7 @@
         </alert>
       </content>
     </section>
-    <section address="CommServer40020">
+    <section address="rel_4_00_20">
       <title>Version 4.00.20</title>
       <content>
         <para>Monday, April 4, 2011:</para>
@@ -52,6 +52,43 @@
           </listItem>
           <listItem>
             <para>Small bugfixes and improvements</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_4_00_04">
+      <title>Version 4.00.04</title>
+      <content>
+        <para>Tuesday, November 09, 2010</para>
+        <list class="bullet">
+          <listItem>
+            <para>In this version of CommServer problem with x64 operating systems is fixed (CommServer works as 32-bit application on x64 OS)</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_4_00_02">
+      <title>Version 4.00.02</title>
+      <content>
+        <para>Friday, October 30, 2009</para>
+        <list class="bullet">
+          <listItem>
+            <para>Tested for Compliance and Interoperability at OPC Interoperability Workshop (2009) in Nuremberg, Germany</para>
+          </listItem>
+          <listItem>
+            <para>Modbus DataProvider: added support for 32-bit integer and unsigned integer and floating-point numbers</para>
+          </listItem>
+          <listItem>
+            <para>M-Bus DataProvider: added support of the connection over Ethernet</para>
+          </listItem>
+          <listItem>
+            <para>Added OPC Core Components as prerequisites for installation</para>
+          </listItem>
+          <listItem>
+            <para>OPC Viewer rel. 3.00.02 is a component of CommServer 4.00.02</para>
+          </listItem>
+          <listItem>
+            <para>Small improvements and bug fixes</para>
           </listItem>
         </list>
       </content>
