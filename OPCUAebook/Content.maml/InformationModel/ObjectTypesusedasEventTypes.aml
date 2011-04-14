@@ -230,7 +230,11 @@
       <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#BrowseName">BrowseName attribute</link>
       <link xlink:href="467e8ac2-46d8-4758-8965-a891200787ee#DisplayName">DisplayName attribute</link>
       <link xlink:href="1f82af61-a0d9-4730-8cf1-d93ab765f2d2">Value attribute</link>
-      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
+      <externalLink>
+        <linkText>Using OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>Using OPC UA Address Space Model Designer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm</linkUri>
+      </externalLink>
       <link xlink:href="61bf86cb-8e76-408c-952f-ab6960eb96b8#EventType">EventType</link>
       <link xlink:href="5ed97e29-a505-4050-af5d-8b2c8d80a045#Property">Property</link>
       <link xlink:href="546f49d5-8153-434c-9e74-d7835d7862bc#NodeId">NodeId</link>

@@ -24,7 +24,11 @@
     </para>
     </introduction>
     <relatedTopics>
-      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">Getting Started</link>
+      <externalLink>
+        <linkText>Using OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>Using OPC UA Address Space Model Designer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm</linkUri>
+      </externalLink>
       <link xlink:href="f1cff0ba-a492-4eea-ad99-c4acbcb60808">Namespaces folder</link>
     </relatedTopics>
   </developerConceptualDocument>

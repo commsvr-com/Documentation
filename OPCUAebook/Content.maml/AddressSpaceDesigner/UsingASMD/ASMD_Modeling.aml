@@ -127,7 +127,11 @@
       </content>
     </section>
     <relatedTopics>
-      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">Getting started</link>
+      <externalLink>
+        <linkText>Using OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>Using OPC UA Address Space Model Designer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm</linkUri>
+      </externalLink>
       <link xlink:href="f9f6641e-0f03-443a-b7b9-8c34aecfdb40">Sample solution - Boiler model</link>
     </relatedTopics>
   </developerConceptualDocument>

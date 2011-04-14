@@ -55,7 +55,11 @@
     <!-- <security>Optional discussion of security issues.</security> -->
     <relatedTopics>
       <link xlink:href="7e21ba07-c79c-48e0-a034-c4310ee2a5b4"/>
-      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493"/>
+      <externalLink>
+        <linkText>Using OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>Using OPC UA Address Space Model Designer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm</linkUri>
+      </externalLink>
       <!-- One or more of the following:
            - A local link
            - An external link
