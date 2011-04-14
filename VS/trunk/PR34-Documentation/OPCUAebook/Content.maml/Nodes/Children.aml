@@ -41,7 +41,11 @@
     <!-- </section> -->
     <relatedTopics>
       <externalLink><linkText>Node Model</linkText><linkAlternateText>Node Model</linkAlternateText><linkUri>http://www.commsvr.com/UAModelDesigner/html/69856d11-e274-48c1-87d7-bbc7ec5e6e18.htm</linkUri></externalLink>
-      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493" />
+      <externalLink>
+        <linkText>Using OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>Using OPC UA Address Space Model Designer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm</linkUri>
+      </externalLink>
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

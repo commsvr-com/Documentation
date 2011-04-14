@@ -88,6 +88,25 @@
         </para>
       </content>
     </section>
+    <section address="CASOnlineHelp">
+      <title>Online help</title>
+      <content>
+        <para>
+          <externalLink>
+            <linkText>OPC UA Address Space Model Designer - product help</linkText>
+            <linkAlternateText>OPC UA Address Space Model Designer - product help</linkAlternateText>
+            <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/a2d55988-b59a-4a87-95b9-933f6bbdf5bd.htm</linkUri>
+          </externalLink>
+        </para>
+        <para>
+          <externalLink>
+            <linkText>CommServer UA - product help</linkText>
+            <linkAlternateText>CommServer UA - product help</linkAlternateText>
+            <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/ec4ecefe-2d13-4ed9-af36-72152ff597f3.htm</linkUri>
+          </externalLink>
+        </para>
+      </content>
+    </section>
     <section address="CASMainProducts">
       <title>Main products and services</title>
       <content>

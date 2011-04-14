@@ -66,7 +66,11 @@
     </section>
     <relatedTopics>
       <link xlink:href="8880dab5-b615-4716-aadd-f6adc3ba74d3">Nodes classes</link>
-      <link xlink:href="a2d66e41-32df-404d-99bb-f4e495891493">Getting started</link>
+      <externalLink>
+        <linkText>Using OPC UA Address Space Model Designer</linkText>
+        <linkAlternateText>Using OPC UA Address Space Model Designer</linkAlternateText>
+        <linkUri>http://www.commsvr.com/OPC-Help/Index.aspx?topic=html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm</linkUri>
+      </externalLink>
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
