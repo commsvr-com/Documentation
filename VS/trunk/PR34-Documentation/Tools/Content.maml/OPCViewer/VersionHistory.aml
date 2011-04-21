@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="5c1dab43-551c-406f-a893-e5b662265981" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="VersionHistory">
+      <title>OPC Viewer - Version History</title>
+      <content>
+        <alert>
+          <para>
+            Download latest version of <externalLink>
+              <linkText>OPC Viewer</linkText>
+              <linkAlternateText>OPC Viewer</linkAlternateText>
+              <linkUri>http://www.commsvr.com/tabid/269/language/en-US/Default.aspx</linkUri>
+            </externalLink>
+          </para>
+        </alert>
+      </content>
+    </section>
+    <section address="rel_3_10_00">
+      <title>Version 3.10.00</title>
+      <content>
+        <para>Monday, April 04, 2011</para>
+        <list class="bullet">
+          <listItem>
+            <para>Some improvements to the user interface.</para>
+          </listItem>
+          <listItem>
+            <para>Improved licensing management.</para>
+          </listItem>
+          <listItem>
+            <para>Improved support for Windows Vista, 7 and 2008.</para>
+          </listItem>
+          <listItem>
+            <para>New location (based on ALLUSERSPROFILE) of configuration and log files (see product manual for details).</para>
+          </listItem>
+          <listItem>
+            <para>Some issues during installation / uninstallation are fixed.</para>
+          </listItem>
+          <listItem>
+            <para>Small bugfixes and improvements.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_3_00_02">
+      <title>Version 3.00.02</title>
+      <content>
+        <para>Friday, October 30, 2009</para>
+        <list class="bullet">
+          <listItem>
+            <para>Tested for Compliance and Interoperability at OPC Interoperability Workshop (2009) in Nuremberg, Germany</para>
+          </listItem>
+          <listItem>
+            <para>OPC Viewer is now more informative; diagnostic information is stored in the log file and displayed on the Debug tab. The Debug tab displays information about the connection status and errors or warning information.</para>
+          </listItem>
+          <listItem>
+            <para>Sorting of the items in the subscription window is now available</para>
+          </listItem>
+          <listItem>
+            <para>Many improvements and minor bug fixes</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="rel_2_60_02">
+      <title>Version 2.60.02</title>
+      <content>
+        <para>Wednesday, September 16, 2009</para>
+        <list class="bullet">
+          <listItem>
+            <para>DataPorter service tool strip added to the menu. DataPorter has now the ability to run as Windows service. Nobody has to be logged in to run DataPorter. DataPorter as ordinary service can be configured to start automatically, run on a particular account, no interaction with a desktop is required</para>
+          </listItem>
+          <listItem>
+            <para>Online help references added</para>
+          </listItem>
+          <listItem>
+            <para>Some minor bugfixes and improvements</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

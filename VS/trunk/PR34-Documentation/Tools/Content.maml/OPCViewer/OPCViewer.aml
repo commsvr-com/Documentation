@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="7b918a83-2386-43a2-badf-adbb1613c413" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+      <section address="OPCViewerSimpleAndEasyOPCDAClient">
+          <title>OPC Viewer - Simple and Easy OPC DA Client</title>
+          <content>
+              <para>This free software tool is very usefull for developers, testers, integrators, and others using OPC. CommServer OPC Viewer is a free utility used to help in test and troubleshoot OPC servers and connections.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">OPC Viewer</caption>
+              <image placement="center" xlink:href = "5154f500-0d1b-4e48-a5bd-11ca5d646ff6"/>
+            </mediaLink>
+            <para>CommServer OPC Viewer is a full featured OPC client designed to help during installation, testing, and configuration of OPC Data Access compliant servers. This tool is included as standalone or in the other software packages for free.</para>
+          </content>
+      </section>
+    <relatedTopics>
+      <link xlink:href="5c1dab43-551c-406f-a893-e5b662265981" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
