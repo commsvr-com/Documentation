@@ -50,12 +50,22 @@
           <logoFile filename="\\CAS_002\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" />
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Base path for relative filenames in source attributes
-                 (optional) --><basePath value="{@HtmlEncProjectFolder}" /><!-- Connect to language filter (optional).  If omitted,
-                 language filtering is enabled by default. --><languageFilter value="true" /><!-- Allow missing source files (Optional).  If omitted,
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Base path for relative filenames in source attributes
+                 (optional) -->
+          <basePath value="{@HtmlEncProjectFolder}" />
+          <!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. -->
+          <languageFilter value="true" />
+          <!-- Allow missing source files (Optional).  If omitted,
                  it will generate errors if referenced source files
-                 are missing. --><allowMissingSource value="false" /><!-- Remove region markers from imported code blocks.  If omitted,
-                 region markers in imported code blocks are left alone. --><removeRegionMarkers value="false" /><!-- Code colorizer options (required).
+                 are missing. -->
+          <allowMissingSource value="false" />
+          <!-- Remove region markers from imported code blocks.  If omitted,
+                 region markers in imported code blocks are left alone. -->
+          <removeRegionMarkers value="false" />
+          <!-- Code colorizer options (required).
                  Attributes:
                     Language syntax configuration file (required)
                     XSLT style file (required)
@@ -65,7 +75,11 @@
                     Enable outlining (optional)
                     Keep XML comment "see" tags within the code (optional)
                     Tab size override (optional, 0 = Use syntax file setting)
-                    Use language name as default title (optional) --><colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" /></component></ComponentConfig></ComponentConfigurations>
+                    Use language name as default title (optional) -->
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="HelpTopicsGenerator" enabled="True" xmlns="">
         <configuration />
@@ -114,15 +128,15 @@
     <Folder Include="Tools\" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Tools\Graphics\OPCViewer\OPCViewer.jpg">
-      <ImageId>5154f500-0d1b-4e48-a5bd-11ca5d646ff6</ImageId>
-      <AlternateText>OPC Viewer</AlternateText>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="Tools\Graphics\OPCUAViewer\OPCUAViewer.jpg">
       <ImageId>69aba819-d44b-404b-b5d4-7f079faed9cd</ImageId>
       <AlternateText>OPC UA Viewer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Tools\Graphics\OPCViewer\OPCViewer.jpg">
+      <ImageId>5154f500-0d1b-4e48-a5bd-11ca5d646ff6</ImageId>
+      <AlternateText>OPCViewer</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="2ce6a72a-2eb5-455e-b06e-915b49f165e3" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+      <section address="OPCUAViewer">
+          <title>OPC UA Viewer - OPC Unified Architecture client</title>
+          <content>
+              <para>CommServer OPC UA Viewer is a free OPC Unified Architecture (OPC UA) client. It allows integrators, developers, testers and all other users to easily connect to any OPC UA server, read data from the server, browse model structure according to references and much more! OPC UA Viewer is an ideal solution for automatic testing of connection with the OPC UA server using different communication protocols and using many different data transition security modes.</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">OPC UA Viewer</caption>
+              <image placement="center" xlink:href = "69aba819-d44b-404b-b5d4-7f079faed9cd"/>
+            </mediaLink>
+          </content>
+      </section>
+    <relatedTopics>
+      <link xlink:href="0809cf3e-c746-44d1-94fd-fe7858295184" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
