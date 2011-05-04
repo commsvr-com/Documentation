@@ -52,6 +52,7 @@
           <Topic id="928a3094-69de-4996-9aa6-6cb0b0e28845" visible="True" title="Attributes" tocTitle="Attributes" linkText="Attributes" />
           <Topic id="d0df531f-eed5-4e70-ae9c-971fc1116ffe" visible="True" title="References" tocTitle="References" linkText="References" />
           <Topic id="12cbf21e-4432-4db0-9514-3e720350af96" visible="True" title="Process Data and Metadata" tocTitle="Process Data and Metadata" linkText="Process Data and Metadata" />
+          <Topic id="38fca5ab-d8eb-42c7-a950-42526b45950e" visible="True" title="Model verification in ASMD" tocTitle="Model verification in ASMD" linkText="Model verification in ASMD" />
         </Topic>
         <Topic id="0e011a3e-670e-4722-a4c1-ffdfa4180a9c" visible="True" title="OPC UA Graphical Notation" tocTitle="OPC UA Graphical Notation" linkText="OPC UA Graphical Notation" />
         <Topic id="853241bd-1da3-4f47-bc57-9ee61c833dfd" visible="True" title="Model tree" tocTitle="Model tree" linkText="Model tree">
@@ -94,6 +95,7 @@
         <Topic id="db4c065d-d247-4638-99af-ed7214e96125" visible="True" title="Custom editors" tocTitle="Custom editors" linkText="Custom editors">
           <Topic id="deeeaaba-395a-4d8c-bdcc-6fd08460d8b3" visible="True" title="StateMachine Editor" tocTitle="StateMachine Editor" linkText="StateMachine Editor" />
         </Topic>
+        <Topic id="46d07028-df45-4c0a-9125-bbee852e455d" visible="True" title="Coupled Nodes" tocTitle="Coupled Nodes" linkText="Coupled Nodes" />
       </Topic>
       <Topic id="420d7d38-cc1d-4de2-8718-0b5bb9222088" visible="True" title="Model Build" tocTitle="Model Build" linkText="Model Build">
         <Topic id="d3eb7c84-990a-42bb-84a0-92328923bd98" visible="True" title="How to build the solution" tocTitle="How to build the solution" linkText="How to build the solution" />

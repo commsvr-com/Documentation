@@ -45,13 +45,19 @@
   -->
   <ItemGroup>
     <None Include="About.aml" />
-    <None Include="AddressSpaceDesigner.aml" />
-    <None Include="AddressSpaceDesigner\GettingStarted.aml" />
+    <None Include="AddressSpaceDesigner.aml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AddressSpaceDesigner\GettingStarted.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="AddressSpaceDesigner\GettingStarted\BoilerModel.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\HowToChangeModelCompilerTool.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\HowToCreateUaWrapper.aml" />
     <None Include="AddressSpaceDesigner\GettingStarted\HowToOpenSampleSolution.aml" />
-    <None Include="AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml" />
+    <None Include="AddressSpaceDesigner\GettingStarted\ProcessDataBindingWalkthrough.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="AddressSpaceDesigner\GettingStarted\SampleSolution.aml" />
     <None Include="AddressSpaceDesigner\Menus.aml" />
     <None Include="AddressSpaceDesigner\NodesClasses.aml" />
@@ -82,7 +88,9 @@
     <None Include="DataAccess.aml" />
     <None Include="Discovery.aml" />
     <None Include="General References.aml" />
-    <None Include="GettingStarted.aml" />
+    <None Include="GettingStarted.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="HistoricalAccess.aml" />
     <None Include="InformationModel\BaseObjectType.aml" />
     <None Include="InformationModel\Designdecisionswhenmodellingtheserverinformation.aml" />
@@ -199,7 +207,9 @@
     <None Include="UAAddressSpace\VariableType.aml" />
     <None Include="UAAddressSpace\ViewNodeClasses.aml" />
     <None Include="UAOverview.aml" />
-    <None Include="UA_Glossary.aml" />
+    <None Include="UA_Glossary.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="UserInterface.aml" />
     <None Include="Welcome.aml" />
   </ItemGroup>

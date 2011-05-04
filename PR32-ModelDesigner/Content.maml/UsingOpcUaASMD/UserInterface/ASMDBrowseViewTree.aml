@@ -11,6 +11,11 @@
               <caption placement="after" lead="Figure 1">Model view, browse view and OPC UA client</caption>
               <image placement="center" xlink:href = "15658c30-22d3-4dc6-986c-50e663c555f5"/>
           </mediaLink>
+        <para>As far as model verification is concerned it is important that Browse View offers an alternative (to OPC Foundation’s Model Compiler) model compilation procedure. If any error occurs during compilation special error nodes are created (see figure be-low):</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Error in the model</caption>
+          <image placement="center" xlink:href = "04f56ad0-2853-4074-88c0-b8de988b814e"/>
+        </mediaLink>
       </content>
     </section>
     <relatedTopics>

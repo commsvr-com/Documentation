@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="38fca5ab-d8eb-42c7-a950-42526b45950e" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="ModelVerificationInOPCUAAddressSpaceModelDesigner">
+      <title>Model verification in OPC UA Address Space Model Designer</title>
+      <content>
+        <para>The available model verification options are:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Build of the solution – if the solution builds without any errors the model is correct. See: <link xlink:href="420d7d38-cc1d-4de2-8718-0b5bb9222088" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>Browse View – a user can check if any error occurs during model build by browsing the model and investigating “error nodes”. See: <link xlink:href="e4cc84aa-0898-4c04-83ef-00d1c77d28ae" />
+          </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
