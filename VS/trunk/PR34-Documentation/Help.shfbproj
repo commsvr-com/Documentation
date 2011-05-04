@@ -905,6 +905,10 @@
       <ImageId>d56fe7a7-800e-4756-8d8d-63044738d06c</ImageId>
       <AlternateText>click on “Request for license” button</AlternateText>
     </Image>
+    <Image Include="Tools\Graphics\OPCViewer\OPCViewer.jpg">
+      <ImageId>5154f500-0d1b-4e48-a5bd-11ca5d646ff6</ImageId>
+      <AlternateText>OPC Viewer</AlternateText>
+    </Image>
     <Content Include="OPCUAebook\Graphics\sponsors_logos\cas_logo_big.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_SolutionProjectsLibraries.jpg" />
     <Content Include="OPCUAebook\Graphics\AddressSpaceDesigner\UsingASMD\ASMD_references.jpg" />
@@ -3363,12 +3367,6 @@
     <Folder Include="Tools\Content.maml\OPCViewer\" />
     <Folder Include="Tools\Content.maml\" />
     <Folder Include="Tools\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Tools\Graphics\OPCViewer\OPCViewer.jpg">
-      <ImageId>5154f500-0d1b-4e48-a5bd-11ca5d646ff6</ImageId>
-      <AlternateText>OPC Viewer</AlternateText>
-    </Image>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Tools\Graphics\OPCUAViewer\OPCUAViewer.jpg">

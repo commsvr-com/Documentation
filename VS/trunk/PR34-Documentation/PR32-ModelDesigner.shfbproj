@@ -97,14 +97,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <ItemGroup>
-    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
-      <SortOrder>2</SortOrder>
-    </ContentLayout>
     <ContentLayout Include="PR32-ModelDesigner_ContentLayout.content">
       <SortOrder>1</SortOrder>
     </ContentLayout>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ModelVerificationInASMD.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\CoupledNodes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\CoupledNodes.aml].aml" />
     <None Include="PR32-ModelDesigner\Content.maml\76d71a41-245b-4e69-ac04-f305d6c7ff7e.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\ModelNodes\Objects\ASMDParameter.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\ASMDVersionHistory.aml" />
@@ -1027,6 +1027,24 @@
     <Image Include="PR32-ModelDesigner\Graphics\ExportedModelDocumentation.jpg">
       <ImageId>8a8c53a8-15e9-4440-9f33-db810eedfccd</ImageId>
       <AlternateText>Exported Model Documentation</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\PossibilityToConfigureDataBinding.jpg">
+      <ImageId>a046dee6-1b02-4ca8-98ba-a262a459d44a</ImageId>
+      <AlternateText>Possibility To Configure Data Binding</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\star.jpg">
+      <ImageId>0351820d-f4bc-4d0b-901e-6fcf84ae48d7</ImageId>
+      <AlternateText>star</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\UserInterface\ErrorInTheModel.jpg">
+      <AlternateText>Error In The Model</AlternateText>
+      <ImageId>04f56ad0-2853-4074-88c0-b8de988b814e</ImageId>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
