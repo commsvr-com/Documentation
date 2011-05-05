@@ -1453,6 +1453,18 @@
       <AlternateText>Demo Configuration</AlternateText>
       <ImageId>0ED807DD-C5FC-4148-9EA4-71B637381592</ImageId>
     </Image>
+    <Image Include="PR26-DataPorter\Graphics\QueueInterface.jpg">
+      <ImageId>d31586f1-75de-4198-b664-7984bec78726</ImageId>
+      <AlternateText>Queue Interface</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\BufferedReadExampleSequence.jpg">
+      <ImageId>4f236b51-72f6-443a-93c2-958da79f81aa</ImageId>
+      <AlternateText>Buffered Read Example Sequence</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\ExampleConfiguration.jpg">
+      <ImageId>ca6155ee-83bf-4e28-8216-025d2a5b3dbe</ImageId>
+      <AlternateText>Example Configuration</AlternateText>
+    </Image>
     <Image Include="PR30-OPCViewer\Graphics\opcviewer_transactioneditor_sampletransaction.jpg">
       <AlternateText>OPC Viewer Sample Transaction</AlternateText>
       <ImageId>E76D02D1-BE9F-4add-B1B4-64C05AB86B46</ImageId>
@@ -3332,7 +3344,7 @@
       <AlternateText>Exported Model Documentation</AlternateText>
     </Image>
   </ItemGroup>
-	<ItemGroup>
+  <ItemGroup>
     <Image Include="PR32-ModelDesigner\Graphics\UsingASMD\OpcUaModeling\PossibilityToConfigureDataBinding.jpg">
       <ImageId>a046dee6-1b02-4ca8-98ba-a262a459d44a</ImageId>
       <AlternateText>Possibility To Configure Data Binding</AlternateText>
@@ -3371,6 +3383,9 @@
     </ContentLayout>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\CoupledNodes.aml" />
+    <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ModelVerificationInASMD.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\BufferedQueuesInterface.aml" />
     <None Include="Tools\Content.maml\OPCUAViewer\VersionHistory.aml" />
     <None Include="Tools\Content.maml\OPCUAViewer\OPCUAViewer.aml" />
     <None Include="Tools\Content.maml\OPCViewer\VersionHistory.aml" />

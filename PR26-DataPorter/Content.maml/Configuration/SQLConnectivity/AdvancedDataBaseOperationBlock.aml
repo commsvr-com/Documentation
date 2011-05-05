@@ -97,6 +97,115 @@
         </list>
       </content>
     </section>
+    <section address="DataBaseOperationDrivenByDataFromOPCServer">
+      <title>DataBase operation driven by data from OPC Server</title>
+      <content>
+        <para>Database operations in DataPorter support also a scenario when communication with database can be enabled or disabled by other conditions, for example a value of an item read from OPC Server. </para>
+        <para>The following configuration shows such situation. It is based on a default CommServer configuration.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Example configuration</caption>
+          <image placement="center" xlink:href = "ca6155ee-83bf-4e28-8216-025d2a5b3dbe"/>
+        </mediaLink>
+        <para>In this example the DataPorter reads a value of the OPC tag PLC/R/100. This value  is inserted to the DB READ block in which we check if PLC/R/100 equals 1. If it is true the DataPorter inserts values taken from the database (using query: SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc) to the following variables:</para>
+        <list class="nobullet">
+          <listItem>
+            <para>PLC/R/101</para>
+          </listItem>
+          <listItem>
+            <para>PLC/R/102</para>
+          </listItem>
+          <listItem>
+            <para>PLC/R/102</para>
+          </listItem>
+        </list>
+        <para>
+          The DB READ operation configuration is shown below (the text between <![CDATA[“<!--" and “-->”]]> is a comment):
+        </para>
+        <code language="xml" >
+          <![CDATA[
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- such text is comment -->
+<Param>
+<operationopc name="opc" type="assign">
+<input name="0:value"></input>
+<!--value of input 0 is inserted to the acumulator-->
+</operationopc>
+<operationif name="if" type="and">
+<reset value="none"></reset>
+<equal value="1"></equal>
+<stop value="false"></stop>
+</operationif>
+<!-- operation DB definition, it contains information about the database provider and the connection string (one of the definition is commented to show the difference between attaching the SQLserver hosted database or the file.
+object "operationdb" indicates the it is operation on the database, (it is possible to have many "operationdb" definitions inside one "Param"). name attribute indicate the right data base provider (ORACLE, OLEDB, ODBC, MSSQL); in this example it is oracle. The next parameter is connection string, this string contains all necessary information that are required to connect to the database; the syntax depends on the database provider (more details at:http://msdn.microsoft.com). In this walkthrough user id: has value: scott, data source=orcl (the name of the serviced configured above), password: tiger (because password is inside quotations we have to use &quot;).
+-->
+<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteScalar" async="false">
+<!-- command: in the command object there is definition of query parts; here we have: SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc , which is the the query. 
+Structure of the DataBase: 
+CREATE TABLE OPCDataTable
+(
+[timestamp] [datetime] NOT NULL,
+[name] [nchar](255) NOT NULL,
+[opcvalue] [float] NULL,
+[opcquality] [nchar](20) NULL
+)
+-->
+<command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
+</operationdb>
+<operationopc name="opc" type="write">
+<output name="0"></output>
+<!--value of acumulator is written to output 0 -->
+</operationopc>
+<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteScalar" async="false">
+<command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
+</operationdb>
+<operationopc name="opc" type="write">
+<output name="1"></output>
+<!--value of acumulator is written to output 0 -->
+</operationopc>
+<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteScalar" async="false">
+<command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
+</operationdb>
+<operationopc name="opc" type="write">
+<output name="2"></output>
+<!--value of accumulator is written to output 0 -->
+</operationopc>
+</Param>
+]]>
+        </code>
+        <para>To understand what is happening, take a look at the following code:</para>
+        <code language="xml">
+          <![CDATA[
+<operationopc name="opc" type="assign">
+<input name="0:value"></input>
+<!--value of input 0 is inserted to the accumulator-->
+</operationopc>
+]]>
+        </code>
+        <para>The code above instructs the DataPorter to take a value from input 0 to the accumulator. Then a value comparison occurs:</para>
+        <code language="xml">
+          <![CDATA[
+<operationif name="if" type="and">
+<reset value="none"></reset>
+<equal value="1"></equal>
+<stop value="false"></stop>
+</operationif>
+        ]]>
+        </code>
+        <para>In the code above the comparison of the value from the accumulator is made. The "and" is a connective between elements, so:</para>
+        <list class="bullet">
+          <listItem>
+            <para>reset - deletes all earlier comparison results (it should be set at the beginning of every comparison)</para>
+          </listItem>
+          <listItem>
+            <para>equal value="1" - checks if the value in the accumulator equals 1</para>
+          </listItem>
+          <listItem>
+            <para>stop value="false" - if the value is false (value in the accumulator is different then 1) we set a request that the transaction is stopped </para>
+          </listItem>
+        </list>
+        <para>Then, every operation (OperationDB) automatically checks if the Stop request is set and if not - the operation is executed.</para>
+      </content>
+    </section>
     <relatedTopics>
     </relatedTopics>
   </developerConceptualDocument>

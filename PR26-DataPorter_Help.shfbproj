@@ -134,6 +134,8 @@
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\FAQ.aml" />
     <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\BufferedQueuesInterface.aml" />
+    <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\BufferedQueues Interface.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
     <None Include="PR26-DataPorter\Content.maml\06b9e959-6bf3-4fc5-a40d-1adee7f34259.aml" />
     <None Include="PR26-DataPorter\Content.maml\UsingDataPorter\StartingStoppingandCheckingTheDataPorterStatus.aml" />
@@ -388,6 +390,18 @@
     <Image Include="PR30-OPCViewer\Graphics\ico\Network_ConnectTo.png">
       <AlternateText>OPC Connect</AlternateText>
       <ImageId>853B89FE-4D10-4df9-81D1-311253CC5D27</ImageId>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\QueueInterface.jpg">
+      <ImageId>d31586f1-75de-4198-b664-7984bec78726</ImageId>
+      <AlternateText>Queue Interface</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\BufferedReadExampleSequence.jpg">
+      <ImageId>4f236b51-72f6-443a-93c2-958da79f81aa</ImageId>
+      <AlternateText>Buffered Read Example Sequence</AlternateText>
+    </Image>
+    <Image Include="PR26-DataPorter\Graphics\ExampleConfiguration.jpg">
+      <ImageId>ca6155ee-83bf-4e28-8216-025d2a5b3dbe</ImageId>
+      <AlternateText>Example Configuration</AlternateText>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
     <Content Include="YouTube.html" />
@@ -845,9 +859,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
-      <SortOrder>2</SortOrder>
-    </ContentLayout>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content">
       <SortOrder>1</SortOrder>
     </ContentLayout>
