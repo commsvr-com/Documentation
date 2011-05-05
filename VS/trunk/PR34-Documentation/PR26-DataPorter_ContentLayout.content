@@ -567,6 +567,7 @@
             <HelpKeyword index="K" term="Properties editing" />
           </HelpKeywords>
         </Topic>
+        <Topic id="ffd0271b-d16b-45d2-b3b4-264ee4554607" visible="True" title="Buffered Queues Interface" tocTitle="Buffered Queues Interface" linkText="Buffered Queues Interface" />
       </Topic>
     </Topic>
     <Topic id="b3f0fa92-aec3-4555-a2ed-f5f674a648b7" visible="True" title="Using DataPorter" tocTitle="Using DataPorter" linkText="Using DataPorter">

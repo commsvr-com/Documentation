@@ -59,6 +59,7 @@
     <None Include="Configuration\TransactionAndOperation\ListOfAvailableOperations.aml" />
     <None Include="Configuration\TransactionAndOperation\TransactionAndOperationConfiguration.aml" />
     <None Include="Configuration\WebServiceConectivity.aml" />
+    <None Include="Configuration\WebServiceConectivity\BufferedQueuesInterface.aml" />
     <None Include="Configuration\WebServiceConectivity\ItemDescriber.aml" />
     <None Include="Configuration\WebServiceConectivity\ServiceDebugging.aml" />
     <None Include="Configuration\WebServiceConectivity\ServiceDescription.aml" />

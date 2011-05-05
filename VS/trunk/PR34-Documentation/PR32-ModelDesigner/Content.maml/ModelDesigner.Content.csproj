@@ -130,7 +130,9 @@
     <None Include="UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDNavigateToolbar.aml" />
     <None Include="UsingOpcUaASMD\OpcUaModeling\ModelTree\ASMDSearchToolbar.aml" />
     <None Include="UsingOpcUaASMD\OpcUaModeling\ObjectsManagement\ASMDObjectsManagement.aml" />
-    <None Include="UsingOpcUaASMD\UserInterface\ASMDBrowseViewTree.aml" />
+    <None Include="UsingOpcUaASMD\UserInterface\ASMDBrowseViewTree.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="UsingOpcUaASMD\UserInterface\ASMDHelpPanel.aml" />
     <None Include="UsingOpcUaASMD\UserInterface\ASMDMemuView.aml" />
     <None Include="UsingOpcUaASMD\UserInterface\ASMDMenuEdit.aml" />
