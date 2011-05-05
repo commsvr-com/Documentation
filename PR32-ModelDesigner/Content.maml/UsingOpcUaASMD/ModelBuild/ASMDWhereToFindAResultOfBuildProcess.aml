@@ -25,16 +25,22 @@
                   <para>CAS.UA.Server.Demo.NodeSet.xml - model nodes represented as an XML file</para>
               </listItem>
               <listItem>
-                  <para>CAS.UA.Server.Demo.PredefinedNodes.uanodes - model predefined nodes in binary representation</para>
+                  <para>CAS.UA.Server.Demo.PredefinedNodes.uanodes - model predefined nodes in binary representation, used to instantiate the address space</para>
               </listItem>
               <listItem>
-                  <para>CAS.UA.Server.Demo.PredefinedNodes.xml - model predefined nodes in XML representation</para>
+                  <para>CAS.UA.Server.Demo.PredefinedNodes.xml - model predefined nodes in XML representation, used to instantiate the address space</para>
+                <alert>
+                  <para>PredefinedNodes.xml contains the same information as PredefinedNodes.uanodes; the only difference is serialization: XML or binary</para>
+                </alert>
               </listItem>
               <listItem>
                   <para>CAS.UA.Server.Demo.Types.xsd - XSD for model types</para>
               </listItem>
               <listItem>
                   <para>CAS.UA.Server.Demo.Types.bsd - schemas used in the model</para>
+                <alert>
+                  <para>Model Compiler produces many files, however to implement a server you do not need the whole set. You have to choose files that best suit your needs (e.g. CommServer requires only CSV and PredefinedNodes.uanodes) </para>
+                </alert>
               </listItem>
           </list>
       </content>

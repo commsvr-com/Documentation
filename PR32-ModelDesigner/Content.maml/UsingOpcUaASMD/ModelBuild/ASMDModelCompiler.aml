@@ -28,16 +28,17 @@
               <para>-? Prints this help text</para>
               <para>-d The path to the XML file which contains the UA information model</para>
               <para>-d2 The path to the XML file which contains the UA information model. New version of code generator is used (option -stack forces to use -d2 switch)</para>
-              <para>-c The path to the CSV file which contains unique identifiers for the types defined in the UA information model</para>
+              <para>-c Path to the CSV file which contains unique identifiers for the types defined in the UA information model</para>
               <para>-cg Generates the unique identifier CSV file instead of reading it (used instead of the -c option)</para>
-              <para>-o The output directory (used instead of the -oi and -oe options)</para>
-              <para>-oi The output directory for the classes used by the server</para>
-              <para>-oe The outpur directory for classes that can be used by a client or a server (i.e. datatypes)</para>
+              <para>-o Output directory (used instead of the -oi and -oe options)</para>
+              <para>-oi Output directory for the classes used by the server</para>
+              <para>-oe Output directory for classes that can be used by a client or a server (i.e. datatypes)</para>
+            <para>-o2 Analogy to –oe but enforces splitting of generated C# files</para>
               <para>-id The start identifier</para>
               <para>-ansic</para>
               <para>-stack</para>
               <para>-useXmlInitializers</para>
-              <para>-console The output goes to the standard error output (console) instead of error window</para>
+              <para>-console The output goes to the standard error output (console) instead of error window </para>
           </content>
       </section>
       <section address="Verification">
