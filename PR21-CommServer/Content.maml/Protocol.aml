@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8b586f8f-6dad-43e6-8b9e-56e5d713fa34" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Protocol">
+      <title>Protocol</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Protocol</legacyItalic>
+          </legacyBold> – a communication protocol (a kind of language) which is used for communication with remote devices. An unlimited number of communication protocols can be selected for each channel.
+        </para>
+        <para>Protocol configuration window is on a figure 2 (below):</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Protocol window</caption>
+          <image placement="center" xlink:href = "bff58d37-aaf0-4fa2-92ea-76457752a5e5"/>
+        </mediaLink>
+        <para>To configure the DataProvider click the button with "...". The DataProvider configuration window, which appears, is on a figure 3. To accept the chosen protocol: click OK button.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">DataProvider configuration window</caption>
+          <image placement="center" xlink:href = "e4927f49-2da6-4559-98af-10da069d2a57"/>
+        </mediaLink>
+        <para>Configuration of the particular protocols is described in those topics:</para>
+        <list address="ProtocolList" class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href ="998872e0-7f6c-45b0-ab3a-ba2dd6de0373">MBUS</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href ="fbb931d4-5f2b-4368-a78b-45d713fdc684">SBUS RS</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href ="08f7c3a4-0f76-4de5-a067-f471e3d84200">SBUS IP</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href ="1b9d7777-99cc-4059-a57f-124a4d81b498">MODBUS RS</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href ="a8c2de7c-5c00-4835-9b36-62bddfeb54be">MODBUS IP</link>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="346f308f-9834-4e33-a7db-5853ec7fc621" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="BitsDefinition">
+      <title>Bits definition</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Bits definition</legacyItalic>
+          </legacyBold> - an additional functionality that allows you to automatically divide the register into separate bits. You have to define:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>BitNumber</legacyItalic> - indicates the specified bit in the register that should be used to calculate the value
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> - human readable name, that will be used as the OPC tag name
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">Bit definition settings</caption>
+              <image placement="center" xlink:href = "f2848c74-eee0-47a1-b1a5-77efd5b5c27c"/>
+            </mediaLink>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a2398233-930a-4196-90cb-0c0bfe8fd914" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Blocks">
+      <title>Blocks</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Blocks</legacyItalic>
+          </legacyBold> - Blocks are defined within the group.
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Blocks window</caption>
+          <image placement="center" xlink:href = "0FB0E31F-1240-4465-8167-B7571F2BE113"/>
+        </mediaLink>
+        <para>The following parameters are defined for the Blocks:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Address</legacyItalic> - the first address of the address space which contains all process variables (coils, inputs, registers,  timers, etc.)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>DataType</legacyItalic> - data type (interpretation depends on the protocol or the device in use), e.g. Flags, Inputs, Outputs, Registers, Timers, Counters. Please select the data type from the dropdown list.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> - human readable name
+            </para>
+          </listItem>
+
+          <listItem>
+            <para>
+              <legacyItalic>Tags</legacyItalic> - Collection of tags makes up a block. Each tag represents one process variable usually stored in a controller register. First tag has address set up in the block definition. All tags fills up consecutive adderss space - are adjacent.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>AddressEnd</legacyItalic> - Maximal start address in the selected address space.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>AddressStart</legacyItalic> - Minimal start address in the selected address space.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

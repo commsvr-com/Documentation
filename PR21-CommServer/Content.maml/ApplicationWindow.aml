@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1c397a61-44aa-45ae-8b7a-a94984c84dc9" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="ApplicationWindow">
+      <title>Application Window</title>
+      <content>
+        <para>On upper left-hand side of the window there is a standard toolbar containing the following options: File, Edit, View, Tools and Help. Below the tool bar, there are additional icons which allows user direct access to some helpful options. On the left-hand side the user can find structural scheme of the configuration; the structure is showed as a tree and you can navigate though the elements of the tree like in Windows Explorer (operations like copy, cut, paste, move, add are possible; please click on the right mouse button to select proper operation from the contents menu). The user can choose here between three modes: Channels, Stations and Channels and Stations. In the sub-window on the right-hand side there are displayed parameters of the objects (Channel, Station, etc.) in the left sub-window.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Application Window</caption>
+          <image placement="center" xlink:href = "6ea9e52d-7aa2-4aa0-b13d-59d164ce2678"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

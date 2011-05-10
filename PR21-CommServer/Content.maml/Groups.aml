@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f3617314-cf2a-47da-8222-f3c35ab70930" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Groups">
+      <title>Groups</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Groups </legacyItalic>
+          </legacyBold> – any group is a set of process variables for which common scanning rules are defined :
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> – human readable name for the group
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">Groups window</caption>
+              <image placement="center" xlink:href = "8c749ec5-cfdc-4924-8c57-23dc4240e959"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeOut</legacyItalic> - maximal time, which can elapse between two consecutive data refreshments without changing the quality. After expiration thereof the server will change the quality of all tags belonging to the group to BAD. This parameter is in force if the scan mode is NORMAL.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeOutFast</legacyItalic> - maximal time, which can elapse between two consecutive data refreshments without changing the quality. After expiration thereof the server will change the quality of all tags belonging to the group to BAD. This parameter is in force if the scan mode is FAST.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeScan</legacyItalic> - frequency of scanning this group (when NORMAL scanning is enabled)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeScanFast</legacyItalic> - frequency of scanning this group (when FAST scanning is enabled)
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

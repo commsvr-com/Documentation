@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ebfebe3c-9e6f-4547-bd32-e4334389a333" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Ports">
+      <title>Ports</title>
+      <content>
+        <para>Ports are attributed to subsequent segments. Each station has several communication interfaces (communication ports) that are used to establish the connection and data transfer. Important feature of the port is that only one port from the set of ports that belong to the selected station can be active.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Port window</caption>
+          <image placement="center" xlink:href = "8bf675aa-71cd-4e3d-ad5a-8cb69b19d549"/>
+        </mediaLink>
+        <para>Configuration of any port is as follows:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Address</legacyItalic> - protocol address of the station (e.g. number of  SBUS station).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>InactTime</legacyItalic> - indicates how long the port can stay deactivated.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>InactTimeAFailure</legacyItalic> - indicates how long the port can stay deactivated, when connection in this port is lost.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> – human readable port name, which facilitates identification of the port.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

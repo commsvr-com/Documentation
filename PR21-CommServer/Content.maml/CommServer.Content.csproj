@@ -72,20 +72,30 @@
     <None Include="AppendixB.aml" />
     <None Include="ApplicationInterface.aml" />
     <None Include="ApplicationMenu.aml" />
+    <None Include="ApplicationWindow.aml" />
+    <None Include="BitsDefinition.aml" />
+    <None Include="Blocks.aml" />
     <None Include="BLSFiles.aml" />
+    <None Include="Channel.aml" />
     <None Include="CommServerComponents.aml" />
     <None Include="CommServerConfigurationExample.aml" />
     <None Include="CommServerConfigurationFile.aml" />
     <None Include="CommServerOnX64Systems.aml" />
+    <None Include="CommServerTimeSettingRecommendations.aml" />
     <None Include="Configuration.aml" />
     <None Include="DatabaseStructure.aml" />
+    <None Include="DataOvertime.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="DataProviderDiagnostic.aml" />
     <None Include="DCOMConfigurationExample.aml" />
     <None Include="DiagnosticInformation.aml" />
     <None Include="DiagnosticsAndTroubleshooting.aml" />
+    <None Include="DiagnosticsOfTimeSettingsForSegmentsAndDataGroups.aml" />
     <None Include="EnvironmentMonitoring.aml" />
     <None Include="examplesandtutorials.aml" />
     <None Include="GettingStarted.aml" />
+    <None Include="Groups.aml" />
     <None Include="HowToTestOPCConnection.anl.aml" />
     <None Include="InstallingCommServer.aml" />
     <None Include="Interfaces.aml" />
@@ -95,10 +105,12 @@
     <None Include="ModbusRsConfiguration.aml" />
     <None Include="Multi-dataProviders.aml" />
     <None Include="Multi-pathsRedundancy.aml" />
+    <None Include="OneStationOnOneSegment.aml" />
     <None Include="OPCConnectionTest.aml" />
     <None Include="OPCOverview.aml" />
     <None Include="OptimalTransferAlgorithm.aml" />
     <None Include="OptimizationOfCommunicationPathsUtilization.aml" />
+    <None Include="Ports.aml" />
     <None Include="PortsTab.aml" />
     <None Include="PostInstallationSetup.aml" />
     <None Include="PreparingForTestComputersConfiguration.aml" />
@@ -108,18 +120,26 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Protocol-MediumCouple.aml" />
+    <None Include="Protocol.aml" />
     <None Include="Protocols.aml" />
     <None Include="ProtocolTab.aml" />
     <None Include="RapidDevelopmentKit.aml" />
     <None Include="RealTimeProcessSimulation.aml" />
+    <None Include="RecommendationForSegmentsAndDataGroups.aml" />
+    <None Include="RecommendationsForPortsAndSegments.aml" />
     <None Include="ReportUtility.aml" />
     <None Include="SbusIpConfiguration.aml" />
     <None Include="SbusRsConfiguration.aml" />
     <None Include="ScanSettings.aml" />
+    <None Include="SchemeOfTheExampleStructure.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Segments.aml" />
+    <None Include="SegmentsSettings.aml" />
     <None Include="SegmentsTab.aml" />
     <None Include="SimultaneousMulti-channelTransmission.aml" />
     <None Include="StartingAndStoppingTheCommServer.aml" />
+    <None Include="Station.aml" />
     <None Include="Stations.aml" />
     <None Include="StationTab.aml" />
     <None Include="Summary.aml" />
@@ -127,11 +147,14 @@
     <None Include="TagBits.aml" />
     <None Include="TagBlocks.aml" />
     <None Include="TagMappings.aml" />
+    <None Include="Tags.aml" />
     <None Include="TestTargetInstructions.aml" />
     <None Include="TheoryOfOperation.aml" />
     <None Include="TracingInCommServer.aml" />
     <None Include="TrayIconCapability.aml" />
     <None Include="TroubleShooting.aml" />
+    <None Include="TwoSegmentsOnOneChannel.aml" />
+    <None Include="TwoStationsOnOneSegmentOnOneChannel.aml" />
     <None Include="UsingCommServer.aml" />
     <None Include="UsingNetworkConfigToConfigureTheNetwork.aml" />
     <None Include="VersionHistory.aml" />
