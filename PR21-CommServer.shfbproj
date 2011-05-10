@@ -569,6 +569,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
+    <None Include="PR21-CommServer\Content.maml\03aac5a4-97e5-4b70-b033-648c7d7664d0.aml" />
     <None Include="PR21-CommServer\Content.maml\RecommendationsForPortsAndSegments.aml" />
     <None Include="PR21-CommServer\Content.maml\DataOvertime.aml" />
     <None Include="PR21-CommServer\Content.maml\DiagnosticsOfTimeSettingsForSegmentsAndDataGroups.aml" />
