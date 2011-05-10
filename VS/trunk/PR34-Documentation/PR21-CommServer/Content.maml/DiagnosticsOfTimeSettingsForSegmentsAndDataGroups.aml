@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="db416645-f4c7-4d00-8cb5-c245c9c73317" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="DiagnosticsOfTimeSettingsForSegmentsAndDataGroups">
+      <title>Diagnostics of time settings for segments and data groups</title>
+      <content>
+        <para>Diagnostic information about segment time settings are provided by “Server Monitor” on “Segment” tab or in CommServer Report. Especially, the report is very useful for diagnostic and analysis purposes. The figure below shows a part of the report:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Sample CommServer  report (segments section)</caption>
+          <image placement="center" xlink:href = "a9a43e85-6422-4089-b76b-e265a5027849"/>
+        </mediaLink>
+        <para>When an analysis of time configuration is concerned the following elements are most interesting:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Sampling time [ms] (from config) should be equal or very similar to Average sampling time [ms] (from real) (Sampling time is the period of time between connections (in milliseconds). Any configuration that produces the sample report from Figure 1 passes this condition. </para>
+          </listItem>
+          <listItem>
+            <para>Time keep connect [ms] (from config) + Time idle keep connect [ms] (from config) should be similar to average Connect Time [ms]. Any configuration that produces the sample report from Figure 1 does not pass this condition; this means that segments remain connected for a longer period of time (around 1 second) than it was configured (Time keep connect + Time idle keep connect = 200 ms).</para>
+          </listItem>
+          <listItem>
+            <para>The value of Data overtime should be very low (perfectly equal to 0). Any configuration that produces the sample report from Figure 1 does not pass this condition (see an explanation below to understand what this coefficient means).</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="f65d308e-93ed-4cf8-b2a9-e6ff0a25d3b1" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

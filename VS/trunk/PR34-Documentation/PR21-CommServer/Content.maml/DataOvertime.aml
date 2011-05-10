@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f65d308e-93ed-4cf8-b2a9-e6ff0a25d3b1" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="DataOvertime">
+      <title>Data Overtime</title>
+      <content>
+        <para>One of the most interesting information about how CommServer engine deals with configured time settings in correlation with the amount of data to be read is “Data Overtime”.</para>
+        <para>
+          <legacyItalic>Data Overtime [%]</legacyItalic> is a value that indicates an overload level in the selected segment. The value presented in Server Monitor or Report (minimum / average / maximum) is in percent. The calculation of that value is based on the samples that come form data group read operations performed by this segment:</para>
+        <para>Odb = Tsr / Tsc * 100%, where:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Odb - Overtime (for particular DataBlock)</para>
+          </listItem>
+          <listItem>
+            <para>Tsr – TimeScan of the data Group measured by CommServer in reality</para>
+          </listItem>
+          <listItem>
+            <para>Tsc – TimeScan  of the data Group set in the configuration file</para>
+          </listItem>
+        </list>
+        <para>Data Overtime for the segment is calculated:</para>
+        <para>Omin/Oavr/Omax = Minimum(Odb1, Odb2, …, OdbN)/Average (Odb1, Odb2, …, OdbN)/Maximum(Odb1, Odb2, …, OdbN)</para>
+        <para>An average Data Overtime should be very close to 0. If this is untrue, especially if the average value of Data Overtime is greater than 100 %, the reason  can be (one or many options can be valid ):</para>
+        <list class="bullet">
+          <listItem>
+            <para>Segment might be overloaded (to many data is read through this segment; decrease the amount of data read through this segment).</para>
+          </listItem>
+          <listItem>
+            <para>Segment Sampling Time is too low and DataBlock TimeScan requires more frequent connection establishment. It is recommended to decrease the value of Segment Sampling Time or increase the TimeScan for each data Group read though this segment.</para>
+          </listItem>
+          <listItem>
+            <para>The time of segment connection is too short (the Keep Connection Time should be increased or KeepConnect should be set to true).</para>
+          </listItem>
+        </list>
+        <para>The following example shows some dependencies between Segment Sampling Time, DataBlock TimeScan and Overtime. In this experiment 10 stations are available through 10 channels and 10 segments. From all the stations one block is read and DataBlock TimeScan is 1000 ms. Segment Sampling Time depends on the segment number and the first segment is sampled every 1s and the last segment is sampled every 10s (other segments sampling time is equal to segment number multiplied by 1 s). Time Keep Connect and Idle Keep Connect are equal to 100 ms, Keep Connect is set to false. Because of communication delay, each segment connection lasts a little more than 1s. The following chart presents the Data Overtime (Min - minimum, Av - average, Max – maximum) depending on the Segment Sampling Time.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Sample chart that presents segment Data Overtime in function of sampling time</caption>
+          <image placement="center" xlink:href = "0de5ab7f-4ef5-4011-9f2f-f14db01abb04"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

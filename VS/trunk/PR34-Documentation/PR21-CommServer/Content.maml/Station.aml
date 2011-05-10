@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="3f2183f0-6a56-48ab-90dc-238c835477d1" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address ="Station">
+      <title>Station</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Station</legacyItalic>
+          </legacyBold> – station definitions; the Station represents a remote object with which communication should be established. The only parameter to be defined is its name. It can contain letters as well as numbers.
+        </para>
+        <para>
+          <legacyBold>
+            <legacyItalic>StationPort</legacyItalic>
+          </legacyBold> – station port for this station.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -66,7 +66,7 @@
             <para>
               <legacyBold>
                 <legacyItalic>Data Overtime [%]</legacyItalic>
-              </legacyBold> – this value indicates an overload level in the selected segment (the value is in percent;e.g. in this figure value 576 means, that process variable scan time is approximately 5 times longer than that set in the configuration).
+              </legacyBold> – this value indicates an overload level in the selected segment (the value is in percent;e.g. in this figure value 576 means, that process variable scan time is approximately 5 times longer than that set in the configuration). <link xlink:href="f65d308e-93ed-4cf8-b2a9-e6ff0a25d3b1">Read more about Data Overtime</link>.
             </para>
           </listItem>
         </list>
@@ -76,6 +76,7 @@
       </content>
     </section>
     <relatedTopics>
+      <link xlink:href="d2d1c1fe-78f5-4e6d-87e5-bf13c3452b83" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

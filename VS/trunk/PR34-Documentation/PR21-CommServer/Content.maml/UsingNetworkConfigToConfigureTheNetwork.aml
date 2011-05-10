@@ -15,367 +15,64 @@
             <para>Stations</para>
           </listItem>
         </list>
-        <para>To understand the configuration, please open the default configuration file, which is located in your CommServer directory. Configuration parameters and interface of the NetworkConfig are described below.</para>
-      </content>
-    </section>
-    <section address="ApplicationWindow">
-      <title>Application Window</title>
-      <content>
-        <para>On upper left-hand side of the window there is a standard toolbar containing the following options: File, Edit, View, Tools and Help. Below the tool bar, there are additional icons which allows user direct access to some helpful options. On the left-hand side the user can find structural scheme of the configuration; the structure is showed as a tree and you can navigate though the elements of the tree like in Windows Explorer (operations like copy, cut, paste, move, add are possible; please click on the right mouse button to select proper operation from the contents menu). The user can choose here between three modes: Channels, Stations and Channels and Stations. In the sub-window on the right-hand side there are displayed parameters of the objects (Channel, Station, etc.) in the left sub-window.</para>
-        <mediaLink>
-          <caption placement="after" lead="Figure 1">Application Window</caption>
-          <image placement="center" xlink:href = "6ea9e52d-7aa2-4aa0-b13d-59d164ce2678"/>
-        </mediaLink>
-      </content>
-    </section>
-    <section address ="Channel">
-      <title>Channel</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Channel</legacyItalic>
-          </legacyBold> – a virtual communication channel that provides communication via many types of media (radio communication (400 MHz band, trunked radio), GPRS, cable TV, satellite, etc.). Communication through different channels is simultaneous. The user can create unlimited number of channels. The following parameters must be set:
-        </para>
+        <para>To understand the configuration, please open the default configuration file, which is located in your CommServer directory. Configuration parameters and interface of the NetworkConfig are described in the following topics:</para>
         <list class="bullet">
           <listItem>
             <para>
-              <legacyItalic>ChannelID</legacyItalic> – channel unique numerical identifier
+              <link xlink:href="1c397a61-44aa-45ae-8b7a-a94984c84dc9" />
             </para>
           </listItem>
           <listItem>
             <para>
-              <legacyItalic>Name</legacyItalic> human readable channel name
-            </para>
-          </listItem>
-        </list>
-      </content>
-    </section>
-    <section address="Protocol">
-      <title>Protocol</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Protocol</legacyItalic>
-          </legacyBold> – a communication protocol (a kind of language) which is used for communication with remote devices. An unlimited number of communication protocols can be selected for each channel.
-        </para>
-        <para>Protocol configuration window is on a figure 2 (below):</para>
-        <mediaLink>
-          <caption placement="after" lead="Figure 2">Protocol window</caption>
-          <image placement="center" xlink:href = "bff58d37-aaf0-4fa2-92ea-76457752a5e5"/>
-        </mediaLink>
-        <para>To configure the DataProvider click the button with "...". The DataProvider configuration window, which appears, is on a figure 3. To accept the chosen protocol: click OK button.</para>
-        <mediaLink>
-          <caption placement="after" lead="Figure 3">DataProvider configuration window</caption>
-          <image placement="center" xlink:href = "e4927f49-2da6-4559-98af-10da069d2a57"/>
-        </mediaLink>
-        <para>Configuration of the particular protocols is described in those topics:</para>
-        <list address="ProtocolList" class="bullet">
-          <listItem>
-            <para>
-              <link xlink:href ="998872e0-7f6c-45b0-ab3a-ba2dd6de0373">MBUS</link>
+              <link xlink:href="d41926b9-837e-4800-a96c-739317326270" />
             </para>
           </listItem>
           <listItem>
             <para>
-              <link xlink:href ="fbb931d4-5f2b-4368-a78b-45d713fdc684">SBUS RS</link>
+              <link xlink:href="8b586f8f-6dad-43e6-8b9e-56e5d713fa34" />
             </para>
           </listItem>
           <listItem>
             <para>
-              <link xlink:href ="08f7c3a4-0f76-4de5-a067-f471e3d84200">SBUS IP</link>
+              <link xlink:href="f950ee01-7344-4a20-b5c3-1691c2a52c8d" />
             </para>
           </listItem>
           <listItem>
             <para>
-              <link xlink:href ="1b9d7777-99cc-4059-a57f-124a4d81b498">MODBUS RS</link>
+              <link xlink:href="ebfebe3c-9e6f-4547-bd32-e4334389a333" />
             </para>
           </listItem>
           <listItem>
             <para>
-              <link xlink:href ="a8c2de7c-5c00-4835-9b36-62bddfeb54be">MODBUS IP</link>
+              <link xlink:href="3f2183f0-6a56-48ab-90dc-238c835477d1" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="f3617314-cf2a-47da-8222-f3c35ab70930" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="a2398233-930a-4196-90cb-0c0bfe8fd914" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="8d5f6f24-7302-40db-bdd2-8c86faa00f80" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="346f308f-9834-4e33-a7db-5853ec7fc621" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="c79ed1a7-835e-45c1-809c-099516c242f4" />
             </para>
           </listItem>
         </list>
-      </content>
-    </section>
-    <section address="Segments">
-      <title>Segments</title>
-      <content>
-        <para>
-          <legacyItalic>
-            <legacyBold>Segments</legacyBold>
-          </legacyItalic> - segment settings:
-        </para>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <legacyItalic>Name</legacyItalic> -  human readable name
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Address</legacyItalic> - address of this segment ( IP, phone number, etc.)
-            </para>
-            <mediaLink>
-              <caption placement="after" lead="Figure 4">Segment window</caption>
-              <image placement="center" xlink:href = "d3de8b7b-4cca-4e42-9b63-fd621ae9b610"/>
-            </mediaLink>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Keep connection time</legacyItalic> – how long the segment should be in the data transfer mode
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>KeepConnect</legacyItalic> - this parameter defines if the connection is to be kept in spite of there is no data to transmit. The connection is kept as long as another segment becomes ready to be connected (important in case when keeping up the connection costs nothing and other segments are inactive).
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>PickupConn </legacyItalic> – if true, remote station is able to establish connection - for example in case of alarm
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Sampling time</legacyItalic> - period of time between connections (in milliseconds)
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeIdleKeepConn</legacyItalic> – this parameter defines how long the segment should be in the data transfer mode, when there is no data to transfer
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeReconnect</legacyItalic> - if the connection cannot be established this setting defines the time when the next retry takes place
-            </para>
-          </listItem>
-        </list>
-      </content>
-    </section>
-    <section address="Ports">
-      <title>Ports</title>
-      <content>
-        <para>Ports are attributed to subsequent segments. Each station has several communication interfaces (communication ports) that are used to establish the connection and data transfer. Important feature of the port is that only one port from the set of ports that belong to the selected station can be active.</para>
-        <mediaLink>
-          <caption placement="after" lead="Figure 5">Port window</caption>
-          <image placement="center" xlink:href = "8bf675aa-71cd-4e3d-ad5a-8cb69b19d549"/>
-        </mediaLink>
-        <para>Configuration of any port is as follows:</para>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <legacyItalic>Address</legacyItalic> - protocol address of the station (e.g. number of  SBUS station).
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>InactTime</legacyItalic> - indicates how long the port can stay deactivated.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>InactTimeAFailure</legacyItalic> - indicates how long the port can stay deactivated, when connection in this port is lost.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Name</legacyItalic> – human readable port name, which facilitates identification of the port.
-            </para>
-          </listItem>
-        </list>
-      </content>
-    </section>
-    <section address ="Station">
-      <title>Station</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Station</legacyItalic>
-          </legacyBold> – station definitions; the Station represents a remote object with which communication should be established. The only parameter to be defined is its name. It can contain letters as well as numbers.
-        </para>
-        <para>
-          <legacyBold>
-            <legacyItalic>StationPort</legacyItalic>
-          </legacyBold> – station port for this station.
-        </para>
-      </content>
-    </section>
-    <section address="Groups">
-      <title>Groups</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Groups </legacyItalic>
-          </legacyBold> – any group is a set of process variables for which common scanning rules are defined :
-        </para>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <legacyItalic>Name</legacyItalic> – human readable name for the group
-            </para>
-            <mediaLink>
-              <caption placement="after" lead="Figure 6">Groups window</caption>
-              <image placement="center" xlink:href = "8c749ec5-cfdc-4924-8c57-23dc4240e959"/>
-            </mediaLink>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeOut</legacyItalic> - maximal time, which can elapse between two consecutive data refreshments without changing the quality. After expiration thereof the server will change the quality of all tags belonging to the group to BAD. This parameter is in force if the scan mode is NORMAL.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeOutFast</legacyItalic> - maximal time, which can elapse between two consecutive data refreshments without changing the quality. After expiration thereof the server will change the quality of all tags belonging to the group to BAD. This parameter is in force if the scan mode is FAST.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeScan</legacyItalic> - frequency of scanning this group (when NORMAL scanning is enabled)
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>TimeScanFast</legacyItalic> - frequency of scanning this group (when FAST scanning is enabled)
-            </para>
-          </listItem>
-        </list>
-      </content>
-    </section>
-    <section address="Blocks">
-      <title>Blocks</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Blocks</legacyItalic>
-          </legacyBold> - Blocks are defined within the group.
-        </para>
-        <mediaLink>
-          <caption placement="after" lead="Figure 7">Blocks window</caption>
-          <image placement="center" xlink:href = "0FB0E31F-1240-4465-8167-B7571F2BE113"/>
-        </mediaLink>
-        <para>The following parameters are defined for the Blocks:</para>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <legacyItalic>Address</legacyItalic> - the first address of the address space which contains all process variables (coils, inputs, registers,  timers, etc.)
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>DataType</legacyItalic> - data type (interpretation depends on the protocol or the device in use), e.g. Flags, Inputs, Outputs, Registers, Timers, Counters. Please select the data type from the dropdown list.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Name</legacyItalic> - human readable name
-            </para>
-          </listItem>
-          
-          <listItem>
-            <para>
-              <legacyItalic>Tags</legacyItalic> - Collection of tags makes up a block. Each tag represents one process variable usually stored in a controller register. First tag has address set up in the block definition. All tags fills up consecutive adderss space - are adjacent.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>AddressEnd</legacyItalic> - Maximal start address in the selected address space.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>AddressStart</legacyItalic> - Minimal start address in the selected address space.
-            </para>
-          </listItem>          
-        </list>
-      </content>
-    </section>
-    <section address="Tags">
-      <title>Tags</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Tags</legacyItalic>
-          </legacyBold> - tag definition:
-        </para>
-        <list class="bullet">
-
-          <listItem>
-            <para>
-              <legacyItalic>AccessRights</legacyItalic> - Indicates if this item is read onlu or read/write. This is NOT related to security but rather to the nautre of the underlying hardware.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Name</legacyItalic> - tag human readable name. This name appears in the OPC server items list. You can use slash to create groups of tags, e.g. you can use as names: group1/tag1, group1/tag2.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Alarm</legacyItalic> - this attribute informs if there is an alarm associated with  this tag (the server is obligated to listen on the channel this tag belongs to and pick up incoming connection).  If true, the remote station is able to establish connection with the server, and the server will service it.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>AlarmMask</legacyItalic> - alarm mask defines condition when the remote station is in the alarm state, and, as a result, should start to establish connection to the server in an independent alarm channel.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>DataTypeConversion</legacyItalic> - this parameter establishes the format of the Tag, which is made available by the server. Please select proper value from the dropdown list (e.g. N/A, SBYTE, BYTE, DECIMAL, BOOLEAN, DATETIME, DURATION, STRING, ANYTYPE, SHORT, USHORT, INT, UINT, LONG, ULONG, FLOAT, DOUBLE). Note that ‘N/A’ setting means that type conversion is not requested and the server serves this value using canonical type of the value (type that is specific for the address space and protocol being the source for this tag.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>StateMask</legacyItalic> - defines conditions when the remote station is to enter the alarm state and the scan mode should be switched  – this conditions are used to switch between the fast and normal scan modes.  Condition that turns-on fast scanning is true if the detected change is from 0 to 1.  To turn-off fast scanning the server is waiting for 1 to 0 change.
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>StateTrigger</legacyItalic> - indicates whether there is any state trigger associated with this item. The triggers could be low or high or none.
-            </para>
-          </listItem>
-        </list>
-        <mediaLink>
-          <caption placement="after" lead="Figure 8">Tags window</caption>
-          <image placement="center" xlink:href = "77310B92-A1E9-40cd-A593-02D6BC10BA19"/>
-        </mediaLink>
-      </content>
-    </section>
-    <section address="BitsDefinition">
-      <title>Bits definition</title>
-      <content>
-        <para>
-          <legacyBold>
-            <legacyItalic>Bits definition</legacyItalic>
-          </legacyBold> - an additional functionality that allows you to automatically divide the register into separate bits. You have to define:
-        </para>
-        <list class="bullet">
-          <listItem>
-            <para>
-              <legacyItalic>BitNumber</legacyItalic> - indicates the specified bit in the register that should be used to calculate the value
-            </para>
-          </listItem>
-          <listItem>
-            <para>
-              <legacyItalic>Name</legacyItalic> - human readable name, that will be used as the OPC tag name
-            </para>
-            <mediaLink>
-              <caption placement="after" lead="Figure 9">Bit definition settings</caption>
-              <image placement="center" xlink:href = "f2848c74-eee0-47a1-b1a5-77efd5b5c27c"/>
-            </mediaLink>
-          </listItem>
-        </list>
-      </content>
-    </section>
-    <section address="SchemeOfTheExampleStructure">
-      <title>The scheme of the example structure</title>
-      <content>
-        <mediaLink>
-          <caption placement="after" lead="Figure 10">Example structure</caption>
-          <image placement="center" xlink:href = "cceff6ed-6f63-4300-bbea-0bd6be4e621b"/>
-        </mediaLink>
       </content>
     </section>
     <relatedTopics>

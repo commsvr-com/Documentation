@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="70bc8ba6-f303-471b-a67b-ab0c913874b6" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="RecommendationsForTimeDettingsForPortsAndSegments">
+      <title>Recommendations for time settings for Ports and Segments</title>
+      <content>
+        <para>Time settings for Ports are especially important when configuration of <externalLink>
+          <linkText>multi-path redundancy</linkText>
+          <linkAlternateText>multi-path redundancy</linkAlternateText>
+          <linkUri>http://www.commsvr.com/tabid/107/language/en-US/Default.aspx</linkUri>
+        </externalLink> is required.  In such case a particular station has two Ports on two independent Segments. Such situation is presented on the figure below (Figure 1).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Redundancy - One Station with two Ports and Segments</caption>
+          <image placement="center" xlink:href = "f22dba6e-b08e-4ba2-af66-55a874b53916"/>
+        </mediaLink>
+        <para>In such case Segments and Ports are switched continuously (according to the configuration). For an inactive port InactTime is counting down to 0 and thereafter the port changes (the active port becomes inactive and inactive port becomes active). It is important that Segments and Ports are switched independently and separately, so data transfer with a particular Station is possible only when an appropriate Port on Segment is Active.</para>
+        <para>The figure above presents an ideal situation when no failure occurs. But what if any failure occurs? Such situation is presented on the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Redundancy - transfer failure</caption>
+          <image placement="center" xlink:href = "b0836f8a-3752-4c09-9828-7715983b6748"/>
+        </mediaLink>
+        <para>When data transfer failure occurs and redundancy is configured properly, the port is switched immediately and data transfer is available. The next attempt to switch the port is after inactive time after failure (InactTimeAFailure) has elapsed. If there are no problems the inactive Port will be activated.</para>
+        <para>To learn more about configuration of redundancy it is recommended to:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <externalLink>
+                <linkText>Analyze the case delivered with a demo configuration</linkText>
+                <linkAlternateText>Analyze the case delivered with a demo configuration</linkAlternateText>
+                <linkUri>http://www.commsvr.com/tabid/319/language/en-US/Default.aspx</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>Watch a movie where a simple redundant configuration is presented ( <externalLink>
+              <linkText>available for download</linkText>
+              <linkAlternateText>available for download</linkAlternateText>
+              <linkUri>http://www.commsvr.com/tabid/356/language/en-US/Default.aspx</linkUri>
+            </externalLink> and on YouTube: <externalLink>
+              <linkText>Part 1</linkText>
+              <linkAlternateText>Part 1</linkAlternateText>
+              <linkUri>http://www.youtube.com/watch?v=EfmeJwaJYdc</linkUri>
+            </externalLink> and <externalLink>
+              <linkText>Part 2</linkText>
+              <linkAlternateText>Part 2</linkAlternateText>
+              <linkUri>http://www.youtube.com/watch?v=ivvG_4WCsuM</linkUri>
+            </externalLink> )
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d2d1c1fe-78f5-4e6d-87e5-bf13c3452b83" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Introduction">
+      <title>Introduction</title>
+      <content>
+        <para>This chapter describes how to prepare or tune a configuration for CommServer; it focuses on time settings and dependencies between them at different levels of configuration (mainly segment, port and data group).</para>
+      </content>
+    </section>
+    <section address="TimeSettingsForDataProviders">
+      <title>Time settings for DataProviders</title>
+      <content>
+        <para>DataProvider configuration is the first place where time configuration appears in CommServer. Each DataProvider provides own settings; please find more information about those settings in a particular DataProvider manual:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="a8c2de7c-5c00-4835-9b36-62bddfeb54be" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="1b9d7777-99cc-4059-a57f-124a4d81b498" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="08f7c3a4-0f76-4de5-a067-f471e3d84200" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="fbb931d4-5f2b-4368-a78b-45d713fdc684" />
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="TimeSettingsForSegmentsAndDataGroups">
+      <title>Time settings for Segments nad Data Groups</title>
+      <content>
+        <para>Segments are the next place where time settings are essential. Communication segments are virtual groups of plant-floor devices that have the same address (IP, dial number, etc.) and need to be served using the same communication path. The basic scanning rule for the segment is that only one segment per channel is active at any instant to provide mutually exclusive access to common resources or communication medium. The segment is also responsible for connection management of connection oriented transport protocols, e.g. TCP.</para>
+        <para>One of the most important things to understand is a correlation between time settings for a segment and data group that is read through this segment (data groups are sets of process variables for which common scanning rules are defined). This is true for every configuration, from a very simple to the most advanced ones.</para>
+        <para>This section focuses on this issue. Please start reading from chapters about settings for <link xlink:href="f950ee01-7344-4a20-b5c3-1691c2a52c8d" /> and <link xlink:href="f3617314-cf2a-47da-8222-f3c35ab70930" /> the and then follow the recommendations based on the following examples (none of the examples excludes the others):</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="864e0d13-3c6b-4914-8098-2b11c7247367">The simplest approach (one station on one segment)</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="6a8959bf-a859-491f-a404-775055209c15">Two segments on one channel</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="34528314-0de2-4880-b103-1031c07c10e0">Two stations on one segment, both on one channel</link>
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="TimeSettingsForPortsAndSegments">
+      <title>Time settings for Ports and Segments</title>
+      <content>
+        <para>Ports are the next place where time settings are essential. The most important thing is to understand how those settings correlate with time settings for segments. Ports settings are described <link xlink:href="ebfebe3c-9e6f-4547-bd32-e4334389a333">here</link>.
+      </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="70bc8ba6-f303-471b-a67b-ab0c913874b6" />
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

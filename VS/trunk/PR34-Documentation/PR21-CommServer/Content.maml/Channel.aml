@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d41926b9-837e-4800-a96c-739317326270" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address ="Channel">
+      <title>Channel</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Channel</legacyItalic>
+          </legacyBold> – a virtual communication channel that provides communication via many types of media (radio communication (400 MHz band, trunked radio), GPRS, cable TV, satellite, etc.). Communication through different channels is simultaneous. The user can create unlimited number of channels. The following parameters must be set:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>ChannelID</legacyItalic> – channel unique numerical identifier
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> human readable channel name
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

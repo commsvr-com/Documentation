@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8d5f6f24-7302-40db-bdd2-8c86faa00f80" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Tags">
+      <title>Tags</title>
+      <content>
+        <para>
+          <legacyBold>
+            <legacyItalic>Tags</legacyItalic>
+          </legacyBold> - tag definition:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>AccessRights</legacyItalic> - Indicates if this item is read onlu or read/write. This is NOT related to security but rather to the nautre of the underlying hardware.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> - tag human readable name. This name appears in the OPC server items list. You can use slash to create groups of tags, e.g. you can use as names: group1/tag1, group1/tag2.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Alarm</legacyItalic> - this attribute informs if there is an alarm associated with  this tag (the server is obligated to listen on the channel this tag belongs to and pick up incoming connection).  If true, the remote station is able to establish connection with the server, and the server will service it.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>AlarmMask</legacyItalic> - alarm mask defines condition when the remote station is in the alarm state, and, as a result, should start to establish connection to the server in an independent alarm channel.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>DataTypeConversion</legacyItalic> - this parameter establishes the format of the Tag, which is made available by the server. Please select proper value from the dropdown list (e.g. N/A, SBYTE, BYTE, DECIMAL, BOOLEAN, DATETIME, DURATION, STRING, ANYTYPE, SHORT, USHORT, INT, UINT, LONG, ULONG, FLOAT, DOUBLE). Note that ‘N/A’ setting means that type conversion is not requested and the server serves this value using canonical type of the value (type that is specific for the address space and protocol being the source for this tag.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>StateMask</legacyItalic> - defines conditions when the remote station is to enter the alarm state and the scan mode should be switched  – this conditions are used to switch between the fast and normal scan modes.  Condition that turns-on fast scanning is true if the detected change is from 0 to 1.  To turn-off fast scanning the server is waiting for 1 to 0 change.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>StateTrigger</legacyItalic> - indicates whether there is any state trigger associated with this item. The triggers could be low or high or none.
+            </para>
+          </listItem>
+        </list>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Tags window</caption>
+          <image placement="center" xlink:href = "77310B92-A1E9-40cd-A593-02D6BC10BA19"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

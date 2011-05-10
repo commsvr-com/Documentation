@@ -24,6 +24,17 @@
     <Topic id="de241950-87e4-40df-ba6c-99579ddc467e" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
       <Topic id="a30f63c8-be40-4072-a52a-6f8515ed119e" visible="True" title="CommServer configuration file (CASOpcDaWrapper.exe.config)" tocTitle="CommServer configuration file (CASOpcDaWrapper.exe.config)" linkText="CommServer configuration file (CASOpcDaWrapper.exe.config)" />
       <Topic id="82a59c6f-7225-46b8-be5d-d7517b386965" visible="True" title="Using NetworkConfig to configure the network" tocTitle="Using NetworkConfig to configure the network" linkText="Using NetworkConfig to configure the network">
+        <Topic id="1c397a61-44aa-45ae-8b7a-a94984c84dc9" visible="True" title="Application window" tocTitle="Application window" linkText="Application window" />
+        <Topic id="d41926b9-837e-4800-a96c-739317326270" visible="True" title="Channel" tocTitle="Channel" linkText="Channel" />
+        <Topic id="8b586f8f-6dad-43e6-8b9e-56e5d713fa34" visible="True" title="Protocol" tocTitle="Protocol" linkText="Protocol" />
+        <Topic id="f950ee01-7344-4a20-b5c3-1691c2a52c8d" visible="True" title="Segments" tocTitle="Segments" linkText="Segments" />
+        <Topic id="ebfebe3c-9e6f-4547-bd32-e4334389a333" visible="True" title="Ports" tocTitle="Ports" linkText="Ports" />
+        <Topic id="3f2183f0-6a56-48ab-90dc-238c835477d1" visible="True" title="Station" tocTitle="Station" linkText="Station" />
+        <Topic id="f3617314-cf2a-47da-8222-f3c35ab70930" visible="True" title="Data Groups" tocTitle="Data Groups" linkText="Data Groups" />
+        <Topic id="a2398233-930a-4196-90cb-0c0bfe8fd914" visible="True" title="Blocks" tocTitle="Blocks" linkText="Blocks" />
+        <Topic id="8d5f6f24-7302-40db-bdd2-8c86faa00f80" visible="True" title="Tags" tocTitle="Tags" linkText="Tags" />
+        <Topic id="346f308f-9834-4e33-a7db-5853ec7fc621" visible="True" title="Bits definition" tocTitle="Bits definition" linkText="Bits definition" />
+        <Topic id="c79ed1a7-835e-45c1-809c-099516c242f4" visible="True" title="Scheme of the example structure" tocTitle="Scheme of the example structure" linkText="Scheme of the example structure" />
         <Topic id="998872e0-7f6c-45b0-ab3a-ba2dd6de0373" visible="True" title="MBUS configuration" tocTitle="MBUS configuration" linkText="MBUS configuration" />
         <Topic id="a8c2de7c-5c00-4835-9b36-62bddfeb54be" visible="True" title="MODBUS IP configuration" tocTitle="MODBUS IP configuration" linkText="MODBUS IP configuration" />
         <Topic id="1b9d7777-99cc-4059-a57f-124a4d81b498" visible="True" title="MODBUS RS configuration" tocTitle="MODBUS RS configuration" linkText="MODBUS RS configuration" />
@@ -38,6 +49,17 @@
         <Topic id="c6122815-0cd7-475e-b4c5-052640d07e78" visible="True" title="Importing scan settings" tocTitle="Importing scan settings" linkText="Importing scan settings" />
       </Topic>
       <Topic id="da4e8035-a2bf-4a6f-b55d-f22a46af86fd" visible="True" title="Database structure" tocTitle="Database structure" linkText="Database structure" />
+      <Topic id="d2d1c1fe-78f5-4e6d-87e5-bf13c3452b83" visible="True" title="CommServer time setting recommendations" tocTitle="CommServer time setting recommendations" linkText="CommServer time setting recommendations">
+        <Topic id="d733cd70-8d3e-43f1-b8ad-e9fb0acc7767" visible="True" title="Recommendation for Segments and Data Groups" tocTitle="Recommendation for Segments and Data Groups" linkText="Recommendation for Segments and Data Groups">
+          <Topic id="864e0d13-3c6b-4914-8098-2b11c7247367" visible="True" title="One station on one segment" tocTitle="One station on one segment" linkText="One station on one segment" />
+          <Topic id="6a8959bf-a859-491f-a404-775055209c15" visible="True" title="Two segments on one channel" tocTitle="Two segments on one channel" linkText="Two segments on one channel" />
+          <Topic id="34528314-0de2-4880-b103-1031c07c10e0" visible="True" title="Two stations on one segment on one channel" tocTitle="Two stations on one segment on one channel" linkText="Two stations on one segment on one channel" />
+          <Topic id="db416645-f4c7-4d00-8cb5-c245c9c73317" visible="True" title="Diagnostics of time settings for Segments and Data Groups" tocTitle="Diagnostics of time settings for Segments and Data Groups" linkText="Diagnostics of time settings for Segments and Data Groups">
+            <Topic id="f65d308e-93ed-4cf8-b2a9-e6ff0a25d3b1" visible="True" title="Data Overtime" tocTitle="Data Overtime" linkText="Data Overtime" />
+          </Topic>
+        </Topic>
+        <Topic id="70bc8ba6-f303-471b-a67b-ab0c913874b6" visible="True" title="Recommendation for Ports and Segments" tocTitle="Recommendation for Ports and Segments" linkText="Recommendation for Ports and Segments" />
+      </Topic>
     </Topic>
     <Topic id="5abf8387-8650-46fa-900c-c2ec060d04ae" visible="True" title="Using CommServer" tocTitle="Using CommServer" linkText="Using CommServer">
       <Topic id="9929cfac-3930-4935-aead-b17d52ebc1c7" visible="True" title="Application interface" tocTitle="Application interface" linkText="Application interface">

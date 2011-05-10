@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="864e0d13-3c6b-4914-8098-2b11c7247367" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="TheSimplestApproachOneStationOnOneSegment">
+      <title>The simplest approach (one station on one segment)</title>
+      <content>
+        <para>The simplest possible configuration is when there is only one station on one segment.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Time settings for Segment And Group</caption>
+          <image placement="center" xlink:href = "b290eaff-cc5c-47e1-bcf6-1b0872526d82"/>
+        </mediaLink>
+        <para>Figure 1 shows dependences between time settings for segments and data groups (“Group” on the figure). To create correct configuration the following is recommended:</para>
+        <list class="bullet">
+          <listItem>
+            <para>TimeOut (Group) must be greater than TimeScan (Group).</para>
+          </listItem>
+          <listItem>
+            <para>Keep connection time (KeepConnect - Segment) + Time Idle Keep Connect (TimeIdleKeepConn - Segment) should be less than Sampling time (Segment).</para>
+          </listItem>
+          <listItem>
+            <para>TimeScan (Group) (if we are interested in frequent scan) should be greater or similar to Sampling time (Segment). </para>
+          </listItem>
+          <listItem>
+            <para>TimeScan (Group) should be greater than the period of data transmission time consisting of Request (Req) and Re-sponse (Data Transfer).</para>
+          </listItem>
+        </list>
+        <para>Figure 1 shows an ideal situation when no error occurs. Let’s analyze what happens when a connection problem occurs (see: Figure 2 ).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Time settings for Segment And Groups - connection problems</caption>
+          <image placement="center" xlink:href = "165c124b-8176-40cb-b64b-a7c103f6ade1"/>
+        </mediaLink>
+        <para>When Segment and Group settings are correct, Connection Problem will cause situation when after Time Out (Group), Bad Quality will occur in OPC. This will allow all OPC Clients, reading data from OPC Server, to indicate an issue and show appropriate information.</para>
+        <alert>
+          <para>Note: It is important to provide information about problems with data acquisition to OPC Client. Good quality indicates that data is acquired according to configuration. Bad quality indicates problems with data acquisition.</para>
+        </alert>
+        <para>Note that Bad Quality of OPC data is caused not only by timeout at data group (Time Out setting) but it may also occur because of a data transfer failure, see figure below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 3">Data transfer failure</caption>
+          <image placement="center" xlink:href = "e1a70a44-4ece-4bd2-a76f-3636f48a52c2"/>
+        </mediaLink>
+        <para>When a problem with data transfer occurs - Transfer Failure – OPC quality is changed immediately to Bad. Bad Quality is information for the user about communication problems. Quality will be changed to Good after the first successful data read from a device.</para>
+        <para>Now let’s analyze what happens when a segment or data group is configured incorrectly. Such situation is presented on the figure below (Figure 4).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 4">Wrong time settings for Segment and Group</caption>
+          <image placement="center" xlink:href = "aa3d049f-9ea7-426f-9f7a-d9b580b68297"/>
+        </mediaLink>
+        <para>When configuration of the segment and data group is incorrect Bad Quality in OPC will occur even if there are no Connection Problems. Based on Figure 4 we can define the following issues: </para>
+        <list class="bullet">
+          <listItem>
+            <para>Time Scan (Group) is too short in comparison with Sampling Time (Segment). The Segment is overloaded; this can be noticed if the Overtime parameter is very large (Overtime is shown in Report and Server Monitor) causing that Bad Quality for OPC values will occur.</para>
+          </listItem>
+          <listItem>
+            <para>OPC tags have BAD Quality even if there are no communication problems. This is caused by wrong TimeOut (Group) setting – too short. TimeOut should be long enough to allow Segment to reconnect (usually TimeOut of the group should be grater than the segment Sampling time). </para>
+          </listItem>
+          <listItem>
+            <para>TimeScan (Group) is shorter than Keep connection time (Segment) causing that data is transferred more than once (twice in this particular situation, but can be even more according to settings). Usually there is no need to transfer data more than once especially when we pay for the amount of data that is transmitted (e.g. GPRS) or communication sys-tem has a limited speed (e.g. radio communication). TimeScan (Group) should be greater or similar to Sampling time (Segment).</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="6a8959bf-a859-491f-a404-775055209c15" />
+      <link xlink:href="34528314-0de2-4880-b103-1031c07c10e0" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

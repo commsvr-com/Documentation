@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f950ee01-7344-4a20-b5c3-1691c2a52c8d" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="Segments">
+      <title>Segments</title>
+      <content>
+        <para>
+          <legacyItalic>
+            <legacyBold>Segments</legacyBold>
+          </legacyItalic> - segment settings:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyItalic>Name</legacyItalic> -  human readable name
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Address</legacyItalic> - address of this segment ( IP, phone number, etc.)
+            </para>
+            <mediaLink>
+              <caption placement="after" lead="Figure 1">Segment window</caption>
+              <image placement="center" xlink:href = "d3de8b7b-4cca-4e42-9b63-fd621ae9b610"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Keep connection time</legacyItalic> – how long the segment should be in the data transfer mode
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>KeepConnect</legacyItalic> - this parameter defines if the connection is to be kept in spite of there is no data to transmit. The connection is kept as long as another segment becomes ready to be connected (important in case when keeping up the connection costs nothing and other segments are inactive).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>PickupConn </legacyItalic> – if true, remote station is able to establish connection - for example in case of alarm
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>Sampling time</legacyItalic> - period of time between connections (in milliseconds)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeIdleKeepConn</legacyItalic> – this parameter defines how long the segment should be in the data transfer mode, when there is no data to transfer
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyItalic>TimeReconnect</legacyItalic> - if the connection cannot be established this setting defines the time when the next retry takes place
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

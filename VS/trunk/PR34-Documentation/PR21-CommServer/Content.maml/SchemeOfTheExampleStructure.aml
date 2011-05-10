@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c79ed1a7-835e-45c1-809c-099516c242f4" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="SchemeOfTheExampleStructure">
+      <title>The scheme of the example structure</title>
+      <content>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Example structure</caption>
+          <image placement="center" xlink:href = "cceff6ed-6f63-4300-bbea-0bd6be4e621b"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

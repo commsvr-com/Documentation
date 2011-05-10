@@ -504,6 +504,46 @@
       <AlternateText>CommServer Monitor</AlternateText>
       <ImageId>a5371615-7e36-4b6a-a3de-499f50d68fcf</ImageId>
     </Image>
+    <Image Include="PR21-CommServer\Graphics\TimeSettingsForSegmentAndGroup.jpg">
+      <ImageId>b290eaff-cc5c-47e1-bcf6-1b0872526d82</ImageId>
+      <AlternateText>Time Settings For Segment And Group</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\TimeSettingsForSegmentAndGroupsConnectionProblems.jpg">
+      <ImageId>165c124b-8176-40cb-b64b-a7c103f6ade1</ImageId>
+      <AlternateText>Time Settings For Segment And Groups Connection Problems</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\DataTransferFailure.jpg">
+      <ImageId>e1a70a44-4ece-4bd2-a76f-3636f48a52c2</ImageId>
+      <AlternateText>Data Transfer Failure</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\WrongTimeSettingsForSegmentAndGroup.jpg">
+      <ImageId>aa3d049f-9ea7-426f-9f7a-d9b580b68297</ImageId>
+      <AlternateText>Wrong Time Settings For Segment And Group</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\CommunicationUsingTwoSegmentsOnOneChannel.jpg">
+      <ImageId>01d7a273-400f-4188-a546-d720e704ac6c</ImageId>
+      <AlternateText>Communication Using Two Segments On One Channel</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\OneSegmentAndTwoStations.jpg">
+      <ImageId>86f77d21-11b1-46a3-8585-76125816af85</ImageId>
+      <AlternateText>One Segment And Two Stations</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SampleCommServerReportSegmentsSection.jpg">
+      <ImageId>a9a43e85-6422-4089-b76b-e265a5027849</ImageId>
+      <AlternateText>Sample Comm Server Report Segments Section</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\SampleChartThatPresentsSegmentDataOvertimeInFunctionOfSamplingTime.jpg">
+      <ImageId>0de5ab7f-4ef5-4011-9f2f-f14db01abb04</ImageId>
+      <AlternateText>Sample Chart That Presents Segment Data Overtime In Function Of Sampling Time</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\RedundancyOneStationWithTwoPortsAndSegments.jpg">
+      <ImageId>f22dba6e-b08e-4ba2-af66-55a874b53916</ImageId>
+      <AlternateText>Redundancy One Station With Two Ports And Segments</AlternateText>
+    </Image>
+    <Image Include="PR21-CommServer\Graphics\RedundancyTransferFailure.jpg">
+      <ImageId>b0836f8a-3752-4c09-9828-7715983b6748</ImageId>
+      <AlternateText>Redundancy Transfer Failure</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
