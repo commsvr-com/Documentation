@@ -76,11 +76,6 @@
       </content>
     </section>
     <relatedTopics>
-      <link xlink:href ="998872e0-7f6c-45b0-ab3a-ba2dd6de0373">MBUS</link>
-      <link xlink:href ="fbb931d4-5f2b-4368-a78b-45d713fdc684">SBUS RS</link>
-      <link xlink:href ="08f7c3a4-0f76-4de5-a067-f471e3d84200">SBUS IP</link>
-      <link xlink:href ="1b9d7777-99cc-4059-a57f-124a4d81b498">MODBUS RS</link>
-      <link xlink:href ="a8c2de7c-5c00-4835-9b36-62bddfeb54be">MODBUS IP</link>
     </relatedTopics>
   </developerConceptualDocument>
 </topic>

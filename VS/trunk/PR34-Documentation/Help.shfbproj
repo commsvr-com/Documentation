@@ -566,7 +566,6 @@
     <None Include="PR21-CommServer\Content.maml\Prerequisites.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerOnX64Systems.aml" />
     <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExample.aml" />
-    <None Include="PR21-CommServer\Content.maml\CommServerConfigurationExmaple.aml" />
     <None Include="PR21-CommServer\Content.maml\DCOMConfigurationExample.aml" />
     <None Include="PR21-CommServer\Content.maml\examplesandtutorials.aml" />
     <None Include="PR21-CommServer\Content.maml\Dcom_configuration_example.aml" />
@@ -3423,6 +3422,24 @@
     </ContentLayout>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR21-CommServer\Content.maml\TwoStationsOnOneSegmentOnOneChannel.aml" />
+    <None Include="PR21-CommServer\Content.maml\TwoSegmentsOnOneChannel.aml" />
+    <None Include="PR21-CommServer\Content.maml\RecommendationsForPortsAndSegments.aml" />
+    <None Include="PR21-CommServer\Content.maml\RecommendationForSegmentsAndDataGroups.aml" />
+    <None Include="PR21-CommServer\Content.maml\OneStationOnOneSegment.aml" />
+    <None Include="PR21-CommServer\Content.maml\DiagnosticsOfTimeSettingsForSegmentsAndDataGroups.aml" />
+    <None Include="PR21-CommServer\Content.maml\DataOvertime.aml" />
+    <None Include="PR21-CommServer\Content.maml\CommServerTimeSettingRecommendations.aml" />
+    <None Include="PR21-CommServer\Content.maml\SchemeOfTheExampleStructure.aml" />
+    <None Include="PR21-CommServer\Content.maml\BitsDefinition.aml" />
+    <None Include="PR21-CommServer\Content.maml\Tags.aml" />
+    <None Include="PR21-CommServer\Content.maml\Blocks.aml" />
+    <None Include="PR21-CommServer\Content.maml\Groups.aml" />
+    <None Include="PR21-CommServer\Content.maml\Station.aml" />
+    <None Include="PR21-CommServer\Content.maml\Ports.aml" />
+    <None Include="PR21-CommServer\Content.maml\SegmentsSettings.aml" />
+    <None Include="PR21-CommServer\Content.maml\Protocol.aml" />
+    <None Include="PR21-CommServer\Content.maml\Channel.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\CoupledNodes.aml" />
     <None Include="PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\OpcUaModeling\AddressSpaceModeling\ModelVerificationInASMD.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\BufferedQueuesInterface.aml" />
