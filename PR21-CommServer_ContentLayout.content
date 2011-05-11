@@ -84,12 +84,7 @@
       <Topic id="8f3a0ee9-b345-4bd8-b4db-a59be8686e66" visible="True" title="Trouble Shooting" tocTitle="Trouble Shooting" linkText="Trouble Shooting" />
     </Topic>
     <Topic id="8594c004-2493-45a9-846e-3b54a98a5d9a" visible="True" title="Appendix" tocTitle="Appendix" linkText="Appendix">
-      <Topic id="4f52c757-1266-4b00-85be-a77134cb4e98" visible="True" title="Appendix A (example of a report)" tocTitle="Appendix A (example of a report)" linkText="Appendix A (example of a report)">
-        <Topic id="c25a81d5-8f1f-4fac-923f-314749651f1f" visible="True" title="Stations" tocTitle="Stations" linkText="Stations" />
-        <Topic id="5164ca9e-1e51-4480-bc55-7b77f17c354c" visible="True" title="Segments" tocTitle="Segments" linkText="Segments" />
-        <Topic id="ac0000a7-b6fe-4a07-a4b2-bf607389e948" visible="True" title="Interfaces" tocTitle="Interfaces" linkText="Interfaces" />
-        <Topic id="5791047a-0f60-476a-8e5f-7ab45c4cdd21" visible="True" title="Protocols" tocTitle="Protocols" linkText="Protocols" />
-      </Topic>
+      <Topic id="4f52c757-1266-4b00-85be-a77134cb4e98" visible="True" title="Appendix A (example of a report)" tocTitle="Appendix A (example of a report)" linkText="Appendix A (example of a report)" />
       <Topic id="eae686e6-c4c0-4024-9f9b-434886e91661" visible="True" title="Appendix B (Tracing)" tocTitle="Appendix B (Tracing)" linkText="Appendix B (Tracing)" />
     </Topic>
     <Topic id="7cebc829-1948-47d6-b093-c1c181d2de7b" visible="True" title="Examples and tutorials" tocTitle="Examples and tutorials" linkText="Examples and tutorials">
