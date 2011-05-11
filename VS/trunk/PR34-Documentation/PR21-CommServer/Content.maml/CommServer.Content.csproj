@@ -136,7 +136,9 @@
     </None>
     <None Include="Segments.aml" />
     <None Include="SegmentsSettings.aml" />
-    <None Include="SegmentsTab.aml" />
+    <None Include="SegmentsTab.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SimultaneousMulti-channelTransmission.aml" />
     <None Include="StartingAndStoppingTheCommServer.aml" />
     <None Include="Station.aml" />

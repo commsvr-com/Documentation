@@ -544,6 +544,10 @@
       <ImageId>b0836f8a-3752-4c09-9828-7715983b6748</ImageId>
       <AlternateText>Redundancy Transfer Failure</AlternateText>
     </Image>
+	<Image Include="PR21-CommServer\Graphics\SampleReport.jpg">
+      <ImageId>2e5e09ac-3b27-4665-acc9-f73825dbe99a</ImageId>
+      <AlternateText>Sample Report</AlternateText>
+    </Image>
     <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>

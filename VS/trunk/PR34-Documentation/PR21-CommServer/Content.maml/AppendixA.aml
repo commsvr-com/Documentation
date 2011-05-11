@@ -7,47 +7,43 @@
       <title>APPENDIX A</title>
       <content>
         <mediaLink>
-          <caption placement="after">CAS CommServer</caption>
-          <image placement="center" xlink:href = "0dc06d86-3f19-466f-bfb0-96953a878e36"/>
+          <caption placement="after">Example of a report</caption>
+          <image placement="center" xlink:href = "2e5e09ac-3b27-4665-acc9-f73825dbe99a"/>
         </mediaLink>
-        <table>
-          <row>
-            <entry>
-              <para>Report time</para>
-            </entry>
-            <entry>
-              <para>2005-06-15 14:15:54</para>
-            </entry>
-          </row>
-          <row>
-            <entry>
-              <para>Run Time [s]</para>
-            </entry>
-            <entry>
-              <para>679</para>
-            </entry>
-          </row>
-          <row>
-            <entry>
-              <para>Program Name</para>
-            </entry>
-            <entry>
-              <para>Communication Server</para>
-            </entry>
-          </row>
-          <row>
-            <entry>
-              <para>Release</para>
-            </entry>
-            <entry>
-              <para>2.5.1983.25426</para>
-            </entry>
-          </row>
-        </table>
+        <para>Report contains following elements:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              <legacyBold>Basic information</legacyBold> - Report time, run time, configuration file and details about application and version;
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Stations</legacyBold> - information about stations, read more about <link xlink:href="ba47e94c-29c1-4bff-a6a2-3ed3ea0bae11">Station</link> at runtime and <link xlink:href="3f2183f0-6a56-48ab-90dc-238c835477d1">during configuration</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Segments</legacyBold> - information about segments, read more about <link xlink:href="e8865c12-8b7b-411e-a57e-148a7f9a9357">Segments</link> at runtime and <link xlink:href="f950ee01-7344-4a20-b5c3-1691c2a52c8d">during configuration</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Interfaces</legacyBold> - information about ports (interfaces), read more about <link xlink:href="25b8289d-c000-47a5-8547-a8c12d912a6d">Ports</link> at runtime and <link xlink:href="ebfebe3c-9e6f-4547-bd32-e4334389a333">during configuration</link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Protocols</legacyBold> - information about protocols, read more about <link xlink:href="12707738-b6ab-4d92-97aa-82e511f8cedd">Protocols</link> at runtime and <link xlink:href="8b586f8f-6dad-43e6-8b9e-56e5d713fa34">during configuration</link>
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
     <relatedTopics>
-      <link xlink:href="eae686e6-c4c0-4024-9f9b-434886e91661"></link>
+      <link xlink:href="1e19fb28-2557-45fd-9363-3bf0c873f9f1" />
+      <link xlink:href="0bffc8cf-63f2-41b9-b61e-d69e56bdf0d0" />
+      <link xlink:href="db416645-f4c7-4d00-8cb5-c245c9c73317" />
     </relatedTopics>
   </developerConceptualDocument>
 </topic>
