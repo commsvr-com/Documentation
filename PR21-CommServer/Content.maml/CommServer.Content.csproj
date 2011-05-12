@@ -68,7 +68,9 @@
     <None Include="AdditionalResourcesTools.aml" />
     <None Include="AnExampleHowToStartTheCommServerUsingAnOPCDA.aml" />
     <None Include="Appendix.aml" />
-    <None Include="AppendixA.aml" />
+    <None Include="AppendixA.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="AppendixB.aml" />
     <None Include="ApplicationInterface.aml" />
     <None Include="ApplicationMenu.aml" />
@@ -135,7 +137,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Segments.aml" />
-    <None Include="SegmentsSettings.aml" />
+    <None Include="SegmentsSettings.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SegmentsTab.aml">
       <SubType>Designer</SubType>
     </None>

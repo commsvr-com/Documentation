@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="e378a6bb-5782-4185-a6de-d5500148c77c" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CommonPartsAndFunctionalitiesOfCommServerUA">
+      <title>Common parts and functionalities of CommServer UA</title>
+      <content>
+        <para>The  CommServer UA package consists of the components  that are shown in the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer UA configuration</caption>
+          <image placement="center" xlink:href = "723f8b5e-5795-476f-906a-305b0097b79c"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>CommServer UA Server</legacyBold> -  a main component of the <link xlink:href="ec4ecefe-2d13-4ed9-af36-72152ff597f3">CommServer UA package</link>. It’s a fully configurable OPC UA server and any OPC Client (e.g. <link xlink:href="2ce6a72a-2eb5-455e-b06e-915b49f165e3">OPC UA Viever</link> ) can connect and communicate with it. It uses <legacyBold>Configuration.uasconfig , Model.csv</legacyBold> and <legacyBold>AS.PredefinedNodes.uanodes</legacyBold> files as a configuration.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Configuration.uasconfig</legacyBold> - a main configuration file for <legacyBold>CommServer UA Server</legacyBold>, this file contains information about OPC UA registration, security and references to other configuration files that hold feature specific configuration data.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Model.csv</legacyBold> - this configuration file holds information about address space nodes identifiers ( <link xlink:href="420d7d38-cc1d-4de2-8718-0b5bb9222088">read more</link> ). This file is required for successful bindings ( <link xlink:href="10d187b7-b4ca-4f56-bc39-c2bde372629e">read more</link> ).</para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>AS.PredefinedNodes.uanodes</legacyBold> - this file (that is a result of model <link xlink:href="420d7d38-cc1d-4de2-8718-0b5bb9222088">build</link> ) contains information about address space, it holds model predefined nodes in binary representation.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

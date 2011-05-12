@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="8a47cc3f-3dbe-4bb4-aedb-dc6d7d8a92f4" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality">
+      <title>Redundant, Multi-Protocol, Multi-Channel Data Access Engine functionality</title>
+      <content>
+        <para>The  CommServer UA package consists of the components  that are shown in the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer UA configuration</caption>
+          <image placement="center" xlink:href = "723f8b5e-5795-476f-906a-305b0097b79c"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>CommServer Monitor</legacyBold> -  software used only for reading diagnostic information from the communication server. This is the same application that is used in <link xlink:href="2dea0752-d490-47e6-8444-ac73e07601fc">CommServer for OPC Classic</link> ( <link xlink:href="9929cfac-3930-4935-aead-b17d52ebc1c7">read more about CommServer Monitor</link> ).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>CommServer Communication Engine</legacyBold> - the essential part of the package. It consists of a scanner, cache and OPC interface. This is the same engine that is used in <link xlink:href="2dea0752-d490-47e6-8444-ac73e07601fc">CommServer for OPC Classic</link>. Read more about CommServer Engine in <link xlink:href="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6">Theory of operation</link> chapter.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>DefaultConfig.xml</legacyBold> - XML configuration file, CommServer uses this file for initiating a database of connection, protocols, remote station and process values.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Network Configurator</legacyBold> - an application that is used for editing the configuration of CommServer. It saves configuration in the XML file (on the figure DefaultConfig.xml). . This is the same application that is used in <link xlink:href="2dea0752-d490-47e6-8444-ac73e07601fc">CommServer for OPC Classic</link> (read more about CommServer <link xlink:href="82a59c6f-7225-46b8-be5d-d7517b386965">Network Configuration tool</link> ).</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

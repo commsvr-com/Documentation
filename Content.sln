@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelDesigner.Content", "PR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools.Content", "Tools\Content.maml\Tools.Content.csproj", "{05928409-D661-467A-860D-B45B9F560EBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommServerUA.Content", "PR33-CommServerUA\Content.maml\CommServerUA.Content.csproj", "{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,16 @@ Global
 		{05928409-D661-467A-860D-B45B9F560EBB}.Release|Mixed Platforms.Build.0 = Release|x86
 		{05928409-D661-467A-860D-B45B9F560EBB}.Release|x86.ActiveCfg = Release|x86
 		{05928409-D661-467A-860D-B45B9F560EBB}.Release|x86.Build.0 = Release|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Debug|x86.ActiveCfg = Debug|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Debug|x86.Build.0 = Debug|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Release|Any CPU.ActiveCfg = Release|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Release|x86.ActiveCfg = Release|x86
+		{C942A5CD-8E6D-4A5E-BD36-BDAC4F4246C7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

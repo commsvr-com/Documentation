@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="71e7b15d-ff7c-4fe6-8ead-96d211cc6bcf" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CommServerUaComponents">
+      <title>CommServer UA components</title>
+      <content>
+        <para>The  CommServer UA package consists of the components  that are shown in the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer UA configuration</caption>
+          <image placement="center" xlink:href = "723f8b5e-5795-476f-906a-305b0097b79c"/>
+        </mediaLink>
+        <para>The CommServer UA package can be divided into the following sets of features and functionalities:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="e378a6bb-5782-4185-a6de-d5500148c77c" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="ef14000e-ef87-4469-96d4-a1898a61bfaa" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="8a47cc3f-3dbe-4bb4-aedb-dc6d7d8a92f4" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="93248756-137a-45f2-b611-0e5b8fb71216" />
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

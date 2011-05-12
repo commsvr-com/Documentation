@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ef14000e-ef87-4469-96d4-a1898a61bfaa" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner">
+      <title>Modeling features of CommServer UA and OPC UA Address Space Model Designer</title>
+      <content>
+        <para>The  CommServer UA package consists of the components  that are shown in the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer UA configuration</caption>
+          <image placement="center" xlink:href = "723f8b5e-5795-476f-906a-305b0097b79c"/>
+        </mediaLink>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>OPC UA Address Space Model Designer</legacyBold> - software for developers and engineers to design OPC Unified Architecture Information Models ( <link xlink:href="a2d55988-b59a-4a87-95b9-933f6bbdf5bd">read more</link> ). The whole configuration can be prepared using a user-friendly Windows-based GUI. All nodes are presented on a tree and can be edited in the property window. This application uses Solution.uamdsl and Model.xm files to generate (during <link xlink:href="420d7d38-cc1d-4de2-8718-0b5bb9222088">build</link> ):  <legacyBold>Model.csv</legacyBold> and <legacyBold>AS.PredefinedNodes.uanodes</legacyBold>. It can also create  essential configuration files for CommServer UA (read more about it in sections: “Common parts and functionalities of CommServer UA”, “Redundant, multi-protocol, multi-channel data access engine functionality”, “OPC wrapper functionality”).
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Solution.uamdsl</legacyBold> - The OPC UA Address Space Model Designer (ASMD) implements conceptual containers called solutions and projects to apply their settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects. <link xlink:href="82725a8f-f5c5-4595-83d4-9c5fb7c606ef">Read more</link>.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Model.xml</legacyBold> - XML file that describes the model ( <link xlink:href="44047fc0-68d9-4a40-a46c-838e3d6f57d6">read more</link> ). OPC UA Address Space Model Designer compiles this model ( <link xlink:href="e378a6bb-5782-4185-a6de-d5500148c77c">Model.xml</link> ) and generates CSV file ( <legacyBold>Model.csv</legacyBold> ) and <legacyBold>AS.PredefinedNodes.uanodes</legacyBold> file.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
