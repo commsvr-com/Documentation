@@ -6,7 +6,8 @@
         Capabilities of DataPorter database related operations (“DB” blocks) go beyond simple reading and writing from/to database.
       </para>
       <mediaLink>
-        <image placement="center" xlink:href="AdvancedDBOperation.jpg" />
+        <caption placement="after" lead="Figure 1">Advanced DB operation</caption>
+        <image placement="center" xlink:href = "aca81864-ade8-4924-b979-e7df7f7b1f0b" />
       </mediaLink>
     </introduction>
     <section>
@@ -103,8 +104,8 @@
         <para>Database operations in DataPorter support also a scenario when communication with database can be enabled or disabled by other conditions, for example a value of an item read from OPC Server. </para>
         <para>The following configuration shows such situation. It is based on a default CommServer configuration.</para>
         <mediaLink>
-          <caption placement="after" lead="Figure 1">Example configuration</caption>
-          <image placement="center" xlink:href = "ca6155ee-83bf-4e28-8216-025d2a5b3dbe"/>
+          <caption placement="after" lead="Figure 3">Example configuration</caption>
+          <image placement="center" xlink:href="ca6155ee-83bf-4e28-8216-025d2a5b3dbe" />
         </mediaLink>
         <para>In this example the DataPorter reads a value of the OPC tag PLC/R/100. This value  is inserted to the DB READ block in which we check if PLC/R/100 equals 1. If it is true the DataPorter inserts values taken from the database (using query: SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc) to the following variables:</para>
         <list class="nobullet">
@@ -135,11 +136,19 @@
 <equal value="1"></equal>
 <stop value="false"></stop>
 </operationif>
-<!-- operation DB definition, it contains information about the database provider and the connection string (one of the definition is commented to show the difference between attaching the SQLserver hosted database or the file.
-object "operationdb" indicates the it is operation on the database, (it is possible to have many "operationdb" definitions inside one "Param"). name attribute indicate the right data base provider (ORACLE, OLEDB, ODBC, MSSQL); in this example it is oracle. The next parameter is connection string, this string contains all necessary information that are required to connect to the database; the syntax depends on the database provider (more details at:http://msdn.microsoft.com). In this walkthrough user id: has value: scott, data source=orcl (the name of the serviced configured above), password: tiger (because password is inside quotations we have to use &quot;).
+<!-- operation DB definition, it contains information about the database provider and the connection string 
+(one of the definition is commented to show the difference between attaching the SQLserver hosted database or the file.
+object "operationdb" indicates the it is operation on the database, (it is possible to have many "operationdb" 
+definitions inside one "Param"). name attribute indicate the right data base provider (ORACLE, OLEDB, ODBC, MSSQL); 
+in this example it is oracle. The next parameter is connection string, this string contains all necessary information 
+that are required to connect to the database; the syntax depends on the database provider (more details at:http://msdn.microsoft.com). 
+In this walkthrough user id: has value: scott, data source=orcl (the name of the serviced configured above), 
+password: tiger (because password is inside quotations we have to use &quot;).
 -->
-<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteScalar" async="false">
-<!-- command: in the command object there is definition of query parts; here we have: SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc , which is the the query. 
+<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True"
+stop="false" type="ExecuteScalar" async="false">
+<!-- command: in the command object there is definition of query parts; here we have: SELECT top 1 [opcvalue] FROM [OPCDataTable] 
+order by [timestamp] desc , which is the the query. 
 Structure of the DataBase: 
 CREATE TABLE OPCDataTable
 (
@@ -155,14 +164,16 @@ CREATE TABLE OPCDataTable
 <output name="0"></output>
 <!--value of acumulator is written to output 0 -->
 </operationopc>
-<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteScalar" async="false">
+<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" 
+stop="false" type="ExecuteScalar" async="false">
 <command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
 </operationdb>
 <operationopc name="opc" type="write">
 <output name="1"></output>
 <!--value of acumulator is written to output 0 -->
 </operationopc>
-<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" stop="false" type="ExecuteScalar" async="false">
+<operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;Initial Catalog=DataPorterDataBase;Integrated Security=True" 
+stop="false" type="ExecuteScalar" async="false">
 <command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
 </operationdb>
 <operationopc name="opc" type="write">
