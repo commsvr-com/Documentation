@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b69635eb-f76f-4b48-9c18-e6adf9eb9d49" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CustomConfigurationOfTheCommServerUA">
+      <title>Custom configuration of the CommServer UA</title>
+      <content>
+        <para>Preparation of custom configuration for CommServer UA requires actions in different set of features accordingly to needs:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="e378a6bb-5782-4185-a6de-d5500148c77c">Common parts and functionalities of CommServer UA</link> (read also: <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76">How to configure CommServerUA</link> )</para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="ef14000e-ef87-4469-96d4-a1898a61bfaa">Modeling features of CommServer UA and OPC UA Address Space Model Designer</link> – and Information Model must be prepared and built using <link xlink:href="a2d55988-b59a-4a87-95b9-933f6bbdf5bd">OPC UA Address Space Model Designer</link> tool.</para>
+          </listItem>
+          <listItem>
+            <para>Redundant, multi-protocol, multi-channel data access engine functionality – this configuration is required if process data access is necessary. In such case CommServer UA <link xlink:href="82a59c6f-7225-46b8-be5d-d7517b386965">is configured in the same way as CommServer (DCOM/Classic)</link>, however additional step ( <link xlink:href="07da60d4-d213-4a4a-b498-6bd68c6885b9">Process DataBinding</link> ) is required.</para>
+          </listItem>
+          <listItem>
+            <para>o	OPC wrapper functionality – this configuration is required if OPC DA (DCOM/Classic) data access is necessary. In such case CommServer UA is configured similar to <link xlink:href="b8c5f048-bb7e-4742-b7f2-b61a77789ed9">DataPorter</link> and <link xlink:href="9ecbc065-4153-4193-86d0-5d264120a69a">usage of OPC Viewer tool is required to prepare such configuration</link>. Read more in article: <link xlink:href="ab23d48a-2241-4e60-a65f-a327b8c30a7d">Walkthrough: Create UA Wrapper</link>.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76" />
+      <link xlink:href="71e7b15d-ff7c-4fe6-8ead-96d211cc6bcf" />
+      <link xlink:href="a709e1f0-0b6e-42da-8e6d-4a3590ada4c6" />
+      <link xlink:href="82a59c6f-7225-46b8-be5d-d7517b386965" />
+      <link xlink:href="9ecbc065-4153-4193-86d0-5d264120a69a" />
+      <link xlink:href="07da60d4-d213-4a4a-b498-6bd68c6885b9" />
+      <link xlink:href="ab23d48a-2241-4e60-a65f-a327b8c30a7d" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

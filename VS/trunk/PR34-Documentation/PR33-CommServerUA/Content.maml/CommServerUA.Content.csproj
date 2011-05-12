@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Configuration\CustomConfigurationOfCommServerUA.aml" />
     <None Include="GettingStarted\CommServerUAcomponents.aml" />
     <None Include="GettingStarted\CommServerUAComponents\CommonPartsAndFunctionalitiesOfCommServerUA.aml" />
     <None Include="GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml" />

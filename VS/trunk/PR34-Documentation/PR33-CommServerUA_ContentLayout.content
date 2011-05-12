@@ -12,6 +12,7 @@
     </Topic>
     <Topic id="fddc297e-3ac3-4bf2-919e-df25435ad611" visible="True" title="Configuration" tocTitle="Configuration" linkText="Configuration">
       <Topic id="7291baf0-ddef-4b59-9bb2-2bcef48d2e76" visible="True" title="How to configure CommServerUA" tocTitle="How to configure CommServerUA" linkText="How to configure CommServerUA" />
+      <Topic id="b69635eb-f76f-4b48-9c18-e6adf9eb9d49" visible="True" title="Custom configuration of the CommServer UA" tocTitle="Custom configuration of the CommServer UA" linkText="Custom configuration of the CommServer UA" />
       <Topic id="2d5937cb-8f0a-464b-8169-c21baa17a6d4" visible="True" title="How to remotely access the CommServer UA" tocTitle="How to remotely access the CommServer UA" linkText="How to remotely access the CommServer UA" />
     </Topic>
     <Topic id="a49e5b1a-cd9d-4d12-a9cb-3c31e04e2bc0" visible="True" title="Version History" tocTitle="Version History" linkText="Version History" />
