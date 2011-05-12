@@ -544,7 +544,7 @@
       <ImageId>b0836f8a-3752-4c09-9828-7715983b6748</ImageId>
       <AlternateText>Redundancy Transfer Failure</AlternateText>
     </Image>
-	<Image Include="PR21-CommServer\Graphics\SampleReport.jpg">
+    <Image Include="PR21-CommServer\Graphics\SampleReport.jpg">
       <ImageId>2e5e09ac-3b27-4665-acc9-f73825dbe99a</ImageId>
       <AlternateText>Sample Report</AlternateText>
     </Image>
@@ -3426,6 +3426,17 @@
     </ContentLayout>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="PR33-CommServerUA\Graphics\GettingStarted\CommServerUaConfiguration.jpg">
+      <ImageId>723f8b5e-5795-476f-906a-305b0097b79c</ImageId>
+      <AlternateText>Comm Server Ua Configuration</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\CommonPartsAndFunctionalitiesOfCommServerUA.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAcomponents.aml" />
     <None Include="PR21-CommServer\Content.maml\TwoStationsOnOneSegmentOnOneChannel.aml" />
     <None Include="PR21-CommServer\Content.maml\TwoSegmentsOnOneChannel.aml" />
     <None Include="PR21-CommServer\Content.maml\RecommendationsForPortsAndSegments.aml" />
@@ -3454,6 +3465,10 @@
     <None Include="Tools\Content.maml\Tools.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\" />
+    <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\" />
+    <Folder Include="PR33-CommServerUA\Graphics\GettingStarted\" />
+    <Folder Include="PR33-CommServerUA\Graphics\" />
     <Folder Include="Tools\Graphics\OPCViewer\" />
     <Folder Include="Tools\Graphics\OPCUAViewer\" />
     <Folder Include="Tools\Graphics\" />

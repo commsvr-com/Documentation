@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="93248756-137a-45f2-b611-0e5b8fb71216" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="OpcWrapperFunctionality">
+      <title>OPC Wrapper functionality</title>
+      <content>
+        <para>The  CommServer UA package consists of the components  that are shown in the figure below.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">CommServer UA configuration</caption>
+          <image placement="center" xlink:href = "723f8b5e-5795-476f-906a-305b0097b79c"/>
+        </mediaLink>
+        <para>CommServer OPC UA server wrapper functionality allows to act CommServer UA as an OPC UA server that wraps the Classic OPC DA server (DCOM based) and creates the Address Space based on the XML model file obtained from <link xlink:href="a2d55988-b59a-4a87-95b9-933f6bbdf5bd">Address Space Model Designer</link>.</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>CommServer OPC DA Client</legacyBold> - the essential part of the package that allows to connect  and exchange data with Classic OPC DA server (DCOM based). This is the same component that is used also in <link xlink:href="b8c5f048-bb7e-4742-b7f2-b61a77789ed9">DataPorter</link> , so the <link xlink:href="9ecbc065-4153-4193-86d0-5d264120a69a">configuration of OPC connection</link> is the same as in DataPorter.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>OPC Viewer</legacyBold> - free <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413">software tool</link> that is very useful for developers, testers, integrators, and others using OPC. This tool is able to generate <legacyBold>Configuration.oses and DA_AddressSpace.odic</legacyBold> files. Read more about configuration of the wrapper functionality in: <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413">Walkthrough: Create UA Wrapper</link>.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Configuration.oses</legacyBold> - this is an <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413">OPC Viewer</link> session file. This configuration file contains information about configured OPC groups, subscriptions and items. Read more about configuration of the wrapper functionality in: <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413">Walkthrough: Create UA Wrapper</link>.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>DA_AddressSpace.odic</legacyBold> - this is an <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413">OPC Viewer</link> dictionary file. This file contains information about the address space of OPC DA (DCOM/Classic) server. Read more about configuration of the wrapper functionality in: <link xlink:href="7b918a83-2386-43a2-badf-adbb1613c413">Walkthrough: Create UA Wrapper</link>.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

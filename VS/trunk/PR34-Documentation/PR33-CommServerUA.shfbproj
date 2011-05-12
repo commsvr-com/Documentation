@@ -63,13 +63,13 @@
       </PlugInConfig>
     </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2010, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2011, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS CommServer %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2105CommServer_Software.aspx&amp;quot%3b title=&amp;quot%3bCommServer -multiprotocol, multichannel, redundant communication server – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
     <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/Products/CommServer.aspx&amp;quot%3b title=&amp;quot%3bCommServer online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>CommServer UA - multiprotocol, multichannel, redundant communication server</HelpTitle>
-    <PresentationStyle>vs2005AdWords</PresentationStyle>
+    <PresentationStyle>vs2005-Produkty</PresentationStyle>
     <SdkLinkType>None</SdkLinkType>
     <WorkingPath>Temp\CommServerUA\Working\</WorkingPath>
     <NamingMethod>MemberName</NamingMethod>
@@ -83,6 +83,10 @@
   <ItemGroup>
     <Folder Include="CommonDocumentation\" />
     <Folder Include="CommonDocumentation\Content.maml\" />
+    <Folder Include="PR33-CommServerUA\Graphics\GettingStarted\" />
+    <Folder Include="PR33-CommServerUA\Graphics\" />
+    <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\" />
+    <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\" />
     <Folder Include="PR33-CommServerUA\Content.maml\" />
     <Folder Include="PR33-CommServerUA\" />
     <Folder Include="OPCUAebook\Content.maml\" />
@@ -92,9 +96,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\CommonPartsAndFunctionalitiesOfCommServerUA.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAcomponents.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\Configuration\HowToAccessRemotely.aml" />
     <None Include="CommonDocumentation\Content.maml\FAQ.aml" />
-    <None Include="PR33-CommServerUA\Content.maml\108fd116-8186-4150-96b4-9b15ea9fe346.aml" />
     <None Include="OPCUAebook\Content.maml\Configuration.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA.aml" />
     <None Include="PR33-CommServerUA\Content.maml\WelcomeToCommServerUA.aml" />
@@ -104,12 +112,15 @@
     <None Include="OPCUAebook\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
   </ItemGroup>
   <ItemGroup>
-    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
-      <SortOrder>2</SortOrder>
-    </ContentLayout>
     <ContentLayout Include="PR33-CommServerUA_ContentLayout.content">
       <SortOrder>1</SortOrder>
     </ContentLayout>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PR33-CommServerUA\Graphics\GettingStarted\CommServerUaConfiguration.jpg">
+      <ImageId>723f8b5e-5795-476f-906a-305b0097b79c</ImageId>
+      <AlternateText>Comm Server Ua Configuration</AlternateText>
+    </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
   <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
