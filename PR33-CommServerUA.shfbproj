@@ -83,6 +83,7 @@
   <ItemGroup>
     <Folder Include="CommonDocumentation\" />
     <Folder Include="CommonDocumentation\Content.maml\" />
+    <Folder Include="PR33-CommServerUA\Content.maml\Configuration\" />
     <Folder Include="PR33-CommServerUA\Graphics\GettingStarted\" />
     <Folder Include="PR33-CommServerUA\Graphics\" />
     <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\" />
@@ -96,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
+    <None Include="PR33-CommServerUA\Content.maml\Configuration\CustomConfigurationOfCommServerUA.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml" />

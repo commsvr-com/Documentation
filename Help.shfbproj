@@ -3432,6 +3432,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="PR33-CommServerUA\Content.maml\Configuration\CustomConfigurationOfCommServerUA.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml" />
@@ -3465,6 +3466,7 @@
     <None Include="Tools\Content.maml\Tools.aml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PR33-CommServerUA\Content.maml\Configuration\" />
     <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\" />
     <Folder Include="PR33-CommServerUA\Content.maml\GettingStarted\" />
     <Folder Include="PR33-CommServerUA\Graphics\GettingStarted\" />

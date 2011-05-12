@@ -7,18 +7,19 @@
     <inThisSection>
       <content>
         <para>
-          <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76" />
+          <link xlink:href="7291baf0-ddef-4b59-9bb2-2bcef48d2e76">How to configure CommServerUA</link>
         </para>
         <para>
-          Custom configuration of the CommServer UA
+          <link xlink:href="b69635eb-f76f-4b48-9c18-e6adf9eb9d49">Custom configuration of the CommServer UA</link>
         </para>
       </content>
     </inThisSection>
      <relatedSections>
        <content>
          <para>
-           In <link xlink:href="07da60d4-d213-4a4a-b498-6bd68c6885b9"/> you will select a dedicated UA server configuration editor and add/modify real-time process data-bindings of the selected model nodes. 
+           In <link xlink:href="07da60d4-d213-4a4a-b498-6bd68c6885b9">Walkthrough: Process DataBinding</link> you will select a dedicated UA server configuration editor and add/modify real-time process data-bindings of the selected model nodes.
          </para>
+         <para>In <link xlink:href="ab23d48a-2241-4e60-a65f-a327b8c30a7d">Walkthrough: Create UA Wrapper</link> there is a description that instructs step by step: how to configure the wrapper functionality.</para>
        </content>
      </relatedSections> 
     <relatedTopics>
