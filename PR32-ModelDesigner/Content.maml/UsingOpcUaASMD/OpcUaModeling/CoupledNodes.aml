@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="46d07028-df45-4c0a-9125-bbee852e455d" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CoupledNodes">
+      <title>Coupled Nodes</title>
+      <content>
+        <para>“Coupled nodes” is a feature of OPC UA Address Space Model Designer. This feature adds a special virtual container (called CoupledNodes) to the model; that container is not an element of the OPC UA Information Model (“Coupled nodes” are not a part of OPC UA Server Address Space). The reasons why OPC UA Address Space Model Designer introduces  “Coupled nodes” are as follows:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Improvement of model readability and enhancement of model navigation.</para>
+          </listItem>
+          <listItem>
+            <para>Possibility to configure data binding.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <section address="ImprovementOfModelReadabilityAndEnhancementOfModelNavigation">
+      <title>Improvement of model readability and enhancement of model navigation</title>
+      <content>
+        <para>During navigation through the model in OPC UA Address Space Model Designer, all nodes that are coupled with a selected node [e.g. through type definition (reference: HasTypeDefinition), reference type definition, base type definition, target of a reference, etc.]  are added automatically to the CoupledNodes container. This is a kind of a shortcut, a simple way to discover the model elements related to a particular node, e.g. you can utilize “Coupled nodes” to find type definition of a selected node easily.</para>
+      </content>
+    </section>
+    <section address="PossibilityToConfigureDataBinding">
+      <title>Possibility to configure data binding</title>
+      <content>
+        <para>Configuration of data bindings often requires bindings to nodes instances (unlike nodes definitions). However very rarely nodes instances are defined in the model. Usually nodes instances are instantiated in OPC UA server address space. The figure below shows such situation:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Possibility to configure data binding</caption>
+          <image placement="center" xlink:href = "a046dee6-1b02-4ca8-98ba-a262a459d44a"/>
+        </mediaLink>
+        <para>
+          Boiler #1 has type definition BoilerType. Boiler #1 overrides the PipeX001 definition (from Boiler Type) as Pipe1001 (<mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline>), however it only changes the name (all Children remains unchanged). Note that  PipeX001->FTX001->Output (<mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline><mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline>) is defined only in BoilerType and does not appear in the model definition of Boiler #1, however it appears under Boiler #1 instance (<mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline><mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline><mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline>) in OPC UA Server or OPC UA Address Space Model Designer Browse View.
+        </para>
+        <para>
+          When a user needs to add data binding to Output under Boiler #1->Pipe1001->FTX001, a question arises how to add data binding to a node that does not exist in the model. The solution is “Coupled Nodes”. To add data binding to Output under Boiler #1->Pipe1001->FTX001, the user navigates through “Coupled Nodes” of Boiler #1 to find the requested Output node and then adds data binding to that node. The OPC UA Address Space Model Designer adds a kind of amarker that this binding is added to Boiler #1. Thanks to that feature  OPC UA server (e.g. CommServer UA) can connect this data binding with a required node instance (<mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline><mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline><mediaLinkInline>
+            <image xlink:href="0351820d-f4bc-4d0b-901e-6fcf84ae48d7"/>
+          </mediaLinkInline>).
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
