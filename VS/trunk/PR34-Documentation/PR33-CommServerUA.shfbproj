@@ -83,6 +83,7 @@
   <ItemGroup>
     <Folder Include="CommonDocumentation\" />
     <Folder Include="CommonDocumentation\Content.maml\" />
+    <Folder Include="CommonDocumentation\Graphics\" />
     <Folder Include="PR33-CommServerUA\Content.maml\Configuration\" />
     <Folder Include="PR33-CommServerUA\Graphics\GettingStarted\" />
     <Folder Include="PR33-CommServerUA\Graphics\" />
@@ -97,6 +98,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
+    <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
+    <None Include="CommonDocumentation\Content.maml\Contacts.aml" />
+    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="CommonDocumentation\Content.maml\GlossaryDataPorter.aml" />
+    <None Include="CommonDocumentation\Content.maml\License.aml" />
+    <None Include="CommonDocumentation\Content.maml\OPCOverview.aml" />
+    <None Include="CommonDocumentation\Content.maml\YouTube.aml" />
     <None Include="PR33-CommServerUA\Content.maml\Configuration\CustomConfigurationOfCommServerUA.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
@@ -114,6 +122,9 @@
     <None Include="OPCUAebook\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
   </ItemGroup>
   <ItemGroup>
+    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
+      <SortOrder>2</SortOrder>
+    </ContentLayout>
     <ContentLayout Include="PR33-CommServerUA_ContentLayout.content">
       <SortOrder>1</SortOrder>
     </ContentLayout>
@@ -122,6 +133,34 @@
     <Image Include="PR33-CommServerUA\Graphics\GettingStarted\CommServerUaConfiguration.jpg">
       <ImageId>723f8b5e-5795-476f-906a-305b0097b79c</ImageId>
       <AlternateText>Comm Server Ua Configuration</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_1.jpg">
+      <ImageId>67286d24-ecaf-4cde-a4e5-c858978f88e6</ImageId>
+      <AlternateText>Choose Help-&gt; About in the menu</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_2.jpg">
+      <ImageId>ac7be165-730a-4972-8c56-aad1b6d5a383</ImageId>
+      <AlternateText>Change tab to "License"</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_3.jpg">
+      <ImageId>d69b7d16-6f2b-4696-8f70-5fceb0910889</ImageId>
+      <AlternateText>Click on the line with installed license</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_4.jpg">
+      <ImageId>0a01397a-1199-43e4-9a15-7beca3ca0879</ImageId>
+      <AlternateText>paste correct information</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_5.jpg">
+      <ImageId>d56fe7a7-800e-4756-8d8d-63044738d06c</ImageId>
+      <AlternateText>click on “Request for license” button</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CommonDocumentation\Graphics\YouTube.jpg">
+      <ImageId>ee97b09b-0fe5-433d-a058-c63a22154e29</ImageId>
+      <AlternateText>You Tube</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->

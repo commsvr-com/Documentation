@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="ffd0271b-d16b-45d2-b3b4-264ee4554607" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="BufferedQueuesInterface">
+      <title>Buffered queues interface</title>
+      <content>
+        <para>Access to the data queues in DataPorter provides buffering of values that are read from OPC Server. This assures that none of the values are lost during the reading process.</para>
+        <para>To configure a transaction that uses buffering, the Buffered Access Queue operation should be used (this operation block is named "Buffer"). The name of the queue (that will be used by the client to connect) is configured as an Operation parameter (see figure below, where the queue name is configured as “Queue 1”).</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">Queue Interface</caption>
+          <image placement="center" xlink:href = "d31586f1-75de-4198-b664-7984bec78726"/>
+        </mediaLink>
+        <para>The figure below shows the sequence of actions performed during the process of buffered read by the sample client application.</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure 2">Buffered read example sequence</caption>
+          <image placement="center" xlink:href = "4f236b51-72f6-443a-93c2-958da79f81aa"/>
+        </mediaLink>
+        <para>In the figure above, the following steps are done:</para>
+        <list class="ordered">
+          <listItem>
+            <para>Listing of available queues:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Client gets available queues (GetAvaliableQueues),</para>
+              </listItem>
+              <listItem>
+                <para>DataPorter returns the list of available queues (string[] Avaliable Queues),</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>Connection to the queue:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Client connects to queue using the queue name (ConnectToQueue (parameter name as a string)).</para>
+              </listItem>
+              <listItem>
+                <para>Server (OPCAdvancedDataAccess service) responds with a queue identifier (QueueHashID as a string).</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>Transaction:</para>
+            <list class="bullet">
+              <listItem>
+                <para>Client requests data by sending StartTransaction (parameter QueueHashID as a string); this informs the OPCAdvancedDataAccess service to begin data transfer.</para>
+              </listItem>
+              <listItem>
+                <para>OPCAdvancedDataAccess sends all tags from queue as an array of ItemValueResult.</para>
+              </listItem>
+              <listItem>
+                <para>The queue is blocked while the client processes the data.  If an error occurs, the client can return to the previous point (Start transaction) and receives the same data again.</para>
+              </listItem>
+              <listItem>
+                <para>If no error occurs during data processing the client sends End transaction (function EndTransaction (parameter QueueHashID as a string)) – this is information for OPCAdvancedDataAccess that data processing has been finished. Thereafter OPCAdvancedDataAccess and DataPorter delete processed data, new data (if any) is put from the temporary queue to the main queue.</para>
+              </listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>The client waits some time and returns to Start transaction (step 3).</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

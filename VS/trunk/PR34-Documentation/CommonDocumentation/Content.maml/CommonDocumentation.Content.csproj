@@ -55,10 +55,6 @@
     <None Include="GlossaryDataPorter.aml" />
     <None Include="License.aml" />
     <None Include="OPCOverview.aml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\YouTube.html">
-      <Link>YouTube.html</Link>
-    </Content>
+    <None Include="YouTube.aml" />
   </ItemGroup>
 </Project>

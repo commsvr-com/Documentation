@@ -67,7 +67,8 @@ SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc
           <![CDATA[
 <?xml version="1.0" encoding="utf-8" ?>
 <Param>
-  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteScalar" async="false">
+  <operationdb name="MSSQL" connectionstring="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|DataPorterDataBase.mdf;Integrated
+  Security=True;Connect Timeout=30;User Instance=True" stop="false" type="ExecuteScalar" async="false">
     <command separator="">SELECT top 1 [opcvalue] FROM [OPCDataTable] order by [timestamp] desc</command>
   </operationdb>
   <operationopc name="opc" type="write">

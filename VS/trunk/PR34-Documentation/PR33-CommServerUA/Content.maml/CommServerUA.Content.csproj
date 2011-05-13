@@ -34,12 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Configuration\CustomConfigurationOfCommServerUA.aml" />
+    <None Include="Configuration\CustomConfigurationOfCommServerUA.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="GettingStarted\CommServerUAcomponents.aml" />
     <None Include="GettingStarted\CommServerUAComponents\CommonPartsAndFunctionalitiesOfCommServerUA.aml" />
-    <None Include="GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml" />
-    <None Include="GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
-    <None Include="GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
+    <None Include="GettingStarted\CommServerUAComponents\ModelingFeaturesOfCommServerUaAndOpcUaAddressSpaceModelDesigner.aml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="WelcomeToCommServerUA.aml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
