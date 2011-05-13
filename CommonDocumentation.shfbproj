@@ -120,7 +120,7 @@
     <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
     <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
     <None Include="CommonDocumentation\Content.maml\FAQ.aml" />
-    <None Include="CommonDocumentation\Content.maml\f877d634-cf0f-4b5e-bcbd-d099c6693613.aml" />
+    <None Include="CommonDocumentation\Content.maml\YouTube.aml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CommonDocumentation\" />
@@ -147,6 +147,12 @@
     <Image Include="CommonDocumentation\Graphics\hardware_key_5.jpg">
       <ImageId>d56fe7a7-800e-4756-8d8d-63044738d06c</ImageId>
       <AlternateText>click on “Request for license” button</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CommonDocumentation\Graphics\YouTube.jpg">
+      <ImageId>ee97b09b-0fe5-433d-a058-c63a22154e29</ImageId>
+      <AlternateText>You Tube</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->

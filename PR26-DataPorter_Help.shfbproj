@@ -81,15 +81,15 @@
       </PlugInConfig>
     </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2009, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2011, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS DataPorter %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx&amp;quot%3b title=&amp;quot%3bDataPorter - ports data between most popular standards %28OPC, XML, SQL%29 – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
-    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DataPorter/Index.aspx&amp;quot%3b title=&amp;quot%3bDataPorter online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
+    <HeaderText>&amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/&amp;quot%3b title=&amp;quot%3bDataPorter online help&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bHome&amp;lt%3b/A&amp;gt%3b</HeaderText>
     <HelpTitle>DataPorter - ports data between most popular standards %28OPC, XML, SQL%29</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <Preliminary>False</Preliminary>
-    <PresentationStyle>vs2005AdWordsDP</PresentationStyle>
+    <PresentationStyle>vs2005-Produkty</PresentationStyle>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
@@ -134,6 +134,9 @@
   <ItemGroup>
     <None Include="CommonDocumentation\Content.maml\FAQ.aml" />
     <None Include="CommonDocumentation\Content.maml\ApplicationConfigurationLocation.aml" />
+    <None Include="CommonDocumentation\Content.maml\Glossary.aml" />
+    <None Include="CommonDocumentation\Content.maml\Licese_acquisition.aml" />
+    <None Include="CommonDocumentation\Content.maml\YouTube.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\BufferedQueuesInterface.aml" />
     <None Include="PR26-DataPorter\Content.maml\Configuration\WebServiceConectivity\BufferedQueues Interface.aml" />
     <None Include="PR26-DataPorter\Content.maml\GettingStarted\DataPorterComponents\OPCViewer.aml" />
@@ -404,7 +407,6 @@
       <AlternateText>Example Configuration</AlternateText>
     </Image>
     <Content Include="PR30-OPCViewer\Graphics\ico\OPC_Environment.png" />
-    <Content Include="YouTube.html" />
     <Image Include="PR26-DataPorter\Graphics\operations\DBAdv.JPG">
       <AlternateText>DBAdv.JPG</AlternateText>
       <ImageId>DBAdv.JPG</ImageId>
@@ -859,6 +861,37 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_1.jpg">
+      <ImageId>67286d24-ecaf-4cde-a4e5-c858978f88e6</ImageId>
+      <AlternateText>Choose Help-&gt; About in the menu</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_2.jpg">
+      <ImageId>ac7be165-730a-4972-8c56-aad1b6d5a383</ImageId>
+      <AlternateText>Change tab to "License"</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_3.jpg">
+      <ImageId>d69b7d16-6f2b-4696-8f70-5fceb0910889</ImageId>
+      <AlternateText>Click on the line with installed license</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_4.jpg">
+      <ImageId>0a01397a-1199-43e4-9a15-7beca3ca0879</ImageId>
+      <AlternateText>paste correct information</AlternateText>
+    </Image>
+    <Image Include="CommonDocumentation\Graphics\hardware_key_5.jpg">
+      <ImageId>d56fe7a7-800e-4756-8d8d-63044738d06c</ImageId>
+      <AlternateText>click on “Request for license” button</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CommonDocumentation\Graphics\YouTube.jpg">
+      <ImageId>ee97b09b-0fe5-433d-a058-c63a22154e29</ImageId>
+      <AlternateText>You Tube</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="CommonDocumentation_ContentLayout.content">
+      <SortOrder>2</SortOrder>
+    </ContentLayout>
     <ContentLayout Include="PR26-DataPorter_ContentLayout.content">
       <SortOrder>1</SortOrder>
     </ContentLayout>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f5699a34-d228-4c7d-bbca-fdb494f53a8b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+    <section address="CommServerChannelOnYouTube">
+      <title>CommServer channel on YouTube</title>
+      <content>
+        <para>Visit CommServer channel on YouTube - <externalLink>
+          <linkText>www.youtube.com/user/CASCommServer</linkText>
+          <linkAlternateText>www.youtube.com/user/CASCommServer</linkAlternateText>
+          <linkUri>http://www.youtube.com/user/CASCommServer</linkUri>
+        </externalLink>
+      </para>
+        <mediaLink>
+          <image placement="center" xlink:href = "ee97b09b-0fe5-433d-a058-c63a22154e29"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

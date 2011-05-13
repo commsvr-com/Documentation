@@ -548,7 +548,6 @@
       <ImageId>2e5e09ac-3b27-4665-acc9-f73825dbe99a</ImageId>
       <AlternateText>Sample Report</AlternateText>
     </Image>
-    <Content Include="YouTube.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PR21-CommServer\Content.maml\2ada690c-20a7-45c3-a5ba-c62c2df104b0.aml" />
@@ -3432,6 +3431,7 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CommonDocumentation\Content.maml\YouTube.aml" />
     <None Include="PR33-CommServerUA\Content.maml\Configuration\CustomConfigurationOfCommServerUA.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\RedundantMultiProtocolMultiCannelDataAccessEngineFunctionality.aml" />
     <None Include="PR33-CommServerUA\Content.maml\GettingStarted\CommServerUAComponents\OpcWrapperFunctionality.aml" />
@@ -3483,6 +3483,12 @@
     <Image Include="Tools\Graphics\OPCUAViewer\OPCUAViewer.jpg">
       <ImageId>69aba819-d44b-404b-b5d4-7f079faed9cd</ImageId>
       <AlternateText>OPC UA Viewer</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CommonDocumentation\Graphics\YouTube.jpg">
+      <ImageId>ee97b09b-0fe5-433d-a058-c63a22154e29</ImageId>
+      <AlternateText>You Tube</AlternateText>
     </Image>
   </ItemGroup>
   <!-- Import the SHFB build targets -->
