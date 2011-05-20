@@ -15,6 +15,21 @@
       </alert>
       <autoOutline />
     </introduction>
+    <section address="rel_2_00_12">
+      <title>Version 2.00.12</title>
+      <content>
+        <para>Friday, May 19, 2011</para>
+        <para>This is only a bugfix release. The main changes are listed below:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Resolved issue with license installation (information about "wrong hardware key");</para>
+          </listItem>
+          <listItem>
+            <para>Resolved issue with displaying information about license failure.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_2_00_10">
       <title>Version 2.00.10</title>
       <content>
