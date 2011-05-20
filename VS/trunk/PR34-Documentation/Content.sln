@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonDocumentation.Content", "CommonDocumentation\Content.maml\CommonDocumentation.Content.csproj", "{E9DEA74D-81EB-45B5-89BC-FE3D269DC12E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPorter.Content", "PR26-DataPorter\Content.maml\DataPorter.Content.csproj", "{1F5CB858-F875-4A8F-AF3B-2578FB22ACFA}"

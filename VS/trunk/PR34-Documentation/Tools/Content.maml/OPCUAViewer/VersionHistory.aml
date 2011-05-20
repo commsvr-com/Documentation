@@ -17,6 +17,21 @@
         </alert>
       </content>
     </section>
+    <section address="rel_1_10_02">
+      <title>Version 1.10.02</title>
+      <content>
+        <para>Friday, May 19, 2011</para>
+        <para>This is only a bugfix release. The main changes are listed below:</para>
+        <list class="bullet">
+          <listItem>
+            <para>Resolved issue with license installation (information about "wrong hardware key");</para>
+          </listItem>
+          <listItem>
+            <para>Resolved issue with displaying information about license failure.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="rel_1_10_00">
       <title>Version 1.10.00</title>
       <content>
