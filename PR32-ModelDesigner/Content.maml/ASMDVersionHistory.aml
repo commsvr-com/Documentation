@@ -23,6 +23,43 @@
         <autoOutline />
       </content>
     </section>
+        <section address="rel_3_00_10">
+    	<title>Version 3.00.10</title>
+    	<content>
+    	<para>Monday, February 9, 2015</para>
+    	<para>The main changes and new functionalities are listed below:</para>
+    	<list class="bullet">
+    		<listItem>
+    			<para>Build-in model is compliant with Rel 1.02 Specification</para>
+    		</listItem>
+    		<listItem>
+    			<para>Build-in Model Compiler is compliant with the Model Compiler Rel. 1.02.26 included in the OPC Foundation SDK Rel. 1.02.334.6</para>
+    		</listItem>
+    		<listItem>
+    			<para>Embedded compiler validates the model during creation of the Browse view</para>
+    			<list class="bullet">
+    				<listItem>
+    					<para>errors are logged to the Output window and log file</para>
+    				</listItem>
+    				<listItem>
+    					<para>errors are added as nodes to the browse view to be easily recognizable</para>
+    				</listItem>
+    			</list>
+    		</listItem>
+    		<listItem>
+    			<para>Improved application instrumentation and by expanding events tracing to the log file</para>
+    		</listItem>
+    		<listItem>
+    			<para>Added Analyzer Device Integration (ADI) model</para>
+    		</listItem>
+    		<listItem>
+    			<para>Synchronized example models with the White-paper: <externalLink>
+    			<linkText>"OPC UA Information Model Deployment"</linkText>
+    			<linkUri>http://www.commsvr.com/DownloadCenter/Publications/OPCUAInformationModelDeployment/tabid/563/language/en-US/Default.aspx</linkUri></externalLink></para>
+    		</listItem>
+    	</list>
+    	</content>
+    </section>
     <section address="rel_3_00_02">
       <title>Version 3.00.02</title>
       <content>
