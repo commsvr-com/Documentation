@@ -44,6 +44,9 @@
   </Target>
   -->
   <ItemGroup>
+    <None Include="..\..\PR32-ModelDesigner\Content.maml\UsingOpcUaASMD\UserInterface\ASMDMenuFile.aml">
+      <Link>ASMDMenuFile.aml</Link>
+    </None>
     <None Include="ApplicationConfigurationLocation.aml">
       <SubType>Designer</SubType>
     </None>

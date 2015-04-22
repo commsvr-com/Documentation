@@ -6,82 +6,86 @@
     <section address="MenuFile">
       <title>Menu File</title>
       <content>
-          <mediaLink>
-              <caption placement="after" lead="Figure 1">UA Address Space Model Designer – Menu File</caption>
-              <image placement="center" xlink:href = "c5f9b590-6a3f-4e8d-af54-c1d31ee0cc24"/>
-          </mediaLink>
-          <list class="ordered">
+        <mediaLink>
+          <caption placement="after" lead="Figure 1">UA Address Space Model Designer – Menu File</caption>
+          <image placement="center" xlink:href = "c5f9b590-6a3f-4e8d-af54-c1d31ee0cc24"/>
+        </mediaLink>
+        <list class="ordered">
+          <listItem>
+            <para>
+              <legacyBold>New</legacyBold> - Creates new solution.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Open</legacyBold> - Opens the solution. This application implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Save</legacyBold> - Saves the solution. The application implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Save as</legacyBold> - Saves the solution as a new file. The application implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Import</legacyBold> - Imports the project (model) or the solution from another format.
+            </para>
+            <list class="bullet">
+              <listItem>From UANodeSet - It allows to import model represented by XML file compliant with UANodeSet schema.</listItem>
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Export</legacyBold>
+            </para>
+            <list class="bullet">
               <listItem>
-                  <para>
-                      <legacyBold>New</legacyBold> - Creates new solution.</para>
+                <para>To Word - Exports (generates a report) the solution to a Microsoft Word 2007 document</para>
               </listItem>
               <listItem>
-                  <para>
-                      <legacyBold>Open</legacyBold> - Opens the solution. This application implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects.
-                  </para>
+                <para>To Excel - Exports (generates a report) the solution to a Microsoft Excel 2007 document</para>
               </listItem>
               <listItem>
-                  <para>
-                      <legacyBold>Save</legacyBold> - Saves the solution. The application implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects.
-                  </para>
+                <para>To MAML - Exports (generates a report) the solution to a MAML document</para>
               </listItem>
               <listItem>
-                  <para>
-                      <legacyBold>Save as</legacyBold> - Saves the solution as a new file. The application implements conceptual containers called solutions and projects to apply its settings. Any solution contains one or more projects and it manages the way the designer configures, builds, and deploys sets of related projects.
-                  </para>
+                <para>To Graphics - Exports the solution as a graphical diagram</para>
               </listItem>
               <listItem>
-                  <para>
-                      <legacyBold>Import</legacyBold> - Imports the project (model) or the solution from another format.
-                  </para>
+                <para>To… - Exports  the solution to custom format</para>
               </listItem>
-              <listItem>
-                  <para>
-                      <legacyBold>Export</legacyBold>
-                  </para>
-                  <list class="bullet">
-                      <listItem>
-                          <para>To Word - Exports (generates a report) the solution to a Microsoft Word 2007 document</para>
-                      </listItem>
-                      <listItem>
-                          <para>To Excel - Exports (generates a report) the solution to a Microsoft Excel 2007 document</para>
-                      </listItem>
-                      <listItem>
-                          <para>To MAML - Exports (generates a report) the solution to a MAML document</para>
-                      </listItem>
-                      <listItem>
-                          <para>To Graphics - Exports the solution as a graphical diagram</para>
-                      </listItem>
-                      <listItem>
-                          <para>To… - Exports  the solution to custom format</para>
-                      </listItem>
-                  </list>
-                  <mediaLink>
-                      <caption placement="after" lead="Figure 2">UA Address Space Model Designer – Menu File – Export Menu</caption>
-                      <image placement="center" xlink:href = "43337c00-a0d6-447b-98f6-976fdd74d3e8"/>
-                  </mediaLink>
-              </listItem>
-              <listItem>
-                  <para>
-                      <legacyBold>Page Setup</legacyBold> - Sets up the report page printing
-                  </para>
-              </listItem>
-              <listItem>
-                  <para>
-                      <legacyBold>Print</legacyBold> - Prints the report based on the solution
-                  </para>
-              </listItem>
-              <listItem>
-                  <para>
-                      <legacyBold>Recent Solutions</legacyBold> – Gives an easy access to recently opened solutions
-                  </para>
-              </listItem>
-              <listItem>
-                  <para>
-                      <legacyBold>Exit</legacyBold> - Closes the application
-                  </para>
-              </listItem>
-          </list>
+            </list>
+            <mediaLink>
+              <caption placement="after" lead="Figure 2">UA Address Space Model Designer – Menu File – Export Menu</caption>
+              <image placement="center" xlink:href = "43337c00-a0d6-447b-98f6-976fdd74d3e8"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Page Setup</legacyBold> - Sets up the report page printing
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Print</legacyBold> - Prints the report based on the solution
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Recent Solutions</legacyBold> – Gives an easy access to recently opened solutions
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Exit</legacyBold> - Closes the application
+            </para>
+          </listItem>
+        </list>
       </content>
     </section>
     <relatedTopics>

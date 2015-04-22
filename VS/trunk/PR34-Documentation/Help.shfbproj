@@ -25,23 +25,46 @@
           <targets files="reflection.xml" type="{@ProjectLinks}" />
         </component>
       </ComponentConfig>
-<ComponentConfig id="Code Block Component" enabled="True"><component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><basePath value="{@ProjectFolder}" /><languageFilter value="true" /><allowMissingSource value="false" /><removeRegionMarkers value="false" /><colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" /></component></ComponentConfig>
-<ComponentConfig id="IntelliSense Component" enabled="True"><component id="IntelliSense Component" type="SandcastleBuilder.Components.IntelliSenseComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Output options (optional)
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <basePath value="{@ProjectFolder}" />
+          <languageFilter value="true" />
+          <allowMissingSource value="false" />
+          <removeRegionMarkers value="false" />
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="IntelliSense Component" enabled="True">
+        <component id="IntelliSense Component" type="SandcastleBuilder.Components.IntelliSenseComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Output options (optional)
                  Attributes:
                     Include Namespaces (false by default)
                     Namespaces filename ("Namespaces" if not specified or empty)
-                    Directory (current folder if not specified or empty) --><output includeNamespaces="false" namespacesFile="Namespaces" folder="{@OutputFolder}" /></component></ComponentConfig>
-<ComponentConfig id="Post-transform Component" enabled="True"><component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll"><!-- Code colorizer files (required).
+                    Directory (current folder if not specified or empty) -->
+          <output includeNamespaces="false" namespacesFile="Namespaces" folder="{@OutputFolder}" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
                  Attributes:
                     Stylesheet file (required)
                     Script file (required)
-                    "Copy" image file (required) --><colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" /><!-- Base output paths for the files (required).  These should match
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output paths for the files (required).  These should match
                  the parent folder of the output path of the HTML files (see
-                 each of the SaveComponent instances below). --><outputPaths>
+                 each of the SaveComponent instances below). -->
+          <outputPaths>
 {@HelpFormatOutputPaths}
-            </outputPaths><!-- Logo image file (optional).  Filename is required. The height,
+            </outputPaths>
+          <!-- Logo image file (optional).  Filename is required. The height,
                  width, altText, placement, and alignment attributes are
-                 optional. --><logoFile filename="\\Cas_002\cas_dfs\cas\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" /></component></ComponentConfig></ComponentConfigurations>
+                 optional. -->
+          <logoFile filename="\\Cas_002\cas_dfs\cas\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="" placement="right" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
     <HelpFileFormat>Website</HelpFileFormat>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
