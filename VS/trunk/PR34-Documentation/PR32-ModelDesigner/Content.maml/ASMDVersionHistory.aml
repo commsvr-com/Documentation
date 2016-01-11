@@ -2,7 +2,7 @@
 <topic id="ada1af70-e1ba-49df-8d0a-8ddc87a0f287" revisionNumber="1">
   <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
     <introduction>
-      What's New.
+      <para>What's New.</para>
     </introduction>
     <section address="VersionHistory">
       <title>Version History</title>
@@ -16,29 +16,86 @@
           </para>
           <para>
             See also:
-            <list class="bullet">
-              <listItem>
+          </para>
+          <list class="bullet">
+            <listItem>
+              <para>
                 <externalLink>
                   <linkText>Movie "Introduction to OPC UA Address Space modeling using CAS Address Space Model Designer”</linkText>
                   <linkUri>http://www.youtube.com/watch?v=pYOQA4atlRI</linkUri>
                 </externalLink>
-              </listItem>
-              <listItem>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
                 <externalLink>
                   <linkText>Address Space Interchange XML"</linkText>
                   <linkUri>http://www.cas.internetdsl.pl/commserver/P_DowloadCenter/P_Publications/P-15010101-AddressSpaceInterchangeXML.pdf</linkUri>
                 </externalLink>
-              </listItem>
-              <listItem>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
                 <externalLink>
                   <linkText>"OPC UA Information Model Deployment"</linkText>
                   <linkUri>http://www.commsvr.com/DownloadCenter/Publications/OPCUAInformationModelDeployment/tabid/563/language/en-US/Default.aspx</linkUri>
                 </externalLink>
-              </listItem>
-            </list>
+              </para>
+            </listItem>
+          </list>
+        </alert>
+      </content>
+    </section>
+    <section address="rel_3_20_00">
+      <title>Version 3.20</title>
+      <content>
+        <para>Release Date: January 11, 2016</para>
+        <para>The main changes and new functionalities are listed below:</para>
+        <alert>
+          <para>
+            The application uses deliverables of the open source project titled OPC UA Object Oriented Interned.
+            <externalLink>
+              <linkText>The detailed description of this project is available on-line.</linkText>
+              <linkUri>https://github.com/mpostol/OPC-UA-OOI/tree/master/</linkUri>
+            </externalLink>
           </para>
         </alert>
-        <autoOutline />
+        <list class="bullet">
+          <listItem>
+            <para>
+              Import supporting the XML documents compliant with the UANodeSet XML Schema uses the deliverables developed and maintained in
+              the public domain.
+              <externalLink>
+                <linkText>
+                  See detailed description at:
+                </linkText>
+                <linkUri>
+                  https://github.com/mpostol/OPC-UA-OOI/tree/master/SemanticDataSolution.
+                </linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+            Embedded OPC UA application configuration editor supports any external pluh-in prepared on the base of the 
+            <externalLink>
+              <linkText>Nuget package.</linkText>
+              <linkUri>https://www.nuget.org/packages/UAOOI.DataBindings/</linkUri>
+            </externalLink>
+              The package code is available as the
+              <externalLink>
+                <linkText>open source</linkText>
+                <linkUri>https://github.com/mpostol/OPC-UA-OOI/tree/master/DataBindingsSolution/DataBindings</linkUri>
+              </externalLink>
+            </para>
+          </listItem>
+          <listItem>
+            <para>Updated the code for target .NET Framework 4.6.1. and recent development environment.</para>
+          </listItem>
+          <listItem>
+            <para>Added unit tests and fixed reported errors.</para>
+          </listItem>
+        </list>
       </content>
     </section>
     <section address="rel_3_10_00">
@@ -125,6 +182,7 @@
         </list>
       </content>
     </section>
+    
     <section address="rel_3_00_00">
       <title>Version 3.00.00</title>
       <content>
