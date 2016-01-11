@@ -49,7 +49,7 @@
     <section address="rel_3_20_00">
       <title>Version 3.20</title>
       <content>
-        <para>Release Date: January 11, 2016</para>
+        <para>Release Date: January 13, 2016</para>
         <para>The main changes and new functionalities are listed below:</para>
         <alert>
           <para>
@@ -67,7 +67,7 @@
               the public domain.
               <externalLink>
                 <linkText>
-                  See detailed description at:
+                  Click to see the detailed description.
                 </linkText>
                 <linkUri>
                   https://github.com/mpostol/OPC-UA-OOI/tree/master/SemanticDataSolution.
