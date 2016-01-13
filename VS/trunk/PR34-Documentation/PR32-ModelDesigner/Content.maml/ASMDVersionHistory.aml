@@ -53,9 +53,10 @@
         <para>The main changes and new functionalities are listed below:</para>
         <alert>
           <para>
+            To improve adaptability, the application uses open source components available in the mentioned project workspace.
             The application uses deliverables of the open source project titled OPC UA Object Oriented Interned.
             <externalLink>
-              <linkText>The detailed description of this project is available on-line.</linkText>
+              <linkText>Its detailed description is available on-line.</linkText>
               <linkUri>https://github.com/mpostol/OPC-UA-OOI/tree/master/</linkUri>
             </externalLink>
           </para>
@@ -63,8 +64,7 @@
         <list class="bullet">
           <listItem>
             <para>
-              Import supporting the XML documents compliant with the UANodeSet XML Schema uses the deliverables developed and maintained in
-              the public domain.
+              Import of the XML documents compliant with the UANodeSet XML schema uses the deliverables developed and maintained in the public domain.
               <externalLink>
                 <linkText>
                   Click to see the detailed description.
@@ -77,11 +77,11 @@
           </listItem>
           <listItem>
             <para>
-            Embedded OPC UA application configuration editor supports any external pluh-in prepared on the base of the 
-            <externalLink>
-              <linkText>Nuget package.</linkText>
-              <linkUri>https://www.nuget.org/packages/UAOOI.DataBindings/</linkUri>
-            </externalLink>
+              Embedded OPC UA application configuration editor supports any external plug-in prepared on the basis of the
+              <externalLink>
+                <linkText>Nuget package.</linkText>
+                <linkUri>https://www.nuget.org/packages/UAOOI.DataBindings/</linkUri>
+              </externalLink>
               The package code is available as the
               <externalLink>
                 <linkText>open source</linkText>
@@ -182,7 +182,7 @@
         </list>
       </content>
     </section>
-    
+
     <section address="rel_3_00_00">
       <title>Version 3.00.00</title>
       <content>
