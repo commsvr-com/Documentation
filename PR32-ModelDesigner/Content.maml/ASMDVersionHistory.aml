@@ -50,17 +50,16 @@
       <title>Version 3.20</title>
       <content>
         <para>Release Date: January 13, 2016</para>
-        <para>The main changes and new functionalities are listed below:</para>
         <alert>
           <para>
-            To improve adaptability, the application uses open source components available in the mentioned project workspace.
-            The application uses deliverables of the open source project titled OPC UA Object Oriented Interned.
+            The application supports the OPC UA Object Oriented Internet paradigm. To improve adaptability, the application uses open source components available in the mentioned project workspace.
             <externalLink>
               <linkText>Its detailed description is available on-line.</linkText>
               <linkUri>https://github.com/mpostol/OPC-UA-OOI/tree/master/</linkUri>
             </externalLink>
           </para>
         </alert>
+        <para>The main changes and new functionalities are listed below:</para>
         <list class="bullet">
           <listItem>
             <para>
@@ -70,7 +69,7 @@
                   Click to see the detailed description.
                 </linkText>
                 <linkUri>
-                  https://github.com/mpostol/OPC-UA-OOI/tree/master/SemanticDataSolution.
+                  https://github.com/mpostol/OPC-UA-OOI/tree/master/SemanticDataSolution/
                 </linkUri>
               </externalLink>
             </para>
@@ -85,7 +84,7 @@
               The package code is available as the
               <externalLink>
                 <linkText>open source</linkText>
-                <linkUri>https://github.com/mpostol/OPC-UA-OOI/tree/master/DataBindingsSolution/DataBindings</linkUri>
+                <linkUri>https://github.com/mpostol/OPC-UA-OOI/tree/master/DataBindingsSolution/DataBindings/</linkUri>
               </externalLink>
             </para>
           </listItem>
