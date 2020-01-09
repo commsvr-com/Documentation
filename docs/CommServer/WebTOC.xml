@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="f54342bb-2064-4173-ab9a-2045921574ed" Title="CommServer" Url="html/2dea0752-d490-47e6-8444-ac73e07601fc.htm">
+    <HelpTOCNode Id="64e2d2de-f3b3-4f1a-925f-8c6cc26767eb" Title="Theory of operation" Url="html/a709e1f0-0b6e-42da-8e6d-4a3590ada4c6.htm">
+      <HelpTOCNode Title="Introduction" Url="html/e6da9218-ee79-4a13-8665-5376fe7cf91d.htm" />
+      <HelpTOCNode Title="OPC Overview" Url="html/ec8ba7f2-86b3-4005-876b-9479e94d3b9e.htm" />
+      <HelpTOCNode Title="Multi-paths redundancy" Url="html/6e3310d3-495b-4d77-9452-6c23a6efe2c4.htm" />
+      <HelpTOCNode Id="2bfdcafb-0ee9-4948-bdbb-42ab32d9887f" Title="Optimization of communication paths utilization" Url="html/432a42dd-56d3-40e1-ba4a-a97ac8392f72.htm">
+        <HelpTOCNode Title="Optimal transfer algorithm" Url="html/9a49ee2f-9ab6-4ab2-b918-63cffedf8e3f.htm" />
+        <HelpTOCNode Title="Adaptive sampling algorithm" Url="html/5e52ef36-fda2-4cd3-9a26-fdfa1c62d4fc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Simultaneous multi-channel transmission" Url="html/8c17a710-9ae1-402d-9179-93000c4da09b.htm" />
+      <HelpTOCNode Id="54731c15-0225-4790-9c28-f0419fffc521" Title="Multi-data providers" Url="html/c20e9632-40ea-44d9-828d-02d2929a1a97.htm">
+        <HelpTOCNode Title="Protocol-Medium Couple" Url="html/c77f184b-35f0-449d-a7db-fbdc88810b78.htm" />
+        <HelpTOCNode Title="Environment monitoring" Url="html/c568062a-f162-4c35-818f-1c5954345bff.htm" />
+        <HelpTOCNode Title="Real time process simulation" Url="html/7244450d-1e29-4d70-a7d8-677ff665fc8c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Rapid Development Kit" Url="html/13f68a0a-131d-4449-aad2-6118dc43ac77.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a538addd-cd19-49b3-a16c-e5a055949ae3" Title="Getting Started" Url="html/c5186060-4296-4f86-a9d3-7c02b63b767b.htm">
+      <HelpTOCNode Title="Installing CommServer" Url="html/6dd58056-8068-4153-a70f-045af253f5fe.htm" />
+      <HelpTOCNode Title="CommServer components" Url="html/e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5437718d-67fe-48b0-a3c9-f427916c4808" Title="Configuration" Url="html/de241950-87e4-40df-ba6c-99579ddc467e.htm">
+      <HelpTOCNode Title="CommServer configuration file (CASOpcDaWrapper.exe.config)" Url="html/a30f63c8-be40-4072-a52a-6f8515ed119e.htm" />
+      <HelpTOCNode Id="907dc2d0-8039-44c5-8e7f-9d3c11d1212c" Title="Using NetworkConfig to configure the network" Url="html/82a59c6f-7225-46b8-be5d-d7517b386965.htm">
+        <HelpTOCNode Title="Application window" Url="html/1c397a61-44aa-45ae-8b7a-a94984c84dc9.htm" />
+        <HelpTOCNode Title="Channel" Url="html/d41926b9-837e-4800-a96c-739317326270.htm" />
+        <HelpTOCNode Id="b8d2d66c-d1de-49e8-b444-e04dca9bf719" Title="Protocol" Url="html/8b586f8f-6dad-43e6-8b9e-56e5d713fa34.htm">
+          <HelpTOCNode Title="MBUS configuration" Url="html/998872e0-7f6c-45b0-ab3a-ba2dd6de0373.htm" />
+          <HelpTOCNode Title="MODBUS IP configuration" Url="html/a8c2de7c-5c00-4835-9b36-62bddfeb54be.htm" />
+          <HelpTOCNode Title="MODBUS RS configuration" Url="html/1b9d7777-99cc-4059-a57f-124a4d81b498.htm" />
+          <HelpTOCNode Title="SBUS IP configuration" Url="html/08f7c3a4-0f76-4de5-a067-f471e3d84200.htm" />
+          <HelpTOCNode Title="SBUS RS configuration" Url="html/fbb931d4-5f2b-4368-a78b-45d713fdc684.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Segments" Url="html/f950ee01-7344-4a20-b5c3-1691c2a52c8d.htm" />
+        <HelpTOCNode Title="Ports" Url="html/ebfebe3c-9e6f-4547-bd32-e4334389a333.htm" />
+        <HelpTOCNode Title="Station" Url="html/3f2183f0-6a56-48ab-90dc-238c835477d1.htm" />
+        <HelpTOCNode Title="Data Groups" Url="html/f3617314-cf2a-47da-8222-f3c35ab70930.htm" />
+        <HelpTOCNode Title="Blocks" Url="html/a2398233-930a-4196-90cb-0c0bfe8fd914.htm" />
+        <HelpTOCNode Title="Tags" Url="html/8d5f6f24-7302-40db-bdd2-8c86faa00f80.htm" />
+        <HelpTOCNode Title="Bits definition" Url="html/346f308f-9834-4e33-a7db-5853ec7fc621.htm" />
+        <HelpTOCNode Title="Scheme of the example structure" Url="html/c79ed1a7-835e-45c1-809c-099516c242f4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c396d4ff-c32c-4a0f-9b5c-9fd7c7f9818a" Title="Additional resources/tools" Url="html/9c5fc843-ce8f-41ad-913c-efa9a731f8ad.htm">
+        <HelpTOCNode Title="Importing tags from Wizcon BLS files" Url="html/413a881b-fd8e-494d-9b16-2e2eca1defd7.htm" />
+        <HelpTOCNode Title="Importing tag blocks" Url="html/7cbe14db-8b5b-4649-9730-6c705c409336.htm" />
+        <HelpTOCNode Title="Importing tag bits" Url="html/6986a621-5020-4ca1-95d1-fe3d35498ede.htm" />
+        <HelpTOCNode Title="Changing tag mappings" Url="html/22578739-db40-44c7-afee-c9f366231e83.htm" />
+        <HelpTOCNode Title="Importing scan settings" Url="html/c6122815-0cd7-475e-b4c5-052640d07e78.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Database structure" Url="html/da4e8035-a2bf-4a6f-b55d-f22a46af86fd.htm" />
+      <HelpTOCNode Id="89ff3a27-820a-4f56-a409-9b96157b0ba0" Title="CommServer time setting recommendations" Url="html/d2d1c1fe-78f5-4e6d-87e5-bf13c3452b83.htm">
+        <HelpTOCNode Id="c0cc1bf9-06af-4b00-9cc4-8f608858cb36" Title="Recommendation for Segments and Data Groups" Url="html/d733cd70-8d3e-43f1-b8ad-e9fb0acc7767.htm">
+          <HelpTOCNode Title="One station on one segment" Url="html/864e0d13-3c6b-4914-8098-2b11c7247367.htm" />
+          <HelpTOCNode Title="Two segments on one channel" Url="html/6a8959bf-a859-491f-a404-775055209c15.htm" />
+          <HelpTOCNode Title="Two stations on one segment on one channel" Url="html/34528314-0de2-4880-b103-1031c07c10e0.htm" />
+          <HelpTOCNode Id="e36b2917-e87a-4f32-9f0c-b0639aa59e3b" Title="Diagnostics of time settings for Segments and Data Groups" Url="html/db416645-f4c7-4d00-8cb5-c245c9c73317.htm">
+            <HelpTOCNode Title="Data Overtime" Url="html/f65d308e-93ed-4cf8-b2a9-e6ff0a25d3b1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="Recommendation for Ports and Segments" Url="html/70bc8ba6-f303-471b-a67b-ab0c913874b6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="986bf444-37d5-4fb9-b5a3-994350f88c12" Title="Using CommServer" Url="html/5abf8387-8650-46fa-900c-c2ec060d04ae.htm">
+      <HelpTOCNode Id="8205e0d7-65a8-4f5a-952d-3b5c52772f6a" Title="Application interface" Url="html/9929cfac-3930-4935-aead-b17d52ebc1c7.htm">
+        <HelpTOCNode Title="Station tab" Url="html/ba47e94c-29c1-4bff-a6a2-3ed3ea0bae11.htm" />
+        <HelpTOCNode Title="Port tab" Url="html/25b8289d-c000-47a5-8547-a8c12d912a6d.htm" />
+        <HelpTOCNode Title="SegmentsTab" Url="html/e8865c12-8b7b-411e-a57e-148a7f9a9357.htm" />
+        <HelpTOCNode Title="Protocol tab" Url="html/12707738-b6ab-4d92-97aa-82e511f8cedd.htm" />
+        <HelpTOCNode Title="Application menu" Url="html/0bffc8cf-63f2-41b9-b61e-d69e56bdf0d0.htm" />
+        <HelpTOCNode Title="Tray icon capability" Url="html/1e7fb9d2-9945-46ff-85b2-cdd77395e454.htm" />
+        <HelpTOCNode Title="Report utility" Url="html/1e19fb28-2557-45fd-9363-3bf0c873f9f1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Starting and stopping the CommServer" Url="html/02071992-ea5e-44c2-9a48-e0093dfa2914.htm" />
+      <HelpTOCNode Title="An example how to start the CommServer using an OPC DA" Url="html/bbdb0621-a246-4932-b5bf-74957f8e22d9.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fc7488a3-4f94-48d7-bb14-af45c78fd32c" Title="Diagnostics and Troubleshooting" Url="html/2104673d-806f-49d6-8359-cf3734f695e5.htm">
+      <HelpTOCNode Id="485288c0-365b-40f1-a45b-eede63fa3cef" Title="Diagnostic Information" Url="html/072e8fd8-ad4d-42ea-a1f8-3f0132b02614.htm">
+        <HelpTOCNode Title="System Event Log" Url="html/47256181-0c02-48e0-8654-05603b6f3b16.htm" />
+        <HelpTOCNode Title="Tracing in CommServer" Url="html/796a8002-ad5f-4884-af4e-b5ca748e4999.htm" />
+        <HelpTOCNode Title="Data Provider Diagnostic" Url="html/b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Trouble Shooting" Url="html/8f3a0ee9-b345-4bd8-b4db-a59be8686e66.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1de6f2ba-3ca4-4b1c-a205-06a8315f8688" Title="Appendix" Url="html/8594c004-2493-45a9-846e-3b54a98a5d9a.htm">
+      <HelpTOCNode Title="Appendix A (example of a report)" Url="html/4f52c757-1266-4b00-85be-a77134cb4e98.htm" />
+      <HelpTOCNode Title="Appendix B (Tracing)" Url="html/eae686e6-c4c0-4024-9f9b-434886e91661.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3d91c1a3-18a7-4f35-b1b2-40dc5cadbde6" Title="Examples and tutorials" Url="html/7cebc829-1948-47d6-b093-c1c181d2de7b.htm">
+      <HelpTOCNode Title="DCOM configuration example" Url="html/efdd4d99-ff98-46d8-a37a-33de8f522c1d.htm" />
+      <HelpTOCNode Title="CommServer configuration example" Url="html/1c7b5f72-c925-4500-89a2-80344030eedc.htm" />
+      <HelpTOCNode Id="a684c5b7-2688-48f9-b901-37067ba95ece" Title="CommServer on x64 systems" Url="html/317fcba8-65a2-4039-b87c-21d69b0a725b.htm">
+        <HelpTOCNode Title="Prerequisites" Url="html/96e7311a-9d1b-4415-a309-9f910fe917ff.htm" />
+        <HelpTOCNode Title="Port installation setup" Url="html/dddffed2-5bc9-4e1b-9c9a-e91b1e547237.htm" />
+        <HelpTOCNode Title="Summary" Url="html/c089e219-95a9-4a23-95a0-367a896128c3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d9bcc201-a746-4596-be31-14d152af2ea9" Title="How to test OPC connection" Url="html/edfb1894-1b42-4561-a0ca-cd3cf3b37405.htm">
+      <HelpTOCNode Title="Test target - introduction" Url="html/04834b85-db9d-4c4c-a6f1-58032fa2ba1e.htm" />
+      <HelpTOCNode Title="Preparing for test - computers configuration" Url="html/b97056dd-3293-4486-be51-ef7121629f45.htm" />
+      <HelpTOCNode Title="OPC connection test" Url="html/bd81e043-6670-4d4a-ba74-e0be1d2822b2.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Version History" Url="html/11dd3c5f-8fca-441e-aae0-5391ec4388ac.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Title="Applications Configuration Location" Url="html/8517a779-4c4f-46c1-835b-dbad00a344fa.htm" />
+  <HelpTOCNode Title="Contact" Url="html/2095ee10-ea30-42e1-8ea1-cd20af0d0419.htm" />
+  <HelpTOCNode Id="e771e4ef-a6ad-4c36-bd46-f9ad1b2c3b2a" Title="License" Url="html/b42a5ab7-d614-405e-8d96-b856949f9c43.htm">
+    <HelpTOCNode Title="License acquisition" Url="html/5660ca9b-bf2c-4a80-b402-6794438ff5c1.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Title="Glossary" Url="html/63a147a5-d6d9-44a2-90b5-58ad56ff0e37.htm" />
+  <HelpTOCNode Title="FAQ" Url="html/9CEA8CDD-33EF-4973-9EA9-FDF2003B01E0.htm" />
+  <HelpTOCNode Title="YouTube" Url="html/f5699a34-d228-4c7d-bbca-fdb494f53a8b.htm" />
+</HelpTOC>
