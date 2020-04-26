@@ -55,8 +55,6 @@
       </ComponentConfig>
     </ComponentConfigurations>
     <DocumentationSources>
-      <DocumentationSource sourceFile="OPCUAebook\Content.dll\ModelForHelp.dll" />
-      <DocumentationSource sourceFile="OPCUAebook\Content.dll\ModelForHelp.XML" />
     </DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="False" xmlns="" />
@@ -823,17 +821,6 @@
     <None Include="OPCUAebook\Content.maml\CommServerUA.aml" />
     <None Include="OPCUAebook\Content.maml\CommServerUA\CommServerUA_Version_History.aml" />
     <None Include="OPCUAebook\Content.maml\ASMD_VersionHistory.aml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="CAS.ControlLibrary">
-      <HintPath>OPCUAebook\Content.dll\CAS.ControlLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="CAS.RTLibComm">
-      <HintPath>OPCUAebook\Content.dll\CAS.RTLibComm.dll</HintPath>
-    </Reference>
-    <Reference Include="CAS.UA.ModelDesigner">
-      <HintPath>OPCUAebook\Content.dll\CAS.UA.ModelDesigner.exe</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Tokens Include="TokensHelp.tokens" />
