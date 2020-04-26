@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="1a525f9a-2977-4ffc-8c2b-4d7377acea5a" Title="CommServer" Url="html/2dea0752-d490-47e6-8444-ac73e07601fc.htm">
+    <HelpTOCNode Id="4e96a24b-12f8-44dc-a67e-741c1ea456d4" Title="Theory of operation" Url="html/a709e1f0-0b6e-42da-8e6d-4a3590ada4c6.htm">
+      <HelpTOCNode Title="Introduction" Url="html/e6da9218-ee79-4a13-8665-5376fe7cf91d.htm" />
+      <HelpTOCNode Title="OPC Overview" Url="html/ec8ba7f2-86b3-4005-876b-9479e94d3b9e.htm" />
+      <HelpTOCNode Title="Multi-paths redundancy" Url="html/6e3310d3-495b-4d77-9452-6c23a6efe2c4.htm" />
+      <HelpTOCNode Id="ba2b60b4-c6e4-459e-bd05-7f17b2b6a2d1" Title="Optimization of communication paths utilization" Url="html/432a42dd-56d3-40e1-ba4a-a97ac8392f72.htm">
+        <HelpTOCNode Title="Optimal transfer algorithm" Url="html/9a49ee2f-9ab6-4ab2-b918-63cffedf8e3f.htm" />
+        <HelpTOCNode Title="Adaptive sampling algorithm" Url="html/5e52ef36-fda2-4cd3-9a26-fdfa1c62d4fc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Simultaneous multi-channel transmission" Url="html/8c17a710-9ae1-402d-9179-93000c4da09b.htm" />
+      <HelpTOCNode Id="9839dfab-b30b-4990-af2d-5a8b1768ab5e" Title="Multi-data providers" Url="html/c20e9632-40ea-44d9-828d-02d2929a1a97.htm">
+        <HelpTOCNode Title="Protocol-Medium Couple" Url="html/c77f184b-35f0-449d-a7db-fbdc88810b78.htm" />
+        <HelpTOCNode Title="Environment monitoring" Url="html/c568062a-f162-4c35-818f-1c5954345bff.htm" />
+        <HelpTOCNode Title="Real time process simulation" Url="html/7244450d-1e29-4d70-a7d8-677ff665fc8c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Rapid Development Kit" Url="html/13f68a0a-131d-4449-aad2-6118dc43ac77.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5845d1d9-7493-49d2-92ee-a1382eb4bdeb" Title="Getting Started" Url="html/c5186060-4296-4f86-a9d3-7c02b63b767b.htm">
+      <HelpTOCNode Title="Installing CommServer" Url="html/6dd58056-8068-4153-a70f-045af253f5fe.htm" />
+      <HelpTOCNode Title="CommServer components" Url="html/e6c64da9-197b-4c7f-a6aa-7cdc2741e7e6.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="79881742-294e-475d-b49b-600dd1d08bc8" Title="Configuration" Url="html/de241950-87e4-40df-ba6c-99579ddc467e.htm">
+      <HelpTOCNode Title="CommServer configuration file (CASOpcDaWrapper.exe.config)" Url="html/a30f63c8-be40-4072-a52a-6f8515ed119e.htm" />
+      <HelpTOCNode Id="1afc0930-44ca-410d-81ca-1f5b39195c7b" Title="Using NetworkConfig to configure the network" Url="html/82a59c6f-7225-46b8-be5d-d7517b386965.htm">
+        <HelpTOCNode Title="Application window" Url="html/1c397a61-44aa-45ae-8b7a-a94984c84dc9.htm" />
+        <HelpTOCNode Title="Channel" Url="html/d41926b9-837e-4800-a96c-739317326270.htm" />
+        <HelpTOCNode Id="bb106e66-fbc8-4537-aed1-756b9728fe5d" Title="Protocol" Url="html/8b586f8f-6dad-43e6-8b9e-56e5d713fa34.htm">
+          <HelpTOCNode Title="MBUS configuration" Url="html/998872e0-7f6c-45b0-ab3a-ba2dd6de0373.htm" />
+          <HelpTOCNode Title="MODBUS IP configuration" Url="html/a8c2de7c-5c00-4835-9b36-62bddfeb54be.htm" />
+          <HelpTOCNode Title="MODBUS RS configuration" Url="html/1b9d7777-99cc-4059-a57f-124a4d81b498.htm" />
+          <HelpTOCNode Title="SBUS IP configuration" Url="html/08f7c3a4-0f76-4de5-a067-f471e3d84200.htm" />
+          <HelpTOCNode Title="SBUS RS configuration" Url="html/fbb931d4-5f2b-4368-a78b-45d713fdc684.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Segments" Url="html/f950ee01-7344-4a20-b5c3-1691c2a52c8d.htm" />
+        <HelpTOCNode Title="Ports" Url="html/ebfebe3c-9e6f-4547-bd32-e4334389a333.htm" />
+        <HelpTOCNode Title="Station" Url="html/3f2183f0-6a56-48ab-90dc-238c835477d1.htm" />
+        <HelpTOCNode Title="Data Groups" Url="html/f3617314-cf2a-47da-8222-f3c35ab70930.htm" />
+        <HelpTOCNode Title="Blocks" Url="html/a2398233-930a-4196-90cb-0c0bfe8fd914.htm" />
+        <HelpTOCNode Title="Tags" Url="html/8d5f6f24-7302-40db-bdd2-8c86faa00f80.htm" />
+        <HelpTOCNode Title="Bits definition" Url="html/346f308f-9834-4e33-a7db-5853ec7fc621.htm" />
+        <HelpTOCNode Title="Scheme of the example structure" Url="html/c79ed1a7-835e-45c1-809c-099516c242f4.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f42e7ac4-2fc4-4355-b774-4ad27377b7ba" Title="Additional resources/tools" Url="html/9c5fc843-ce8f-41ad-913c-efa9a731f8ad.htm">
+        <HelpTOCNode Title="Importing tags from Wizcon BLS files" Url="html/413a881b-fd8e-494d-9b16-2e2eca1defd7.htm" />
+        <HelpTOCNode Title="Importing tag blocks" Url="html/7cbe14db-8b5b-4649-9730-6c705c409336.htm" />
+        <HelpTOCNode Title="Importing tag bits" Url="html/6986a621-5020-4ca1-95d1-fe3d35498ede.htm" />
+        <HelpTOCNode Title="Changing tag mappings" Url="html/22578739-db40-44c7-afee-c9f366231e83.htm" />
+        <HelpTOCNode Title="Importing scan settings" Url="html/c6122815-0cd7-475e-b4c5-052640d07e78.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Database structure" Url="html/da4e8035-a2bf-4a6f-b55d-f22a46af86fd.htm" />
+      <HelpTOCNode Id="2403a366-95bc-4f99-b69f-21f092b8333f" Title="CommServer time setting recommendations" Url="html/d2d1c1fe-78f5-4e6d-87e5-bf13c3452b83.htm">
+        <HelpTOCNode Id="24641eb6-67e9-47f3-a628-74f38a70f782" Title="Recommendation for Segments and Data Groups" Url="html/d733cd70-8d3e-43f1-b8ad-e9fb0acc7767.htm">
+          <HelpTOCNode Title="One station on one segment" Url="html/864e0d13-3c6b-4914-8098-2b11c7247367.htm" />
+          <HelpTOCNode Title="Two segments on one channel" Url="html/6a8959bf-a859-491f-a404-775055209c15.htm" />
+          <HelpTOCNode Title="Two stations on one segment on one channel" Url="html/34528314-0de2-4880-b103-1031c07c10e0.htm" />
+          <HelpTOCNode Id="270123fa-4c3e-4dbc-9e4c-58531b776f0c" Title="Diagnostics of time settings for Segments and Data Groups" Url="html/db416645-f4c7-4d00-8cb5-c245c9c73317.htm">
+            <HelpTOCNode Title="Data Overtime" Url="html/f65d308e-93ed-4cf8-b2a9-e6ff0a25d3b1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="Recommendation for Ports and Segments" Url="html/70bc8ba6-f303-471b-a67b-ab0c913874b6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="14a1d95d-af68-4d56-b89b-ec9508081f05" Title="Using CommServer" Url="html/5abf8387-8650-46fa-900c-c2ec060d04ae.htm">
+      <HelpTOCNode Id="3c692cd5-c7cf-4b90-a859-118fab81c86b" Title="Application interface" Url="html/9929cfac-3930-4935-aead-b17d52ebc1c7.htm">
+        <HelpTOCNode Title="Station tab" Url="html/ba47e94c-29c1-4bff-a6a2-3ed3ea0bae11.htm" />
+        <HelpTOCNode Title="Port tab" Url="html/25b8289d-c000-47a5-8547-a8c12d912a6d.htm" />
+        <HelpTOCNode Title="SegmentsTab" Url="html/e8865c12-8b7b-411e-a57e-148a7f9a9357.htm" />
+        <HelpTOCNode Title="Protocol tab" Url="html/12707738-b6ab-4d92-97aa-82e511f8cedd.htm" />
+        <HelpTOCNode Title="Application menu" Url="html/0bffc8cf-63f2-41b9-b61e-d69e56bdf0d0.htm" />
+        <HelpTOCNode Title="Tray icon capability" Url="html/1e7fb9d2-9945-46ff-85b2-cdd77395e454.htm" />
+        <HelpTOCNode Title="Report utility" Url="html/1e19fb28-2557-45fd-9363-3bf0c873f9f1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Starting and stopping the CommServer" Url="html/02071992-ea5e-44c2-9a48-e0093dfa2914.htm" />
+      <HelpTOCNode Title="An example how to start the CommServer using an OPC DA" Url="html/bbdb0621-a246-4932-b5bf-74957f8e22d9.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="4bd74c5f-b218-4642-ba2f-8a193fc7d773" Title="Diagnostics and Troubleshooting" Url="html/2104673d-806f-49d6-8359-cf3734f695e5.htm">
+      <HelpTOCNode Id="5067b324-bfbb-446f-98b2-eeb17e74af75" Title="Diagnostic Information" Url="html/072e8fd8-ad4d-42ea-a1f8-3f0132b02614.htm">
+        <HelpTOCNode Title="System Event Log" Url="html/47256181-0c02-48e0-8654-05603b6f3b16.htm" />
+        <HelpTOCNode Title="Tracing in CommServer" Url="html/796a8002-ad5f-4884-af4e-b5ca748e4999.htm" />
+        <HelpTOCNode Title="Data Provider Diagnostic" Url="html/b6e6a2ae-aefe-4980-8e45-0bb5ee7e05b5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Trouble Shooting" Url="html/8f3a0ee9-b345-4bd8-b4db-a59be8686e66.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d9100d08-7fdc-4c26-b703-cdfa5db1c33f" Title="Appendix" Url="html/8594c004-2493-45a9-846e-3b54a98a5d9a.htm">
+      <HelpTOCNode Title="Appendix A (example of a report)" Url="html/4f52c757-1266-4b00-85be-a77134cb4e98.htm" />
+      <HelpTOCNode Title="Appendix B (Tracing)" Url="html/eae686e6-c4c0-4024-9f9b-434886e91661.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="27444d7a-b1ce-4ade-acd0-9d29ab58683a" Title="Examples and tutorials" Url="html/7cebc829-1948-47d6-b093-c1c181d2de7b.htm">
+      <HelpTOCNode Title="DCOM configuration example" Url="html/efdd4d99-ff98-46d8-a37a-33de8f522c1d.htm" />
+      <HelpTOCNode Title="CommServer configuration example" Url="html/1c7b5f72-c925-4500-89a2-80344030eedc.htm" />
+      <HelpTOCNode Id="4d616f5b-5e0b-4921-adb1-66d8c96b193c" Title="CommServer on x64 systems" Url="html/317fcba8-65a2-4039-b87c-21d69b0a725b.htm">
+        <HelpTOCNode Title="Prerequisites" Url="html/96e7311a-9d1b-4415-a309-9f910fe917ff.htm" />
+        <HelpTOCNode Title="Port installation setup" Url="html/dddffed2-5bc9-4e1b-9c9a-e91b1e547237.htm" />
+        <HelpTOCNode Title="Summary" Url="html/c089e219-95a9-4a23-95a0-367a896128c3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="aa9ee091-e26a-4cb0-90be-1bae3e1e1500" Title="How to test OPC connection" Url="html/edfb1894-1b42-4561-a0ca-cd3cf3b37405.htm">
+      <HelpTOCNode Title="Test target - introduction" Url="html/04834b85-db9d-4c4c-a6f1-58032fa2ba1e.htm" />
+      <HelpTOCNode Title="Preparing for test - computers configuration" Url="html/b97056dd-3293-4486-be51-ef7121629f45.htm" />
+      <HelpTOCNode Title="OPC connection test" Url="html/bd81e043-6670-4d4a-ba74-e0be1d2822b2.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Version History" Url="html/11dd3c5f-8fca-441e-aae0-5391ec4388ac.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="662c2c18-fb51-4750-ae0d-3be97d8828e6" Title="DataPorter" Url="html/b8c5f048-bb7e-4742-b7f2-b61a77789ed9.htm">
+    <HelpTOCNode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpTOCNode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpTOCNode Id="c4cac096-47a0-484c-9216-e5fb2feb6645" Title="Getting Started" Url="html/d43b1514-ca9c-46af-b42f-ca57769bdd09.htm">
+      <HelpTOCNode Title="Instalation Instruction" Url="html/21ad434f-60d8-4df5-be3c-8e5fa2404d8a.htm" />
+      <HelpTOCNode Title="Starting, stopping and checking the DataPorter status" Url="html/69b44a32-2a87-4094-bfde-ed54175ec272.htm" />
+      <HelpTOCNode Title="OPC Overview" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+      <HelpTOCNode Id="cf2c161c-2b9b-456b-b123-6acf6a3db987" Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm">
+        <HelpTOCNode Title="DataPorter" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+        <HelpTOCNode Title="OPC Viewer" Url="html/f94f793b-868c-470d-b076-d08376cbd433.htm" />
+        <HelpTOCNode Title="OPC2SOAP" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+        <HelpTOCNode Title="OPC Client for GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0e78d9a8-aad3-4f0d-99ef-d9dfea74edb0" Title="OPC Viewer Getting Started" Url="html/1f94da82-7fee-46c6-9832-6e643a0caa59.htm">
+        <HelpTOCNode Title="Main Panel" Url="html/0c57f4f0-9cff-45b7-9375-bee3e9c98b50.htm" />
+        <HelpTOCNode Title="Session Tree View" Url="html/c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="665d136e-27b3-4d93-95a3-7f60ecaffe25" Title="Processing Environment in OPC Viewer" Url="html/470275f3-3420-43f8-bdd4-de1c00c66593.htm">
+        <HelpTOCNode Title="Transaction Editor Getting Started" Url="html/69b396de-0b04-4c94-9910-78062d830054.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8ed1923c-8e32-4f50-aff2-f4dd3168d437" Title="DataPorter example configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm">
+        <HelpTOCNode Title="Example Transactions" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Testing DataPorter Functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="40118f6a-f152-4d21-a9a9-07943413aedb" Title="Configuration" Url="html/a5b37bb1-ca47-4770-900e-85b8da61cfe6.htm">
+      <HelpTOCNode Title="Configuration Files" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+      <HelpTOCNode Title="DataPorter Service" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+      <HelpTOCNode Id="9deca2fc-a2ca-4e34-a6d3-5b55b5994d08" Title="OPC configuration and OPC Viewer usage" Url="html/9ecbc065-4153-4193-86d0-5d264120a69a.htm">
+        <HelpTOCNode Title="OPC Viewer Connection Establishment" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+        <HelpTOCNode Title="Create Online Subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+        <HelpTOCNode Title="Write Data" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9f5c0877-4a42-4ac2-b1ba-02ac8f615d3d" Title="Transaction and Operations" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm">
+        <HelpTOCNode Title="Transaction and operation configuration" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+        <HelpTOCNode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="708e4470-659d-47b0-bb11-ee9477174b8e" Title="SQL Conectivity" Url="html/26dd91e2-db6e-4a3a-ac32-a7f14422e466.htm">
+        <HelpTOCNode Title="Example simple database configuration" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+        <HelpTOCNode Title="Storing From Opc Into Sql " Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+        <HelpTOCNode Title="Reading from SQL and copying to OPC" Url="html/169261d2-f2b0-43f0-908a-bf6d23099aa1.htm" />
+        <HelpTOCNode Title="Advanced DataBase operation block" Url="html/f0eee719-9f00-47e8-8c6a-2052ba3f7dfa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d50fabc9-c6c2-4a20-92e9-87f099352b5a" Title="Web Service Conectivity" Url="html/de6ca2b7-82fe-4941-b899-e46d90a2eb27.htm">
+        <HelpTOCNode Title="Service Installation" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+        <HelpTOCNode Title="Service Description" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+        <HelpTOCNode Title="Service Debugging" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+        <HelpTOCNode Title="ItemDescriber" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+        <HelpTOCNode Title="Buffered Queues Interface" Url="html/ffd0271b-d16b-45d2-b3b4-264ee4554607.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="aeca9303-90f8-4adc-9615-86072f0d2362" Title="Using DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm">
+      <HelpTOCNode Title="Starting, stopping and checking the DataPorter status" Url="html/53D6DF1A-9BF4-452d-B60C-05F07B138760.htm" />
+      <HelpTOCNode Id="ee7cbefa-8e80-4321-97f4-2dcca7b7032f" Title="DataPorter Monitor" Url="html/5b3e730c-02f2-47de-b836-afbd3c53ac23.htm">
+        <HelpTOCNode Title="Local service controller " Url="html/011a5d28-2395-4dea-9d9c-71bb7b141ead.htm" />
+        <HelpTOCNode Title="Connection controller panel" Url="html/e7a0eb27-ca29-424e-88db-652c5670b82f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Icons and States" Url="html/199bb2bf-7931-4f08-ae71-43d728990f2f.htm" />
+      <HelpTOCNode Title="Tray icon" Url="html/5a8897db-1916-49c7-a797-d2e4ca301b9c.htm" />
+      <HelpTOCNode Id="9b4b0f7c-75bf-4da2-bf48-3af0649ccddf" Title="Reporting" Url="html/ed3586ba-f503-4196-ab9b-c9704a62345f.htm">
+        <HelpTOCNode Title="Sample Report" Url="html/7aad350a-9f79-4028-92ff-789350c200a7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="License Installation" Url="html/f3f78005-8f41-44be-a0d3-719472e15edf.htm" />
+      <HelpTOCNode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+      <HelpTOCNode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+      <HelpTOCNode Title="Items Tab" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+      <HelpTOCNode Title="Transaction Tab" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="66437417-3330-4395-9846-a1bdb5ceafcc" Title="Diagnostics and Trubelshooting" Url="html/5b627d61-bf0f-4a14-83b9-982b8b002afc.htm">
+      <HelpTOCNode Title="System Event Log" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+      <HelpTOCNode Id="bf8f7479-4bdc-4109-8d63-504c5f5ffd9c" Title="Tracing" Url="html/b2b37f09-e751-4aa0-afa6-dc716e759773.htm">
+        <HelpTOCNode Title="Enabling Tracing" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+        <HelpTOCNode Title="Tracing Switches" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+        <HelpTOCNode Title="Tracing Sources" Url="html/d518dabe-e485-4897-8a9f-db0a7a646e74.htm" />
+        <HelpTOCNode Title="Tracing Listeners" Url="html/a3d27a7a-1695-44da-9bf5-9fc24acedabf.htm" />
+        <HelpTOCNode Title="Tracing Filters" Url="html/a4bf4faf-744d-4089-9ecc-e9f5b0250a6a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Trouble Shooting" Url="html/616bf5f0-90f5-48c3-a115-6773b8d4f1aa.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Version History" Url="html/bc19c589-8632-46c0-9dee-8a4dd27c6fac.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="4fb549d8-2b01-4fa3-adc2-e88005e53a83" Title="OPC UA Address Space Model Designer" Url="html/a2d55988-b59a-4a87-95b9-933f6bbdf5bd.htm">
+    <HelpTOCNode Title="OPC UA ASMD Standard" Url="html/13133136-fee6-41f6-b1b8-92bd6e44bb82.htm" />
+    <HelpTOCNode Title="OPC UA ASMD Professional" Url="html/29a68551-4e16-4898-a2b9-b6a66f4f115b.htm" />
+    <HelpTOCNode Title="OPC UA ASMD Standard and Professional comparison" Url="html/9c0941c9-514c-472d-bd3b-a2566410b952.htm" />
+    <HelpTOCNode Id="20cf48d8-0166-4c23-851b-4d4a12114a33" Title="Getting Started" Url="html/50ac09d2-901f-4702-a09d-b6ec69e8343f.htm">
+      <HelpTOCNode Title="Introduction" Url="html/6d606dbc-d7f8-423b-b862-a99e1db2b36b.htm" />
+      <HelpTOCNode Title="Installation and first launch" Url="html/2385d804-cf67-4010-93fc-570198875409.htm" />
+      <HelpTOCNode Title="Introduction to user interface" Url="html/df286eaa-c7eb-4dfd-9c94-435047a6d207.htm" />
+      <HelpTOCNode Id="6c760089-69eb-4397-ae97-eb71ec6513dd" Title="Sample Solution" Url="html/22b73887-6243-4257-b225-41de9657751c.htm">
+        <HelpTOCNode Title="How to: open sample solution" Url="html/70144915-72b9-4b52-bed2-5d14b6e1929d.htm" />
+        <HelpTOCNode Title="Boiler model" Url="html/e6a0a08f-6abc-46c4-8fad-10e586fbac71.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="757baa3d-cfa1-488f-829d-b2e1c9d35fb9" Title="Using OPC UA Address Space Model Designer" Url="html/f6584b01-23f1-4108-bea5-5cce926bd7ed.htm">
+      <HelpTOCNode Id="f50ec5e7-742c-4d10-98e3-40c995f65eb5" Title="User interface" Url="html/16e461cc-4255-42c4-a672-78c0ab61b7ed.htm">
+        <HelpTOCNode Title="Menu File" Url="html/26a93d59-0695-4e0f-a380-db4ce5115fc6.htm" />
+        <HelpTOCNode Title="Menu Edit" Url="html/c77bf325-fb6d-42d4-95b6-eaa2c611af68.htm" />
+        <HelpTOCNode Title="Menu View" Url="html/4bfa3bf3-e287-4aca-8e4c-cce2c241cfe5.htm" />
+        <HelpTOCNode Title="Menu UA Server" Url="html/7ba96578-638a-4d2b-b110-f1baa0369a07.htm" />
+        <HelpTOCNode Title="Menu Tools" Url="html/87546418-cdf1-41ae-b78a-2d54fd58159f.htm" />
+        <HelpTOCNode Title="Menu Help" Url="html/97f96e02-447b-4cce-bfee-2c14f3960e0a.htm" />
+        <HelpTOCNode Title="Model tree" Url="html/10ac601e-835c-47d4-abc2-7cbc42ac3da1.htm" />
+        <HelpTOCNode Title="Browse View tree" Url="html/e4cc84aa-0898-4c04-83ef-00d1c77d28ae.htm" />
+        <HelpTOCNode Title="Model 3D View" Url="html/105a8554-0815-47ef-a6ef-c139fec8cd08.htm" />
+        <HelpTOCNode Title="Propoerty panels" Url="html/a232fd5e-d2b5-4ecf-8b96-14489aed3208.htm" />
+        <HelpTOCNode Title="Help panel" Url="html/81415f76-0133-43ce-9892-28754764b30c.htm" />
+        <HelpTOCNode Title="Output Window" Url="html/b63b8b5b-503c-4ff0-91f6-cfba3b1c5e4e.htm" />
+        <HelpTOCNode Title="Node class indicator" Url="html/49bd66e4-7ef0-4ed9-8c66-a33324d5b8ac.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b2fbd241-4540-48e1-8a91-d9b44a74a253" Title="Managing Solutions, Projects and Files" Url="html/82725a8f-f5c5-4595-83d4-9c5fb7c606ef.htm">
+        <HelpTOCNode Title="Solution properties" Url="html/8b2d8ada-5420-49cf-bd3d-258a298d3bfb.htm" />
+        <HelpTOCNode Title="Solution open" Url="html/ceaada2b-bfa6-44a1-8d96-5e688f66bb71.htm" />
+        <HelpTOCNode Title="Project properties" Url="html/1d24496b-e7e6-41ef-916c-5fd42f0b806f.htm" />
+        <HelpTOCNode Title="Adding a project" Url="html/f4a0f70e-1e05-455a-9446-1b0a38c0a0a0.htm" />
+        <HelpTOCNode Id="fefea155-c427-4dd7-8ab8-318f46d7e5e4" Title="Model Import" Url="html/55b9d2bf-ef3a-4c36-82d8-aad9d4404423.htm">
+          <HelpTOCNode Title="OPC DA address space" Url="html/8b547f19-9e0a-4096-8716-a4045fbb9799.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="cd7ddde7-16ce-40f3-b706-2881333de984" Title="Model Export" Url="html/1161ba56-9c59-44ae-abdf-0a520cf84c57.htm">
+          <HelpTOCNode Title="Word (docx)" Url="html/c3118181-bdff-427f-89ca-f325489f7088.htm" />
+          <HelpTOCNode Title="Maml" Url="html/e734f213-6209-47f7-a55a-d07726552653.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="a27f8375-4cdc-446c-b656-536681cda73a" Title="OPC UA Modeling" Url="html/181da14b-8c08-487e-9c52-f35ea36cbf4a.htm">
+        <HelpTOCNode Title="Information model" Url="html/44047fc0-68d9-4a40-a46c-838e3d6f57d6.htm" />
+        <HelpTOCNode Title="Concept" Url="html/9e253cad-7b24-425f-950a-0e21a1176342.htm" />
+        <HelpTOCNode Id="ecade727-b972-4984-bfac-baa47e980810" Title="Address Space Implementation" Url="html/bce14a86-6885-4e62-abb4-0381a3b48df7.htm">
+          <HelpTOCNode Title="Objects Management" Url="html/1f31ce47-e3ac-45db-a7a6-1aa869816c48.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="587171b3-4928-42d6-9204-7ca81f9fc958" Title="Address Space Modeling" Url="html/8c3d069f-ae57-4e81-aae9-3fb9bfbe441e.htm">
+          <HelpTOCNode Title="Attributes" Url="html/928a3094-69de-4996-9aa6-6cb0b0e28845.htm" />
+          <HelpTOCNode Title="References" Url="html/d0df531f-eed5-4e70-ae9c-971fc1116ffe.htm" />
+          <HelpTOCNode Title="Process Data and Metadata" Url="html/12cbf21e-4432-4db0-9514-3e720350af96.htm" />
+          <HelpTOCNode Title="Model verification in ASMD" Url="html/38fca5ab-d8eb-42c7-a950-42526b45950e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="OPC UA Graphical Notation" Url="html/0e011a3e-670e-4722-a4c1-ffdfa4180a9c.htm" />
+        <HelpTOCNode Id="3dcbeb1b-9e76-44ae-8bfc-140ec2eecf5a" Title="Model tree" Url="html/853241bd-1da3-4f47-bc57-9ee61c833dfd.htm">
+          <HelpTOCNode Title="Navigate toolbar" Url="html/6d7c0936-62ec-444d-b04e-00af18bab6ea.htm" />
+          <HelpTOCNode Title="Search toolbar" Url="html/b99fa687-f9b9-45e8-8a28-9f9c87ef9446.htm" />
+          <HelpTOCNode Title="Filtering" Url="html/249d31ca-87eb-48b8-8b77-0a44aae76980.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="456061b5-158c-4aff-ac21-7f7450c0c631" Title="Model nodes" Url="html/de87ab11-cf9a-4874-a6ce-6cee9dbb3980.htm">
+          <HelpTOCNode Title="Model (Domain)" Url="html/63f776c8-5c42-4812-bc49-e3b29e50718e.htm" />
+          <HelpTOCNode Title="Children" Url="html/10e4d071-c0f5-42db-9051-c9ef97a8dccd.htm" />
+          <HelpTOCNode Title="Namespaces Folder" Url="html/2a28d2a3-e66a-4125-ae91-c4c0512281a7.htm" />
+          <HelpTOCNode Title="Namespace" Url="html/d224ec75-9e6b-481d-9649-71f341aa749d.htm" />
+          <HelpTOCNode Id="e25921e3-82c1-4c8a-80f6-711bc4f951c7" Title="Types" Url="html/f831c83f-d67e-4411-ab6a-cff07729fa96.htm">
+            <HelpTOCNode Title="Type" Url="html/d28de19b-0e28-4868-8ab4-50b7c28fc8f9.htm" />
+            <HelpTOCNode Title="VariableType" Url="html/47d63e9d-f041-4a75-a47d-2ef484d98df4.htm" />
+            <HelpTOCNode Title="DataType" Url="html/59bcaa17-522c-4eaa-8465-f7b73232c9ad.htm" />
+            <HelpTOCNode Title="EventType" Url="html/3845c537-d3b8-4451-b824-b089e0a1f10a.htm" />
+            <HelpTOCNode Title="StateMachineType" Url="html/06bceb63-a3ba-46c9-bb3b-5d3daa594fad.htm" />
+            <HelpTOCNode Title="ObjectType" Url="html/ec07a483-1109-44fc-b1fb-e81102a2a0b3.htm" />
+            <HelpTOCNode Title="ReferenceType" Url="html/201c8c7c-d06a-4631-9733-57996bfac80c.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e616eb49-8a86-44c5-bd3b-6c9bd84c4aab" Title="Objects" Url="html/0e117438-e8b8-4a72-8b9e-ce873d883b05.htm">
+            <HelpTOCNode Title="Object" Url="html/3c6137f0-3e93-42c3-8e6f-7ed1606d21e9.htm" />
+            <HelpTOCNode Title="Node" Url="html/1e896684-0306-4c7d-b58c-b083c05c8cdb.htm" />
+            <HelpTOCNode Title="Reference" Url="html/39c8c8f2-2cb9-4ba9-adb8-8c083a3b1d32.htm" />
+            <HelpTOCNode Title="ReferenceFolder" Url="html/946ef5a3-0080-4849-86cc-3d69353476f9.htm" />
+            <HelpTOCNode Title="Property" Url="html/0a5f357e-6c35-4aa1-bf87-0badbb7f75d0.htm" />
+            <HelpTOCNode Title="Instance" Url="html/e7502ad4-d2df-4bad-98e6-acc3ac083bed.htm" />
+            <HelpTOCNode Title="Variable" Url="html/e0bdfd51-edc4-444c-808c-19e4283ad0c9.htm" />
+            <HelpTOCNode Title="View" Url="html/8b9a8e27-5e10-4422-89fa-cb80dd9f8395.htm" />
+            <HelpTOCNode Title="Encoding" Url="html/f92834d1-163c-4085-be20-7fe85ea6563d.htm" />
+            <HelpTOCNode Title="EncodingsFolder" Url="html/a798c27c-01cf-42bf-8ea3-9293f639d855.htm" />
+            <HelpTOCNode Title="Parameter" Url="html/08e6bf29-acd4-46d2-983a-4cc05b80ad3b.htm" />
+            <HelpTOCNode Title="ParametersFolder" Url="html/9b61aec6-cc16-4aa9-83d1-54f32faeb2d1.htm" />
+            <HelpTOCNode Title="Dictionary" Url="html/2caa06b7-6ba3-4524-89ad-6c1df7833729.htm" />
+            <HelpTOCNode Title="Method" Url="html/c0e1d642-b38f-4159-8455-d8181f37d804.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="Reference modeling" Url="html/0e16061b-8306-4026-9a6f-5e9c5efbf2b2.htm" />
+        <HelpTOCNode Id="50274003-9412-406d-a664-7f601c7af42a" Title="Custom editors" Url="html/db4c065d-d247-4638-99af-ed7214e96125.htm">
+          <HelpTOCNode Title="StateMachine Editor" Url="html/deeeaaba-395a-4d8c-bdcc-6fd08460d8b3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Coupled Nodes" Url="html/46d07028-df45-4c0a-9125-bbee852e455d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7ce046fb-5de5-4168-90f8-77bb3c92cb2f" Title="Model Build" Url="html/420d7d38-cc1d-4de2-8718-0b5bb9222088.htm">
+        <HelpTOCNode Title="How to build the solution" Url="html/d3eb7c84-990a-42bb-84a0-92328923bd98.htm" />
+        <HelpTOCNode Title="Where to find a result of build process" Url="html/d938f90e-e484-4b25-aee6-292ba11c2022.htm" />
+        <HelpTOCNode Title="Model Compiler" Url="html/9c908037-0f24-4f6b-955c-de27c5b8248a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="84b64104-1e14-43a9-9778-29d3260a10d4" Title="Data binding" Url="html/10d187b7-b4ca-4f56-bc39-c2bde372629e.htm">
+        <HelpTOCNode Id="7396502e-e1c3-41b0-8d6f-ec5f110d25d2" Title="Menu UA Server" Url="html/cb71ad39-d065-4c9a-9397-7c1e86b63ef1.htm">
+          <HelpTOCNode Title="UA Server configuration" Url="html/ccefb546-a8cb-4275-9286-c623b04191c3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DataBinding properties" Url="html/0a1c2521-2ce5-481b-b7f6-d7c0ec395b6c.htm" />
+        <HelpTOCNode Title="Walkthrough: Proces DataBinding" Url="html/07da60d4-d213-4a4a-b498-6bd68c6885b9.htm" />
+        <HelpTOCNode Title="Walkthrough: Create UA Wrapper" Url="html/ab23d48a-2241-4e60-a65f-a327b8c30a7d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="be01f9d6-bee7-47b0-987b-40b202902d7e" Title="Customization" Url="html/50adc720-1cbb-4dac-8a90-81292f9150b0.htm">
+        <HelpTOCNode Title="How to: change model compiler tool" Url="html/e88e0566-da80-47d7-9e32-9c6c675995d0.htm" />
+        <HelpTOCNode Title="How to: change a font size" Url="html/4a745b5a-1a9a-49e0-90f8-2fc73c138caf.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Version History" Url="html/ada1af70-e1ba-49df-8d0a-8ddc87a0f287.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="ae7c6747-76ce-4d37-8618-172feb1612d5" Title="CommServer UA Server" Url="html/ec4ecefe-2d13-4ed9-af36-72152ff597f3.htm">
+    <HelpTOCNode Id="fa47c438-e054-4487-8214-25eecdea80ea" Title="Getting Started" Url="html/a31ee2de-dca7-4cfd-bd76-67472753f12b.htm">
+      <HelpTOCNode Title="Instalation" Url="html/176fbec7-2274-4b9b-8212-7b7a8a41e32b.htm" />
+      <HelpTOCNode Id="8c029371-ea23-4b62-8f50-da556a95e735" Title="CommServer UA components" Url="html/71e7b15d-ff7c-4fe6-8ead-96d211cc6bcf.htm">
+        <HelpTOCNode Title="Common parts and functionalities of CommServer UA" Url="html/e378a6bb-5782-4185-a6de-d5500148c77c.htm" />
+        <HelpTOCNode Title="Modeling features of CommServer UA and OPC UA Address Space Model Designer" Url="html/ef14000e-ef87-4469-96d4-a1898a61bfaa.htm" />
+        <HelpTOCNode Title="Redundant, Multi-Protocol, Multi-Channel Data Access Engine functionality" Url="html/8a47cc3f-3dbe-4bb4-aedb-dc6d7d8a92f4.htm" />
+        <HelpTOCNode Title="OPC Wrapper functionality" Url="html/93248756-137a-45f2-b611-0e5b8fb71216.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="143d3a42-83a1-4479-b58b-f0c0e45cdea3" Title="Configuration" Url="html/fddc297e-3ac3-4bf2-919e-df25435ad611.htm">
+      <HelpTOCNode Title="How to configure CommServerUA" Url="html/7291baf0-ddef-4b59-9bb2-2bcef48d2e76.htm" />
+      <HelpTOCNode Title="Custom configuration of the CommServer UA" Url="html/b69635eb-f76f-4b48-9c18-e6adf9eb9d49.htm" />
+      <HelpTOCNode Title="How to remotely access the CommServer UA" Url="html/2d5937cb-8f0a-464b-8169-c21baa17a6d4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Version History" Url="html/a49e5b1a-cd9d-4d12-a9cb-3c31e04e2bc0.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="52674cbf-d5c5-4a0f-9f36-e5c795d56543" Title="Tools" Url="html/f6d6361e-14b7-4a59-be89-ff4a3f1357b0.htm">
+    <HelpTOCNode Id="9d7ea586-4867-4a7e-bb5f-0b78306c3ef1" Title="OPC Viewer" Url="html/7b918a83-2386-43a2-badf-adbb1613c413.htm">
+      <HelpTOCNode Title="Version History" Url="html/5c1dab43-551c-406f-a893-e5b662265981.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="73d1bbc0-79a7-40bf-931d-4a9a1f8ca2fe" Title="OPC UA Viewer" Url="html/2ce6a72a-2eb5-455e-b06e-915b49f165e3.htm">
+      <HelpTOCNode Title="Version History" Url="html/0809cf3e-c746-44d1-94fd-fe7858295184.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Title="Applications Configuration Location" Url="html/8517a779-4c4f-46c1-835b-dbad00a344fa.htm" />
+  <HelpTOCNode Title="Contact" Url="html/2095ee10-ea30-42e1-8ea1-cd20af0d0419.htm" />
+  <HelpTOCNode Id="ccbaf48d-ceca-43b1-980c-b92144129f5b" Title="License" Url="html/b42a5ab7-d614-405e-8d96-b856949f9c43.htm">
+    <HelpTOCNode Title="License acquisition" Url="html/5660ca9b-bf2c-4a80-b402-6794438ff5c1.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Title="Glossary" Url="html/63a147a5-d6d9-44a2-90b5-58ad56ff0e37.htm" />
+  <HelpTOCNode Title="FAQ" Url="html/9CEA8CDD-33EF-4973-9EA9-FDF2003B01E0.htm" />
+  <HelpTOCNode Title="YouTube" Url="html/f5699a34-d228-4c7d-bbca-fdb494f53a8b.htm" />
+</HelpTOC>
