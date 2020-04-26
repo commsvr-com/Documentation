@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="6b8c7ec6-c4db-43cd-b30b-d603506f3b8c" Title="Welcome to the OPC Unified Architecture e-book" Url="html/e34055b2-23e0-4f1a-9e00-52d75becaeec.htm">
+    <HelpTOCNode Title="OPC Unified Architecture Introduction" Url="html/c55db7e8-3f15-4556-b8db-12251d39ad0a.htm" />
+    <HelpTOCNode Id="28a96950-3950-424a-a880-3dbb6c38ed78" Title="Concept" Url="html/3774554f-8d12-4d9a-8532-85d704388d9d.htm">
+      <HelpTOCNode Title="Unified Architecture Overview" Url="html/d458d900-f4e3-472f-b729-7c759f1c8aa4.htm" />
+      <HelpTOCNode Id="00482130-d7ea-4428-aac1-cc4c07d95eec" Title="Systems Integration" Url="html/0fdc84ce-5ad9-45ce-a040-95478279f604.htm">
+        <HelpTOCNode Title="At-hock linking" Url="html/8601d2fa-1770-4934-a73e-929d4ab7a4e4.htm" />
+        <HelpTOCNode Title="Totalitarian approach" Url="html/20a0bcad-fc1d-4b10-9beb-1a910b3c37ec.htm" />
+        <HelpTOCNode Title="Process Observer" Url="html/0a157891-6492-4b05-a5d9-65c3084ec7f0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ce0d9991-578b-4fbb-8ed6-1cf19a5fa69d" Title="UA Systems Concepts" Url="html/6c7e7e44-c957-4d09-b722-33c34539e875.htm">
+        <HelpTOCNode Title="Clients" Url="html/b8135029-bd1b-412a-a9fb-610b3c31ac09.htm" />
+        <HelpTOCNode Title="Servers" Url="html/b33c670d-5124-4207-8a5b-89eec97c23b5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="80c66f10-682f-4564-b38f-403e7dd6daf5" Title="Service Sets" Url="html/14e03e6a-2c19-4124-8c10-aecd07121492.htm">
+        <HelpTOCNode Title="Discovery" Url="html/41ef495e-5447-4a9e-b46f-d1f9003f4368.htm" />
+        <HelpTOCNode Title="SecureChannel" Url="html/79df831d-e896-4b88-abad-88319f42a626.htm" />
+        <HelpTOCNode Title="Session" Url="html/0e0c01d9-9a33-4efd-8223-c8d4c7b2b0d0.htm" />
+        <HelpTOCNode Title="NodeManagement" Url="html/defef2ce-1182-4332-a62e-773a9821a417.htm" />
+        <HelpTOCNode Title="View" Url="html/47230bdf-474d-409e-8912-3468cc98d385.htm" />
+        <HelpTOCNode Title="Query" Url="html/742e60d9-c5d8-45a3-8193-0ebc14633e07.htm" />
+        <HelpTOCNode Title="Method" Url="html/8944d7a9-baff-4e2e-893e-c66396f6fef0.htm" />
+        <HelpTOCNode Title="MonitoredItem" Url="html/e0bdb98b-ab27-4798-8072-c23d26c08f06.htm" />
+        <HelpTOCNode Title="Subscription" Url="html/267df39c-3334-4e5a-baa7-c900feedd905.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1119086f-eec9-49b9-8d29-f90c56c50285" Title="Address Space" Url="html/58e663ae-9e77-4a9b-9adc-cbc18c4d7e9e.htm">
+      <HelpTOCNode Id="0a9abfba-193a-4961-b5ee-01944931bf6c" Title="Concepts" Url="html/ad8b0a3f-9293-4a1e-8f03-3e463a8d5f04.htm">
+        <HelpTOCNode Title="Object Model" Url="html/1254395d-618d-46dc-ad33-39e2becadee8.htm" />
+        <HelpTOCNode Id="8472178c-4752-482c-8977-6260db5487e2" Title="Node Model" Url="html/44be48a5-7e42-42a2-906b-86b569ed9d93.htm">
+          <HelpTOCNode Title="Variable" Url="html/57948ea6-b48e-43c9-addc-d24694886784.htm" />
+          <HelpTOCNode Title="Type Definition" Url="html/69856d11-e274-48c1-87d7-bbc7ec5e6e18.htm" />
+          <HelpTOCNode Title="Event" Url="html/61bf86cb-8e76-408c-952f-ab6960eb96b8.htm" />
+          <HelpTOCNode Title="Method" Url="html/c9cd61c1-3e7c-4fef-a834-472417145053.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="43516c5f-efbf-49ef-89b9-e3ec3d973a53" Title="Standard Node Classes" Url="html/1350bd8c-b694-4aab-b5fd-8aa8b8bc1f67.htm">
+        <HelpTOCNode Title="Base" Url="html/467e8ac2-46d8-4758-8965-a891200787ee.htm" />
+        <HelpTOCNode Title="View" Url="html/0a8a12b4-ea75-44d2-ab18-c2a49b8b4606.htm" />
+        <HelpTOCNode Title="Object" Url="html/d38394a1-c1c0-4c91-8a38-4fa47ad2bf35.htm" />
+        <HelpTOCNode Title="Variable" Url="html/5ed97e29-a505-4050-af5d-8b2c8d80a045.htm" />
+        <HelpTOCNode Title="Method" Url="html/92f04f9b-1fd7-4668-8deb-626991b93201.htm" />
+        <HelpTOCNode Title="ObjectType" Url="html/9d541e15-812b-4dce-9b4c-7b0d66e74daf.htm" />
+        <HelpTOCNode Title="DataType" Url="html/07e07cd6-0589-48e7-89c3-e99176e1cb23.htm" />
+        <HelpTOCNode Title="ReferenceType" Url="html/4044403d-3a21-40cc-a508-b2d17a10b62d.htm" />
+        <HelpTOCNode Title="VariableType" Url="html/1bc63c28-33da-4c76-b8f6-8df43f0a776f.htm" />
+        <HelpTOCNode Title="Summary of Attributes" Url="html/1f82af61-a0d9-4730-8cf1-d93ab765f2d2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="497eb831-3d1a-4f48-9ba4-665b294a3615" Title="Type Model for ObjectTypes and VariableTypes" Url="html/dba17623-98d7-4a47-9e57-f352a2c3e2fe.htm">
+        <HelpTOCNode Title="Definitions" Url="html/d50337d9-0aab-4665-ab7f-be4eb7bc9559.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Standard Reference Types" Url="html/57be83ea-0aac-4456-b29a-0b18a8467134.htm" />
+      <HelpTOCNode Title="Standard Data Types" Url="html/546f49d5-8153-434c-9e74-d7835d7862bc.htm" />
+      <HelpTOCNode Title="Standard Event Types" Url="html/2191d1e7-9793-4eee-a180-a59b249f1098.htm" />
+      <HelpTOCNode Title="How to Use the Address Space Model" Url="html/ad0fdaba-ab78-477a-ac9d-13e06cc51939.htm" />
+      <HelpTOCNode Title="OPC UA Meta Model in UML" Url="html/7cd6ebfb-3582-4ae7-8b1c-89e038d9bb66.htm" />
+      <HelpTOCNode Title="Graphical Notation" Url="html/4ff5fa83-9b3b-4c4f-8160-f5261ba30633.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e6cd1b98-b6af-4d98-8edb-50a5d20d9b67" Title="Information Model" Url="html/3f999f23-4ad7-46a4-80dd-ab33729d5f49.htm">
+      <HelpTOCNode Title="Introduction" Url="html/c7bb7b37-624e-4a57-a5f3-d7e5994b1fae.htm" />
+      <HelpTOCNode Id="29c304ca-4024-4429-86b4-ef3c94c05b9f" Title="Standard Object Types" Url="html/0d741b40-7d47-4aa1-852b-fe9007394b7f.htm">
+        <HelpTOCNode Title="BaseObjectType" Url="html/08ebbdef-796a-42f6-a849-0b9017547c77.htm" />
+        <HelpTOCNode Title="Address Space Management" Url="html/b6fbace7-8f12-4c47-8dd2-d9223336254b.htm" />
+        <HelpTOCNode Title="Server Management" Url="html/6f98c5eb-4449-4a75-aa31-39296b4c5d97.htm" />
+        <HelpTOCNode Title="Events Management" Url="html/f430b65b-e139-41d1-a250-269480d3e36c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Standard Variable Types" Url="html/d43f206c-8b58-4ded-b9c8-74eaac63cb36.htm" />
+      <HelpTOCNode Id="2866f693-8b84-454e-932e-822c93ddb444" Title="Standard Objects and their Variables" Url="html/792493fe-9605-478d-b93a-10844c737983.htm">
+        <HelpTOCNode Title="Objects used to organise the AddressSpace structure" Url="html/7a382ec0-73ac-49d8-8200-49e95a474ab0.htm" />
+        <HelpTOCNode Title="Server Object and its containing Objects" Url="html/2c5b2d66-8e34-490c-9ab3-4d852a892a30.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Standard Data Types" Url="html/2b3534cf-4d77-4d4c-afd5-ab90c0157a66.htm" />
+      <HelpTOCNode Title="Design decisions when modelling the server information" Url="html/9c0bb318-1a77-4f74-aabc-1c3eb7cfdfc9.htm" />
+      <HelpTOCNode Title="StateMachines" Url="html/022e0eb8-59d2-4c81-a7d7-3646494f55a2.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Security Model" Url="html/bf124b83-10b9-4995-af26-178e5fc9a6e7.htm" />
+    <HelpTOCNode Title="Services" Url="html/ef0092b5-9f31-4e8d-9901-270be06e6577.htm" />
+    <HelpTOCNode Id="811af4d2-ce4b-4597-af0c-65fc7e96bdf6" Title="Mappings" Url="html/90c70f9d-c1df-479e-8273-071b5960a5a4.htm">
+      <HelpTOCNode Id="1428a4fa-5016-4073-8e7e-0e2e74106fd6" Title="Overview" Url="html/2d1f7bc3-3cda-452f-9f24-ee9da2c9be94.htm">
+        <HelpTOCNode Title="Built-in Types" Url="html/e6dbd978-9b2f-475e-bcb3-304975700033.htm" />
+        <HelpTOCNode Title="Guid" Url="html/ed06838a-603f-4c9e-92e1-bf215ecf46e6.htm" />
+        <HelpTOCNode Title="ExtensionObject" Url="html/00831164-2b4c-46dd-902e-d79c13f1d21c.htm" />
+        <HelpTOCNode Title="Variant" Url="html/3984a505-13d7-4153-991e-47f8f3556f78.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b9a6281a-b67f-47ae-a8b4-647fe9c6282a" Title="OPC UA Binary" Url="html/54d77249-bb3b-4e7b-b3ef-aa5f17826bd1.htm">
+        <HelpTOCNode Title="Built-in Types" Url="html/7f816c6d-3aa2-4f38-9992-16d892e6fe4a.htm" />
+        <HelpTOCNode Title="Enumerations" Url="html/49ef478a-e512-4c04-9de3-f131be78dc67.htm" />
+        <HelpTOCNode Title="Arrays" Url="html/efb24dab-cd14-4f59-a392-cd2b44e22f15.htm" />
+        <HelpTOCNode Title="Structures" Url="html/2b0f3a41-e464-40af-9820-a440f2c501aa.htm" />
+        <HelpTOCNode Title="Messages" Url="html/7c47e7df-e164-4aef-9420-6b53de0b54c5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="35a124b1-cbb2-408c-8176-7e067c59e4e8" Title="XML" Url="html/00084482-6519-4d24-a8ff-d731d6cfc35c.htm">
+        <HelpTOCNode Title="Built-in Types" Url="html/b683099d-5c89-4c46-a277-d368f9c98a7a.htm" />
+        <HelpTOCNode Title="Enumerations" Url="html/60a27dd4-fb8a-4dfb-a559-a7eb6f96ee7a.htm" />
+        <HelpTOCNode Title="Arrays" Url="html/ee8d55b4-1974-4bce-916b-3b8e1364c1bc.htm" />
+        <HelpTOCNode Title="Structures" Url="html/09fd76f5-78cc-48ab-9815-d4f414dd24e8.htm" />
+        <HelpTOCNode Title="Messages" Url="html/b929152d-8496-4aa2-a72f-d3e853fd9798.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Profiles" Url="html/69c22282-3ad0-4937-8982-4d5c5ac95b7f.htm" />
+    <HelpTOCNode Title="Data Access" Url="html/f268d513-5215-4ded-bd94-ddaadf24d789.htm" />
+    <HelpTOCNode Title="Alarms and Conditions" Url="html/2ba1f4ae-e619-4821-87ae-8b1073901d99.htm" />
+    <HelpTOCNode Title="Programs" Url="html/96ffa07e-22ab-4d77-a1ae-e476e54a5b63.htm" />
+    <HelpTOCNode Title="Historical Access" Url="html/48e0fc4c-b072-4e4e-b4e9-b917fab44762.htm" />
+    <HelpTOCNode Title="Discovery" Url="html/6331c6ab-b475-491a-8738-43edae0ed6bc.htm" />
+    <HelpTOCNode Title="General References" Url="html/26dc2eeb-89bf-42ce-817d-e82319ac04b7.htm" />
+    <HelpTOCNode Title="UA Defined Types" Url="html/EC699025-4E92-4871-A8FB-8D2AAFEB3618.htm" />
+    <HelpTOCNode Title="Glossary" Url="html/63a147a5-d6d9-44a2-90b5-58ad56ff0e37.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="5944fce1-bb8b-4ad7-8c80-91b214b15b6d" Title="Sponsors" Url="html/54092156-1224-4aa5-8bc3-ab38e931fc33.htm">
+    <HelpTOCNode Title="CAS" Url="html/1bf073fd-1de4-4558-8e90-76b4790258bb.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Title="Read more about OPC Unified Architecture" Url="html/a8587f8f-c204-44f8-8b1b-3cc70ae76e9a.htm" />
+  <HelpTOCNode Title="About" Url="html/abc903f8-b430-4e1c-8a38-04eea170315b.htm" />
+</HelpTOC>
