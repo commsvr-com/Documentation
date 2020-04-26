@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title=".asmx " Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title=".config" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title=".oses" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="Accumulator" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="Add">
+    <HelpKINode Title="Create Online Subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Transaction and operation configuration" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="(operation)" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="operation" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="tags" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="transaction" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Advanced DataBase Operation" Url="html/f0eee719-9f00-47e8-8c6a-2052ba3f7dfa.htm" />
+  <HelpKINode Title="Are Equal" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="asmx " Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="attach to MS SQL" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  <HelpKINode Title="attach to MS SQL Express" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  <HelpKINode Title="Attribute name" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Average" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="BadQualityValue" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="Bridging" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Buffered Access Queue " Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Calculation">
+    <HelpKINode Title="Example Transactions" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="division, substraction" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="multiplication" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Calculation and Logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="CAS.DataPorter.exe.config">
+    <HelpKINode Title="Configuration Files" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="attribute name" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="configfile" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="MinAvgMax_CharacterGap_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="MinAvgMax_FrameResponse_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="MinAvgMax_Group_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="MinAvgMax_Group_Read_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="MinAvgMax_Tag_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="MinAvgMax_Transition_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="PLCNaN" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="UseLocalTime" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="value" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="WaitForReconnectServer" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CAS.OPCWSDataAccess">
+    <HelpKINode Title="Service Description" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="Service Installation" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+    <HelpKINode Title="Service Installation" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CAS_BaseStation_Transactions" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="CAS_OPC_OPC_Interface" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="Client for GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  <HelpKINode Title="COM" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="Comment" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="CommServer">
+    <HelpKINode Title="DataPorter example configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+    <HelpKINode Title="Testing DataPorter Functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Components">
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Conditional operations" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="configfile" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Configuration">
+    <HelpKINode Title="Configuration" Url="html/a5b37bb1-ca47-4770-900e-85b8da61cfe6.htm" />
+    <HelpKINode Title="Create Online Subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+    <HelpKINode Title="OPC configuration and OPC Viewer usage" Url="html/9ecbc065-4153-4193-86d0-5d264120a69a.htm" />
+    <HelpKINode Title="OPC Viewer Connection Establishment" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Configuration Files" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="DataPorter service" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+    <HelpKINode Title="file (CAS.DataPorter.exe.config)" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="OPC configuration" Url="html/9ecbc065-4153-4193-86d0-5d264120a69a.htm" />
+    <HelpKINode Title="OPC Viewer" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="OPC Viewer" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="Operations" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm" />
+    <HelpKINode Title="properties" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="service" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+    <HelpKINode Title="SQL Conectivity" Url="html/26dd91e2-db6e-4a3a-ac32-a7f14422e466.htm" />
+    <HelpKINode Title="Transaction" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm" />
+    <HelpKINode Title="Web Service Conectivity" Url="html/de6ca2b7-82fe-4941-b899-e46d90a2eb27.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Connect to OPC Server" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+  <HelpKINode Title="Connect/Disconnect time" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  <HelpKINode Title="Connected to OPC server" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Connection Establishment" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+  <HelpKINode Title="ConnectToQueue" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="Creation of subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+  <HelpKINode Title="CSV file" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+  <HelpKINode Title="DataPorter">
+    <HelpKINode Title="DataPorter" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+    <HelpKINode Title="DataPorter example configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+    <HelpKINode Title="Engine" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+    <HelpKINode Title="Example Configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+    <HelpKINode Title="Getting Started" Url="html/d43b1514-ca9c-46af-b42f-ca57769bdd09.htm" />
+    <HelpKINode Title="Monitor " Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+    <HelpKINode Title="Testing environment " Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+    <HelpKINode Title="Testing functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+    <HelpKINode Title="Version History" Url="html/bc19c589-8632-46c0-9dee-8a4dd27c6fac.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataPorter components">
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+    <HelpKINode Title="DataPorter" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+    <HelpKINode Title="Monitor" Url="html/5b3e730c-02f2-47de-b836-afbd3c53ac23.htm" />
+    <HelpKINode Title="OPC Client for GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+    <HelpKINode Title="OPC2SOAP" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataPorter Monitor">
+    <HelpKINode Title="DataPorter Monitor" Url="html/5b3e730c-02f2-47de-b836-afbd3c53ac23.htm" />
+    <HelpKINode Title="Connection controller panel" Url="html/e7a0eb27-ca29-424e-88db-652c5670b82f.htm" />
+    <HelpKINode Title="Icons" Url="html/199bb2bf-7931-4f08-ae71-43d728990f2f.htm" />
+    <HelpKINode Title="Service controller" Url="html/011a5d28-2395-4dea-9d9c-71bb7b141ead.htm" />
+    <HelpKINode Title="States" Url="html/199bb2bf-7931-4f08-ae71-43d728990f2f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataPorter operations">
+    <HelpKINode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="aggregation" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="aggregation" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="bridging" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="bridging" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="calculation" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="calculation" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="distribution" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="distribution" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="SQL  XML mixed exchange" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="SQL exchange" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="XML exchange" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataPorter package" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+  <HelpKINode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+  <HelpKINode Title="DataPorter service" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+  <HelpKINode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+  <HelpKINode Title="DB save" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="DCOM" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="DCS" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="Deadband" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Debug" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="DemoConfiguration.oses">
+    <HelpKINode Title="DataPorter example configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+    <HelpKINode Title="Testing DataPorter Functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Diagnostic" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Diagnostics and Trubelshooting">
+    <HelpKINode Title="Diagnostics and Trubelshooting" Url="html/5b627d61-bf0f-4a14-83b9-982b8b002afc.htm" />
+    <HelpKINode Title="Enabling Tracing" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+    <HelpKINode Title="System Event Log" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+    <HelpKINode Title="Tracing" Url="html/b2b37f09-e751-4aa0-afa6-dc716e759773.htm" />
+    <HelpKINode Title="Tracing Filters" Url="html/a4bf4faf-744d-4089-9ecc-e9f5b0250a6a.htm" />
+    <HelpKINode Title="Tracing Listeners" Url="html/a3d27a7a-1695-44da-9bf5-9fc24acedabf.htm" />
+    <HelpKINode Title="Tracing Sources" Url="html/d518dabe-e485-4897-8a9f-db0a7a646e74.htm" />
+    <HelpKINode Title="Tracing Switches" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+    <HelpKINode Title="Trouble Shooting" Url="html/616bf5f0-90f5-48c3-a115-6773b8d4f1aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Disconnected from the OPC server" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Disconnecting From OPC Server" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Div" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Edit Item Values" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+  <HelpKINode Title="Enabling Tracing" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="EndTransaction" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="Engine" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+  <HelpKINode Title="Error in RunTransitionChain" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Events" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Example" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="Example Configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="Example Operations" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Example simple database configuration" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  <HelpKINode Title="Example Transactions">
+    <HelpKINode Title="Example Transactions" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Adding and Bridging" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Calculation (division, substraction)" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Calculation (multiplication)" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Calculation and Logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Mixed calculation" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Mixed logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Read OPC Tag" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Set value" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Write OPC Tag" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FAQ" Url="html/616bf5f0-90f5-48c3-a115-6773b8d4f1aa.htm" />
+  <HelpKINode Title="Features">
+    <HelpKINode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+  </HelpKINode>
+  <HelpKINode Title="files" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Filters" Url="html/a4bf4faf-744d-4089-9ecc-e9f5b0250a6a.htm" />
+  <HelpKINode Title="Flags" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="General Settings" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="Generator" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="Generators">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Random Value" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Set Constant Value" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAvailableProperties">
+    <HelpKINode Title="Service Description" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_MultiItem_PropList" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_MultiItem_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_MultiItem_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem_Proplist" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_Proplist" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAvailiableItems" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="GetAvailiableQueues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="GetOPCProperties" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="GetProperty_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="Getting Started">
+    <HelpKINode Title="Getting Started" Url="html/d43b1514-ca9c-46af-b42f-ca57769bdd09.htm" />
+    <HelpKINode Title="Checking the status" Url="html/69b44a32-2a87-4094-bfde-ed54175ec272.htm" />
+    <HelpKINode Title="Configuration" Url="html/a5b37bb1-ca47-4770-900e-85b8da61cfe6.htm" />
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+    <HelpKINode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="Example Configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+    <HelpKINode Title="OPC Client for GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+    <HelpKINode Title="OPC Overview" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+    <HelpKINode Title="OPC2SOAP" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="Starting" Url="html/69b44a32-2a87-4094-bfde-ed54175ec272.htm" />
+    <HelpKINode Title="Stopping" Url="html/69b44a32-2a87-4094-bfde-ed54175ec272.htm" />
+    <HelpKINode Title="Testing environment" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+    <HelpKINode Title="Testing functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetValue_MultiItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="GetValue_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="GetVersion" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  <HelpKINode Title="GIS Smallworld" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  <HelpKINode Title="Graphical Transaction Editor" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="Group active time" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  <HelpKINode Title="Group details" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  <HelpKINode Title="Group name" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  <HelpKINode Title="Groups Tab">
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Group active time" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Group details" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Group name" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Min/Avg/Max gr. read time" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Min/Avg/Max transaction scan rate" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Read fails" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Read successes" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Registered tags" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Registered transactions" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Write fails" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="Write successes" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GUI" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+  <HelpKINode Title="HMI" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="HTML" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+  <HelpKINode Title="HTTP" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+  <HelpKINode Title="HTTP/SOAP">
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="System integration using DataPorter OPC client with OPC2SOAP extension in GIS application." Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IIS and ASP.NET integration" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+  <HelpKINode Title="IIS integration" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+  <HelpKINode Title="Integration" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  <HelpKINode Title="IO">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Buffered Access Queue " Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Read OPC Item" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Read System Item" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Write OPC Item" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ItemDescriber" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+  <HelpKINode Title="Items properties" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+  <HelpKINode Title="Items Tab">
+    <HelpKINode Title="Items Tab" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Item active time" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Item details" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Item state" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Item value" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Item/Tag name" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Last Error" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Min/Avg/Max transaction scan rate" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Read fails" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Read successes" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Write fails" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="Write successes" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Launching conditions" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="License">
+    <HelpKINode Title="Installation" Url="html/f3f78005-8f41-44be-a0d3-719472e15edf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="List of properties " Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+  <HelpKINode Title="Listeners" Url="html/a3d27a7a-1695-44da-9bf5-9fc24acedabf.htm" />
+  <HelpKINode Title="Log" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Logic">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Are Equal" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Value is in range" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Main application">
+    <HelpKINode Title="DataPorter" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Main window" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+  <HelpKINode Title="MainWindow" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+  <HelpKINode Title="Math">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Add" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Average" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Div" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Multiplicity" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Power Of 10" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Subtract" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Min update rate" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Min/Avg/Max gr. read time" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  <HelpKINode Title="Min/Avg/Max gr. Transaction execution rate" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Min/Avg/Max transaction scan rate" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  <HelpKINode Title="MinAvgMax">
+    <HelpKINode Title="Configuration Files" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="CharacterGap_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="FrameResponse_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="Group_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="Group_Read_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="Tag_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+    <HelpKINode Title="Transition_management" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinimumUpdateRate" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="Mixed calculation" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Mixed logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Monitor" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+  <HelpKINode Title="MS SQL" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  <HelpKINode Title="Multiple OPC servers" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+  <HelpKINode Title="Multiplicity" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Name" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="One OPC Server" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+  <HelpKINode Title="Online subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+  <HelpKINode Title="OPC">
+    <HelpKINode Title="OPC Overview" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OPC Client" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="OPC Client for GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  <HelpKINode Title="OPC Client tab">
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Connect/Disconnect time" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Read fails" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Read successes" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Registered groups" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Registered tags" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Server info" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Server name" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Server time start" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Server url" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Write fails" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Write successes" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OPC configuration" Url="html/9ecbc065-4153-4193-86d0-5d264120a69a.htm" />
+  <HelpKINode Title="OPC DA" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="OPC Overview">
+    <HelpKINode Title="OPC Overview" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+    <HelpKINode Title="OPC Overview" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OPC Server" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="OPC specification " Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="OPC UA" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="OPC Viewer">
+    <HelpKINode Title="Create Online Subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+    <HelpKINode Title="DataPorter example configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+    <HelpKINode Title="OPC Viewer Connection Establishment" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="Testing DataPorter Functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+    <HelpKINode Title="Write Data" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+    <HelpKINode Title="adding tags" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="Connect to OPC Server" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="Connection Establishment" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="creation of subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="Edit Item Values" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+    <HelpKINode Title="multiple OPC servers" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="one OPC Server" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="online subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+    <HelpKINode Title="Server Status" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="successful connection" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+    <HelpKINode Title="usage" Url="html/9ecbc065-4153-4193-86d0-5d264120a69a.htm" />
+    <HelpKINode Title="Write Items window" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+    <HelpKINode Title="Writing the data" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Opc.IdentifiedResult[] WriteTag.Write" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Opc.ServerShutdownEventHandler" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="OPC2SOAP">
+    <HelpKINode Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="System integration using DataPorter OPC client with OPC2SOAP extension in GIS application." Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+    <HelpKINode Title="OPCAdvancedDataAccess" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="OPCDataAccess" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OPCAdvancedDataAccess" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="opcquality">
+    <HelpKINode Title="Example simple database configuration" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Example simple database configuration" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  </HelpKINode>
+  <HelpKINode Title="opcvalue" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  <HelpKINode Title="OPCWSDataAccess" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+  <HelpKINode Title="Operation">
+    <HelpKINode Title="List" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="operationdb" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="operationif" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="operationopc" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="Operations">
+    <HelpKINode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpKINode Title="Example Transactions" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Transaction and Operations" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm" />
+    <HelpKINode Title="Adding an operation" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Removal of a transaction" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="sequence" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="oses" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="PLC" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="PLCNaN" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Power Of 10" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Professional operations">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="DB save" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Properties editing" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+  <HelpKINode Title="Property queries" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="Questions" Url="html/616bf5f0-90f5-48c3-a115-6773b8d4f1aa.htm" />
+  <HelpKINode Title="Random Value" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Read">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="OPC Item" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="System Item" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Read fails">
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Read OPC Tag" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Read successes">
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RealTimeLibrary" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Registered groups" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  <HelpKINode Title="Registered tags">
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Registered transactions" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+  <HelpKINode Title="Registers" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm" />
+  <HelpKINode Title="Remove">
+    <HelpKINode Title="Transaction and operation configuration" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="operation" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Selected Shape" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="transaction" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Reporting">
+    <HelpKINode Title="Reporting" Url="html/ed3586ba-f503-4196-ab9b-c9704a62345f.htm" />
+    <HelpKINode Title="Sample Report" Url="html/7aad350a-9f79-4028-92ff-789350c200a7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sample database file" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  <HelpKINode Title="SCADA" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+  <HelpKINode Title="Server info" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  <HelpKINode Title="Server name" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  <HelpKINode Title="Server Status" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+  <HelpKINode Title="Server time start" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  <HelpKINode Title="Server url" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  <HelpKINode Title="Service debugging" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+  <HelpKINode Title="Service MMC" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+  <HelpKINode Title="Set Constant Value" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Set value" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="SetValueAsDouble_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="SetValueAsInt32_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="SetValueAsString_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="Smallworld" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  <HelpKINode Title="SOAP">
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="System integration using DataPorter OPC client with OPC2SOAP extension in GIS application." Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Sources" Url="html/d518dabe-e485-4897-8a9f-db0a7a646e74.htm" />
+  <HelpKINode Title="Special">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Splitter" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SQL" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+  <HelpKINode Title="SQL Advanced Configuration" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="SQL Conectivity">
+    <HelpKINode Title="SQL Conectivity" Url="html/26dd91e2-db6e-4a3a-ac32-a7f14422e466.htm" />
+    <HelpKINode Title="Advanced Configuration" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+    <HelpKINode Title="Advanced Configuration Parameters" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+    <HelpKINode Title="Advanced DataBase " Url="html/f0eee719-9f00-47e8-8c6a-2052ba3f7dfa.htm" />
+    <HelpKINode Title="Advanced Operation" Url="html/f0eee719-9f00-47e8-8c6a-2052ba3f7dfa.htm" />
+    <HelpKINode Title="Connection to the local database server" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Database attached to DataPorter" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="DataPorterDataBase.mdf" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Default Configuration" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+    <HelpKINode Title="Example" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+    <HelpKINode Title="Initial configuration" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="operation" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Periodic DataBase read" Url="html/169261d2-f2b0-43f0-908a-bf6d23099aa1.htm" />
+    <HelpKINode Title="read data from database" Url="html/169261d2-f2b0-43f0-908a-bf6d23099aa1.htm" />
+    <HelpKINode Title="read from SQL" Url="html/169261d2-f2b0-43f0-908a-bf6d23099aa1.htm" />
+    <HelpKINode Title="Requirements" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Sample database file" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Transaction settings" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Troubleshooting" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+    <HelpKINode Title="Troubleshooting" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+    <HelpKINode Title="Verify connection" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Standard operation">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Generators" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="IO" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Logic" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Math" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="Special" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Starting the DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+  <HelpKINode Title="StartTransaction" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="StopIfBadQuality" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="Stopping the DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+  <HelpKINode Title="Subtract" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Successful connection" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+  <HelpKINode Title="Switches" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+  <HelpKINode Title="System Event Log" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="System.Data.OracleClient.OracleException" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="System.DateTime" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="System.Diagnostics.DelimitedListTraceListener" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="System.Diagnostics.EventLogTraceListener" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="System.Diagnostics.TextWriterTraceListener" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="System.Diagnostics.XmlWriterTraceListener" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+  <HelpKINode Title="System.NullReferenceException" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+  <HelpKINode Title="Tracing">
+    <HelpKINode Title="Tracing" Url="html/b2b37f09-e751-4aa0-afa6-dc716e759773.htm" />
+    <HelpKINode Title="Enabling Tracing" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+    <HelpKINode Title="Filters" Url="html/a4bf4faf-744d-4089-9ecc-e9f5b0250a6a.htm" />
+    <HelpKINode Title="Listeners" Url="html/a3d27a7a-1695-44da-9bf5-9fc24acedabf.htm" />
+    <HelpKINode Title="Sources" Url="html/d518dabe-e485-4897-8a9f-db0a7a646e74.htm" />
+    <HelpKINode Title="Switches" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Tracing Switches">
+    <HelpKINode Title="Error" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+    <HelpKINode Title="Info" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+    <HelpKINode Title="Off" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+    <HelpKINode Title="Verbose" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+    <HelpKINode Title="Warning" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transaction">
+    <HelpKINode Title="Example Transactions" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Transaction and Operations" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm" />
+    <HelpKINode Title="Adding a transaction" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Adding and Bridging" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="BadQualityValue" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Calculation (division, substraction)" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Calculation (multiplication)" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Calculation and Logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Comment" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="General Settings" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Launching conditions" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="MinimumUpdateRate" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Mixed calculation" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Mixed logical" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Name" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Read OPC Tag" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="Removal of an operation" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Set value" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+    <HelpKINode Title="StopIfBadQuality" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="TransactionRate" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Trigger Item" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Trigger Item Deadband" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Write OPC Tag" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transaction counter" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Transaction details" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Transaction name" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Transaction scanning rate" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="Transaction Tab">
+    <HelpKINode Title="Transaction Tab" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Deadband" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Min update rate" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Min/Avg/Max gr. Transaction execution rate" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Transaction counter" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Transaction details" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Transaction name" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Transaction scanning rate" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Transaction Type" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Transaction Type" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+  <HelpKINode Title="TransactionRate" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  <HelpKINode Title="Trigger Item">
+    <HelpKINode Title="Transaction and operation configuration" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+    <HelpKINode Title="Deadband" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Trouble Shooting" Url="html/616bf5f0-90f5-48c3-a115-6773b8d4f1aa.htm" />
+  <HelpKINode Title="UseLocalTime" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Using DataPorter">
+    <HelpKINode Title="Using DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+    <HelpKINode Title="Checking the status" Url="html/53D6DF1A-9BF4-452d-B60C-05F07B138760.htm" />
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="GUI" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+    <HelpKINode Title="Items Tab" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+    <HelpKINode Title="License Installation" Url="html/f3f78005-8f41-44be-a0d3-719472e15edf.htm" />
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+    <HelpKINode Title="Reporting" Url="html/ed3586ba-f503-4196-ab9b-c9704a62345f.htm" />
+    <HelpKINode Title="Sample Report" Url="html/7aad350a-9f79-4028-92ff-789350c200a7.htm" />
+    <HelpKINode Title="Starting" Url="html/53D6DF1A-9BF4-452d-B60C-05F07B138760.htm" />
+    <HelpKINode Title="Starting the DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+    <HelpKINode Title="Stopping" Url="html/53D6DF1A-9BF4-452d-B60C-05F07B138760.htm" />
+    <HelpKINode Title="Stopping the DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm" />
+    <HelpKINode Title="Transaction Tab" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    <HelpKINode Title="Tray Icon" Url="html/5a8897db-1916-49c7-a797-d2e4ca301b9c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Using many inputs" Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+  <HelpKINode Title="Value is in range" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  <HelpKINode Title="Version History" Url="html/bc19c589-8632-46c0-9dee-8a4dd27c6fac.htm" />
+  <HelpKINode Title="WaitForReconnectServer" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+  <HelpKINode Title="Web Service Conectivity">
+    <HelpKINode Title="Web Service Conectivity" Url="html/de6ca2b7-82fe-4941-b899-e46d90a2eb27.htm" />
+    <HelpKINode Title="ASP.NET" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+    <HelpKINode Title="Browse items functions" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="Buffered Queues functions" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="configure properties" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="ConnectToQueue" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="CSV file" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="EndTransaction" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_MultiItem_PropList" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_MultiItem_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_MultiItem_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem_Proplist" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_OneItem_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_Proplist" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailableProperties_Proplist_returnValues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailiableItems" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetAvailiableQueues" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetOPCProperties" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetProperty_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetValue_MultiItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetValue_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="GetVersion" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="IIS" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+    <HelpKINode Title="IIS and ASP.NET integration" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+    <HelpKINode Title="installation" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+    <HelpKINode Title="ItemDescriber" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="items properties" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="list of properties " Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="Miscellaneous functions" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="properties editing" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+    <HelpKINode Title="Property queries" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="Read value functions" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="requirements" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+    <HelpKINode Title="Service debugging" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+    <HelpKINode Title="SetValueAsDouble_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="SetValueAsInt32_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="SetValueAsString_OneItem" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="StartTransaction" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="Write value functions" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+    <HelpKINode Title="XML configuration" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebServices Access for OPC" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm" />
+  <HelpKINode Title="windows service" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+  <HelpKINode Title="Write">
+    <HelpKINode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+    <HelpKINode Title="OPC Item" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Write fails">
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Write Items window" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+  <HelpKINode Title="Write OPC Tag" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+  <HelpKINode Title="Write successes">
+    <HelpKINode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+    <HelpKINode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Write value functions" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="Writing the data" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+  <HelpKINode Title="WSDL">
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="System integration using DataPorter OPC client with OPC2SOAP extension in GIS application." Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="wsdl " Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+  <HelpKINode Title="XML">
+    <HelpKINode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpKINode Title="OPC2SOAP Extension" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+    <HelpKINode Title="System integration using DataPorter OPC client with OPC2SOAP extension in GIS application." Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="XML configuration" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+</HelpKI>

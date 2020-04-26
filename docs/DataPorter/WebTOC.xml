@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="06ee4618-66c3-4b42-af45-2cb1b44a182c" Title="DataPorter" Url="html/b8c5f048-bb7e-4742-b7f2-b61a77789ed9.htm">
+    <HelpTOCNode Title="DataPorter Standard" Url="html/52fb9b14-2c71-4761-8ab6-a04f4d111e51.htm" />
+    <HelpTOCNode Title="DataPorter Professional" Url="html/01327e6f-b503-4ebc-a4f2-f232b926b676.htm" />
+    <HelpTOCNode Id="600565c7-6387-4f9e-950a-4bd65767ce59" Title="Getting Started" Url="html/d43b1514-ca9c-46af-b42f-ca57769bdd09.htm">
+      <HelpTOCNode Title="Instalation Instruction" Url="html/21ad434f-60d8-4df5-be3c-8e5fa2404d8a.htm" />
+      <HelpTOCNode Title="Starting, stopping and checking the DataPorter status" Url="html/69b44a32-2a87-4094-bfde-ed54175ec272.htm" />
+      <HelpTOCNode Title="OPC Overview" Url="html/efa83c9a-0ca8-45e3-b80f-7b6506409f1f.htm" />
+      <HelpTOCNode Id="f5a2531a-2abd-4eaf-9af3-ca597503de39" Title="DataPorter components" Url="html/6dd63460-0a6a-445f-8c51-4cdca08539e8.htm">
+        <HelpTOCNode Title="DataPorter" Url="html/aa040123-9cb4-4139-8d76-75071f6ce46a.htm" />
+        <HelpTOCNode Title="OPC Viewer" Url="html/f94f793b-868c-470d-b076-d08376cbd433.htm" />
+        <HelpTOCNode Title="OPC2SOAP" Url="html/43c8f91f-83b4-4715-b716-2575b08ec224.htm" />
+        <HelpTOCNode Title="OPC Client for GIS" Url="html/aa441e7e-3826-4d29-a16c-9a1ff6b2f6f0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="eab858bd-b6d5-4bf8-a6bb-3e9a038e636d" Title="OPC Viewer Getting Started" Url="html/1f94da82-7fee-46c6-9832-6e643a0caa59.htm">
+        <HelpTOCNode Title="Main Panel" Url="html/0c57f4f0-9cff-45b7-9375-bee3e9c98b50.htm" />
+        <HelpTOCNode Title="Session Tree View" Url="html/c49ce4bc-0ff0-4d99-92e3-7bfa4ad5ede9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="802ab7a3-e878-46bc-ad95-b9a2e40bc272" Title="Processing Environment in OPC Viewer" Url="html/470275f3-3420-43f8-bdd4-de1c00c66593.htm">
+        <HelpTOCNode Title="Transaction Editor Getting Started" Url="html/69b396de-0b04-4c94-9910-78062d830054.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bb592356-626c-4390-8a02-40a505861c7b" Title="DataPorter example configuration" Url="html/b042ddb2-f34a-4f96-9c34-cac0aaa4a7ca.htm">
+        <HelpTOCNode Title="Example Transactions" Url="html/3b0194c2-7cec-4dce-a252-dc6b61afb48f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Testing DataPorter Functionality" Url="html/f594fda1-1d52-400f-8d21-e0919913f840.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1a7154e7-a9d4-477a-856a-3bd009b85b4c" Title="Configuration" Url="html/a5b37bb1-ca47-4770-900e-85b8da61cfe6.htm">
+      <HelpTOCNode Title="Configuration Files" Url="html/cd53a628-d5cf-40b0-b3a2-8ab67cdecf1a.htm" />
+      <HelpTOCNode Title="DataPorter Service" Url="html/f865bba4-1656-4559-bc89-dd474f5c8b60.htm" />
+      <HelpTOCNode Id="57efd903-ab4c-46f4-ad0b-388dc9511f61" Title="OPC configuration and OPC Viewer usage" Url="html/9ecbc065-4153-4193-86d0-5d264120a69a.htm">
+        <HelpTOCNode Title="OPC Viewer Connection Establishment" Url="html/662c67b6-580d-4f55-b8f6-20a4fdce79b7.htm" />
+        <HelpTOCNode Title="Create Online Subscription" Url="html/cd9b99cf-299d-47b0-a8a6-348d38f83e25.htm" />
+        <HelpTOCNode Title="Write Data" Url="html/e8cbd036-5a13-4a3c-b6f1-637561d043fc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8c80a6e0-5447-4b60-a9cc-264a93bb8df0" Title="Transaction and Operations" Url="html/9d3af1dd-79cf-4f15-af3d-921d9ebeffc0.htm">
+        <HelpTOCNode Title="Transaction and operation configuration" Url="html/513d802a-9060-4c19-a3d4-0e549a583007.htm" />
+        <HelpTOCNode Title="List of available operations" Url="html/11e85dab-2c01-4ee3-9b12-2d396ed80bab.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6b30080f-3858-4480-a680-7eca3de7e5ea" Title="SQL Conectivity" Url="html/26dd91e2-db6e-4a3a-ac32-a7f14422e466.htm">
+        <HelpTOCNode Title="Example simple database configuration" Url="html/9f3954b0-cc3e-46d1-a3e6-59649db7e738.htm" />
+        <HelpTOCNode Title="Storing From Opc Into Sql " Url="html/42ac5182-238c-41a2-81a7-f66a77089b02.htm" />
+        <HelpTOCNode Title="Reading from SQL and copying to OPC" Url="html/169261d2-f2b0-43f0-908a-bf6d23099aa1.htm" />
+        <HelpTOCNode Title="Advanced DataBase operation block" Url="html/f0eee719-9f00-47e8-8c6a-2052ba3f7dfa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4de50dab-9303-4d20-ba52-5d3390024929" Title="Web Service Conectivity" Url="html/de6ca2b7-82fe-4941-b899-e46d90a2eb27.htm">
+        <HelpTOCNode Title="Service Installation" Url="html/372debd4-ee98-4036-839f-8f98112d0a2a.htm" />
+        <HelpTOCNode Title="Service Description" Url="html/3bddf5c3-5d5a-4569-85db-fcdc52a1b34a.htm" />
+        <HelpTOCNode Title="Service Debugging" Url="html/1a2d8dae-5e3d-404d-b25b-7b93a9cfcfea.htm" />
+        <HelpTOCNode Title="ItemDescriber" Url="html/b447d5c6-1b3b-4840-abfb-318b650ecc65.htm" />
+        <HelpTOCNode Title="Buffered Queues Interface" Url="html/ffd0271b-d16b-45d2-b3b4-264ee4554607.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="87fe50fb-448f-4061-87da-1fd0be207919" Title="Using DataPorter" Url="html/b3f0fa92-aec3-4555-a2ed-f5f674a648b7.htm">
+      <HelpTOCNode Title="Starting, stopping and checking the DataPorter status" Url="html/53D6DF1A-9BF4-452d-B60C-05F07B138760.htm" />
+      <HelpTOCNode Id="783a72f4-9229-4aef-899c-415339514342" Title="DataPorter Monitor" Url="html/5b3e730c-02f2-47de-b836-afbd3c53ac23.htm">
+        <HelpTOCNode Title="Local service controller " Url="html/011a5d28-2395-4dea-9d9c-71bb7b141ead.htm" />
+        <HelpTOCNode Title="Connection controller panel" Url="html/e7a0eb27-ca29-424e-88db-652c5670b82f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Icons and States" Url="html/199bb2bf-7931-4f08-ae71-43d728990f2f.htm" />
+      <HelpTOCNode Title="Tray icon" Url="html/5a8897db-1916-49c7-a797-d2e4ca301b9c.htm" />
+      <HelpTOCNode Id="87be9d00-5295-4459-8a59-4a1d07dbad49" Title="Reporting" Url="html/ed3586ba-f503-4196-ab9b-c9704a62345f.htm">
+        <HelpTOCNode Title="Sample Report" Url="html/7aad350a-9f79-4028-92ff-789350c200a7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="License Installation" Url="html/f3f78005-8f41-44be-a0d3-719472e15edf.htm" />
+      <HelpTOCNode Title="OPC Client tab" Url="html/24cb0bb9-21b7-4f84-a319-7d0dfa259224.htm" />
+      <HelpTOCNode Title="Groups Tab" Url="html/1ab52757-7130-402b-85b4-af4b468567d0.htm" />
+      <HelpTOCNode Title="Items Tab" Url="html/5da055b4-bc8b-45b1-a34d-62b9a099eb55.htm" />
+      <HelpTOCNode Title="Transaction Tab" Url="html/08319621-9f18-4e3a-966c-daff610ba00e.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ba55b99b-ff6d-4716-8d95-168715e14ae6" Title="Diagnostics and Trubelshooting" Url="html/5b627d61-bf0f-4a14-83b9-982b8b002afc.htm">
+      <HelpTOCNode Title="System Event Log" Url="html/41a3c9ec-191c-4c9c-990a-e953f18a49d3.htm" />
+      <HelpTOCNode Id="fcefcd08-e9c6-46cb-834f-b5b4a178bd16" Title="Tracing" Url="html/b2b37f09-e751-4aa0-afa6-dc716e759773.htm">
+        <HelpTOCNode Title="Enabling Tracing" Url="html/410af3c3-9dde-48af-b625-e10236b40ed8.htm" />
+        <HelpTOCNode Title="Tracing Switches" Url="html/d949081b-3f82-4089-89e8-9aedca21c7b0.htm" />
+        <HelpTOCNode Title="Tracing Sources" Url="html/d518dabe-e485-4897-8a9f-db0a7a646e74.htm" />
+        <HelpTOCNode Title="Tracing Listeners" Url="html/a3d27a7a-1695-44da-9bf5-9fc24acedabf.htm" />
+        <HelpTOCNode Title="Tracing Filters" Url="html/a4bf4faf-744d-4089-9ecc-e9f5b0250a6a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Trouble Shooting" Url="html/616bf5f0-90f5-48c3-a115-6773b8d4f1aa.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Version History" Url="html/bc19c589-8632-46c0-9dee-8a4dd27c6fac.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Title="Applications Configuration Location" Url="html/8517a779-4c4f-46c1-835b-dbad00a344fa.htm" />
+  <HelpTOCNode Title="Contact" Url="html/2095ee10-ea30-42e1-8ea1-cd20af0d0419.htm" />
+  <HelpTOCNode Id="7fe32a0a-855d-4503-9e7d-f591e85e7eb5" Title="License" Url="html/b42a5ab7-d614-405e-8d96-b856949f9c43.htm">
+    <HelpTOCNode Title="License acquisition" Url="html/5660ca9b-bf2c-4a80-b402-6794438ff5c1.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Title="Glossary" Url="html/63a147a5-d6d9-44a2-90b5-58ad56ff0e37.htm" />
+  <HelpTOCNode Title="FAQ" Url="html/9CEA8CDD-33EF-4973-9EA9-FDF2003B01E0.htm" />
+  <HelpTOCNode Title="YouTube" Url="html/f5699a34-d228-4c7d-bbca-fdb494f53a8b.htm" />
+</HelpTOC>

@@ -1,4 +1,5 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
   <PropertyGroup>
     <!-- The configuration and platform will be used to determine which
          assemblies to include from solution and project documentation
@@ -7,81 +8,36 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{8b301eb8-8d71-4373-83bf-9f52726518ea}</ProjectGuid>
-    <SHFBSchemaVersion>1.9.0.0</SHFBSchemaVersion>
+    <SHFBSchemaVersion>2017.9.26.0</SHFBSchemaVersion>
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
          Studio adds them anyway -->
     <AssemblyName>Documentation</AssemblyName>
     <RootNamespace>Documentation</RootNamespace>
     <Name>Documentation</Name>
     <!-- SHFB properties -->
-    <OutputPath>Temp\DataPorter\Help\</OutputPath>
+    <OutputPath>docs\DataPorter\</OutputPath>
     <HtmlHelpName>DataPorter</HtmlHelpName>
-    <WorkingPath>Temp\DataPorter\Working\</WorkingPath>
-    <BuildLogFile>Temp\DataPorter\DataPorter.log</BuildLogFile>
+    <WorkingPath>PR26-DataPorter\bin\</WorkingPath>
+    <BuildLogFile>PR26-DataPorter\bin\DataPorter.log</BuildLogFile>
     <HelpFileFormat>Website</HelpFileFormat>
     <ComponentConfigurations>
-      <ComponentConfig id="Cached MSDN URL References" enabled="True">
-        <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
-          <helpOutput format="HtmlHelp1">
-            <cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
-            <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@HtmlSdkLinkType}" />
-            <targets files="reflection.xml" type="Local" />
-          </helpOutput>
-          <helpOutput format="MSHelp2">
-            <cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
-            <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@MSHelp2SdkLinkType}" />
-            <targets files="reflection.xml" type="Index" />
-          </helpOutput>
-          <helpOutput format="MSHelpViewer">
-            <cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
-            <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@MSHelpViewerSdkLinkType}" />
-            <targets files="reflection.xml" type="Id" />
-          </helpOutput>
-          <helpOutput format="Website">
-            <cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
-            <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@WebsiteSdkLinkType}" />
-            <targets files="reflection.xml" type="Local" />
-          </helpOutput>
-        </component>
-      </ComponentConfig>
       <ComponentConfig id="Code Block Component" enabled="True">
-        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <basePath value="{@ProjectFolder}" />
-          <languageFilter value="true" />
-          <allowMissingSource value="false" />
-          <removeRegionMarkers value="false" />
-          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
-        </component>
-      </ComponentConfig>
-      <ComponentConfig id="Post-transform Component" enabled="True">
-        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
-          <!-- Code colorizer files (required).
-                 Attributes:
-                    Stylesheet file (required)
-                    Script file (required)
-                    "Copy" image file (required) -->
-          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
-          <!-- Base output path for the files (required).  This should match
-                 the parent folder of the output path of the HTML files (see
-                 SaveComponent). -->
-          <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
-          <!-- Logo image file (optional).  Filename is required. The height,
-                 width, altText, placement, and alignment attributes are
-                 optional. -->
-          <logoFile filename="\\CAS_002\cas_dfs\cas\Projekty\Produkty\PR21-CommServer\PR2103-Rysunki\commsrerver_logo_z_napisem_z_boku_small.gif" height="0" width="0" altText="www.commsvr.com" placement="right" alignment="left" />
-        </component>
+        <component id="Code Block Component">
+  <basePath value="{@HtmlEncProjectFolder}" />
+  <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+  <allowMissingSource value="false" />
+  <removeRegionMarkers value="false" />
+  <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+</component>
       </ComponentConfig>
     </ComponentConfigurations>
     <PlugInConfigurations>
       <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
-      <PlugInConfig id="HelpTopicsGenerator" enabled="True">
-        <configuration />
-      </PlugInConfig>
     </PlugInConfigurations>
     <CopyrightHref>http://www.commsvr.com/</CopyrightHref>
-    <CopyrightText>Copyright \xA9 2008-2011, CAS, All rights reserved</CopyrightText>
+    <CopyrightText>Copyright \xA9 2008-2020, CAS, All rights reserved</CopyrightText>
     <FeedbackEMailAddress>techsupp%40cas.eu</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CAS</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with CAS DataPorter %28this software is available at &amp;lt%3bA href=&amp;quot%3bhttp://www.commsvr.com/DownloadCenter/ProductSoftware/PR2605DataPorter_Software.aspx&amp;quot%3b title=&amp;quot%3bDataPorter - ports data between most popular standards %28OPC, XML, SQL%29 – software installation.&amp;quot%3b&amp;gt%3bhttp://www.commsvr.com&amp;lt%3b/A&amp;gt%3b%29.</FooterText>
@@ -89,7 +45,23 @@
     <HelpTitle>DataPorter - ports data between most popular standards %28OPC, XML, SQL%29</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <Preliminary>False</Preliminary>
-    <PresentationStyle>vs2005-Produkty</PresentationStyle>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <SyntaxFilters>C#</SyntaxFilters>
+    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <IndentHtml>False</IndentHtml>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <Language>en-US</Language>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
